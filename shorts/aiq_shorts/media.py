@@ -237,10 +237,70 @@ def search_pexels(query, n=12, video=False):
     return out
 
 
+# --- Pixabay ----------------------------------------------------------------------------
+
+def _pixabay_key():
+    key = os.environ.get("PIXABAY_API_KEY")
+    if not key:
+        raise SystemExit("Set PIXABAY_API_KEY (free, instant at https://pixabay.com/api/docs/) to search "
+                         "Pixabay. Environment variables are read when a session starts.")
+    return key
+
+
+def search_pixabay(query, n=12, video=False):
+    """Pixabay: free stock video + photos (Pixabay Content License, no attribution required;
+    we credit anyway). Video is the main use; its photos max out at 1280px via the API."""
+    params = {"key": _pixabay_key(), "q": query[:100], "safesearch": "true", "per_page": 50}
+    if video:
+        params["video_type"] = "film"
+        data = http_json("https://pixabay.com/api/videos/?" + urllib.parse.urlencode(params))
+        out = []
+        for v in data.get("hits", []):
+            files = [f for f in (v.get("videos") or {}).values() if f.get("url") and f.get("height")]
+            if not files:
+                continue
+            # enough pixels for a 1080x1920 crop: tall clips first, then the widest/highest
+            files.sort(key=lambda f: (f["height"] >= 1920, f["height"], f["width"]), reverse=True)
+            best = files[0]
+            if best["height"] < 1080:
+                continue
+            thumb = (v.get("videos", {}).get("medium") or {}).get("thumbnail") or best.get("thumbnail")
+            out.append({
+                "source": "pixabay", "id": f"v{v['id']}", "title": v.get("tags", ""), "video": True,
+                "thumb": thumb, "url": best["url"], "width": best["width"], "height": best["height"],
+                "duration": v.get("duration"), "page": v.get("pageURL"),
+                "credit": f"Video: {v.get('user', 'Pixabay')} (Pixabay)",
+            })
+            if len(out) >= n:
+                break
+        # portrait-friendly first: a 9:16 crop of 4K or vertical footage stays sharp
+        out.sort(key=lambda c: -(min(c["height"], c["width"] * 16 / 9)))
+        return out
+    params.update({"image_type": "photo", "orientation": "vertical", "min_width": 1000})
+    data = http_json("https://pixabay.com/api/?" + urllib.parse.urlencode(params))
+    out = []
+    for p in data.get("hits", []):
+        out.append({
+            "source": "pixabay", "id": f"p{p['id']}", "title": p.get("tags", ""),
+            "thumb": p.get("webformatURL"), "url": p.get("largeImageURL"),
+            "width": p.get("imageWidth"), "height": p.get("imageHeight"), "page": p.get("pageURL"),
+            "credit": f"Photo: {p.get('user', 'Pixabay')} (Pixabay)",
+        })
+        if len(out) >= n:
+            break
+    return out
+
+
 def search(query, source="wikimedia", n=12, video=False):
     if source == "pexels":
         return search_pexels(query, n, video)
+    if source == "pixabay":
+        return search_pixabay(query, n, video)
     return search_wikimedia(query, n)
+
+
+def default_video_source():
+    return "pixabay" if os.environ.get("PIXABAY_API_KEY") or not os.environ.get("PEXELS_API_KEY") else "pexels"
 
 
 def contact_sheet(candidates, thumbs_dir, out_path, cols=4):

@@ -19,6 +19,7 @@ QA-checks the frames, renders, and hands back the MP4 plus `script.md`.
 
 ```bash
 pip install -r shorts/requirements.txt
+python shorts/make_short.py doctor            # checks network access + API keys
 
 python shorts/make_short.py new https://americaninequality.substack.com/p/<slug>
 #  → shorts/projects/<slug>/article.md, article.json, media/cover.jpg, media/article_*.png
@@ -32,7 +33,7 @@ python shorts/make_short.py use <slug> congress 3 --as capitol          # save a
 
 python shorts/make_short.py autofill <slug>                            # fetch each scene's `query` photo
 python shorts/make_short.py search <slug> "suburban house florida"      # Wikimedia Commons
-python shorts/make_short.py search <slug> "apartment renters" --pexels --video   # needs PEXELS_API_KEY
+python shorts/make_short.py search <slug> "apartment renters" --video   # stock clips, needs PIXABAY_API_KEY
 python shorts/make_short.py pick <slug> 3 --as hook                     # → media/hook.jpg (+ credit)
 
 python shorts/make_short.py stills <slug>     # output/stills.png: key frames for review
@@ -79,5 +80,5 @@ shorts/
 
 Fetching needs outbound access to `*.substack.com` and `substackcdn.com`
 (article), `commons.wikimedia.org` and `upload.wikimedia.org` (photos), and
-`api.pexels.com`, `images.pexels.com`, and `videos.pexels.com` (footage).
+`pixabay.com` and `cdn.pixabay.com` (stock footage; key in `PIXABAY_API_KEY`).
 Rendering itself works offline.

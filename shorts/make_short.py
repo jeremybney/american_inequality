@@ -4,7 +4,7 @@
 Workflow (see README.md):
   1. new     <substack-url>                  fetch article text, cover, charts -> projects/<slug>/
   2. (write projects/<slug>/storyboard.json — Claude does this from the article)
-  3. search  <slug> "<query>" [--pexels] [--video]   find real photos/footage, writes a contact sheet
+  3. search  <slug> "<query>" [--pixabay|--pexels] [--video]   find real photos/footage, writes a contact sheet
      pick    <slug> <n> --as <name>          download candidate #n as media/<name>.<ext>
   4. stills  <slug>                          key-frame contact sheet for review
   5. render  <slug>                          final MP4 + script.md + captions.srt + credits + post text
@@ -29,6 +29,35 @@ def project(slug):
     return p
 
 
+def cmd_doctor(a):
+    """Check network access and API keys needed by each step."""
+    import os
+    import urllib.request
+    checks = [("Substack article", "https://americaninequality.substack.com/api/v1/posts?limit=1"),
+              ("Substack images", "https://substack-post-media.s3.amazonaws.com/"),
+              ("Wikimedia search", "https://commons.wikimedia.org/w/api.php?action=query&format=json&meta=siteinfo"),
+              ("Wikimedia thumbnails", "https://upload.wikimedia.org/wikipedia/commons/thumb/"),
+              ("Pixabay API", "https://pixabay.com/api/"),
+              ("Pixabay files", "https://cdn.pixabay.com/")]
+    for name, url in checks:
+        try:
+            urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": media.UA}), timeout=15)
+            status = "ok"
+        except Exception as e:  # noqa: BLE001
+            code = getattr(e, "code", None)
+            # any HTTP answer from the site itself means the network path is open
+            status = f"ok (site answered {code})" if code else f"BLOCKED ({getattr(e, 'reason', e)})"
+        print(f"  {name:<22} {status}")
+    for var, what in [("PIXABAY_API_KEY", "stock video/photos"), ("PEXELS_API_KEY", "stock video (optional)")]:
+        print(f"  {var:<22} {'set' if os.environ.get(var) else 'not set'}  ({what})")
+    if os.environ.get("PIXABAY_API_KEY"):
+        try:
+            n = len(media.search_pixabay("city street", n=3, video=True))
+            print(f"  Pixabay key test       ok ({n} clips)")
+        except Exception as e:  # noqa: BLE001
+            print(f"  Pixabay key test       FAILED: {e}")
+
+
 def cmd_new(a):
     slug = substack.slug_from_url(a.url) if "/p/" in a.url else a.url
     pdir = PROJECTS / slug
@@ -46,7 +75,8 @@ def cmd_new(a):
 
 def cmd_search(a):
     pdir = project(a.slug)
-    source = "pexels" if a.pexels else "wikimedia"
+    source = "pexels" if a.pexels else "pixabay" if a.pixabay else \
+        (media.default_video_source() if a.video else "wikimedia")
     cands = media.search(a.query, source, a.n, a.video)
     cdir = pdir / ".cache" / "candidates"
     cdir.mkdir(parents=True, exist_ok=True)
@@ -100,7 +130,7 @@ def cmd_autofill(a):
         if (pdir / "media" / name).exists() and not a.force:
             continue
         video = sc["type"] == "video" or Path(name).suffix.lower() in media.VIDEO_EXT
-        source = "pexels" if (video or sc.get("query_source") == "pexels") else "wikimedia"
+        source = sc.get("query_source") or (media.default_video_source() if video else "wikimedia")
         try:
             cands = media.search(q, source, 8, video)
         except Exception as e:  # noqa: BLE001
@@ -169,6 +199,9 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
 
+    p = sub.add_parser("doctor", help="check network access and API keys")
+    p.set_defaults(fn=cmd_doctor)
+
     p = sub.add_parser("new", help="create a project from a Substack URL")
     p.add_argument("url")
     p.add_argument("--manual", action="store_true", help="skip fetching; build article.json from flags")
@@ -182,6 +215,7 @@ def main():
     p = sub.add_parser("search", help="search for real photos / footage")
     p.add_argument("slug")
     p.add_argument("query")
+    p.add_argument("--pixabay", action="store_true", help="search Pixabay (needs PIXABAY_API_KEY)")
     p.add_argument("--pexels", action="store_true", help="search Pexels (needs PEXELS_API_KEY)")
     p.add_argument("--video", action="store_true", help="search video clips (Pexels)")
     p.add_argument("-n", type=int, default=12)

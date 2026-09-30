@@ -16,11 +16,13 @@ python shorts/make_short.py plan <slug>                    # 2. visual plan: ran
 python shorts/make_short.py use <slug> <subject> <n> --as <name>   #    save a plan candidate as media/<name>
 python shorts/make_short.py autofill <slug>                #    fetch any scene `query` still missing a file
 python shorts/make_short.py search <slug> "<query>"        #    or search by hand (Wikimedia)
-python shorts/make_short.py search <slug> "<query>" --pexels --video   #    real footage (needs PEXELS_API_KEY)
+python shorts/make_short.py search <slug> "<query>" --video   #    real stock footage (Pixabay; needs PIXABAY_API_KEY)
 python shorts/make_short.py pick <slug> <n> --as hook      #    save candidate #n as media/hook.<ext>
 python shorts/make_short.py stills <slug>                  # 4. key-frame sheet → output/stills.png (LOOK AT IT)
 python shorts/make_short.py render <slug>                  # 5. MP4 + script.md + captions.srt + credits + post
 ```
+Run `python shorts/make_short.py doctor` first in a new session: it checks network access
+and API keys. Environment variables only load when a session starts.
 Dependencies: `pip install -r shorts/requirements.txt` (pillow, numpy, imageio-ffmpeg, beautifulsoup4).
 Every scene type and field is documented in `shorts/storyboard_reference.md`.
 Read it before writing a storyboard. `shorts/projects/boomers-wealth-millenials-gen-z/storyboard.json`
@@ -123,8 +125,11 @@ Save the chosen candidates with `use <slug> <subject> <n> --as <name>` (e.g.
 
 Use **real photographs and footage of real places**. Never generated images.
 - Search Wikimedia Commons first: it's freely licensed and attributed, and the credit
-  prints on screen automatically. Use Pexels (`--pexels`, add `--video` for clips)
-  for real stock footage of generic scenes: streets, homes, workers, city life.
+  prints on screen automatically. For real stock footage of generic scenes (streets,
+  construction, workers, traffic, city life), use `search <slug> "<query>" --video`
+  (Pixabay, `PIXABAY_API_KEY`; Pexels via `--pexels` if a key exists). Clips suit the
+  in-between beats; named places and buildings are better as real Wikimedia photos.
+  Prefer 4K or vertical clips (they're listed first) so the 9:16 crop stays sharp.
 - ALWAYS open the contact sheet (`.cache/candidates/contact_sheet.jpg`) and look
   before picking. Reject anything blurry, watermarked, low-res, stock-cheesy (people
   pointing at laptops, handshake photos), AI-looking, or off-topic. Prefer
@@ -132,8 +137,8 @@ Use **real photographs and footage of real places**. Never generated images.
 - Use `focus` to frame the subject in the vertical crop. If no good image exists for
   a beat, replace that beat with a chart scene rather than using a weak photo.
 - If image hosts are blocked by the environment's network policy, tell the user which
-  hosts to allow (`commons.wikimedia.org`, `upload.wikimedia.org`, `api.pexels.com`,
-  `images.pexels.com`, `videos.pexels.com`) or ask them to drop photos into `media/`.
+  hosts to allow (`commons.wikimedia.org`, `upload.wikimedia.org`, `pixabay.com`,
+  `cdn.pixabay.com`) or ask them to drop photos into `media/`.
 
 ## Step 5: QA before rendering
 Run `stills` and view `output/stills.png` (2 frames per scene). Check for:
