@@ -15,6 +15,13 @@ Paste the Substack link into Claude Code in this repo and ask for a TikTok. The
 every step below: it writes the storyboard from the article, picks real photos,
 QA-checks the frames, renders, and hands back the MP4 plus `script.md`.
 
+## The Shorts Queue
+
+Drop links into the **Shorts Queue** page (https://claude.ai/artifact/Pi2uynjVTBEhzNg9bDMBSB)
+instead of pasting them into chat. Then tell Claude Code "make the queued shorts": it
+works through the queue, marks each link Making and then Ready, and writes the runtime
+and file location back to the page. Mark videos Posted on the page when they go up.
+
 ## By hand
 
 ```bash

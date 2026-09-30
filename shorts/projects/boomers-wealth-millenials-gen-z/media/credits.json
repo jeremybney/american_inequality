@@ -62,5 +62,17 @@
   "boom.jpg": {
     "credit": "Photo: Unknown author, Public domain (Wikimedia Commons)",
     "url": "https://commons.wikimedia.org/wiki/File:Couple_with_a_child_and_two_cars.jpg"
+  },
+  "hook_clip.mp4": {
+    "credit": "Video: SurveillancePigeon (Pixabay)",
+    "url": "https://pixabay.com/videos/id-136838/"
+  },
+  "build_clip.mp4": {
+    "credit": "Video: D-GM (Pixabay)",
+    "url": "https://pixabay.com/videos/id-121409/"
+  },
+  "young_clip.mp4": {
+    "credit": "Video: Surprising_Media (Pixabay)",
+    "url": "https://pixabay.com/videos/id-219797/"
   }
 }
