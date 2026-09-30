@@ -27,3 +27,7 @@ google_sheets_oauth.json
 shorts/projects/*/output/
 shorts/projects/*/.cache/
 shorts/projects/_test/
+# Stock video clips are large (often 100MB+ in 4K); re-download with `search/pick` instead
+shorts/projects/*/media/*.mp4
+shorts/projects/*/media/*.mov
+shorts/projects/*/media/*.webm

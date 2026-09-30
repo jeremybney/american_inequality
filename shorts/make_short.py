@@ -19,6 +19,19 @@ sys.path.insert(0, str(HERE))
 
 from aiq_shorts import engine, export, media, substack, visuals  # noqa: E402
 
+
+def _load_dotenv(path=HERE / ".env"):
+    """Local, git-ignored KEY=value file (e.g. PIXABAY_API_KEY) for keys not set in the environment."""
+    import os
+    if path.exists():
+        for line in path.read_text().splitlines():
+            k, sep, v = line.strip().partition("=")
+            if sep and k and not k.startswith("#"):
+                os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+
+
+_load_dotenv()
+
 PROJECTS = HERE / "projects"
 
 
