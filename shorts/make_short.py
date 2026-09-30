@@ -201,10 +201,33 @@ def cmd_render(a):
     export.write_srt(tl, out_dir / "captions.srt")
     export.write_credits(tl, out_dir / "credits.md")
     export.write_post(tl, out_dir / "tiktok_post.txt")
+    (out_dir / "queue_payload.json").write_text(json.dumps(export.queue_payload(tl), indent=2))
     print(f"Done: {video}  ({tl.duration:.1f}s)")
     print(f"      {out_dir / 'script.md'}")
     if tl.ctx.warnings:
         print("Warnings:\n  " + "\n  ".join(tl.ctx.warnings))
+
+
+def cmd_apply_edits(a):
+    """Apply script edits (from the Shorts Queue page) to storyboard `say` lines."""
+    pdir = project(a.slug)
+    edits = json.loads(Path(a.edits).read_text())
+    edits = edits.get("script_edits", edits) if isinstance(edits, dict) else edits
+    sb_path = pdir / "storyboard.json"
+    sb = json.loads(sb_path.read_text())
+    changed = 0
+    for e in edits:
+        spec = sb["scenes"][int(e["scene"])]
+        say = spec.get("say", [])
+        say = [say] if isinstance(say, str) else list(say)
+        j, text = int(e.get("line", 0)), str(e["text"]).strip()
+        if j < len(say) and say[j] != text:
+            print(f"  scene {e['scene'] + 1}: {say[j]!r}\n        -> {text!r}")
+            say[j] = text
+            changed += 1
+        spec["say"] = [s for s in say if s]
+    sb_path.write_text(json.dumps(sb, indent=2, ensure_ascii=False) + "\n")
+    print(f"{changed} line(s) changed. Check timing and voice with `script`, then `render`.")
 
 
 def cmd_script(a):
@@ -216,6 +239,7 @@ def cmd_script(a):
     export.write_script(tl, out_dir / "script.md")
     export.write_srt(tl, out_dir / "captions.srt")
     export.write_post(tl, out_dir / "tiktok_post.txt")
+    (out_dir / "queue_payload.json").write_text(json.dumps(export.queue_payload(tl), indent=2))
     print(f"{tl.duration:.1f}s, {len(tl.cues)} lines -> {out_dir / 'script.md'}")
 
 
@@ -284,6 +308,11 @@ def main():
     p = sub.add_parser("script", help="write script.md / captions.srt without rendering video")
     p.add_argument("slug")
     p.set_defaults(fn=cmd_script)
+
+    p = sub.add_parser("apply-edits", help="apply script edits (JSON from the Shorts Queue) to the storyboard")
+    p.add_argument("slug")
+    p.add_argument("edits", help="JSON file: [{scene, line, text}] or a queue document with script_edits")
+    p.set_defaults(fn=cmd_apply_edits)
 
     p = sub.add_parser("render", help="render the final video + script")
     p.add_argument("slug")

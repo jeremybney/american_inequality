@@ -32,7 +32,9 @@ is a worked example.
 The user drops Substack links into the **Shorts Queue** page:
 https://claude.ai/artifact/Pi2uynjVTBEhzNg9bDMBSB
 Its database collection `queue` holds one document per post (id = the post slug):
-`{url, slug, title?, notes, status: queued|making|ready|posted, added_at, updated_at, result?}`.
+`{url, slug, title?, notes, status: queued|making|edits|ready|posted, added_at, updated_at, result?,
+runtime?, script?: [{scene, line, text, shot}], post?: {headline, caption, cta, hashtags, url},
+script_edits?: [{scene, line, text}]}`.
 
 When the user says "make the queued shorts" (or similar):
 1. `ArtifactData` `list` of collection `queue` on that URL. Take items with `status: "queued"`,
@@ -40,11 +42,22 @@ When the user says "make the queued shorts" (or similar):
 2. For each one, `update` it (pinned with `if_version`) to `status: "making"` and set `title`
    once `new` has fetched the article. Honor its `notes` (angle, stat to lead with) when writing the story.
 3. Run the pipeline below for it.
-4. When the MP4 is rendered, `update` it to `status: "ready"`, `updated_at` now, and a one-line
-   `result` (runtime, scene count, where the files are). Send the user the MP4 and `script.md`.
+4. When the MP4 is rendered, `update` it (via `file_path`) with `output/queue_payload.json`
+   (runtime, script lines, TikTok post) plus `status: "ready"`, `updated_at` now, `script_edits: []`,
+   and a one-line `result` (runtime, scene count, where the files are). The page then shows the
+   script as editable lines and the post with copy buttons. Send the user the MP4 and `script.md`.
 5. If a link fails (not a Substack post, fetch blocked), set `status: "queued"` again and put
    the reason in `result`, so the page shows it.
 The user marks videos "posted" themselves on the page.
+
+When the user says "apply my script edits":
+1. `list` the queue; take items with `status: "edits"`. Save each item's `script_edits` to a
+   JSON file and run `apply-edits <slug> <file>` (it swaps the edited `say` lines into the storyboard).
+2. Keep the user's wording exactly. Run `script <slug>`. If the edit breaks a house rule (over
+   75s, a colon), don't silently rewrite their line. Say which rule, and propose a trim to a
+   different line or ask. Retime visuals (`at` values) so they still land on the edited words.
+3. Re-render, push the new `queue_payload.json` with `status: "ready"` and `script_edits: []`,
+   and send the new MP4.
 
 ## Step 1: Fetch
 `new` calls Substack's public API and saves `article.json` (metadata),
@@ -119,8 +132,19 @@ If it runs long, cut words and then whole beats, never speed up the voice.
 - Use motion early: stock footage or a photo with a push-in for the first two shots.
 
 ### The story
-Write the narration first, as one paragraph, the way the author would explain the article
-to someone across the table. Then split it into scenes. The order is almost always:
+**Build the script from the article itself.** Follow the article's own order of ideas, and
+reuse its sentences wherever they can be read aloud, lightly shortened. The author's
+sentences are the most natural-sounding source, so start from them rather than
+paraphrasing. Example: the article's "1976 marked the first year Boomers were eligible to run
+for Congress… The then-young Boomers took over D.C." becomes "1976 was the first year Boomers
+could run for Congress, and they took over D.C."
+
+Every sentence must make sense on its own, with every stat tied to what it measures. Avoid
+pronouns or "that" that point back to a previous scene ("That was with only a quarter of the
+population" fails). Say "By 2013 they held sixty percent of Congress while making up only a
+quarter of the population."
+
+Write the narration first, as one paragraph, then split it into scenes. The order is almost always:
 1. The headline contrast in two short sentences, each over its own shot.
 2. One sentence pointing into the story ("We looked at how that happened, starting with the baby boom.").
 3. How it started, with a date and a scale number.
@@ -152,7 +176,12 @@ Example in the right voice (from the generational wealth video):
 - Every number comes from the article (or its cited source) and goes in that scene's
   `source`. If the article names no source, credit the article. Pick the 6–8 numbers that
   carry the story, not every number.
-- `post.caption`: one or two plain sentences plus 5–8 `post.hashtags`.
+- **TikTok post** in `storyboard.post`, written to `output/tiktok_post.md` and the queue page:
+  - `headline`: the TikTok title / cover text, 4–9 words, a plain statement of the story
+    ("How Boomers ended up with half of America's wealth").
+  - `caption`: two or three plain sentences in the author's voice, with the key numbers.
+  - `cta`: "Full story and interactive charts at the link in bio." (or similar)
+  - `hashtags`: 5–8, topical, no filler tags.
 
 ### Visuals per beat
 - Real photos or footage for places, institutions, people and eras (Step 2). Stock clips

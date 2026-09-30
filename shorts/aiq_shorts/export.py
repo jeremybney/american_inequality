@@ -30,6 +30,8 @@ def describe(spec):
         return "; ".join(bits)
     if t == "article_card":
         return "Article card" + (f" + chips {', '.join(spec.get('chips', []))}" if spec.get("chips") else "")
+    if t in ("figure", "map"):
+        return f"Article chart: {spec.get('source') or spec.get('media', '')}"
     if t == "outro":
         return "End card: wordmark + URL"
     title = spec.get("title") or spec.get("kicker") or spec.get("text", "")
@@ -86,10 +88,35 @@ def write_credits(tl, path):
     Path(path).write_text("# On-screen sources & credits\n\n" + "\n".join(out) + "\n")
 
 
-def write_post(tl, path):
+def post_parts(tl):
     post = tl.storyboard.get("post", {})
     art = tl.ctx.article
-    text = post.get("caption", art.get("subtitle", ""))
+    headline = post.get("headline") or art.get("title", "")
+    caption = post.get("caption") or art.get("subtitle", "")
+    cta = post.get("cta", "Full story at the link in bio.")
     tags = " ".join("#" + h.lstrip("#") for h in post.get("hashtags", []))
-    body = [text, "", f"Full story: {art.get('url', '')}", "", tags]
-    Path(path).write_text("\n".join(body).strip() + "\n")
+    return {"headline": headline, "caption": caption, "cta": cta, "hashtags": tags, "url": art.get("url", "")}
+
+
+def write_post(tl, path):
+    """TikTok post: a headline (title / first line / cover text) and the caption to paste."""
+    p = post_parts(tl)
+    paste = "\n\n".join(x for x in [p["headline"], p["caption"], p["cta"], p["hashtags"]] if x)
+    md = [f"# TikTok post: {tl.ctx.article.get('title', '')}", "",
+          "## Headline", "(TikTok title, cover text, and the first line people see)", "", p["headline"], "",
+          "## Caption", "", p["caption"], "", p["cta"], "",
+          "## Hashtags", "", p["hashtags"], "",
+          "## Everything to paste", "", "```", paste, "```", "",
+          f"Article: {p['url']}", ""]
+    Path(path).with_suffix(".md").write_text("\n".join(md))
+    Path(path).write_text(paste + "\n")
+
+
+def queue_payload(tl):
+    """What the Shorts Queue page shows for a finished video: script lines (editable) and the post."""
+    lines = []
+    for i, spec in enumerate(tl.storyboard["scenes"]):
+        say = spec.get("say", [])
+        for j, text in enumerate([say] if isinstance(say, str) else say):
+            lines.append({"scene": i, "line": j, "text": text, "shot": describe(spec)[:80]})
+    return {"runtime": round(tl.duration, 1), "script": lines, "post": post_parts(tl)}
