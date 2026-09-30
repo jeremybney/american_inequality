@@ -62,6 +62,8 @@ A full-bleed real photo with a slow Ken Burns move, or a video clip.
 - `focus`: where to centre the 9:16 crop, `[x, y]` from 0 to 1.
 - `zoom` `[from, to]`: 1.0 is the full frame, >1 pushes in. `pan`: centre point from → to.
 - `dim`: darken 0 to 1 (default 0.3). `scrim: false` removes the bottom gradient.
+- `blur`: soften the photo (px, e.g. 6 to 12) so a `stat` or headline sits on top of a recognisable but quiet scene.
+- `query`: the photo search for this scene (e.g. `"Los Angeles aerial single-family homes"`). `make_short.py autofill <slug>` fetches it into `media` if the file is missing. Add `"query_source": "pexels"` for stock photos; `video` scenes always search Pexels clips.
 - `headline.text` may mark the highlight inline with braces: `"Boomers own {half} of the wealth"`. It can also take `size`, `y` (0 to 1, default 0.34), `cps` (typing speed), `at`.
 - `chip`: `"Topic · American Inequality"`. The text after the last `·` is set in navy.
 
@@ -69,7 +71,7 @@ Overlays (`kind`):
 | kind | fields | looks like |
 |---|---|---|
 | `stamp` | `text`, `x`, `y`, `angle`, `color`, `size`, `at` | outlined label, e.g. "FREIGHT ONLY" |
-| `stat` | `value`, `prefix`, `suffix`, `decimals`, `label`, `y`, `color`, `at`, `count` | giant count-up over the photo ("$44M") |
+| `stat` | `value`, `prefix`, `suffix`, `decimals`, `label`, `y`, `color`, `at`, `count` | giant count-up over the photo ("$44M"); pair with `blur` |
 | `tag` | `text`, `x`, `y`, `background`, `color` | orange pill label ("the 4% that's metered:") |
 | `callout` | `text`, `sub`, `x`, `y`, `point: [x, y]`, `color` | value box with a leader line ("$0.00") |
 | `line_draw` | `points: [[x, y], …]`, `draw`, `width`, `color` | a line tracing itself across the photo (drawn under the headline) |

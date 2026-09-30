@@ -18,7 +18,7 @@ import urllib.request
 from functools import lru_cache
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageEnhance, ImageOps
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps
 
 from . import theme as T
 from .gfx import font
@@ -203,11 +203,14 @@ def grade(im, dim=0.0, saturation=0.92, contrast=1.06):
 
 
 @lru_cache(maxsize=16)
-def load_still(path, focus=(0.5, 0.5), dim=0.0):
-    """Load a photo, cover-crop it to 9:16 with headroom for a Ken Burns move."""
+def load_still(path, focus=(0.5, 0.5), dim=0.0, blur=0):
+    """Load a photo, cover-crop it to 9:16 with headroom for a Ken Burns move.
+    `blur` (px) softens it so a stat or headline can sit on top."""
     im = ImageOps.exif_transpose(Image.open(path)).convert("RGB")
     tw, th = int(T.W * OVERSCAN), int(T.H * OVERSCAN)
     im = ImageOps.fit(im, (tw, th), method=Image.LANCZOS, centering=focus)
+    if blur:
+        im = im.filter(ImageFilter.GaussianBlur(blur))
     return grade(im, dim)
 
 

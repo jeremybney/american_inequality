@@ -12,7 +12,8 @@ write the script. Work from the repo root.
 ```
 python shorts/make_short.py new <substack-url>            # 1. fetch article → shorts/projects/<slug>/
 # 2. read article.md, write storyboard.json
-python shorts/make_short.py search <slug> "<query>"        # 3. find real photos (Wikimedia)
+python shorts/make_short.py autofill <slug>                # 3. fetch every scene's `query` photo, then review
+python shorts/make_short.py search <slug> "<query>"        #    or search by hand (Wikimedia)
 python shorts/make_short.py search <slug> "<query>" --pexels --video   #    real footage (needs PEXELS_API_KEY)
 python shorts/make_short.py pick <slug> <n> --as hook      #    save candidate #n as media/hook.<ext>
 python shorts/make_short.py stills <slug>                  # 4. key-frame sheet → output/stills.png (LOOK AT IT)
@@ -51,7 +52,12 @@ The formula from the reference videos:
    - before vs after → `then_now`
    - one shocking figure → `big_number`, or `stat` overlay on a photo
    - causes / to-dos → `checklist`
-   Alternate charts with an occasional photo beat so it never feels like a slideshow.
+   Alternate charts with photo beats: roughly **one real photo every 2–3 scenes**, so it
+   never feels like a slideshow. Whenever the script names a place, building or thing
+   (a city, a neighbourhood, a type of home, a landmark), show *that* place: e.g.
+   "Los Angeles" → an LA street or aerial, "D.C." → D.C. rowhouses or the Capitol,
+   "three-bedroom homes" → a real family house. A strong pattern is a **blurred real
+   photo with a giant count-up stat on top** (`blur: 8`, `overlays: [{"kind": "stat", …}]`).
 5. **Turn / so-what:** a `statement` scene with the takeaway, key words in {braces}.
 6. **Outro:** "Full story on American Inequality" over the end card.
 
@@ -66,6 +72,11 @@ Script rules:
 - Fill `post.caption` (one or two sentences) and 5–8 `post.hashtags`.
 
 ## Step 3: Media (no AI slop)
+Give every photo scene a specific `query` (place + subject, e.g. "Washington DC rowhouses
+Capitol Hill"), then run `autofill`: it saves the top result and a contact sheet per scene at
+`.cache/candidates/<name>/contact_sheet.jpg`. Review each sheet and, if a better candidate
+exists, `search` + `pick` it by hand.
+
 Use **real photographs and footage of real places**. Never generated images.
 - Search Wikimedia Commons first: it's freely licensed and attributed, and the credit
   prints on screen automatically. Use Pexels (`--pexels`, add `--video` for clips)

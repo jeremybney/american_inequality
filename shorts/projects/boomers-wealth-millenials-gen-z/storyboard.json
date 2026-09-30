@@ -1,40 +1,76 @@
 {
-  "title": "The Great Generational Wealth Divide — TikTok",
+  "title": "The Great Generational Wealth Divide \u2014 TikTok",
   "draft": true,
-  "draft_label": "DRAFT · VERIFY NUMBERS",
+  "draft_label": "DRAFT \u00b7 VERIFY NUMBERS",
   "wpm": 170,
   "today": "2026-09-30",
-  "article": {"section": "The Dividing Line"},
+  "article": {
+    "section": "The Dividing Line"
+  },
   "notes": [
     "DRAFT: the article body could not be fetched from this environment. Chart values are approximations of the Federal Reserve Distributional Financial Accounts and MUST be replaced with the figures in the article before posting.",
-    "Media: hook.jpg (suburban single-family home / retirees) and renters.jpg (young people in a small rental / apartment block) still need real photos."
+    "Media: photo scenes carry a `query` (Los Angeles homes, Washington DC rowhouses). Run `autofill` once Wikimedia/Pexels are reachable, then review the contact sheets; swap in the article's own LA / DC / multi-bedroom-home references when rebuilding from the full text."
   ],
   "post": {
     "caption": "Boomers are 1 in 5 Americans but hold half the wealth. Millennials and Gen Z hold the debt. Here's why the gap keeps growing.",
-    "hashtags": ["inequality", "wealthgap", "boomers", "millennials", "genz", "economics", "housing", "studentdebt"]
+    "hashtags": [
+      "inequality",
+      "wealthgap",
+      "boomers",
+      "millennials",
+      "genz",
+      "economics",
+      "housing",
+      "studentdebt"
+    ]
   },
   "scenes": [
     {
       "type": "hook",
       "media": "hook.jpg",
-      "zoom": [1.0, 1.1],
-      "headline": {"text": "Boomers own half of America's wealth.", "highlight": "Millennials own the debt."},
-      "chip": "Generational wealth · American Inequality",
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "headline": {
+        "text": "Boomers own half of America's wealth.",
+        "highlight": "Millennials own the debt."
+      },
+      "chip": "Generational wealth \u00b7 American Inequality",
       "say": [
         "Baby Boomers are about one in five Americans,",
         "but they own half of all the wealth in the country."
-      ]
+      ],
+      "query": "Los Angeles aerial single-family homes"
     },
     {
       "type": "photo",
       "media": "renters.jpg",
-      "zoom": [1.08, 1.0],
-      "overlays": [{"kind": "stamp", "text": "RENT DUE", "y": 0.36, "at": 0.6, "angle": -4}],
-      "say": ["Millennials and Gen Z, meanwhile, hold most of the debt."]
+      "zoom": [
+        1.08,
+        1.0
+      ],
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "RENT DUE",
+          "y": 0.36,
+          "at": 0.6,
+          "angle": -4
+        }
+      ],
+      "say": [
+        "Millennials and Gen Z, meanwhile, hold most of the debt."
+      ],
+      "query": "Washington DC rowhouses street"
     },
     {
       "type": "article_card",
-      "chips": ["WHO OWNS IT", "WHY", "WHAT FIXES IT"],
+      "chips": [
+        "WHO OWNS IT",
+        "WHY",
+        "WHAT FIXES IT"
+      ],
       "say": [
         "In March I wrote about the great generational wealth divide.",
         "Here's who owns what, why it happened, and what fixes it."
@@ -44,16 +80,44 @@
       "type": "stacked",
       "title": "Boomers' share of America",
       "rows": [
-        {"label": "Share of population", "at": 0.3, "segments": [
-          {"label": "Boomers", "value": 21, "color": "navy", "suffix": "%"},
-          {"label": "Everyone else", "value": 79, "color": "white", "suffix": "%"}
-        ]},
-        {"label": "Share of household wealth", "at": 2.4, "segments": [
-          {"label": "Boomers", "value": 51, "color": "navy", "suffix": "%"},
-          {"label": "Everyone else", "value": 49, "color": "white", "suffix": "%"}
-        ]}
+        {
+          "label": "Share of population",
+          "at": 0.3,
+          "segments": [
+            {
+              "label": "Boomers",
+              "value": 21,
+              "color": "navy",
+              "suffix": "%"
+            },
+            {
+              "label": "Everyone else",
+              "value": 79,
+              "color": "white",
+              "suffix": "%"
+            }
+          ]
+        },
+        {
+          "label": "Share of household wealth",
+          "at": 2.4,
+          "segments": [
+            {
+              "label": "Boomers",
+              "value": 51,
+              "color": "navy",
+              "suffix": "%"
+            },
+            {
+              "label": "Everyone else",
+              "value": 49,
+              "color": "white",
+              "suffix": "%"
+            }
+          ]
+        }
       ],
-      "source": "Federal Reserve Distributional Financial Accounts · U.S. Census Bureau",
+      "source": "Federal Reserve Distributional Financial Accounts \u00b7 U.S. Census Bureau",
       "say": [
         "Boomers are about twenty-one percent of the population.",
         "They hold fifty-one percent of the wealth."
@@ -63,15 +127,41 @@
       "type": "waffle",
       "title": "Every $100 of U.S. household wealth",
       "groups": [
-        {"label": "Boomers", "count": 51, "color": "navy"},
-        {"label": "Gen X", "count": 26, "color": "white"},
-        {"label": "Silent", "count": 12, "color": "lightblue"},
-        {"label": "Millennials", "count": 10, "color": "yellow"},
-        {"label": "Gen Z", "count": 1, "color": "green"}
+        {
+          "label": "Boomers",
+          "count": 51,
+          "color": "navy"
+        },
+        {
+          "label": "Gen X",
+          "count": 26,
+          "color": "white"
+        },
+        {
+          "label": "Silent",
+          "count": 12,
+          "color": "lightblue"
+        },
+        {
+          "label": "Millennials",
+          "count": 10,
+          "color": "yellow"
+        },
+        {
+          "label": "Gen Z",
+          "count": 1,
+          "color": "green"
+        }
       ],
       "fill_at": 0.6,
       "fill": 2.4,
-      "big": {"value": 10, "prefix": "$", "label": "for Millennials", "color": "yellow", "at": 3.4},
+      "big": {
+        "value": 10,
+        "prefix": "$",
+        "label": "for Millennials",
+        "color": "yellow",
+        "at": 3.4
+      },
       "source": "Federal Reserve Distributional Financial Accounts",
       "say": [
         "Out of every hundred dollars of household wealth,",
@@ -83,10 +173,27 @@
       "title": "Share of wealth at the same age",
       "subtitle": "average age ~35",
       "bars": [
-        {"label": "Boomers", "sublabel": "in 1990", "value": 21, "suffix": "%", "color": "navy"},
-        {"label": "Millennials", "sublabel": "in 2025", "value": 10, "suffix": "%", "color": "white"}
+        {
+          "label": "Boomers",
+          "sublabel": "in 1990",
+          "value": 21,
+          "suffix": "%",
+          "color": "navy"
+        },
+        {
+          "label": "Millennials",
+          "sublabel": "in 2025",
+          "value": 10,
+          "suffix": "%",
+          "color": "white"
+        }
       ],
-      "annotation": {"text": "½ as much", "bar": 1, "at": 3.2, "color": "yellow"},
+      "annotation": {
+        "text": "\u00bd as much",
+        "bar": 1,
+        "at": 3.2,
+        "color": "yellow"
+      },
       "source": "Federal Reserve Distributional Financial Accounts",
       "say": [
         "And this isn't just about age.",
@@ -96,7 +203,12 @@
     {
       "type": "checklist",
       "title": "Why it's harder to build wealth",
-      "items": ["Housing costs", "Student debt", "Cost of living", "Slow wage growth"],
+      "items": [
+        "Housing costs",
+        "Student debt",
+        "Cost of living",
+        "Slow wage growth"
+      ],
       "stagger": 0.9,
       "say": [
         "Expensive housing, student debt,",
@@ -114,7 +226,9 @@
     },
     {
       "type": "outro",
-      "say": ["The full breakdown, and what fixes it, is on American Inequality."]
+      "say": [
+        "The full breakdown, and what fixes it, is on American Inequality."
+      ]
     }
   ]
 }

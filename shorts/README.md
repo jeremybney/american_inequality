@@ -25,6 +25,7 @@ python shorts/make_short.py new https://americaninequality.substack.com/p/<slug>
 
 #  write shorts/projects/<slug>/storyboard.json  (see storyboard_reference.md)
 
+python shorts/make_short.py autofill <slug>                            # fetch each scene's `query` photo
 python shorts/make_short.py search <slug> "suburban house florida"      # Wikimedia Commons
 python shorts/make_short.py search <slug> "apartment renters" --pexels --video   # needs PEXELS_API_KEY
 python shorts/make_short.py pick <slug> 3 --as hook                     # → media/hook.jpg (+ credit)

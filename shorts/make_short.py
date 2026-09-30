@@ -74,6 +74,38 @@ def cmd_pick(a):
     print(f"Saved media/{name}  ({c['credit']})")
 
 
+def cmd_autofill(a):
+    """For every photo scene whose media file is missing, search its `query` and
+    save a contact sheet + the top candidate, so a link alone yields a full draft."""
+    pdir = project(a.slug)
+    sb = json.loads((pdir / "storyboard.json").read_text())
+    for i, sc in enumerate(sb["scenes"]):
+        name, q = sc.get("media"), sc.get("query")
+        if sc["type"] not in ("photo", "hook", "video") or not name or not q:
+            continue
+        if (pdir / "media" / name).exists() and not a.force:
+            continue
+        video = sc["type"] == "video" or Path(name).suffix.lower() in media.VIDEO_EXT
+        source = "pexels" if (video or sc.get("query_source") == "pexels") else "wikimedia"
+        try:
+            cands = media.search(q, source, 8, video)
+        except Exception as e:  # noqa: BLE001
+            print(f"  scene {i}: search failed for {q!r}: {e}")
+            continue
+        if not cands:
+            print(f"  scene {i}: no results for {q!r}")
+            continue
+        cdir = pdir / ".cache" / "candidates" / Path(name).stem
+        cdir.mkdir(parents=True, exist_ok=True)
+        (cdir / "candidates.json").write_text(json.dumps(cands, indent=2))
+        media.contact_sheet(cands, cdir, cdir / "contact_sheet.jpg")
+        c = cands[0]
+        headers = media._pexels_headers() if c["source"] == "pexels" else None
+        media.download(c["url"], pdir / "media" / name, headers)
+        media.save_credit(pdir / "media", name, {"credit": c["credit"], "url": c.get("page")})
+        print(f"  scene {i}: {name} <- {c['title'][:60]}  (sheet: {cdir / 'contact_sheet.jpg'})")
+
+
 def cmd_stills(a):
     pdir = project(a.slug)
     out = pdir / "output" / "stills.png"
@@ -146,6 +178,11 @@ def main():
     p.add_argument("n", type=int)
     p.add_argument("--as", dest="as_name", required=True)
     p.set_defaults(fn=cmd_pick)
+
+    p = sub.add_parser("autofill", help="fetch photos for every scene that has a `query` but no file")
+    p.add_argument("slug")
+    p.add_argument("--force", action="store_true", help="re-fetch even if the file exists")
+    p.set_defaults(fn=cmd_autofill)
 
     p = sub.add_parser("stills", help="render a key-frame contact sheet")
     p.add_argument("slug")

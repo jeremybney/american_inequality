@@ -8,7 +8,7 @@ Every scene is configured from a storyboard entry; see storyboard_reference.md.
 from datetime import date, datetime
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageOps
+from PIL import Image, ImageDraw, ImageFilter, ImageOps
 
 from . import gfx as G
 from . import media as M
@@ -141,7 +141,7 @@ class PhotoScene(Scene):
                                                  self.spec.get("start", 0), focus)
             self.dim = dim
         elif self.path and self.path.exists():
-            self.still = M.load_still(str(self.path), focus, dim)
+            self.still = M.load_still(str(self.path), focus, dim, self.spec.get("blur", 0))
         else:
             self.ctx.warn(f"media not found for scene: {self.media_name!r} (placeholder used)")
             self.still = M.fallback_backdrop(f"add media: {self.media_name or 'none'}")
@@ -161,6 +161,8 @@ class PhotoScene(Scene):
             idx = min(int(t * T.FPS), len(self.frames) - 1)
             fr = Image.open(self.frames[idx]).convert("RGB")
             fr = M.grade(fr, self.dim)
+            if self.spec.get("blur"):
+                fr = fr.filter(ImageFilter.GaussianBlur(self.spec["blur"]))
             z = self.spec.get("zoom", [1.0, 1.05])
             s = z[0] + (z[1] - z[0]) * p
             if abs(s - 1) > 1e-3:
