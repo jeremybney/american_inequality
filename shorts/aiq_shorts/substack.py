@@ -35,6 +35,13 @@ def html_to_text(html):
     return "\n\n".join(blocks).strip()
 
 
+def original_image_url(url):
+    """Substack CDN links wrap the original upload (…/fetch/<opts>/https%3A%2F%2F…);
+    return the original full-resolution file when present."""
+    m = re.search(r"/(https?%3A%2F%2F.+)$", url or "")
+    return urllib.parse.unquote(m.group(1)) if m else url
+
+
 def inline_images(html):
     from bs4 import BeautifulSoup
     soup = BeautifulSoup(html or "", "html.parser")
@@ -45,9 +52,11 @@ def inline_images(html):
             continue
         src = img.get("src") or ""
         srcset = img.get("srcset") or ""
-        if srcset:  # take the largest candidate
-            cands = [c.strip().split(" ")[0] for c in srcset.split(",") if c.strip()]
-            src = cands[-1] if cands else src
+        if srcset:  # take the widest candidate (Substack URLs contain commas, so no naive split)
+            cands = re.findall(r"(\S+)\s+(\d+)w", srcset)
+            if cands:
+                src = max(cands, key=lambda c: int(c[1]))[0]
+        src = original_image_url(src)
         cap = fig.find("figcaption") if fig.name == "figure" else None
         if src and src not in [o["url"] for o in out]:
             out.append({"url": src, "caption": cap.get_text(" ", strip=True) if cap else "",
@@ -81,7 +90,7 @@ def fetch(url, project_dir):
         "section": (post.get("section") or {}).get("name") if isinstance(post.get("section"), dict) else None,
         "publication": (post.get("publication") or {}).get("name") if isinstance(post.get("publication"), dict)
         else "American Inequality",
-        "cover_image": post.get("cover_image"),
+        "cover_image": original_image_url(post.get("cover_image")),
         "wordcount": post.get("wordcount"),
         "images": inline_images(post.get("body_html")),
     }

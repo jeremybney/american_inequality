@@ -17,7 +17,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
-from aiq_shorts import engine, export, media, substack  # noqa: E402
+from aiq_shorts import engine, export, media, substack, visuals  # noqa: E402
 
 PROJECTS = HERE / "projects"
 
@@ -71,6 +71,20 @@ def cmd_pick(a):
     headers = media._pexels_headers() if c["source"] == "pexels" else None
     media.download(c["url"], pdir / "media" / name, headers)
     media.save_credit(pdir / "media", name, {"credit": c["credit"], "url": c.get("page")})
+    print(f"Saved media/{name}  ({c['credit']})")
+
+
+def cmd_plan(a):
+    pdir = project(a.slug)
+    visuals.plan(pdir, top=a.top, per=a.per, fetch=not a.no_fetch,
+                 only=set(a.only.split(",")) if a.only else None)
+    print(f"Visual plan: {pdir / 'visual_plan.md'}")
+    print(f"Sheets:      {pdir / '.cache' / 'plan'}/*.jpg  (article_images.jpg = the article's own images)")
+
+
+def cmd_use(a):
+    pdir = project(a.slug)
+    name, c = visuals.use_candidate(pdir, a.key, a.n, a.as_name)
     print(f"Saved media/{name}  ({c['credit']})")
 
 
@@ -178,6 +192,21 @@ def main():
     p.add_argument("n", type=int)
     p.add_argument("--as", dest="as_name", required=True)
     p.set_defaults(fn=cmd_pick)
+
+    p = sub.add_parser("plan", help="rank the photos this story needs + fetch candidates")
+    p.add_argument("slug")
+    p.add_argument("--top", type=int, default=12, help="number of photo subjects")
+    p.add_argument("--per", type=int, default=6, help="candidates per subject")
+    p.add_argument("--no-fetch", action="store_true", help="rank subjects only, no image search")
+    p.add_argument("--only", help="comma-separated subject keys to (re)fetch, e.g. congress,housing")
+    p.set_defaults(fn=cmd_plan)
+
+    p = sub.add_parser("use", help="save candidate n of a visual-plan subject into media/")
+    p.add_argument("slug")
+    p.add_argument("key", help="subject key from visual_plan.md, e.g. congress, place_los_angeles")
+    p.add_argument("n", type=int)
+    p.add_argument("--as", dest="as_name", required=True)
+    p.set_defaults(fn=cmd_use)
 
     p = sub.add_parser("autofill", help="fetch photos for every scene that has a `query` but no file")
     p.add_argument("slug")

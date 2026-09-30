@@ -1,0 +1,558 @@
+{
+  "audience": "everyone",
+  "audience_before_archived": null,
+  "canonical_url": "https://americaninequality.substack.com/p/boomers-wealth-millenials-gen-z",
+  "default_comment_sort": null,
+  "editor_v2": false,
+  "exempt_from_archive_paywall": false,
+  "free_unlock_required": false,
+  "id": 191242213,
+  "podcast_art_url": null,
+  "podcast_duration": null,
+  "podcast_preview_upload_id": null,
+  "podcast_upload_id": null,
+  "podcast_url": null,
+  "post_date": "2026-03-18T11:23:41.615Z",
+  "updated_at": "2026-08-14T19:00:21.523Z",
+  "publication_id": 267573,
+  "search_engine_description": null,
+  "search_engine_title": null,
+  "section_id": 433469,
+  "should_send_free_preview": false,
+  "show_guest_bios": true,
+  "slug": "boomers-wealth-millenials-gen-z",
+  "social_title": "The Great Generational Wealth Divide",
+  "subtitle": "Baby Boomers own half of all wealth in America, while Millennials and Gen-Z own the majority of debt",
+  "teaser_post_eligible": true,
+  "title": "The Great Generational Wealth Divide",
+  "type": "newsletter",
+  "video_upload_id": null,
+  "write_comment_permissions": "everyone",
+  "meter_type": "none",
+  "live_stream_id": null,
+  "is_published": true,
+  "restacks": 21,
+  "reactions": {
+    "\u2764": 118
+  },
+  "top_exclusions": [],
+  "pins": [
+    267573
+  ],
+  "section_pins": [],
+  "has_shareable_clips": false,
+  "previous_post_slug": "trees-and-inequality",
+  "next_post_slug": "the-role-of-home-prices-in-education-reading-math",
+  "cover_image": "https://substackcdn.com/image/fetch/$s_!eFbg!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png",
+  "cover_image_is_square": false,
+  "cover_image_is_explicit": false,
+  "videoUpload": null,
+  "podcastFields": {
+    "post_id": 191242213,
+    "podcast_episode_number": null,
+    "podcast_season_number": null,
+    "podcast_episode_type": null,
+    "should_syndicate_to_other_feed": null,
+    "syndicate_to_section_id": null,
+    "hide_from_feed": false,
+    "free_podcast_url": null,
+    "free_podcast_duration": null,
+    "preview_contains_ad": false,
+    "was_imported_self_serve_sync": false,
+    "draft_free_podcast_url": null,
+    "draft_free_podcast_duration": null
+  },
+  "podcastUpload": null,
+  "podcastPreviewUpload": null,
+  "voiceover_upload_id": null,
+  "voiceoverUpload": null,
+  "has_voiceover": false,
+  "description": "Baby Boomers own half of all wealth in America, while younger generations own the majority of debt",
+  "body_html": "<p>Baby Boomers have spent the last half-century molding America in their image. They were born into an era of unprecedented expansion and today hold the keys to the economic, social, and political kingdoms of this country. Now, as the youngest Boomers reach the age of retirement, and the oldest move into their 80\u2019s, the Boomer generation is facing its final act\u2014and the economic aftershocks will be felt for generations to come.</p><div><hr></div><p style=\"text-align: center;\">Welcome to the The Dividing Line from <a href=\"https://americaninequality.substack.com/?utm_campaign=profile_chips\">American Inequality</a>.</p><p style=\"text-align: center;\"><em>These visuals are all interactive and available with more information below.</em></p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://public.flourish.studio/story/3606576/&quot;,&quot;text&quot;:&quot;Interactive Data Story&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://public.flourish.studio/story/3606576/\"><span>Interactive Data Story</span></a></p><div><hr></div><p>Almost half all wealth in America is owned by Boomers, while half all debt is owned by Millennials. Expensive housing markets, growing debt, increased cost of living, and slow wage growth all are factors at play in the struggle to accumulate wealth for younger Americans. As younger, more diverse, and more educated generations compete for a larger hold on the country\u2019s attention and power, it may be too hard of a climb for many. While Boomers came of age in an era of \u2018opportunity for the taking,\u2019 successive generations are finding those gateways to the American middle class have been bolted shut. The upward climb feels less like a journey and more like a treadmill, yet so many Boomers still race ahead.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!YecB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!YecB!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png 424w, https://substackcdn.com/image/fetch/$s_!YecB!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png 848w, https://substackcdn.com/image/fetch/$s_!YecB!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png 1272w, https://substackcdn.com/image/fetch/$s_!YecB!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!YecB!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png\" width=\"927\" height=\"717\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:717,&quot;width&quot;:927,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:144227,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/191242213?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!YecB!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png 424w, https://substackcdn.com/image/fetch/$s_!YecB!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png 848w, https://substackcdn.com/image/fetch/$s_!YecB!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png 1272w, https://substackcdn.com/image/fetch/$s_!YecB!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png 1456w\" sizes=\"100vw\" fetchpriority=\"high\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Voting Population by Generation (1990-2030)</figcaption></figure></div><p>Between 1946 and 1964, approximately 76 million babies were born in America, a surge that increased the nation\u2019s population by more than 50%. On average there were 4 million births per year during the Boomer years, but today there are only 3.6 million births per year, despite the fact that the country is 2.5 times bigger today. In order for birth rates today to be comparable to birth rates during the Boomer years, we would need to have 3x the current amount.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!PcAJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!PcAJ!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png 424w, https://substackcdn.com/image/fetch/$s_!PcAJ!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png 848w, https://substackcdn.com/image/fetch/$s_!PcAJ!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png 1272w, https://substackcdn.com/image/fetch/$s_!PcAJ!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!PcAJ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png\" width=\"970\" height=\"720\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:720,&quot;width&quot;:970,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:50045,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/191242213?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!PcAJ!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png 424w, https://substackcdn.com/image/fetch/$s_!PcAJ!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png 848w, https://substackcdn.com/image/fetch/$s_!PcAJ!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png 1272w, https://substackcdn.com/image/fetch/$s_!PcAJ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Total births per year (1909-2018)</figcaption></figure></div><p>As families grew in size, consumer demand grew too. Families had to purchase new diapers, baby shoes, toys, and more at rates the country had never seen. Televisions in homes became mainstream when Boomers were young children and teens, changing advertising to target young kids. Children were generating $33 billion in retail sales annually. California was building o<a href=\"https://web.archive.org/web/20220309053221/https://laschoolreport.com/wp-content/uploads/2017/03/History-of-Schools-Chronology-1855-1972.pdf\">ne school a week in the 50\u2019s</a>, and Los Angeles alone was spending over $1 million on new schools. In the fall of 1952, 2 million new students were entering schools across America.</p><p>As they grew older, Boomers were leaders during the Civil Rights movement and were the majority on college campuses in the 1960s. Many key historical events of the U.S. in the 20th Century were defined by the Baby Boomer Generation.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!18Pn!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!18Pn!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif 424w, https://substackcdn.com/image/fetch/$s_!18Pn!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif 848w, https://substackcdn.com/image/fetch/$s_!18Pn!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif 1272w, https://substackcdn.com/image/fetch/$s_!18Pn!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!18Pn!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif\" width=\"778\" height=\"530\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/d15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:530,&quot;width&quot;:778,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:1075130,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/gif&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/191242213?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!18Pn!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif 424w, https://substackcdn.com/image/fetch/$s_!18Pn!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif 848w, https://substackcdn.com/image/fetch/$s_!18Pn!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif 1272w, https://substackcdn.com/image/fetch/$s_!18Pn!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p></p><p>1976 marked the first year Boomers were eligible to run for Congress, and immediately a visible shift was apparent. The average age of a member of Congress was 55 in 1965, but fell to 49 in 1981. The then-young Boomers took over D.C. From that point on, many of those members of Congress hung onto their seats for decades. Congress aged as Boomers aged. By 2001, they made up the majority of Congress, and 60% at their peak in 2013, even though they made up only a quarter of the US population. Today, the average age of a Congress member is 60 years old. As we can see from the chart above, almost all members of Congress are older than the districts they represent (as shown by the green dots). Only in a handful of areas (orange dots) are they younger than their districts. In the Senate, not a single senator is younger than the average age of the state they represent.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!pXTE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!pXTE!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif 424w, https://substackcdn.com/image/fetch/$s_!pXTE!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif 848w, https://substackcdn.com/image/fetch/$s_!pXTE!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif 1272w, https://substackcdn.com/image/fetch/$s_!pXTE!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!pXTE!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif\" width=\"800\" height=\"575\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/d1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:575,&quot;width&quot;:800,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:178005,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/gif&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/191242213?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!pXTE!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif 424w, https://substackcdn.com/image/fetch/$s_!pXTE!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif 848w, https://substackcdn.com/image/fetch/$s_!pXTE!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif 1272w, https://substackcdn.com/image/fetch/$s_!pXTE!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Average age of the House and Senate since 1789</figcaption></figure></div><p>Of the last 5 presidents, 4 were boomers. Over a 35-year stretch from 1993 to 2028, 31 of those years will have been led by a Boomer president (Clinton, Bush #2, Obama, &amp; Trump). Notably, the Silent Generation was nearly skipped over entirely, with <a href=\"https://wheresmysunnyporch.com/more-generations/the-u-s-presidents-by-their-generational-cohort/\">Joe Biden</a> standing as its only representative in the Oval Office. The sheer dominance and quantity of children being born during this era is also apparent when comparing the four Boomer presidents\u2019 birthdays \u2013 3 of the 4 were born within 66 days of each other. That grip on power is beginning to loosen and in 2019, Millennials surpassed Baby Boomers as the largest voting population, and Gen X is projected to follow suit by the 2028 election.</p><p>Those older members of Congress passed legislation that reflected the priorities of the older, more powerful majority in America. They placed limits on new housing development, created tax structures that favored the accumulation of wealth, and bolstered retirement protections that younger generations may never see.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!de07!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!de07!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif 424w, https://substackcdn.com/image/fetch/$s_!de07!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif 848w, https://substackcdn.com/image/fetch/$s_!de07!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif 1272w, https://substackcdn.com/image/fetch/$s_!de07!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!de07!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif\" width=\"800\" height=\"616\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/c88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:616,&quot;width&quot;:800,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:2434300,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/gif&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/191242213?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!de07!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif 424w, https://substackcdn.com/image/fetch/$s_!de07!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif 848w, https://substackcdn.com/image/fetch/$s_!de07!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif 1272w, https://substackcdn.com/image/fetch/$s_!de07!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Generation Distribution of Congress</figcaption></figure></div><p>Boomers grew up in an America that looks very different from the America we have today. Immigration was at an all-time low just as the boom began, and the immigrants who did emigrate were mainly from western Europe. In 1945 there were only 38,000 immigrants entering the US. In 1970, only 4.7% of Americans were foreign born, compared to 15.4% in 2025. Immigration since then has grown significantly \u2013 mostly from Asian and Latin American countries in the latter half of the 20th Century, and Central/South America countries in the 21st Century. The world Boomers grew up in was dominated by one universal demographic that\u2019s begun to decline.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!_TR0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F79261bc5-c64b-4404-8ea9-f1b26f7cc153_1220x1224.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!_TR0!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F79261bc5-c64b-4404-8ea9-f1b26f7cc153_1220x1224.png 424w, https://substackcdn.com/image/fetch/$s_!_TR0!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F79261bc5-c64b-4404-8ea9-f1b26f7cc153_1220x1224.png 848w, https://substackcdn.com/image/fetch/$s_!_TR0!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F79261bc5-c64b-4404-8ea9-f1b26f7cc153_1220x1224.png 1272w, https://substackcdn.com/image/fetch/$s_!_TR0!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F79261bc5-c64b-4404-8ea9-f1b26f7cc153_1220x1224.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!_TR0!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F79261bc5-c64b-4404-8ea9-f1b26f7cc153_1220x1224.png\" width=\"1220\" height=\"1224\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/79261bc5-c64b-4404-8ea9-f1b26f7cc153_1220x1224.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1224,&quot;width&quot;:1220,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!_TR0!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F79261bc5-c64b-4404-8ea9-f1b26f7cc153_1220x1224.png 424w, https://substackcdn.com/image/fetch/$s_!_TR0!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F79261bc5-c64b-4404-8ea9-f1b26f7cc153_1220x1224.png 848w, https://substackcdn.com/image/fetch/$s_!_TR0!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F79261bc5-c64b-4404-8ea9-f1b26f7cc153_1220x1224.png 1272w, https://substackcdn.com/image/fetch/$s_!_TR0!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F79261bc5-c64b-4404-8ea9-f1b26f7cc153_1220x1224.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p>At the heart of the immigration debate lies a profound generational disconnect over what it means to \u2018feel at home.\u2019 For a segment of older Americans, the rapid shift toward a more globalized society feels like a departure from the America they had grown up with. In contrast, younger and more educated generations tend to see a pluralistic future not as a threat, but as an evolution. A 2012 Pew Research Survey showed that more than half of White baby Boomers and seniors view the rise of newcomers from other countries as a threat to traditional American values and customs, while this view was the minority of younger generations.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!F3fi!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!F3fi!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png 424w, https://substackcdn.com/image/fetch/$s_!F3fi!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png 848w, https://substackcdn.com/image/fetch/$s_!F3fi!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png 1272w, https://substackcdn.com/image/fetch/$s_!F3fi!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!F3fi!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png\" width=\"956\" height=\"763\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:763,&quot;width&quot;:956,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:60056,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/191242213?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!F3fi!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png 424w, https://substackcdn.com/image/fetch/$s_!F3fi!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png 848w, https://substackcdn.com/image/fetch/$s_!F3fi!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png 1272w, https://substackcdn.com/image/fetch/$s_!F3fi!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Immigration counts per year (1820-2023)</figcaption></figure></div><p>Income inequality has grown significantly since the 1970s, and within the generation itself the majority of wealth is concentrated at the top. In 2022, Boomers owned in total $77 trillion in assets, but the top 10% <a href=\"https://www.pewresearch.org/short-reads/2026/02/11/are-baby-boomers-wealthier-than-previous-generations-of-older-adults/#:~:text=In%202022%2C%20all%20Boomer%20households%20combined%20owned%20%2477%20trillion%20in%20wealth.%20The%20top%2010%25%20of%20Boomer%20households%20held%2071%25%20of%20that%20total%20wealth.\">held 71% of that total wealth</a>. Along with an uneven distribution of wealth, added problems have compounded on top for younger generations. While boomers own the majority of wealth, millennials own about half of all debt (41%) \u2013 almost double Boomers (22%).</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!r0BQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22a980b7-275a-498e-8b78-377137295505_780x791.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!r0BQ!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22a980b7-275a-498e-8b78-377137295505_780x791.png 424w, https://substackcdn.com/image/fetch/$s_!r0BQ!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22a980b7-275a-498e-8b78-377137295505_780x791.png 848w, https://substackcdn.com/image/fetch/$s_!r0BQ!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22a980b7-275a-498e-8b78-377137295505_780x791.png 1272w, https://substackcdn.com/image/fetch/$s_!r0BQ!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22a980b7-275a-498e-8b78-377137295505_780x791.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!r0BQ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22a980b7-275a-498e-8b78-377137295505_780x791.png\" width=\"780\" height=\"791\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/22a980b7-275a-498e-8b78-377137295505_780x791.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:791,&quot;width&quot;:780,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:73726,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/191242213?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22a980b7-275a-498e-8b78-377137295505_780x791.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!r0BQ!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22a980b7-275a-498e-8b78-377137295505_780x791.png 424w, https://substackcdn.com/image/fetch/$s_!r0BQ!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22a980b7-275a-498e-8b78-377137295505_780x791.png 848w, https://substackcdn.com/image/fetch/$s_!r0BQ!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22a980b7-275a-498e-8b78-377137295505_780x791.png 1272w, https://substackcdn.com/image/fetch/$s_!r0BQ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22a980b7-275a-498e-8b78-377137295505_780x791.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Distribution of Wealth (2025). Larger bar equates to larger percent share</figcaption></figure></div><p>Debt has primarily come from higher education costs, which are <a href=\"https://home.treasury.gov/news/featured-stories/how-does-the-well-being-of-young-adults-compare-to-their-parents#:~:text=Figure%205:%20Real%20Median%20Wealth:%20Age%2025%2D39&amp;text=In%20particular%2C%20real%20non%2Dhousing,and%20discourage%20public%20service%20jobs.\">9 times the cost they were in 1989</a>. Other causes of increased debt are rising inflation, slow wage growth, higher childcare costs, and rising cost of living. One surprising and growing source of debt is from credit cards.  In 2025, Millennials ($6,961) <a href=\"https://www.experian.com/blogs/ask-experian/research/credit-card-debt-by-age/#:~:text=Younger%20Generations'%20Credit%20Card%20Debt,Baby%20boomers:%20$6%2C795\">surpassed Boomers</a> ($6,795) in credit card debt. Americans under 60 continue to accrue credit card debt while older Americans are slowing down. Gen X has an average credit card debt of $9,600 \u2013 almost 1.5x higher than any other age group.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!BTbo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!BTbo!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif 424w, https://substackcdn.com/image/fetch/$s_!BTbo!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif 848w, https://substackcdn.com/image/fetch/$s_!BTbo!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif 1272w, https://substackcdn.com/image/fetch/$s_!BTbo!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!BTbo!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif\" width=\"800\" height=\"631\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:631,&quot;width&quot;:800,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:1005818,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/gif&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/191242213?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!BTbo!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif 424w, https://substackcdn.com/image/fetch/$s_!BTbo!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif 848w, https://substackcdn.com/image/fetch/$s_!BTbo!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif 1272w, https://substackcdn.com/image/fetch/$s_!BTbo!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Distribution of Wealth over time (1990-2025). Larger area on graph equates to larger percent share</figcaption></figure></div><p>Housing is another major discrepancy between older and younger generations. Home prices are rising while <a href=\"https://www.scotsmanguide.com/news/single-family-construction-slowed-measurably-in-2025/#:~:text=Total%20building%20permits%20shrank%203.6,multifamily%20sector's%20steeper%2020.3%25%20drop.&amp;text=Wednesday's%20release%20highlights%20a%20slight,below%20December%202024%20levels%2C%20however.\">single family construction is falling</a>. America is building<a href=\"https://www.nytimes.com/2025/11/23/opinion/housing-crisis-america.html#:~:text=The%20core%20of%20the%20problem,2020\"> fewer homes per 100,000 than it did in 1975,</a> and the majority of Americans who are buying homes are Boomers. 41% of all real estate wealth is owned by Boomers, and the homes they own are large homes with few people living in them. <a href=\"https://fortune.com/2024/01/16/redfin-baby-boomers-empty-nesters-millennials-housing-market/#:~:text=Empty%2Dnest%20boomers%2C%20which%20Redfin%20defines%20as%20baby%20boomers%20with%20one%20to%20two%20people%20living%20in%20the%20household%2C%20own%2028%25%20of%20the%20country%E2%80%99s%20large%20homes%2C%20which%20it%20defines%20as%20three%20bedrooms%2Dplus%2C%20whereas%20millennials%20with%20kids%20own%20only%2014%25%2C%20the%20newly%20published%20report%20found.%C2%A0\">More empty-nester boomers own homes with 3 or more bedrooms than Millennials with children</a>. Larger homes also make up the majority of homes being built. In 2022, nearly half of all new construction were homes with four bedrooms or more, compared to 1 in 5 homes in the 1970s. Homes today are on average <a href=\"https://www.aei.org/carpe-diem/new-us-homes-today-are-1000-square-feet-larger-than-in-1973-and-living-space-per-person-has-nearly-doubled/\">1,000 square feet larger</a> than they were in 1973, and space per person has doubled. Bigger homes, and less homes overall has compounded the problem of need and affordability.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!eFbg!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!eFbg!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png 424w, https://substackcdn.com/image/fetch/$s_!eFbg!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png 848w, https://substackcdn.com/image/fetch/$s_!eFbg!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png 1272w, https://substackcdn.com/image/fetch/$s_!eFbg!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!eFbg!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png\" width=\"785\" height=\"411\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:411,&quot;width&quot;:785,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:48489,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/191242213?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!eFbg!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png 424w, https://substackcdn.com/image/fetch/$s_!eFbg!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png 848w, https://substackcdn.com/image/fetch/$s_!eFbg!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png 1272w, https://substackcdn.com/image/fetch/$s_!eFbg!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p></p><p>The average home price in 1976, when the oldest boomers were turning 30 was $42,800 and when adjusted for inflation would be <a href=\"https://www.washingtonpost.com/business/2025/11/18/baby-boomer-wealth/\">$242,000 today</a>. The average home at the end of 2025 was $405,300 \u2013 1.5x more expensive when adjusted for inflation. During the Boomers prime earning years, America had extremely strong economic growth, lower tuition and healthcare costs and favorable tax policies that brewed the perfect conditions for growing personal wealth, compared to younger generations with higher costs, more debt and more volatile markets i.e. the <a href=\"https://www.washingtonpost.com/business/2025/11/18/baby-boomer-wealth/#:~:text=Post%2DWorld%20War,invest%2C%20accumulate%20wealth.%E2%80%9D\">dotcom bubble burst and the Great Recession.</a></p><div class=\"subscription-widget-wrap-editor\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe&quot;,&quot;language&quot;:&quot;en&quot;}\" data-component-name=\"SubscribeWidgetToDOM\"><div class=\"subscription-widget show-subscribe\"><div class=\"preamble\"><p class=\"cta-caption\">If you liked this post, please consider supporting this work through a paid subscription so we can keep producing these data-driven stories</p></div><form class=\"subscription-widget-subscribe\"><input type=\"email\" class=\"email-input\" name=\"email\" placeholder=\"Type your email\u2026\" tabindex=\"-1\"><input type=\"submit\" class=\"button primary\" value=\"Subscribe\"><div class=\"fake-input-wrapper\"><div class=\"fake-input\"></div><div class=\"fake-button\"></div></div></form></div></div><p>There is no question that a transition is underway \u2013 Boomers are aging, $84 trillion in wealth is being transferred through 2045, and young Americans are maturing in their voice for change. Boomers grew up in a world of abundance, and rightfully took advantage of it. Somewhere along the way, that abundance became guarded rather than shared. This moment is an opportunity to change that \u2013 to build an America with more housing development, affordable education, increased wages, and more pathways into the middle class. There\u2019s no guarantee positive change will come. Wealth often stays in the hands of those most privileged. It\u2019s on us to work for the greater good so all can aspire for the American dream.</p>",
+  "has_dynamic_content": false,
+  "truncated_body_text": "Baby Boomers have spent the last half-century molding America in their image. They were born into an era of unprecedented expansion and today hold the keys to the economic, social, and political kingdoms of this country. Now, as the youngest Boomers reach the age of retirement, and the oldest move into their 80\u2019s, the Boomer generation is facing its fin\u2026",
+  "wordcount": 1529,
+  "post_preview_limit": null,
+  "language": "en",
+  "postTags": [
+    {
+      "id": "199a768a-85cd-4ce8-917b-f2d08ec957b2",
+      "publication_id": 267573,
+      "name": "Boomers",
+      "slug": "boomers",
+      "hidden": false
+    },
+    {
+      "id": "1b25bae8-5748-4de0-a6ed-3cb4715ff649",
+      "publication_id": 267573,
+      "name": "The Dividing Line",
+      "slug": "the-dividing-line",
+      "hidden": false
+    },
+    {
+      "id": "1c0c91d5-29c5-4395-a961-4c233de12ae3",
+      "publication_id": 267573,
+      "name": "Student Debt",
+      "slug": "student-debt",
+      "hidden": false
+    },
+    {
+      "id": "41395506-40bd-4270-b6fb-1d7d96acce88",
+      "publication_id": 267573,
+      "name": "U.S. Politics",
+      "slug": "us-politics",
+      "hidden": false
+    },
+    {
+      "id": "53ad9dfb-8987-44af-9b14-007caf88709e",
+      "publication_id": 267573,
+      "name": "Gen Z",
+      "slug": "gen-z",
+      "hidden": false
+    },
+    {
+      "id": "69535cb5-2ad5-4fd3-b745-938ed794b189",
+      "publication_id": 267573,
+      "name": "Wealth",
+      "slug": "wealth",
+      "hidden": false
+    },
+    {
+      "id": "92f488c1-d6b5-48fc-9118-faeacbf61662",
+      "publication_id": 267573,
+      "name": "Millenials",
+      "slug": "millenials",
+      "hidden": false
+    },
+    {
+      "id": "d0d9619c-35d0-42d2-b436-2353718c0c26",
+      "publication_id": 267573,
+      "name": "business",
+      "slug": "business",
+      "hidden": false
+    }
+  ],
+  "postCountryBlocks": [],
+  "headlineTest": null,
+  "coverImagePalette": {
+    "Vibrant": {
+      "rgb": [
+        252,
+        100,
+        45
+      ],
+      "population": 1767
+    },
+    "DarkVibrant": {
+      "rgb": [
+        130.73239436619718,
+        36.10704225352113,
+        1.8676056338028257
+      ],
+      "population": 0
+    },
+    "LightVibrant": {
+      "rgb": [
+        252,
+        156,
+        124
+      ],
+      "population": 4
+    },
+    "Muted": {
+      "rgb": [
+        141,
+        141,
+        141
+      ],
+      "population": 30
+    },
+    "DarkMuted": {
+      "rgb": [
+        107,
+        107,
+        107
+      ],
+      "population": 57
+    },
+    "LightMuted": {
+      "rgb": [
+        188,
+        188,
+        188
+      ],
+      "population": 37
+    }
+  },
+  "publishedBylines": [
+    {
+      "id": 11624125,
+      "name": "Jeremy Ney",
+      "handle": "jeremybney",
+      "photo_url": "https://substackcdn.com/image/fetch/$s_!LMzS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5fd31dcd-eff9-4585-b5a0-fc00ebf53e47_332x332.png",
+      "bio": "Data journalist, Columbia prof, former Federal Reserve. You've seen these maps. ",
+      "profile_set_up_at": "2021-06-29T14:33:27.162Z",
+      "reader_installed_at": "2022-03-29T00:47:52.882Z",
+      "publicationUsers": [
+        {
+          "id": 236337,
+          "user_id": 11624125,
+          "publication_id": 267573,
+          "role": "admin",
+          "public": true,
+          "is_primary": true,
+          "publication": {
+            "id": 267573,
+            "name": "American Inequality",
+            "subdomain": "americaninequality",
+            "custom_domain": null,
+            "custom_domain_optional": false,
+            "hero_text": "Mapping the country's greatest economic challenges",
+            "logo_url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ca313513-016e-48f0-9e6f-ef172c82864f_1252x1252.png",
+            "author_id": 11624125,
+            "primary_user_id": 11624125,
+            "theme_var_background_pop": "#2096FF",
+            "created_at": "2021-01-21T21:08:07.518Z",
+            "email_from_name": "Jeremy Ney",
+            "copyright": "Jeremy Ney",
+            "founding_plan_name": "Premium Access",
+            "community_enabled": true,
+            "invite_only": false,
+            "payments_state": "enabled",
+            "language": null,
+            "explicit": false,
+            "homepage_type": "magaziney",
+            "is_personal_mode": false,
+            "logo_url_wide": "https://substack-post-media.s3.amazonaws.com/public/images/d08f70b8-7140-4c87-9c25-f0ccf066820b_1642x486.png"
+          }
+        }
+      ],
+      "is_guest": false,
+      "bestseller_tier": 100,
+      "status": {
+        "bestsellerTier": 100,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      }
+    },
+    {
+      "id": 46869049,
+      "name": "Michael Tiede",
+      "handle": "michaeltiede",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/36c116bf-550c-4df7-8f02-7949fa49e637_1281x854.jpeg",
+      "bio": "Data Scientist, Computational Social Science. Using data for social good. Based in Los Angeles",
+      "profile_set_up_at": "2024-11-04T17:16:08.747Z",
+      "reader_installed_at": "2024-11-04T17:16:01.318Z",
+      "publicationUsers": [
+        {
+          "id": 5562459,
+          "user_id": 46869049,
+          "publication_id": 267573,
+          "role": "admin",
+          "public": true,
+          "is_primary": false,
+          "publication": {
+            "id": 267573,
+            "name": "American Inequality",
+            "subdomain": "americaninequality",
+            "custom_domain": null,
+            "custom_domain_optional": false,
+            "hero_text": "Mapping the country's greatest economic challenges",
+            "logo_url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ca313513-016e-48f0-9e6f-ef172c82864f_1252x1252.png",
+            "author_id": 11624125,
+            "primary_user_id": 11624125,
+            "theme_var_background_pop": "#2096FF",
+            "created_at": "2021-01-21T21:08:07.518Z",
+            "email_from_name": "Jeremy Ney",
+            "copyright": "Jeremy Ney",
+            "founding_plan_name": "Premium Access",
+            "community_enabled": true,
+            "invite_only": false,
+            "payments_state": "enabled",
+            "language": null,
+            "explicit": false,
+            "homepage_type": "magaziney",
+            "is_personal_mode": false,
+            "logo_url_wide": "https://substack-post-media.s3.amazonaws.com/public/images/d08f70b8-7140-4c87-9c25-f0ccf066820b_1642x486.png"
+          }
+        }
+      ],
+      "is_guest": false,
+      "bestseller_tier": 100,
+      "status": {
+        "bestsellerTier": 100,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      }
+    }
+  ],
+  "reaction": null,
+  "reaction_count": 118,
+  "comment_count": 25,
+  "child_comment_count": 12,
+  "audio_items": [
+    {
+      "post_id": 191242213,
+      "voice_id": "en-US-OnyxTurboMultilingualNeural",
+      "audio_url": "https://substack-video.s3.amazonaws.com/video_upload/post/191242213/tts/78723499-5520-4565-bab8-4ac5d7a9888a/en-US-OnyxTurboMultilingualNeural.mp3",
+      "type": "tts",
+      "status": "completed"
+    }
+  ],
+  "is_geoblocked": false,
+  "is_editor_preview": false,
+  "hasCashtag": false,
+  "unlockedWithIP": false,
+  "unlockedWithCampaign": false,
+  "themeVariables": {
+    "color_theme_bg_pop": "#fc5528",
+    "background_pop": "#fc5528",
+    "color_theme_bg_web": null,
+    "cover_bg_color": "#FFFFFF",
+    "cover_bg_color_secondary": "#f0f0f0",
+    "background_pop_darken": "#fc410f",
+    "print_on_pop": "#ffffff",
+    "color_theme_bg_pop_darken": "#fc410f",
+    "color_theme_print_on_pop": "#ffffff",
+    "color_theme_bg_pop_20": "rgba(252, 85, 40, 0.2)",
+    "color_theme_bg_pop_30": "rgba(252, 85, 40, 0.3)",
+    "print_pop": "#fc5528",
+    "color_theme_accent": "#fc5528",
+    "cover_print_primary": "#363737",
+    "cover_print_secondary": "#757575",
+    "cover_print_tertiary": "#b6b6b6",
+    "cover_border_color": "#fc5528",
+    "font_family_headings_preset": "'SF Pro Display', -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "font_weight_headings_preset": 700,
+    "font_family_body_preset": "Spectral,sans-serif",
+    "font_weight_body_preset": 400,
+    "font_size_body_offset": "1px",
+    "font_preset_heading": "sans",
+    "font_preset_body": "classic_serif",
+    "home_hero": "magazine-5",
+    "home_posts": "custom",
+    "home_show_top_posts": true,
+    "web_bg_color": "#ffffff",
+    "background_contrast_1": "#f0f0f0",
+    "background_contrast_2": "#dddddd",
+    "background_contrast_3": "#b7b7b7",
+    "background_contrast_4": "#929292",
+    "background_contrast_5": "#515151",
+    "color_theme_bg_contrast_1": "#f0f0f0",
+    "color_theme_bg_contrast_2": "#dddddd",
+    "color_theme_bg_contrast_3": "#b7b7b7",
+    "color_theme_bg_contrast_4": "#929292",
+    "color_theme_bg_contrast_5": "#515151",
+    "color_theme_bg_elevated": "#ffffff",
+    "color_theme_bg_elevated_secondary": "#f0f0f0",
+    "color_theme_bg_elevated_tertiary": "#dddddd",
+    "color_theme_detail": "#e6e6e6",
+    "background_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "color_theme_bg_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "theme_bg_is_dark": "0",
+    "print_on_web_bg_color": "#363737",
+    "print_secondary_on_web_bg_color": "#868787",
+    "footer_bg_color": "#ffffff",
+    "footer_bg_color_h": "0",
+    "footer_bg_color_s": "0%",
+    "footer_bg_color_l": "100%",
+    "print_on_footer_bg_color": "#363737",
+    "print_secondary_on_footer_bg_color": "#868787",
+    "footer_bg_contrast_1": "#f0f0f0",
+    "footer_bg_contrast_2": "#dddddd",
+    "footer_bg_contrast_3": "#b7b7b7",
+    "footer_bg_contrast_4": "#929292",
+    "footer_bg_elevated": "#ffffff",
+    "footer_bg_elevated_secondary": "#f0f0f0",
+    "footer_bg_elevated_tertiary": "#dddddd",
+    "footer_detail_color": "#e6e6e6",
+    "subscribe_bg_color": "#fafafa",
+    "subscribe_bg_color_h": "0",
+    "subscribe_bg_color_s": "0%",
+    "subscribe_bg_color_l": "98.0392156862745%",
+    "print_on_subscribe_bg_color": "#363737",
+    "print_secondary_on_subscribe_bg_color": "#848585",
+    "subscribe_bg_contrast_1": "#ebebeb",
+    "subscribe_bg_contrast_2": "#d8d8d8",
+    "subscribe_bg_contrast_3": "#b3b3b3",
+    "subscribe_bg_contrast_4": "#909090",
+    "subscribe_bg_elevated": "#fafafa",
+    "subscribe_bg_elevated_secondary": "#ebebeb",
+    "subscribe_bg_elevated_tertiary": "#d8d8d8",
+    "subscribe_detail_color": "#e1e1e1",
+    "background_pop_rgb": "252, 85, 40",
+    "color_theme_bg_pop_rgb": "252, 85, 40",
+    "color_theme_accent_rgb": "252, 85, 40"
+  },
+  "comments": [
+    {
+      "id": 229571114,
+      "body": "Great post.\n\nBut as a Gen Xer, I'm always confounded that we're ignored in nearly all discussions of generational inequality, or only get the tiniest mention, as in this article. I'd love to know why.",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1"
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Great post."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "But as a Gen Xer, I'm always confounded that we're ignored in nearly all discussions of generational inequality, or only get the tiniest mention, as in this article. I'd love to know why."
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 191242213,
+      "user_id": 59448701,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2026-03-18T11:55:35.885Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "Laura",
+      "photo_url": null,
+      "handle": "blossom287486",
+      "reactor_names": [
+        "Michael Tiede"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 6
+      },
+      "reaction_count": 6,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "blossom287486",
+      "metadata": {
+        "is_author": false,
+        "membership_state": "free_signup",
+        "eligibleForGift": true
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": 1,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "subscriber",
+          "tier": 1,
+          "accent_colors": null
+        },
+        "subscriber": null
+      },
+      "score": 11,
+      "children_count": 2,
+      "reported_by_user": false,
+      "restacked": false,
+      "childrenSummary": "4 replies"
+    },
+    {
+      "id": 229628802,
+      "body": "Switching to Flourish???",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1"
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Switching to Flourish???"
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 191242213,
+      "user_id": 40823324,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2026-03-18T14:13:43.907Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "The PolicyViz Newsletter",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/3bf73519-019f-4dd7-b848-f6197c1be437_1424x1424.jpeg",
+      "handle": "policyviz",
+      "reactor_names": [
+        "Jeremy Ney",
+        "Michael Tiede"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 4
+      },
+      "reaction_count": 4,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "policyviz",
+      "metadata": {
+        "is_author": false,
+        "membership_state": null,
+        "eligibleForGift": true,
+        "author_on_other_pub": {
+          "name": "The PolicyViz Newsletter",
+          "id": 1269541,
+          "base_url": "https://jschwabish.substack.com"
+        }
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": null,
+        "subscriber": null
+      },
+      "score": 9,
+      "children_count": 1,
+      "reported_by_user": false,
+      "restacked": false,
+      "childrenSummary": "1 reply by Jeremy Ney"
+    }
+  ]
+}

@@ -23,6 +23,11 @@ pip install -r shorts/requirements.txt
 python shorts/make_short.py new https://americaninequality.substack.com/p/<slug>
 #  → shorts/projects/<slug>/article.md, article.json, media/cover.jpg, media/article_*.png
 
+python shorts/make_short.py plan <slug>
+#  → visual_plan.md: which photos this story needs (places, buildings, themes, eras),
+#    ranked, with Wikimedia candidates; plus which article images to reuse (maps)
+python shorts/make_short.py use <slug> congress 3 --as capitol          # save a plan candidate
+
 #  write shorts/projects/<slug>/storyboard.json  (see storyboard_reference.md)
 
 python shorts/make_short.py autofill <slug>                            # fetch each scene's `query` photo

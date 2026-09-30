@@ -11,8 +11,10 @@ write the script. Work from the repo root.
 
 ```
 python shorts/make_short.py new <substack-url>            # 1. fetch article → shorts/projects/<slug>/
-# 2. read article.md, write storyboard.json
-python shorts/make_short.py autofill <slug>                # 3. fetch every scene's `query` photo, then review
+python shorts/make_short.py plan <slug>                    # 2. visual plan: rank photo subjects + candidates
+# 3. read article.md + visual_plan.md, look at the sheets, write storyboard.json
+python shorts/make_short.py use <slug> <subject> <n> --as <name>   #    save a plan candidate as media/<name>
+python shorts/make_short.py autofill <slug>                #    fetch any scene `query` still missing a file
 python shorts/make_short.py search <slug> "<query>"        #    or search by hand (Wikimedia)
 python shorts/make_short.py search <slug> "<query>" --pexels --video   #    real footage (needs PEXELS_API_KEY)
 python shorts/make_short.py pick <slug> <n> --as hook      #    save candidate #n as media/hook.<ext>
@@ -33,7 +35,49 @@ scenes). If Substack is unreachable (network policy), ask the user to allow
 `new <url> --manual --title … --subtitle … --authors … --date … --text pasted.md`.
 The Substack MCP `list_posts` tool also returns the title, subtitle, bylines and date.
 
-## Step 2: Write the storyboard (the part that matters)
+## Step 2: The visual plan (the image rule, applied to every article)
+Run `plan <slug>` (it takes a few minutes; Wikimedia is rate-limited, so run it in the
+background while you read the article). It writes `visual_plan.md` and contact sheets in
+`.cache/plan/`. The rule it encodes, which you also apply when choosing:
+
+**A. The author's own images (`media/article_NN.*`, sheet `.cache/plan/article_images.jpg`)**
+- **Maps → reuse.** County, state or metro maps are the author's signature visual and
+  can't be rebuilt quickly. Use a `figure` scene and push into the region the narration
+  names (`zoom_to`).
+- **Distinctive graphics → reuse.** Anything that isn't a plain line or bar chart (a
+  Congress hemicycle, a scatter of districts, an annotated timeline) goes in a `figure`
+  scene. For animated GIFs, look at the frames and choose a `frames: [a, b]` range that
+  matches the narration (interactive hover states often show numbers the script
+  doesn't say).
+- **Plain line/bar charts → rebuild** as native chart scenes (`line`, `vbars`, `hbars`,
+  `waffle`, `stacked`, `big_number`) using the numbers in the text. The native style is
+  the house look, so there's no need to recreate the author's version.
+
+**B. Photos, from the text (`visual_plan.md`, ranked)**
+1. **Places the story names** (city, state, D.C.) get a photo *of that place*, always,
+   even when mentioned once. When the sentence gives context, match it: "Los Angeles…
+   new schools… in the 50's" → an LA aerial or a 1950s LA scene, not a generic skyline.
+2. **Institutions get their building:** Congress → the Capitol, the Fed → the Eccles
+   Building, Wall Street → the NYSE, the presidency → the White House.
+3. **Themes get the concrete thing:** housing → real houses and streets, big homes →
+   large suburban houses, tuition → a campus, immigration → Ellis Island, retirement →
+   retirement communities, work → people working.
+4. **Eras get period photos:** "baby boom", "1950s", "1970s" → public-domain historical
+   photos (Levittown, 1950s suburbs) when good ones exist.
+5. **Use 4–6 photos per video,** spread through it: the hook, one per place or
+   institution the script names, and one or two blurred photos with a stat on top.
+
+Candidates come from Wikimedia Commons in this order: curated "Quality/Featured images",
+then human-curated categories (e.g. *Aerial photographs of Los Angeles*), then full-text
+search. Open every sheet and choose by eye (see Step 4). If nothing on a sheet is strong,
+run `search` with a sharper query, try a Commons category name as the query, or drop the
+photo beat for a chart.
+
+The subject library (places, institutions, themes, eras) lives in
+`shorts/aiq_shorts/visuals.py`. When an article covers a topic the library doesn't
+know, add an entry there so future articles benefit.
+
+## Step 3: Write the storyboard (the part that matters)
 Target **55–80 seconds, 150–210 spoken words, 9–14 scenes** at `wpm: 170`.
 
 The formula from the reference videos:
@@ -52,6 +96,7 @@ The formula from the reference videos:
    - before vs after → `then_now`
    - one shocking figure → `big_number`, or `stat` overlay on a photo
    - causes / to-dos → `checklist`
+   - the author's map or distinctive graphic → `figure` (see Step 2A)
    Alternate charts with photo beats: roughly **one real photo every 2–3 scenes**, so it
    never feels like a slideshow. Whenever the script names a place, building or thing
    (a city, a neighbourhood, a type of home, a landmark), show *that* place: e.g.
@@ -71,11 +116,10 @@ Script rules:
 - First person, the author's voice ("I wrote", "I found"). No hype words, no "Let's dive in".
 - Fill `post.caption` (one or two sentences) and 5–8 `post.hashtags`.
 
-## Step 3: Media (no AI slop)
-Give every photo scene a specific `query` (place + subject, e.g. "Washington DC rowhouses
-Capitol Hill"), then run `autofill`: it saves the top result and a contact sheet per scene at
-`.cache/candidates/<name>/contact_sheet.jpg`. Review each sheet and, if a better candidate
-exists, `search` + `pick` it by hand.
+## Step 4: Media (no AI slop)
+Save the chosen candidates with `use <slug> <subject> <n> --as <name>` (e.g.
+`use <slug> congress 3 --as capitol`). Give every photo scene a `query` too, so
+`autofill` can fill anything still missing. Its sheets land in `.cache/candidates/<name>/`.
 
 Use **real photographs and footage of real places**. Never generated images.
 - Search Wikimedia Commons first: it's freely licensed and attributed, and the credit
@@ -87,19 +131,18 @@ Use **real photographs and footage of real places**. Never generated images.
   documentary / photojournalistic images with a clear subject and a natural 9:16 crop.
 - Use `focus` to frame the subject in the vertical crop. If no good image exists for
   a beat, replace that beat with a chart scene rather than using a weak photo.
-- The article's own charts (`media/article_NN.png`) work well as a photo beat with `dim: 0.1`.
 - If image hosts are blocked by the environment's network policy, tell the user which
   hosts to allow (`commons.wikimedia.org`, `upload.wikimedia.org`, `api.pexels.com`,
   `images.pexels.com`, `videos.pexels.com`) or ask them to drop photos into `media/`.
 
-## Step 4: QA before rendering
+## Step 5: QA before rendering
 Run `stills` and view `output/stills.png` (2 frames per scene). Check for:
 text colliding with captions (captions occupy y≈1440–1600), numbers that don't
 match the narration, orphaned words, empty-looking scenes, placeholders
 ("[ add media … ]"), and photos whose subject is cropped out. Fix, re-run, then render.
 Use `frame <slug> <seconds>` to inspect one frame at full size.
 
-## Step 5: Render and hand off
+## Step 6: Render and hand off
 `render` writes to `shorts/projects/<slug>/output/`:
 - `<slug>.mp4`: 1080×1920, 30fps, H.264, silent audio track, captions burned in
   (`--no-captions` renders a clean version)

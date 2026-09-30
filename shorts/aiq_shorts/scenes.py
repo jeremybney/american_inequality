@@ -539,7 +539,7 @@ class VBarsScene(ChartScene):
             col = T.color(b.get("color", "navy" if i == 0 else "white"))
             if h >= 2:
                 d.rounded_rectangle((cx - bw / 2, base - h, cx + bw / 2, base), 6, fill=G.rgba(col, appear))
-            txt = fmt_from(b, val, self.spec)
+            txt = b["display"] if (b.get("display") and p >= 1) else fmt_from(b, val, self.spec)
             vcol = T.color(b.get("value_color", "white"))
             G.draw_centered(d, cx, base - h - vf.size - 18, txt, vf, G.rgba(vcol, appear))
             ny = base + 20
@@ -986,6 +986,111 @@ class OutroScene(Scene):
         return img
 
 
+# =============================================================================
+# Figure: reuse the author's own map / graphic
+# =============================================================================
+
+class FigureScene(Scene):
+    """The article's own map or distinctive graphic on a card, with an optional
+    slow push into a region (`zoom_to: [x0, y0, x1, y1]` as fractions of the image).
+    Animated GIFs play their own animation."""
+
+    def __init__(self, spec, ctx):
+        super().__init__(spec, ctx)
+        self.path = ctx.media_path(spec.get("media"))
+        self.frames, self.times = [], []
+        if self.path and self.path.exists():
+            im = Image.open(self.path)
+            t = 0.0
+            try:
+                n = getattr(im, "n_frames", 1)
+                for k in range(n if spec.get("animate", True) else 1):
+                    im.seek(k)
+                    self.frames.append(im.convert("RGB"))
+                    self.times.append(t)
+                    t += (im.info.get("duration") or 100) / 1000.0
+            except EOFError:
+                pass
+            self.loop = max(t, 0.1)
+        else:
+            ctx.warn(f"figure media not found: {spec.get('media')!r}")
+            self.frames = [Image.new("RGB", (800, 600), (230, 230, 230))]
+            self.times, self.loop = [0.0], 1.0
+        rng = spec.get("frames")  # [first, last] GIF frames to play (then hold on the last)
+        if rng and len(self.frames) > 1:
+            a, b = rng[0], min(rng[1], len(self.frames) - 1)
+            base = self.times[a]
+            self.frames = self.frames[a:b + 1]
+            self.times = [t - base for t in self.times[a:b + 1]]
+            self.loop = max(self.times[-1] + 0.1, 0.1)
+        crop = spec.get("crop")  # trim chrome (titles, toolbars) from the source: [x0,y0,x1,y1] fractions
+        if crop:
+            w, h = self.frames[0].size
+            box = (int(crop[0] * w), int(crop[1] * h), int(crop[2] * w), int(crop[3] * h))
+            self.frames = [f.crop(box) for f in self.frames]
+
+    def source_line(self):
+        return self.spec.get("source") or self.ctx.credit_for(self.spec.get("media"))
+
+    def frame_at(self, t):
+        if len(self.frames) == 1:
+            return self.frames[0]
+        # play the GIF once starting at `play_at`, then hold on its last frame
+        lt = max(0.0, t - self.spec.get("play_at", 0.3)) * self.spec.get("speed", 1.0)
+        if self.spec.get("loop", False):
+            lt %= self.loop
+        idx = 0
+        for k, st in enumerate(self.times):
+            if st <= lt:
+                idx = k
+        return self.frames[idx]
+
+    def render(self, t):
+        img = G.orange_background(self.spec.get("background", "orange")).copy()
+        d = ImageDraw.Draw(img, "RGBA")
+        y = T.CHART_TITLE_Y
+        a = G.ease_out(G.prog(t, 0.0, 0.35))
+        if self.spec.get("title"):
+            f = G.font("sans", 52)
+            for line in G.wrap(self.spec["title"], f, T.W - 2 * T.MARGIN):
+                G.draw_centered(d, T.W / 2, y, line, f, G.rgba(T.TITLE, a))
+                y += f.size * 1.2
+        src = self.frame_at(t)
+        sw, sh = src.size
+        # visible window: full image easing toward zoom_to (kept at the image's aspect)
+        zt = self.spec.get("zoom_to")
+        p = G.ease_in_out(G.prog(t, self.at("zoom_at", 0.8), self.spec.get("zoom_dur", max(1.0, self.dur - 1.2))))
+        x0, y0, x1, y1 = 0.0, 0.0, 1.0, 1.0
+        if zt:
+            zx0, zy0, zx1, zy1 = zt
+            cx, cy = (zx0 + zx1) / 2, (zy0 + zy1) / 2
+            zw = max(zx1 - zx0, (zy1 - zy0))  # square-ish in fractional space keeps aspect
+            zw = min(1.0, zw)
+            tx0, ty0 = min(max(cx - zw / 2, 0), 1 - zw), min(max(cy - zw / 2, 0), 1 - zw)
+            x0, y0 = G.lerp(0, tx0, p), G.lerp(0, ty0, p)
+            x1, y1 = G.lerp(1, tx0 + zw, p), G.lerp(1, ty0 + zw, p)
+        max_w, max_h = T.W - 2 * 60, self.spec.get("max_height", 1000)
+        pad = 22
+        scale = min((max_w - 2 * pad) / sw, (max_h - 2 * pad) / sh)
+        dw, dh = int(sw * scale), int(sh * scale)
+        view = src.resize((dw, dh), Image.LANCZOS, box=(x0 * sw, y0 * sh, x1 * sw, y1 * sh))
+        e = G.ease_out(G.prog(t, 0.05, 0.6))
+        card = Image.new("RGBA", (dw + 2 * pad, dh + 2 * pad), (0, 0, 0, 0))
+        ImageDraw.Draw(card).rounded_rectangle((0, 0, card.width - 1, card.height - 1), 22,
+                                                fill=G.rgba(self.spec.get("card_color") and
+                                                            T.color(self.spec["card_color"]) or (255, 255, 255)))
+        card.paste(view, (pad, pad))
+        cy = self.spec.get("y", 0.47) * T.H + (1 - e) * 200
+        top_lim = y + 20 + card.height / 2
+        cy = max(cy, top_lim)
+        sh_img, _ = G.soft_shadow(card.size, 22, 28, 0.3, T.INK)
+        G.rotated_paste(img, sh_img, (T.W / 2 + 4, cy + 16), self.spec.get("angle", 0), e)
+        G.rotated_paste(img, card, (T.W / 2, cy), self.spec.get("angle", 0), e)
+        for ov in self.spec.get("overlays", []):
+            draw_overlay(img, d, ov, t, self)
+        return img
+
+
 SCENES = {
     "photo": PhotoScene,
     "hook": PhotoScene,
@@ -1001,4 +1106,6 @@ SCENES = {
     "checklist": ChecklistScene,
     "statement": StatementScene,
     "outro": OutroScene,
+    "figure": FigureScene,
+    "map": FigureScene,
 }

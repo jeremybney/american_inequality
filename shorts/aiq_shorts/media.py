@@ -39,10 +39,31 @@ def ffmpeg_exe():
 
 # --- HTTP ------------------------------------------------------------------------
 
-def http_get(url, headers=None, timeout=60):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, **(headers or {})})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+_last_call = {}
+
+
+def http_get(url, headers=None, timeout=60, retries=5):
+    """GET with a polite per-host throttle and backoff on 429/5xx (Wikimedia rate-limits bursts)."""
+    import time
+    import urllib.error
+    host = urllib.parse.urlparse(url).netloc
+    # the API host is strict about bursts; the image host (thumbnails) much less so
+    gap = 0.8 if host == "commons.wikimedia.org" else 0.15 if "wikimedia" in host else 0.0
+    for attempt in range(retries):
+        wait = _last_call.get(host, 0) + gap - time.time()
+        if wait > 0:
+            time.sleep(wait)
+        _last_call[host] = time.time()
+        req = urllib.request.Request(url, headers={"User-Agent": UA, **(headers or {})})
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503, 504) or attempt == retries - 1:
+                raise
+            retry_after = e.headers.get("Retry-After")
+            time.sleep(min(20.0, float(retry_after)) if retry_after and retry_after.isdigit()
+                       else min(20, 2 ** (attempt + 1)))
 
 
 def http_json(url, headers=None):
@@ -52,7 +73,7 @@ def http_json(url, headers=None):
 def download(url, dest, headers=None):
     dest = Path(dest)
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_bytes(http_get(url, headers, timeout=300))
+    dest.write_bytes(http_get(url, headers, timeout=60, retries=3))
     return dest
 
 
@@ -70,7 +91,11 @@ def save_credit(media_dir, filename, credit):
 
 
 def strip_html(s):
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", s or "")).strip()
+    s = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", s or "")).strip()
+    half = len(s) // 2
+    if s and len(s) % 2 == 0 and s[:half] == s[half:]:  # Commons sometimes repeats the author
+        s = s[:half]
+    return re.sub(r"\b(.+?)\s+\1\b", r"\1", s)
 
 
 # --- Wikimedia Commons ---------------------------------------------------------------
@@ -99,7 +124,9 @@ def search_wikimedia(query, n=12, min_width=1200):
         author = strip_html(meta.get("Artist", {}).get("value", "")) or "Unknown"
         out.append({
             "source": "wikimedia", "id": str(p["pageid"]), "title": p.get("title", ""),
-            "thumb": info.get("thumburl"), "url": info.get("url"),
+            "thumb": info.get("thumburl"),
+            # originals can be 7000px+/20MB; a 2400px rendition is plenty for a 1080px frame
+            "url": best_url(info.get("url"), info.get("thumburl"), info.get("width", 0)),
             "width": info.get("width"), "height": info.get("height"),
             "page": info.get("descriptionurl"),
             "credit": f"Photo: {author[:60]}, {lic} (Wikimedia Commons)",
@@ -107,6 +134,62 @@ def search_wikimedia(query, n=12, min_width=1200):
         if len(out) >= n:
             break
     return out
+
+
+def best_url(original, thumb, width):
+    """Wikimedia serves thumbnails only at standard widths; 3840px is plenty for a
+    1080x1920 frame and far lighter than 7000px+ originals."""
+    # Originals (upload.wikimedia.org) are often rate-limited for API clients, while the
+    # thumbnail service answers immediately, so prefer a standard-width thumbnail.
+    if thumb and re.search(r"/\d+px-", thumb):
+        for w in (3840, 1920):
+            if width >= w:
+                return re.sub(r"/\d+px-", f"/{w}px-", thumb.split("?")[0])
+    return (original or "").split("?")[0]
+
+
+def _wm_files(params, min_width):
+    url = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode(params)
+    pages = http_json(url).get("query", {}).get("pages", {})
+    out = []
+    for p in sorted(pages.values(), key=lambda p: p.get("index", 0)):
+        info = (p.get("imageinfo") or [{}])[0]
+        meta = info.get("extmetadata", {})
+        lic = strip_html(meta.get("LicenseShortName", {}).get("value", ""))
+        if info.get("mime") not in ("image/jpeg", "image/png", "image/webp") or info.get("width", 0) < min_width:
+            continue
+        low = lic.lower()
+        if not low.startswith(OK_LICENSES) or ("cc" in low and any(b in low for b in ("-nc", " nc", "-nd", " nd"))):
+            continue
+        author = strip_html(meta.get("Artist", {}).get("value", "")) or "Unknown"
+        out.append({
+            "source": "wikimedia", "id": str(p["pageid"]), "title": p.get("title", ""),
+            "thumb": info.get("thumburl"),
+            "url": best_url(info.get("url"), info.get("thumburl"), info.get("width", 0)),
+            "width": info.get("width"), "height": info.get("height"), "page": info.get("descriptionurl"),
+            "credit": f"Photo: {author[:60]}, {lic} (Wikimedia Commons)",
+        })
+    return out
+
+
+def search_wikimedia_categories(query, n=12, min_width=1600, max_cats=3):
+    """Find Commons categories matching the query (human-curated, so far more precise
+    than full-text search) and return photos from them."""
+    q = urllib.parse.urlencode({"action": "query", "format": "json", "list": "search", "srsearch": query,
+                                "srnamespace": 14, "srlimit": max_cats})
+    cats = [c["title"] for c in http_json("https://commons.wikimedia.org/w/api.php?" + q)
+            .get("query", {}).get("search", [])]
+    out = []
+    for cat in cats:
+        params = {"action": "query", "format": "json", "generator": "categorymembers", "gcmtitle": cat,
+                  "gcmtype": "file", "gcmlimit": 40, "prop": "imageinfo",
+                  "iiprop": "url|size|extmetadata|mime", "iiurlwidth": 480}
+        for c in _wm_files(params, min_width):
+            c["category"] = cat
+            out.append(c)
+        if len(out) >= n:
+            break
+    return out[:n]
 
 
 # --- Pexels ---------------------------------------------------------------------------

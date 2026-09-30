@@ -1,233 +1,310 @@
 {
-  "title": "The Great Generational Wealth Divide \u2014 TikTok",
-  "draft": true,
-  "draft_label": "DRAFT \u00b7 VERIFY NUMBERS",
+  "title": "The Great Generational Wealth Divide — TikTok",
   "wpm": 170,
   "today": "2026-09-30",
   "article": {
     "section": "The Dividing Line"
   },
   "notes": [
-    "DRAFT: the article body could not be fetched from this environment. Chart values are approximations of the Federal Reserve Distributional Financial Accounts and MUST be replaced with the figures in the article before posting.",
-    "Media: photo scenes carry a `query` (Los Angeles homes, Washington DC rowhouses). Run `autofill` once Wikimedia/Pexels are reachable, then review the contact sheets; swap in the article's own LA / DC / multi-bedroom-home references when rebuilding from the full text."
+    "All figures are from the article (Mar 18, 2026). Where the article names a source it's shown on screen; otherwise the article itself is credited.",
+    "Photos are from Wikimedia Commons; credits print on screen and are listed in credits.md."
   ],
   "post": {
-    "caption": "Boomers are 1 in 5 Americans but hold half the wealth. Millennials and Gen Z hold the debt. Here's why the gap keeps growing.",
+    "caption": "Boomers own about half of America's wealth. Millennials own almost half its debt. Here's how the Boomers got here, and what $84 trillion changing hands means for everyone else.",
     "hashtags": [
       "inequality",
       "wealthgap",
       "boomers",
       "millennials",
       "genz",
-      "economics",
       "housing",
-      "studentdebt"
+      "congress",
+      "economics"
     ]
   },
   "scenes": [
     {
       "type": "hook",
       "media": "hook.jpg",
+      "query": "Levittown, New York",
       "zoom": [
         1.0,
         1.1
       ],
       "headline": {
         "text": "Boomers own half of America's wealth.",
-        "highlight": "Millennials own the debt."
+        "highlight": "Millennials own its debt."
       },
-      "chip": "Generational wealth \u00b7 American Inequality",
+      "chip": "Generational wealth · American Inequality",
       "say": [
-        "Baby Boomers are about one in five Americans,",
-        "but they own half of all the wealth in the country."
+        "Baby Boomers own about half of all the wealth in America.",
+        "Millennials own almost half of all the debt."
       ],
-      "query": "Los Angeles aerial single-family homes"
-    },
-    {
-      "type": "photo",
-      "media": "renters.jpg",
-      "zoom": [
-        1.08,
-        1.0
-      ],
-      "overlays": [
-        {
-          "kind": "stamp",
-          "text": "RENT DUE",
-          "y": 0.36,
-          "at": 0.6,
-          "angle": -4
-        }
-      ],
-      "say": [
-        "Millennials and Gen Z, meanwhile, hold most of the debt."
-      ],
-      "query": "Washington DC rowhouses street"
+      "focus": [
+        0.5,
+        0.5
+      ]
     },
     {
       "type": "article_card",
       "chips": [
-        "WHO OWNS IT",
-        "WHY",
-        "WHAT FIXES IT"
+        "THE BOOM",
+        "WHO RUNS D.C.",
+        "THE HOUSES"
       ],
       "say": [
-        "In March I wrote about the great generational wealth divide.",
-        "Here's who owns what, why it happened, and what fixes it."
+        "In March, we charted the great generational wealth divide."
       ]
     },
     {
-      "type": "stacked",
-      "title": "Boomers' share of America",
-      "rows": [
+      "type": "photo",
+      "media": "boom.jpg",
+      "query": "Children of the United States in the 1950s",
+      "blur": 7,
+      "dim": 0.4,
+      "zoom": [
+        1.05,
+        1.15
+      ],
+      "overlays": [
         {
-          "label": "Share of population",
-          "at": 0.3,
-          "segments": [
-            {
-              "label": "Boomers",
-              "value": 21,
-              "color": "navy",
-              "suffix": "%"
-            },
-            {
-              "label": "Everyone else",
-              "value": 79,
-              "color": "white",
-              "suffix": "%"
-            }
-          ]
-        },
-        {
-          "label": "Share of household wealth",
-          "at": 2.4,
-          "segments": [
-            {
-              "label": "Boomers",
-              "value": 51,
-              "color": "navy",
-              "suffix": "%"
-            },
-            {
-              "label": "Everyone else",
-              "value": 49,
-              "color": "white",
-              "suffix": "%"
-            }
-          ]
+          "kind": "stat",
+          "value": 76,
+          "suffix": "M",
+          "label": "babies born, 1946–1964",
+          "y": 0.36,
+          "at": 0.4
         }
       ],
-      "source": "Federal Reserve Distributional Financial Accounts \u00b7 U.S. Census Bureau",
+      "source": "NCHS",
       "say": [
-        "Boomers are about twenty-one percent of the population.",
-        "They hold fifty-one percent of the wealth."
+        "Between 1946 and 1964, seventy-six million babies were born."
+      ],
+      "focus": [
+        0.3,
+        0.5
       ]
     },
     {
-      "type": "waffle",
-      "title": "Every $100 of U.S. household wealth",
-      "groups": [
+      "type": "photo",
+      "media": "la.jpg",
+      "query": "Aerial photographs of Los Angeles",
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "pan": [
+        [
+          0.5,
+          0.55
+        ],
+        [
+          0.5,
+          0.45
+        ]
+      ],
+      "overlays": [
         {
-          "label": "Boomers",
-          "count": 51,
-          "color": "navy"
-        },
-        {
-          "label": "Gen X",
-          "count": 26,
-          "color": "white"
-        },
-        {
-          "label": "Silent",
-          "count": 12,
-          "color": "lightblue"
-        },
-        {
-          "label": "Millennials",
-          "count": 10,
-          "color": "yellow"
-        },
-        {
-          "label": "Gen Z",
-          "count": 1,
-          "color": "green"
+          "kind": "stamp",
+          "text": "1 NEW SCHOOL / WEEK",
+          "y": 0.34,
+          "at": 0.8,
+          "angle": -3
         }
       ],
-      "fill_at": 0.6,
-      "fill": 2.4,
-      "big": {
-        "value": 10,
-        "prefix": "$",
-        "label": "for Millennials",
-        "color": "yellow",
-        "at": 3.4
+      "say": [
+        "California was building one new school a week."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "capitol.jpg",
+      "query": "United States Capitol",
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "1976",
+          "y": 0.3,
+          "at": 0.5,
+          "size": 80
+        }
+      ],
+      "say": [
+        "In 1976, the first Boomers could run for Congress.",
+        "Then they took over D.C."
+      ]
+    },
+    {
+      "type": "line",
+      "title": "Average age in Congress",
+      "series": [
+        {
+          "color": "navy",
+          "area": true,
+          "points": [
+            [
+              1965,
+              55
+            ],
+            [
+              1981,
+              49
+            ],
+            [
+              2025,
+              60
+            ]
+          ]
+        }
+      ],
+      "x_ticks": [
+        1965,
+        1981,
+        2025
+      ],
+      "y_range": [
+        40,
+        64
+      ],
+      "counter": {
+        "series": 0,
+        "label": "years old, on average"
       },
-      "source": "Federal Reserve Distributional Financial Accounts",
+      "draw": 3.2,
+      "source": "Average age of the House and Senate since 1789 · American Inequality",
       "say": [
-        "Out of every hundred dollars of household wealth,",
-        "Boomers hold fifty-one. Millennials hold about ten."
+        "The average member was forty-nine in 1981.",
+        "Today it's sixty. Congress aged as Boomers aged."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_05.gif",
+      "play_at": 1.2,
+      "speed": 1.0,
+      "y": 0.43,
+      "source": "Generation Distribution of Congress · American Inequality",
+      "say": [
+        "At their peak in 2013, Boomers held sixty percent of Congress.",
+        "Even today, they hold 228 seats."
+      ],
+      "frames": [
+        0,
+        40
       ]
     },
     {
       "type": "vbars",
-      "title": "Share of wealth at the same age",
-      "subtitle": "average age ~35",
+      "title": "Share of all U.S. debt",
       "bars": [
         {
-          "label": "Boomers",
-          "sublabel": "in 1990",
-          "value": 21,
-          "suffix": "%",
-          "color": "navy"
-        },
-        {
           "label": "Millennials",
-          "sublabel": "in 2025",
-          "value": 10,
+          "value": 41,
           "suffix": "%",
           "color": "white"
+        },
+        {
+          "label": "Boomers",
+          "value": 22,
+          "suffix": "%",
+          "color": "navy",
+          "at": 1.6
         }
       ],
       "annotation": {
-        "text": "\u00bd as much",
-        "bar": 1,
+        "text": "almost 2x",
+        "bar": 0,
         "at": 3.2,
         "color": "yellow"
       },
-      "source": "Federal Reserve Distributional Financial Accounts",
+      "source": "Federal Reserve",
       "say": [
-        "And this isn't just about age.",
-        "At the same age, Boomers owned twice the share Millennials own now."
+        "Meanwhile, Millennials own forty-one percent of all debt,",
+        "almost double the Boomers."
       ]
     },
     {
-      "type": "checklist",
-      "title": "Why it's harder to build wealth",
-      "items": [
-        "Housing costs",
-        "Student debt",
-        "Cost of living",
-        "Slow wage growth"
+      "type": "photo",
+      "media": "bighome.jpg",
+      "query": "McMansions",
+      "blur": 6,
+      "dim": 0.4,
+      "zoom": [
+        1.0,
+        1.1
       ],
-      "stagger": 0.9,
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 41,
+          "suffix": "%",
+          "label": "of all U.S. real estate wealth is owned by Boomers",
+          "y": 0.36,
+          "at": 0.4
+        }
+      ],
+      "source": "Federal Reserve",
       "say": [
-        "Expensive housing, student debt,",
-        "a higher cost of living and slow wage growth all stack up."
+        "Boomers own forty-one percent of all real estate wealth,",
+        "often big homes with few people living in them."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "New homes with 4+ bedrooms",
+      "bars": [
+        {
+          "label": "1970s",
+          "value": 20,
+          "display": "1 in 5",
+          "color": "white"
+        },
+        {
+          "label": "2022",
+          "value": 48,
+          "display": "nearly half",
+          "color": "navy",
+          "at": 1.8
+        }
+      ],
+      "source": "The Great Generational Wealth Divide · American Inequality",
+      "say": [
+        "In the seventies, one in five new homes had four or more bedrooms.",
+        "By 2022, it was nearly half."
+      ]
+    },
+    {
+      "type": "big_number",
+      "kicker": "the great wealth transfer",
+      "stats": [
+        {
+          "value": 84,
+          "prefix": "$",
+          "suffix": "T",
+          "label": "changing hands through 2045"
+        }
+      ],
+      "say": [
+        "Now eighty-four trillion dollars is being passed down through 2045."
       ]
     },
     {
       "type": "statement",
-      "kicker": "What comes next",
-      "text": "Wealth isn't just earned. {It's inherited.}",
+      "kicker": "The question",
+      "text": "Abundance became {guarded,} not shared.",
       "say": [
-        "And as that wealth gets passed down,",
-        "the gap won't close on its own. It gets inherited."
+        "Boomers grew up in abundance.",
+        "Somewhere along the way, it became guarded rather than shared."
       ]
     },
     {
       "type": "outro",
       "say": [
-        "The full breakdown, and what fixes it, is on American Inequality."
+        "The full story, and how we fix it, is on American Inequality."
       ]
     }
   ]

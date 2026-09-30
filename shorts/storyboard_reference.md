@@ -76,6 +76,18 @@ Overlays (`kind`):
 | `callout` | `text`, `sub`, `x`, `y`, `point: [x, y]`, `color` | value box with a leader line ("$0.00") |
 | `line_draw` | `points: [[x, y], …]`, `draw`, `width`, `color` | a line tracing itself across the photo (drawn under the headline) |
 
+## `figure` (alias `map`): reuse the author's own map or graphic
+The image sits on a white card over the orange background and can push slowly into a region.
+Animated GIFs play.
+```json
+{"type": "figure", "media": "article_05.gif", "frames": [0, 47], "play_at": 1.2,
+ "zoom_to": [0.55, 0.2, 0.95, 0.6], "crop": [0, 0.08, 1, 1], "title": "…", "say": ["…"]}
+```
+- `zoom_to`: region to push into, `[x0, y0, x1, y1]` as fractions of the image (timing: `zoom_at`, `zoom_dur`).
+- `crop`: trim toolbars or duplicate titles from the source first.
+- GIF controls: `frames` (range to play, then hold), `play_at`, `speed`, `loop`, `animate: false` (first frame only).
+- `y` sets the card's vertical position (0 to 1), `max_height` caps its height in px, and `angle` tilts it.
+
 ## `article_card`
 The article's header card, built from `article.json` (title, subtitle, authors,
 date, and `media/cover.jpg` if present), sliding in with an "N MONTHS AGO" badge.
