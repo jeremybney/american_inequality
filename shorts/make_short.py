@@ -187,6 +187,13 @@ def cmd_render(a):
     video = out_dir / f"{name}.mp4"
     tl = engine.render_video(pdir, video, captions=not a.no_captions, workers=a.workers, crf=a.crf,
                              start=a.start, end=a.end)
+    if video.stat().st_size > 28 * 1024 * 1024:  # chat attachments cap at 30MB; TikTok re-encodes anyway
+        import subprocess
+        share = out_dir / f"{name}_share.mp4"
+        subprocess.run([media.ffmpeg_exe(), "-loglevel", "error", "-y", "-i", str(video), "-c:v", "libx264",
+                        "-preset", "slow", "-crf", "24", "-maxrate", "2.4M", "-bufsize", "4.8M",
+                        "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-c:a", "copy", str(share)], check=True)
+        print(f"      {share}  (smaller copy for sending)")
     export.write_script(tl, out_dir / "script.md")
     export.write_srt(tl, out_dir / "captions.srt")
     export.write_credits(tl, out_dir / "credits.md")

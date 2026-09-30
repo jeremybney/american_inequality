@@ -202,7 +202,8 @@ Use `frame <slug> <seconds>` to inspect one frame at full size.
 - `script.md`: the voiceover to read, with timed shot list and per-line cues
 - `captions.srt`, `credits.md`, `tiktok_post.txt`
 
-Send the user the MP4 and `script.md` (SendUserFile), summarize the runtime and word
+Send the user the MP4 and `script.md` (SendUserFile). Attachments cap at 30MB, so when
+`render` also wrote `<slug>_share.mp4` (it does for large renders), send that one, summarize the runtime and word
 count, and list any `notes`/warnings. Commit the project folder (the storyboard, article
 and media; outputs are gitignored) and push to the working branch.
 
