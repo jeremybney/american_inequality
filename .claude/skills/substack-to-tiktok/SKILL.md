@@ -97,74 +97,78 @@ The subject library (places, institutions, themes, eras) lives in
 `shorts/aiq_shorts/visuals.py`. When an article covers a topic the library doesn't
 know, add an entry there so future articles benefit.
 
-## Step 3: Write the storyboard: tell a story, not a list of stats
-Target **70–90 seconds, 200–240 spoken words, 12–15 scenes** at `wpm: 175`.
-Run `script <slug>` to check the runtime; if it's over ~90s, cut words, not beats.
+## Step 3: Write the storyboard as a straightforward story
+**Length: 45–75 seconds, never more than 75** (about 150–200 spoken words at `wpm: 175`,
+12–15 scenes, `"hold": 0.25` in the storyboard). `script <slug>` prints the runtime and the
+house-rule check (`shorts/aiq_shorts/checks.py`); `render` refuses anything that fails it.
+If it runs long, cut words and then whole beats, never speed up the voice.
 
-### First write the story, then attach visuals to it
-Before touching JSON, write the narration as one paragraph, the way the author would
-explain it out loud to a friend. Read it aloud in your head. Only then split it into
-`say` lines and choose a visual for each. A video that is a list of stats with pictures
-between them is the failure mode to avoid.
+### Every video includes
+- **The article card** (`article_card`, the clipped card with the "N MONTHS AGO" badge).
+  Usually the third scene, right after the hook, but anywhere in the first third works.
+- **At least one chart from the article itself** (`figure` with `media/article_NN.*`).
+  If the article has a map, use the map.
+- **The outro end card** as the last scene. The byline comes from the article's authors
+  automatically, so it's right for single, co-authored and three-author posts.
 
-The arc, every time (adapt the labels to the article):
-1. **Hook (0–8s): the tension, then a question.** The most surprising contrast as a claim,
-   then the question the video answers. *"Boomers own about half of all the wealth in
-   America. Millennials? They hold almost half of all the debt. So how did one generation
-   end up with so much?"* Visual: the most striking real footage or photo, plus the typed
-   headline and chip.
-2. **The promise (~3s):** article card plus chips naming the chapters to come ("THE BOOM",
-   "THE POWER", "THE HOUSES", "THE HANDOFF"). One line pointing into the story: *"We dug
-   into it, and the answer starts with timing."*
-3. **Origin:** where it began, with a date, a place and a scale number (*"Between 1946 and
-   1964, seventy-six million babies were born, and the country reorganized itself around them."*).
-4. **Rising action, cause → effect:** each beat is caused by the one before. Link them
-   with connective words said out loud: "Then…", "And…", "Which brings us to…",
-   "Meanwhile…", "But…", "So…". If a beat can't start with one of these, it probably
-   doesn't belong, or it's in the wrong place.
-5. **The consequence for real people:** who pays, with the hardest-hitting comparison
-   (*"Millennials hold forty-one percent of all debt, almost double the Boomers."*).
-6. **The twist:** the fact that reframes everything (*"$84 trillion is being passed down.
-   But it won't be spread evenly: the top ten percent hold seventy-one percent of it."*).
-7. **Resolution:** the author's own conclusion or fix, in their words, short.
-8. **Outro:** "The full story is on American Inequality. Link in bio."
+### Pacing
+- **The first shot lasts under 4.5 seconds**: one short spoken line over the most striking
+  footage, with the typed headline, and then cut. The second fact of the hook gets its own
+  shot (a second clip or photo).
+- After that, change the visual at least every ~7 seconds. One sentence per scene is the norm.
+- Use motion early: stock footage or a photo with a push-in for the first two shots.
 
-### Stats serve the story
-- Every number must advance the plot. Introduce it with *why it matters* in the same
-  sentence ("…and they took it over. At their peak, Boomers held sixty percent of
-  Congress"), never as a bare fact.
-- At most one hero number per beat, and the visual reveals it at the moment it's said
-  (use each scene's timing keys: stat `at`, bar `at`, checklist item `at`, statement `at`).
-- Pick the 6–8 most striking numbers from the article, not all of them.
-- **Every number must come from the article** (or its cited source). Put the source in
-  that scene's `source` field; if the article names none, credit the article. Never
-  invent, "round up" or re-derive a statistic.
+### The story
+Write the narration first, as one paragraph, the way the author would explain the article
+to someone across the table. Then split it into scenes. The order is almost always:
+1. The headline contrast in two short sentences, each over its own shot.
+2. One sentence pointing into the story ("We looked at how that happened, starting with the baby boom.").
+3. How it started, with a date and a scale number.
+4. What happened next, beat by beat, each one following from the one before.
+5. Who is affected now, with the hardest-hitting comparison.
+6. What comes next, from the article.
+7. What would help, in the author's own terms, then the outro line
+   ("You can read the full story on American Inequality.").
 
-### Voice
-- The author speaking to one person. Second person and questions are welcome ("So how
-  did…?", "In the seventies? Just one in five."). "We dug into it" works for co-authored
-  posts; otherwise use "I".
-- Write for the ear: contractions, short sentences, ≤ 14 words per `say` line, numbers
-  spelled the way they're spoken ("forty-one percent", "eighty-four trillion dollars").
-- No hype or filler ("Let's dive in", "you won't believe", "insane").
-- Fill `post.caption` (one or two sentences that pose the hook question) and 5–8 `post.hashtags`.
+Example in the right voice (from the generational wealth video):
+> Baby Boomers own about half of all the wealth in America. Millennials, on the other hand,
+> hold almost half of the debt. We looked at how that happened, starting with the baby boom.
+> Between 1946 and 1964, seventy-six million babies were born in the U.S. California was
+> building a new school every week to keep up. In 1976 the first Boomers could run for
+> Congress, and by 2013 they held sixty percent of it.
 
-### Visual choices per beat
-- Real photos or footage for places, institutions, people and eras (see Step 2);
-  roughly one every 2–3 scenes. Stock clips (Pixabay) suit the mood beats: the hook,
-  "younger Americans got the bill". A **blurred photo or clip with a giant count-up
-  stat** is the go-to for one hero number.
+### The author's voice (the checker enforces the first three)
+- **No colons and no dashes.** Join clauses with "and", "while", "since", "so", or start a new sentence.
+- **No question-then-answer setups** ("Millennials? They hold…", "In the seventies? Just one in five.")
+  and no rhetorical questions.
+- **No narrator phrases or reveals**: "here's the catch", "but here's the thing", "turns out",
+  "the answer", "the truth is", "let's dive in", "you won't believe", "wait". No
+  cliffhanger pauses, no one-line dramatic sentences, no "Not X, but Y".
+- Plain, declarative, flowing sentences, like reading the article aloud: medium length,
+  with ordinary connectives ("and", "while", "now", "instead", "that was with…").
+  It should sound like a person explaining, not performing.
+- Use "we" for co-authored posts, "I" for solo posts. Numbers are spelled the way they're
+  said ("forty-one percent", "eighty-four trillion dollars").
+- Every number comes from the article (or its cited source) and goes in that scene's
+  `source`. If the article names no source, credit the article. Pick the 6–8 numbers that
+  carry the story, not every number.
+- `post.caption`: one or two plain sentences plus 5–8 `post.hashtags`.
+
+### Visuals per beat
+- Real photos or footage for places, institutions, people and eras (Step 2). Stock clips
+  (Pixabay) suit the opening shots and mood beats. A blurred photo or clip with a giant
+  count-up `stat` works well for a single hero number.
 - Charts, by what the number means:
   - share of a whole → `waffle` or `stacked`
-  - two things compared → `vbars` (with an annotation like "2x") or `stacked` (population vs wealth)
+  - two things compared → `vbars` (annotation like "almost 2x") or `stacked`
   - several categories → `hbars`
   - change over time → `line` with a `counter`
   - before vs after → `then_now`
-  - one shocking figure → `big_number`, or a `stat` overlay on a photo
-  - a list of causes or fixes → `checklist`
-  - the author's map or distinctive graphic → `figure` (see Step 2A)
-- Make sure on-screen text never gets ahead of the narration. Delay typed text or
-  items with `at` until the line that mentions them.
+  - one or two big figures → `big_number` (stack two with separate `at` times)
+  - a list the narration reads out → `checklist`
+  - the author's map or distinctive graphic → `figure` (Step 2A)
+- On-screen text never gets ahead of the narration. Time stats, bars, checklist items and
+  typed statements with `at` so each appears as it's said.
 
 ## Step 4: Media (no AI slop)
 Save the chosen candidates with `use <slug> <subject> <n> --as <name>` (e.g.

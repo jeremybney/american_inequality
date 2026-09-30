@@ -6,7 +6,7 @@
     "section": "The Dividing Line"
   },
   "notes": [
-    "Story arc: hook question → the boom → they took over D.C. → the rules they wrote → housing → the bill for younger generations → the $84T handoff (and who gets it) → the fix.",
+    "Story: Boomers hold the wealth, Millennials the debt → the baby boom → they ran Congress and wrote the rules → housing → the debt landed on younger generations → the $84T handoff is concentrated at the top → what would help.",
     "All figures are from the article (Mar 18, 2026). Where the article names a source it's shown on screen; otherwise the article itself is credited.",
     "Photos: Wikimedia Commons. Clips: Pixabay. Credits print on screen and are listed in credits.md."
   ],
@@ -39,9 +39,27 @@
       },
       "chip": "Generational wealth · American Inequality",
       "say": [
-        "Baby Boomers own about half of all the wealth in America.",
-        "Millennials? They hold almost half of all the debt.",
-        "So how did one generation end up with so much?"
+        "Baby Boomers own about half of all the wealth in America."
+      ]
+    },
+    {
+      "type": "video",
+      "media": "young_clip.mp4",
+      "query": "young people city street walking",
+      "blur": 0,
+      "dim": 0.35,
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "HALF THE DEBT",
+          "y": 0.34,
+          "at": 0.5,
+          "angle": -3
+        }
+      ],
+      "source": "Federal Reserve",
+      "say": [
+        "Millennials, on the other hand, hold almost half of the debt."
       ]
     },
     {
@@ -52,9 +70,9 @@
         "THE HOUSES",
         "THE HANDOFF"
       ],
-      "chips_at": 1.2,
+      "chips_at": 1.0,
       "say": [
-        "We dug into it, and the answer starts with timing."
+        "We looked at how that happened, starting with the baby boom."
       ]
     },
     {
@@ -78,13 +96,12 @@
           "suffix": "M",
           "label": "babies born, 1946–1964",
           "y": 0.36,
-          "at": 1.2
+          "at": 0.6
         }
       ],
       "source": "NCHS",
       "say": [
-        "Between 1946 and 1964, seventy-six million babies were born,",
-        "and the country reorganized itself around them."
+        "Between 1946 and 1964, seventy-six million babies were born in the U.S."
       ]
     },
     {
@@ -115,7 +132,7 @@
         }
       ],
       "say": [
-        "California was building a new school every week."
+        "California was building a new school every week to keep up."
       ]
     },
     {
@@ -136,8 +153,7 @@
         }
       ],
       "say": [
-        "Then, in 1976, the first Boomers could run for Congress.",
-        "They took over, and Congress aged right along with them."
+        "In 1976 the first Boomers could run for Congress, and by 2013 they held sixty percent of it."
       ]
     },
     {
@@ -147,12 +163,11 @@
         0,
         40
       ],
-      "play_at": 1.2,
+      "play_at": 0.3,
       "y": 0.43,
       "source": "Generation Distribution of Congress · American Inequality",
       "say": [
-        "At their peak, Boomers held sixty percent of Congress,",
-        "while making up only a quarter of the country."
+        "That was with only a quarter of the population, and they still hold 228 seats."
       ]
     },
     {
@@ -161,21 +176,20 @@
       "items": [
         {
           "text": "Limits on new housing",
-          "at": 1.9
+          "at": 0.9
         },
         {
           "text": "Taxes that favor wealth",
-          "at": 2.8
+          "at": 2.2
         },
         {
           "text": "Protected retirements",
-          "at": 3.7
+          "at": 3.6
         }
       ],
       "source": "The Great Generational Wealth Divide · American Inequality",
       "say": [
-        "And they wrote the rules for people like them:",
-        "limits on new housing, taxes that favor wealth, protected retirements."
+        "Those lawmakers limited new housing, wrote tax rules that favored wealth, and protected retirement benefits."
       ]
     },
     {
@@ -195,13 +209,12 @@
           "suffix": "%",
           "label": "of all U.S. real estate wealth is owned by Boomers",
           "y": 0.36,
-          "at": 1.2
+          "at": 0.8
         }
       ],
       "source": "Federal Reserve",
       "say": [
-        "Which brings us to housing.",
-        "Boomers own forty-one percent of all real estate wealth, often big empty-nest homes."
+        "Boomers now own forty-one percent of real estate wealth, often in big homes with few people in them."
       ]
     },
     {
@@ -213,42 +226,49 @@
           "value": 20,
           "display": "1 in 5",
           "color": "white",
-          "at": 1.2
+          "at": 0.8
         },
         {
           "label": "2022",
           "value": 48,
           "display": "nearly half",
           "color": "navy",
-          "at": 4.2
+          "at": 3.6
         }
       ],
       "source": "The Great Generational Wealth Divide · American Inequality",
       "say": [
-        "Builders followed the money. In the seventies, one in five new homes had four-plus bedrooms.",
-        "Now it's nearly half."
+        "In the seventies one in five new homes had four bedrooms or more, and now it's nearly half."
       ]
     },
     {
-      "type": "video",
-      "media": "young_clip.mp4",
-      "query": "young people city street walking",
-      "blur": 4,
-      "dim": 0.4,
-      "overlays": [
+      "type": "vbars",
+      "title": "Share of all U.S. debt",
+      "bars": [
         {
-          "kind": "stat",
+          "label": "Millennials",
           "value": 41,
           "suffix": "%",
-          "label": "of all U.S. debt is held by Millennials",
-          "y": 0.36,
-          "at": 1.9
+          "color": "white",
+          "at": 1.4
+        },
+        {
+          "label": "Boomers",
+          "value": 22,
+          "suffix": "%",
+          "color": "navy",
+          "at": 2.6
         }
       ],
+      "annotation": {
+        "text": "almost 2x",
+        "bar": 0,
+        "at": 3.4,
+        "color": "yellow"
+      },
       "source": "Federal Reserve",
       "say": [
-        "Meanwhile, younger Americans got the bill.",
-        "Millennials hold forty-one percent of all debt, almost double the Boomers."
+        "Younger generations got the debt instead, and Millennials now hold forty-one percent of it."
       ]
     },
     {
@@ -260,60 +280,40 @@
           "prefix": "$",
           "suffix": "T",
           "label": "passing down through 2045",
-          "at": 2.2
-        }
-      ],
-      "say": [
-        "Now the biggest handoff in history is underway: eighty-four trillion dollars."
-      ]
-    },
-    {
-      "type": "waffle",
-      "title": "Every $100 of Boomer wealth",
-      "groups": [
-        {
-          "label": "Top 10% of Boomers",
-          "count": 71,
-          "color": "navy"
+          "at": 0.6,
+          "count": 1.2
         },
         {
-          "label": "Everyone else",
-          "count": 29,
-          "color": "white"
+          "value": 71,
+          "suffix": "%",
+          "label": "held by the top 10% of Boomers",
+          "at": 3.2,
+          "count": 1.0,
+          "color": "yellow"
         }
       ],
-      "fill_at": 1.4,
-      "fill": 2.0,
-      "big": {
-        "value": 71,
-        "prefix": "$",
-        "label": "to the top 10%",
-        "color": "yellow",
-        "at": 3.0
-      },
-      "source": "The Great Generational Wealth Divide · American Inequality (2022)",
+      "source": "The Great Generational Wealth Divide · American Inequality",
       "say": [
-        "But it won't be spread evenly.",
-        "The top ten percent of Boomers hold seventy-one percent of it."
+        "Now eighty-four trillion dollars is being passed down, and the top ten percent of Boomers hold seventy-one percent of it."
       ]
     },
     {
       "type": "statement",
-      "kicker": "Will it be shared?",
-      "text": "More homes. Cheaper college. {Higher wages.}",
+      "kicker": "What would help",
+      "text": "More housing. Affordable college. {Higher wages.}",
       "say": [
-        "Boomers grew up in abundance. The question is whether it gets shared:",
-        "more homes, cheaper college, higher wages."
+        "Sharing it more widely means more housing, affordable college, and higher wages."
       ],
-      "at": 3.6,
-      "cps": 26,
+      "at": 0.6,
+      "cps": 30,
       "size": 80
     },
     {
       "type": "outro",
       "say": [
-        "The full story is on American Inequality. Link in bio."
+        "You can read the full story on American Inequality."
       ]
     }
-  ]
+  ],
+  "hold": 0.25
 }

@@ -204,8 +204,8 @@ class PhotoScene(Scene):
             if len(lines) < 2 or len(lines[-1]) > 1:
                 break
         total = sum(len(w) + 1 for line in lines for w, _ in line)
-        start = hl.get("at", 0.25)
-        speed = hl.get("cps", 38)  # characters per second
+        start = hl.get("at", 0.1)
+        speed = hl.get("cps", 60)  # characters per second: the hook reads in about a second
         n = int((t - start) * speed) if t >= start else 0
         if n <= 0:
             return
@@ -398,7 +398,9 @@ def build_article_card(article, cover_path=None, width=860):
     d.ellipse((pad, y, pad + 56, y + 56), fill=G.rgba(T.ORANGE))
     af = G.font("sans", 22)
     d.text((pad + 28 - af.getlength(initials) / 2, y + 14), initials, font=af, fill=G.rgba(T.TITLE))
-    byline = " & ".join(names) if len(names) <= 2 else f"{names[0]} et al."
+    byline = " & ".join(names) if len(names) <= 2 else ", ".join(names[:-1]) + " & " + names[-1]
+    while by_f.getlength(byline) > inner - 76 and len(names) > 2:  # too long for the card
+        byline = f"{names[0]} et al."
     d.text((pad + 76, y + 1), byline, font=by_f, fill=G.rgba(T.NAVY))
     d.text((pad + 76, y + 34), article.get("date_label", ""), font=date_f, fill=G.rgba(G.mix(T.NAVY, T.TITLE, 0.4)))
     card.paste(body, (0, 0), mask)
@@ -976,7 +978,8 @@ class OutroScene(Scene):
         d.rounded_rectangle((T.W / 2 - uw / 2 - 28, uy, T.W / 2 + uw / 2 + 28, uy + 72), 14, fill=G.rgba(T.NAVY, ua))
         G.draw_centered(d, T.W / 2, uy + 15, url, uf, G.rgba(T.TITLE, ua))
         authors = self.ctx.article.get("authors") or []
-        by = self.spec.get("byline", f"by {' & '.join(authors)}" if authors else "")
+        names = authors[:-1] and ", ".join(authors[:-1]) + " & " + authors[-1] or "".join(authors)
+        by = self.spec.get("byline", f"by {names}" if authors else "")
         if by:
             bf = G.font("sans_semi", 36)
             G.draw_centered(d, T.W / 2, y - 70, by, bf, G.rgba(T.NAVY, a))

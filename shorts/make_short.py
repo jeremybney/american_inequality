@@ -17,7 +17,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
-from aiq_shorts import engine, export, media, substack, visuals  # noqa: E402
+from aiq_shorts import checks, engine, export, media, substack, visuals  # noqa: E402
 
 
 def _load_dotenv(path=HERE / ".env"):
@@ -168,6 +168,7 @@ def cmd_stills(a):
     out = pdir / "output" / "stills.png"
     out.parent.mkdir(exist_ok=True)
     tl = engine.render_stills(pdir, out, captions=not a.no_captions)
+    checks.report(tl)
     print(f"{len(tl.scenes)} scenes, {tl.duration:.1f}s -> {out}")
 
 
@@ -184,6 +185,8 @@ def cmd_render(a):
     out_dir = pdir / "output"
     out_dir.mkdir(exist_ok=True)
     name = a.slug + ("_nocaptions" if a.no_captions else "")
+    if checks.report(engine.Timeline(pdir, quiet=True)) and not a.force:
+        raise SystemExit("Fix the ✗ items above (or pass --force) before rendering.")
     video = out_dir / f"{name}.mp4"
     tl = engine.render_video(pdir, video, captions=not a.no_captions, workers=a.workers, crf=a.crf,
                              start=a.start, end=a.end)
@@ -209,6 +212,7 @@ def cmd_script(a):
     out_dir = pdir / "output"
     out_dir.mkdir(exist_ok=True)
     tl = engine.Timeline(pdir)
+    checks.report(tl)
     export.write_script(tl, out_dir / "script.md")
     export.write_srt(tl, out_dir / "captions.srt")
     export.write_post(tl, out_dir / "tiktok_post.txt")
@@ -284,6 +288,7 @@ def main():
     p = sub.add_parser("render", help="render the final video + script")
     p.add_argument("slug")
     p.add_argument("--no-captions", action="store_true", help="omit burned-in captions")
+    p.add_argument("--force", action="store_true", help="render even if house rules fail")
     p.add_argument("--workers", type=int)
     p.add_argument("--crf", type=int, default=18)
     p.add_argument("--start", type=float, default=0.0)

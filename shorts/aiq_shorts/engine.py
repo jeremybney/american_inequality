@@ -82,7 +82,7 @@ class Timeline:
                 raise SystemExit(f"Scene {i}: unknown type {spec['type']!r}. Options: {sorted(SCENES)}")
             lines = say_lines(spec)
             natural = [line_seconds(l, self.wpm) for l in lines]
-            dur = sum(natural) + spec.get("hold", 0.35)
+            dur = sum(natural) + spec.get("hold", self.storyboard.get("hold", 0.35))
             dur = max(dur, spec.get("min_duration", 2.0))
             if "duration" in spec:
                 dur = float(spec["duration"])
