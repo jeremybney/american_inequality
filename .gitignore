@@ -22,3 +22,8 @@ myenv2/
 
 service_account.json
 google_sheets_oauth.json
+
+# Shorts video pipeline: rendered outputs and caches
+shorts/projects/*/output/
+shorts/projects/*/.cache/
+shorts/projects/_test/
