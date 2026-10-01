@@ -959,6 +959,10 @@ class StatementScene(ChartScene):
 class OutroScene(Scene):
     """Brand end card over a faded copy of the article card."""
 
+    def source_line(self):
+        # the end card carries the music credit (CC BY), like the reference videos
+        return self.spec.get("source") or self.ctx.storyboard.get("music_credit")
+
     def render(self, t):
         img = G.orange_background().copy()
         d = ImageDraw.Draw(img, "RGBA")

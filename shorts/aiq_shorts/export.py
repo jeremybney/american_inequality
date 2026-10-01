@@ -95,17 +95,21 @@ def post_parts(tl):
     caption = post.get("caption") or art.get("subtitle", "")
     cta = post.get("cta", "Full story at the link in bio.")
     tags = " ".join("#" + h.lstrip("#") for h in post.get("hashtags", []))
-    return {"headline": headline, "caption": caption, "cta": cta, "hashtags": tags, "url": art.get("url", "")}
+    music = tl.storyboard.get("music_credit", "")
+    return {"headline": headline, "caption": caption, "cta": cta, "hashtags": tags, "url": art.get("url", ""),
+            "music": music}
 
 
 def write_post(tl, path):
     """TikTok post: a headline (title / first line / cover text) and the caption to paste."""
     p = post_parts(tl)
-    paste = "\n\n".join(x for x in [p["headline"], p["caption"], p["cta"], p["hashtags"]] if x)
+    paste = "\n\n".join(x for x in [p["headline"], p["caption"], p["cta"], p["music"], p["hashtags"]] if x)
     md = [f"# TikTok post: {tl.ctx.article.get('title', '')}", "",
           "## Headline", "(TikTok title, cover text, and the first line people see)", "", p["headline"], "",
           "## Caption", "", p["caption"], "", p["cta"], "",
           "## Hashtags", "", p["hashtags"], "",
+          *(["## Music credit (required by the CC BY license; keep it in the caption)", "", p["music"], ""]
+            if p["music"] else []),
           "## Everything to paste", "", "```", paste, "```", "",
           f"Article: {p['url']}", ""]
     Path(path).with_suffix(".md").write_text("\n".join(md))

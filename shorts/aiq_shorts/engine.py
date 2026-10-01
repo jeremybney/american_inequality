@@ -251,11 +251,41 @@ def render_video(project_dir, out_path, captions=True, workers=None, crf=18, sta
     frames = range(int(start * T.FPS), int(end * T.FPS))
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
+    # --- audio: the author's voice (if synced) over a soft music bed (if chosen) ---
+    music = tl.storyboard.get("music")
+    bed = None
+    if music and music.get("off"):
+        music = None
+    if music and (tl.ctx.media_dir / music.get("file", "")).exists():
+        from . import music as MU
+        bed = MU.build_bed(project_dir, music, tl.duration, tl.ctx.cache_dir / "music_bed.wav")
+    elif music:
+        tl.ctx.warn(f"music file {music.get('file')} is missing; run `music <slug>` (rendering without music)")
+    voice_in = (["-i", str(tl.voice["audio"])] if tl.voice
+                else ["-f", "lavfi", "-t", f"{tl.duration:.3f}", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"])
+    audio_in, graph = list(voice_in), []
+    if bed:
+        audio_in += ["-i", str(bed)]
+        if tl.voice:
+            # the voice ducks the music a little more while it speaks; music returns in the gaps
+            graph = ["-filter_complex",
+                     "[1:a]aformat=sample_rates=48000:channel_layouts=stereo,apad,asplit=2[v1][v2];"
+                     "[2:a][v2]sidechaincompress=threshold=0.04:ratio=4:attack=40:release=600[m];"
+                     "[v1][m]amix=inputs=2:duration=longest:normalize=0[a]", "-map", "0:v", "-map", "[a]"]
+        else:
+            graph = ["-map", "0:v", "-map", "2:a"]
+    else:
+        graph = ["-af", "apad,aformat=channel_layouts=stereo", "-map", "0:v", "-map", "1:a"]
+    if start:  # partial renders: start every audio input at the same point as the video
+        shifted = []
+        for k, tok in enumerate(audio_in):
+            if tok == "-i" and audio_in[k - 1:k] != ["lavfi"]:
+                shifted += ["-ss", f"{start:.3f}"]
+            shifted.append(tok)
+        audio_in = shifted
     cmd = [M.ffmpeg_exe(), "-loglevel", "error", "-y",
            "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{T.W}x{T.H}", "-r", str(T.FPS), "-i", "-",
-           *(["-ss", str(start), "-i", str(tl.voice["audio"]), "-af", "apad,aformat=channel_layouts=stereo"]
-             if tl.voice else ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]),
-           "-map", "0:v", "-map", "1:a", "-shortest", "-c:v", "libx264", "-preset", "medium", "-crf", str(crf),
+           *audio_in, *graph, "-shortest", "-c:v", "libx264", "-preset", "medium", "-crf", str(crf),
            "-pix_fmt", "yuv420p", "-profile:v", "high", "-movflags", "+faststart",
            "-c:a", "aac", "-b:a", "192k", str(out_path)]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)

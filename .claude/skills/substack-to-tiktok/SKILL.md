@@ -85,6 +85,21 @@ If the script changes after a sync, the engine falls back to estimated timing an
 author then re-records, or you re-run `voice` if only visuals changed. `voice <slug> --off`
 removes the voiceover. Never generate or clone the author's voice.
 
+## Background music (automatic, different for every video)
+`render` assigns a track automatically when the storyboard has none (`music <slug>` does it
+explicitly). Tracks come from Kevin MacLeod's Incompetech catalog (CC BY 4.0), filtered to
+the reference videos' feel: bright, relaxed, calming or uplifting instrumentals at 78–128 BPM,
+long enough for the video, in contemporary, electronic, pop, acoustic or ambient genres. No
+holiday, classical, jazz, period, comic or novelty-instrument tracks, and not Tal Roded's own
+signature tracks. `shorts/assets/music_used.json` logs every video's track so none repeats.
+- The music comes in at 5s (fade in 2.5s), sits at -30 LUFS (about 13–14 dB under a -16 LUFS
+  voice), is ducked further by the voice while it speaks, and fades out over the last 3s.
+- The credit line (required by CC BY) is added automatically to the end card's source line,
+  credits.md and the TikTok post ("Music: “Title” Kevin MacLeod (incompetech.com), licensed
+  under CC BY 4.0"). Keep it in the posted caption.
+- Adjust per video: `music <slug> --reroll`, `--title "…"`, `--start 4`, `--level -27` (louder),
+  `--list` (eligible tracks and where they were used), `--off`.
+
 ## Step 1: Fetch
 `new` calls Substack's public API and saves `article.json` (metadata),
 `article.md` (full text), `media/cover.jpg`, and every inline image as

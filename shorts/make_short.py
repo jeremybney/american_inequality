@@ -266,6 +266,38 @@ def cmd_voice(a):
     print("Next: `stills` to review, then `render` (the voice is mixed in automatically).")
 
 
+def cmd_music(a):
+    """Choose (or change) the background track for a video."""
+    from aiq_shorts import music
+    pdir = project(a.slug)
+    if a.list:
+        hist = music.used()
+        for t in music.candidates():
+            who = [k for k, v in hist.items() if v.get("title") == t["title"] and "~" not in k]
+            print(f"  {t['title']:<30} {t['bpm']:>4} bpm  {t['feel']:<40} {'(used: ' + ', '.join(who) + ')' if who else ''}")
+        return
+    if a.off:
+        sb_path = pdir / "storyboard.json"
+        sb = json.loads(sb_path.read_text())
+        sb["music"] = {"off": True}
+        sb.pop("music_credit", None)
+        sb_path.write_text(json.dumps(sb, indent=2, ensure_ascii=False) + "\n")
+        print("Music turned off for this video.")
+        return
+    m = music.assign(pdir, title=a.title, reroll=a.reroll)
+    if a.start is not None or a.level is not None:
+        sb_path = pdir / "storyboard.json"
+        sb = json.loads(sb_path.read_text())
+        if a.start is not None:
+            sb["music"]["start"] = a.start
+        if a.level is not None:
+            sb["music"]["level_db"] = a.level
+        sb_path.write_text(json.dumps(sb, indent=2, ensure_ascii=False) + "\n")
+        m = sb["music"]
+    print(f"Music: {m['title']} ({m['feel']}), starts at {m['start']}s, bed level {m['level_db']} LUFS")
+    print(f"Credit: {m['credit']}")
+
+
 def cmd_stills(a):
     pdir = project(a.slug)
     out = pdir / "output" / "stills.png"
@@ -288,6 +320,11 @@ def cmd_render(a):
     out_dir = pdir / "output"
     out_dir.mkdir(exist_ok=True)
     name = a.slug + ("_nocaptions" if a.no_captions else "")
+    sbm = json.loads((pdir / "storyboard.json").read_text()).get("music")
+    if not sbm:  # every video gets its own track unless music was turned off
+        from aiq_shorts import music
+        m = music.assign(pdir)
+        print(f"Music: {m['title']} ({m['feel']})")
     if checks.report(engine.Timeline(pdir, quiet=True)) and not a.force:
         raise SystemExit("Fix the ✗ items above (or pass --force) before rendering.")
     video = out_dir / f"{name}.mp4"
@@ -424,6 +461,16 @@ def main():
     p.add_argument("--max-gap", type=float, default=0.5, help="longest pause kept between lines in seconds (0 = keep all)")
     p.add_argument("--ext", help="original file extension for a base64 upload from the queue page (e.g. m4a)")
     p.set_defaults(fn=cmd_voice)
+
+    p = sub.add_parser("music", help="pick or change the background music (a fresh track per video)")
+    p.add_argument("slug")
+    p.add_argument("--title", help="use a specific Incompetech track")
+    p.add_argument("--reroll", action="store_true", help="pick a different track")
+    p.add_argument("--start", type=float, help="seconds before the music comes in (default 5)")
+    p.add_argument("--level", type=float, help="music bed loudness in LUFS (default -30; higher = louder)")
+    p.add_argument("--list", action="store_true", help="show the eligible tracks and where they've been used")
+    p.add_argument("--off", action="store_true", help="no music for this video")
+    p.set_defaults(fn=cmd_music)
 
     p = sub.add_parser("stills", help="render a key-frame contact sheet")
     p.add_argument("slug")
