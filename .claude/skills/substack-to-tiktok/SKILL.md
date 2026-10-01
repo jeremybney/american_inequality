@@ -69,9 +69,11 @@ When the user says "sync my voiceovers" (or similar):
 1. `list` the queue; for each item with `status: "voice"`, download the recording with the
    Artifact tool: `action: "read"`, the queue URL, `path: <asset_id>`, and an `out_dir` inside the project.
 2. `python shorts/make_short.py voice <slug> <downloaded .txt> --ext <ext>`. It decodes, cleans
-   (trims leading dead air, then `VOICE_CHAIN` in `voice.py` fixes the boomy, hollow tone a
-   phone in a normal room gives: cuts rumble and boom, scoops boxy low mids, lifts presence and
-   air, de-esses, lightly expands the room tail, compresses, levels to -16 LUFS), transcribes
+   (trims leading dead air, then measures the recording's tone and EQs each band toward a clear
+   spoken-voice balance (`TARGETS` in `voice.py`, a few dB at most, nothing where it's already
+   right: a phone in a room gets the boom cut and presence lifted, earbuds barely change),
+   de-esses, lightly expands the room tail, compresses, levels to -16 LUFS; the EQ it chose is
+   printed and stored as `voiceover.eq`), transcribes
    with word timestamps (faster-whisper `base.en`, run on a plainer denoised copy with the same
    timeline because the polished tone can make whisper loop), aligns every script line, snaps each line
    to the actual speech onset, tightens pauses BETWEEN lines to 0.5s (`--max-gap`, 0 keeps them;
@@ -88,7 +90,9 @@ If the script changes after a sync, the engine falls back to estimated timing an
 author then re-records, or you re-run `voice` if only visuals changed. `voice <slug> --off`
 removes the voiceover. Never generate or clone the author's voice.
 
-Recording tips for the author (the processing helps, but the room matters most): record
+Recording tips for the author (the processing helps, but the mic and room matter most).
+Earbuds with a mic (AirPods) give the cleanest result: close to the mouth, little room sound,
+and their noise suppression leaves near-silent pauses. With the phone's own mic, record
 close to the phone (about a hand's width, slightly off to the side), in a small soft room
 (a closet of clothes, a bedroom with a bed and curtains), not a kitchen or bare-walled room,
 with the phone on something soft rather than a hard table.

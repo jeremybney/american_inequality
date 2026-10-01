@@ -20,22 +20,56 @@ def _ff(*args):
     subprocess.run([M.ffmpeg_exe(), "-loglevel", "error", "-y", *args], check=True)
 
 
-# Phone recordings in a normal room come out boomy (too much 100-500 Hz from the room and
-# mic proximity) and dull (little 2-5 kHz presence), which makes the voice sound hollow and
-# pasted on top of the video. This chain fixes the balance rather than scrubbing noise: trim the
-# rumble and boom, scoop the boxy low mids, lift presence and air, tame the S's it brings out,
-# pull room tail down a little between words, and compress gently so it sits steady.
-VOICE_CHAIN = ("highpass=f=85,lowshelf=f=140:g=-2,equalizer=f=170:t=q:w=1.0:g=-3,"
-               "equalizer=f=420:t=q:w=1.3:g=-3.5,equalizer=f=3200:t=q:w=1.0:g=5,highshelf=f=7500:g=3,"
-               "deesser=i=0.35,agate=threshold=0.015:ratio=1.8:attack=4:release=150:range=0.35,"
-               "acompressor=threshold=-22dB:ratio=3:attack=6:release=90:makeup=2")
+# Recordings differ a lot by mic. A phone on a table in a normal room comes out boomy (too much
+# 100-500 Hz from the room and mic proximity) and dull (little 2-5 kHz presence), which sounds
+# hollow and pasted on top of the video; earbuds like AirPods are cleaner and brighter already.
+# So the EQ is measured per recording: each band is nudged toward a clear spoken-voice balance,
+# by at most a few dB, and left alone when it's already there. Then de-ess, pull the room tail
+# down a little between words, and compress gently so the voice sits steady.
+TARGETS = {  # band (Hz): (filter, target dB relative to the whole voice, min gain, max gain)
+    (60, 150): ("lowshelf=f=140", -9.0, -3.0, 0.0),
+    (150, 300): ("equalizer=f=170:t=q:w=1.0", -9.5, -5.0, 0.0),
+    (300, 600): ("equalizer=f=420:t=q:w=1.3", -6.0, -4.0, 0.0),
+    (2500, 5000): ("equalizer=f=3200:t=q:w=1.0", -13.0, 0.0, 6.0),
+    (5000, 8000): ("highshelf=f=7500", -12.0, 0.0, 3.0),
+}
+DYNAMICS = ("deesser=i=0.35,agate=threshold=0.015:ratio=1.8:attack=4:release=150:range=0.35,"
+            "acompressor=threshold=-22dB:ratio=3:attack=6:release=90:makeup=2")
+
+
+def balance(src):
+    """Each band's level relative to the whole voice, in dB, measured over the louder (speech) frames."""
+    import numpy as np
+    raw = subprocess.run([M.ffmpeg_exe(), "-loglevel", "error", "-i", str(src), "-ac", "1", "-ar", "48000",
+                          "-f", "f32le", "-"], capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, dtype=np.float32)
+    n = 960
+    fr = x[:len(x) // n * n].reshape(-1, n)
+    db = 10 * np.log10((fr ** 2).mean(1) + 1e-12)
+    sp = fr[db > np.percentile(db, 60)].ravel()[:48000 * 30]
+    spec = np.abs(np.fft.rfft(sp * np.hanning(len(sp)))) ** 2
+    f = np.fft.rfftfreq(len(sp), 1 / 48000)
+    band = lambda lo, hi: 10 * np.log10(spec[(f >= lo) & (f < hi)].sum() + 1e-12)
+    total = band(60, 12000)
+    return {k: band(*k) - total for k in TARGETS}
+
+
+def voice_chain(src):
+    """The tone chain for this recording (see TARGETS), plus a readable summary of the EQ."""
+    bal, eq, notes = balance(src), ["highpass=f=85"], []
+    for k, (flt, target, lo, hi) in TARGETS.items():
+        g = round(min(hi, max(lo, target - bal[k])), 1)
+        if abs(g) >= 0.5:
+            eq.append(f"{flt}:g={g}")
+            notes.append(f"{k[0]}-{k[1]} Hz {g:+.1f} dB")
+    return ",".join(eq + [DYNAMICS]), notes or ["no EQ needed"]
 
 
 def clean(src, out_wav, polish=True):
-    """Trim leading dead air, fix the tone (see VOICE_CHAIN), level to -16 LUFS.
+    """Trim leading dead air, fix the tone (see TARGETS), level to -16 LUFS.
     polish=False keeps the tone as recorded: speech recognition and onset timing are more
     reliable on it, and it lines up sample for sample with the polished copy."""
-    tone = (f"{VOICE_CHAIN},loudnorm=I=-16:TP=-1.5:LRA=9" if polish
+    tone = (f"{voice_chain(src)[0]},loudnorm=I=-16:TP=-1.5:LRA=9" if polish
             else "highpass=f=70,afftdn=nf=-28,loudnorm=I=-14:TP=-1.5:LRA=11")
     af = f"silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,{tone}"
     _ff("-i", str(src), "-vn", "-ac", "1", "-ar", "48000", "-af", af, str(out_wav))
@@ -146,7 +180,8 @@ def align(lines, words):
             out.append({"start": out[-1]["end"] if out else 0.0, "end": out[-1]["end"] if out else 0.0, "matched": 0.0})
             continue
         out.append({"start": round(times[idx[0]][0], 3), "end": round(times[idx[-1]][1], 3),
-                    "matched": round(sum(matched_flags[i] for i in idx) / len(idx), 2)})
+                    "matched": round(sum(matched_flags[i] for i in idx) / len(idx), 2),
+                    "heard_first": matched_flags[idx[0]]})
     # keep cues monotonic
     for k in range(1, len(out)):
         out[k]["start"] = max(out[k]["start"], out[k - 1]["start"] + 0.05)
@@ -173,14 +208,18 @@ def refine_starts(cues, wav, floor_db=-32.0):
     Speech recognition can put a line's first word inside the pause before it, or (when it
     mishears a word) well after it. A reader pauses between sentences, so among the speech
     onsets near the detected start we pick the one after the longest pause, with a small
-    penalty for distance from the detected time."""
+    penalty for distance from the detected time. When the line's first word was heard
+    clearly it can still start early (stretched back into the pause) but not much late, so the
+    search reaches only 0.4s earlier (a pause inside the previous line can be as long as the
+    one before this line)."""
     db, step = _energy_db(wav)
     loud = db > floor_db
     n = len(loud)
     prev_start = -1.0
     for c in cues:
-        lo = max(prev_start + 0.8, c["start"] - 1.5, 0.0)
-        hi = min(c["start"] + 1.2, c["end"] - 0.2)
+        reach = (0.4, 1.2) if c.pop("heard_first", False) else (1.5, 1.2)
+        lo = max(prev_start + 0.8, c["start"] - reach[0], 0.0)
+        hi = min(c["start"] + reach[1], c["end"] - 0.2)
         best, best_score = None, None
         quiet = 0
         for i in range(max(0, int(lo / step) - 200), min(n - 5, int(hi / step))):
@@ -287,7 +326,8 @@ def sync(project_dir, audio_path, max_gap=0.5):
         "file": dest.name, "clean": clean_wav.name, "duration": round(duration(clean_wav), 2),
         "cues": [{"scene": i, "line": j, "text": t, **c} for (i, j), t, c in zip(keys, lines, cues)],
         "transcript": " ".join(w for _, _, w in words),
-        "pauses_trimmed_s": removed, "max_gap": max_gap,
+        "pauses_trimmed_s": removed, "max_gap": max_gap, "eq": voice_chain(dest)[1],
     }
+    print("Voice EQ for this recording: " + ", ".join(sb["voiceover"]["eq"]))
     sb_path.write_text(json.dumps(sb, indent=2, ensure_ascii=False) + "\n")
     return sb["voiceover"]
