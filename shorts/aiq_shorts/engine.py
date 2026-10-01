@@ -263,33 +263,21 @@ def render_video(project_dir, out_path, captions=True, workers=None, crf=18, sta
         bed = MU.build_bed(project_dir, music, tl.duration, tl.ctx.cache_dir / "music_bed.wav", start=start_t)
     elif music:
         tl.ctx.warn(f"music file {music.get('file')} is missing; run `music <slug>` (rendering without music)")
-    sfx = tl.storyboard.get("sfx") or {}
-    whoosh = None
-    if not sfx.get("off") and len(tl.spans) > 1:
-        from . import sfx as SFX
-        whoosh = SFX.build_track([a for a, _ in tl.spans[1:]], tl.duration, tl.ctx.cache_dir / "sfx.wav",
-                                 level_db=float(sfx.get("level_db", -28)))
     voice_in = (["-i", str(tl.voice["audio"])] if tl.voice
                 else ["-f", "lavfi", "-t", f"{tl.duration:.3f}", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"])
-    audio_in = list(voice_in)
-    # [v] the voice, [m] the music (ducked a little more while the voice speaks; it returns in
-    # the gaps), [s] the transition whooshes (not ducked: they land in the gaps between lines)
-    chains, mix, n = ["[1:a]aformat=sample_rates=48000:channel_layouts=stereo,apad,asplit=2[v][vk]"], ["[v]"], 2
+    audio_in, graph = list(voice_in), []
     if bed:
         audio_in += ["-i", str(bed)]
-        chains.append(f"[{n}:a][vk]sidechaincompress=threshold=0.04:ratio=4:attack=40:release=600[m]"
-                      if tl.voice else f"[{n}:a]anull[m]")
-        mix.append("[m]")
-        n += 1
-    if not bed or not tl.voice:
-        chains.append("[vk]anullsink")
-    if whoosh:
-        audio_in += ["-i", str(whoosh)]
-        chains.append(f"[{n}:a]anull[s]")
-        mix.append("[s]")
-    chains.append(f"{''.join(mix)}amix=inputs={len(mix)}:duration=first:normalize=0[a]" if len(mix) > 1
-                  else "[v]anull[a]")
-    graph = ["-filter_complex", ";".join(chains), "-map", "0:v", "-map", "[a]"]
+        if tl.voice:
+            # the voice ducks the music a little more while it speaks; music returns in the gaps
+            graph = ["-filter_complex",
+                     "[1:a]aformat=sample_rates=48000:channel_layouts=stereo,apad,asplit=2[v1][v2];"
+                     "[2:a][v2]sidechaincompress=threshold=0.04:ratio=4:attack=40:release=600[m];"
+                     "[v1][m]amix=inputs=2:duration=longest:normalize=0[a]", "-map", "0:v", "-map", "[a]"]
+        else:
+            graph = ["-map", "0:v", "-map", "2:a"]
+    else:
+        graph = ["-af", "apad,aformat=channel_layouts=stereo", "-map", "0:v", "-map", "1:a"]
     if start:  # partial renders: start every audio input at the same point as the video
         shifted = []
         for k, tok in enumerate(audio_in):
