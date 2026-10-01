@@ -234,6 +234,36 @@ def cmd_clip(a):
     print("News item for the storyboard:\n  " + json.dumps(item, ensure_ascii=False))
 
 
+def cmd_voice(a):
+    """Sync the author's recorded voiceover: clean it, find each line, time the video to it."""
+    import re
+    from aiq_shorts import voice
+    pdir = project(a.slug)
+    if a.off:
+        sb_path = pdir / "storyboard.json"
+        sb = json.loads(sb_path.read_text())
+        sb.pop("voiceover", None)
+        sb_path.write_text(json.dumps(sb, indent=2, ensure_ascii=False) + "\n")
+        print("Voiceover removed; timing falls back to the script estimate.")
+        return
+    src = Path(a.audio)
+    head = src.read_bytes()[:64]
+    if src.suffix == ".txt" or re.fullmatch(rb"[A-Za-z0-9+/=\s]+", head or b"x"):
+        # recordings uploaded through the Shorts Queue page are stored as base64 text
+        import base64
+        decoded = pdir / "media" / f"voiceover_upload.{(a.ext or 'm4a').lstrip('.')}"
+        decoded.write_bytes(base64.b64decode(src.read_bytes()))
+        src = decoded
+    vo = voice.sync(pdir, src)
+    print(f"Voiceover: {vo['duration']:.1f}s of audio, {len(vo['cues'])} lines")
+    for c in vo["cues"]:
+        flag = "" if c["matched"] >= 0.6 else "   <- couldn't hear most of this line (skipped or reworded?)"
+        print(f"  {c['start']:6.1f}–{c['end']:5.1f}s  {c['text'][:70]}{flag}")
+    tl = engine.Timeline(pdir, quiet=True)
+    checks.report(tl)
+    print("Next: `stills` to review, then `render` (the voice is mixed in automatically).")
+
+
 def cmd_stills(a):
     pdir = project(a.slug)
     out = pdir / "output" / "stills.png"
@@ -384,6 +414,13 @@ def main():
     p.add_argument("--headline", help="headline for a quoted card when the site can't be clipped")
     p.add_argument("--dek", help="subhead for a quoted card")
     p.set_defaults(fn=cmd_clip)
+
+    p = sub.add_parser("voice", help="sync a recorded voiceover to the video (or --off to remove it)")
+    p.add_argument("slug")
+    p.add_argument("audio", nargs="?", help="the recording (.m4a, .mp3, .wav, .mp4, .webm)")
+    p.add_argument("--off", action="store_true")
+    p.add_argument("--ext", help="original file extension for a base64 upload from the queue page (e.g. m4a)")
+    p.set_defaults(fn=cmd_voice)
 
     p = sub.add_parser("stills", help="render a key-frame contact sheet")
     p.add_argument("slug")

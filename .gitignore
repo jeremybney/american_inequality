@@ -31,3 +31,6 @@ shorts/projects/_test/
 shorts/projects/*/media/*.mp4
 shorts/projects/*/media/*.mov
 shorts/projects/*/media/*.webm
+# Voice recordings (personal; re-downloadable from the Shorts Queue page)
+shorts/projects/*/media/voiceover*
+shorts/.env

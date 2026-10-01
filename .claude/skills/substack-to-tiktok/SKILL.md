@@ -59,6 +59,31 @@ When the user says "apply my script edits":
 3. Re-render, push the new `queue_payload.json` with `status: "ready"` and `script_edits: []`,
    and send the new MP4.
 
+## Voiceovers (the author's real voice, never a synthetic one)
+The author records themselves reading the script: a voice memo, read from the page's
+Teleprompter, then uploaded on the Shorts Queue page. The page stores it as base64 text (the
+file store doesn't take audio types) and sets the item's `status: "voice"` and
+`voiceover: {asset_id, name, ext, size, encoding: "base64", uploaded_at}`.
+
+When the user says "sync my voiceovers" (or similar):
+1. `list` the queue; for each item with `status: "voice"`, download the recording with the
+   Artifact tool: `action: "read"`, the queue URL, `path: <asset_id>`, and an `out_dir` inside the project.
+2. `python shorts/make_short.py voice <slug> <downloaded .txt> --ext <ext>`. It decodes, cleans
+   (trims leading dead air, cuts rumble, light denoise, levels to about -14 LUFS), transcribes
+   with word timestamps (faster-whisper `base.en`), aligns every script line, snaps each line
+   to the actual speech onset, and stores the cues in `storyboard.voiceover`. Tested against
+   known timings, line starts land within 0.03s.
+3. Read the printed table. A line flagged "couldn't hear most of this line" means it was
+   skipped or reworded. Tell the user which line rather than guessing.
+4. `stills`, then `render`. Scene lengths, captions and every reveal (`at` times, scaled to the
+   real pace) follow the recording, and the voice is mixed into the MP4 (AAC 192k).
+5. Push the new `queue_payload.json` with `status: "ready"`, `script_edits: []`, and
+   `voiceover.synced_at` set (keep the other voiceover fields), and send the new MP4.
+
+If the script changes after a sync, the engine falls back to estimated timing and warns. The
+author then re-records, or you re-run `voice` if only visuals changed. `voice <slug> --off`
+removes the voiceover. Never generate or clone the author's voice.
+
 ## Step 1: Fetch
 `new` calls Substack's public API and saves `article.json` (metadata),
 `article.md` (full text), `media/cover.jpg`, and every inline image as

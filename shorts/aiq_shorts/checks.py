@@ -65,7 +65,9 @@ def check(tl):
         warnings.append(f"runtime {tl.duration:.0f}s is under {MIN_SECONDS}s; there may be room for one more beat")
     if tl.spans:
         a, b = tl.spans[0]
-        if b - a > FIRST_SCENE_MAX:
+        if b - a > FIRST_SCENE_MAX and tl.voice:
+            warnings.append(f"first scene runs {b - a:.1f}s with the voiceover; a shorter first line keeps the opening quick")
+        elif b - a > FIRST_SCENE_MAX:
             errors.append(f"first scene lasts {b - a:.1f}s; keep the opening shot under {FIRST_SCENE_MAX}s "
                           "(give it one short line and cut to the next visual)")
     for i, (a, b) in enumerate(tl.spans[1:], 1):

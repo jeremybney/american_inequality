@@ -65,6 +65,24 @@ def line_seconds(text, wpm):
     return max(1.1, words * 60.0 / wpm + 0.25)
 
 
+TIMING_KEYS = {"at", "chips_at", "badge_at", "fill_at", "note_at", "zoom_at", "annotation_at", "play_at",
+               "big_at", "draw_at", "stagger"}
+
+
+def scale_timing(spec, k):
+    """Copy of a scene spec with its reveal times (`at`, `*_at`, `stagger`) scaled by k."""
+    if abs(k - 1) < 0.03:
+        return spec
+    def walk(v):
+        if isinstance(v, dict):
+            return {key: (val * k if key in TIMING_KEYS and isinstance(val, (int, float)) and val >= 0 else walk(val))
+                    for key, val in v.items()}
+        if isinstance(v, list):
+            return [walk(x) for x in v]
+        return v
+    return walk(spec)
+
+
 class Timeline:
     def __init__(self, project_dir, captions=True, quiet=False):
         self.project_dir = Path(project_dir)
@@ -75,10 +93,11 @@ class Timeline:
         self.wpm = self.storyboard.get("wpm", T.DEFAULT_WPM)
         self.draft = self.storyboard.get("draft", False)
         self.scenes, self.spans, self.cues = [], [], []
-        t = 0.0
-        for i, spec in enumerate(self.storyboard["scenes"]):
-            cls = SCENES.get(spec["type"])
-            if not cls:
+        specs = self.storyboard["scenes"]
+        # 1) estimated timing from the text (narration pace)
+        est_spans, est_cues, t = [], [], 0.0
+        for i, spec in enumerate(specs):
+            if spec["type"] not in SCENES:
                 raise SystemExit(f"Scene {i}: unknown type {spec['type']!r}. Options: {sorted(SCENES)}")
             lines = say_lines(spec)
             natural = [line_seconds(l, self.wpm) for l in lines]
@@ -88,13 +107,26 @@ class Timeline:
                 dur = float(spec["duration"])
             ct = t + spec.get("lead", 0.15)
             for line, nd in zip(lines, natural):
-                self.cues.append({"scene": i, "start": ct, "end": min(ct + nd, t + dur), "text": line})
+                est_cues.append({"scene": i, "start": ct, "end": min(ct + nd, t + dur), "text": line})
                 ct += nd
-            scene = cls(spec, self.ctx)
+            est_spans.append((t, t + dur))
+            t += dur
+        # 2) a synced voiceover replaces the estimate with the author's real delivery
+        self.voice = self._voice_timing(specs)
+        if self.voice:
+            spans, cues = self.voice["spans"], self.voice["cues"]
+        else:
+            spans, cues = est_spans, est_cues
+        for i, spec in enumerate(specs):
+            dur = spans[i][1] - spans[i][0]
+            est = est_spans[i][1] - est_spans[i][0]
+            if self.voice and est > 0:  # move each scene's reveals in proportion to the real pace
+                spec = scale_timing(spec, max(0.6, min(1.8, dur / est)))
+            scene = SCENES[spec["type"]](spec, self.ctx)
             scene.prepare(dur)
             self.scenes.append(scene)
-            self.spans.append((t, t + dur))
-            t += dur
+        self.spans, self.cues = list(spans), [dict(c) for c in cues]
+        t = self.spans[-1][1] if self.spans else 0.0
         # captions stay up until the next one starts (no flicker between lines)
         for a, b in zip(self.cues, self.cues[1:]):
             if a["scene"] == b["scene"]:
@@ -105,6 +137,36 @@ class Timeline:
             self.cues[-1]["end"] = self.spans[self.cues[-1]["scene"]][1]
         self.duration = t
         self._cap_cache = {}
+
+    def _voice_timing(self, specs):
+        """Scene spans and caption cues from a synced voiceover, if one matches this script."""
+        vo = self.storyboard.get("voiceover")
+        if not vo or not vo.get("cues"):
+            return None
+        current = [(i, j, text) for i, s in enumerate(specs) for j, text in enumerate(say_lines(s))]
+        recorded = [(c["scene"], c["line"], c["text"]) for c in vo["cues"]]
+        if current != recorded:
+            self.ctx.warn("the script changed since the voiceover was synced; re-record or re-run `voice` "
+                          "(using estimated timing for now)")
+            return None
+        if not (self.ctx.media_dir / vo["clean"]).exists():
+            self.ctx.warn(f"voiceover audio {vo['clean']} is missing; using estimated timing")
+            return None
+        first = {}
+        for c in vo["cues"]:
+            first.setdefault(c["scene"], c["start"])
+        starts = []
+        for i in range(len(specs)):
+            if i == 0:
+                starts.append(0.0)
+            elif i in first:
+                starts.append(max(starts[-1] + 0.6, first[i] - 0.12))
+            else:  # a silent scene borrows a short slot (keep these rare with a voiceover)
+                starts.append(starts[-1] + float(specs[i].get("duration", 1.5)))
+        end = max(vo["cues"][-1]["end"] + 1.2, float(vo.get("duration", 0)) + 0.4)
+        spans = [(s, starts[k + 1] if k + 1 < len(starts) else end) for k, s in enumerate(starts)]
+        cues = [{"scene": c["scene"], "start": c["start"], "end": c["end"], "text": c["text"]} for c in vo["cues"]]
+        return {"spans": spans, "cues": cues, "audio": self.ctx.media_dir / vo["clean"]}
 
     # -- frame rendering ------------------------------------------------------
     def scene_at(self, t):
@@ -185,10 +247,11 @@ def render_video(project_dir, out_path, captions=True, workers=None, crf=18, sta
     out_path.parent.mkdir(parents=True, exist_ok=True)
     cmd = [M.ffmpeg_exe(), "-loglevel", "error", "-y",
            "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{T.W}x{T.H}", "-r", str(T.FPS), "-i", "-",
-           "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000",
-           "-shortest", "-c:v", "libx264", "-preset", "medium", "-crf", str(crf),
+           *(["-ss", str(start), "-i", str(tl.voice["audio"]), "-af", "apad,aformat=channel_layouts=stereo"]
+             if tl.voice else ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]),
+           "-map", "0:v", "-map", "1:a", "-shortest", "-c:v", "libx264", "-preset", "medium", "-crf", str(crf),
            "-pix_fmt", "yuv420p", "-profile:v", "high", "-movflags", "+faststart",
-           "-c:a", "aac", "-b:a", "128k", str(out_path)]
+           "-c:a", "aac", "-b:a", "192k", str(out_path)]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     workers = workers or max(1, (os.cpu_count() or 2))
     total = len(frames)
