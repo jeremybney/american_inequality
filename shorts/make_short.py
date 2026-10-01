@@ -254,7 +254,9 @@ def cmd_voice(a):
         decoded = pdir / "media" / f"voiceover_upload.{(a.ext or 'm4a').lstrip('.')}"
         decoded.write_bytes(base64.b64decode(src.read_bytes()))
         src = decoded
-    vo = voice.sync(pdir, src)
+    vo = voice.sync(pdir, src, max_gap=a.max_gap)
+    if vo.get("pauses_trimmed_s"):
+        print(f"Tightened pauses between lines to {a.max_gap}s (removed {vo['pauses_trimmed_s']}s of silence; words untouched)")
     print(f"Voiceover: {vo['duration']:.1f}s of audio, {len(vo['cues'])} lines")
     for c in vo["cues"]:
         flag = "" if c["matched"] >= 0.6 else "   <- couldn't hear most of this line (skipped or reworded?)"
@@ -419,6 +421,7 @@ def main():
     p.add_argument("slug")
     p.add_argument("audio", nargs="?", help="the recording (.m4a, .mp3, .wav, .mp4, .webm)")
     p.add_argument("--off", action="store_true")
+    p.add_argument("--max-gap", type=float, default=0.5, help="longest pause kept between lines in seconds (0 = keep all)")
     p.add_argument("--ext", help="original file extension for a base64 upload from the queue page (e.g. m4a)")
     p.set_defaults(fn=cmd_voice)
 

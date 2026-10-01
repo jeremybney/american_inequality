@@ -71,7 +71,8 @@ When the user says "sync my voiceovers" (or similar):
 2. `python shorts/make_short.py voice <slug> <downloaded .txt> --ext <ext>`. It decodes, cleans
    (trims leading dead air, cuts rumble, light denoise, levels to about -14 LUFS), transcribes
    with word timestamps (faster-whisper `base.en`), aligns every script line, snaps each line
-   to the actual speech onset, and stores the cues in `storyboard.voiceover`. Tested against
+   to the actual speech onset, tightens pauses BETWEEN lines to 0.5s (`--max-gap`, 0 keeps them;
+   words are never cut or sped up), and stores the cues in `storyboard.voiceover`. Tested against
    known timings, line starts land within 0.03s.
 3. Read the printed table. A line flagged "couldn't hear most of this line" means it was
    skipped or reworded. Tell the user which line rather than guessing.

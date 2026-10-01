@@ -188,7 +188,65 @@ def refine_starts(cues, wav, floor_db=-32.0):
     return cues
 
 
-def sync(project_dir, audio_path):
+def tighten(wav, cues, max_gap=0.5, fade=0.012):
+    """Shorten long pauses BETWEEN lines to max_gap (editor-style tightening for short-form
+    pacing). Words are untouched and nothing is sped up; only silence inside the gaps is cut,
+    with a short crossfade at each cut. Rewrites the wav and shifts cue times. Returns seconds removed."""
+    import wave
+    import numpy as np
+    with wave.open(str(wav)) as w:
+        rate, ch, sw = w.getframerate(), w.getnchannels(), w.getsampwidth()
+        x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32)
+    db, step = _energy_db(wav)
+    cuts = []  # (start_s, end_s) of audio to remove
+    for a, b in zip(cues, cues[1:]):
+        g0, g1 = a["end"], b["start"]
+        if g1 - g0 <= max_gap:
+            continue
+        # only cut where it's actually quiet: the longest quiet run inside the gap
+        i0, i1 = int(g0 / step), int(g1 / step)
+        best, run_start = (0, 0), None
+        for i in range(i0, i1 + 1):
+            quiet = i < i1 and db[i] <= -32
+            if quiet and run_start is None:
+                run_start = i
+            if (not quiet) and run_start is not None:
+                if i - run_start > best[1] - best[0]:
+                    best = (run_start, i)
+                run_start = None
+        q0, q1 = best[0] * step, best[1] * step
+        excess = (g1 - g0) - max_gap
+        removable = (q1 - q0) - 0.2  # keep a little air on each side of the cut
+        cut = min(excess, removable)
+        if cut > 0.05:
+            mid = (q0 + q1) / 2
+            cuts.append((mid - cut / 2, mid + cut / 2))
+    if not cuts:
+        return 0.0
+    n_fade = int(fade * rate)
+    pieces, pos = [], 0
+    for c0, c1 in cuts:
+        s0, s1 = int(c0 * rate), int(c1 * rate)
+        seg = x[pos:s0].copy()
+        if len(seg) > n_fade:
+            seg[-n_fade:] *= np.linspace(1, 0, n_fade)
+        pieces.append(seg)
+        pos = s1
+        nxt = x[pos:pos + n_fade]
+        if len(nxt) == n_fade:
+            x[pos:pos + n_fade] = nxt * np.linspace(0, 1, n_fade)
+    pieces.append(x[pos:])
+    y = np.clip(np.concatenate(pieces), -32768, 32767).astype(np.int16)
+    with wave.open(str(wav), "wb") as w:
+        w.setnchannels(ch); w.setsampwidth(sw); w.setframerate(rate); w.writeframes(y.tobytes())
+    for c in cues:
+        for key in ("start", "end"):
+            t = c[key]
+            c[key] = round(t - sum(min(c1, t) - c0 for c0, c1 in cuts if t > c0), 3)
+    return round(sum(c1 - c0 for c0, c1 in cuts), 2)
+
+
+def sync(project_dir, audio_path, max_gap=0.5):
     """Clean, transcribe and align a recording; store the result in the storyboard."""
     project_dir = Path(project_dir)
     sb_path = project_dir / "storyboard.json"
@@ -208,10 +266,12 @@ def sync(project_dir, audio_path):
             keys.append((i, j))
     words = transcribe(clean_wav, prompt=" ".join(lines))
     cues = refine_starts(align(lines, words), clean_wav)
+    removed = tighten(clean_wav, cues, max_gap) if max_gap else 0.0
     sb["voiceover"] = {
         "file": dest.name, "clean": clean_wav.name, "duration": round(duration(clean_wav), 2),
         "cues": [{"scene": i, "line": j, "text": t, **c} for (i, j), t, c in zip(keys, lines, cues)],
         "transcript": " ".join(w for _, _, w in words),
+        "pauses_trimmed_s": removed, "max_gap": max_gap,
     }
     sb_path.write_text(json.dumps(sb, indent=2, ensure_ascii=False) + "\n")
     return sb["voiceover"]
