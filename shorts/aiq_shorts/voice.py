@@ -20,11 +20,24 @@ def _ff(*args):
     subprocess.run([M.ffmpeg_exe(), "-loglevel", "error", "-y", *args], check=True)
 
 
-def clean(src, out_wav):
-    """Trim leading dead air, cut rumble, light denoise, level to ~-14 LUFS (TikTok)."""
-    af = ("silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,"
-          "highpass=f=70,afftdn=nf=-28,"
-          "loudnorm=I=-14:TP=-1.5:LRA=11")
+# Phone recordings in a normal room come out boomy (too much 100-500 Hz from the room and
+# mic proximity) and dull (little 2-5 kHz presence), which makes the voice sound hollow and
+# pasted on top of the video. This chain fixes the balance rather than scrubbing noise: trim the
+# rumble and boom, scoop the boxy low mids, lift presence and air, tame the S's it brings out,
+# pull room tail down a little between words, and compress gently so it sits steady.
+VOICE_CHAIN = ("highpass=f=85,lowshelf=f=140:g=-2,equalizer=f=170:t=q:w=1.0:g=-3,"
+               "equalizer=f=420:t=q:w=1.3:g=-3.5,equalizer=f=3200:t=q:w=1.0:g=5,highshelf=f=7500:g=3,"
+               "deesser=i=0.35,agate=threshold=0.015:ratio=1.8:attack=4:release=150:range=0.35,"
+               "acompressor=threshold=-22dB:ratio=3:attack=6:release=90:makeup=2")
+
+
+def clean(src, out_wav, polish=True):
+    """Trim leading dead air, fix the tone (see VOICE_CHAIN), level to -16 LUFS.
+    polish=False keeps the tone as recorded: speech recognition and onset timing are more
+    reliable on it, and it lines up sample for sample with the polished copy."""
+    tone = (f"{VOICE_CHAIN},loudnorm=I=-16:TP=-1.5:LRA=9" if polish
+            else "highpass=f=70,afftdn=nf=-28,loudnorm=I=-14:TP=-1.5:LRA=11")
+    af = f"silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,{tone}"
     _ff("-i", str(src), "-vn", "-ac", "1", "-ar", "48000", "-af", af, str(out_wav))
     return out_wav
 
@@ -258,14 +271,17 @@ def sync(project_dir, audio_path, max_gap=0.5):
         dest.write_bytes(src.read_bytes())
     clean_wav = media_dir / "voiceover_clean.wav"
     clean(dest, clean_wav)
+    asr_wav = project_dir / ".cache" / "voiceover_asr.wav"  # same timeline, unpolished tone
+    asr_wav.parent.mkdir(exist_ok=True)
+    clean(dest, asr_wav, polish=False)
     lines, keys = [], []
     for i, spec in enumerate(sb["scenes"]):
         say = spec.get("say", [])
         for j, text in enumerate([say] if isinstance(say, str) else say):
             lines.append(text)
             keys.append((i, j))
-    words = transcribe(clean_wav, prompt=" ".join(lines))
-    cues = refine_starts(align(lines, words), clean_wav)
+    words = transcribe(asr_wav, prompt=" ".join(lines))
+    cues = refine_starts(align(lines, words), asr_wav)
     removed = tighten(clean_wav, cues, max_gap) if max_gap else 0.0
     sb["voiceover"] = {
         "file": dest.name, "clean": clean_wav.name, "duration": round(duration(clean_wav), 2),

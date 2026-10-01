@@ -69,8 +69,11 @@ When the user says "sync my voiceovers" (or similar):
 1. `list` the queue; for each item with `status: "voice"`, download the recording with the
    Artifact tool: `action: "read"`, the queue URL, `path: <asset_id>`, and an `out_dir` inside the project.
 2. `python shorts/make_short.py voice <slug> <downloaded .txt> --ext <ext>`. It decodes, cleans
-   (trims leading dead air, cuts rumble, light denoise, levels to about -14 LUFS), transcribes
-   with word timestamps (faster-whisper `base.en`), aligns every script line, snaps each line
+   (trims leading dead air, then `VOICE_CHAIN` in `voice.py` fixes the boomy, hollow tone a
+   phone in a normal room gives: cuts rumble and boom, scoops boxy low mids, lifts presence and
+   air, de-esses, lightly expands the room tail, compresses, levels to -16 LUFS), transcribes
+   with word timestamps (faster-whisper `base.en`, run on a plainer denoised copy with the same
+   timeline because the polished tone can make whisper loop), aligns every script line, snaps each line
    to the actual speech onset, tightens pauses BETWEEN lines to 0.5s (`--max-gap`, 0 keeps them;
    words are never cut or sped up), and stores the cues in `storyboard.voiceover`. Tested against
    known timings, line starts land within 0.03s.
@@ -84,6 +87,17 @@ When the user says "sync my voiceovers" (or similar):
 If the script changes after a sync, the engine falls back to estimated timing and warns. The
 author then re-records, or you re-run `voice` if only visuals changed. `voice <slug> --off`
 removes the voiceover. Never generate or clone the author's voice.
+
+Recording tips for the author (the processing helps, but the room matters most): record
+close to the phone (about a hand's width, slightly off to the side), in a small soft room
+(a closet of clothes, a bedroom with a bed and curtains), not a kitchen or bare-walled room,
+with the phone on something soft rather than a hard table.
+
+## Transition sounds (automatic)
+`render` adds a soft air whoosh that swells into every scene cut, so the sound follows the
+picture instead of sitting on top of it. It is synthesized filtered noise (`aiq_shorts/sfx.py`,
+nothing to license), about -28 dBFS at its peak, and it lands in the 0.5s gaps between lines.
+`"sfx": {"level_db": -32}` is quieter, `{"off": true}` turns it off.
 
 ## Background music (automatic, different for every video)
 `render` assigns a track automatically when the storyboard has none (`music <slug>` does it

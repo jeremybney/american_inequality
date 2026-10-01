@@ -16,6 +16,7 @@ scene lasts as long as it takes to say its lines at `wpm`.
   "notes": ["anything the editor should know"],
   "music": {"title": "…", "file": "music.mp3", "start": 5.0, "level_db": -30, "credit": "…"},  // set by `music`/`render`
   "music_credit": "Music: … (CC BY 4.0)",       // end card source line, credits.md, TikTok post
+  "sfx": {"level_db": -28},     // soft whoosh on every cut (peak dBFS); {"off": true} removes it
   "scenes": [ … ]
 }
 ```
