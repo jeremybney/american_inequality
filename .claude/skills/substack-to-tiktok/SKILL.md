@@ -111,8 +111,8 @@ The subject library (places, institutions, themes, eras) lives in
 know, add an entry there so future articles benefit.
 
 ## Step 3: Write the storyboard as a straightforward story
-**Length: 45–75 seconds, never more than 75** (about 150–200 spoken words at `wpm: 175`,
-12–15 scenes, `"hold": 0.25` in the storyboard). `script <slug>` prints the runtime and the
+**Length: 45–89 seconds, never 90 or more** (about 160–240 spoken words at `wpm: 175`,
+13–17 scenes, `"hold": 0.25` in the storyboard). 60–85s is the sweet spot. `script <slug>` prints the runtime and the
 house-rule check (`shorts/aiq_shorts/checks.py`); `render` refuses anything that fails it.
 If it runs long, cut words and then whole beats, never speed up the voice.
 
@@ -121,8 +121,33 @@ If it runs long, cut words and then whole beats, never speed up the voice.
   Usually the third scene, right after the hook, but anywhere in the first third works.
 - **At least one chart from the article itself** (`figure` with `media/article_NN.*`).
   If the article has a map, use the map.
+- **At least one "in the news" beat** (`news` scene, see below) showing that the story is
+  current and that others are covering it.
 - **The outro end card** as the last scene. The byline comes from the article's authors
   automatically, so it's right for single, co-authored and three-author posts.
+
+### "In the news" beats
+Put the article in context with real coverage, so viewers see it's current and not just our take.
+Use 1–2 `news` scenes per video, usually one right after the hook and one near the end.
+- **What counts:** a newspaper or magazine headline (screenshot), a TV segment still or a
+  YouTube thumbnail, a policy report or economic study (its PDF cover), or a recent
+  government event photo. Prefer the last 12 months. Older items are fine for research.
+- **Finding them:** WebSearch for the article's topic plus "2026" (or the current year),
+  for think-tank reports (Urban Institute, Brookings, Pew, NBER, the Fed, CBO), and for
+  YouTube segments from major outlets. Check the item actually says what the narration
+  claims (read the report's summary, the headline and dek).
+- **Getting the image:** `grab <slug> <source> --as news_x --outlet "…" --date "…"`
+  - YouTube link → thumbnail + title (`kind: "video"` adds a play button)
+  - report PDF URL → first page rendered as the cover
+  - screenshots the user sends in chat (saved under the session's images folder) or image URLs
+  - Many news sites block automated access. If no screenshot is available, use a
+    text-only headline card (`{"headline": "…", "dek": "…", "outlet": "…", "date": "…"}`), which
+    quotes the headline on a neutral card. Never imitate an outlet's design.
+- **On screen:** crop to the headline area (`crop`), and use `highlight` to sweep a yellow
+  marker over the key phrase. Every item carries its outlet and date tag automatically.
+- **Narration:** one plain sentence naming the source, e.g. "It's a divide that keeps showing up
+  in the news, from cable TV to The Washington Post." Numbers quoted from a news item must
+  come from that item, and its name appears on screen as the source.
 
 ### Pacing
 - **The first shot lasts under 4.5 seconds**: one short spoken line over the most striking
@@ -173,7 +198,7 @@ Example in the right voice (from the generational wealth video):
   It should sound like a person explaining, not performing.
 - Use "we" for co-authored posts, "I" for solo posts. Numbers are spelled the way they're
   said ("forty-one percent", "eighty-four trillion dollars").
-- Every number comes from the article (or its cited source) and goes in that scene's
+- Every number comes from the article, its cited sources, or a news item shown on screen and goes in that scene's
   `source`. If the article names no source, credit the article. Pick the 6–8 numbers that
   carry the story, not every number.
 - **TikTok post** in `storyboard.post`, written to `output/tiktok_post.md` and the queue page:
@@ -222,6 +247,10 @@ Use **real photographs and footage of real places**. Never generated images.
   `cdn.pixabay.com`) or ask them to drop photos into `media/`.
 
 ## Step 5: QA before rendering
+**Always share the storyboard for review before the final render**: send `output/stills.png`
+(two frames per scene) and the timed shot list in `script.md`, so the author can adjust text or
+images scene by scene. Their notes map directly to scenes in `storyboard.json`.
+
 Run `stills` and view `output/stills.png` (2 frames per scene). Check for:
 text colliding with captions (captions occupy y≈1440–1600), numbers that don't
 match the narration, orphaned words, empty-looking scenes, placeholders

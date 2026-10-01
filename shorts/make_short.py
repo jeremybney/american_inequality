@@ -163,6 +163,49 @@ def cmd_autofill(a):
         print(f"  scene {i}: {name} <- {c['title'][:60]}  (sheet: {cdir / 'contact_sheet.jpg'})")
 
 
+def cmd_grab(a):
+    """Pull an 'in the news' item into media/: a YouTube video (thumbnail + title), a report
+    PDF (kept as PDF; the news scene renders its first page), an image URL, or a local file
+    such as a screenshot the user sent."""
+    import re
+    import shutil
+    import urllib.parse
+    pdir = project(a.slug)
+    mdir = pdir / "media"
+    src = a.source
+    info = {}
+    if Path(src).exists():
+        ext = Path(src).suffix.lower() or ".png"
+        dest = mdir / f"{a.as_name}{ext}"
+        shutil.copy(src, dest)
+    elif re.search(r"(youtube\.com/watch|youtu\.be/|youtube\.com/shorts/)", src):
+        vid = (re.search(r"[?&]v=([\w-]{11})", src) or re.search(r"(?:youtu\.be/|shorts/)([\w-]{11})", src)).group(1)
+        meta = media.http_json("https://www.youtube.com/oembed?format=json&url=" +
+                               urllib.parse.quote(f"https://www.youtube.com/watch?v={vid}"))
+        dest = mdir / f"{a.as_name}.jpg"
+        for size in ("maxresdefault", "sddefault", "hqdefault"):
+            try:
+                media.download(f"https://i.ytimg.com/vi/{vid}/{size}.jpg", dest)
+                break
+            except Exception:  # noqa: BLE001
+                continue
+        info = {"kind": "video", "title": meta.get("title", ""), "outlet": meta.get("author_name", "")}
+    else:
+        path = urllib.parse.urlparse(src).path
+        ext = Path(path).suffix.lower() or ".jpg"
+        dest = mdir / f"{a.as_name}{ext}"
+        media.download(src, dest)
+        if ext == ".pdf":
+            info = {"kind": "report"}
+    credit = a.credit or info.get("outlet") or urllib.parse.urlparse(src).netloc or "Provided screenshot"
+    media.save_credit(mdir, dest.name, {"credit": credit, "url": src if "://" in src else None, **info})
+    item = {"media": dest.name, "outlet": a.outlet or info.get("outlet", ""), "date": a.date or ""}
+    if info.get("kind") == "video":
+        item.update({"kind": "video", "title": info.get("title", "")})
+    print(f"Saved media/{dest.name}")
+    print("News item for the storyboard:\n  " + json.dumps(item))
+
+
 def cmd_stills(a):
     pdir = project(a.slug)
     out = pdir / "output" / "stills.png"
@@ -294,6 +337,15 @@ def main():
     p.add_argument("slug")
     p.add_argument("--force", action="store_true", help="re-fetch even if the file exists")
     p.set_defaults(fn=cmd_autofill)
+
+    p = sub.add_parser("grab", help="save an 'in the news' item: YouTube link, report PDF, image URL or screenshot")
+    p.add_argument("slug")
+    p.add_argument("source", help="URL or local file")
+    p.add_argument("--as", dest="as_name", required=True)
+    p.add_argument("--outlet", help="e.g. 'The Washington Post'")
+    p.add_argument("--date", help="as shown on screen, e.g. 'Jul 8, 2026'")
+    p.add_argument("--credit", help="credit line override")
+    p.set_defaults(fn=cmd_grab)
 
     p = sub.add_parser("stills", help="render a key-frame contact sheet")
     p.add_argument("slug")

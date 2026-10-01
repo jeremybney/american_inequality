@@ -88,6 +88,23 @@ Animated GIFs play.
 - GIF controls: `frames` (range to play, then hold), `play_at`, `speed`, `loop`, `animate: false` (first frame only).
 - `y` sets the card's vertical position (0 to 1), `max_height` caps its height in px, and `angle` tilts it.
 
+## `news`: headlines, TV/YouTube stills and report covers
+```json
+{"type": "news", "kicker": "In the news", "items": [
+  {"media": "news_cnbc.png", "crop": [0, 0.03, 0.535, 0.97], "kind": "video", "outlet": "CNBC Television", "date": "2024", "at": 0.1},
+  {"media": "news_wapo.webp", "crop": [0, 0, 1, 0.41], "outlet": "The Washington Post", "date": "Jul 8, 2026",
+   "highlight": [0.04, 0.5, 0.93, 0.78], "at": 1.6},
+  {"headline": "Quoted headline when no screenshot exists", "dek": "optional subhead", "outlet": "Reuters", "date": "Sep 2026"},
+  {"media": "news_urban.pdf", "outlet": "Urban Institute", "date": "Sep 2024"}
+], "say": ["…"]}
+```
+- 1–3 items, each landing at its `at` time, alternately tilted, with an outlet · date tag.
+- `media`: screenshot or image, or a `.pdf` (`page`, default the first page). Save items with `make_short.py grab`.
+- `crop`: `[x0, y0, x1, y1]` fractions. `highlight`: marker box in fractions of the cropped image.
+- `kind: "video"` draws a play button; `title` adds a caption bar under the image.
+- `kicker` (default "In the news"); `backdrop`: a photo to blur behind the cards instead of orange.
+- The source line lists every outlet and date automatically (override with `source`).
+
 ## `article_card`
 The article's header card, built from `article.json` (title, subtitle, authors,
 date, and `media/cover.jpg` if present), sliding in with an "N MONTHS AGO" badge.

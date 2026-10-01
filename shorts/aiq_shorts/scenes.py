@@ -1094,6 +1094,179 @@ class FigureScene(Scene):
         return img
 
 
+# =============================================================================
+# News: headlines, TV/video stills and report covers that put the story in context
+# =============================================================================
+
+def load_news_image(path, page=0):
+    """Image, or the first page of a PDF rendered at high resolution."""
+    path = Path(path)
+    if path.suffix.lower() == ".pdf":
+        import pymupdf
+        doc = pymupdf.open(str(path))
+        pix = doc[min(page, len(doc) - 1)].get_pixmap(dpi=150)
+        return Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    return ImageOps.exif_transpose(Image.open(path)).convert("RGB")
+
+
+def _play_button(img):
+    d = ImageDraw.Draw(img, "RGBA")
+    r = max(34, int(min(img.size) * 0.11))
+    cx, cy = img.width / 2, img.height / 2
+    d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=(0, 0, 0, 150))
+    d.polygon([(cx - r * 0.35, cy - r * 0.5), (cx - r * 0.35, cy + r * 0.5), (cx + r * 0.55, cy)], fill=(255, 255, 255, 235))
+
+
+def build_news_card(item, ctx, width):
+    """Return (card RGBA, image box inside the card or None) for one news item."""
+    pad = 16
+    if item.get("media"):
+        im = load_news_image(ctx.media_path(item["media"]), item.get("page", 0))
+        crop = item.get("crop")
+        if crop:
+            w, h = im.size
+            im = im.crop((int(crop[0] * w), int(crop[1] * h), int(crop[2] * w), int(crop[3] * h)))
+        inner = width - 2 * pad
+        scale = inner / im.width
+        max_h = item.get("max_height", 980)
+        if im.height * scale > max_h:
+            scale = max_h / im.height
+        im = im.resize((max(1, int(im.width * scale)), max(1, int(im.height * scale))), Image.LANCZOS)
+        if item.get("kind") == "video":
+            _play_button(im)
+        title_h = 0
+        tf = G.font("sans", 30)
+        title_lines = G.wrap(item.get("title", ""), tf, im.width - 24)[:2] if item.get("title") else []
+        if title_lines:
+            title_h = 22 + 38 * len(title_lines)
+        card = Image.new("RGBA", (im.width + 2 * pad, im.height + 2 * pad + title_h), (0, 0, 0, 0))
+        cd = ImageDraw.Draw(card)
+        cd.rounded_rectangle((0, 0, card.width - 1, card.height - 1), 14, fill=G.rgba((255, 255, 255)))
+        card.paste(im, (pad, pad))
+        for k, line in enumerate(title_lines):
+            cd.text((pad + 6, pad + im.height + 12 + k * 38), line, font=tf, fill=G.rgba((20, 20, 20)))
+        return card, (pad, pad, pad + im.width, pad + im.height)
+    # text-only headline card: a neutral quotation of the headline, not a copy of the outlet's design
+    padx, inner = 44, width - 88
+    of = G.font("mono_semi", 24)
+    hf = G.font("serif", item.get("size", 58))
+    df = G.font("serif_semi", 30)
+    hl = G.balanced(G.wrap, item["headline"], hf, inner)
+    dek = G.wrap(item.get("dek", ""), df, inner) if item.get("dek") else []
+    h = 40 + 34 + 24 + len(hl) * int(hf.size * 1.18) + (18 + len(dek) * 42 if dek else 0) + 44
+    card = Image.new("RGBA", (width, h), (0, 0, 0, 0))
+    cd = ImageDraw.Draw(card)
+    cd.rounded_rectangle((0, 0, width - 1, h - 1), 14, fill=G.rgba((255, 255, 255)))
+    y = 40
+    cd.text((padx, y), (item.get("outlet", "") + (" · " + item["date"] if item.get("date") else "")).upper(),
+            font=of, fill=G.rgba((90, 90, 90)))
+    y += 34 + 24
+    for line in hl:
+        cd.text((padx, y), line, font=hf, fill=G.rgba((17, 17, 17)))
+        y += int(hf.size * 1.18)
+    if dek:
+        y += 18
+        for line in dek:
+            cd.text((padx, y), line, font=df, fill=G.rgba((80, 80, 80)))
+            y += 42
+    return card, None
+
+
+class NewsScene(Scene):
+    """One to three news items (headline screenshots, video stills, report covers or
+    quoted headlines) that land one after another, each tagged with its source."""
+
+    def __init__(self, spec, ctx):
+        super().__init__(spec, ctx)
+        items = spec.get("items", [])
+        n = max(1, len(items))
+        width = spec.get("width", 900 if n == 1 else 820)
+        self.cards = []
+        for it in items:
+            try:
+                card, box = build_news_card(it, ctx, width)
+            except Exception as e:  # noqa: BLE001
+                ctx.warn(f"news item failed ({it.get('media') or it.get('headline', '')[:30]}): {e}")
+                card, box = build_news_card({"headline": it.get("headline") or it.get("title") or "(missing)",
+                                             "outlet": it.get("outlet", "")}, ctx, width)
+            sh, _ = G.soft_shadow(card.size, 14, 26, 0.35, T.INK)
+            self.cards.append((it, card, box, sh))
+
+    def source_line(self):
+        if self.spec.get("source"):
+            return self.spec["source"]
+        outs = []
+        for it, *_ in self.cards:
+            o = it.get("outlet", "")
+            if it.get("date"):
+                o += f" ({it['date']})"
+            if o and o not in outs:
+                outs.append(o)
+        return ("Sources: " + "; ".join(outs)) if outs else None
+
+    def render(self, t):
+        bg = self.spec.get("backdrop")
+        if bg:
+            if not hasattr(self, "_bd"):
+                self._bd = M.load_still(str(self.ctx.media_path(bg)), (0.5, 0.5), 0.55, 14)
+            img = M.kenburns_frame(self._bd, G.clamp01(t / self.dur), (1.0, 1.06))
+        else:
+            img = G.orange_background().copy()
+        d = ImageDraw.Draw(img, "RGBA")
+        kick = self.spec.get("kicker", "In the news")
+        if kick:
+            kf = G.font("mono", 30)
+            col = T.TITLE if bg else T.NAVY
+            G.draw_centered(d, T.W / 2, 300, kick.upper(), kf, G.rgba(col, G.ease_out(G.prog(t, 0, 0.3))))
+        n = len(self.cards)
+        top, bottom = 380, 1360
+        total_h = sum(c.height for _, c, _, _ in self.cards)
+        overlap = max(0, (total_h - (bottom - top)) / max(1, n - 1)) if n > 1 else 0
+        y = top + max(0, ((bottom - top) - (total_h - overlap * (n - 1))) / 2)
+        for k, (it, card, box, sh) in enumerate(self.cards):
+            at = it.get("at", 0.15 + k * self.spec.get("stagger", 1.3))
+            p = G.prog(t, at, 0.55)
+            if p <= 0:
+                y += card.height - overlap
+                continue
+            e = G.ease_back(p, 1.3)
+            side = -1 if k % 2 == 0 else 1
+            ang = side * (1.5 if n > 1 else 0.8) + side * 7 * (1 - e)
+            cx = T.W / 2 + side * (26 if n > 1 else 0)
+            cy = y + card.height / 2 + (1 - G.ease_out(p)) * 260
+            a = G.ease_out(G.prog(t, at, 0.25))
+            # highlighter sweep over the key words (box in fractions of the image)
+            layer = card
+            hl = it.get("highlight")
+            if hl and box:
+                hp = G.ease_in_out(G.prog(t, at + 0.7, 0.6))
+                if hp > 0:
+                    bx0, by0, bx1, by1 = box
+                    x0 = bx0 + hl[0] * (bx1 - bx0)
+                    x1 = bx0 + hl[2] * (bx1 - bx0)
+                    marker = Image.new("RGBA", card.size, (0, 0, 0, 0))
+                    ImageDraw.Draw(marker).rectangle(
+                        (x0, by0 + hl[1] * (by1 - by0), x0 + (x1 - x0) * hp, by0 + hl[3] * (by1 - by0)),
+                        fill=G.rgba(T.YELLOW, 0.42))
+                    layer = card.copy()
+                    layer.alpha_composite(marker)  # blend, so the headline stays readable under it
+            G.rotated_paste(img, sh, (cx + 6, cy + 16), ang, a)
+            G.rotated_paste(img, layer, (cx, cy), ang, a)
+            # source tag
+            tag = (it.get("outlet", "") + (" · " + it["date"] if it.get("date") else "")).upper()
+            if tag.strip():
+                tf = G.font("mono", 24)
+                tw = tf.getlength(tag)
+                pill = Image.new("RGBA", (int(tw + 32), 46), (0, 0, 0, 0))
+                ImageDraw.Draw(pill).rounded_rectangle((0, 0, pill.width - 1, 45), 8, fill=G.rgba(T.NAVY))
+                ImageDraw.Draw(pill).text((16, 9), tag, font=tf, fill=G.rgba(T.TITLE))
+                px = cx - card.width / 2 + pill.width / 2 + 10
+                py = cy - card.height / 2 - 4
+                G.rotated_paste(img, pill, (px, py), ang, G.ease_out(G.prog(t, at + 0.25, 0.3)))
+            y += card.height - overlap
+        return img
+
+
 SCENES = {
     "photo": PhotoScene,
     "hook": PhotoScene,
@@ -1110,5 +1283,6 @@ SCENES = {
     "statement": StatementScene,
     "outro": OutroScene,
     "figure": FigureScene,
+    "news": NewsScene,
     "map": FigureScene,
 }

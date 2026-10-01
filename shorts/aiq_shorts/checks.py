@@ -6,7 +6,7 @@ setups, dramatic reveals). Errors block `render`; warnings are printed.
 """
 import re
 
-MAX_SECONDS = 75
+MAX_SECONDS = 89
 MIN_SECONDS = 45
 FIRST_SCENE_MAX = 4.5    # the opening shot has to move fast
 SCENE_MAX = 8.0          # after that, a new visual at least every ~8s
@@ -68,6 +68,8 @@ def check(tl):
     # --- required pieces
     if "article_card" not in types:
         errors.append("missing the article_card scene (the clipped article card is always shown)")
+    if "news" not in types:
+        warnings.append("no `news` scene; add a headline, TV/YouTube still or report cover to show the story is current")
     if not types or types[-1] != "outro":
         errors.append("the last scene must be the outro end card")
     article_imgs = [s for s in scenes if s["type"] in ("figure", "map")

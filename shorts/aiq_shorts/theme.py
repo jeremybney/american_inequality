@@ -64,6 +64,8 @@ FONTS = {
     "sans_semi": "Inter-SemiBold.ttf",
     "sans_heavy": "Inter-ExtraBold.ttf",      # article-card title
     "display": "InterDisplay-Black.ttf",      # giant numbers
+    "serif": "IBMPlexSerif-Bold.ttf",         # quoted headlines on news cards
+    "serif_semi": "IBMPlexSerif-SemiBold.ttf",
 }
 
 # --- Layout (px on the 1080x1920 canvas) --------------------------------------

@@ -74,5 +74,22 @@
   "young_clip.mp4": {
     "credit": "Video: Surprising_Media (Pixabay)",
     "url": "https://pixabay.com/videos/id-219797/"
+  },
+  "news_wapo.webp": {
+    "credit": "Screenshot: The Washington Post",
+    "url": null
+  },
+  "news_cnbc.png": {
+    "credit": "Screenshot: CNBC Television (YouTube)",
+    "url": null
+  },
+  "news_presser.webp": {
+    "credit": "Photo provided by the author",
+    "url": null
+  },
+  "news_urban.pdf": {
+    "credit": "Urban Institute, The Great Inequality Transfer (2024)",
+    "url": "https://www.urban.org/sites/default/files/2024-10/The_Great_Inequality_Transfer.pdf",
+    "kind": "report"
   }
 }

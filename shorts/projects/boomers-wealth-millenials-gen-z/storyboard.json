@@ -65,6 +65,46 @@
       ]
     },
     {
+      "type": "news",
+      "kicker": "In the news",
+      "items": [
+        {
+          "media": "news_cnbc.png",
+          "crop": [
+            0.0,
+            0.03,
+            0.535,
+            0.97
+          ],
+          "kind": "video",
+          "outlet": "CNBC Television",
+          "date": "2024",
+          "at": 0.1
+        },
+        {
+          "media": "news_wapo.webp",
+          "crop": [
+            0,
+            0,
+            1,
+            0.41
+          ],
+          "outlet": "The Washington Post",
+          "date": "Jul 8, 2026",
+          "at": 1.6,
+          "highlight": [
+            0.04,
+            0.5,
+            0.93,
+            0.78
+          ]
+        }
+      ],
+      "say": [
+        "It's a divide that keeps showing up in the news, from cable TV to The Washington Post."
+      ]
+    },
+    {
       "type": "article_card",
       "chips": [
         "THE BOOM",
@@ -300,15 +340,59 @@
       ]
     },
     {
-      "type": "statement",
-      "kicker": "The opportunity",
-      "text": "More housing. Affordable education. {Higher wages.}",
+      "type": "news",
+      "kicker": "The research",
+      "items": [
+        {
+          "media": "news_urban.pdf",
+          "outlet": "Urban Institute",
+          "date": "Sep 2024",
+          "max_height": 980,
+          "at": 0.1
+        }
+      ],
+      "say": [
+        "The Urban Institute found that families who own homes are the ones most likely to pass that wealth down."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "news_presser.webp",
+      "dim": 0.45,
+      "blur": 3,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "MORE HOUSING",
+          "y": 0.26,
+          "at": 1.6,
+          "angle": -2,
+          "size": 54
+        },
+        {
+          "kind": "stamp",
+          "text": "AFFORDABLE EDUCATION",
+          "y": 0.34,
+          "at": 2.6,
+          "angle": 2,
+          "size": 54
+        },
+        {
+          "kind": "stamp",
+          "text": "HIGHER WAGES",
+          "y": 0.42,
+          "at": 3.4,
+          "angle": -2,
+          "size": 54
+        }
+      ],
       "say": [
         "This is an opportunity to build an America with more housing, affordable education, and higher wages."
-      ],
-      "at": 1.6,
-      "cps": 30,
-      "size": 80
+      ]
     },
     {
       "type": "outro",
