@@ -1,4 +1,4 @@
-"""Background music: a different soft, upbeat-ambient instrumental for every video.
+"""Background music: a different soft, investigative-feeling instrumental for every video.
 
 Tracks come from Kevin MacLeod's Incompetech library (the same composer the reference
 videos use), licensed CC BY 4.0. The credit line is added to the end card, credits.md and
@@ -19,19 +19,26 @@ HERE = Path(__file__).resolve().parent.parent
 USED = HERE / "assets" / "music_used.json"      # committed: which video used which track
 CACHE = HERE / "assets" / ".music_catalog.json"  # not committed
 
-WANT = {"Bright", "Relaxed", "Calming", "Uplifting"}          # the reference videos' feel
-AVOID = {"Dark", "Unnerving", "Eerie", "Intense", "Humorous", "Epic", "Mysterious", "Somber",
-         "Aggressive", "Action", "Suspenseful", "Mystical", "Driving"}
-# Incompetech genre ids: keep contemporary (5), electronica (7), ambient/game (13), pop (16),
-# acoustic (12) and soundtrack-ish (22); leave out classical (4), holiday (9), jazz (11),
-# oldies rock (19) and period/world (24, 25), which pull attention from the voice.
-GENRES = {"5", "7", "12", "13", "16", "22"}
-NOPE = ("christmas", "holiday", "waltz", "drinking", "medieval", "carol", "sock hop", "canon in d",
-        "round the mountain")
-# Tal Roded's signature tracks: leave them to him so these videos have their own sound
-RESERVED = {"Life of Riley", "Inspired"}
-SILLY = ("Tuba", "Kazoo", "Accordion", "Bagpipe", "Banjo", "Trombone", "Harmonica", "Theremin",
-         "Bassoon", "Vocals", "Voice", "Choir", "Organ")
+# The house sound is "investigative": a steady pulse with some tension and curiosity, like a
+# news-investigation bed. Mysterious or suspenseful, carried by a groove or driving pulse; never
+# horror, action, comic, fantasy, or bright and bouncy. No piano (the author's call).
+PROFILES = {
+    "investigative": {
+        "need_any": {"Mysterious", "Suspenseful"},
+        "pulse_any": {"Driving", "Grooving", "Suspenseful", "Intense", "Somber"},
+        "avoid": {"Eerie", "Unnerving", "Aggressive", "Action", "Epic", "Humorous", "Bouncy",
+                  "Mystical", "Bright", "Uplifting", "Ren Faire", "Medieval"},
+        # electronica (7), soundtrack (22), cinematic (10, 24); not world (25), jazz (11), rock (19)
+        "genres": {"7", "10", "22", "24"},
+        "bpm": (70, 130),
+    },
+}
+PROFILE = "investigative"
+NO_INSTRUMENTS = ("piano", "organ", "choir", "vocal", "voice", "harpsichord", "celesta", "tuba",
+                  "kazoo", "accordion", "bagpipe", "banjo", "harp", "flute", "clarinet", "oboe",
+                  "zither", "lute", "santur", "tanpura", "ukulele", "glockenspiel", "trombone", "kora", "sitar")
+NOPE = ("christmas", "holiday", "waltz", "medieval", "goblin", "horror", "zombie", "carol",
+        "8bit", "8-bit", "chiptune", "dungeon", "chee zee", "video game")
 
 
 def credit(track):
@@ -55,7 +62,8 @@ def catalog():
     return data
 
 
-def candidates(min_len=110):
+def candidates(min_len=110, profile=None):
+    p = PROFILES[profile or PROFILE]
     out = []
     for t in catalog():
         feel = {f.strip() for f in (t.get("feel") or "").split(",") if f.strip()}
@@ -63,14 +71,14 @@ def candidates(min_len=110):
             bpm = int(t.get("bpm") or 0)
         except ValueError:
             bpm = 0
-        if len(feel & WANT) < 2 or feel & AVOID:
+        if not (feel & p["need_any"]) or not (feel & p["pulse_any"]) or feel & p["avoid"]:
             continue
-        if any(s.lower() in (t.get("instruments") or "").lower() for s in SILLY):
+        if any(s in (t.get("instruments") or "").lower() for s in NO_INSTRUMENTS):
             continue
         text = f"{t.get('title', '')} {t.get('description', '')}".lower()
-        if str(t.get("genre")) not in GENRES or any(w in text for w in NOPE) or t["title"] in RESERVED:
+        if str(t.get("genre")) not in p["genres"] or any(w in text for w in NOPE):
             continue
-        if _seconds(t.get("length")) < min_len or not (78 <= bpm <= 128):
+        if _seconds(t.get("length")) < min_len or not (p["bpm"][0] <= bpm <= p["bpm"][1]):
             continue
         out.append(t)
     return out
@@ -113,8 +121,9 @@ def assign(project_dir, title=None, reroll=False):
     dest = project_dir / "media" / "music.mp3"
     if not dest.exists() or not cur or cur.get("title") != track["title"]:
         M.download(FILE_URL.format(urllib.parse.quote(track["filename"])), dest)
-    sb["music"] = {"title": track["title"], "file": "music.mp3", "start": (cur or {}).get("start", 5.0),
-                   "level_db": (cur or {}).get("level_db", -30), "feel": track.get("feel", ""),
+    keep = cur if (cur and not cur.get("off")) else {}
+    sb["music"] = {"title": track["title"], "file": "music.mp3", "start_scene": keep.get("start_scene", 3),
+                   "level_db": keep.get("level_db", -38), "feel": track.get("feel", ""),
                    "credit": credit(track)}
     sb["music_credit"] = credit(track)
     sb_path.write_text(json.dumps(sb, indent=2, ensure_ascii=False) + "\n")
@@ -124,17 +133,24 @@ def assign(project_dir, title=None, reroll=False):
     return sb["music"]
 
 
-def build_bed(project_dir, music, duration, out_wav):
-    """Music bed for the whole video: silent until `start`, fades in over 2.5s, sits at
-    `level_db` LUFS (well under a -14 to -16 LUFS voice), fades out over the last 3s,
-    and loops if the track is shorter than the video."""
+def build_bed(project_dir, music, duration, out_wav, start=5.0):
+    """Music bed for the whole video: silent until `start` (the start of the scene named by
+    `start_scene`, the article card by default), fades in over 2.5s, sits at `level_db` LUFS
+    (about 22 dB under a -16 LUFS voice at the default -38), fades out over the last 3s, and
+    loops if the track is shorter than the video."""
     src = Path(project_dir) / "media" / music["file"]
-    start = float(music.get("start", 5.0))
     body = max(1.0, duration - start)
-    af = (f"aloop=loop=-1:size=2147483647,atrim=0:{body:.3f},asetpts=N/SR/TB,"
-          f"loudnorm=I={music.get('level_db', -30)}:TP=-6:LRA=7,"
-          f"afade=t=in:st=0:d=2.5,afade=t=out:st={max(0.0, body - 3):.3f}:d=3,"
-          f"adelay={int(start * 1000)}|{int(start * 1000)},apad,atrim=0:{duration:.3f}")
+    tmp = Path(out_wav).with_name("music_body.wav")
+    # pass 1: loop/trim, level, fades. loudnorm scrambles timestamps, so the delay that holds the
+    # music back until its scene happens in a separate pass.
+    af1 = (f"aloop=loop=-1:size=2147483647,atrim=0:{body:.3f},asetpts=N/SR/TB,"
+           f"loudnorm=I=-30:TP=-6:LRA=7,volume={float(music.get('level_db', -38)) + 30:.1f}dB,"
+           f"aresample=48000,afade=t=in:st=0:d=2.5,afade=t=out:st={max(0.0, body - 3):.3f}:d=3")
     subprocess.run([M.ffmpeg_exe(), "-loglevel", "error", "-y", "-i", str(src), "-ac", "2", "-ar", "48000",
-                    "-af", af, str(out_wav)], check=True)
+                    "-af", af1, "-t", f"{body:.3f}", str(tmp)], check=True)
+    # pass 2: silence until `start`, then the bed, padded to the video's length
+    ms = int(round(start * 1000))
+    subprocess.run([M.ffmpeg_exe(), "-loglevel", "error", "-y", "-i", str(tmp),
+                    "-af", f"adelay={ms}|{ms},apad=whole_dur={duration:.3f}", "-t", f"{duration:.3f}",
+                    str(out_wav)], check=True)
     return out_wav

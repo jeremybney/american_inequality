@@ -87,18 +87,21 @@ removes the voiceover. Never generate or clone the author's voice.
 
 ## Background music (automatic, different for every video)
 `render` assigns a track automatically when the storyboard has none (`music <slug>` does it
-explicitly). Tracks come from Kevin MacLeod's Incompetech catalog (CC BY 4.0), filtered to
-the reference videos' feel: bright, relaxed, calming or uplifting instrumentals at 78–128 BPM,
-long enough for the video, in contemporary, electronic, pop, acoustic or ambient genres. No
-holiday, classical, jazz, period, comic or novelty-instrument tracks, and not Tal Roded's own
-signature tracks. `shorts/assets/music_used.json` logs every video's track so none repeats.
-- The music comes in at 5s (fade in 2.5s), sits at -30 LUFS (about 13–14 dB under a -16 LUFS
-  voice), is ducked further by the voice while it speaks, and fades out over the last 3s.
+explicitly). The house sound is **investigative**: a steady pulse with some tension and
+curiosity, like a news-investigation bed. Tracks come from Kevin MacLeod's Incompetech catalog
+(CC BY 4.0), filtered to mysterious or suspenseful moods carried by a driving or grooving pulse
+(no horror, action, comic, fantasy, or bright and bouncy moods). Genres are electronica,
+soundtrack and cinematic only. **No piano**, and no organ, choir, folk or fantasy instruments,
+and no video-game music. `shorts/assets/music_used.json` logs every video's track so none repeats.
+- **The music comes in on scene 3**, the article card (`start_scene`), fading in over 2.5s. The
+  hook plays with voice only.
+- **It's soft:** -38 LUFS by default, about 21 dB under a -16 LUFS voice. It also ducks under the
+  voice while it speaks and fades out over the last 3s.
 - The credit line (required by CC BY) is added automatically to the end card's source line,
   credits.md and the TikTok post ("Music: “Title” Kevin MacLeod (incompetech.com), licensed
   under CC BY 4.0"). Keep it in the posted caption.
-- Adjust per video: `music <slug> --reroll`, `--title "…"`, `--start 4`, `--level -27` (louder),
-  `--list` (eligible tracks and where they were used), `--off`.
+- Adjust per video: `music <slug> --reroll`, `--title "…"`, `--start-scene 4`, `--level -35`
+  (louder) or `-41` (softer), `--list` (eligible tracks and where they were used), `--off`.
 
 ## Step 1: Fetch
 `new` calls Substack's public API and saves `article.json` (metadata),

@@ -285,16 +285,17 @@ def cmd_music(a):
         print("Music turned off for this video.")
         return
     m = music.assign(pdir, title=a.title, reroll=a.reroll)
-    if a.start is not None or a.level is not None:
+    if a.start_scene is not None or a.level is not None:
         sb_path = pdir / "storyboard.json"
         sb = json.loads(sb_path.read_text())
-        if a.start is not None:
-            sb["music"]["start"] = a.start
+        if a.start_scene is not None:
+            sb["music"]["start_scene"] = a.start_scene
+            sb["music"].pop("start", None)
         if a.level is not None:
             sb["music"]["level_db"] = a.level
         sb_path.write_text(json.dumps(sb, indent=2, ensure_ascii=False) + "\n")
         m = sb["music"]
-    print(f"Music: {m['title']} ({m['feel']}), starts at {m['start']}s, bed level {m['level_db']} LUFS")
+    print(f"Music: {m['title']} ({m['feel']}), comes in on scene {m.get('start_scene', 3)}, bed level {m['level_db']} LUFS")
     print(f"Credit: {m['credit']}")
 
 
@@ -466,8 +467,8 @@ def main():
     p.add_argument("slug")
     p.add_argument("--title", help="use a specific Incompetech track")
     p.add_argument("--reroll", action="store_true", help="pick a different track")
-    p.add_argument("--start", type=float, help="seconds before the music comes in (default 5)")
-    p.add_argument("--level", type=float, help="music bed loudness in LUFS (default -30; higher = louder)")
+    p.add_argument("--start-scene", type=int, help="scene number the music comes in on (default 3, the article card)")
+    p.add_argument("--level", type=float, help="music bed loudness in LUFS (default -38; higher = louder)")
     p.add_argument("--list", action="store_true", help="show the eligible tracks and where they've been used")
     p.add_argument("--off", action="store_true", help="no music for this video")
     p.set_defaults(fn=cmd_music)

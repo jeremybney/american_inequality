@@ -560,12 +560,12 @@
     "max_gap": 0.5
   },
   "music": {
-    "title": "Sunshine (version 2)",
+    "title": "Twisting",
     "file": "music.mp3",
-    "start": 5.0,
-    "level_db": -30,
-    "feel": "Bright, Calming, Relaxed",
-    "credit": "Music: “Sunshine (version 2)” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+    "start_scene": 3,
+    "level_db": -38,
+    "feel": "Grooving, Driving, Mysterious",
+    "credit": "Music: “Twisting” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
-  "music_credit": "Music: “Sunshine (version 2)” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  "music_credit": "Music: “Twisting” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
 }

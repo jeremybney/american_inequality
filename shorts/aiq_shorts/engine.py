@@ -258,7 +258,9 @@ def render_video(project_dir, out_path, captions=True, workers=None, crf=18, sta
         music = None
     if music and (tl.ctx.media_dir / music.get("file", "")).exists():
         from . import music as MU
-        bed = MU.build_bed(project_dir, music, tl.duration, tl.ctx.cache_dir / "music_bed.wav")
+        k = int(music.get("start_scene", 3)) - 1  # music comes in on this scene (1-based)
+        start_t = tl.spans[min(max(k, 0), len(tl.spans) - 1)][0] if "start" not in music else float(music["start"])
+        bed = MU.build_bed(project_dir, music, tl.duration, tl.ctx.cache_dir / "music_bed.wav", start=start_t)
     elif music:
         tl.ctx.warn(f"music file {music.get('file')} is missing; run `music <slug>` (rendering without music)")
     voice_in = (["-i", str(tl.voice["audio"])] if tl.voice
