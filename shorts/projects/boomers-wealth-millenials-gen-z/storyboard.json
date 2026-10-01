@@ -134,7 +134,7 @@
         }
       ],
       "say": [
-        "California was building one school a week in the fifties."
+        "California was building one school a week in the fifties to keep up with that tremendous growth."
       ]
     },
     {
@@ -155,7 +155,7 @@
         }
       ],
       "say": [
-        "1976 was the first year Boomers could run for Congress, and they took over D.C."
+        "In 1976, Boomers were old enough to run for Congress. They took over D.C. and never left."
       ]
     },
     {
@@ -169,7 +169,7 @@
       "y": 0.43,
       "source": "Generation Distribution of Congress · American Inequality",
       "say": [
-        "By 2013 they held sixty percent of Congress while making up only a quarter of the population."
+        "By 2013 they held 60% of Congress while making up only a quarter of the population."
       ]
     },
     {
@@ -178,20 +178,20 @@
       "items": [
         {
           "text": "Limits on new housing",
-          "at": 0.9
+          "at": 1.4
         },
         {
-          "text": "Taxes that favor wealth",
-          "at": 2.2
-        },
-        {
-          "text": "Protected retirements",
+          "text": "Taxes that favor existing wealth",
           "at": 3.6
+        },
+        {
+          "text": "Harder for young people",
+          "at": 6.2
         }
       ],
       "source": "The Great Generational Wealth Divide · American Inequality",
       "say": [
-        "Those lawmakers placed limits on new housing, created tax rules that favored wealth, and protected retirement."
+        "Those lawmakers placed limits on new housing and created tax rules that favored existing wealth, making it hard for young generations to get ahead."
       ]
     },
     {
@@ -216,31 +216,39 @@
       ],
       "source": "Federal Reserve",
       "say": [
-        "Today Boomers own forty-one percent of all real estate wealth, often in large homes with few people living in them."
+        "Today Boomers own 41% of all real estate wealth, often in multi-bedroom homes that are underutilized."
       ]
     },
     {
-      "type": "vbars",
-      "title": "New homes with 4+ bedrooms",
-      "bars": [
+      "type": "video",
+      "media": "build_clip.mp4",
+      "query": "construction new homes subdivision",
+      "dim": 0.4,
+      "overlays": [
         {
-          "label": "1970s",
-          "value": 20,
-          "display": "1 in 5",
-          "color": "white",
-          "at": 3.2
+          "kind": "stamp",
+          "text": "3+ BEDROOMS",
+          "y": 0.28,
+          "at": 0.6,
+          "angle": -3
         },
         {
-          "label": "2022",
-          "value": 48,
-          "display": "nearly half",
-          "color": "navy",
-          "at": 0.5
+          "kind": "tag",
+          "text": "Empty-nester Boomers",
+          "y": 0.37,
+          "at": 1.8
+        },
+        {
+          "kind": "tag",
+          "text": "outnumber Millennials with kids",
+          "y": 0.42,
+          "at": 3.2,
+          "background": "navy"
         }
       ],
       "source": "The Great Generational Wealth Divide · American Inequality",
       "say": [
-        "Nearly half of new homes now have four bedrooms or more, compared to one in five in the 1970s."
+        "More empty-nester boomers own homes with 3 or more bedrooms than Millennials with children."
       ]
     },
     {
@@ -252,14 +260,14 @@
           "value": 41,
           "suffix": "%",
           "color": "white",
-          "at": 1.0
+          "at": 1.6
         },
         {
           "label": "Boomers",
           "value": 22,
           "suffix": "%",
           "color": "navy",
-          "at": 2.6
+          "at": 2.4
         }
       ],
       "annotation": {
@@ -270,7 +278,24 @@
       },
       "source": "Federal Reserve",
       "say": [
-        "Millennials, meanwhile, own forty-one percent of all debt, almost double the Boomers."
+        "Millennials don't just own less, they also have more debt."
+      ]
+    },
+    {
+      "type": "big_number",
+      "kicker": "since 1989",
+      "stats": [
+        {
+          "value": 9,
+          "suffix": "x",
+          "label": "what college costs now",
+          "at": 1.2,
+          "count": 1.0
+        }
+      ],
+      "source": "The Great Generational Wealth Divide · American Inequality",
+      "say": [
+        "Education costs have increased 9x since 1989."
       ]
     },
     {
@@ -281,22 +306,14 @@
           "value": 84,
           "prefix": "$",
           "suffix": "T",
-          "label": "passing down through 2045",
-          "at": 0.6,
+          "label": "passing from Boomers to their children",
+          "at": 2.4,
           "count": 1.2
-        },
-        {
-          "value": 71,
-          "suffix": "%",
-          "label": "held by the top 10% of Boomers",
-          "at": 3.4,
-          "count": 1.0,
-          "color": "yellow"
         }
       ],
       "source": "The Great Generational Wealth Divide · American Inequality",
       "say": [
-        "Now eighty-four trillion dollars is being transferred through 2045, and the top ten percent of Boomers hold most of it."
+        "Now the great generational wealth transfer is passing $84 trillion from Boomers to wealthy children over the next few decades."
       ]
     },
     {
@@ -317,7 +334,36 @@
         }
       ],
       "say": [
-        "Wealth often stays in the hands of those who are already the most privileged."
+        "But that wealth is concentrated too."
+      ]
+    },
+    {
+      "type": "waffle",
+      "title": "Every $100 of Boomer wealth",
+      "groups": [
+        {
+          "label": "Top 10% of Boomers",
+          "count": 71,
+          "color": "navy"
+        },
+        {
+          "label": "Everyone else",
+          "count": 29,
+          "color": "white"
+        }
+      ],
+      "fill_at": 0.4,
+      "fill": 1.8,
+      "big": {
+        "value": 71,
+        "prefix": "$",
+        "label": "to the top 10%",
+        "color": "yellow",
+        "at": 2.2
+      },
+      "source": "The Great Generational Wealth Divide · American Inequality (2022)",
+      "say": [
+        "The top 10% of Boomers hold 71% of their generation's wealth."
       ]
     },
     {

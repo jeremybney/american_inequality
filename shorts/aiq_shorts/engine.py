@@ -191,10 +191,14 @@ class Timeline:
     def caption_layer(self, text, dark):
         key = (text, dark)
         if key not in self._cap_cache:
-            f = G.font("sans", T.CAPTION_SIZE)
-            lines = G.balanced(G.wrap, text, f, T.CAPTION_WIDTH)
+            # long lines step the size down so the caption stays within three lines
+            for size in (T.CAPTION_SIZE, T.CAPTION_SIZE - 4, T.CAPTION_SIZE - 8):
+                f = G.font("sans", size)
+                lines = G.balanced(G.wrap, text, f, T.CAPTION_WIDTH)
+                if len(lines) <= 3:
+                    break
             self._cap_cache[key] = G.shadowed_text_layer(
-                lines, f, T.TITLE, T.CAPTION_SIZE * 1.25, T.CAPTION_WIDTH,
+                lines, f, T.TITLE, size * 1.25, T.CAPTION_WIDTH,
                 shadow=T.INK, shadow_alpha=0.9 if dark else 0.45, blur=12 if dark else 8)
         return self._cap_cache[key]
 
@@ -202,17 +206,19 @@ class Timeline:
         scene = self.scenes[i]
         dark = scene.dark
         d = ImageDraw.Draw(img, "RGBA")
+        cap_bottom = 0
         if self.captions:
             cue = next((c for c in self.cues if c["start"] <= t < c["end"]), None)
             if cue:
                 a = G.ease_out(G.prog(t, cue["start"], T.CAPTION_FADE))
                 lay = self.caption_layer(cue["text"], dark)
                 G.paste_rgba(img, lay, ((T.W - lay.width) / 2, T.CAPTION_TOP - 30), a)
+                cap_bottom = T.CAPTION_TOP - 30 + lay.height - 18
         src = scene.source_line()
         if src:
             f = G.font("mono_med", 21)
             col = G.rgba(T.TITLE, 0.62) if dark else G.rgba(T.NAVY, 0.85)
-            y = T.SOURCE_Y
+            y = max(T.SOURCE_Y, cap_bottom + 12)  # never under the caption
             for line in G.wrap(src, f, T.W - 160)[:3]:
                 G.draw_centered(d, T.W / 2, y, line, f, col)
                 y += 28
