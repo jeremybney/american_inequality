@@ -117,37 +117,48 @@ house-rule check (`shorts/aiq_shorts/checks.py`); `render` refuses anything that
 If it runs long, cut words and then whole beats, never speed up the voice.
 
 ### Every video includes
-- **The article card** (`article_card`, the clipped card with the "N MONTHS AGO" badge).
-  Usually the third scene, right after the hook, but anywhere in the first third works.
+- **The article card** (`article_card`, the clipped card with the "N MONTHS AGO" badge) as
+  **scene 3**, right after the two hook shots.
 - **At least one chart from the article itself** (`figure` with `media/article_NN.*`).
   If the article has a map, use the map.
-- **At least one "in the news" beat** (`news` scene, see below) showing that the story is
-  current and that others are covering it.
+- **One "in the news" clipping near the end** (`news` scene, see below) showing that the
+  story is current. It comes after the article card and never earlier.
 - **The outro end card** as the last scene. The byline comes from the article's authors
   automatically, so it's right for single, co-authored and three-author posts.
 
-### "In the news" beats
-Put the article in context with real coverage, so viewers see it's current and not just our take.
-Use 1–2 `news` scenes per video, usually one right after the hook and one near the end.
-- **What counts:** a newspaper or magazine headline (screenshot), a TV segment still or a
-  YouTube thumbnail, a policy report or economic study (its PDF cover), or a recent
-  government event photo. Prefer the last 12 months. Older items are fine for research.
-- **Finding them:** WebSearch for the article's topic plus "2026" (or the current year),
-  for think-tank reports (Urban Institute, Brookings, Pew, NBER, the Fed, CBO), and for
-  YouTube segments from major outlets. Check the item actually says what the narration
-  claims (read the report's summary, the headline and dek).
-- **Getting the image:** `grab <slug> <source> --as news_x --outlet "…" --date "…"`
-  - YouTube link → thumbnail + title (`kind: "video"` adds a play button)
-  - report PDF URL → first page rendered as the cover
-  - screenshots the user sends in chat (saved under the session's images folder) or image URLs
-  - Many news sites block automated access. If no screenshot is available, use a
-    text-only headline card (`{"headline": "…", "dek": "…", "outlet": "…", "date": "…"}`), which
-    quotes the headline on a neutral card. Never imitate an outlet's design.
-- **On screen:** crop to the headline area (`crop`), and use `highlight` to sweep a yellow
-  marker over the key phrase. Every item carries its outlet and date tag automatically.
-- **Narration:** one plain sentence naming the source, e.g. "It's a divide that keeps showing up
-  in the news, from cable TV to The Washington Post." Numbers quoted from a news item must
-  come from that item, and its name appears on screen as the source.
+### Order: the author's article first, other outlets only near the end
+- **Scene 3 is the article card** (hook shot, second hook shot, then the clipped Substack card).
+  It must come before any other outlet's clipping, always.
+- **At most one `news` scene, in the last 40% of the video** (usually right before the
+  closing beat). Usually one item, two at most. Don't overload the video with clippings.
+- **The narration never names the outlet.** The clipping is a silent proof point that the
+  story is current. The line spoken over it continues the article's own argument, ideally an
+  article sentence ("Wealth often stays in the hands of those who are already the most privileged.").
+  The outlet and date show on the clipping's tag and in the source line.
+- The checker enforces all of this (`checks.py`); `render` refuses violations.
+
+### Finding and clipping the news item yourself (don't ask the author for screenshots)
+1. **Search.** WebSearch the article's core claim plus the current year, e.g. "baby boomers
+   wealth transfer heirs 2026". Prefer coverage from the last 12 months by a recognizable
+   outlet, whose headline backs up the point made in the closing third.
+2. **Clip.** `clip <slug> <article-url> --as news_x` opens the live page in the headless
+   browser, finds the headline, and screenshots the outlet name, headline and dek at phone
+   width. It returns a ready storyboard item, highlighter position included. Sites that load
+   from here include CNN, NPR, The Guardian, CBS, NBC, ABC, Yahoo Finance, Fortune, Business
+   Insider, Forbes and Vox. Syndicated copies count (Yahoo Finance carries Washington Post,
+   Reuters and AP stories). Pass `--outlet` with the original publisher shown on the page.
+3. **If the site blocks automated visitors** (NYT, WSJ, Bloomberg, Reuters, AP, CNBC, The
+   Atlantic…), first look for a syndicated copy. Otherwise make a quoted headline card from the
+   search result: `clip … --headline "…" --outlet "…" --date "…"`. It quotes the headline on a
+   neutral card and never imitates the outlet's design.
+4. **Also fine as the proof point:** a research or policy report cover
+   (`grab <slug> <pdf-url>`), a YouTube segment thumbnail (`grab <slug> <youtube-url>`), or a
+   screenshot the author happens to send.
+5. **Check it says what the beat implies.** Read the headline and dek (or the report summary).
+   Don't use an item whose claim differs from the article's.
+
+`news` scene options are in `storyboard_reference.md` (`crop`, `highlight`, `kind: "video"`,
+quoted `headline` cards).
 
 ### Pacing
 - **The first shot lasts under 4.5 seconds**: one short spoken line over the most striking
@@ -198,7 +209,7 @@ Example in the right voice (from the generational wealth video):
   It should sound like a person explaining, not performing.
 - Use "we" for co-authored posts, "I" for solo posts. Numbers are spelled the way they're
   said ("forty-one percent", "eighty-four trillion dollars").
-- Every number comes from the article, its cited sources, or a news item shown on screen and goes in that scene's
+- Every number comes from the article or its cited sources (news clippings are proof points, not a source of new numbers) and goes in that scene's
   `source`. If the article names no source, credit the article. Pick the 6–8 numbers that
   carry the story, not every number.
 - **TikTok post** in `storyboard.post`, written to `output/tiktok_post.md` and the queue page:

@@ -22,6 +22,13 @@ BANNED = [
 ]
 
 
+OUTLETS = ["The Washington Post", "Washington Post", "New York Times", "NYT", "Wall Street Journal", "WSJ",
+           "Bloomberg", "Reuters", "Associated Press", "CNBC", "CNN", "NPR", "Fox News", "MSNBC", "ABC News",
+           "CBS News", "NBC News", "The Atlantic", "Axios", "Politico", "Yahoo Finance", "Fortune", "Forbes",
+           "Business Insider", "The Guardian", "Vox", "USA Today", "The Economist", "Financial Times",
+           "MarketWatch", "Urban Institute", "Brookings", "Pew Research", "YouTube"]
+
+
 def _say_lines(spec):
     lines = spec.get("say", [])
     return [lines] if isinstance(lines, str) else list(lines)
@@ -68,8 +75,35 @@ def check(tl):
     # --- required pieces
     if "article_card" not in types:
         errors.append("missing the article_card scene (the clipped article card is always shown)")
-    if "news" not in types:
-        warnings.append("no `news` scene; add a headline, TV/YouTube still or report cover to show the story is current")
+    # the author's article card comes first and early; other outlets only near the end
+    card_i = types.index("article_card") if "article_card" in types else None
+    if card_i is not None and card_i > 3:
+        errors.append(f"the article card is scene {card_i + 1}; it belongs early, ideally scene 3")
+    elif card_i is not None and card_i != 2:
+        warnings.append(f"the article card is scene {card_i + 1}; scene 3 is the usual spot")
+    news_i = [i for i, t in enumerate(types) if t == "news"]
+    if len(news_i) > 1:
+        errors.append(f"{len(news_i)} news scenes; use at most one, near the end")
+    for i in news_i:
+        if card_i is not None and i < card_i:
+            errors.append(f"news clipping in scene {i + 1} comes before the article card; the author's article always comes first")
+        if tl.spans and tl.spans[i][0] < 0.6 * tl.duration:
+            errors.append(f"news clipping in scene {i + 1} starts at {tl.spans[i][0]:.0f}s; keep clippings in the last 40% "
+                          f"(after {0.6 * tl.duration:.0f}s)")
+    if not news_i:
+        warnings.append("no `news` scene; a clipping near the end shows the story is current")
+    # the narration tells the article's story; clippings are silent proof points
+    outlets = set(OUTLETS)
+    for s in scenes:
+        for it in s.get("items", []) if s["type"] == "news" else []:
+            if it.get("outlet"):
+                outlets.add(it["outlet"])
+    for i, spec in enumerate(scenes):
+        for line in _say_lines(spec):
+            hit = next((o for o in outlets if o and re.search(r"\b" + re.escape(o) + r"\b", line, re.I)), None)
+            if hit:
+                errors.append(f"scene {i + 1} names {hit} in the narration; let the clipping be the proof "
+                              "and keep the narration on the article's ideas")
     if not types or types[-1] != "outro":
         errors.append("the last scene must be the outro end card")
     article_imgs = [s for s in scenes if s["type"] in ("figure", "map")

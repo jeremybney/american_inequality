@@ -206,6 +206,34 @@ def cmd_grab(a):
     print("News item for the storyboard:\n  " + json.dumps(item))
 
 
+def cmd_clip(a):
+    """Find-and-clip: screenshot a news article's headline into media/ (or build a quoted
+    headline card when the site blocks automated visitors)."""
+    from aiq_shorts import clip as clipper
+    pdir = project(a.slug)
+    out = pdir / "media" / f"{a.as_name}.png"
+    meta = clipper.clip(a.url, out)
+    outlet = a.outlet or meta.get("outlet", "")
+    date = a.date or meta.get("date_label", "")
+    if meta.get("method") == "screenshot":
+        media.save_credit(pdir / "media", out.name, {"credit": f"Screenshot: {outlet}", "url": a.url,
+                                                     "headline": meta.get("title", "")})
+        item = {"media": out.name, "outlet": outlet, "date": date}
+        if meta.get("highlight"):
+            item["highlight"] = meta["highlight"]
+        print(f"Clipped the headline from {outlet or a.url} -> media/{out.name}")
+    else:
+        headline = a.headline or meta.get("title")
+        if not headline:
+            raise SystemExit(f"Couldn't clip ({meta.get('reason')}). Re-run with --headline/--outlet/--date "
+                             "from the search result to make a quoted headline card.")
+        item = {"headline": headline, "outlet": outlet, "date": date}
+        if a.dek:
+            item["dek"] = a.dek
+        print(f"No screenshot ({meta.get('reason')}); use a quoted headline card instead.")
+    print("News item for the storyboard:\n  " + json.dumps(item, ensure_ascii=False))
+
+
 def cmd_stills(a):
     pdir = project(a.slug)
     out = pdir / "output" / "stills.png"
@@ -346,6 +374,16 @@ def main():
     p.add_argument("--date", help="as shown on screen, e.g. 'Jul 8, 2026'")
     p.add_argument("--credit", help="credit line override")
     p.set_defaults(fn=cmd_grab)
+
+    p = sub.add_parser("clip", help="screenshot a news article's headline (or make a quoted headline card)")
+    p.add_argument("slug")
+    p.add_argument("url")
+    p.add_argument("--as", dest="as_name", required=True)
+    p.add_argument("--outlet", help="override the outlet name (e.g. the original publisher of a syndicated story)")
+    p.add_argument("--date", help="override the date shown")
+    p.add_argument("--headline", help="headline for a quoted card when the site can't be clipped")
+    p.add_argument("--dek", help="subhead for a quoted card")
+    p.set_defaults(fn=cmd_clip)
 
     p = sub.add_parser("stills", help="render a key-frame contact sheet")
     p.add_argument("slug")
