@@ -74,6 +74,14 @@ def check(tl):
         if b - a > SCENE_MAX and scenes[i]["type"] not in ("figure",):
             warnings.append(f"scene {i + 1} ({scenes[i]['type']}) holds {b - a:.1f}s; split it or trim its lines")
 
+    # every scene should move: a lone small number ("2x") on plain orange is static and low-impact
+    for i, s in enumerate(scenes):
+        stats = s.get("stats", [])
+        if s["type"] == "big_number" and len(stats) == 1 and abs(float(stats[0].get("value", 0))) < 10:
+            warnings.append(f"scene {i + 1} (big_number) is a single small number ({stats[0].get('value')}"
+                            f"{stats[0].get('suffix', '')}) with little motion; show it as a chart that moves instead "
+                            "(bars growing side by side, a line rising, or the article's own chart)")
+
     # --- required pieces
     if "article_card" not in types:
         errors.append("missing the article_card scene (the clipped article card is always shown)")

@@ -276,6 +276,11 @@ Example in the right voice (from the generational wealth video):
   - one or two big figures → `big_number` (stack two with separate `at` times)
   - a list the narration reads out → `checklist`
   - the author's map or distinctive graphic → `figure` (Step 2A)
+- **Every scene needs motion and impact.** A lone number on plain orange (a "2x" big_number)
+  is static and low-impact, and the checker warns about single small numbers. Show the
+  comparison instead: bars growing side by side (`vbars`/`hbars`), a line rising (`line` with a
+  `counter`), or the article's own chart (`figure`). Keep `big_number` for big, striking
+  figures ("$84T"), ideally over a blurred photo or paired with a second stat.
 - On-screen text never gets ahead of the narration. Time stats, bars, checklist items and
   typed statements with `at` so each appears as it's said.
 
