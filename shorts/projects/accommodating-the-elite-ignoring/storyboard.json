@@ -7,7 +7,8 @@
   },
   "notes": [
     "Story follows the article's arc: the elite numbers → what 504 plans give → the wealth gap in who claims them → the testing industry → West Virginia, where disability is a trap → the two-tiered system.",
-    "All figures are from the article (Apr 8, 2026) and the sources it cites (NCES, Department of Education, Census, the NYT analysis of 504 plans)."
+    "All figures are from the article (Apr 8, 2026) and the sources it cites (NCES, Department of Education, Census, the NYT analysis of 504 plans).",
+    "The author's edits run past the usual 89s cap; allowed for this video (max_seconds 105), as with the alcohol video."
   ],
   "post": {
     "headline": "How the wealthy game disability laws",
@@ -74,7 +75,7 @@
       ],
       "chips_at": 1.4,
       "say": [
-        "Elite schools accommodate the wealthy while often abandoning those who need support most."
+        "We found that elite schools accommodate the wealthy while often abandoning those who need support most."
       ]
     },
     {
@@ -96,7 +97,7 @@
       "title": "Undergrads reporting a disability",
       "source": "National Center for Education Statistics",
       "say": [
-        "At elite schools the share keeps climbing, and at the University of Chicago it more than tripled in eight years."
+        "Over the last decade, the number of students with accommodations tripled at many of America's top schools."
       ],
       "max_height": 880
     },
@@ -114,7 +115,7 @@
           "kind": "stamp",
           "text": "MEDIAN INCOME $220K",
           "y": 0.27,
-          "at": 1.6,
+          "at": 3.4,
           "angle": -2,
           "size": 56
         },
@@ -122,14 +123,14 @@
           "kind": "stamp",
           "text": "1 IN 5 STUDENTS",
           "y": 0.36,
-          "at": 3.6,
+          "at": 5.6,
           "angle": 2,
           "size": 56
         }
       ],
       "source": "Department of Education · Census",
       "say": [
-        "In Weston, Connecticut, where the median household income is $220,000, nearly 1 in 5 students claims a disability."
+        "Many of those students come from wealth areas. In Weston, Connecticut, where the median household income is $220,000, nearly 1 in 5 students claims a disability."
       ]
     },
     {
@@ -201,7 +202,7 @@
       "stagger": 0.6,
       "source": "Department of Education · Census (via The New York Times)",
       "say": [
-        "Nationwide, high schools in the richest 1% of districts have almost four times the share of 504 students as the poorest."
+        "Nationwide, high schools in the richest 1% of districts have almost four times the share of students claiming a 504 accommodation compared to the poorest districts."
       ]
     },
     {
@@ -217,20 +218,20 @@
           "prefix": "$",
           "label": "per patient for a disability evaluation",
           "y": 0.34,
-          "at": 1.2
+          "at": 2.6
         },
         {
           "kind": "stamp",
           "text": "70% LEAVE WITH A DIAGNOSIS",
           "y": 0.46,
-          "at": 3.6,
+          "at": 5.0,
           "angle": -2,
           "size": 50
         }
       ],
       "source": "Cognitive Assessment Group · How the Wealthy Game Disability Laws",
       "say": [
-        "One testing company charges $6,000 per patient, and about 70% leave with a diagnosis."
+        "Accommodations have become pay to play. One testing company charges $6,000 per patient, and about 70% leave with a diagnosis."
       ]
     },
     {
@@ -253,7 +254,7 @@
       "zoom_dur": 2.2,
       "source": "US Census · American Inequality",
       "say": [
-        "The stories of disability in West Virginia are very different, where 1 in 5 people has a disability, the highest rate of any state."
+        "But the stories of disability in West Virginia are very different, where 1 in 5 people has a disability, the highest rate of any state."
       ]
     },
     {
@@ -278,7 +279,7 @@
       ],
       "source": "Social Security Administration · How the Wealthy Game Disability Laws",
       "say": [
-        "Donna Jean lives on disability in West Virginia, and her benefits pay her just $735 a month."
+        "Donna Jean lives on disability in West Virginia, and her benefits pay her just $735 a month. Far from the gains seen from a Harvard degree."
       ]
     },
     {
@@ -302,7 +303,7 @@
       "max": 3.5,
       "source": "How the Wealthy Game Disability Laws · American Inequality",
       "say": [
-        "Americans with disabilities have a 3x higher unemployment rate and are 2x more likely to live in poverty."
+        "Most Americans with disabilities have a 3x higher unemployment rate and are 2x more likely to live in poverty."
       ]
     },
     {
@@ -340,9 +341,10 @@
     "title": "Babylon",
     "file": "music.mp3",
     "start_scene": 1,
-    "level_db": -24.0,
+    "level_db": -21,
     "feel": "Dark, Grooving, Mysterious",
     "credit": "Music: “Babylon” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
-  "music_credit": "Music: “Babylon” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  "music_credit": "Music: “Babylon” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
+  "max_seconds": 105
 }

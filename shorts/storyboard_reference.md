@@ -14,7 +14,7 @@ scene lasts as long as it takes to say its lines at `wpm`.
   "article": {"section": "The Dividing Line"},   // overrides/extra fields for article.json
   "post": {"caption": "…", "hashtags": ["inequality", "…"]},
   "notes": ["anything the editor should know"],
-  "music": {"title": "…", "file": "music.mp3", "start_scene": 1, "level_db": -24, "credit": "…"},  // set by `music`/`render`
+  "music": {"title": "…", "file": "music.mp3", "start_scene": 1, "level_db": -21, "credit": "…"},  // set by `music`/`render`
   "music_credit": "Music: … (CC BY 4.0)",       // end card source line, credits.md, TikTok post
   "scenes": [ … ]
 }

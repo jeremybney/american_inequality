@@ -113,17 +113,17 @@ from Kevin MacLeod's Incompetech catalog (CC BY 4.0). **No piano**, and no organ
 fantasy instruments, and no video-game music. `shorts/assets/music_used.json` logs every
 video's track so none repeats (the pool is about 14 tracks; `music --list` shows them).
 - **The music starts on the first frame** (0.3s fade in) and fades out over the last 3s.
-- **It's present, not background hum:** -24 LUFS by default (raised from -27 at the author's
-  request, Oct 2026), so the voice sits about 5–6 dB over the music. The reference videos
-  measured 7.7, 7.9 and 12.7 dB; the author prefers the music a bit stronger than that. It
-  ducks only a few dB while the voice speaks.
+- **It's present, not background hum:** -21 LUFS by default (raised from -27, then -24, at
+  the author's request, Oct 2026), so the voice sits about 4–5 dB over the music. The bed is
+  leveled straight to that target with a -2 dBTP ceiling, so it never clips. It ducks only a
+  few dB while the voice speaks.
 - **No sound effects:** no whooshes on cuts and no hits or booms on big numbers (the author
   found both distracting). The music and the voice carry the audio.
 - The credit line (required by CC BY) is added automatically to the end card's source line,
   credits.md and the TikTok post ("Music: “Title” Kevin MacLeod (incompetech.com), licensed
   under CC BY 4.0"). Keep it in the posted caption.
 - Adjust per video: `music <slug> --reroll`, `--title "…"`, `--start-scene 3` (start later),
-  `--level -21` (louder) or `-27` (softer), `--list`, `--off`.
+  `--level -18` (louder) or `-24` (softer), `--list`, `--off`.
 
 ## Step 1: Fetch
 `new` calls Substack's public API and saves `article.json` (metadata),

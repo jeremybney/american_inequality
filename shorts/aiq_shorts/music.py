@@ -45,7 +45,7 @@ PROFILES["pulse"] = {
 }
 PROFILE = "pulse"
 START_SCENE = 1      # the music starts on the first frame
-LEVEL_DB = -24.0     # LUFS; the author asked for louder music than -27 (voice about 5-6 dB over it)
+LEVEL_DB = -21.0     # LUFS; the author asked twice for louder music (voice about 4-5 dB over it)
 NO_INSTRUMENTS = ("piano", "organ", "choir", "vocal", "voice", "harpsichord", "celesta", "tuba",
                   "kazoo", "accordion", "bagpipe", "banjo", "harp", "flute", "clarinet", "oboe",
                   "zither", "lute", "santur", "tanpura", "ukulele", "glockenspiel", "trombone", "kora", "sitar")
@@ -156,7 +156,7 @@ def build_bed(project_dir, music, duration, out_wav, start=0.0):
     # pass 1: loop/trim, level, fades. loudnorm scrambles timestamps, so the delay that holds the
     # music back until its scene happens in a separate pass.
     af1 = (f"aloop=loop=-1:size=2147483647,atrim=0:{body:.3f},asetpts=N/SR/TB,"
-           f"loudnorm=I=-30:TP=-6:LRA=7,volume={float(music.get('level_db', LEVEL_DB)) + 30:.1f}dB,"
+           f"loudnorm=I={float(music.get('level_db', LEVEL_DB)):.1f}:TP=-2:LRA=7,"
            f"aresample=48000,afade=t=in:st=0:d={0.3 if start < 0.5 else 2.5},"
            f"afade=t=out:st={max(0.0, body - 3):.3f}:d=3")
     subprocess.run([M.ffmpeg_exe(), "-loglevel", "error", "-y", "-i", str(src), "-ac", "2", "-ar", "48000",
