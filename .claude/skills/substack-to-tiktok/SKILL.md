@@ -97,12 +97,8 @@ video's track so none repeats (the pool is about 14 tracks; `music --list` shows
 - **It's present, not background hum:** -27 LUFS by default, so the voice sits about 8–9 dB
   over the music, matching the reference videos (measured at 7.7, 7.9 and 12.7 dB). It ducks
   only a few dB while the voice speaks.
-- **Musical hits on the big moments** (`aiq_shorts/accents.py`): a deep boom (pitch-dropping
-  sub with a soft tail, no whoosh) lands on the opening frame, the article card, and the
-  moment each big number appears (`stat` overlays, `big_number` stats, bar `annotation`s, the
-  waffle's big number, the news clipping). At least 3.5s apart, at most 9 per video. Per scene,
-  `"accent": false` skips one, `"accent": true` adds one on the cut, `"accent_at": 1.2` places one.
-  `"accents": {"level_db": -12}` makes them quieter, `{"off": true}` removes them.
+- **No sound effects:** no whooshes on cuts and no hits or booms on big numbers (the author
+  found both distracting). The music and the voice carry the audio.
 - The credit line (required by CC BY) is added automatically to the end card's source line,
   credits.md and the TikTok post ("Music: “Title” Kevin MacLeod (incompetech.com), licensed
   under CC BY 4.0"). Keep it in the posted caption.
@@ -169,7 +165,8 @@ rewrites the script and it runs over, propose cuts and let them decide. If they 
 set `"max_seconds"` in the storyboard (e.g. 110) for that video only.
 
 ### Every video includes
-- **The article card** (`article_card`, the clipped card with the "N MONTHS AGO" badge) as
+- **The article card** (`article_card`, the clipped card: title, subtitle, cover and byline,
+  with no post date and no "N months ago" badge, so every story feels current) as
   **scene 3**, right after the two hook shots.
 - **At least one chart from the article itself** (`figure` with `media/article_NN.*`).
   If the article has a map, use the map.

@@ -82,7 +82,7 @@
       ],
       "chips_at": 1.2,
       "say": [
-        "Depending on where you are born, you may be far more likely to die from alcohol."
+        "Depending on where you are born, these risks may be far more likely."
       ]
     },
     {
@@ -455,5 +455,143 @@
         "You can read the full story on American Inequality."
       ]
     }
-  ]
+  ],
+  "voiceover": {
+    "file": "voiceover.m4a",
+    "clean": "voiceover_clean.wav",
+    "duration": 98.89,
+    "cues": [
+      {
+        "scene": 0,
+        "line": 0,
+        "text": "Alcohol kills more Americans than opioids and suicides combined.",
+        "start": 0.15,
+        "end": 3.49,
+        "matched": 1.0
+      },
+      {
+        "scene": 1,
+        "line": 0,
+        "text": "Every three minutes, one person in America dies because of alcohol.",
+        "start": 4.12,
+        "end": 7.18,
+        "matched": 1.0
+      },
+      {
+        "scene": 2,
+        "line": 0,
+        "text": "Depending on where you are born, these risks may be far more likely.",
+        "start": 7.68,
+        "end": 10.99,
+        "matched": 1.0
+      },
+      {
+        "scene": 3,
+        "line": 0,
+        "text": "Stepping across the state border from Nevada to Utah cuts the excessive drinking rate in half.",
+        "start": 11.49,
+        "end": 16.49,
+        "matched": 1.0
+      },
+      {
+        "scene": 4,
+        "line": 0,
+        "text": "In Lincoln County, Nevada, 24% of adults drink excessively, compared with 12% in Washington County, Utah, just right over the state border line.",
+        "start": 16.99,
+        "end": 25.3,
+        "matched": 0.92
+      },
+      {
+        "scene": 5,
+        "line": 0,
+        "text": "This is because Nevada has the weakest liquor laws in the nation, with liquor sold 24/7 and no last call.",
+        "start": 25.8,
+        "end": 31.82,
+        "matched": 1.0
+      },
+      {
+        "scene": 6,
+        "line": 0,
+        "text": "Meanwhile, Utah has some of the strongest, with metered pours and no liquor sales on Sundays.",
+        "start": 32.32,
+        "end": 37.09,
+        "matched": 0.94
+      },
+      {
+        "scene": 7,
+        "line": 0,
+        "text": "Laws save lives in Utah. It is the only state with a 0.05 blood alcohol limit.",
+        "start": 37.66,
+        "end": 42.61,
+        "matched": 0.81
+      },
+      {
+        "scene": 8,
+        "line": 0,
+        "text": "When this law rolled out, the fatal crash rate fell almost 20% in the first year.",
+        "start": 43.11,
+        "end": 47.39,
+        "matched": 0.94
+      },
+      {
+        "scene": 9,
+        "line": 0,
+        "text": "Wisconsin ranks the highest in the nation for binge drinking. Alcohol deaths nearly tripled here between 1999 and 2020.",
+        "start": 47.89,
+        "end": 55.11,
+        "matched": 0.95
+      },
+      {
+        "scene": 10,
+        "line": 0,
+        "text": "Native Americans are five times more likely to die from alcohol than White Americans, and low-income Americans twice as likely as the wealthy.",
+        "start": 55.61,
+        "end": 62.54,
+        "matched": 1.0
+      },
+      {
+        "scene": 11,
+        "line": 0,
+        "text": "Part of this is because of neighborhoods. Liquor stores concentrate in poor neighborhoods, with 50% more of them where poverty tops 20%.",
+        "start": 63.04,
+        "end": 71.34,
+        "matched": 0.92
+      },
+      {
+        "scene": 12,
+        "line": 0,
+        "text": "Cities like Baltimore have capped liquor licenses in poor neighborhoods, which can prevent hundreds of homicides a year.",
+        "start": 71.84,
+        "end": 78.07,
+        "matched": 1.0
+      },
+      {
+        "scene": 13,
+        "line": 0,
+        "text": "Overall, drinking is down in America. Only 54% of American adults now say they drink, the lowest share in ninety years.",
+        "start": 78.57,
+        "end": 86.51,
+        "matched": 0.91
+      },
+      {
+        "scene": 14,
+        "line": 0,
+        "text": "But in certain pockets, this isn't the case. Men in rural areas are 18% more likely to die from alcohol compared to urban peers.",
+        "start": 87.01,
+        "end": 95.29,
+        "matched": 0.92
+      },
+      {
+        "scene": 15,
+        "line": 0,
+        "text": "You can read the full story on American Inequality.",
+        "start": 95.79,
+        "end": 97.76,
+        "matched": 1.0
+      }
+    ],
+    "transcript": "Alcohol kills more Americans than opioids and suicides combined. Every three minutes, one person in America dies because of alcohol. Depending on where you are born, these risks may be far more likely. Stepping across the state border from Nevada to Utah cuts the excessive drinking rate in half. In Lincoln County, Nevada, 24 % of adults drink excessively, compared with 12 % in Washington County, Utah, just right over the state border line. This is because Nevada has the weakest liquor laws in the nation, which is the most important part of the state. with liquor sold 24 -7 and no last call. Meanwhile, Utah has some of the strongest with meter pours and no liquor sales on Sundays. Law save lives in Utah is the only state with a 0 .05 blood alcohol limit. When this law rolled out, the fatal crash rate fell almost 20 % in the first year. Wisconsin ranks the highest in the nation for binge drinking. Alcohol deaths here nearly tripled between 1999 and 2020. 20. Native Americans are five times more likely to die from alcohol than white Americans, and low -income Americans twice as likely as the wealthy. Part of this is because of neighborhoods. Lector stores concentrate in poor neighborhoods, with 50 percent more of them were poverty tops 20 percent. Cities like Baltimore have capped liquor licenses in poor neighborhoods, which can prevent hundreds of homicides a year. Overall, drinking is down in America America. Only 54 % of American adults now say they drank the lowest share in 90 years. But in certain pockets, this isn't the case. Many in rural areas are 18 % more likely to die from alcohol compared to urban peers. You can read the full story on American inequality.",
+    "pauses_trimmed_s": 5.76,
+    "max_gap": 0.5
+  }
 }

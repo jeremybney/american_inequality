@@ -40,7 +40,10 @@ def transcribe(wav, prompt=""):
     from faster_whisper import WhisperModel
     model = WhisperModel(ASR_MODEL, device="cpu", compute_type="int8")
     segments, _ = model.transcribe(str(wav), language="en", word_timestamps=True, vad_filter=True,
-                                   initial_prompt=prompt[:800] or None, beam_size=5)
+                                   initial_prompt=prompt[:800] or None, beam_size=5,
+                                   # deterministic: no random-temperature retries, and each
+                                   # segment decoded fresh so one mishearing can't loop on
+                                   temperature=0.0, condition_on_previous_text=False)
     words = []
     for seg in segments:
         for w in seg.words or []:
@@ -251,6 +254,24 @@ def tighten(wav, cues, max_gap=0.5, fade=0.012):
     return round(sum(c1 - c0 for c0, c1 in cuts), 2)
 
 
+def trim_head(wav, cues, keep=0.15):
+    """Cut dead air before the first line down to `keep` seconds (room tone too quiet to
+    look like speech, but loud enough to slip past silenceremove). Shifts the cues."""
+    import wave
+    lead = cues[0]["start"] - keep if cues else 0.0
+    if lead <= 0.05:
+        return 0.0
+    with wave.open(str(wav)) as w:
+        params, data = w.getparams(), w.readframes(w.getnframes())
+    cut = int(lead * params.framerate) * params.sampwidth * params.nchannels
+    with wave.open(str(wav), "wb") as w:
+        w.setparams(params)
+        w.writeframes(data[cut:])
+    for c in cues:
+        c["start"], c["end"] = round(c["start"] - lead, 3), round(c["end"] - lead, 3)
+    return round(lead, 2)
+
+
 def sync(project_dir, audio_path, max_gap=0.5):
     """Clean, transcribe and align a recording; store the result in the storyboard."""
     project_dir = Path(project_dir)
@@ -272,6 +293,7 @@ def sync(project_dir, audio_path, max_gap=0.5):
     words = transcribe(clean_wav, prompt=" ".join(lines))
     cues = refine_starts(align(lines, words), clean_wav)
     removed = tighten(clean_wav, cues, max_gap) if max_gap else 0.0
+    removed += trim_head(clean_wav, cues)
     sb["voiceover"] = {
         "file": dest.name, "clean": clean_wav.name, "duration": round(duration(clean_wav), 2),
         "cues": [{"scene": i, "line": j, "text": t, **c} for (i, j), t, c in zip(keys, lines, cues)],

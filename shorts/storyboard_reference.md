@@ -10,12 +10,11 @@ scene lasts as long as it takes to say its lines at `wpm`.
   "title": "…",                 // used in script.md
   "wpm": 170,                   // narration pace used for timing (150 = relaxed, 185 = fast)
   "draft": false,               // true stamps "DRAFT · VERIFY NUMBERS" on every frame
-  "today": "2026-09-30",        // optional; drives the "6 MONTHS AGO" badge (defaults to today)
+  "today": "2026-09-30",        // optional; the date a `"badge": "auto"` counts from (defaults to today)
   "article": {"section": "The Dividing Line"},   // overrides/extra fields for article.json
   "post": {"caption": "…", "hashtags": ["inequality", "…"]},
   "notes": ["anything the editor should know"],
   "music": {"title": "…", "file": "music.mp3", "start_scene": 1, "level_db": -27, "credit": "…"},  // set by `music`/`render`
-  "accents": {"level_db": -10},  // musical hits on big numbers (peak dBFS); {"off": true} removes them
   "music_credit": "Music: … (CC BY 4.0)",       // end card source line, credits.md, TikTok post
   "scenes": [ … ]
 }
@@ -30,8 +29,6 @@ scene lasts as long as it takes to say its lines at `wpm`.
 | `duration` | force a length in seconds (otherwise derived from `say`) |
 | `hold` | extra seconds after the last line (default 0.35) |
 | `crossfade` | seconds of crossfade into this scene (default 0.3; 0 = hard cut) |
-| `accent` | `false` skips this scene's musical hit; `true` adds one on its cut |
-| `accent_at` | seconds into the scene for a musical hit (overrides the automatic one) |
 
 Chart scenes (everything on the orange background) also take `title`,
 `subtitle`, `note` (small navy text under the chart), and
@@ -111,12 +108,14 @@ Animated GIFs play.
 
 ## `article_card`
 The article's header card, built from `article.json` (title, subtitle, authors,
-date, and `media/cover.jpg` if present), sliding in with an "N MONTHS AGO" badge.
+and `media/cover.jpg` if present), sliding in. By default it shows no post date and no age
+badge, so every story reads as current.
 ```json
-{"type": "article_card", "chips": ["WHY IT MATTERS", "WHAT CHANGED"], "badge": "auto",
+{"type": "article_card", "chips": ["WHY IT MATTERS", "WHAT CHANGED"],
  "show_cover": true, "say": ["In March I wrote about…"]}
 ```
-`badge`: `"auto"` (computed from the post date), any text, or `null`. `chips_at` sets when the chips start.
+`badge`: off by default; `"auto"` shows "N MONTHS AGO", or any text. `show_date: true` puts
+the post date back on the byline. `chips_at` sets when the chips start.
 
 ## `hbars`: horizontal bars that grow and count up
 ```json

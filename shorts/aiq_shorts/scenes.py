@@ -401,8 +401,10 @@ def build_article_card(article, cover_path=None, width=860):
     byline = " & ".join(names) if len(names) <= 2 else ", ".join(names[:-1]) + " & " + names[-1]
     while by_f.getlength(byline) > inner - 76 and len(names) > 2:  # too long for the card
         byline = f"{names[0]} et al."
-    d.text((pad + 76, y + 1), byline, font=by_f, fill=G.rgba(T.NAVY))
-    d.text((pad + 76, y + 34), article.get("date_label", ""), font=date_f, fill=G.rgba(G.mix(T.NAVY, T.TITLE, 0.4)))
+    date_label = article.get("date_label", "")
+    d.text((pad + 76, y + (1 if date_label else 14)), byline, font=by_f, fill=G.rgba(T.NAVY))
+    if date_label:
+        d.text((pad + 76, y + 34), date_label, font=date_f, fill=G.rgba(G.mix(T.NAVY, T.TITLE, 0.4)))
     card.paste(body, (0, 0), mask)
     return card
 
@@ -413,9 +415,12 @@ class ArticleCardScene(Scene):
         cover = ctx.media_path(spec.get("cover", "cover.jpg"))
         art = dict(ctx.article)
         art.update(spec.get("override", {}))
+        # every video should feel current: no post date and no "N months ago" badge unless asked
+        if not spec.get("show_date"):
+            art["date_label"] = ""
         self.card = build_article_card(art, cover if spec.get("show_cover", True) else None)
         self.shadow, self.shadow_pad = G.soft_shadow(self.card.size, 28, 30, 0.35, T.INK)
-        badge = spec.get("badge", "auto")
+        badge = spec.get("badge")
         if badge == "auto":
             badge = months_ago_label(art.get("post_date"), ctx.today)
         self.badge = badge
