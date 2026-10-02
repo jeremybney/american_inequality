@@ -234,9 +234,40 @@ def cmd_clip(a):
     print("News item for the storyboard:\n  " + json.dumps(item, ensure_ascii=False))
 
 
+def decode_upload(src, stem, ext=None):
+    """Recordings uploaded through the Shorts Queue page are stored as base64 text; decode
+    one to `stem`.<ext>. Any other file is returned as is."""
+    import base64
+    import re
+    head = src.read_bytes()[:64]
+    if src.suffix == ".txt" or re.fullmatch(rb"[A-Za-z0-9+/=\s]+", head or b"x"):
+        out = stem.with_name(f"{stem.name}.{(ext or 'm4a').lstrip('.')}")
+        out.write_bytes(base64.b64decode(src.read_bytes()))
+        return out
+    return src
+
+
+def cmd_enhance(a):
+    """Studio-clean any recording on its own, with before/after files to compare by ear."""
+    from aiq_shorts import enhance
+    src = Path(a.audio)
+    out_dir = Path(a.out) if a.out else src.parent
+    out_dir.mkdir(parents=True, exist_ok=True)
+    stem = (a.name or src.stem)
+    src = decode_upload(src, out_dir / f"{stem}_original", a.ext)
+    studio = out_dir / f"{stem}_studio.wav"
+    notes = enhance.enhance(src, studio)
+    before = out_dir / f"{stem}_before.mp3"
+    after = out_dir / f"{stem}_after.mp3"
+    # the "before" is only leveled to the same loudness, so the comparison is fair
+    enhance._ff("-i", str(src), "-vn", "-ac", "1", "-af", "loudnorm=I=-14:TP=-2", "-b:a", "192k", str(before))
+    enhance._ff("-i", str(studio), "-b:a", "192k", str(after))
+    print("Studio cleanup: " + "; ".join(notes))
+    print(f"Wrote {studio}\nCompare: {before}  vs  {after}")
+
+
 def cmd_voice(a):
     """Sync the author's recorded voiceover: clean it, find each line, time the video to it."""
-    import re
     from aiq_shorts import voice
     pdir = project(a.slug)
     if a.off:
@@ -246,15 +277,10 @@ def cmd_voice(a):
         sb_path.write_text(json.dumps(sb, indent=2, ensure_ascii=False) + "\n")
         print("Voiceover removed; timing falls back to the script estimate.")
         return
-    src = Path(a.audio)
-    head = src.read_bytes()[:64]
-    if src.suffix == ".txt" or re.fullmatch(rb"[A-Za-z0-9+/=\s]+", head or b"x"):
-        # recordings uploaded through the Shorts Queue page are stored as base64 text
-        import base64
-        decoded = pdir / "media" / f"voiceover_upload.{(a.ext or 'm4a').lstrip('.')}"
-        decoded.write_bytes(base64.b64decode(src.read_bytes()))
-        src = decoded
-    vo = voice.sync(pdir, src, max_gap=a.max_gap)
+    src = decode_upload(Path(a.audio), pdir / "media" / "voiceover_upload", a.ext)
+    vo = voice.sync(pdir, src, max_gap=a.max_gap, polish=not a.plain)
+    if vo.get("studio"):
+        print("Studio cleanup: " + "; ".join(vo["studio"]))
     if vo.get("pauses_trimmed_s"):
         print(f"Tightened pauses between lines to {a.max_gap}s (removed {vo['pauses_trimmed_s']}s of silence; words untouched)")
     print(f"Voiceover: {vo['duration']:.1f}s of audio, {len(vo['cues'])} lines")
@@ -461,7 +487,16 @@ def main():
     p.add_argument("--off", action="store_true")
     p.add_argument("--max-gap", type=float, default=0.5, help="longest pause kept between lines in seconds (0 = keep all)")
     p.add_argument("--ext", help="original file extension for a base64 upload from the queue page (e.g. m4a)")
+    p.add_argument("--plain", action="store_true",
+                   help="mix the plainly denoised voice instead of the studio-cleaned one (echo removal, tone, dynamics)")
     p.set_defaults(fn=cmd_voice)
+
+    p = sub.add_parser("enhance", help="studio-clean a recording on its own (echo, muffled tone, levels) with before/after mp3s")
+    p.add_argument("audio", help="the recording (.m4a, .mp3, .wav, .mp4, or a base64 .txt from the queue page)")
+    p.add_argument("--ext", help="original file extension for a base64 upload (e.g. m4a)")
+    p.add_argument("--out", help="folder for the results (default: next to the recording)")
+    p.add_argument("--name", help="file name stem for the results")
+    p.set_defaults(fn=cmd_enhance)
 
     p = sub.add_parser("music", help="pick or change the background music (a fresh track per video)")
     p.add_argument("slug")

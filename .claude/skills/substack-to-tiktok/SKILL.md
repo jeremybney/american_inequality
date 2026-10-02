@@ -68,12 +68,19 @@ file store doesn't take audio types) and sets the item's `status: "voice"` and
 When the user says "sync my voiceovers" (or similar):
 1. `list` the queue; for each item with `status: "voice"`, download the recording with the
    Artifact tool: `action: "read"`, the queue URL, `path: <asset_id>`, and an `out_dir` inside the project.
-2. `python shorts/make_short.py voice <slug> <downloaded .txt> --ext <ext>`. It decodes, cleans
-   (trims leading dead air, cuts rumble, light denoise, levels to about -14 LUFS), transcribes
+2. `python shorts/make_short.py voice <slug> <downloaded .txt> --ext <ext>`. It decodes and
+   makes two copies of the voice on one timeline. The **studio copy** goes into the video
+   (`aiq_shorts/enhance.py`): DeepFilterNet 3 strips the room echo and noise that make a voice
+   memo sound hollow, then the tone is measured and EQ'd toward a close-mic voice (boom cut,
+   presence and air lifted; an exciter rebuilds the highs when a compressed memo has none),
+   de-essed, a gentle expander shortens leftover echo tails, gentle compression, -14 LUFS with
+   a limiter. What it did is printed as "Studio cleanup:" and stored as `voiceover.studio`.
+   The **plain copy** (light denoise only) is what speech recognition reads: it transcribes
    with word timestamps (faster-whisper `base.en`), aligns every script line, snaps each line
    to the actual speech onset, tightens pauses BETWEEN lines to 0.5s (`--max-gap`, 0 keeps them;
-   words are never cut or sped up), and stores the cues in `storyboard.voiceover`. Tested against
-   known timings, line starts land within 0.03s.
+   words are never cut or sped up; every cut is applied to both copies), and stores the cues in
+   `storyboard.voiceover`. Tested against known timings, line starts land within 0.03s.
+   `--plain` mixes the plain copy instead (the old sound) if the author prefers it.
 3. Read the printed table. A line flagged "couldn't hear most of this line" means it was
    skipped or reworded. Tell the user which line rather than guessing.
 4. `stills`, then `render`. Scene lengths, captions and every reveal (`at` times, scaled to the
@@ -83,7 +90,13 @@ When the user says "sync my voiceovers" (or similar):
 
 If the script changes after a sync, the engine falls back to estimated timing and warns. The
 author then re-records, or you re-run `voice` if only visuals changed. `voice <slug> --off`
-removes the voiceover. Never generate or clone the author's voice.
+removes the voiceover. Never generate or clone the author's voice (the cleanup only removes
+echo and noise and reshapes tone; it never synthesizes speech).
+
+When the author just wants a recording cleaned up ("make my audio sound better"), run
+`python shorts/make_short.py enhance <file or downloaded .txt> --ext <ext> --out <folder>`.
+It writes `<name>_studio.wav` plus `<name>_before.mp3` / `<name>_after.mp3` at the same
+loudness. Send both mp3s so they can compare by ear.
 
 ## Background music (automatic, different for every video)
 `render` assigns a track automatically when the storyboard has none (`music <slug>` does it
