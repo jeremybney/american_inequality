@@ -61,6 +61,23 @@ Rendering a 60-second video takes about 1.5 minutes on 4 cores.
 
 ## Recording the voiceover
 
+Upload the recording on the Shorts Queue page and tell Claude "sync my voiceovers", or run
+`python shorts/make_short.py voice <slug> <recording>`. The voice that goes into the video is
+studio-cleaned automatically (`aiq_shorts/enhance.py`): a neural model (DeepFilterNet 3)
+removes the room echo and background noise that make a phone memo sound hollow, then the tone
+is EQ'd toward a close-mic voice, de-essed, compressed and leveled to -14 LUFS. To clean any
+recording on its own and compare by ear:
+
+```bash
+python shorts/make_short.py enhance my_take.m4a --out cleaned/
+#  → cleaned/my_take_studio.wav, my_take_before.mp3, my_take_after.mp3
+```
+
+Cleanup can't fully rescue a bad room. For the best result record close to the mic (earbuds
+like AirPods are ideal), in a small room with soft furnishings, and avoid the
+compressed/"lossy" setting in your voice memo app.
+
+
 Scenes are timed from the script at 170 words per minute, so each caption
 appears when you'd be saying it. Read `script.md` at a brisk pace, drop the MP4
 and your audio into CapCut / Premiere / TikTok's editor, and nudge clips if you

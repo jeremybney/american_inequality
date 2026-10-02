@@ -5,3 +5,4 @@ beautifulsoup4>=4.12
 pymupdf>=1.24
 playwright>=1.45
 faster-whisper>=1.0
+deepfilternet>=0.5.6   # voice cleanup; install CPU torch first: pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu

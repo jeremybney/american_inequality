@@ -166,7 +166,8 @@ class Timeline:
         end = max(vo["cues"][-1]["end"] + 1.2, float(vo.get("duration", 0)) + 0.4)
         spans = [(s, starts[k + 1] if k + 1 < len(starts) else end) for k, s in enumerate(starts)]
         cues = [{"scene": c["scene"], "start": c["start"], "end": c["end"], "text": c["text"]} for c in vo["cues"]]
-        return {"spans": spans, "cues": cues, "audio": self.ctx.media_dir / vo["clean"]}
+        mix = self.ctx.media_dir / vo.get("mix", vo["clean"])  # the studio-cleaned copy, when there is one
+        return {"spans": spans, "cues": cues, "audio": mix if mix.exists() else self.ctx.media_dir / vo["clean"]}
 
     # -- frame rendering ------------------------------------------------------
     def scene_at(self, t):
@@ -277,7 +278,9 @@ def render_video(project_dir, out_path, captions=True, workers=None, crf=18, sta
         n += 1
     if not bed or not tl.voice:
         chains.append("[vk]anullsink")
-    chains.append(f"{''.join(mix)}amix=inputs={len(mix)}:duration=first:normalize=0[a]" if len(mix) > 1
+    # a limiter on the final mix: the voice and music peaks add up past 0 dB on loud words
+    chains.append(f"{''.join(mix)}amix=inputs={len(mix)}:duration=first:normalize=0,"
+                  "alimiter=limit=0.84:attack=3:release=60:level=disabled[a]" if len(mix) > 1
                   else "[v]anull[a]")
     graph = ["-filter_complex", ";".join(chains), "-map", "0:v", "-map", "[a]"]
     if start:  # partial renders: start every audio input at the same point as the video

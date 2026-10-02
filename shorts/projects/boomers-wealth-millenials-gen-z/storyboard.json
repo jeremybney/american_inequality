@@ -416,13 +416,20 @@
   "voiceover": {
     "file": "voiceover.m4a",
     "clean": "voiceover_clean.wav",
-    "duration": 81.37,
+    "duration": 81.39,
+    "mix": "voiceover_studio.wav",
+    "studio": [
+      "room echo + noise removed (DeepFilterNet 3)",
+      "60-150 Hz +1.2 dB",
+      "150-300 Hz -1.5 dB",
+      "300-600 Hz -3.6 dB"
+    ],
     "cues": [
       {
         "scene": 0,
         "line": 0,
         "text": "Almost half of all wealth in America is owned by Boomers,",
-        "start": 0.22,
+        "start": 0.0,
         "end": 2.68,
         "matched": 1.0
       },
@@ -439,102 +446,102 @@
         "line": 0,
         "text": "Boomers have spent the last half-century molding America in their image.",
         "start": 5.38,
-        "end": 8.43,
+        "end": 8.45,
         "matched": 1.0
       },
       {
         "scene": 3,
         "line": 0,
         "text": "Between 1946 and 1964, about seventy-six million babies were born in America.",
-        "start": 8.93,
-        "end": 14.46,
+        "start": 8.95,
+        "end": 14.48,
         "matched": 1.0
       },
       {
         "scene": 4,
         "line": 0,
         "text": "California was building one school a week in the fifties to keep up with that tremendous growth.",
-        "start": 14.96,
-        "end": 18.99,
+        "start": 14.98,
+        "end": 19.01,
         "matched": 1.0
       },
       {
         "scene": 5,
         "line": 0,
         "text": "In 1976, Boomers were old enough to run for Congress. They took over D.C. and never left.",
-        "start": 19.49,
-        "end": 25.16,
+        "start": 19.51,
+        "end": 25.18,
         "matched": 1.0
       },
       {
         "scene": 6,
         "line": 0,
         "text": "By 2013 they held 60% of Congress while making up only a quarter of the population.",
-        "start": 25.66,
-        "end": 31.54,
+        "start": 25.68,
+        "end": 31.36,
         "matched": 0.94
       },
       {
         "scene": 7,
         "line": 0,
         "text": "Those lawmakers placed limits on new housing and created tax rules that favored existing wealth, making it hard for young generations to get ahead.",
-        "start": 32.04,
-        "end": 39.64,
+        "start": 31.88,
+        "end": 39.48,
         "matched": 1.0
       },
       {
         "scene": 8,
         "line": 0,
         "text": "Today Boomers own 41% of all real estate wealth, often in multi-bedroom homes that are underutilized.",
-        "start": 40.14,
-        "end": 46.48,
+        "start": 39.98,
+        "end": 46.36,
         "matched": 0.95
       },
       {
         "scene": 9,
         "line": 0,
         "text": "More empty-nester boomers own homes with 3 or more bedrooms than Millennials with children.",
-        "start": 46.98,
-        "end": 51.59,
-        "matched": 1.0
+        "start": 46.86,
+        "end": 51.49,
+        "matched": 0.93
       },
       {
         "scene": 10,
         "line": 0,
         "text": "Millennials don't just own less, they also have more debt.",
-        "start": 52.09,
-        "end": 54.37,
+        "start": 51.99,
+        "end": 54.27,
         "matched": 1.0
       },
       {
         "scene": 11,
         "line": 0,
         "text": "Education costs have increased 9x since 1989.",
-        "start": 54.87,
-        "end": 58.4,
+        "start": 54.77,
+        "end": 58.3,
         "matched": 0.9
       },
       {
         "scene": 12,
         "line": 0,
         "text": "Now the great generational wealth transfer is passing $84 trillion from Boomers to wealthy children over the next few decades.",
-        "start": 59.02,
-        "end": 65.98,
+        "start": 58.93,
+        "end": 65.89,
         "matched": 1.0
       },
       {
         "scene": 13,
         "line": 0,
         "text": "But that wealth is concentrated too.",
-        "start": 66.48,
-        "end": 67.88,
+        "start": 66.39,
+        "end": 67.81,
         "matched": 1.0
       },
       {
         "scene": 14,
         "line": 0,
         "text": "The top 10% of Boomers hold 71% of their generation's wealth.",
-        "start": 68.41,
+        "start": 68.31,
         "end": 72.41,
         "matched": 0.87
       },
@@ -543,20 +550,20 @@
         "line": 0,
         "text": "This is an opportunity to build an America with more housing, affordable education, and higher wages.",
         "start": 72.91,
-        "end": 77.86,
-        "matched": 0.94
+        "end": 77.88,
+        "matched": 1.0
       },
       {
         "scene": 16,
         "line": 0,
         "text": "You can read the full story on American Inequality.",
-        "start": 78.36,
-        "end": 80.45,
+        "start": 78.38,
+        "end": 80.47,
         "matched": 1.0
       }
     ],
-    "transcript": "Almost half of all wealth in America is owned by Boomers, while half of all debt is owned by Millennials. Boomers have spent the last half -century molding America in their image. Between 1946 and 1964, about seventy -six million babies were born in America. California was building one school a week in the fifties to keep up with that tremendous growth. In 1976, Boomers were old enough to run for Congress. They took over D .C. and never left. By 2013, they held 60 % of all wealth in America. They held 60 % of Congress while making up only a quarter of the population. Those lawmakers placed limits on new housing and created tax rules that favored existing wealth, making it hard for young generations to get ahead. Today Boomers own 41 % of all real estate wealth, often in multi -bedroom homes that are underutilized. More empty -nester boomers own homes with three or more bedrooms than Millennials with children. Millennials don't just own less, they also have more debt. Education costs have increased nine times since 1989. Now, the great generational wealth transfer is passing 84 trillion dollars from Boomers to wealthy children over the next few decades. But that wealth is concentrated too. At the top 10 % of Boomers hold 71 % of their generation's wealth. This is an opportunity to build in America with more housing, affordable education, and higher wages. You can read the full story on American inequality.",
-    "pauses_trimmed_s": 6.43,
+    "transcript": "Almost half of all wealth in America is owned by Boomers, while half of all debt is owned by Millennials. Boomers have spent the last half -century molding America in their image. Between 1946 and 1964, about seventy -six million babies were born in America. California was building one school a week in the fifties to keep up with that tremendous growth. In 1976, Boomers were old enough to run for Congress. They took over D .C. and never left. By 2013, they held 60 % of all wealth in America. They held 60 % of all wealth in America. 50 % of Congress while making up only a quarter of the population. Those lawmakers placed limits on new housing and created tax rules that favored existing wealth, making it hard for young generations to get ahead. Today, boomers own 41 % of all real estate wealth, often in multi -bedroom homes that are underutilized. More empty -nestra boomers own homes with three or more bedrooms than millennials with children. Millennials don't just own less, they also have more debt. education costs have increased nine times since 1989. Now, the great generational wealth transfer is passing 84 trillion dollars from boomers to wealthy children over the next few decades. But that wealth is concentrated too. The top 10 % of boomers hold 71 % of their generation's wealth. This is an opportunity to build an America with more housing, affordable education, and higher wages. You can read the full story on American inequality.",
+    "pauses_trimmed_s": 6.41,
     "max_gap": 0.5
   },
   "music": {

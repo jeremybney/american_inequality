@@ -4,6 +4,10 @@ The author reads script.md; this module cleans the recording, finds when each sc
 line is spoken (speech recognition with word timestamps, aligned to the script), and
 stores the cue times in storyboard["voiceover"] so the engine times every scene, caption
 and animation to the actual delivery and mixes the voice into the video.
+
+Two copies of the voice share one timeline: a plainly denoised one that speech recognition
+and onset snapping read, and a studio-cleaned one (enhance.py: echo removal, tone, dynamics)
+that goes into the video. Every cut is applied to both.
 """
 import difflib
 import json
@@ -11,6 +15,7 @@ import re
 import subprocess
 from pathlib import Path
 
+from . import enhance as EN
 from . import media as M
 
 ASR_MODEL = "base.en"  # small, fast on CPU, accurate enough for timing a known script
@@ -21,12 +26,32 @@ def _ff(*args):
 
 
 def clean(src, out_wav):
-    """Trim leading dead air, cut rumble, light denoise, level to ~-14 LUFS (TikTok)."""
-    af = ("silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,"
-          "highpass=f=70,afftdn=nf=-28,"
-          "loudnorm=I=-14:TP=-1.5:LRA=11")
-    _ff("-i", str(src), "-vn", "-ac", "1", "-ar", "48000", "-af", af, str(out_wav))
+    """The copy speech recognition reads: cut rumble, light denoise, level to ~-14 LUFS.
+    Same length as the source, so it lines up with the studio copy."""
+    _ff("-i", str(src), "-vn", "-ac", "1", "-ar", "48000", "-af",
+        "highpass=f=70,afftdn=nf=-28,loudnorm=I=-14:TP=-1.5:LRA=11", str(out_wav))
     return out_wav
+
+
+def _align_to(wav, ref):
+    """Shift and pad/trim `wav` so it lines up sample for sample with `ref` (the denoiser in
+    `clean` delays its copy by ~25ms; the cue times are measured on that copy)."""
+    import wave
+    import numpy as np
+    def load(p):
+        with wave.open(str(p)) as w:
+            return w.getparams(), np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16)
+    params, x = load(wav)
+    _, r = load(ref)
+    env = lambda a: np.sqrt((a[:len(a) // 48 * 48].astype(np.float32).reshape(-1, 48) ** 2).mean(1))  # 1ms
+    ex, er = env(x), env(r)
+    n = min(len(ex), len(er)) - 200
+    lag = max(range(-100, 101), key=lambda k: float(np.dot(er[100:n], ex[100 - k:n - k])))  # ms
+    shift = lag * 48
+    x = np.concatenate([np.zeros(shift, np.int16), x]) if shift > 0 else x[-shift:]
+    with wave.open(str(wav), "wb") as w:
+        w.setparams(params)
+        w.writeframes(np.pad(x, (0, max(0, len(r) - len(x))))[:len(r)].tobytes())
 
 
 def duration(path):
@@ -196,15 +221,11 @@ def refine_starts(cues, wav, floor_db=-32.0):
     return cues
 
 
-def tighten(wav, cues, max_gap=0.5, fade=0.012):
+def tighten(wav, cues, max_gap=0.5, also=()):
     """Shorten long pauses BETWEEN lines to max_gap (editor-style tightening for short-form
     pacing). Words are untouched and nothing is sped up; only silence inside the gaps is cut,
-    with a short crossfade at each cut. Rewrites the wav and shifts cue times. Returns seconds removed."""
-    import wave
-    import numpy as np
-    with wave.open(str(wav)) as w:
-        rate, ch, sw = w.getframerate(), w.getnchannels(), w.getsampwidth()
-        x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32)
+    with a short crossfade at each cut. Rewrites the wav (and the same spans of each wav in
+    `also`) and shifts cue times. Returns seconds removed."""
     db, step = _energy_db(wav)
     cuts = []  # (start_s, end_s) of audio to remove
     for a, b in zip(cues, cues[1:]):
@@ -231,6 +252,22 @@ def tighten(wav, cues, max_gap=0.5, fade=0.012):
             cuts.append((mid - cut / 2, mid + cut / 2))
     if not cuts:
         return 0.0
+    for path in (wav, *also):
+        _cut(path, cuts)
+    for c in cues:
+        for key in ("start", "end"):
+            t = c[key]
+            c[key] = round(t - sum(min(c1, t) - c0 for c0, c1 in cuts if t > c0), 3)
+    return round(sum(c1 - c0 for c0, c1 in cuts), 2)
+
+
+def _cut(wav, cuts, fade=0.012):
+    """Remove the (start_s, end_s) spans from a wav, with a short crossfade at each cut."""
+    import wave
+    import numpy as np
+    with wave.open(str(wav)) as w:
+        rate, ch, sw = w.getframerate(), w.getnchannels(), w.getsampwidth()
+        x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32)
     n_fade = int(fade * rate)
     pieces, pos = [], 0
     for c0, c1 in cuts:
@@ -247,33 +284,30 @@ def tighten(wav, cues, max_gap=0.5, fade=0.012):
     y = np.clip(np.concatenate(pieces), -32768, 32767).astype(np.int16)
     with wave.open(str(wav), "wb") as w:
         w.setnchannels(ch); w.setsampwidth(sw); w.setframerate(rate); w.writeframes(y.tobytes())
-    for c in cues:
-        for key in ("start", "end"):
-            t = c[key]
-            c[key] = round(t - sum(min(c1, t) - c0 for c0, c1 in cuts if t > c0), 3)
-    return round(sum(c1 - c0 for c0, c1 in cuts), 2)
 
 
-def trim_head(wav, cues, keep=0.15):
-    """Cut dead air before the first line down to `keep` seconds (room tone too quiet to
-    look like speech, but loud enough to slip past silenceremove). Shifts the cues."""
+def trim_head(wav, cues, keep=0.15, also=()):
+    """Cut dead air before the first line down to `keep` seconds, from `wav` and each wav in
+    `also`. Shifts the cues."""
     import wave
     lead = cues[0]["start"] - keep if cues else 0.0
     if lead <= 0.05:
         return 0.0
-    with wave.open(str(wav)) as w:
-        params, data = w.getparams(), w.readframes(w.getnframes())
-    cut = int(lead * params.framerate) * params.sampwidth * params.nchannels
-    with wave.open(str(wav), "wb") as w:
-        w.setparams(params)
-        w.writeframes(data[cut:])
+    for path in (wav, *also):
+        with wave.open(str(path)) as w:
+            params, data = w.getparams(), w.readframes(w.getnframes())
+        cut = int(lead * params.framerate) * params.sampwidth * params.nchannels
+        with wave.open(str(path), "wb") as w:
+            w.setparams(params)
+            w.writeframes(data[cut:])
     for c in cues:
         c["start"], c["end"] = round(c["start"] - lead, 3), round(c["end"] - lead, 3)
     return round(lead, 2)
 
 
-def sync(project_dir, audio_path, max_gap=0.5):
-    """Clean, transcribe and align a recording; store the result in the storyboard."""
+def sync(project_dir, audio_path, max_gap=0.5, polish=True):
+    """Clean, transcribe and align a recording; store the result in the storyboard.
+    polish=False mixes the plainly denoised voice instead of the studio-cleaned one."""
     project_dir = Path(project_dir)
     sb_path = project_dir / "storyboard.json"
     sb = json.loads(sb_path.read_text())
@@ -282,8 +316,18 @@ def sync(project_dir, audio_path, max_gap=0.5):
     dest = media_dir / f"voiceover{src.suffix.lower() or '.m4a'}"
     if src.resolve() != dest.resolve():
         dest.write_bytes(src.read_bytes())
+    # leading dead air off first, once, so both copies share the timeline (speech recognition
+    # also misses the last sentence when it's left on: its 30s windows shift)
+    head_wav = media_dir / "voiceover_src.wav"
+    _ff("-i", str(dest), "-vn", "-ac", "1", "-ar", "48000", "-af",
+        "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15", "-c:a", "pcm_s16le", str(head_wav))
     clean_wav = media_dir / "voiceover_clean.wav"
-    clean(dest, clean_wav)
+    clean(head_wav, clean_wav)
+    mix_wav, eq = media_dir / "voiceover_studio.wav", []
+    if polish:
+        eq = EN.enhance(head_wav, mix_wav)
+        _align_to(mix_wav, clean_wav)
+    also = (mix_wav,) if polish else ()
     lines, keys = [], []
     for i, spec in enumerate(sb["scenes"]):
         say = spec.get("say", [])
@@ -292,10 +336,11 @@ def sync(project_dir, audio_path, max_gap=0.5):
             keys.append((i, j))
     words = transcribe(clean_wav, prompt=" ".join(lines))
     cues = refine_starts(align(lines, words), clean_wav)
-    removed = tighten(clean_wav, cues, max_gap) if max_gap else 0.0
-    removed += trim_head(clean_wav, cues)
+    removed = tighten(clean_wav, cues, max_gap, also) if max_gap else 0.0
+    removed += trim_head(clean_wav, cues, also=also)
     sb["voiceover"] = {
         "file": dest.name, "clean": clean_wav.name, "duration": round(duration(clean_wav), 2),
+        **({"mix": mix_wav.name, "studio": eq} if polish else {}),
         "cues": [{"scene": i, "line": j, "text": t, **c} for (i, j), t, c in zip(keys, lines, cues)],
         "transcript": " ".join(w for _, _, w in words),
         "pauses_trimmed_s": removed, "max_gap": max_gap,
