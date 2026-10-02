@@ -27,7 +27,7 @@ def _ff(*args):
 
 def clean(src, out_wav):
     """The copy speech recognition reads: cut rumble, light denoise, level to ~-14 LUFS.
-    Same length as the source (leading dead air is cut later, by trim_head, from every copy)."""
+    Same length as the source, so it lines up with the studio copy."""
     _ff("-i", str(src), "-vn", "-ac", "1", "-ar", "48000", "-af",
         "highpass=f=70,afftdn=nf=-28,loudnorm=I=-14:TP=-1.5:LRA=11", str(out_wav))
     return out_wav
@@ -316,11 +316,16 @@ def sync(project_dir, audio_path, max_gap=0.5, polish=True):
     dest = media_dir / f"voiceover{src.suffix.lower() or '.m4a'}"
     if src.resolve() != dest.resolve():
         dest.write_bytes(src.read_bytes())
+    # leading dead air off first, once, so both copies share the timeline (speech recognition
+    # also misses the last sentence when it's left on: its 30s windows shift)
+    head_wav = media_dir / "voiceover_src.wav"
+    _ff("-i", str(dest), "-vn", "-ac", "1", "-ar", "48000", "-af",
+        "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15", "-c:a", "pcm_s16le", str(head_wav))
     clean_wav = media_dir / "voiceover_clean.wav"
-    clean(dest, clean_wav)
+    clean(head_wav, clean_wav)
     mix_wav, eq = media_dir / "voiceover_studio.wav", []
     if polish:
-        eq = EN.enhance(dest, mix_wav)
+        eq = EN.enhance(head_wav, mix_wav)
         _align_to(mix_wav, clean_wav)
     also = (mix_wav,) if polish else ()
     lines, keys = [], []
