@@ -24,6 +24,12 @@ python shorts/make_short.py render <slug>                  # 5. MP4 + script.md 
 Run `python shorts/make_short.py doctor` first in a new session: it checks network access
 and API keys. Environment variables only load when a session starts.
 Dependencies: `pip install -r shorts/requirements.txt` (pillow, numpy, imageio-ffmpeg, beautifulsoup4).
+Before syncing a voiceover, install the voice cleanup model too (it removes the room echo that
+makes the author's voice sound hollow; without it the voice falls back to a light denoise):
+`pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu`, then
+`pip install --ignore-installed packaging deepfilternet "numpy<2"`. Its weights download on
+first use from raw.githubusercontent.com. If `voice` prints "DeepFilterNet not installed",
+fix the install and re-run `voice` before rendering.
 Every scene type and field is documented in `shorts/storyboard_reference.md`.
 Read it before writing a storyboard. `shorts/projects/boomers-wealth-millenials-gen-z/storyboard.json`
 is a worked example.
