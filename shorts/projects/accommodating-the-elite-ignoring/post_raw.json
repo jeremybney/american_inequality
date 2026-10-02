@@ -1,0 +1,629 @@
+{
+  "audience": "everyone",
+  "audience_before_archived": null,
+  "canonical_url": "https://americaninequality.substack.com/p/accommodating-the-elite-ignoring",
+  "default_comment_sort": null,
+  "editor_v2": false,
+  "exempt_from_archive_paywall": false,
+  "free_unlock_required": false,
+  "id": 193184958,
+  "podcast_art_url": null,
+  "podcast_duration": null,
+  "podcast_preview_upload_id": null,
+  "podcast_upload_id": null,
+  "podcast_url": null,
+  "post_date": "2026-04-08T14:34:46.742Z",
+  "updated_at": "2026-10-02T17:38:51.065Z",
+  "publication_id": 267573,
+  "search_engine_description": null,
+  "search_engine_title": null,
+  "section_id": null,
+  "should_send_free_preview": false,
+  "show_guest_bios": true,
+  "slug": "accommodating-the-elite-ignoring",
+  "social_title": "How the Wealthy Game Disability Laws for Ivy League Gains",
+  "subtitle": "Disability accommodations in higher ed have become a huge benefit for America's richest families yet they remain a trap for the most vulnerable",
+  "teaser_post_eligible": true,
+  "title": "How the Wealthy Game Disability Laws for Ivy League Gains",
+  "type": "newsletter",
+  "video_upload_id": null,
+  "write_comment_permissions": "everyone",
+  "meter_type": "none",
+  "live_stream_id": null,
+  "is_published": true,
+  "restacks": 19,
+  "reactions": {
+    "\u2764": 104
+  },
+  "top_exclusions": [],
+  "pins": [
+    267573
+  ],
+  "section_pins": [],
+  "has_shareable_clips": false,
+  "previous_post_slug": "how-to-find-solutions",
+  "next_post_slug": "your-brain-on-inequality-with-hanna",
+  "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/494befd1-1715-4741-871c-fd375704510c_2000x1103.jpeg",
+  "cover_image_is_square": false,
+  "cover_image_is_explicit": false,
+  "videoUpload": null,
+  "podcastFields": {
+    "post_id": 193184958,
+    "podcast_episode_number": null,
+    "podcast_season_number": null,
+    "podcast_episode_type": null,
+    "should_syndicate_to_other_feed": null,
+    "syndicate_to_section_id": null,
+    "hide_from_feed": false,
+    "free_podcast_url": null,
+    "free_podcast_duration": null,
+    "preview_contains_ad": false,
+    "was_imported_self_serve_sync": false,
+    "draft_free_podcast_url": null,
+    "draft_free_podcast_duration": null
+  },
+  "podcastUpload": null,
+  "podcastPreviewUpload": null,
+  "voiceover_upload_id": null,
+  "voiceoverUpload": null,
+  "has_voiceover": false,
+  "description": "Disability accommodations in higher ed have become a huge benefit for the elite yet remain a trap for the most vulnerable",
+  "body_html": "<p>Student accommodations in elite lecture halls are reshaping the ways that privilege manifests in America. At Stanford, <a href=\"https://stanforddaily.com/2026/03/11/housing-changes-disabled-residents/\">38%</a> of students are registered as disabled. At Harvard and Brown, more than <a href=\"https://www.nytimes.com/2026/03/02/us/colleges-students-disabilities-enrollment.html\">20%</a> of students are registered as disabled. Better testing and comfort talking about disability has helped spur this rise in ways that reflect social and medical progress, but this statistical anomaly is not just about medicine, it reflects a two-tiered system where we \u201caccommodate\u201d the elite but often abandon the poor and those who need our support most. </p><div class=\"subscription-widget-wrap-editor\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe&quot;,&quot;language&quot;:&quot;en&quot;}\" data-component-name=\"SubscribeWidgetToDOM\"><div class=\"subscription-widget show-subscribe\"><div class=\"preamble\"><p class=\"cta-caption\">Jeremy here \ud83d\udc4b Thanks for reading this article and supporting <a href=\"https://americaninequality.substack.com/\">American Inequality</a>. Join our great community by becoming a free subscriber</p></div><form class=\"subscription-widget-subscribe\"><input type=\"email\" class=\"email-input\" name=\"email\" placeholder=\"Type your email\u2026\" tabindex=\"-1\"><input type=\"submit\" class=\"button primary\" value=\"Subscribe\"><div class=\"fake-input-wrapper\"><div class=\"fake-input\"></div><div class=\"fake-button\"></div></div></form></div></div><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!Ewp6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7137918b-18df-4482-8e92-99e9e89cd754_1240x1072.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!Ewp6!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7137918b-18df-4482-8e92-99e9e89cd754_1240x1072.png 424w, https://substackcdn.com/image/fetch/$s_!Ewp6!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7137918b-18df-4482-8e92-99e9e89cd754_1240x1072.png 848w, https://substackcdn.com/image/fetch/$s_!Ewp6!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7137918b-18df-4482-8e92-99e9e89cd754_1240x1072.png 1272w, https://substackcdn.com/image/fetch/$s_!Ewp6!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7137918b-18df-4482-8e92-99e9e89cd754_1240x1072.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!Ewp6!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7137918b-18df-4482-8e92-99e9e89cd754_1240x1072.png\" width=\"1240\" height=\"1072\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/7137918b-18df-4482-8e92-99e9e89cd754_1240x1072.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1072,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" title=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!Ewp6!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7137918b-18df-4482-8e92-99e9e89cd754_1240x1072.png 424w, https://substackcdn.com/image/fetch/$s_!Ewp6!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7137918b-18df-4482-8e92-99e9e89cd754_1240x1072.png 848w, https://substackcdn.com/image/fetch/$s_!Ewp6!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7137918b-18df-4482-8e92-99e9e89cd754_1240x1072.png 1272w, https://substackcdn.com/image/fetch/$s_!Ewp6!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7137918b-18df-4482-8e92-99e9e89cd754_1240x1072.png 1456w\" sizes=\"100vw\" fetchpriority=\"high\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p>The proliferation in accommodation plans, known as 504 plans (after a section of federal law that prohibits discrimination based on disability), has made even the most academically rigorous universities more welcoming to students with disabilities. Those 504 accommodations include extended test time, note-taking services, and special testing rooms, but many students have reported that it also has given them priority housing, ability to live in a single, and meal plan benefits. The most common diagnoses in these 504 plans are ADHD, neurodivergence, and mental health conditions including severe anxiety.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!cSNT!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!cSNT!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif 424w, https://substackcdn.com/image/fetch/$s_!cSNT!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif 848w, https://substackcdn.com/image/fetch/$s_!cSNT!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif 1272w, https://substackcdn.com/image/fetch/$s_!cSNT!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!cSNT!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif\" width=\"800\" height=\"1075\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1075,&quot;width&quot;:800,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:1647594,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/gif&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/193184958?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!cSNT!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif 424w, https://substackcdn.com/image/fetch/$s_!cSNT!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif 848w, https://substackcdn.com/image/fetch/$s_!cSNT!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif 1272w, https://substackcdn.com/image/fetch/$s_!cSNT!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif 1456w\" sizes=\"100vw\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p>There\u2019s a real tension at the heart of this data - on one hand, critics say that students are gaming the system. No formal evaluation is required for a 504 accommodation, only a documented physical or mental impairment from a doctor\u2019s note. Parents submit a request to a school administrator and most schools get to decide what types of materials they request, according to the<a href=\"https://www.ed.gov/laws-and-policy/civil-rights-laws/disability-discrimination/frequently-asked-questions-section-504-free-appropriate-public-education-fape\"> Department of Education</a>. On the other hand, advocates say that the rise is a sign of progress. They say that the underlying mental and physical disabilities were always there for students, but only now are medical professionals, schools, and parents doing a better job of actually diagnosing the disabilities.</p><p>At the University of Chicago, the number has more than tripled over the past eight years; at UC Berkeley, it has nearly quintupled over the past 15 years. Only <a href=\"https://www.census.gov/library/visualizations/2024/comm/disability-status-age-group.html\">14%</a> of Americans below 35 have a disability, but at schools like Amherst,  <a href=\"https://www.theatlantic.com/magazine/2026/01/elite-university-student-accommodation/684946/\">34%</a> of students report a disability.</p><h1><strong>Who Really Benefits from the ADA?</strong></h1><p>What is clear is that wealthy families tend to benefit most from this system. The rates of students claiming disabilities seems to be far higher in places with higher median household incomes. In Weston, Connecticut, where the median household income is $220,000 nearly <a href=\"https://www.nytimes.com/2019/07/30/us/extra-time-504-sat-act.html\">1 in 5</a> students claims a disability. Just 30 minutes north in Danbury, Connecticut where the median household income is $83,000, the rate is 8-times lower. </p><p>Still, the system remains open to abuse by those who know how to game it. The <a href=\"https://www.nytimes.com/2020/02/07/us/douglas-hodge-college-admissions-scandal.html\">Varsity Blues college-admissions scandal</a> showed that there are wealthy parents who are willing to pay unscrupulous doctors to provide disability diagnoses to their non-disabled children, securing them extra time on standardized tests. <a href=\"https://www.theatlantic.com/magazine/2026/01/elite-university-student-accommodation/684946/\">Studies</a> have found that students exaggerate symptoms when they go in for these tests, making it hard for doctors to evaluate the children. </p><p>The wealthiest students across America claim the most disabilities. </p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!UrMw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f1b88e3-d476-4a3b-a247-b0ba42b99fda_1258x794.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!UrMw!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f1b88e3-d476-4a3b-a247-b0ba42b99fda_1258x794.png 424w, https://substackcdn.com/image/fetch/$s_!UrMw!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f1b88e3-d476-4a3b-a247-b0ba42b99fda_1258x794.png 848w, https://substackcdn.com/image/fetch/$s_!UrMw!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f1b88e3-d476-4a3b-a247-b0ba42b99fda_1258x794.png 1272w, https://substackcdn.com/image/fetch/$s_!UrMw!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f1b88e3-d476-4a3b-a247-b0ba42b99fda_1258x794.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!UrMw!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f1b88e3-d476-4a3b-a247-b0ba42b99fda_1258x794.png\" width=\"1258\" height=\"794\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/6f1b88e3-d476-4a3b-a247-b0ba42b99fda_1258x794.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:794,&quot;width&quot;:1258,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!UrMw!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f1b88e3-d476-4a3b-a247-b0ba42b99fda_1258x794.png 424w, https://substackcdn.com/image/fetch/$s_!UrMw!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f1b88e3-d476-4a3b-a247-b0ba42b99fda_1258x794.png 848w, https://substackcdn.com/image/fetch/$s_!UrMw!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f1b88e3-d476-4a3b-a247-b0ba42b99fda_1258x794.png 1272w, https://substackcdn.com/image/fetch/$s_!UrMw!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f1b88e3-d476-4a3b-a247-b0ba42b99fda_1258x794.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p>Students in <a href=\"https://www.nytimes.com/2019/07/30/us/extra-time-504-sat-act.html\">every ZIP code</a> are dealing with anxiety, stress and depression as academic competition grows ever more cutthroat. But the sharp disparity in accommodations raises the question of whether families in moneyed communities are taking advantage of the system, or whether they simply have the means to address a problem that less affluent families cannot. While experts say that known cases of outright fraud are rare, wealthy parents who want to give their children every advantage in life are spending tens of thousands of dollars on tests and finding doctors who may offer the neuropsychological diagnosis they think their child needs. <br><br>The Cleveland Metropolitan School District, one of the poorest in the country, had a 504 rate of less than 1 percent. <a href=\"https://www.nytimes.com/2019/07/30/us/extra-time-504-sat-act.html\">One mother</a> in Montgomery County, Maryland transferred her son, who has A.D.H.D. and a reading disability, from a public high school to a private one that charges $45,000 per year in tuition. When the boy arrived, the staff at the new school told his mother about ACT accommodations she had not known about. Her son scored a 33 after taking the exam over multiple days, and is now considering applying to Ivy League schools.</p><h1><strong>Buying Time and Abandoning the Meritocracy</strong></h1><p>Many companies are now making millions off this side-door cottage industry that both gives students more time on tests and helps them do better once they are enrolled in elite universities. \u201cGet ACT Extra Time,\u201d reads one blunt web advertisement from the Cognitive Assessment Group. Dr. Wilfred van Gorp, who runs the company, says he assesses 24 patients a month and charges <a href=\"https://www.nytimes.com/2019/07/30/us/extra-time-504-sat-act.html\">$6,000 per patient</a> (amounting to $1.73M per year). About 70 percent of the patients he sees leave with a diagnosis. But Dr. Gorp has a checkered past himself. Dr. Gorp once testified that the Genovese crime boss Vincent Gigante was mentally impaired, though years later Mr. Gigante admitted that he had <a href=\"https://www.nytimes.com/2005/12/19/obituaries/vincent-gigante-mafia-leader-who-feigned-insanity-dies-at-77.html\">feigned his mental illness</a> . Dr. Gorp says that he was tricked.</p><p>The shift began in 2008 when Congress amended the Americans with Disabilities Act (ADA) to restore the law\u2019s original intent. The government broadened the definition of disability, effectively expanding the number of people the law covered. In response to the 2008 amendments, the Association on Higher Education and Disability (AHEAD), an organization of disability-services staff, released guidance urging universities to give greater weight to students\u2019 own accounts of how their disability affected them, rather than relying solely on a medical diagnosis. Schools began relaxing their requirements. A 2013 analysis of disability offices at 200 postsecondary institutions found that most \u201crequired little\u201d from a student besides a doctor\u2019s note in order to grant accommodations for ADHD.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!Hhpp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7da3d0a4-965d-485d-8876-8d10e2602c4c_1070x1470.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!Hhpp!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7da3d0a4-965d-485d-8876-8d10e2602c4c_1070x1470.png 424w, https://substackcdn.com/image/fetch/$s_!Hhpp!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7da3d0a4-965d-485d-8876-8d10e2602c4c_1070x1470.png 848w, https://substackcdn.com/image/fetch/$s_!Hhpp!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7da3d0a4-965d-485d-8876-8d10e2602c4c_1070x1470.png 1272w, https://substackcdn.com/image/fetch/$s_!Hhpp!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7da3d0a4-965d-485d-8876-8d10e2602c4c_1070x1470.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!Hhpp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7da3d0a4-965d-485d-8876-8d10e2602c4c_1070x1470.png\" width=\"1070\" height=\"1470\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/7da3d0a4-965d-485d-8876-8d10e2602c4c_1070x1470.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1470,&quot;width&quot;:1070,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!Hhpp!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7da3d0a4-965d-485d-8876-8d10e2602c4c_1070x1470.png 424w, https://substackcdn.com/image/fetch/$s_!Hhpp!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7da3d0a4-965d-485d-8876-8d10e2602c4c_1070x1470.png 848w, https://substackcdn.com/image/fetch/$s_!Hhpp!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7da3d0a4-965d-485d-8876-8d10e2602c4c_1070x1470.png 1272w, https://substackcdn.com/image/fetch/$s_!Hhpp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7da3d0a4-965d-485d-8876-8d10e2602c4c_1070x1470.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Source: <a href=\"https://www.thetimes.com/us/news-today/article/40-percent-stanford-undergraduates-claim-disabled-sw99r3k8c\">The Times</a></figcaption></figure></div><p>So why are people willing to go to such lengths to get an Ivy League education and excel once they are in those schools? The degrees offer a <a href=\"https://www.theatlantic.com/ideas/2026/04/ivy-league-education-income/686682/\">huge benefit</a> at these univerisites:</p><blockquote><p>Students at Ivy League schools and the similarly selective University of Chicago, Duke, Stanford, and MIT together comprise less than half a percent of America\u2019s undergraduate population. Yet their alumni represent more than 12% of all Fortune 500 CEOs, 32 % of all New York Times journalists, and 13% of the wealthiest 0.1% of the population.</p></blockquote><p>The stories of disability in West Virginia are very different from those at elite universities. West Virginia has the highest disability rate of any state, largely due to two forces that decimated both the bodies and minds of the community: a dominating coal mining industry that left tens of thousands with lost limbs, physical ailments, and chronic diseases and a ravaging opioid epidemic that created neural damage, brain injuries, and caused mental health disorders.</p><h1><strong>The Two-Tiered System of Disability</strong></h1><p><a href=\"https://www.census.gov/newsroom/facts-for-features/2021/disabilities-act.html\">1 in 5 </a>West Virginians has a disability. This is  largely the result of <a href=\"https://www.timeswv.com/news/west-virginia-leads-in-disabilities-for-many-reasons/article_69b5ec81-8c8d-5384-b572-f9c3b2998e5e.html\">high rates</a> of obesity, smoking, and lack of exercise. West Virginia has the <a href=\"https://www.cdc.gov/nchs/pressroom/sosmap/diabetes_mortality/diabetes.htm\">highest rate</a> of diabetes and <a href=\"https://www.cdc.gov/nchs/pressroom/sosmap/heart_disease_mortality/heart_disease.htm\">one of the highest</a> rates of cardiovascular disease in the country.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!UakW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd056df2d-00bb-4f62-a88c-353f224f84fd_1456x924.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!UakW!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd056df2d-00bb-4f62-a88c-353f224f84fd_1456x924.png 424w, https://substackcdn.com/image/fetch/$s_!UakW!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd056df2d-00bb-4f62-a88c-353f224f84fd_1456x924.png 848w, https://substackcdn.com/image/fetch/$s_!UakW!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd056df2d-00bb-4f62-a88c-353f224f84fd_1456x924.png 1272w, https://substackcdn.com/image/fetch/$s_!UakW!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd056df2d-00bb-4f62-a88c-353f224f84fd_1456x924.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!UakW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd056df2d-00bb-4f62-a88c-353f224f84fd_1456x924.png\" width=\"1456\" height=\"924\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/d056df2d-00bb-4f62-a88c-353f224f84fd_1456x924.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:924,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!UakW!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd056df2d-00bb-4f62-a88c-353f224f84fd_1456x924.png 424w, https://substackcdn.com/image/fetch/$s_!UakW!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd056df2d-00bb-4f62-a88c-353f224f84fd_1456x924.png 848w, https://substackcdn.com/image/fetch/$s_!UakW!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd056df2d-00bb-4f62-a88c-353f224f84fd_1456x924.png 1272w, https://substackcdn.com/image/fetch/$s_!UakW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd056df2d-00bb-4f62-a88c-353f224f84fd_1456x924.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p>Americans with disabilities face some of the greatest inequalities in this country. They struggle to find work, access affordable healthcare, and graduate high school or college. Americans with disabilities have a <a href=\"https://www.bls.gov/news.release/disabl.nr0.htm\">3x</a> higher unemployment rate, are <a href=\"https://time.com/5870468/americans-with-disabilities-act-coronavirus/\">2x</a> more likely to live in poverty, and are <a href=\"https://www.pewresearch.org/fact-tank/2017/07/27/7-facts-about-americans-with-disabilities/\">3x</a> less likely to have internet access as compared to their peers without disabilities. <a href=\"https://bjs.ojp.gov/library/publications/disabilities-reported-prisoners-survey-prison-inmates-2016\">40%</a> of people in state and federal prisons have at least one disability.</p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe now&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/subscribe?\"><span>Subscribe now</span></a></p><p>Donna Jean lives with a disability in West Virginia and her story is very different from the college freshman who get extra time and better rooms. Donna Jean started receiving disability benefits at 22 for mental and cognitive challenges. Her Social Security Disability Insurance is her primary income, but only provides her with $735/month. That money disappears by half though at the first of the month, she explains. $304.17 for her house, $20 to the Dollar Store for minutes on a phone with a cracked screen that she rarely uses, and then $50 for utilities despite her house having no running water. She explains that her disability makes it really hard to find a job and in turn she works illegally finding spices and roots that she sells to distributors.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!qO51!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7264d0ea-c6ea-47c1-9ce8-3f6da291de6c_1310x828.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!qO51!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7264d0ea-c6ea-47c1-9ce8-3f6da291de6c_1310x828.png 424w, https://substackcdn.com/image/fetch/$s_!qO51!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7264d0ea-c6ea-47c1-9ce8-3f6da291de6c_1310x828.png 848w, https://substackcdn.com/image/fetch/$s_!qO51!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7264d0ea-c6ea-47c1-9ce8-3f6da291de6c_1310x828.png 1272w, https://substackcdn.com/image/fetch/$s_!qO51!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7264d0ea-c6ea-47c1-9ce8-3f6da291de6c_1310x828.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!qO51!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7264d0ea-c6ea-47c1-9ce8-3f6da291de6c_1310x828.png\" width=\"1310\" height=\"828\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/7264d0ea-c6ea-47c1-9ce8-3f6da291de6c_1310x828.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:828,&quot;width&quot;:1310,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" title=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!qO51!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7264d0ea-c6ea-47c1-9ce8-3f6da291de6c_1310x828.png 424w, https://substackcdn.com/image/fetch/$s_!qO51!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7264d0ea-c6ea-47c1-9ce8-3f6da291de6c_1310x828.png 848w, https://substackcdn.com/image/fetch/$s_!qO51!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7264d0ea-c6ea-47c1-9ce8-3f6da291de6c_1310x828.png 1272w, https://substackcdn.com/image/fetch/$s_!qO51!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7264d0ea-c6ea-47c1-9ce8-3f6da291de6c_1310x828.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p>The most common occupations for people with a disability are janitors and building cleaners, where about 300,000 workers with disabilities find employment. They make up 11% of janitors country wide and make less than $30K per year on average in these roles. For Harvard and Stanford graduates, few of them will go into these professions.</p><p>The widening chasm between the \u201caccommodated\u201d elite and the impoverished Americans wrestling with life-long disabilities continues to grow. Medical diagnoses have become a luxury good for some while remaining an almost insurmountable challenge for others. Wealthy families navigate the nuances of the ADA to secure Ivy League futures, while thousands of others in regions like West Virginia are left to survive on sub-poverty stipends. Until we decouple the quality of disability support from the wealth of a ZIP code, inequality will widen for those who are most vulnerable in our societies and need enduring support. As Rose Horowitch explains in <em><a href=\"https://www.theatlantic.com/magazine/2026/01/elite-university-student-accommodation/684946/\">The Atlantic</a></em>, \u201cThe ADA was supposed to make college more equitable. Instead, accommodations have become another way for the most privileged students to press their advantage.\u201d</p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/p/accommodating-the-elite-ignoring/comments&quot;,&quot;text&quot;:&quot;Leave a comment&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/p/accommodating-the-elite-ignoring/comments\"><span>Leave a comment</span></a></p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&amp;gift=true&quot;,&quot;text&quot;:&quot;Give a gift subscription&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/subscribe?&amp;gift=true\"><span>Give a gift subscription</span></a></p><div><hr></div><h3>INTERESTING ON THE WEB</h3><ul><li><p>NYC is one of the first major cities to offer a childcare map (highlight both gaps and strong coverage) - <a href=\"https://www.nyc.gov/content/childcarehub/pages/\">NYC</a></p></li><li><p>Marriage decline is concentrated among working class women not the most professionally ambitious - <span class=\"mention-wrap\" data-attrs=\"{&quot;name&quot;:&quot;Matthew Yglesias&quot;,&quot;id&quot;:580004,&quot;type&quot;:&quot;user&quot;,&quot;url&quot;:null,&quot;photo_url&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/20964455-401a-494d-a8ef-9835b34e9809_3024x3024.png&quot;,&quot;uuid&quot;:&quot;9a41bf29-e4b9-4258-ad4c-36c0c6170b67&quot;}\" data-component-name=\"MentionToDOM\"></span> <a href=\"https://www.slowboring.com/p/yelling-at-ambitious-young-women\">Slow Boring</a></p></li><li><p>Students who grow up in poverty face face significant pay gaps compared to peers, even when controlling for peers who attend the same university, get the same degree, and work for the same employer - <a href=\"https://www.resolutionfoundation.org/publications/the-long-shadow/\">Resolution Foundation</a></p></li><li><p>Data from public announcements and quarterly reports show that +50% of all layoff announcements in the last year cited AI as a core reason - <a href=\"https://layoffhedge.com/\">Layoff Hedge</a></p></li><li><p>How to find solutions in a time of upheaval - <span class=\"mention-wrap\" data-attrs=\"{&quot;name&quot;:&quot;Anya Kamenetz&quot;,&quot;id&quot;:977376,&quot;type&quot;:&quot;user&quot;,&quot;url&quot;:null,&quot;photo_url&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/0ade226e-b8fd-45f1-892b-c4e504d83147_1130x1179.jpeg&quot;,&quot;uuid&quot;:&quot;9dce12e6-142f-4e8b-a6fb-d2ce1893f2f2&quot;}\" data-component-name=\"MentionToDOM\"></span> <a href=\"https://americaninequality.substack.com/p/how-to-find-solutions\">recording</a></p></li></ul>",
+  "has_dynamic_content": false,
+  "truncated_body_text": "Student accommodations in elite lecture halls are reshaping the ways that privilege manifests in America. At Stanford, 38% of students are registered as disabled. At Harvard and Brown, more than 20% of students are registered as disabled. Better testing and comfort talking about disability has helped spur this rise in ways that reflect social and medica\u2026",
+  "wordcount": 1674,
+  "post_preview_limit": null,
+  "language": "en",
+  "postTags": [
+    {
+      "id": "123f0c84-1dc2-4ac3-ae07-9379fd62f3e5",
+      "publication_id": 267573,
+      "name": "Harvard",
+      "slug": "harvard",
+      "hidden": false
+    },
+    {
+      "id": "3f552dfa-ef5c-45d5-8946-272686aec2f6",
+      "publication_id": 267573,
+      "name": "Disability",
+      "slug": "disability",
+      "hidden": false
+    },
+    {
+      "id": "41395506-40bd-4270-b6fb-1d7d96acce88",
+      "publication_id": 267573,
+      "name": "U.S. Politics",
+      "slug": "us-politics",
+      "hidden": false
+    },
+    {
+      "id": "4bb3c583-93f6-4dcb-8d79-1ba1aad77522",
+      "publication_id": 267573,
+      "name": "Accommodation",
+      "slug": "accommodation",
+      "hidden": false
+    },
+    {
+      "id": "5e4c434c-bb4b-4c80-8c64-6bb7995b5616",
+      "publication_id": 267573,
+      "name": "College",
+      "slug": "college",
+      "hidden": false
+    },
+    {
+      "id": "8480285c-1f0d-412d-a68c-87d5c8e917d4",
+      "publication_id": 267573,
+      "name": "Higher education",
+      "slug": "higher-education",
+      "hidden": false
+    },
+    {
+      "id": "933cd53f-e40f-448e-92e3-7f0cbbe442d4",
+      "publication_id": 267573,
+      "name": "Elite",
+      "slug": "elite",
+      "hidden": false
+    },
+    {
+      "id": "b4bca38b-3036-4309-adc2-a8393cadc4ae",
+      "publication_id": 267573,
+      "name": "Stanford",
+      "slug": "stanford",
+      "hidden": false
+    },
+    {
+      "id": "d0d9619c-35d0-42d2-b436-2353718c0c26",
+      "publication_id": 267573,
+      "name": "business",
+      "slug": "business",
+      "hidden": false
+    },
+    {
+      "id": "ecea981d-7730-499b-8fa3-efd362f71c69",
+      "publication_id": 267573,
+      "name": "West Virginia",
+      "slug": "west-virginia",
+      "hidden": false
+    }
+  ],
+  "postCountryBlocks": [],
+  "headlineTest": null,
+  "coverImagePalette": {
+    "Vibrant": {
+      "rgb": [
+        252,
+        188,
+        4
+      ],
+      "population": 333
+    },
+    "DarkVibrant": {
+      "rgb": [
+        13,
+        122,
+        99
+      ],
+      "population": 660
+    },
+    "LightVibrant": {
+      "rgb": [
+        196,
+        124,
+        103
+      ],
+      "population": 28
+    },
+    "Muted": {
+      "rgb": [
+        117,
+        156,
+        76
+      ],
+      "population": 5
+    },
+    "DarkMuted": {
+      "rgb": [
+        105,
+        87,
+        53
+      ],
+      "population": 122
+    },
+    "LightMuted": {
+      "rgb": [
+        188,
+        189,
+        189
+      ],
+      "population": 9
+    }
+  },
+  "publishedBylines": [
+    {
+      "id": 11624125,
+      "name": "Jeremy Ney",
+      "handle": "jeremybney",
+      "photo_url": "https://substackcdn.com/image/fetch/$s_!LMzS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5fd31dcd-eff9-4585-b5a0-fc00ebf53e47_332x332.png",
+      "bio": "Data journalist, Columbia prof, former Federal Reserve. You've seen these maps. ",
+      "profile_set_up_at": "2021-06-29T14:33:27.162Z",
+      "reader_installed_at": "2022-03-29T00:47:52.882Z",
+      "publicationUsers": [
+        {
+          "id": 236337,
+          "user_id": 11624125,
+          "publication_id": 267573,
+          "role": "admin",
+          "public": true,
+          "is_primary": true,
+          "publication": {
+            "id": 267573,
+            "name": "American Inequality",
+            "subdomain": "americaninequality",
+            "custom_domain": null,
+            "custom_domain_optional": false,
+            "hero_text": "Mapping the country's greatest economic challenges",
+            "logo_url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ca313513-016e-48f0-9e6f-ef172c82864f_1252x1252.png",
+            "author_id": 11624125,
+            "primary_user_id": 11624125,
+            "theme_var_background_pop": "#2096FF",
+            "created_at": "2021-01-21T21:08:07.518Z",
+            "email_from_name": "Jeremy Ney",
+            "copyright": "Jeremy Ney",
+            "founding_plan_name": "Premium Access",
+            "community_enabled": true,
+            "invite_only": false,
+            "payments_state": "enabled",
+            "language": null,
+            "explicit": false,
+            "homepage_type": "magaziney",
+            "is_personal_mode": false,
+            "logo_url_wide": "https://substack-post-media.s3.amazonaws.com/public/images/d08f70b8-7140-4c87-9c25-f0ccf066820b_1642x486.png"
+          }
+        }
+      ],
+      "is_guest": false,
+      "bestseller_tier": 100,
+      "status": {
+        "bestsellerTier": 100,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      }
+    }
+  ],
+  "reaction": null,
+  "reaction_count": 104,
+  "comment_count": 22,
+  "child_comment_count": 11,
+  "audio_items": [
+    {
+      "post_id": 193184958,
+      "voice_id": "en-US-OnyxTurboMultilingualNeural",
+      "audio_url": "https://substack-video.s3.amazonaws.com/video_upload/post/193184958/tts/246f8466-53d6-4b21-9ef3-15e1521f2632/en-US-OnyxTurboMultilingualNeural.mp3",
+      "type": "tts",
+      "status": "pending"
+    }
+  ],
+  "is_geoblocked": false,
+  "is_editor_preview": false,
+  "hasCashtag": false,
+  "unlockedWithIP": false,
+  "unlockedWithCampaign": false,
+  "themeVariables": {
+    "color_theme_bg_pop": "#fc5528",
+    "background_pop": "#fc5528",
+    "color_theme_bg_web": null,
+    "cover_bg_color": "#FFFFFF",
+    "cover_bg_color_secondary": "#f0f0f0",
+    "background_pop_darken": "#fc410f",
+    "print_on_pop": "#ffffff",
+    "color_theme_bg_pop_darken": "#fc410f",
+    "color_theme_print_on_pop": "#ffffff",
+    "color_theme_bg_pop_20": "rgba(252, 85, 40, 0.2)",
+    "color_theme_bg_pop_30": "rgba(252, 85, 40, 0.3)",
+    "print_pop": "#fc5528",
+    "color_theme_accent": "#fc5528",
+    "cover_print_primary": "#363737",
+    "cover_print_secondary": "#757575",
+    "cover_print_tertiary": "#b6b6b6",
+    "cover_border_color": "#fc5528",
+    "font_family_headings_preset": "'SF Pro Display', -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "font_weight_headings_preset": 700,
+    "font_family_body_preset": "Spectral,sans-serif",
+    "font_weight_body_preset": 400,
+    "font_size_body_offset": "1px",
+    "font_preset_heading": "sans",
+    "font_preset_body": "classic_serif",
+    "home_hero": "magazine-5",
+    "home_posts": "custom",
+    "home_show_top_posts": true,
+    "web_bg_color": "#ffffff",
+    "background_contrast_1": "#f0f0f0",
+    "background_contrast_2": "#dddddd",
+    "background_contrast_3": "#b7b7b7",
+    "background_contrast_4": "#929292",
+    "background_contrast_5": "#515151",
+    "color_theme_bg_contrast_1": "#f0f0f0",
+    "color_theme_bg_contrast_2": "#dddddd",
+    "color_theme_bg_contrast_3": "#b7b7b7",
+    "color_theme_bg_contrast_4": "#929292",
+    "color_theme_bg_contrast_5": "#515151",
+    "color_theme_bg_elevated": "#ffffff",
+    "color_theme_bg_elevated_secondary": "#f0f0f0",
+    "color_theme_bg_elevated_tertiary": "#dddddd",
+    "color_theme_detail": "#e6e6e6",
+    "background_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "color_theme_bg_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "theme_bg_is_dark": "0",
+    "print_on_web_bg_color": "#363737",
+    "print_secondary_on_web_bg_color": "#868787",
+    "footer_bg_color": "#ffffff",
+    "footer_bg_color_h": "0",
+    "footer_bg_color_s": "0%",
+    "footer_bg_color_l": "100%",
+    "print_on_footer_bg_color": "#363737",
+    "print_secondary_on_footer_bg_color": "#868787",
+    "footer_bg_contrast_1": "#f0f0f0",
+    "footer_bg_contrast_2": "#dddddd",
+    "footer_bg_contrast_3": "#b7b7b7",
+    "footer_bg_contrast_4": "#929292",
+    "footer_bg_elevated": "#ffffff",
+    "footer_bg_elevated_secondary": "#f0f0f0",
+    "footer_bg_elevated_tertiary": "#dddddd",
+    "footer_detail_color": "#e6e6e6",
+    "subscribe_bg_color": "#fafafa",
+    "subscribe_bg_color_h": "0",
+    "subscribe_bg_color_s": "0%",
+    "subscribe_bg_color_l": "98.0392156862745%",
+    "print_on_subscribe_bg_color": "#363737",
+    "print_secondary_on_subscribe_bg_color": "#848585",
+    "subscribe_bg_contrast_1": "#ebebeb",
+    "subscribe_bg_contrast_2": "#d8d8d8",
+    "subscribe_bg_contrast_3": "#b3b3b3",
+    "subscribe_bg_contrast_4": "#909090",
+    "subscribe_bg_elevated": "#fafafa",
+    "subscribe_bg_elevated_secondary": "#ebebeb",
+    "subscribe_bg_elevated_tertiary": "#d8d8d8",
+    "subscribe_detail_color": "#e1e1e1",
+    "background_pop_rgb": "252, 85, 40",
+    "color_theme_bg_pop_rgb": "252, 85, 40",
+    "color_theme_accent_rgb": "252, 85, 40"
+  },
+  "comments": [
+    {
+      "id": 240288914,
+      "body": "This hits, Jeremy.\n\nThe part that stands out most is how often we frame lack of accessibility as an individual problem instead of a system design failure.\n\nI was just on a podcast this week talking about how people internalize friction - they assume \u201cI need to try harder\u201d instead of asking \u201cwhy is this so hard in the first place?\u201d\n\nThat shift matters. Because once you see it as a system issue, you stop draining personal energy fighting something that should be designed better.\n\nAccessibility isn\u2019t a feature. It\u2019s infrastructure.\n\nAnd when it\u2019s missing, the cost gets pushed onto the people with the least margin to absorb it.",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1"
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This hits, Jeremy."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The part that stands out most is how often we frame lack of accessibility as an individual problem instead of a system design failure."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I was just on a podcast this week talking about how people internalize friction - they assume \u201cI need to try harder\u201d instead of asking \u201cwhy is this so hard in the first place?\u201d"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "That shift matters. Because once you see it as a system issue, you stop draining personal energy fighting something that should be designed better."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Accessibility isn\u2019t a feature. It\u2019s infrastructure."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "And when it\u2019s missing, the cost gets pushed onto the people with the least margin to absorb it."
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 193184958,
+      "user_id": 477041,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2026-04-08T18:04:48.401Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "Adam W. Barney",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/b5c2eb4f-a165-49b3-a1fb-5f43a4a666e3_1824x1824.jpeg",
+      "handle": "adamwbarney",
+      "reactor_names": [
+        "Jeremy Ney"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 5
+      },
+      "reaction_count": 5,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "adamwbarney",
+      "metadata": {
+        "is_author": false,
+        "membership_state": "subscribed",
+        "eligibleForGift": false,
+        "author_on_other_pub": {
+          "name": "Adam W. Barney",
+          "id": 3043626,
+          "base_url": "https://adamwbarney.substack.com"
+        }
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": 5,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "subscriber",
+          "tier": 5,
+          "accent_colors": {
+            "fg": {
+              "light": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "dark": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            },
+            "bg": {
+              "light": {
+                "r": 252,
+                "g": 85,
+                "b": 40,
+                "a": 1
+              },
+              "dark": {
+                "r": 252,
+                "g": 85,
+                "b": 40,
+                "a": 1
+              }
+            }
+          }
+        },
+        "subscriber": null
+      },
+      "score": 10,
+      "children_count": 1,
+      "reported_by_user": false,
+      "restacked": false,
+      "childrenSummary": "2 replies by Jeremy Ney and others"
+    },
+    {
+      "id": 241417147,
+      "body": "This piece surfaces something that doesn\u2019t get named clearly enough: when a civil rights protection becomes a commodity, it stops being a civil right.\n\nThe ADA was designed as a floor. A guarantee that disability would not be a barrier to education, employment, or participation. What you\u2019re describing is that floor being quietly converted into a ceiling \u2014 one that wealthy families have learned to reach, and that everyone else is still looking up at.\n\nWhat strikes me most isn\u2019t the fraud at the margins. It\u2019s the structural invisibility of the people the law was written for. A student with ADHD in an under-resourced public school isn\u2019t less disabled than a student whose parents spent $20,000 on an evaluation. They\u2019re just less documented. And in a system that runs on documentation, that difference determines everything.\n\nDisability rights advocates have spent decades arguing that accommodation isn\u2019t charity \u2014 it\u2019s access. It\u2019s the correction for a world that was built without certain people in mind. That argument becomes much harder to make when the same mechanism is being used to secure Ivy League admissions for families who already have every other advantage.\n\nThe solution isn\u2019t skepticism toward disabled students. It\u2019s making the diagnostic and support infrastructure available to everyone \u2014 regardless of what their parents can afford.\n\nAccess shouldn\u2019t require a financial advisor to navigate.",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1"
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "This piece surfaces something that doesn\u2019t get named clearly enough: when a civil rights protection becomes a commodity, it stops being a civil right."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The ADA was designed as a floor. A guarantee that disability would not be a barrier to education, employment, or participation. What you\u2019re describing is that floor being quietly converted into a ceiling \u2014 one that wealthy families have learned to reach, and that everyone else is still looking up at."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "What strikes me most isn\u2019t the fraud at the margins. It\u2019s the structural invisibility of the people the law was written for. A student with ADHD in an under-resourced public school isn\u2019t less disabled than a student whose parents spent $20,000 on an evaluation. They\u2019re just less documented. And in a system that runs on documentation, that difference determines everything."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Disability rights advocates have spent decades arguing that accommodation isn\u2019t charity \u2014 it\u2019s access. It\u2019s the correction for a world that was built without certain people in mind. That argument becomes much harder to make when the same mechanism is being used to secure Ivy League admissions for families who already have every other advantage."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "The solution isn\u2019t skepticism toward disabled students. It\u2019s making the diagnostic and support infrastructure available to everyone \u2014 regardless of what their parents can afford."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Access shouldn\u2019t require a financial advisor to navigate."
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 193184958,
+      "user_id": 288075565,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2026-04-10T19:55:24.143Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "Saudy Badillo",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/04d7682c-3bd1-4b6b-b889-1f1e69baa5f2_1023x1023.png",
+      "handle": "saudybadillo",
+      "reactor_names": [
+        "Jeremy Ney"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 3
+      },
+      "reaction_count": 3,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "saudybadillo",
+      "metadata": {
+        "is_author": false,
+        "membership_state": "free_signup",
+        "eligibleForGift": true,
+        "author_on_other_pub": {
+          "name": "Saudy Badillo",
+          "id": 8530583,
+          "base_url": "https://saudybadillo.substack.com"
+        }
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": null,
+        "subscriber": null
+      },
+      "score": 8,
+      "children_count": 0,
+      "reported_by_user": false,
+      "restacked": false
+    }
+  ]
+}

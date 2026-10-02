@@ -1,0 +1,55 @@
+{
+  "cover.jpg": {
+    "credit": "Image: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/494befd1-1715-4741-871c-fd375704510c_2000x1103.jpeg"
+  },
+  "article_01.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/7137918b-18df-4482-8e92-99e9e89cd754_1240x1072.png"
+  },
+  "article_02.gif": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/8d0344cd-cc4a-4a52-9a56-8b2437e5c621_800x1075.gif"
+  },
+  "article_03.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/6f1b88e3-d476-4a3b-a247-b0ba42b99fda_1258x794.png"
+  },
+  "article_04.png": {
+    "credit": "Source: The Times",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/7da3d0a4-965d-485d-8876-8d10e2602c4c_1070x1470.png"
+  },
+  "article_05.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/d056df2d-00bb-4f62-a88c-353f224f84fd_1456x924.png"
+  },
+  "article_06.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/7264d0ea-c6ea-47c1-9ce8-3f6da291de6c_1310x828.png"
+  },
+  "news_globe.png": {
+    "credit": "Screenshot: The Boston Globe",
+    "url": "https://www.bostonglobe.com/2026/06/29/opinion/colleges-mental-accommodations-disability/",
+    "headline": "The disability accommodation trap on college campuses - The Boston Globe"
+  },
+  "exam_clip.mp4": {
+    "credit": "Video: eloguers (Pixabay)",
+    "url": "https://pixabay.com/videos/id-159029/"
+  },
+  "hook.jpg": {
+    "credit": "Photo: Steve Jurvetson from Menlo Park, USA, CC BY 2.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Stanford_University_Main_Quad_-_7_June_2009.jpg"
+  },
+  "harvard.jpg": {
+    "credit": "Photo: Nick Allen, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Harvard_Yard_aerial.JPG"
+  },
+  "weston.jpg": {
+    "credit": "Photo: Erinm56, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Alice_DeLamar%27s_Connecticut_estate_Stonebrook.jpg"
+  },
+  "wv.jpg": {
+    "credit": "Photo: Jack Corn, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:SMALL_COUNTRY_TOWN_NOT_RELATED_TO_COAL_MINING_NEAR_THE_WEST_VIRGINIA_TURNPIKE_NORTH_OF_BECKLEY._IT_WAS_THE..._-_NARA_-_556580.jpg"
+  }
+}

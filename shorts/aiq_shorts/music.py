@@ -45,7 +45,7 @@ PROFILES["pulse"] = {
 }
 PROFILE = "pulse"
 START_SCENE = 1      # the music starts on the first frame
-LEVEL_DB = -27.0     # LUFS; voice about 8-9 dB over the music, like the reference videos
+LEVEL_DB = -24.0     # LUFS; the author asked for louder music than -27 (voice about 5-6 dB over it)
 NO_INSTRUMENTS = ("piano", "organ", "choir", "vocal", "voice", "harpsichord", "celesta", "tuba",
                   "kazoo", "accordion", "bagpipe", "banjo", "harp", "flute", "clarinet", "oboe",
                   "zither", "lute", "santur", "tanpura", "ukulele", "glockenspiel", "trombone", "kora", "sitar")

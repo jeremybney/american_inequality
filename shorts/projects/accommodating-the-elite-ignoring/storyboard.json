@@ -1,0 +1,348 @@
+{
+  "title": "How the Wealthy Game Disability Laws for Ivy League Gains — TikTok",
+  "wpm": 175,
+  "hold": 0.25,
+  "article": {
+    "section": "The Dividing Line"
+  },
+  "notes": [
+    "Story follows the article's arc: the elite numbers → what 504 plans give → the wealth gap in who claims them → the testing industry → West Virginia, where disability is a trap → the two-tiered system.",
+    "All figures are from the article (Apr 8, 2026) and the sources it cites (NCES, Department of Education, Census, the NYT analysis of 504 plans)."
+  ],
+  "post": {
+    "headline": "How the wealthy game disability laws",
+    "caption": "38% of Stanford students are registered as disabled. In Weston, Connecticut, nearly 1 in 5 students claims a disability, eight times the rate 30 minutes away in Danbury. Meanwhile West Virginians on disability get by on $735 a month.",
+    "cta": "Full story and interactive charts at the link in bio.",
+    "hashtags": [
+      "inequality",
+      "disability",
+      "college",
+      "stanford",
+      "ivyleague",
+      "westvirginia",
+      "education"
+    ]
+  },
+  "scenes": [
+    {
+      "type": "photo",
+      "media": "hook.jpg",
+      "query": "Stanford University Main Quad",
+      "dim": 0.35,
+      "zoom": [
+        1.0,
+        1.15
+      ],
+      "headline": {
+        "text": "{38%} of Stanford students are registered as disabled."
+      },
+      "chip": "Disability · American Inequality",
+      "source": "National Center for Education Statistics",
+      "say": [
+        "At Stanford, 38% of students are registered as disabled."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "harvard.jpg",
+      "query": "Harvard Yard",
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "dim": 0.4,
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "MORE THAN 20%",
+          "y": 0.32,
+          "at": 1.6,
+          "angle": -3
+        }
+      ],
+      "source": "National Center for Education Statistics",
+      "say": [
+        "At Harvard and Brown, more than 20% of students are registered as disabled."
+      ]
+    },
+    {
+      "type": "article_card",
+      "chips": [
+        "THE ELITE",
+        "THE MONEY",
+        "THE REST"
+      ],
+      "chips_at": 1.4,
+      "say": [
+        "Elite schools accommodate the wealthy while often abandoning those who need support most."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_02.gif",
+      "crop": [
+        0,
+        0.16,
+        1,
+        0.95
+      ],
+      "frames": [
+        0,
+        84
+      ],
+      "play_at": 0.2,
+      "speed": 1.6,
+      "y": 0.4,
+      "title": "Undergrads reporting a disability",
+      "source": "National Center for Education Statistics",
+      "say": [
+        "At elite schools the share keeps climbing, and at the University of Chicago it more than tripled in eight years."
+      ],
+      "max_height": 880
+    },
+    {
+      "type": "photo",
+      "media": "weston.jpg",
+      "query": "Weston Connecticut",
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "dim": 0.4,
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "MEDIAN INCOME $220K",
+          "y": 0.27,
+          "at": 1.6,
+          "angle": -2,
+          "size": 56
+        },
+        {
+          "kind": "stamp",
+          "text": "1 IN 5 STUDENTS",
+          "y": 0.36,
+          "at": 3.6,
+          "angle": 2,
+          "size": 56
+        }
+      ],
+      "source": "Department of Education · Census",
+      "say": [
+        "In Weston, Connecticut, where the median household income is $220,000, nearly 1 in 5 students claims a disability."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Students claiming a disability",
+      "bars": [
+        {
+          "label": "Weston, CT",
+          "sublabel": "$220K median income",
+          "value": 20,
+          "display": "1 in 5",
+          "color": "white",
+          "at": 0.6
+        },
+        {
+          "label": "Danbury, CT",
+          "sublabel": "$83K median income",
+          "value": 2.5,
+          "display": "1 in 40",
+          "color": "navy",
+          "at": 2.6
+        }
+      ],
+      "annotation": {
+        "text": "8x lower",
+        "bar": 1,
+        "at": 4.0,
+        "color": "yellow"
+      },
+      "source": "Department of Education · Census",
+      "say": [
+        "Just 30 minutes north in Danbury, where the median income is $83,000, the rate is 8 times lower."
+      ]
+    },
+    {
+      "type": "hbars",
+      "title": "High school students with a 504 plan",
+      "subtitle": "by district income",
+      "suffix": "%",
+      "decimals": 1,
+      "bars": [
+        {
+          "label": "Richest 1%",
+          "value": 5.8,
+          "color": "yellow"
+        },
+        {
+          "label": "Top 20%",
+          "value": 3.9,
+          "color": "white"
+        },
+        {
+          "label": "Middle",
+          "value": 2.3,
+          "color": "white"
+        },
+        {
+          "label": "Bottom 20%",
+          "value": 2.1,
+          "color": "white"
+        },
+        {
+          "label": "Poorest 1%",
+          "value": 1.5,
+          "color": "navy"
+        }
+      ],
+      "max": 7.5,
+      "stagger": 0.6,
+      "source": "Department of Education · Census (via The New York Times)",
+      "say": [
+        "Nationwide, high schools in the richest 1% of districts have almost four times the share of 504 students as the poorest."
+      ]
+    },
+    {
+      "type": "video",
+      "media": "exam_clip.mp4",
+      "query": "students taking exam",
+      "blur": 6,
+      "dim": 0.45,
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 6000,
+          "prefix": "$",
+          "label": "per patient for a disability evaluation",
+          "y": 0.34,
+          "at": 1.2
+        },
+        {
+          "kind": "stamp",
+          "text": "70% LEAVE WITH A DIAGNOSIS",
+          "y": 0.46,
+          "at": 3.6,
+          "angle": -2,
+          "size": 50
+        }
+      ],
+      "source": "Cognitive Assessment Group · How the Wealthy Game Disability Laws",
+      "say": [
+        "One testing company charges $6,000 per patient, and about 70% leave with a diagnosis."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_01.png",
+      "crop": [
+        0,
+        0.22,
+        1,
+        0.92
+      ],
+      "y": 0.42,
+      "zoom_to": [
+        0.6,
+        0.3,
+        0.95,
+        0.62
+      ],
+      "zoom_at": 1.4,
+      "zoom_dur": 2.2,
+      "source": "US Census · American Inequality",
+      "say": [
+        "The stories of disability in West Virginia are very different, where 1 in 5 people has a disability, the highest rate of any state."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "wv.jpg",
+      "query": "West Virginia coal town",
+      "blur": 6,
+      "dim": 0.45,
+      "zoom": [
+        1.05,
+        1.15
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 735,
+          "prefix": "$",
+          "label": "a month in disability benefits",
+          "y": 0.36,
+          "at": 2.6
+        }
+      ],
+      "source": "Social Security Administration · How the Wealthy Game Disability Laws",
+      "say": [
+        "Donna Jean lives on disability in West Virginia, and her benefits pay her just $735 a month."
+      ]
+    },
+    {
+      "type": "hbars",
+      "title": "Americans with disabilities, compared with their peers",
+      "suffix": "x",
+      "bars": [
+        {
+          "label": "Unemployment rate",
+          "value": 3,
+          "color": "white",
+          "at": 1.2
+        },
+        {
+          "label": "Likelihood of living in poverty",
+          "value": 2,
+          "color": "navy",
+          "at": 3.2
+        }
+      ],
+      "max": 3.5,
+      "source": "How the Wealthy Game Disability Laws · American Inequality",
+      "say": [
+        "Americans with disabilities have a 3x higher unemployment rate and are 2x more likely to live in poverty."
+      ]
+    },
+    {
+      "type": "news",
+      "kicker": "In the news",
+      "items": [
+        {
+          "headline": "The disability accommodation trap on college campuses",
+          "dek": "Disability accommodations were designed to level the playing field. At some elite colleges, they may now be reshaping the competition.",
+          "outlet": "The Boston Globe",
+          "date": "Jun 29, 2026",
+          "at": 0.1
+        }
+      ],
+      "say": [
+        "Medical diagnoses have become a luxury good for some while remaining an almost insurmountable challenge for others."
+      ]
+    },
+    {
+      "type": "statement",
+      "kicker": "What comes next",
+      "text": "Disability support shouldn't depend on {the wealth of a ZIP code.}",
+      "say": [
+        "Until we decouple disability support from the wealth of a ZIP code, this gap will keep widening."
+      ]
+    },
+    {
+      "type": "outro",
+      "say": [
+        "You can read the full story on American Inequality."
+      ]
+    }
+  ],
+  "music": {
+    "title": "Babylon",
+    "file": "music.mp3",
+    "start_scene": 1,
+    "level_db": -24.0,
+    "feel": "Dark, Grooving, Mysterious",
+    "credit": "Music: “Babylon” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  },
+  "music_credit": "Music: “Babylon” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+}
