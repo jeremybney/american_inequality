@@ -158,7 +158,9 @@ know, add an entry there so future articles benefit.
 **Length: 45–89 seconds, never 90 or more** (about 160–240 spoken words at `wpm: 175`,
 13–17 scenes, `"hold": 0.25` in the storyboard). 60–85s is the sweet spot. `script <slug>` prints the runtime and the
 house-rule check (`shorts/aiq_shorts/checks.py`); `render` refuses anything that fails it.
-If it runs long, cut words and then whole beats, never speed up the voice.
+If it runs long, cut words and then whole beats, never speed up the voice. When the author
+rewrites the script and it runs over, propose cuts and let them decide. If they keep it long,
+set `"max_seconds"` in the storyboard (e.g. 110) for that video only.
 
 ### Every video includes
 - **The article card** (`article_card`, the clipped card with the "N MONTHS AGO" badge) as

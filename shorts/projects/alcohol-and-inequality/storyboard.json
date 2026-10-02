@@ -7,7 +7,8 @@
   },
   "notes": [
     "Story follows the article's arc: alcohol's toll → where you're born matters → Nevada vs Utah → the laws on each side → Wisconsin → who dies → fewer people drinking → what works.",
-    "All figures are from the article (Sep 3, 2025) and the sources it cites (CDC, BRFSS, Gallup, NHTSA)."
+    "All figures are from the article (Sep 3, 2025) and the sources it cites (CDC, BRFSS, Gallup, NHTSA).",
+    "The author approved running past the usual 89s cap for this video (max_seconds 110)."
   ],
   "post": {
     "headline": "Why drinking deaths fall by half from Nevada to Utah",
@@ -23,6 +24,16 @@
       "data"
     ]
   },
+  "music": {
+    "title": "Ossuary 7 - Resolve",
+    "file": "music.mp3",
+    "start_scene": 3,
+    "level_db": -38,
+    "feel": "Mysterious, Relaxed, Suspenseful",
+    "credit": "Music: “Ossuary 7 - Resolve” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  },
+  "music_credit": "Music: “Ossuary 7 - Resolve” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
+  "max_seconds": 110,
   "scenes": [
     {
       "type": "video",
@@ -444,14 +455,5 @@
         "You can read the full story on American Inequality."
       ]
     }
-  ],
-  "music": {
-    "title": "Ossuary 7 - Resolve",
-    "file": "music.mp3",
-    "start_scene": 3,
-    "level_db": -38,
-    "feel": "Mysterious, Relaxed, Suspenseful",
-    "credit": "Music: “Ossuary 7 - Resolve” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
-  },
-  "music_credit": "Music: “Ossuary 7 - Resolve” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  ]
 }

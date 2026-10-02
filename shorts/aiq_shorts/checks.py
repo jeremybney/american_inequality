@@ -59,8 +59,10 @@ def check(tl):
     types = [s["type"] for s in scenes]
 
     # --- length & pacing
-    if tl.duration > MAX_SECONDS:
-        errors.append(f"runtime {tl.duration:.0f}s is over the {MAX_SECONDS}s cap; cut words, not beats")
+    # the author can allow a longer video for one story with storyboard "max_seconds"
+    cap = float(tl.storyboard.get("max_seconds", MAX_SECONDS))
+    if tl.duration > cap:
+        errors.append(f"runtime {tl.duration:.0f}s is over the {cap:.0f}s cap; cut words, not beats")
     elif tl.duration < MIN_SECONDS:
         warnings.append(f"runtime {tl.duration:.0f}s is under {MIN_SECONDS}s; there may be room for one more beat")
     if tl.spans:
