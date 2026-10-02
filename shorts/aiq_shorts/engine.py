@@ -258,26 +258,38 @@ def render_video(project_dir, out_path, captions=True, workers=None, crf=18, sta
         music = None
     if music and (tl.ctx.media_dir / music.get("file", "")).exists():
         from . import music as MU
-        k = int(music.get("start_scene", 3)) - 1  # music comes in on this scene (1-based)
+        k = int(music.get("start_scene", 1)) - 1  # music comes in on this scene (1-based)
         start_t = tl.spans[min(max(k, 0), len(tl.spans) - 1)][0] if "start" not in music else float(music["start"])
         bed = MU.build_bed(project_dir, music, tl.duration, tl.ctx.cache_dir / "music_bed.wav", start=start_t)
     elif music:
         tl.ctx.warn(f"music file {music.get('file')} is missing; run `music <slug>` (rendering without music)")
+    acc = tl.storyboard.get("accents") or {}
+    hits_wav = None
+    if bed and not acc.get("off"):  # musical hits on the big numbers (part of the score)
+        from . import accents as AC
+        hits_wav = tl.ctx.cache_dir / "accents.wav"
+        tl.accents = AC.build_track(tl, hits_wav, level_db=float(acc.get("level_db", -10)))
     voice_in = (["-i", str(tl.voice["audio"])] if tl.voice
                 else ["-f", "lavfi", "-t", f"{tl.duration:.3f}", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"])
-    audio_in, graph = list(voice_in), []
+    audio_in = list(voice_in)
+    # [v] the voice; [m] the music, ducked a few dB while the voice speaks (it stays present,
+    # about 10 dB under the voice, like the reference videos); [h] the hits, not ducked
+    chains, mix, n = ["[1:a]aformat=sample_rates=48000:channel_layouts=stereo,apad,asplit=2[v][vk]"], ["[v]"], 2
     if bed:
         audio_in += ["-i", str(bed)]
-        if tl.voice:
-            # the voice ducks the music a little more while it speaks; music returns in the gaps
-            graph = ["-filter_complex",
-                     "[1:a]aformat=sample_rates=48000:channel_layouts=stereo,apad,asplit=2[v1][v2];"
-                     "[2:a][v2]sidechaincompress=threshold=0.04:ratio=4:attack=40:release=600[m];"
-                     "[v1][m]amix=inputs=2:duration=longest:normalize=0[a]", "-map", "0:v", "-map", "[a]"]
-        else:
-            graph = ["-map", "0:v", "-map", "2:a"]
-    else:
-        graph = ["-af", "apad,aformat=channel_layouts=stereo", "-map", "0:v", "-map", "1:a"]
+        chains.append(f"[{n}:a][vk]sidechaincompress=threshold=0.06:ratio=2:attack=60:release=500[m]"
+                      if tl.voice else f"[{n}:a]anull[m]")
+        mix.append("[m]")
+        n += 1
+    if not bed or not tl.voice:
+        chains.append("[vk]anullsink")
+    if hits_wav:
+        audio_in += ["-i", str(hits_wav)]
+        chains.append(f"[{n}:a]anull[h]")
+        mix.append("[h]")
+    chains.append(f"{''.join(mix)}amix=inputs={len(mix)}:duration=first:normalize=0[a]" if len(mix) > 1
+                  else "[v]anull[a]")
+    graph = ["-filter_complex", ";".join(chains), "-map", "0:v", "-map", "[a]"]
     if start:  # partial renders: start every audio input at the same point as the video
         shifted = []
         for k, tok in enumerate(audio_in):

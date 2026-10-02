@@ -25,14 +25,14 @@
     ]
   },
   "music": {
-    "title": "Ossuary 7 - Resolve",
+    "title": "Thinking Out Loud",
     "file": "music.mp3",
-    "start_scene": 3,
-    "level_db": -38,
-    "feel": "Mysterious, Relaxed, Suspenseful",
-    "credit": "Music: “Ossuary 7 - Resolve” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+    "start_scene": 1,
+    "level_db": -27,
+    "feel": "Grooving, Driving, Dark",
+    "credit": "Music: “Thinking Out Loud” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
-  "music_credit": "Music: “Ossuary 7 - Resolve” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
+  "music_credit": "Music: “Thinking Out Loud” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
   "max_seconds": 110,
   "scenes": [
     {

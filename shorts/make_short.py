@@ -295,7 +295,7 @@ def cmd_music(a):
             sb["music"]["level_db"] = a.level
         sb_path.write_text(json.dumps(sb, indent=2, ensure_ascii=False) + "\n")
         m = sb["music"]
-    print(f"Music: {m['title']} ({m['feel']}), comes in on scene {m.get('start_scene', 3)}, bed level {m['level_db']} LUFS")
+    print(f"Music: {m['title']} ({m['feel']}), comes in on scene {m.get('start_scene', 1)}, bed level {m['level_db']} LUFS")
     print(f"Credit: {m['credit']}")
 
 

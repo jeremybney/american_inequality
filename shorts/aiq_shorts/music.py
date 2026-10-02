@@ -33,7 +33,19 @@ PROFILES = {
         "bpm": (70, 130),
     },
 }
-PROFILE = "investigative"
+# The house sound since Oct 2026, modeled on the author's reference videos: the same
+# investigative mood but carried by a steady groove (94-125 BPM, electronic or cinematic
+# percussion), loud enough to feel (about 10 dB under the voice) and starting on frame one.
+PROFILES["pulse"] = {
+    "need_any": {"Mysterious", "Suspenseful", "Intense", "Dark"},
+    "pulse_any": {"Driving", "Grooving"},
+    "avoid": PROFILES["investigative"]["avoid"] | {"Calming"},
+    "genres": {"7", "10", "22", "24"},
+    "bpm": (90, 130),
+}
+PROFILE = "pulse"
+START_SCENE = 1      # the music starts on the first frame
+LEVEL_DB = -27.0     # LUFS; voice about 8-9 dB over the music, like the reference videos
 NO_INSTRUMENTS = ("piano", "organ", "choir", "vocal", "voice", "harpsichord", "celesta", "tuba",
                   "kazoo", "accordion", "bagpipe", "banjo", "harp", "flute", "clarinet", "oboe",
                   "zither", "lute", "santur", "tanpura", "ukulele", "glockenspiel", "trombone", "kora", "sitar")
@@ -62,7 +74,7 @@ def catalog():
     return data
 
 
-def candidates(min_len=110, profile=None):
+def candidates(min_len=90, profile=None):
     p = PROFILES[profile or PROFILE]
     out = []
     for t in catalog():
@@ -122,8 +134,8 @@ def assign(project_dir, title=None, reroll=False):
     if not dest.exists() or not cur or cur.get("title") != track["title"]:
         M.download(FILE_URL.format(urllib.parse.quote(track["filename"])), dest)
     keep = cur if (cur and not cur.get("off")) else {}
-    sb["music"] = {"title": track["title"], "file": "music.mp3", "start_scene": keep.get("start_scene", 3),
-                   "level_db": keep.get("level_db", -38), "feel": track.get("feel", ""),
+    sb["music"] = {"title": track["title"], "file": "music.mp3", "start_scene": keep.get("start_scene", START_SCENE),
+                   "level_db": keep.get("level_db", LEVEL_DB), "feel": track.get("feel", ""),
                    "credit": credit(track)}
     sb["music_credit"] = credit(track)
     sb_path.write_text(json.dumps(sb, indent=2, ensure_ascii=False) + "\n")
@@ -133,19 +145,20 @@ def assign(project_dir, title=None, reroll=False):
     return sb["music"]
 
 
-def build_bed(project_dir, music, duration, out_wav, start=5.0):
-    """Music bed for the whole video: silent until `start` (the start of the scene named by
-    `start_scene`, the article card by default), fades in over 2.5s, sits at `level_db` LUFS
-    (about 22 dB under a -16 LUFS voice at the default -38), fades out over the last 3s, and
-    loops if the track is shorter than the video."""
+def build_bed(project_dir, music, duration, out_wav, start=0.0):
+    """Music bed for the whole video: starts at `start` (the first frame by default; a later
+    `start_scene` delays it), sits at `level_db` LUFS (about 12 dB under a -14 LUFS voice at the
+    default -26), fades out over the last 3s, and loops if the track is shorter than the video.
+    From frame one it comes in at full level after a 0.3s fade; a delayed start fades over 2.5s."""
     src = Path(project_dir) / "media" / music["file"]
     body = max(1.0, duration - start)
     tmp = Path(out_wav).with_name("music_body.wav")
     # pass 1: loop/trim, level, fades. loudnorm scrambles timestamps, so the delay that holds the
     # music back until its scene happens in a separate pass.
     af1 = (f"aloop=loop=-1:size=2147483647,atrim=0:{body:.3f},asetpts=N/SR/TB,"
-           f"loudnorm=I=-30:TP=-6:LRA=7,volume={float(music.get('level_db', -38)) + 30:.1f}dB,"
-           f"aresample=48000,afade=t=in:st=0:d=2.5,afade=t=out:st={max(0.0, body - 3):.3f}:d=3")
+           f"loudnorm=I=-30:TP=-6:LRA=7,volume={float(music.get('level_db', LEVEL_DB)) + 30:.1f}dB,"
+           f"aresample=48000,afade=t=in:st=0:d={0.3 if start < 0.5 else 2.5},"
+           f"afade=t=out:st={max(0.0, body - 3):.3f}:d=3")
     subprocess.run([M.ffmpeg_exe(), "-loglevel", "error", "-y", "-i", str(src), "-ac", "2", "-ar", "48000",
                     "-af", af1, "-t", f"{body:.3f}", str(tmp)], check=True)
     # pass 2: silence until `start`, then the bed, padded to the video's length

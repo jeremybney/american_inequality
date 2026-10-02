@@ -14,7 +14,8 @@ scene lasts as long as it takes to say its lines at `wpm`.
   "article": {"section": "The Dividing Line"},   // overrides/extra fields for article.json
   "post": {"caption": "…", "hashtags": ["inequality", "…"]},
   "notes": ["anything the editor should know"],
-  "music": {"title": "…", "file": "music.mp3", "start": 5.0, "level_db": -30, "credit": "…"},  // set by `music`/`render`
+  "music": {"title": "…", "file": "music.mp3", "start_scene": 1, "level_db": -27, "credit": "…"},  // set by `music`/`render`
+  "accents": {"level_db": -10},  // musical hits on big numbers (peak dBFS); {"off": true} removes them
   "music_credit": "Music: … (CC BY 4.0)",       // end card source line, credits.md, TikTok post
   "scenes": [ … ]
 }
@@ -29,6 +30,8 @@ scene lasts as long as it takes to say its lines at `wpm`.
 | `duration` | force a length in seconds (otherwise derived from `say`) |
 | `hold` | extra seconds after the last line (default 0.35) |
 | `crossfade` | seconds of crossfade into this scene (default 0.3; 0 = hard cut) |
+| `accent` | `false` skips this scene's musical hit; `true` adds one on its cut |
+| `accent_at` | seconds into the scene for a musical hit (overrides the automatic one) |
 
 Chart scenes (everything on the orange background) also take `title`,
 `subtitle`, `note` (small navy text under the chart), and

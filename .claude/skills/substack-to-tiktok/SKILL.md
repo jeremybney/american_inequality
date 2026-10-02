@@ -87,21 +87,27 @@ removes the voiceover. Never generate or clone the author's voice.
 
 ## Background music (automatic, different for every video)
 `render` assigns a track automatically when the storyboard has none (`music <slug>` does it
-explicitly). The house sound is **investigative**: a steady pulse with some tension and
-curiosity, like a news-investigation bed. Tracks come from Kevin MacLeod's Incompetech catalog
-(CC BY 4.0), filtered to mysterious or suspenseful moods carried by a driving or grooving pulse
-(no horror, action, comic, fantasy, or bright and bouncy moods). Genres are electronica,
-soundtrack and cinematic only. **No piano**, and no organ, choir, folk or fantasy instruments,
-and no video-game music. `shorts/assets/music_used.json` logs every video's track so none repeats.
-- **The music comes in on scene 3**, the article card (`start_scene`), fading in over 2.5s. The
-  hook plays with voice only.
-- **It's soft:** -38 LUFS by default, about 21 dB under a -16 LUFS voice. It also ducks under the
-  voice while it speaks and fades out over the last 3s.
+explicitly). The house sound follows the author's reference videos: an **investigative mood
+carried by a steady groove**, mysterious, dark, suspenseful or intense, with a driving or
+grooving pulse at about 90–130 BPM (electronica, soundtrack and cinematic genres). Tracks come
+from Kevin MacLeod's Incompetech catalog (CC BY 4.0). **No piano**, and no organ, choir, folk or
+fantasy instruments, and no video-game music. `shorts/assets/music_used.json` logs every
+video's track so none repeats (the pool is about 14 tracks; `music --list` shows them).
+- **The music starts on the first frame** (0.3s fade in) and fades out over the last 3s.
+- **It's present, not background hum:** -27 LUFS by default, so the voice sits about 8–9 dB
+  over the music, matching the reference videos (measured at 7.7, 7.9 and 12.7 dB). It ducks
+  only a few dB while the voice speaks.
+- **Musical hits on the big moments** (`aiq_shorts/accents.py`): a deep boom (pitch-dropping
+  sub with a soft tail, no whoosh) lands on the opening frame, the article card, and the
+  moment each big number appears (`stat` overlays, `big_number` stats, bar `annotation`s, the
+  waffle's big number, the news clipping). At least 3.5s apart, at most 9 per video. Per scene,
+  `"accent": false` skips one, `"accent": true` adds one on the cut, `"accent_at": 1.2` places one.
+  `"accents": {"level_db": -12}` makes them quieter, `{"off": true}` removes them.
 - The credit line (required by CC BY) is added automatically to the end card's source line,
   credits.md and the TikTok post ("Music: “Title” Kevin MacLeod (incompetech.com), licensed
   under CC BY 4.0"). Keep it in the posted caption.
-- Adjust per video: `music <slug> --reroll`, `--title "…"`, `--start-scene 4`, `--level -35`
-  (louder) or `-41` (softer), `--list` (eligible tracks and where they were used), `--off`.
+- Adjust per video: `music <slug> --reroll`, `--title "…"`, `--start-scene 3` (start later),
+  `--level -24` (louder) or `-30` (softer), `--list`, `--off`.
 
 ## Step 1: Fetch
 `new` calls Substack's public API and saves `article.json` (metadata),
