@@ -338,6 +338,14 @@ def sync(project_dir, audio_path, max_gap=0.5, polish=True):
     cues = refine_starts(align(lines, words), clean_wav)
     removed = tighten(clean_wav, cues, max_gap, also) if max_gap else 0.0
     removed += trim_head(clean_wav, cues, also=also)
+    # speech recognition sometimes drops half a sentence on the untrimmed recording (its 30s
+    # windows fall differently); a second pass on the trimmed audio, same timeline as the
+    # cues now, usually hears it, so keep whichever alignment matches more of the script
+    if any(c.get("matched", 1) < 0.5 for c in cues):
+        words2 = transcribe(clean_wav, prompt=" ".join(lines))
+        cues2 = refine_starts(align(lines, words2), clean_wav)
+        if sum(c["matched"] for c in cues2) > sum(c.get("matched", 0) for c in cues):
+            cues, words = cues2, words2
     sb["voiceover"] = {
         "file": dest.name, "clean": clean_wav.name, "duration": round(duration(clean_wav), 2),
         **({"mix": mix_wav.name, "studio": eq} if polish else {}),

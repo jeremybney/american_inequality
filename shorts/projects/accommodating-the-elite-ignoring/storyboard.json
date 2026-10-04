@@ -346,5 +346,133 @@
     "credit": "Music: “Babylon” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
   "music_credit": "Music: “Babylon” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
-  "max_seconds": 105
+  "max_seconds": 105,
+  "voiceover": {
+    "file": "voiceover.m4a",
+    "clean": "voiceover_clean.wav",
+    "duration": 91.55,
+    "mix": "voiceover_studio.wav",
+    "studio": [
+      "room echo + noise removed (DeepFilterNet 3)",
+      "60-150 Hz +1.5 dB",
+      "300-600 Hz -2.1 dB"
+    ],
+    "cues": [
+      {
+        "scene": 0,
+        "line": 0,
+        "text": "At Stanford, 38% of students are registered as disabled.",
+        "start": 0.17,
+        "end": 3.84,
+        "matched": 0.91
+      },
+      {
+        "scene": 1,
+        "line": 0,
+        "text": "At Harvard and Brown, more than 20% of students are registered as disabled.",
+        "start": 4.34,
+        "end": 8.2,
+        "matched": 0.93
+      },
+      {
+        "scene": 2,
+        "line": 0,
+        "text": "We found that elite schools accommodate the wealthy while often abandoning those who need support most.",
+        "start": 8.7,
+        "end": 13.86,
+        "matched": 1.0
+      },
+      {
+        "scene": 3,
+        "line": 0,
+        "text": "Over the last decade, the number of students with accommodations tripled at many of America's top schools.",
+        "start": 14.36,
+        "end": 19.32,
+        "matched": 0.94
+      },
+      {
+        "scene": 4,
+        "line": 0,
+        "text": "Many of those students come from wealth areas. In Weston, Connecticut, where the median household income is $220,000, nearly 1 in 5 students claims a disability.",
+        "start": 19.86,
+        "end": 29.46,
+        "matched": 0.93
+      },
+      {
+        "scene": 5,
+        "line": 0,
+        "text": "Just 30 minutes north in Danbury, where the median income is $83,000, the rate is 8 times lower.",
+        "start": 29.92,
+        "end": 35.9,
+        "matched": 0.95
+      },
+      {
+        "scene": 6,
+        "line": 0,
+        "text": "Nationwide, high schools in the richest 1% of districts have almost four times the share of students claiming a 504 accommodation compared to the poorest districts.",
+        "start": 36.4,
+        "end": 44.92,
+        "matched": 0.9
+      },
+      {
+        "scene": 7,
+        "line": 0,
+        "text": "Accommodations have become pay to play. One testing company charges $6,000 per patient, and about 70% leave with a diagnosis.",
+        "start": 45.41,
+        "end": 53.4,
+        "matched": 0.86
+      },
+      {
+        "scene": 8,
+        "line": 0,
+        "text": "But the stories of disability in West Virginia are very different, where 1 in 5 people has a disability, the highest rate of any state.",
+        "start": 53.94,
+        "end": 60.92,
+        "matched": 0.96
+      },
+      {
+        "scene": 9,
+        "line": 0,
+        "text": "Donna Jean lives on disability in West Virginia, and her benefits pay her just $735 a month. Far from the gains seen from a Harvard degree.",
+        "start": 61.43,
+        "end": 69.8,
+        "matched": 0.97
+      },
+      {
+        "scene": 10,
+        "line": 0,
+        "text": "Most Americans with disabilities have a 3x higher unemployment rate and are 2x more likely to live in poverty.",
+        "start": 70.31,
+        "end": 76.18,
+        "matched": 0.9
+      },
+      {
+        "scene": 11,
+        "line": 0,
+        "text": "Medical diagnoses have become a luxury good for some while remaining an almost insurmountable challenge for others.",
+        "start": 77.24,
+        "end": 82.88,
+        "matched": 1.0
+      },
+      {
+        "scene": 12,
+        "line": 0,
+        "text": "Until we decouple disability support from the wealth of a ZIP code, this gap will keep widening.",
+        "start": 83.24,
+        "end": 88.22,
+        "matched": 1.0
+      },
+      {
+        "scene": 13,
+        "line": 0,
+        "text": "You can read the full story on American Inequality.",
+        "start": 88.71,
+        "end": 90.76,
+        "matched": 1.0
+      }
+    ],
+    "transcript": "At Stanford, 38 % of students are registered as disabled. At Harvard and Brown, more than 20 % of students are registered as disabled. We found that elite schools accommodate the wealthy while often abandoning those who need support most. For the last decade, the number of students with accommodations tripled at many of America's top schools. Many of those students come from wealthy areas. In Weston, Connecticut, where the median household income is $220 ,000, nearly 1 in 5 students claims a disability. Just 30 minutes north in Danbury, where the median income is 83 ,000, the rate is 8 times lower. Nationwide, high schools in the rich is 1 % of districts of almost four times the share of students claiming a 504 accommodation compared to the poorest districts. Accommodations have become pay to play. One testing company chart is $6 ,000 per patient and about 70 % leave with a diagnosis. But the stories of disability in West Virginia are very different. We're one in five people has a disability, the highest rate of any state. Donald Jean lives on disability in West Virginia and her benefits pay her just $735 a month, far from the gains seen from a Harvard degree. Most Americans with disabilities have a three times higher unemployment rate and are two times more likely to live in poverty. Medical diagnoses have become a luxury good for some while remaining an almost insurmountable challenge for others. Until we decouple disability support from the wealth of a zip code, this gap will keep widening. You can read the full story on American inequality.",
+    "pauses_trimmed_s": 6.8,
+    "max_gap": 0.5
+  }
 }

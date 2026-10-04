@@ -162,7 +162,8 @@ def loudness(x, tmp):
     write_wav(tmp / "in.wav", x)
     err = subprocess.run([M.ffmpeg_exe(), "-hide_banner", "-i", str(tmp / "in.wav"), "-af",
                           "loudnorm=print_format=json", "-f", "null", "-"], capture_output=True, text=True).stderr
-    return float(json.loads(err[err.rindex("{"):])["input_i"])
+    start = err.rindex("{")  # ffmpeg can print more log lines after loudnorm's JSON block
+    return float(json.loads(err[start:err.index("}", start) + 1])["input_i"])
 
 
 def decode(src, out_wav):
