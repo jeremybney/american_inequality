@@ -7,7 +7,8 @@
   },
   "notes": [
     "Story follows the article's arc: premiums outrun rent → the map → the share of a mortgage → property taxes → New York's subsidy math → insurers pay out less (loss ratio, denied claims, jets, record premiums) → renters pay → hold insurers accountable.",
-    "All figures are from the article (Sep 9, 2026) and the sources it cites (NBER, NAIC, Vanderbilt Policy Accelerator, NYC EDC)."
+    "All figures are from the article (Sep 9, 2026) and the sources it cites (NBER, NAIC, Vanderbilt Policy Accelerator, NYC EDC).",
+    "The author's edits run past the usual 89s cap; allowed for this video (max_seconds 105)."
   ],
   "post": {
     "headline": "The stealth tax making housing unaffordable",
@@ -43,27 +44,72 @@
       ]
     },
     {
-      "type": "photo",
-      "media": "apartments.jpg",
-      "query": "apartment buildings",
-      "zoom": [
-        1.0,
-        1.1
-      ],
-      "dim": 0.4,
-      "overlays": [
+      "type": "line",
+      "title": "Increase since 2018",
+      "series": [
         {
-          "kind": "stamp",
-          "text": "RENT +30%",
-          "y": 0.32,
-          "at": 0.4,
-          "angle": -3
+          "label": "Insurance",
+          "color": "yellow",
+          "width": 10,
+          "prefix": "+",
+          "suffix": "%",
+          "points": [
+            [
+              2018,
+              0
+            ],
+            [
+              2024,
+              71
+            ]
+          ]
+        },
+        {
+          "label": "Rent",
+          "color": "white",
+          "prefix": "+",
+          "suffix": "%",
+          "points": [
+            [
+              2018,
+              0
+            ],
+            [
+              2024,
+              30
+            ]
+          ]
         }
       ],
-      "source": "Bureau of Labor Statistics",
+      "x_ticks": [
+        2018,
+        2024
+      ],
+      "y_range": [
+        0,
+        80
+      ],
+      "y_ticks": [
+        0,
+        20,
+        40,
+        60,
+        80
+      ],
+      "counter": {
+        "series": 0,
+        "prefix": "+",
+        "suffix": "%",
+        "label": "home insurance premiums"
+      },
+      "draw_at": 0.3,
+      "draw": 3.2,
+      "source": "NBER · Bureau of Labor Statistics",
       "say": [
         "Rent rose 30% over the same years, so insurance climbed more than twice as fast."
-      ]
+      ],
+      "top": 820,
+      "bottom": 1290
     },
     {
       "type": "article_card",
@@ -74,7 +120,7 @@
       ],
       "chips_at": 1.4,
       "say": [
-        "Insurance premiums and property taxes have become a stealth tax draining household budgets."
+        "Our recent article uncovered that insurance premiums and property taxes have become a stealth tax draining household budgets."
       ]
     },
     {
@@ -233,18 +279,18 @@
           "color": "white"
         }
       ],
-      "fill_at": 0.6,
+      "fill_at": 2.6,
       "fill": 2.0,
       "big": {
         "value": 44,
         "suffix": "%",
         "label": "not paid out",
         "color": "yellow",
-        "at": 2.4
+        "at": 4.4
       },
       "source": "The Stealth Tax Destroying Housing Affordability · American Inequality",
       "say": [
-        "The five biggest home insurers didn't pay out on 44% of the claims they resolved last year."
+        "Meanwhile, they are raking in record profits. The 5 biggest home insurers didn't pay out on 44% of the claims they resolved last year."
       ]
     },
     {
@@ -261,13 +307,13 @@
           "kind": "stamp",
           "text": "16 PRIVATE JETS",
           "y": 0.32,
-          "at": 1.4,
+          "at": 4.6,
           "angle": -3
         }
       ],
       "source": "Vanderbilt Policy Accelerator",
       "say": [
-        "Researchers found that the top 10 property insurers own 16 private jets."
+        "When they were telling states that climate change was making their business unaffordable, the top 10 property insurers bought 16 private jets."
       ]
     },
     {
@@ -289,12 +335,12 @@
           "suffix": "T",
           "label": "in premiums last year, more than the U.S. military budget",
           "y": 0.36,
-          "at": 2.2
+          "at": 1.8
         }
       ],
       "source": "NAIC · The Stealth Tax Destroying Housing Affordability",
       "say": [
-        "Property insurers took in $1.03 trillion in premiums last year, more than the entire U.S. military budget."
+        "Those companies took in $1.03 trillion in premiums last year, more than the entire U.S. military budget."
       ]
     },
     {
@@ -321,7 +367,7 @@
         }
       ],
       "say": [
-        "Landlords often pass these costs on to renters or force the city to pick up the bill."
+        "But insurers aren't only to blame. Landlords often pass these costs on to renters or force the city to pick up the bill through vouchers."
       ]
     },
     {
@@ -347,5 +393,6 @@
     "feel": "Bright, Uplifting",
     "credit": "Music: “Nowhere Land” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
-  "music_credit": "Music: “Nowhere Land” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  "music_credit": "Music: “Nowhere Land” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
+  "max_seconds": 105
 }
