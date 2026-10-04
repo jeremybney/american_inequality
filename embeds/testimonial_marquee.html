@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reader Testimonials</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Serif+4:ital,wght@1,400&display=swap" rel="stylesheet">
+<style>
+  /* ---- Easy-to-edit settings ---- */
+  :root {
+    --bg: transparent;          /* set to e.g. #ffffff to give the embed a solid background */
+    --card-bg: #ffffff;
+    --card-border: #e6e3dc;
+    --text: #1f2328;
+    --muted: #6b6f76;
+    --accent: #b23a2b;          /* quote mark colour */
+    --heading: #1f2328;
+    --card-width: 340px;
+    --gap: 18px;
+    --fade: 12%;                /* how wide the fade-out at each edge is */
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); overflow-x: hidden; }
+  body { font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--text); }
+
+  .wrap { padding: 32px 0 40px; }
+
+  .heading {
+    text-align: center;
+    margin: 0 16px 28px;
+  }
+  .heading h2 {
+    font-size: clamp(22px, 3.2vw, 32px);
+    font-weight: 600;
+    margin: 0 0 6px;
+    color: var(--heading);
+    letter-spacing: -0.01em;
+  }
+  .heading p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  .rows {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    /* fades the cards out as they reach the left/right edges */
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 var(--fade), #000 calc(100% - var(--fade)), transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0, #000 var(--fade), #000 calc(100% - var(--fade)), transparent 100%);
+  }
+
+  .row { overflow: hidden; }
+  .track {
+    display: flex;
+    gap: var(--gap);
+    width: max-content;
+    animation: scroll var(--duration, 60s) linear infinite;
+    will-change: transform;
+  }
+  .row.reverse .track { animation-direction: reverse; }
+  .rows:hover .track { animation-play-state: paused; }
+
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(calc(-1 * var(--shift, 50%))); }
+  }
+
+  .card {
+    flex: 0 0 var(--card-width);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 20px 22px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 14px rgba(0,0,0,.04);
+  }
+  .card blockquote {
+    margin: 0;
+    font-family: "Source Serif 4", Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.5;
+    position: relative;
+    padding-top: 18px;
+  }
+  .card blockquote::before {
+    content: "\201C";
+    position: absolute;
+    top: -10px; left: -2px;
+    font-size: 44px;
+    line-height: 1;
+    color: var(--accent);
+    font-style: normal;
+  }
+  .card .name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: .02em;
+  }
+  .card .name::before { content: "— "; }
+
+  @media (max-width: 600px) {
+    :root { --card-width: 270px; --gap: 14px; --fade: 8%; }
+    .card blockquote { font-size: 15px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .track { animation: none; }
+    .row { overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="heading">
+    <h2>Join thousands of others</h2>
+    <p>Here's what readers say about American Inequality</p>
+  </div>
+  <div class="rows" id="rows"></div>
+</div>
+
+<script>
+  // ---- Edit testimonials here ----
+  const TESTIMONIALS = [
+    ["Fantastic and important work done by you and your team!", "Pawel L."],
+    ["I am a total data nerd. I look forward to reading your work.", "Karen A."],
+    ["You make it possible to understand what is truly happening with inequality in America like no one else I’ve ever seen.", "Monet N."],
+    ["I support your work because you're spreading an important message.", "Chris K."],
+    ["I support you because we have 6 grandchildren and I am bothered about the kind of world they and all other children inherit from us. Thank you for the articles you write.", "Janos A."],
+    ["Thanks for writing such in-depth analysis about inequality and the various forms that it takes.", "Alison T."],
+    ["Thanks for the work that you do.", "Michael S."],
+    ["Absolutely critical work on what is at the root of so much unnecessary death, suffering, and destruction. Really appreciate your perspective and what you are calling our attention to.", "Isaac L."],
+    ["Thanks for your work toward greater justice and equity and arming others with more data.", "Adam B."],
+    ["Thank you for the unvarnished truth.", "Rebecca B."],
+    ["As a high school teacher, students need to recognize the corrosive effects of rising inequality in the US.", "Charles R."],
+    ["The best newsletter I read hands down. Stories + data that can't be beat.", "Sam M."],
+  ];
+
+  const ROW_COUNT = 3;      // number of levels
+  const SPEED = 35;         // pixels per second (lower = slower)
+
+  const rowsEl = document.getElementById("rows");
+
+  function makeCard([quote, name]) {
+    const card = document.createElement("figure");
+    card.className = "card";
+    card.style.margin = "0";
+    const q = document.createElement("blockquote");
+    q.textContent = quote;
+    const n = document.createElement("figcaption");
+    n.className = "name";
+    n.textContent = name;
+    card.append(q, n);
+    return card;
+  }
+
+  // Spread testimonials across rows (round-robin so each row gets a mix)
+  const groups = Array.from({ length: ROW_COUNT }, () => []);
+  TESTIMONIALS.forEach((t, i) => groups[i % ROW_COUNT].push(t));
+
+  const rows = groups.map((items, r) => {
+    const row = document.createElement("div");
+    row.className = "row" + (r % 2 ? " reverse" : "");
+    const track = document.createElement("div");
+    track.className = "track";
+    row.appendChild(track);
+    rowsEl.appendChild(row);
+    return { row, track, items, speed: SPEED * (1 + (r % 3) * 0.18) };
+  });
+
+  function build() {
+    const width = rowsEl.clientWidth;
+    rows.forEach(({ track, items, speed }) => {
+      track.innerHTML = "";
+      // Repeat the set until one copy is wider than the screen...
+      let setWidth = 0, guard = 0;
+      do {
+        items.forEach(t => track.appendChild(makeCard(t)));
+        setWidth = track.scrollWidth;
+        guard++;
+      } while (setWidth < width && guard < 20);
+      // ...then duplicate it so the loop is seamless
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      const originals = Array.from(track.children);
+      originals.forEach(c => {
+        const clone = c.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+        track.appendChild(clone);
+      });
+      const shift = setWidth + gap;
+      track.style.setProperty("--shift", shift + "px");
+      track.style.setProperty("--duration", (shift / speed) + "s");
+    });
+  }
+
+  build();
+  let resizeTimer;
+  let lastWidth = rowsEl.clientWidth;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (rowsEl.clientWidth !== lastWidth) { lastWidth = rowsEl.clientWidth; build(); }
+    }, 200);
+  });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(build);
+</script>
+</body>
+</html>
