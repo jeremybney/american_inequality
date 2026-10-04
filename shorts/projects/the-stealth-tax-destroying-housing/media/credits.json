@@ -1,0 +1,63 @@
+{
+  "cover.jpg": {
+    "credit": "Image: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/d321a2f9-d590-422a-aee1-ed04175e0041_1200x630.jpeg"
+  },
+  "article_01.webp": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp"
+  },
+  "article_02.png": {
+    "credit": "Source",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png"
+  },
+  "article_03.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png"
+  },
+  "article_04.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/8315dda6-9e9a-46bb-b564-c90e03cca03a_1240x1252.png"
+  },
+  "article_05.webp": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp"
+  },
+  "article_06.jpeg": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/5f4d61de-64ba-477f-af11-33452c2d683a_1290x834.jpeg"
+  },
+  "article_07.jpeg": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg"
+  },
+  "news_cm.png": {
+    "credit": "Screenshot: Carrier Management",
+    "url": "https://www.carriermanagement.com/news/2026/05/21/288251.htm",
+    "headline": "U.S. P/C Insurers Post Biggest Q1 Underwriting Profit in 25 Years - Carrier Management"
+  },
+  "hook_clip.mp4": {
+    "credit": "Video: SurveillancePigeon (Pixabay)",
+    "url": "https://pixabay.com/videos/id-136838/"
+  },
+  "apartments.jpg": {
+    "credit": "Photo: Jakub Ha\u0142un, CC BY 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Apartment_buildings_on_the_bank_of_East_River,_Manhattan,_New_York_City,_20231001_1109_1028.jpg"
+  },
+  "nyc.jpg": {
+    "credit": "Photo: Wil Fyfordy, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:New_York_City_Housing_Authority_Saint_Nicholas_Senior_Center.jpg"
+  },
+  "houses.jpg": {
+    "credit": "Photo: OhanaSurf, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Single-family_homes_near_the_Chalets_of_Fox_River_Grove,_IL.jpg"
+  },
+  "jet.jpg": {
+    "credit": "Photo: Matti Blume, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:EBACE_2019,_Le_Grand-Saconnex_(EB190521).jpg"
+  },
+  "pentagon.jpg": {
+    "credit": "Photo: Air Force Staff Sgt. John Wright, DOD, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:An_aerial_view_of_the_Pentagon,_Washington,_D.C.,_May_15,_2023.jpg"
+  }
+}
