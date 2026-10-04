@@ -90,7 +90,9 @@ def cmd_search(a):
     pdir = project(a.slug)
     source = "pexels" if a.pexels else "pixabay" if a.pixabay else \
         (media.default_video_source() if a.video else "wikimedia")
-    cands = media.search(a.query, source, a.n, a.video)
+    cands, hidden = media.fresh_only(pdir, media.search(a.query, source, a.n, a.video))
+    if hidden:
+        print(f"  ({hidden} result(s) hidden: already used in another video)")
     cdir = pdir / ".cache" / "candidates"
     cdir.mkdir(parents=True, exist_ok=True)
     (cdir / "last.json").write_text(json.dumps(cands, indent=2))
@@ -109,6 +111,7 @@ def cmd_pick(a):
     pdir = project(a.slug)
     cands = json.loads((pdir / ".cache" / "candidates" / "last.json").read_text())
     c = cands[a.n]
+    media.ensure_fresh(pdir, c)
     ext = ".mp4" if c.get("video") else (Path(c["url"].split("?")[0]).suffix.lower() or ".jpg")
     name = f"{a.as_name}{ext}"
     headers = media._pexels_headers() if c["source"] == "pexels" else None
@@ -145,7 +148,7 @@ def cmd_autofill(a):
         video = sc["type"] == "video" or Path(name).suffix.lower() in media.VIDEO_EXT
         source = sc.get("query_source") or (media.default_video_source() if video else "wikimedia")
         try:
-            cands = media.search(q, source, 8, video)
+            cands, _hidden = media.fresh_only(pdir, media.search(q, source, 8, video))
         except Exception as e:  # noqa: BLE001
             print(f"  scene {i}: search failed for {q!r}: {e}")
             continue

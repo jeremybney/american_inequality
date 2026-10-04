@@ -340,12 +340,12 @@
     }
   ],
   "music": {
-    "title": "Rising Tide",
+    "title": "Nowhere Land",
     "file": "music.mp3",
     "start_scene": 1,
     "level_db": -21.0,
-    "feel": "Mysterious, Grooving, Driving",
-    "credit": "Music: “Rising Tide” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+    "feel": "Bright, Uplifting",
+    "credit": "Music: “Nowhere Land” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
-  "music_credit": "Music: “Rising Tide” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  "music_credit": "Music: “Nowhere Land” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
 }

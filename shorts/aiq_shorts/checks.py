@@ -84,6 +84,17 @@ def check(tl):
                             f"{stats[0].get('suffix', '')}) with little motion; show it as a chart that moves instead "
                             "(bars growing side by side, a line rising, or the article's own chart)")
 
+    # every video gets its own photos and clips: none may repeat from another video
+    from . import media as M
+    used = M.used_elsewhere(tl.ctx.project_dir)
+    for name, info in M.load_credits(tl.ctx.media_dir).items():
+        url = info.get("url") if isinstance(info, dict) else None
+        key = M._source_key(url)
+        if url and not name.startswith(M.OWN_MEDIA) and key in used and \
+                any(str(sc.get("media", "")) == name for sc in scenes):
+            errors.append(f"{name} was already used in the {used[key]} video; every video needs new photos "
+                          "and clips (search again and pick a fresh one)")
+
     # --- required pieces
     if "article_card" not in types:
         errors.append("missing the article_card scene (the clipped article card is always shown)")

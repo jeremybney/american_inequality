@@ -106,12 +106,14 @@ loudness. Send both mp3s so they can compare by ear.
 
 ## Background music (automatic, different for every video)
 `render` assigns a track automatically when the storyboard has none (`music <slug>` does it
-explicitly). The house sound follows the author's reference videos: an **investigative mood
-carried by a steady groove**, mysterious, dark, suspenseful or intense, with a driving or
-grooving pulse at about 90–130 BPM (electronica, soundtrack and cinematic genres). Tracks come
-from Kevin MacLeod's Incompetech catalog (CC BY 4.0). **No piano**, and no organ, choir, folk or
-fantasy instruments, and no video-game music. `shorts/assets/music_used.json` logs every
-video's track so none repeats (the pool is about 14 tracks; `music --list` shows them).
+explicitly). The house sound is **reporting**: the bed of an informational explainer (the
+author's models are Zohran Mamdani's and Emma Camp's grocery-store videos). A light, steady
+groove under a voice that's explaining, bright, calm or uplifting, never dark, mysterious or
+suspenseful (the earlier "investigative" beds were retired as too ominous). Electric piano,
+plucks, light drums, guitar, piano and strings all fit; no party funk, dance or rave tracks,
+no choir or vocals, no folk or world instruments, no video-game music. Tracks come from Kevin
+MacLeod's Incompetech catalog (CC BY 4.0); `shorts/assets/music_used.json` logs every video's
+track so none repeats (about 14 tracks fit; `music --list` shows them).
 - **The music starts on the first frame** (0.3s fade in) and fades out over the last 3s.
 - **It's present, not background hum:** -21 LUFS by default (raised from -27, then -24, at
   the author's request, Oct 2026), so the voice sits about 4–5 dB over the music. The bed is
@@ -309,7 +311,20 @@ Example in the right voice (from the generational wealth video):
 - On-screen text never gets ahead of the narration. Time stats, bars, checklist items and
   typed statements with `at` so each appears as it's said.
 
-## Step 4: Media (no AI slop)
+## Step 4: Media (no AI slop, nothing reused)
+**Every video gets new photos and clips. Never reuse one from another video.** The pipeline
+enforces it: `search`, `plan` and `autofill` hide results another video already used, `pick`
+and `use` refuse them, and `render` fails if a scene's media file came from another video
+(stock media is matched by its source page in each project's `media/credits.json`).
+
+**Pick images that are both on point and gripping.** Each shot should match what its caption
+says *and* make someone stop scrolling: a tornado touching down for soaring insurance
+premiums, a luxury jet cabin for insurers' private jets, a specific landmark for a named place,
+people doing the thing the line describes. Avoid generic filler, above all overhead drone
+shots of ordinary neighborhoods and streets, empty skylines, and anonymous office or laptop
+stock. When the obvious search returns filler, search for the drama behind the number (the
+storm behind the premium, the empty shelf behind the price) rather than the category.
+
 Save the chosen candidates with `use <slug> <subject> <n> --as <name>` (e.g.
 `use <slug> congress 3 --as capitol`). Give every photo scene a `query` too, so
 `autofill` can fill anything still missing. Its sheets land in `.cache/candidates/<name>/`.

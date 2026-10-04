@@ -19,9 +19,9 @@ HERE = Path(__file__).resolve().parent.parent
 USED = HERE / "assets" / "music_used.json"      # committed: which video used which track
 CACHE = HERE / "assets" / ".music_catalog.json"  # not committed
 
-# The house sound is "investigative": a steady pulse with some tension and curiosity, like a
-# news-investigation bed. Mysterious or suspenseful, carried by a groove or driving pulse; never
-# horror, action, comic, fantasy, or bright and bouncy. No piano (the author's call).
+# Earlier house sounds, kept for reference: "investigative" (mysterious or suspenseful over a
+# pulse, no piano) and "pulse" (the same mood with a steadier groove). The author retired both
+# as too ominous; see "reporting" below.
 PROFILES = {
     "investigative": {
         "need_any": {"Mysterious", "Suspenseful"},
@@ -43,12 +43,29 @@ PROFILES["pulse"] = {
     "genres": {"7", "10", "22", "24"},
     "bpm": (90, 130),
 }
-PROFILE = "pulse"
+# The house sound since Oct 4, 2026: "reporting". The author found the pulse and investigative
+# beds too ominous and pointed to informational explainers (Zohran Mamdani's and Emma Camp's
+# grocery-store videos) as the model: a light, steady groove under a voice that's explaining,
+# bright or calm rather than dark, with electric piano, plucks, light drums or strings.
+# Piano and strings are allowed here; party funk, dance and rave tracks are not.
+PROFILES["reporting"] = {
+    "need_any": {"Bright", "Uplifting", "Calming", "Relaxed"},
+    "pulse_any": {"Grooving", "Driving", "Uplifting", "Bright"},
+    "avoid": {"Dark", "Eerie", "Unnerving", "Mysterious", "Suspenseful", "Somber", "Aggressive", "Epic",
+              "Action", "Humorous", "Mystical", "Bouncy", "Intense", "Ren Faire", "Medieval"},
+    # contemporary (5), electronica (7), soundtrack (22), funk (8, filtered by title below)
+    "genres": {"5", "7", "8", "22"},
+    "bpm": (90, 130),
+    "allow_instruments": ("piano", "harp"),        # strings and (electric) piano are fine
+    "nope": ("funk", "dance", "rave", "raving", "party", "disco", "elevator", "miami"),
+}
+PROFILE = "reporting"
 START_SCENE = 1      # the music starts on the first frame
 LEVEL_DB = -21.0     # LUFS; the author asked twice for louder music (voice about 4-5 dB over it)
 NO_INSTRUMENTS = ("piano", "organ", "choir", "vocal", "voice", "harpsichord", "celesta", "tuba",
                   "kazoo", "accordion", "bagpipe", "banjo", "harp", "flute", "clarinet", "oboe",
-                  "zither", "lute", "santur", "tanpura", "ukulele", "glockenspiel", "trombone", "kora", "sitar")
+                  "zither", "lute", "santur", "tanpura", "ukulele", "glockenspiel", "trombone", "kora", "sitar",
+                  "erhu", "pipa", "yangqin", "koto", "shamisen", "didgeridoo")
 NOPE = ("christmas", "holiday", "waltz", "medieval", "goblin", "horror", "zombie", "carol",
         "8bit", "8-bit", "chiptune", "dungeon", "chee zee", "video game")
 
@@ -85,10 +102,11 @@ def candidates(min_len=90, profile=None):
             bpm = 0
         if not (feel & p["need_any"]) or not (feel & p["pulse_any"]) or feel & p["avoid"]:
             continue
-        if any(s in (t.get("instruments") or "").lower() for s in NO_INSTRUMENTS):
+        banned = [x for x in NO_INSTRUMENTS if x not in p.get("allow_instruments", ())]
+        if any(x in (t.get("instruments") or "").lower() for x in banned):
             continue
         text = f"{t.get('title', '')} {t.get('description', '')}".lower()
-        if str(t.get("genre")) not in p["genres"] or any(w in text for w in NOPE):
+        if str(t.get("genre")) not in p["genres"] or any(w in text for w in NOPE + p.get("nope", ())):
             continue
         if _seconds(t.get("length")) < min_len or not (p["bpm"][0] <= bpm <= p["bpm"][1]):
             continue

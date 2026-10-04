@@ -361,7 +361,7 @@ def plan(project_dir, top=12, per=6, fetch=True, only=None):
             continue
         if not fetch:
             continue
-        s["candidates"] = subject_candidates(s["queries"], per)
+        s["candidates"], _hidden = M.fresh_only(project_dir, subject_candidates(s["queries"], per))
         if s["candidates"]:
             s["sheet"] = str(candidate_sheet(s["candidates"], pdir / s["key"], pdir / f"{s['key']}.jpg",
                                              f"{s['label']}  ({s['kind']}, score {s['score']})"))
@@ -393,6 +393,7 @@ def use_candidate(project_dir, key, n, as_name):
     if not subj:
         raise SystemExit(f"No subject {key!r}; options: {[s['key'] for s in data['subjects']]}")
     c = subj["candidates"][n]
+    M.ensure_fresh(project_dir, c)
     if c.get("source") == "wikimedia":
         c["url"] = M.best_url(c["url"], c.get("thumb"), c.get("width", 0))
     ext = Path(c["url"].split("?")[0]).suffix.lower() or ".jpg"

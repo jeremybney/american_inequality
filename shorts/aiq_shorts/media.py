@@ -90,6 +90,48 @@ def save_credit(media_dir, filename, credit):
     (Path(media_dir) / "credits.json").write_text(json.dumps(credits, indent=2))
 
 
+# --- Every video gets fresh stock media -----------------------------------------------
+# A photo or clip used in one video is never used in another (the author's rule). Stock media
+# is identified by its source page in each project's credits.json; the author's own images
+# (article charts, cover, news clippings) and the voice/music files are not stock.
+PROJECTS_DIR = Path(__file__).resolve().parent.parent / "projects"
+OWN_MEDIA = ("article_", "cover", "news_", "voiceover", "music")
+
+
+def _source_key(url):
+    from urllib.parse import unquote
+    return unquote((url or "").split("?")[0].split("#")[0]).rstrip("/").lower()
+
+
+def used_elsewhere(project_dir):
+    """{source key: other project's slug} for every stock photo/clip another video already uses."""
+    me = Path(project_dir).resolve()
+    out = {}
+    for cj in PROJECTS_DIR.glob("*/media/credits.json"):
+        if cj.parent.parent.resolve() == me:
+            continue
+        for name, info in json.loads(cj.read_text()).items():
+            url = info.get("url") if isinstance(info, dict) else None
+            if url and not name.startswith(OWN_MEDIA):
+                out[_source_key(url)] = cj.parent.parent.name
+    return out
+
+
+def fresh_only(project_dir, candidates):
+    """Drop candidates another video already used. Returns (kept, number hidden)."""
+    used = used_elsewhere(project_dir)
+    kept = [c for c in candidates if _source_key(c.get("page") or c.get("url")) not in used]
+    return kept, len(candidates) - len(kept)
+
+
+def ensure_fresh(project_dir, candidate):
+    used = used_elsewhere(project_dir)
+    key = _source_key(candidate.get("page") or candidate.get("url"))
+    if key in used:
+        raise SystemExit(f"Already used in the {used[key]} video: {candidate.get('page') or candidate.get('url')}. "
+                         "Every video needs new photos and clips; pick another candidate.")
+
+
 def strip_html(s):
     s = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", s or "")).strip()
     half = len(s) // 2
