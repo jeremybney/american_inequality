@@ -97,16 +97,17 @@
         80
       ],
       "counter": {
-        "series": 0,
-        "prefix": "+",
-        "suffix": "%",
-        "label": "home insurance premiums"
+        "value": 2,
+        "from": 0,
+        "suffix": "x",
+        "label": "faster than rent",
+        "color": "yellow"
       },
       "draw_at": 0.3,
       "draw": 3.2,
       "source": "NBER · Bureau of Labor Statistics",
       "say": [
-        "Rent rose 30% over the same years, so insurance climbed more than twice as fast."
+        "While rent rose 30% over the last 8 years, insurance costs climbed more than twice as fast."
       ],
       "top": 820,
       "bottom": 1290

@@ -167,6 +167,10 @@ Per stat: `at`, `count` (seconds to count), `from`, `size`, `label_color`.
  "draw": 2.6}
 ```
 
+The `counter` follows a series by default. Give it `"value"` (and optionally `"from"`) to count to
+a fixed figure instead as the lines draw, e.g. `{"value": 2, "suffix": "x", "label": "faster than rent"}`
+when the comparison, not either line's end value, is the point.
+
 ## `then_now`: old value struck through, new value pops in
 ```json
 {"type": "then_now", "title": "Since 1990", "headers": ["1990", "2025"],

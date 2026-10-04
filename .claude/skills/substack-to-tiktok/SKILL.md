@@ -59,10 +59,16 @@ The user marks videos "posted" themselves on the page.
 When the user says "apply my script edits":
 1. `list` the queue; take items with `status: "edits"`. Save each item's `script_edits` to a
    JSON file and run `apply-edits <slug> <file>` (it swaps the edited `say` lines into the storyboard).
-2. Keep the user's wording exactly. Run `script <slug>`. If the edit breaks a house rule (over
+2. **Before re-rendering, check the edits against the rest of the script** and flag anything
+   off to the author first, without rendering: a number or fact that now repeats one already
+   shown (e.g. the hook's 71% landing again in the next shot), a stat that no longer matches the
+   article (wrong year range, rounding), or a visual that now contradicts its line. Fix only
+   the visuals, render stills or a single `frame` to show the change, and wait for their call
+   on the wording. Full renders cost the author time and tokens.
+3. Keep the user's wording exactly. Run `script <slug>`. If the edit breaks a house rule (over
    75s, a colon), don't silently rewrite their line. Say which rule, and propose a trim to a
    different line or ask. Retime visuals (`at` values) so they still land on the edited words.
-3. Re-render, push the new `queue_payload.json` with `status: "ready"` and `script_edits: []`,
+4. Re-render, push the new `queue_payload.json` with `status: "ready"` and `script_edits: []`,
    and send the new MP4.
 
 ## Voiceovers (the author's real voice, never a synthetic one)

@@ -841,6 +841,8 @@ class LineScene(ChartScene):
                     cur = yb
                 elif xcut >= xa:
                     cur = ya + (yb - ya) * ((xcut - xa) / (xb - xa) if xb != xa else 1)
+            if "value" in c:  # count to a fixed figure (e.g. "2x faster") as the lines draw
+                cur = c.get("from", 0) + (c["value"] - c.get("from", 0)) * dp
             f = G.font("display", c.get("size", 150))
             txt = fmt_from(c, cur)
             G.draw_centered(d, T.W / 2, T.CHART_TOP - 20, txt, f, G.rgba(T.color(c.get("color", "white")), ax_a))
