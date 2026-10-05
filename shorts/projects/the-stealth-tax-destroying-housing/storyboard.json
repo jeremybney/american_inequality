@@ -395,5 +395,133 @@
     "credit": "Music: “Nowhere Land” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
   "music_credit": "Music: “Nowhere Land” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
-  "max_seconds": 105
+  "max_seconds": 105,
+  "voiceover": {
+    "file": "voiceover.m4a",
+    "clean": "voiceover_clean.wav",
+    "duration": 93.37,
+    "mix": "voiceover_studio.wav",
+    "studio": [
+      "room echo + noise removed (DeepFilterNet 3)",
+      "60-150 Hz +1.5 dB",
+      "300-600 Hz -1.1 dB"
+    ],
+    "cues": [
+      {
+        "scene": 0,
+        "line": 0,
+        "text": "Home insurance premiums have risen 71% since 2018.",
+        "start": 0.17,
+        "end": 3.98,
+        "matched": 0.91
+      },
+      {
+        "scene": 1,
+        "line": 0,
+        "text": "While rent rose 30% over the last 6 years, insurance costs climbed more than twice as fast.",
+        "start": 4.48,
+        "end": 10.16,
+        "matched": 0.78
+      },
+      {
+        "scene": 2,
+        "line": 0,
+        "text": "Our recent article uncovered that insurance premiums and property taxes have become a stealth tax draining household budgets.",
+        "start": 10.66,
+        "end": 16.81,
+        "matched": 0.94
+      },
+      {
+        "scene": 3,
+        "line": 0,
+        "text": "Premiums are highest along the Gulf Coast and in Florida, where a typical policy can top $5,000 a year.",
+        "start": 17.31,
+        "end": 23.49,
+        "matched": 0.95
+      },
+      {
+        "scene": 4,
+        "line": 0,
+        "text": "Home insurance now makes up more than 10% of a monthly mortgage, up from 5% twenty years ago.",
+        "start": 23.99,
+        "end": 29.76,
+        "matched": 0.85
+      },
+      {
+        "scene": 5,
+        "line": 0,
+        "text": "Property tax bills are rising faster than inflation, costing the average American an extra $4,500 a year.",
+        "start": 30.26,
+        "end": 36.36,
+        "matched": 0.95
+      },
+      {
+        "scene": 6,
+        "line": 0,
+        "text": "In New York City, every $100 increase in insurance costs requires $1,200 more in city subsidies to keep public housing affordable.",
+        "start": 36.86,
+        "end": 44.85,
+        "matched": 0.96
+      },
+      {
+        "scene": 7,
+        "line": 0,
+        "text": "Insurers blame climate, but the share of premiums they pay back in claims fell from a historical average of 80% to just 55%.",
+        "start": 45.35,
+        "end": 54.04,
+        "matched": 0.88
+      },
+      {
+        "scene": 8,
+        "line": 0,
+        "text": "Meanwhile, they are raking in record profits. The 5 biggest home insurers didn't pay out on 44% of the claims they resolved last year.",
+        "start": 54.54,
+        "end": 61.39,
+        "matched": 0.96
+      },
+      {
+        "scene": 9,
+        "line": 0,
+        "text": "When they were telling states that climate change was making their business unaffordable, the top 10 property insurers bought 16 private jets.",
+        "start": 61.89,
+        "end": 68.2,
+        "matched": 1.0
+      },
+      {
+        "scene": 10,
+        "line": 0,
+        "text": "Those companies took in $1.03 trillion in premiums last year, more than the entire U.S. military budget.",
+        "start": 68.7,
+        "end": 75.11,
+        "matched": 0.83
+      },
+      {
+        "scene": 11,
+        "line": 0,
+        "text": "But insurers aren't only to blame. Landlords often pass these costs on to renters or force the city to pick up the bill through vouchers.",
+        "start": 75.61,
+        "end": 82.11,
+        "matched": 0.92
+      },
+      {
+        "scene": 12,
+        "line": 0,
+        "text": "Communities need to bring these invisible costs under control and hold insurers accountable to the neighborhoods they leave exposed.",
+        "start": 82.7,
+        "end": 88.98,
+        "matched": 1.0
+      },
+      {
+        "scene": 13,
+        "line": 0,
+        "text": "You can read the full story on American Inequality.",
+        "start": 89.48,
+        "end": 91.36,
+        "matched": 1.0
+      }
+    ],
+    "transcript": "Home insurance premiums have risen 71 % since 2018. All rents rose 30 % over the last 6 years. Insurance costs climb more than twice as fast. A recent article uncovered that insurance premiums and property taxes have become a stealth tax draining household budgets. Premiums are highest along the Gulf Coast and in Florida, where a typical policy can top $5 ,000 a year. Home insurance now makes up more than 10 % of a monthly mortgage. of from 5 % 20 years ago. Property tax bills are rising faster than inflation, costing the average American an extra $4 ,500 a year. In New York City, every $100 increase in insurance costs requires $1 ,200 more in city subsidies to keep public housing affordable. Ensures blame climate, but the share of premiums they pay back and claims fell from a historical average of 80 % to just 55%. Meanwhile, they are raking in record profits. The five biggest home insurers didn't pay out on 44 % of the claims they resolved last year. When they were telling states that climate change was making their business unaffordable, the top 10 property insurers bought 16 private jets. Those companies took in $1 .03 trillion in premiums last year, more than the entire US military budget. But insurers aren't only to blame, landlords often pass these costs onto renters or force the city to pick up the bill through vouchers. Communities need to bring these invisible costs under control and hold insurers accountable to the neighborhoods they leave exposed. You can read the full story on American inequality.",
+    "pauses_trimmed_s": 6.92,
+    "max_gap": 0.5
+  }
 }
