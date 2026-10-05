@@ -1,0 +1,303 @@
+{
+  "title": "Life Expectancy and Inequality — TikTok",
+  "wpm": 175,
+  "hold": 0.25,
+  "article": {
+    "section": "The Dividing Line"
+  },
+  "notes": [
+    "Story follows the article's arc: the 20-year gap → Oglala Lakota → money decides → the map → Summit vs Oglala → Chetty's tax records → falling life expectancy in Kentucky → healthcare costs → born in the wrong county.",
+    "All figures are from the article (Feb 2, 2021) and the sources it cites (GHDx, Chetty et al., World Bank)."
+  ],
+  "post": {
+    "headline": "Where you're born can cost you 20 years of life",
+    "caption": "People in America's richest counties now outlive the poorest by up to 20 years. In Oglala Lakota County, South Dakota, life expectancy is 66.8. In Colorado's Summit County it's 86.9. The richest 1% of men outlive the poorest 1% by 14.6 years.",
+    "cta": "Full story and interactive maps at the link in bio.",
+    "hashtags": [
+      "inequality",
+      "lifeexpectancy",
+      "health",
+      "healthcare",
+      "poverty",
+      "data"
+    ]
+  },
+  "scenes": [
+    {
+      "type": "video",
+      "media": "hook_clip.mp4",
+      "query": "heart rate monitor hospital",
+      "dim": 0.4,
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "headline": {
+        "text": "The richest counties outlive the poorest by {20 years.}"
+      },
+      "chip": "Life expectancy · American Inequality",
+      "source": "Global Health Data Exchange",
+      "say": [
+        "Rich counties outlive the poorest by up to 20 years."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "pineridge.jpg",
+      "query": "Pine Ridge Indian Reservation",
+      "blur": 5,
+      "dim": 0.45,
+      "zoom": [
+        1.05,
+        1.15
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 66.8,
+          "decimals": 1,
+          "label": "years, life expectancy in Oglala Lakota County",
+          "y": 0.36,
+          "at": 2.8
+        }
+      ],
+      "source": "Global Health Data Exchange",
+      "say": [
+        "In Oglala Lakota County, South Dakota, life expectancy is just 66.8 years, the lowest in America."
+      ]
+    },
+    {
+      "type": "article_card",
+      "chips": [
+        "THE GAP",
+        "THE MONEY",
+        "THE COST"
+      ],
+      "chips_at": 1.2,
+      "say": [
+        "Money has become an increasingly strong determinant of who will live longer."
+      ],
+      "show_cover": false
+    },
+    {
+      "type": "figure",
+      "media": "article_01.png",
+      "crop": [
+        0,
+        0.07,
+        1,
+        0.92
+      ],
+      "y": 0.42,
+      "zoom_to": [
+        0.52,
+        0.38,
+        0.95,
+        0.78
+      ],
+      "zoom_at": 1.4,
+      "zoom_dur": 2.2,
+      "source": "Global Health Data Exchange · American Inequality",
+      "say": [
+        "America now has its greatest gap in life expectancy across regions in 40 years."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Life expectancy",
+      "bars": [
+        {
+          "label": "Oglala Lakota",
+          "sublabel": "South Dakota",
+          "value": 66.8,
+          "decimals": 1,
+          "color": "navy",
+          "at": 0.6
+        },
+        {
+          "label": "Summit County",
+          "sublabel": "Colorado",
+          "value": 86.9,
+          "decimals": 1,
+          "color": "white",
+          "at": 2.0
+        }
+      ],
+      "annotation": {
+        "text": "+20 years",
+        "bar": 1,
+        "at": 3.0,
+        "color": "yellow"
+      },
+      "source": "Global Health Data Exchange · Census",
+      "say": [
+        "In Colorado's Summit County, people live to 86.9, and median income is more than 2.5 times higher than in Oglala Lakota."
+      ]
+    },
+    {
+      "type": "hbars",
+      "title": "Years the richest 1% outlive the poorest 1%",
+      "suffix": " yrs",
+      "decimals": 1,
+      "bars": [
+        {
+          "label": "Men",
+          "value": 14.6,
+          "color": "yellow",
+          "at": 1.4
+        },
+        {
+          "label": "Women",
+          "value": 10.1,
+          "color": "white",
+          "at": 3.4
+        }
+      ],
+      "max": 22,
+      "source": "Chetty et al., 1.4 billion tax records (1999–2014)",
+      "say": [
+        "Across 1.4 billion tax records, the richest 1% of men outlive the poorest 1% by 14.6 years, and for women it's 10.1."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Years of life gained by men, 2001–2014",
+      "bars": [
+        {
+          "label": "Richest 5%",
+          "value": 2.34,
+          "decimals": 2,
+          "color": "white",
+          "at": 1.2
+        },
+        {
+          "label": "Poorest 5%",
+          "value": 0.32,
+          "decimals": 2,
+          "color": "navy",
+          "at": 3.4
+        }
+      ],
+      "annotation": {
+        "text": "7x",
+        "bar": 0,
+        "at": 4.4,
+        "color": "yellow"
+      },
+      "source": "Chetty et al. (2016)",
+      "say": [
+        "From 2001 to 2014, the richest men gained 2.3 years of life while the poorest gained just a third of a year."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "kentucky.jpg",
+      "query": "Eastern Kentucky coal town",
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "dim": 0.45,
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "13 COUNTIES",
+          "y": 0.27,
+          "at": 1.0,
+          "angle": -2
+        },
+        {
+          "kind": "stamp",
+          "text": "8 IN KENTUCKY",
+          "y": 0.36,
+          "at": 3.2,
+          "angle": 2
+        }
+      ],
+      "source": "Global Health Data Exchange",
+      "say": [
+        "Since 1980, 13 counties have seen life expectancy fall, and 8 of them are in Kentucky."
+      ]
+    },
+    {
+      "type": "hbars",
+      "title": "Healthcare spending per person",
+      "prefix": "$",
+      "bars": [
+        {
+          "label": "United States",
+          "value": 10624,
+          "color": "yellow",
+          "at": 1.0
+        },
+        {
+          "label": "Canada",
+          "value": 4995,
+          "color": "white",
+          "at": 2.4
+        },
+        {
+          "label": "United Kingdom",
+          "value": 4315,
+          "color": "white",
+          "at": 2.9
+        },
+        {
+          "label": "Japan",
+          "value": 4267,
+          "color": "white",
+          "at": 3.4
+        }
+      ],
+      "max": 11500,
+      "source": "World Bank (2018) · American Inequality",
+      "say": [
+        "Healthcare in America costs $10,624 per person, more than double the UK, Japan, and Canada."
+      ]
+    },
+    {
+      "type": "news",
+      "kicker": "In the news",
+      "items": [
+        {
+          "media": "news_report.pdf",
+          "crop": [
+            0,
+            0.04,
+            1,
+            0.42
+          ],
+          "outlet": "Center on Capital & Social Equity",
+          "date": "Mar 27, 2026",
+          "at": 0.1
+        }
+      ],
+      "say": [
+        "If Americans cannot afford the cost of healthcare, they will die earlier without that care."
+      ]
+    },
+    {
+      "type": "statement",
+      "kicker": "What comes next",
+      "text": "Where you're born shouldn't {cost you 20 years.}",
+      "say": [
+        "We cannot allow some people to lose 20 years of their life just because they were born in one county and not another."
+      ]
+    },
+    {
+      "type": "outro",
+      "say": [
+        "You can read the full story on American Inequality."
+      ]
+    }
+  ],
+  "music": {
+    "title": "Inspired",
+    "file": "music.mp3",
+    "start_scene": 1,
+    "level_db": -21.0,
+    "feel": "Bright, Relaxed, Calming, Uplifting",
+    "credit": "Music: “Inspired” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  },
+  "music_credit": "Music: “Inspired” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+}

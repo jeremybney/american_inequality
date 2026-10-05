@@ -82,7 +82,8 @@ def cmd_new(a):
         art = substack.fetch(a.url, pdir)
     print(f"Project: {pdir}")
     print(f"  {art['title']} — {', '.join(art.get('authors', []))} ({art.get('date_label', '')})")
-    print(f"  {len(art.get('images', []))} inline images saved to media/")
+    saved = len(list((pdir / "media").glob("article_*")))
+    print(f"  {saved} of {len(art.get('images', []))} inline images saved to media/")
     print("Next: write storyboard.json (see storyboard_reference.md), then `stills`.")
 
 

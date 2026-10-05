@@ -42,6 +42,23 @@ def original_image_url(url):
     return urllib.parse.unquote(m.group(1)) if m else url
 
 
+def cdn_url(original, width=1456):
+    """Substack's image CDN copy of an original upload. Older posts keep their originals in a
+    legacy S3 bucket ("bucketeer-…") that now refuses direct downloads; the CDN still serves them."""
+    return ("https://substackcdn.com/image/fetch/"
+            f"w_{width},c_limit,f_png,q_auto:good,fl_progressive:steep/{urllib.parse.quote(original, safe='')}")
+
+
+def download_image(url, dest):
+    """The original upload, or the CDN copy when the original host refuses."""
+    try:
+        return M.download(url, dest)
+    except Exception:  # noqa: BLE001
+        if "substackcdn.com" in url:
+            raise
+        return M.download(cdn_url(url), dest)
+
+
 def inline_images(html):
     from bs4 import BeautifulSoup
     soup = BeautifulSoup(html or "", "html.parser")
@@ -101,7 +118,7 @@ def fetch(url, project_dir):
     # cover + inline images (charts from the article make great on-screen visuals)
     if article["cover_image"]:
         try:
-            M.download(article["cover_image"], media_dir / "cover.jpg")
+            download_image(article["cover_image"], media_dir / "cover.jpg")
             M.save_credit(media_dir, "cover.jpg", {"credit": f"Image: {article['publication']}",
                                                    "url": article["cover_image"]})
         except Exception as e:  # noqa: BLE001
@@ -111,7 +128,7 @@ def fetch(url, project_dir):
         ext = ext if ext in (".jpg", ".jpeg", ".png", ".webp", ".gif") else ".jpg"
         name = f"article_{i:02d}{ext}"
         try:
-            M.download(im["url"], media_dir / name)
+            download_image(im["url"], media_dir / name)
             M.save_credit(media_dir, name, {"credit": im["caption"][:120] or f"Chart: {article['publication']}",
                                             "url": im["url"]})
         except Exception as e:  # noqa: BLE001
