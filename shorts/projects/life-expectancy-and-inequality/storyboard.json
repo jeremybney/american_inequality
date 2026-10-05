@@ -38,7 +38,7 @@
       "chip": "Life expectancy · American Inequality",
       "source": "Global Health Data Exchange",
       "say": [
-        "Rich counties outlive the poorest by up to 20 years."
+        "Depending on where you are born, you may die 20 years younger than your peers."
       ]
     },
     {
@@ -67,6 +67,30 @@
       ]
     },
     {
+      "type": "figure",
+      "media": "article_01_white.png",
+      "crop": [
+        0,
+        0,
+        1,
+        0.94
+      ],
+      "y": 0.42,
+      "zoom_to": [
+        0.25,
+        0.28,
+        0.55,
+        0.55
+      ],
+      "zoom_at": 1.0,
+      "zoom_dur": 2.2,
+      "title": "Life expectancy: 86.9 in Summit County",
+      "source": "Global Health Data Exchange · American Inequality",
+      "say": [
+        "But in Summit County, Colorado, Americans live to 86.9 years, the highest in America."
+      ]
+    },
+    {
       "type": "article_card",
       "chips": [
         "THE GAP",
@@ -75,63 +99,34 @@
       ],
       "chips_at": 1.2,
       "say": [
-        "Money has become an increasingly strong determinant of who will live longer."
+        "This is the greatest gap in life expectancy across regions in the last 40 years."
       ],
       "show_cover": false
     },
     {
-      "type": "figure",
-      "media": "article_01.png",
-      "crop": [
-        0,
-        0.07,
-        1,
-        0.92
-      ],
-      "y": 0.42,
-      "zoom_to": [
-        0.52,
-        0.38,
-        0.95,
-        0.78
-      ],
-      "zoom_at": 1.4,
-      "zoom_dur": 2.2,
-      "source": "Global Health Data Exchange · American Inequality",
-      "say": [
-        "America now has its greatest gap in life expectancy across regions in 40 years."
-      ]
-    },
-    {
       "type": "vbars",
-      "title": "Life expectancy",
+      "title": "Median household income",
       "bars": [
         {
           "label": "Oglala Lakota",
           "sublabel": "South Dakota",
-          "value": 66.8,
-          "decimals": 1,
+          "value": 1,
+          "display": "$30,347",
           "color": "navy",
-          "at": 0.6
+          "at": 2.0
         },
         {
           "label": "Summit County",
           "sublabel": "Colorado",
-          "value": 86.9,
-          "decimals": 1,
+          "value": 2.5,
+          "display": "2.5x more",
           "color": "white",
-          "at": 2.0
+          "at": 3.2
         }
       ],
-      "annotation": {
-        "text": "+20 years",
-        "bar": 1,
-        "at": 3.0,
-        "color": "yellow"
-      },
-      "source": "Global Health Data Exchange · Census",
+      "source": "Census · American Inequality",
       "say": [
-        "In Colorado's Summit County, people live to 86.9, and median income is more than 2.5 times higher than in Oglala Lakota."
+        "Much of this has to do with wealth. Households in Summit earn 2.5 times more than in Oglala Lakota."
       ]
     },
     {
@@ -144,19 +139,19 @@
           "label": "Men",
           "value": 14.6,
           "color": "yellow",
-          "at": 1.4
+          "at": 3.6
         },
         {
           "label": "Women",
           "value": 10.1,
           "color": "white",
-          "at": 3.4
+          "at": 5.8
         }
       ],
       "max": 22,
       "source": "Chetty et al., 1.4 billion tax records (1999–2014)",
       "say": [
-        "Across 1.4 billion tax records, the richest 1% of men outlive the poorest 1% by 14.6 years, and for women it's 10.1."
+        "The more money you have, the longer you live. The richest 1% of men outlive the poorest 1% by 14.6 years, and for women it's 10.1."
       ]
     },
     {
@@ -168,25 +163,25 @@
           "value": 2.34,
           "decimals": 2,
           "color": "white",
-          "at": 1.2
+          "at": 4.6
         },
         {
           "label": "Poorest 5%",
           "value": 0.32,
           "decimals": 2,
           "color": "navy",
-          "at": 3.4
+          "at": 6.6
         }
       ],
       "annotation": {
         "text": "7x",
         "bar": 0,
-        "at": 4.4,
+        "at": 7.6,
         "color": "yellow"
       },
       "source": "Chetty et al. (2016)",
       "say": [
-        "From 2001 to 2014, the richest men gained 2.3 years of life while the poorest gained just a third of a year."
+        "Data from 1.4 billion tax records reveals a brutal divide. From 2001 to 2014, the richest men gained 2.3 years of life while the poorest gained just a third of a year."
       ]
     },
     {
@@ -203,20 +198,20 @@
           "kind": "stamp",
           "text": "13 COUNTIES",
           "y": 0.27,
-          "at": 1.0,
+          "at": 3.8,
           "angle": -2
         },
         {
           "kind": "stamp",
           "text": "8 IN KENTUCKY",
           "y": 0.36,
-          "at": 3.2,
+          "at": 6.0,
           "angle": 2
         }
       ],
       "source": "Global Health Data Exchange",
       "say": [
-        "Since 1980, 13 counties have seen life expectancy fall, and 8 of them are in Kentucky."
+        "Life expectancy collapse is largely concentrated in the South. Since 1980, 13 counties have seen life expectancy fall, and 8 of them are in Kentucky."
       ]
     },
     {
@@ -228,31 +223,31 @@
           "label": "United States",
           "value": 10624,
           "color": "yellow",
-          "at": 1.0
+          "at": 4.0
         },
         {
           "label": "Canada",
           "value": 4995,
           "color": "white",
-          "at": 2.4
+          "at": 5.4
         },
         {
           "label": "United Kingdom",
           "value": 4315,
           "color": "white",
-          "at": 2.9
+          "at": 5.9
         },
         {
           "label": "Japan",
           "value": 4267,
           "color": "white",
-          "at": 3.4
+          "at": 6.4
         }
       ],
       "max": 11500,
       "source": "World Bank (2018) · American Inequality",
       "say": [
-        "Healthcare in America costs $10,624 per person, more than double the UK, Japan, and Canada."
+        "With expensive healthcare in the US, it is hard to get ahead. Healthcare in America costs $10,624 per person, more than double that of the UK, Japan, or Canada."
       ]
     },
     {
@@ -273,7 +268,7 @@
         }
       ],
       "say": [
-        "If Americans cannot afford the cost of healthcare, they will die earlier without that care."
+        "If Americans cannot afford the cost of healthcare, they are destined to die earlier."
       ]
     },
     {
@@ -281,7 +276,7 @@
       "kicker": "What comes next",
       "text": "Where you're born shouldn't {cost you 20 years.}",
       "say": [
-        "We cannot allow some people to lose 20 years of their life just because they were born in one county and not another."
+        "We cannot allow some people to lose 20 years of their life just because they were unlucky enough to born in one county and not another."
       ]
     },
     {
