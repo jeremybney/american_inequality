@@ -65,7 +65,8 @@ When the user says "apply my script edits":
    article (wrong year range, rounding), or a visual that now contradicts its line. Fix only
    the visuals, render stills or a single `frame` to show the change, and wait for their call
    on the wording. Full renders cost the author time and tokens.
-3. Keep the user's wording exactly. Run `script <slug>`. If the edit breaks a house rule (over
+3. Keep the user's wording exactly, except plain typos (a missing or doubled word, a
+   misspelling): fix those silently and mention the fix in the reply. Run `script <slug>`. If the edit breaks a house rule (over
    75s, a colon), don't silently rewrite their line. Say which rule, and propose a trim to a
    different line or ask. Retime visuals (`at` values) so they still land on the edited words.
 4. Re-render, push the new `queue_payload.json` with `status: "ready"` and `script_edits: []`,
@@ -266,6 +267,31 @@ Write the narration first, as one paragraph, then split it into scenes. The orde
 6. What comes next, from the article.
 7. What would help, in the author's own terms, then the outro line
    ("You can read the full story on American Inequality.").
+
+### The narrative arc (one 90-second story, not a list of stats)
+The author's recurring note: clips can feel like standalone stats. The video has to read as
+one argument that pulls the viewer forward.
+- **Open a question in the first seconds and answer it by the end.** The hook states the
+  most striking fact so it raises a "why" or "how" in the viewer's head (a 20-year gap in
+  life expectancy, insurance rising twice as fast as rent). The middle answers it step by
+  step, and the close names what would change it. Before writing, state in one sentence
+  what the hook makes the viewer want to know and which scene answers it.
+- **Link every scene to the one before with a short opening clause** that says how the new
+  fact relates to the last: its cause, a contrast or exception, a zoom from the national
+  picture into a place or group, a consequence, or a turn toward what's next. Write these
+  fresh for each video from its own logic; never reuse a fixed list of stock phrases, and
+  vary them so no two scenes open the same way. The fact still comes in the same sentence or
+  the next, so every scene stands on its own if someone joins mid-video.
+- **Escalate.** Order beats so each one raises the stakes: the big contrast, why it
+  happens, who it hits hardest, the most surprising detail, then what would fix it. Put the
+  most gripping fact the article has in the first two shots, and save a strong second one for
+  just past the halfway point to hold viewers who are deciding whether to keep watching.
+- **Read it aloud as one paragraph.** If a sentence could be moved anywhere without anything
+  breaking, it isn't connected yet.
+
+These linking clauses are explanation, not drama, so they live alongside the voice rules
+below: a clause that says why or how is welcome; a rhetorical question or a "here's the
+catch" reveal still isn't.
 
 Example in the right voice (from the generational wealth video):
 > Baby Boomers own about half of all the wealth in America. Millennials, on the other hand,
