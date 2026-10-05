@@ -11,6 +11,7 @@ Workflow (see README.md):
 """
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -368,6 +369,9 @@ def cmd_render(a):
                         "-preset", "slow", "-crf", "24", "-maxrate", "2.4M", "-bufsize", "4.8M",
                         "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-c:a", "copy", str(share)], check=True)
         print(f"      {share}  (smaller copy for sending)")
+    if not a.start and a.end is None and not a.no_captions:
+        phone = make_phone_copy(video, tl.duration)
+        print(f"      {phone}  (phone copy for the Shorts Queue, {phone.stat().st_size / 1e6:.1f} MB)")
     export.write_script(tl, out_dir / "script.md")
     export.write_srt(tl, out_dir / "captions.srt")
     export.write_credits(tl, out_dir / "credits.md")
@@ -377,6 +381,38 @@ def cmd_render(a):
     print(f"      {out_dir / 'script.md'}")
     if tl.ctx.warnings:
         print("Warnings:\n  " + "\n  ".join(tl.ctx.warnings))
+
+
+PHONE_MAX_BYTES = 14_000_000  # the Shorts Queue's file store takes up to 15 MB per video
+
+
+def make_phone_copy(video, duration):
+    """<slug>_phone.mp4: the same 1080x1920 video re-encoded (two-pass H.264) to fit the Shorts
+    Queue's file store, so the final cut can be saved to a phone from the queue page."""
+    import subprocess
+    import tempfile
+    video = Path(video)
+    out = video.with_name(video.stem + "_phone.mp4")
+    audio_k = 128
+    total_k = PHONE_MAX_BYTES * 8 / 1000 / max(duration, 1.0) * 0.96  # 4% for the container
+    video_k = int(min(4000, total_k - audio_k))
+    ff = media.ffmpeg_exe()
+    with tempfile.TemporaryDirectory() as tmp:
+        log = str(Path(tmp) / "pass")
+        common = ["-c:v", "libx264", "-preset", "slow", "-b:v", f"{video_k}k", "-pix_fmt", "yuv420p", "-passlogfile", log]
+        subprocess.run([ff, "-loglevel", "error", "-y", "-i", str(video), *common, "-pass", "1", "-an", "-f", "mp4",
+                        os.devnull], check=True)
+        subprocess.run([ff, "-loglevel", "error", "-y", "-i", str(video), *common, "-pass", "2",
+                        "-c:a", "aac", "-b:a", f"{audio_k}k", "-movflags", "+faststart", str(out)], check=True)
+    return out
+
+
+def cmd_phone(a):
+    pdir = project(a.slug)
+    video = pdir / "output" / f"{a.slug}.mp4"
+    from aiq_shorts import voice
+    out = make_phone_copy(video, voice.duration(video))
+    print(f"{out}  ({out.stat().st_size / 1e6:.1f} MB)")
 
 
 def cmd_apply_edits(a):
@@ -407,6 +443,9 @@ def cmd_script(a):
     out_dir.mkdir(exist_ok=True)
     tl = engine.Timeline(pdir)
     checks.report(tl)
+    if not a.start and a.end is None and not a.no_captions:
+        phone = make_phone_copy(video, tl.duration)
+        print(f"      {phone}  (phone copy for the Shorts Queue, {phone.stat().st_size / 1e6:.1f} MB)")
     export.write_script(tl, out_dir / "script.md")
     export.write_srt(tl, out_dir / "captions.srt")
     export.write_post(tl, out_dir / "tiktok_post.txt")
@@ -540,6 +579,10 @@ def main():
     p.add_argument("--start", type=float, default=0.0)
     p.add_argument("--end", type=float)
     p.set_defaults(fn=cmd_render)
+
+    p = sub.add_parser("phone", help="re-make the phone copy (<slug>_phone.mp4, under 14 MB) of the last render")
+    p.add_argument("slug")
+    p.set_defaults(fn=cmd_phone)
 
     a = ap.parse_args()
     a.fn(a)

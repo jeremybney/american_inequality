@@ -72,6 +72,24 @@ When the user says "apply my script edits":
 4. Re-render, push the new `queue_payload.json` with `status: "ready"` and `script_edits: []`,
    and send the new MP4.
 
+### Ready to save (the final cut on the author's phone)
+The author saves videos to their phone from the **Ready to save** section at the top of the
+Shorts Queue, not from chat. **After every full render** (new video, edits, voice sync, music
+change), put that render there:
+1. `render` also writes `output/<slug>_phone.mp4` (1080x1920, two-pass, under 14 MB, which
+   is what the page's file store takes). `make_short.py phone <slug>` re-makes it on its own.
+2. Upload it: Artifact `action: "publish"`, the queue URL, `asset: true`, `file_path` (or
+   `file_paths` for several videos in one call).
+3. Write `final_video` on the item (pinned with `if_version`): `{asset_id, url: "/_blob/<id>",
+   voiced: <storyboard has a voiceover>, rendered_at: <ISO time>, runtime, size,
+   filename: "<slug>.mp4"}`. The page shows it as **Final · your voice** when `voiced`, otherwise
+   **Draft · no voice yet**, newest render first, with a player, Save to phone (the native
+   share sheet, then Save Video) and Open video.
+4. Then delete the item's previous `final_video` asset (Artifact `action: "delete"`, the queue
+   URL, `path: <old asset_id>`), so only one cut per video exists to choose from.
+Partial renders (`--start/--end`) and `--no-captions` renders don't count and don't make a
+phone copy.
+
 ## Voiceovers (the author's real voice, never a synthetic one)
 The author records themselves reading the script: a voice memo, read from the page's
 Teleprompter, then uploaded on the Shorts Queue page. The page stores it as base64 text (the
