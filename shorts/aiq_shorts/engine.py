@@ -137,6 +137,16 @@ class Timeline:
             self.cues[-1]["end"] = self.spans[self.cues[-1]["scene"]][1]
         self.duration = t
         self._cap_cache = {}
+        # the author on camera (their recording with the background removed), if set up
+        self.presenter = None
+        ps = self.storyboard.get("presenter")
+        if ps and not ps.get("off"):
+            from . import presenter as PR
+            fdir = self.ctx.cache_dir / "presenter"
+            if (fdir / "meta.json").exists():
+                self.presenter = PR.Presenter(fdir, ps)
+            elif not quiet:
+                self.ctx.warn("presenter is set but not matted yet; run `presenter <slug> <video>`")
 
     def _voice_timing(self, specs):
         """Scene spans and caption cues from a synced voiceover, if one matches this script."""
@@ -186,7 +196,13 @@ class Timeline:
             prev = self.scenes[i - 1]
             prev_img = prev.render(prev.dur + local)
             img = Image.blend(prev_img, img, G.ease_in_out(local / fade))
-        self.overlay(img, t, i)
+        on_camera = False
+        if self.presenter:  # between the scene and the captions, so captions are always on top
+            lay = self.presenter.layer(t, self.storyboard["scenes"][i], loop=self.presenter.spec.get("loop", False))
+            if lay:
+                img.paste(lay[0], lay[1], lay[0])
+                on_camera = True
+        self.overlay(img, t, i, on_camera)
         return img
 
     def caption_layer(self, text, dark):
@@ -203,9 +219,9 @@ class Timeline:
                 shadow=T.INK, shadow_alpha=0.9 if dark else 0.45, blur=12 if dark else 8)
         return self._cap_cache[key]
 
-    def overlay(self, img, t, i):
+    def overlay(self, img, t, i, on_camera=False):
         scene = self.scenes[i]
-        dark = scene.dark
+        dark = scene.dark or on_camera  # the heavier shadow keeps captions readable over the person
         d = ImageDraw.Draw(img, "RGBA")
         cap_bottom = 0
         if self.captions:
