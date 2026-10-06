@@ -1,0 +1,578 @@
+{
+  "title": "The Great Generational Wealth Divide — TikTok",
+  "wpm": 175,
+  "today": "2026-09-30",
+  "article": {
+    "section": "The Dividing Line"
+  },
+  "notes": [
+    "Story follows the article's own arc and wording: wealth vs debt → Boomers molded America → the boom → schools → Congress → the rules they wrote → housing → debt → the $84T transfer → the opportunity.",
+    "All figures are from the article (Mar 18, 2026). Where the article names a source it's shown on screen; otherwise the article itself is credited.",
+    "Photos: Wikimedia Commons. Clips: Pixabay. Credits print on screen and are listed in credits.md."
+  ],
+  "post": {
+    "headline": "How Boomers ended up with half of America's wealth",
+    "caption": "Boomers own almost half of all wealth in America, while Millennials own almost half of all debt. It started with 76 million babies, a country built around them, and a Congress that aged right along with them. Now $84 trillion is being passed down through 2045.",
+    "cta": "Full story and interactive charts at the link in bio.",
+    "hashtags": [
+      "inequality",
+      "wealthgap",
+      "boomers",
+      "millennials",
+      "genz",
+      "housing",
+      "congress",
+      "economics"
+    ]
+  },
+  "scenes": [
+    {
+      "type": "video",
+      "media": "hook_clip.mp4",
+      "query": "suburban neighborhood aerial",
+      "dim": 0.3,
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "headline": {
+        "text": "Boomers own half of America's wealth.",
+        "highlight": "Millennials own its debt."
+      },
+      "chip": "Generational wealth · American Inequality",
+      "say": [
+        "Almost half of all wealth in America is owned by Boomers,"
+      ]
+    },
+    {
+      "type": "video",
+      "media": "young_clip.mp4",
+      "query": "young people city street walking",
+      "blur": 0,
+      "dim": 0.35,
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "HALF THE DEBT",
+          "y": 0.34,
+          "at": 0.3,
+          "angle": -3
+        }
+      ],
+      "source": "Federal Reserve",
+      "say": [
+        "while half of all debt is owned by Millennials."
+      ]
+    },
+    {
+      "type": "article_card",
+      "chips": [
+        "THE BOOM",
+        "THE POWER",
+        "THE HOUSES",
+        "THE HANDOFF"
+      ],
+      "chips_at": 1.0,
+      "say": [
+        "Boomers have spent the last half-century molding America in their image."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "boom.jpg",
+      "query": "Children of the United States in the 1950s",
+      "focus": [
+        0.3,
+        0.5
+      ],
+      "blur": 7,
+      "dim": 0.4,
+      "zoom": [
+        1.05,
+        1.15
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 76,
+          "suffix": "M",
+          "label": "babies born, 1946–1964",
+          "y": 0.36,
+          "at": 0.6
+        }
+      ],
+      "source": "NCHS",
+      "say": [
+        "Between 1946 and 1964, about seventy-six million babies were born in America."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "la.jpg",
+      "query": "Aerial photographs of Los Angeles",
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "pan": [
+        [
+          0.5,
+          0.55
+        ],
+        [
+          0.5,
+          0.45
+        ]
+      ],
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "1 NEW SCHOOL / WEEK",
+          "y": 0.34,
+          "at": 0.3,
+          "angle": -3
+        }
+      ],
+      "say": [
+        "California was building one school a week in the fifties to keep up with that tremendous growth."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "capitol.jpg",
+      "query": "United States Capitol",
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "1976",
+          "y": 0.3,
+          "at": 0.5,
+          "size": 80
+        }
+      ],
+      "say": [
+        "In 1976, Boomers were old enough to run for Congress. They took over D.C. and never left."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_05.gif",
+      "frames": [
+        0,
+        40
+      ],
+      "play_at": 0.3,
+      "y": 0.43,
+      "source": "Generation Distribution of Congress · American Inequality",
+      "say": [
+        "By 2013 they held 60% of Congress while making up only a quarter of the population."
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "The rules they wrote",
+      "items": [
+        {
+          "text": "Limits on new housing",
+          "at": 1.4
+        },
+        {
+          "text": "Taxes that favor existing wealth",
+          "at": 3.6
+        },
+        {
+          "text": "Harder for young people",
+          "at": 6.2
+        }
+      ],
+      "source": "The Great Generational Wealth Divide · American Inequality",
+      "say": [
+        "Those lawmakers placed limits on new housing and created tax rules that favored existing wealth, making it hard for young generations to get ahead."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "bighome.jpg",
+      "query": "McMansions",
+      "blur": 6,
+      "dim": 0.4,
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 41,
+          "suffix": "%",
+          "label": "of all U.S. real estate wealth is owned by Boomers",
+          "y": 0.36,
+          "at": 0.8
+        }
+      ],
+      "source": "Federal Reserve",
+      "say": [
+        "Today Boomers own 41% of all real estate wealth, often in multi-bedroom homes that are underutilized."
+      ]
+    },
+    {
+      "type": "video",
+      "media": "build_clip.mp4",
+      "query": "construction new homes subdivision",
+      "dim": 0.4,
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "3+ BEDROOMS",
+          "y": 0.28,
+          "at": 0.6,
+          "angle": -3
+        },
+        {
+          "kind": "tag",
+          "text": "Empty-nester Boomers",
+          "y": 0.37,
+          "at": 1.8
+        },
+        {
+          "kind": "tag",
+          "text": "outnumber Millennials with kids",
+          "y": 0.42,
+          "at": 3.2,
+          "background": "navy"
+        }
+      ],
+      "source": "The Great Generational Wealth Divide · American Inequality",
+      "say": [
+        "More empty-nester boomers own homes with 3 or more bedrooms than Millennials with children."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Share of all U.S. debt",
+      "bars": [
+        {
+          "label": "Millennials",
+          "value": 41,
+          "suffix": "%",
+          "color": "white",
+          "at": 1.6
+        },
+        {
+          "label": "Boomers",
+          "value": 22,
+          "suffix": "%",
+          "color": "navy",
+          "at": 2.4
+        }
+      ],
+      "annotation": {
+        "text": "almost 2x",
+        "bar": 0,
+        "at": 3.0,
+        "color": "yellow"
+      },
+      "source": "Federal Reserve",
+      "say": [
+        "Millennials don't just own less, they also have more debt."
+      ]
+    },
+    {
+      "type": "big_number",
+      "kicker": "since 1989",
+      "stats": [
+        {
+          "value": 9,
+          "suffix": "x",
+          "label": "what college costs now",
+          "at": 1.2,
+          "count": 1.0
+        }
+      ],
+      "source": "The Great Generational Wealth Divide · American Inequality",
+      "say": [
+        "Education costs have increased 9x since 1989."
+      ]
+    },
+    {
+      "type": "big_number",
+      "kicker": "the great wealth transfer",
+      "stats": [
+        {
+          "value": 84,
+          "prefix": "$",
+          "suffix": "T",
+          "label": "passing from Boomers to their children",
+          "at": 2.4,
+          "count": 1.2
+        }
+      ],
+      "source": "The Great Generational Wealth Divide · American Inequality",
+      "say": [
+        "Now the great generational wealth transfer is passing $84 trillion from Boomers to wealthy children over the next few decades."
+      ]
+    },
+    {
+      "type": "news",
+      "kicker": "In the news",
+      "items": [
+        {
+          "media": "news_inheritance.png",
+          "outlet": "The Washington Post",
+          "date": "Jul 8, 2026",
+          "highlight": [
+            0.023,
+            0.155,
+            0.977,
+            0.383
+          ],
+          "at": 0.1
+        }
+      ],
+      "say": [
+        "But that wealth is concentrated too."
+      ]
+    },
+    {
+      "type": "waffle",
+      "title": "Every $100 of Boomer wealth",
+      "groups": [
+        {
+          "label": "Top 10% of Boomers",
+          "count": 71,
+          "color": "navy"
+        },
+        {
+          "label": "Everyone else",
+          "count": 29,
+          "color": "white"
+        }
+      ],
+      "fill_at": 0.4,
+      "fill": 1.8,
+      "big": {
+        "value": 71,
+        "prefix": "$",
+        "label": "to the top 10%",
+        "color": "yellow",
+        "at": 2.2
+      },
+      "source": "The Great Generational Wealth Divide · American Inequality (2022)",
+      "say": [
+        "The top 10% of Boomers hold 71% of their generation's wealth."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "news_presser.webp",
+      "dim": 0.45,
+      "blur": 3,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "MORE HOUSING",
+          "y": 0.26,
+          "at": 1.6,
+          "angle": -2,
+          "size": 54
+        },
+        {
+          "kind": "stamp",
+          "text": "AFFORDABLE EDUCATION",
+          "y": 0.34,
+          "at": 2.6,
+          "angle": 2,
+          "size": 54
+        },
+        {
+          "kind": "stamp",
+          "text": "HIGHER WAGES",
+          "y": 0.42,
+          "at": 3.4,
+          "angle": -2,
+          "size": 54
+        }
+      ],
+      "say": [
+        "This is an opportunity to build an America with more housing, affordable education, and higher wages."
+      ]
+    },
+    {
+      "type": "outro",
+      "say": [
+        "You can read the full story on American Inequality."
+      ]
+    }
+  ],
+  "hold": 0.25,
+  "voiceover": {
+    "file": "voiceover.m4a",
+    "clean": "voiceover_clean.wav",
+    "duration": 81.39,
+    "mix": "voiceover_studio.wav",
+    "studio": [
+      "room echo + noise removed (DeepFilterNet 3)",
+      "60-150 Hz +1.2 dB",
+      "150-300 Hz -1.5 dB",
+      "300-600 Hz -3.6 dB"
+    ],
+    "cues": [
+      {
+        "scene": 0,
+        "line": 0,
+        "text": "Almost half of all wealth in America is owned by Boomers,",
+        "start": 0.0,
+        "end": 2.68,
+        "matched": 1.0
+      },
+      {
+        "scene": 1,
+        "line": 0,
+        "text": "while half of all debt is owned by Millennials.",
+        "start": 3.18,
+        "end": 4.84,
+        "matched": 1.0
+      },
+      {
+        "scene": 2,
+        "line": 0,
+        "text": "Boomers have spent the last half-century molding America in their image.",
+        "start": 5.38,
+        "end": 8.45,
+        "matched": 1.0
+      },
+      {
+        "scene": 3,
+        "line": 0,
+        "text": "Between 1946 and 1964, about seventy-six million babies were born in America.",
+        "start": 8.95,
+        "end": 14.48,
+        "matched": 1.0
+      },
+      {
+        "scene": 4,
+        "line": 0,
+        "text": "California was building one school a week in the fifties to keep up with that tremendous growth.",
+        "start": 14.98,
+        "end": 19.01,
+        "matched": 1.0
+      },
+      {
+        "scene": 5,
+        "line": 0,
+        "text": "In 1976, Boomers were old enough to run for Congress. They took over D.C. and never left.",
+        "start": 19.51,
+        "end": 25.18,
+        "matched": 1.0
+      },
+      {
+        "scene": 6,
+        "line": 0,
+        "text": "By 2013 they held 60% of Congress while making up only a quarter of the population.",
+        "start": 25.68,
+        "end": 31.36,
+        "matched": 0.94
+      },
+      {
+        "scene": 7,
+        "line": 0,
+        "text": "Those lawmakers placed limits on new housing and created tax rules that favored existing wealth, making it hard for young generations to get ahead.",
+        "start": 31.88,
+        "end": 39.48,
+        "matched": 1.0
+      },
+      {
+        "scene": 8,
+        "line": 0,
+        "text": "Today Boomers own 41% of all real estate wealth, often in multi-bedroom homes that are underutilized.",
+        "start": 39.98,
+        "end": 46.36,
+        "matched": 0.95
+      },
+      {
+        "scene": 9,
+        "line": 0,
+        "text": "More empty-nester boomers own homes with 3 or more bedrooms than Millennials with children.",
+        "start": 46.86,
+        "end": 51.49,
+        "matched": 0.93
+      },
+      {
+        "scene": 10,
+        "line": 0,
+        "text": "Millennials don't just own less, they also have more debt.",
+        "start": 51.99,
+        "end": 54.27,
+        "matched": 1.0
+      },
+      {
+        "scene": 11,
+        "line": 0,
+        "text": "Education costs have increased 9x since 1989.",
+        "start": 54.77,
+        "end": 58.3,
+        "matched": 0.9
+      },
+      {
+        "scene": 12,
+        "line": 0,
+        "text": "Now the great generational wealth transfer is passing $84 trillion from Boomers to wealthy children over the next few decades.",
+        "start": 58.93,
+        "end": 65.89,
+        "matched": 1.0
+      },
+      {
+        "scene": 13,
+        "line": 0,
+        "text": "But that wealth is concentrated too.",
+        "start": 66.39,
+        "end": 67.81,
+        "matched": 1.0
+      },
+      {
+        "scene": 14,
+        "line": 0,
+        "text": "The top 10% of Boomers hold 71% of their generation's wealth.",
+        "start": 68.31,
+        "end": 72.41,
+        "matched": 0.87
+      },
+      {
+        "scene": 15,
+        "line": 0,
+        "text": "This is an opportunity to build an America with more housing, affordable education, and higher wages.",
+        "start": 72.91,
+        "end": 77.88,
+        "matched": 1.0
+      },
+      {
+        "scene": 16,
+        "line": 0,
+        "text": "You can read the full story on American Inequality.",
+        "start": 78.38,
+        "end": 80.47,
+        "matched": 1.0
+      }
+    ],
+    "transcript": "Almost half of all wealth in America is owned by Boomers, while half of all debt is owned by Millennials. Boomers have spent the last half -century molding America in their image. Between 1946 and 1964, about seventy -six million babies were born in America. California was building one school a week in the fifties to keep up with that tremendous growth. In 1976, Boomers were old enough to run for Congress. They took over D .C. and never left. By 2013, they held 60 % of all wealth in America. They held 60 % of all wealth in America. 50 % of Congress while making up only a quarter of the population. Those lawmakers placed limits on new housing and created tax rules that favored existing wealth, making it hard for young generations to get ahead. Today, boomers own 41 % of all real estate wealth, often in multi -bedroom homes that are underutilized. More empty -nestra boomers own homes with three or more bedrooms than millennials with children. Millennials don't just own less, they also have more debt. education costs have increased nine times since 1989. Now, the great generational wealth transfer is passing 84 trillion dollars from boomers to wealthy children over the next few decades. But that wealth is concentrated too. The top 10 % of boomers hold 71 % of their generation's wealth. This is an opportunity to build an America with more housing, affordable education, and higher wages. You can read the full story on American inequality.",
+    "pauses_trimmed_s": 6.41,
+    "max_gap": 0.5
+  },
+  "music": {
+    "title": "Twisting",
+    "file": "music.mp3",
+    "start_scene": 1,
+    "level_db": -27,
+    "feel": "Grooving, Driving, Mysterious",
+    "credit": "Music: “Twisting” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  },
+  "music_credit": "Music: “Twisting” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+}

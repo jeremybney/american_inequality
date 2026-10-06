@@ -1,0 +1,63 @@
+{
+  "cover.jpg": {
+    "credit": "Image: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/997706fb-bf96-462f-be69-e682415ae312_1240x1132.png"
+  },
+  "article_01.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/997706fb-bf96-462f-be69-e682415ae312_1240x1132.png"
+  },
+  "article_02.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/64099894-d10e-4e40-a874-b01aa92c7816_1240x1128.png"
+  },
+  "article_03.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/e6df5682-ac66-4a58-9ae4-aa0aa20d2c59_1600x1088.png"
+  },
+  "article_04.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/377a41de-a61a-40f6-9200-992a17a1fead_1600x449.png"
+  },
+  "article_05.png": {
+    "credit": "Source",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/c3460fe6-16d0-4d6f-9531-806902532620_1330x1024.png"
+  },
+  "news_time.png": {
+    "credit": "Screenshot: TIME",
+    "url": "https://time.com/article/2026/08/20/americans-drinking-less-gallup-poll/",
+    "headline": "Americans Are (Still) Drinking Less than Ever Before"
+  },
+  "hook_clip.mp4": {
+    "credit": "Video: TPMotion (Pixabay)",
+    "url": "https://pixabay.com/videos/id-79912/"
+  },
+  "ambulance_clip.mp4": {
+    "credit": "Video: Thomas-Ritter (Pixabay)",
+    "url": "https://pixabay.com/videos/id-7012/"
+  },
+  "utah.jpg": {
+    "credit": "Photo: An Errant Knight, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Northeast_at_University_Pkwy_%26_S_Main_Street_in_Orem,_Mar_15.jpg"
+  },
+  "wisconsin.jpg": {
+    "credit": "Photo: Royalbroil, CC BY-SA 3.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:MainStreetHistoricDistrictWaupacaWisconsinYellowstoneTrail1.jpg"
+  },
+  "vegas.jpg": {
+    "credit": "Photo: Cl\u00e9ment Bardot, CC BY-SA 3.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Las_Vegas_Strip_at_night,_2012.jpg"
+  },
+  "liquor.jpg": {
+    "credit": "Photo: User:O'Dea, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Rum_display_in_liquor_store.jpg"
+  },
+  "baltimore.jpg": {
+    "credit": "Photo: Baltimore Heritage from Baltimore, MD, USA, CC0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Rowhouses,_Pennsylvania_Avenue,_Baltimore,_MD_(23836760464).jpg"
+  },
+  "road_clip.mp4": {
+    "credit": "Video: thenickmurphy (Pixabay)",
+    "url": "https://pixabay.com/videos/id-35277/"
+  }
+}

@@ -1,0 +1,578 @@
+{
+  "audience": "everyone",
+  "audience_before_archived": null,
+  "canonical_url": "https://americaninequality.substack.com/p/the-stealth-tax-destroying-housing",
+  "default_comment_sort": null,
+  "editor_v2": false,
+  "exempt_from_archive_paywall": false,
+  "free_unlock_required": false,
+  "id": 214011077,
+  "podcast_art_url": null,
+  "podcast_duration": null,
+  "podcast_preview_upload_id": null,
+  "podcast_upload_id": null,
+  "podcast_url": null,
+  "post_date": "2026-09-09T13:45:42.533Z",
+  "updated_at": "2026-09-09T13:45:43.247Z",
+  "publication_id": 267573,
+  "search_engine_description": null,
+  "search_engine_title": null,
+  "section_id": null,
+  "should_send_free_preview": false,
+  "show_guest_bios": true,
+  "slug": "the-stealth-tax-destroying-housing",
+  "social_title": "The Stealth Tax Destroying Housing Affordability",
+  "subtitle": "How insurance premiums and property taxes are draining households budgets",
+  "teaser_post_eligible": true,
+  "title": "The Stealth Tax Destroying Housing Affordability",
+  "type": "newsletter",
+  "video_upload_id": null,
+  "write_comment_permissions": "everyone",
+  "meter_type": "none",
+  "live_stream_id": null,
+  "is_published": true,
+  "restacks": 22,
+  "reactions": {
+    "\u2764": 86
+  },
+  "top_exclusions": [],
+  "pins": [],
+  "section_pins": [],
+  "has_shareable_clips": false,
+  "previous_post_slug": "charts-that-explain-the-world-no3",
+  "next_post_slug": "charts-that-explain-the-world-no4",
+  "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/d321a2f9-d590-422a-aee1-ed04175e0041_1200x630.jpeg",
+  "cover_image_is_square": false,
+  "cover_image_is_explicit": false,
+  "videoUpload": null,
+  "podcastFields": {
+    "post_id": 214011077,
+    "podcast_episode_number": null,
+    "podcast_season_number": null,
+    "podcast_episode_type": null,
+    "should_syndicate_to_other_feed": true,
+    "syndicate_to_section_id": null,
+    "hide_from_feed": false,
+    "free_podcast_url": null,
+    "free_podcast_duration": null,
+    "preview_contains_ad": false,
+    "was_imported_self_serve_sync": false,
+    "draft_free_podcast_url": null,
+    "draft_free_podcast_duration": null
+  },
+  "podcastUpload": null,
+  "podcastPreviewUpload": null,
+  "voiceover_upload_id": "30d63514-50c5-4d9c-9250-ba4a8c25b585",
+  "voiceoverUpload": {
+    "id": "30d63514-50c5-4d9c-9250-ba4a8c25b585",
+    "name": "The_Stealth_Tax_Destroying_Housing_Affordability.m4a",
+    "created_at": "2026-09-07T15:54:55.450Z",
+    "uploaded_at": "2026-09-07T15:55:12.456Z",
+    "publication_id": 267573,
+    "state": "transcoded",
+    "post_id": 214011077,
+    "user_id": 11624125,
+    "duration": 1134.2367,
+    "height": null,
+    "width": null,
+    "thumbnail_id": 1,
+    "preview_start": null,
+    "preview_duration": null,
+    "media_type": "audio",
+    "primary_file_size": 13611292,
+    "is_mux": false,
+    "mux_asset_id": null,
+    "mux_playback_id": null,
+    "mux_preview_asset_id": null,
+    "mux_preview_playback_id": null,
+    "mux_rendition_quality": null,
+    "mux_preview_rendition_quality": null,
+    "explicit": false,
+    "copyright_infringement": null,
+    "src_media_upload_id": null,
+    "live_stream_id": null
+  },
+  "has_voiceover": true,
+  "description": "How insurance premiums and property taxes are draining households budgets",
+  "body_html": "<p><span>The American housing crisis is buckling under a new weight. As soaring rents grab headlines, insurance premiums and property taxes have been slowly rising to astronomical heights, making housing affordability all but impossible. Insurers blame climate risks for heightened costs, yet new disclosures show these companies are retaining a record share of margins rather than paying out claims.</span></p><p><span>Core housing rent inflation increased </span><a href=\"https://fred.stlouisfed.org/series/CUSR0000SEHA\"><span>30%</span></a><span> from 2018 to 2024, adding significant stress to families across the country. But </span><a href=\"https://www.youtube.com/watch?v=cr9TQI1mCk8\"><span>new reports</span></a><span> show insurance premiums rose 71%  over that period, climbing more than twice as fast and contributing thousands of dollars in annual costs. Home insurance now makes up more than </span><a href=\"https://youtu.be/cr9TQI1mCk8?si=htFLZkL-z_SGHSlH&amp;t=138\"><span>10% </span></a><span> of the cost of a monthly mortgage, up from 5% twenty years ago. Those costs are typically passed from landlords onto renters.</span></p><div class=\"subscription-widget-wrap-editor\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe&quot;,&quot;language&quot;:&quot;en&quot;}\" data-component-name=\"SubscribeWidgetToDOM\"><div class=\"subscription-widget show-subscribe\"><div class=\"preamble\"><p class=\"cta-caption\">I\u2019m very glad you\u2019re here! We\u2019ve built a stellar community and it would be great to send you some more updates about our ongoing work. </p></div><form class=\"subscription-widget-subscribe\"><input type=\"email\" class=\"email-input\" name=\"email\" placeholder=\"Type your email\u2026\" tabindex=\"-1\"><input type=\"submit\" class=\"button primary\" value=\"Subscribe\"><div class=\"fake-input-wrapper\"><div class=\"fake-input\"></div><div class=\"fake-button\"></div></div></form></div></div><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!QPIW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!QPIW!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp 424w, https://substackcdn.com/image/fetch/$s_!QPIW!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp 848w, https://substackcdn.com/image/fetch/$s_!QPIW!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp 1272w, https://substackcdn.com/image/fetch/$s_!QPIW!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!QPIW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp\" width=\"1240\" height=\"1026\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1026,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:121756,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/webp&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/214011077?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!QPIW!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp 424w, https://substackcdn.com/image/fetch/$s_!QPIW!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp 848w, https://substackcdn.com/image/fetch/$s_!QPIW!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp 1272w, https://substackcdn.com/image/fetch/$s_!QPIW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3bdcb7f7-3251-4e56-b40b-45a161a18264_1240x1026.webp 1456w\" sizes=\"100vw\" fetchpriority=\"high\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p><span>Insurance premiums aren\u2019t the only hidden overhead driving up non-negotiable costs. Property tax bills are now </span><a href=\"https://taxfoundation.org/data/all/state/property-taxes-by-state-county/\"><span>rising far faster than inflation</span></a><span>, costing the average American an extra $4,500 per year. To combat these costs, </span><a href=\"https://www.wsj.com/politics/policy/red-states-are-racing-to-roll-back-property-taxes-bc0d6ea8\"><span>four states</span></a><span> have ballot initiatives this November to limit or rollback property tax expenses, adding to a group of 10 states that issued changes since last year.</span></p><p><span>Nowhere is this crisis clearer than in New York City. A recent municipal </span><a href=\"https://www.nyc.gov/mayors-office/news/2026/06/mamdani-administration-takes-on-skyrocketing-insurance-costs-wit\"><span>proposal</span></a><span> from the Mayor and the New York City Economic Development Corporation revealed a startling relationship \u2014  every $100 increase in property insurance costs requires an additional $1,200 in city capital subsidies to keep public housing units affordable. In effect, the cost of covering the higher insurance prices results in a smaller pool of long-term capital available to the city. \u201cWe cannot take on the housing crisis </span> without confronting one of the fastest-growing costs facing New Yorkers: insurance,\u201d said Mayor Zohran Mamdani.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!rxBW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!rxBW!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png 424w, https://substackcdn.com/image/fetch/$s_!rxBW!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png 848w, https://substackcdn.com/image/fetch/$s_!rxBW!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png 1272w, https://substackcdn.com/image/fetch/$s_!rxBW!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!rxBW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png\" width=\"1456\" height=\"1043\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1043,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:618462,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/214011077?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!rxBW!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png 424w, https://substackcdn.com/image/fetch/$s_!rxBW!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png 848w, https://substackcdn.com/image/fetch/$s_!rxBW!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png 1272w, https://substackcdn.com/image/fetch/$s_!rxBW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F822778ad-4567-4507-82f2-b8c59e6566ca_1798x1288.png 1456w\" sizes=\"100vw\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\"><a href=\"https://eyeonhousing.org/2023/03/property-tax-revenues-see-largest-increase-since-2009/\">Source</a></figcaption></figure></div><p><span>New York City is also losing insurance companies </span><a href=\"https://www.cityandstateny.com/policy/2024/12/rising-costs-climate-change-driving-insurers-out-new-york/401659/\"><span>at an alarming rate</span></a><span>. These companies cite rising costs from extreme weather, climate risks, and skyrocketing claims costs that make their business untenable. When Adirondack Insurance Exchange and its subsidiary Mountain Valley Indemnity left New York in 2024, spokespeople for the companies </span><a href=\"https://www.cbsnews.com/newyork/news/new-york-property-insurance-companies-leaving/\"><span>pointed</span></a><span> to climate events as key drivers. Tens of thousands of New Yorkers lost insurance in turn.</span></p><p><span>But a new </span><a href=\"https://law.vanderbilt.edu/vpa-report-property-insurers-inflating-premiums-150-billion/\"><span>report</span></a><span> from Vanderbilt Law School shows that insurance companies are paying out less in claims than ever before and pocketing a far greater share of premiums. Climate matters less than these companies lead us to believe.</span></p><p><span>One of the clearest ways to see this is a key metric that the insurance tracks called, </span><em><span>The Loss Ratio.</span></em><span> The closer the loss ratio is to 100 the fairer prices are for consumers.</span></p><p><span>But over the last two decades, loss ratios have plummeted from their historical average of 80 to just </span><a href=\"https://substack.perfectunion.us/p/we-uncovered-where-your-insurance\"><span>55</span></a><span> in 2025. This loss ratio means home insurance companies are pocketing roughly half of the money that homeowners are paying in.</span></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!8X5s!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!8X5s!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png 424w, https://substackcdn.com/image/fetch/$s_!8X5s!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png 848w, https://substackcdn.com/image/fetch/$s_!8X5s!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png 1272w, https://substackcdn.com/image/fetch/$s_!8X5s!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!8X5s!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png\" width=\"1140\" height=\"1696\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1696,&quot;width&quot;:1140,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:479801,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/214011077?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!8X5s!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png 424w, https://substackcdn.com/image/fetch/$s_!8X5s!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png 848w, https://substackcdn.com/image/fetch/$s_!8X5s!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png 1272w, https://substackcdn.com/image/fetch/$s_!8X5s!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6bf57caf-9976-4f6d-9b60-92b3ae3d107b_1140x1696.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p><span>\u201cIn 2024-2025, years when the news has been riddled with stories about how climate change needs to be increasing insurance rates, we\u2019re seeing some of the lowest loss ratios we\u2019ve ever seen,\u201d said </span><a href=\"https://substack.perfectunion.us/p/we-uncovered-where-your-insurance\"><span>Brian Shearer</span></a><span>, the lead researcher on the Vanderbilt report. \u201cThe insurance industry is price-gouging the crisis.\u201d</span></p><p><span>For low-income renters, the fallout from these rising costs is devastating. Average insurance rates for buildings in New York City with affordable apartments </span><a href=\"https://gothamist.com/news/mamdani-turns-to-rising-insurance-costs-for-nyc-affordable-and-rent-stabilized-housing\"><span>more than doubled</span></a><span> between 2019 and 2023. Last year, average insurance costs spiked by 10.5 percent for owners of rent-stabilized apartment buildings. Landlords often pass those costs onto renters or force the city to pick up the bill.</span></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!H1Z2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8315dda6-9e9a-46bb-b564-c90e03cca03a_1240x1252.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!H1Z2!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8315dda6-9e9a-46bb-b564-c90e03cca03a_1240x1252.png 424w, https://substackcdn.com/image/fetch/$s_!H1Z2!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8315dda6-9e9a-46bb-b564-c90e03cca03a_1240x1252.png 848w, https://substackcdn.com/image/fetch/$s_!H1Z2!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8315dda6-9e9a-46bb-b564-c90e03cca03a_1240x1252.png 1272w, https://substackcdn.com/image/fetch/$s_!H1Z2!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8315dda6-9e9a-46bb-b564-c90e03cca03a_1240x1252.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!H1Z2!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8315dda6-9e9a-46bb-b564-c90e03cca03a_1240x1252.png\" width=\"1240\" height=\"1252\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/8315dda6-9e9a-46bb-b564-c90e03cca03a_1240x1252.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1252,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!H1Z2!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8315dda6-9e9a-46bb-b564-c90e03cca03a_1240x1252.png 424w, https://substackcdn.com/image/fetch/$s_!H1Z2!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8315dda6-9e9a-46bb-b564-c90e03cca03a_1240x1252.png 848w, https://substackcdn.com/image/fetch/$s_!H1Z2!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8315dda6-9e9a-46bb-b564-c90e03cca03a_1240x1252.png 1272w, https://substackcdn.com/image/fetch/$s_!H1Z2!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8315dda6-9e9a-46bb-b564-c90e03cca03a_1240x1252.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p><span>Nearly </span><a href=\"https://www.cityandstateny.com/policy/2024/12/rising-costs-climate-change-driving-insurers-out-new-york/401659/\"><span>half a million</span></a><span> New York homeowners, or about five percent, decided to forgo carrying property insurance due to its expense. Multiple </span><a href=\"https://gothamist.com/news/insurance-companies-routinely-deny-nyc-buildings-with-subsidized-tenants\"><span>court cases</span></a><span> have found that insurance companies have denied coverage to low-income households or price gouged others who were using vouchers.</span></p><p><span>The five biggest home-insurers didn\u2019t pay out on </span><a href=\"https://www.wsj.com/finance/the-home-insurance-coin-flip-nearly-half-of-claims-result-in-zero-payout-4b49acaf\"><span>44 percent</span></a><span> of claims resolved last year, forcing homeowners and renters to fund repairs out of their own pockets.</span></p><blockquote><p><span>\u201cI\u2019ve found 16 private jets that the top 10 property and casualty insurers own,\u201d said Mr. Shearer. \u201cState Farm purchased all four of their jets in a 12-month period in 2023 and 2024, when they were also simultaneously telling states like California that if they didn\u2019t let them increase their prices, they would leave.\u201d</span></p></blockquote><p><span>Property insurance companies received </span><a href=\"https://law.vanderbilt.edu/vpa-report-property-insurers-inflating-premiums-150-billion/\"><span>$1.03 trillion</span></a><span> in premiums last year, the highest value ever, or more than the entire U.S. military budget. </span></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!f5BW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!f5BW!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp 424w, https://substackcdn.com/image/fetch/$s_!f5BW!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp 848w, https://substackcdn.com/image/fetch/$s_!f5BW!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp 1272w, https://substackcdn.com/image/fetch/$s_!f5BW!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!f5BW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp\" width=\"1456\" height=\"897\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:897,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:59480,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/webp&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/214011077?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!f5BW!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp 424w, https://substackcdn.com/image/fetch/$s_!f5BW!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp 848w, https://substackcdn.com/image/fetch/$s_!f5BW!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp 1272w, https://substackcdn.com/image/fetch/$s_!f5BW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f340300-c24d-4922-b886-545189a0b3b4_1456x897.webp 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p><span>At a time when Mr. Mamdani is trying to lower home insurance costs, he is seeking to raise property taxes on non-primary residential properties. The pied-\u00e0-terre tax would apply to 17,000 secondary homes and raise between </span><a href=\"https://www.theguardian.com/us-news/2026/aug/08/mamdani-new-york-pied-a-terre-tax\"><span>$340-$500 million</span></a><span> to close the budget gap and support affordable housing measures. The mayor aims to shift rising property insurance and tax burdens away from struggling families and onto high earners who can afford them.</span></p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe now&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/subscribe?\"><span>Subscribe now</span></a></p><p>All of this comes at a time where income inequality in NYC has reached new heights, outpacing the entire rest of the nation. Since 2019, nearly <a href=\"https://x.com/MarkLevineNYC/status/2095132180640886789\">two-thirds</a> of real income growth went to the top 1%, while median income actually fell after inflation and the bottom 90% saw essentially no real gains. Among the top 1%, non-wage income (capital gains, dividends, etc) increased from 64% of total income in 2019 to 69% in 2024. The top 0.1% (about 5,000 households) received 22% of all NYC income, approximately double what is seen nationally.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!YD64!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f4d61de-64ba-477f-af11-33452c2d683a_1290x834.jpeg\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!YD64!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f4d61de-64ba-477f-af11-33452c2d683a_1290x834.jpeg 424w, https://substackcdn.com/image/fetch/$s_!YD64!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f4d61de-64ba-477f-af11-33452c2d683a_1290x834.jpeg 848w, https://substackcdn.com/image/fetch/$s_!YD64!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f4d61de-64ba-477f-af11-33452c2d683a_1290x834.jpeg 1272w, https://substackcdn.com/image/fetch/$s_!YD64!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f4d61de-64ba-477f-af11-33452c2d683a_1290x834.jpeg 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!YD64!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f4d61de-64ba-477f-af11-33452c2d683a_1290x834.jpeg\" width=\"1290\" height=\"834\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/5f4d61de-64ba-477f-af11-33452c2d683a_1290x834.jpeg&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:834,&quot;width&quot;:1290,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:&quot;Image&quot;,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"Image\" title=\"Image\" srcset=\"https://substackcdn.com/image/fetch/$s_!YD64!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f4d61de-64ba-477f-af11-33452c2d683a_1290x834.jpeg 424w, https://substackcdn.com/image/fetch/$s_!YD64!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f4d61de-64ba-477f-af11-33452c2d683a_1290x834.jpeg 848w, https://substackcdn.com/image/fetch/$s_!YD64!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f4d61de-64ba-477f-af11-33452c2d683a_1290x834.jpeg 1272w, https://substackcdn.com/image/fetch/$s_!YD64!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5f4d61de-64ba-477f-af11-33452c2d683a_1290x834.jpeg 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p>New York City cannot build its way out of a housing crisis if excessive costs are eating away at the foundation. As insurance companies use climate risk as cover to expand profit margins and as property taxes soar to fill strained municipal budgets, low-income families are left to bear the collapse. Communities need to bring these often invisible costs under control and hold the underwriters accountable to the neighborhoods they leave exposed.</p><div><hr></div><h3><strong>INTERESTING ON THE WEB</strong></h3><ul><li><p>We\u2019re working on a new series called <em>Charts that Explain the World</em>. We\u2019ll share more soon but check out our first 3 posts - <a href=\"https://americaninequality.substack.com/p/charts-that-explain-the-world-no1\">No1</a>, <a href=\"https://americaninequality.substack.com/p/charts-that-explain-the-world-no2\">No2</a>, and <a href=\"https://americaninequality.substack.com/p/charts-that-explain-the-world-no3\">No3</a></p></li><li><p>American Inequality has joined Democracy Portfolios alongside <span class=\"mention-wrap\" data-attrs=\"{&quot;name&quot;:&quot;Qasim Rashid, Esq.&quot;,&quot;id&quot;:26821923,&quot;type&quot;:&quot;user&quot;,&quot;url&quot;:null,&quot;photo_url&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/ba72e306-d5f4-43e0-a282-9e19fdc6297d_1900x1900.jpeg&quot;,&quot;uuid&quot;:&quot;77261f6c-2f8a-4770-8540-75c570383786&quot;}\" data-component-name=\"MentionToDOM\"></span> to improve coverage of equity, justice, and civic life as newsrooms shrink - <a href=\"https://democracyportfolios.org/portfolios/substack\">Democracy Portfolios</a></p></li><li><p>I sat down for an interview with the Weekly Anthropocene - <a href=\"https://sammatey.substack.com/p/interview-with-professor-jeremy-ney\">interview</a></p></li><li><p>New Acemoglu paper showing that when firms hire MBAs into senior managerial or CEO positions that in the next 5 year worker wages decline by 6% and the labor share falls by 5 percentage points - <a href=\"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4059303\">NBER</a></p></li><li><p>A new phenomenal video from the viral creator of Wealth Inequality in America, but updated for 2026 - <a href=\"https://www.youtube.com/watch?v=2GxlL5-0m_g\">YouTube</a></p></li></ul><div><hr></div><h3>What I\u2019m reading</h3><p>I\u2019ve really been enjoying <span class=\"mention-wrap\" data-attrs=\"{&quot;name&quot;:&quot;Chris Kelly&quot;,&quot;id&quot;:423545984,&quot;type&quot;:&quot;user&quot;,&quot;url&quot;:null,&quot;photo_url&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/4a52d4be-4826-46c1-af1e-b5ded4878cae_1600x1600.png&quot;,&quot;uuid&quot;:&quot;e36a2205-39a2-40ed-aedf-97b642d479e5&quot;}\" data-component-name=\"MentionToDOM\"></span>\u2019s new book <em>A Solution to Wealth Inequality</em>. The premise of the book is that we need to convince the ultra wealthy that  addressing inequality is in their interest and that demonizing them is not the way to get them to change their ways. Chris believes in the power of persuasion to get this done, and that this can be a practical and impactful way to address inequality in a time when political polarization (and highly influential moneyed interest in politics) prevail. It is a strong appeal and can be a powerful tool in the arsenal. <a href=\"https://www.amazon.com/dp/B0H95BQ59V?lv=shuf&amp;channelId=500&amp;plpRedirect=mhFallback\">You can check it out here. </a></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!wsMW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!wsMW!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg 424w, https://substackcdn.com/image/fetch/$s_!wsMW!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg 848w, https://substackcdn.com/image/fetch/$s_!wsMW!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg 1272w, https://substackcdn.com/image/fetch/$s_!wsMW!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!wsMW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg\" width=\"1038\" height=\"1400\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1400,&quot;width&quot;:1038,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:277419,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/jpeg&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/214011077?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!wsMW!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg 424w, https://substackcdn.com/image/fetch/$s_!wsMW!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg 848w, https://substackcdn.com/image/fetch/$s_!wsMW!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg 1272w, https://substackcdn.com/image/fetch/$s_!wsMW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f612ac5-cdf1-43c7-a26e-8bb32df726de_1038x1400.jpeg 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><div class=\"subscription-widget-wrap-editor\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe&quot;,&quot;language&quot;:&quot;en&quot;}\" data-component-name=\"SubscribeWidgetToDOM\"><div class=\"subscription-widget show-subscribe\"><div class=\"preamble\"><p class=\"cta-caption\">American Inequality is only possible because of readers like you. Join the club or consider becoming a paid subscriber.</p></div><form class=\"subscription-widget-subscribe\"><input type=\"email\" class=\"email-input\" name=\"email\" placeholder=\"Type your email\u2026\" tabindex=\"-1\"><input type=\"submit\" class=\"button primary\" value=\"Subscribe\"><div class=\"fake-input-wrapper\"><div class=\"fake-input\"></div><div class=\"fake-button\"></div></div></form></div></div>",
+  "has_dynamic_content": false,
+  "truncated_body_text": "The American housing crisis is buckling under a new weight. As soaring rents grab headlines, insurance premiums and property taxes have been slowly rising to astronomical heights, making housing affordability all but impossible. Insurers blame climate risks for heightened costs, yet new disclosures show these companies are retaining a record share of ma\u2026",
+  "wordcount": 1249,
+  "post_preview_limit": null,
+  "language": "en",
+  "postTags": [
+    {
+      "id": "35a8eeb8-9256-4491-9232-f974e93f7ee4",
+      "publication_id": 267573,
+      "name": "piede-a-terre",
+      "slug": "piede-a-terre",
+      "hidden": false
+    },
+    {
+      "id": "41395506-40bd-4270-b6fb-1d7d96acce88",
+      "publication_id": 267573,
+      "name": "U.S. Politics",
+      "slug": "us-politics",
+      "hidden": false
+    },
+    {
+      "id": "78d910e2-6fde-47a5-9f8c-84d25e7d21de",
+      "publication_id": 267573,
+      "name": "Housing",
+      "slug": "housing",
+      "hidden": false
+    },
+    {
+      "id": "8ed15ca0-2571-44a3-b3bf-c30ff319d516",
+      "publication_id": 267573,
+      "name": "Insurance",
+      "slug": "insurance",
+      "hidden": false
+    },
+    {
+      "id": "9f8848fb-d704-4589-a1d5-d186c442c813",
+      "publication_id": 267573,
+      "name": "Taxes",
+      "slug": "taxes",
+      "hidden": false
+    },
+    {
+      "id": "c690d49d-da06-4db1-afed-0921cbe8a37f",
+      "publication_id": 267573,
+      "name": "Property Taxes",
+      "slug": "property-taxes",
+      "hidden": false
+    },
+    {
+      "id": "d0d9619c-35d0-42d2-b436-2353718c0c26",
+      "publication_id": 267573,
+      "name": "business",
+      "slug": "business",
+      "hidden": false
+    }
+  ],
+  "postCountryBlocks": [],
+  "headlineTest": null,
+  "coverImagePalette": {
+    "Vibrant": {
+      "rgb": [
+        5,
+        180,
+        227
+      ],
+      "population": 320
+    },
+    "DarkVibrant": {
+      "rgb": [
+        15,
+        116,
+        58
+      ],
+      "population": 478
+    },
+    "LightVibrant": {
+      "rgb": [
+        241,
+        225,
+        188
+      ],
+      "population": 518
+    },
+    "Muted": {
+      "rgb": [
+        132,
+        117,
+        80
+      ],
+      "population": 333
+    },
+    "DarkMuted": {
+      "rgb": [
+        117,
+        83,
+        67
+      ],
+      "population": 155
+    },
+    "LightMuted": {
+      "rgb": [
+        176,
+        202,
+        199
+      ],
+      "population": 309
+    }
+  },
+  "publishedBylines": [
+    {
+      "id": 11624125,
+      "name": "Jeremy Ney",
+      "handle": "jeremybney",
+      "photo_url": "https://substackcdn.com/image/fetch/$s_!LMzS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5fd31dcd-eff9-4585-b5a0-fc00ebf53e47_332x332.png",
+      "bio": "Data journalist, Columbia prof, former Federal Reserve. You've seen these maps. ",
+      "profile_set_up_at": "2021-06-29T14:33:27.162Z",
+      "reader_installed_at": "2022-03-29T00:47:52.882Z",
+      "publicationUsers": [
+        {
+          "id": 236337,
+          "user_id": 11624125,
+          "publication_id": 267573,
+          "role": "admin",
+          "public": true,
+          "is_primary": true,
+          "publication": {
+            "id": 267573,
+            "name": "American Inequality",
+            "subdomain": "americaninequality",
+            "custom_domain": null,
+            "custom_domain_optional": false,
+            "hero_text": "Mapping the country's greatest economic challenges",
+            "logo_url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ca313513-016e-48f0-9e6f-ef172c82864f_1252x1252.png",
+            "author_id": 11624125,
+            "primary_user_id": 11624125,
+            "theme_var_background_pop": "#2096FF",
+            "created_at": "2021-01-21T21:08:07.518Z",
+            "email_from_name": "Jeremy Ney",
+            "copyright": "Jeremy Ney",
+            "founding_plan_name": "Premium Access",
+            "community_enabled": true,
+            "invite_only": false,
+            "payments_state": "enabled",
+            "language": null,
+            "explicit": false,
+            "homepage_type": "magaziney",
+            "is_personal_mode": false,
+            "logo_url_wide": "https://substack-post-media.s3.amazonaws.com/public/images/d08f70b8-7140-4c87-9c25-f0ccf066820b_1642x486.png"
+          }
+        }
+      ],
+      "is_guest": false,
+      "bestseller_tier": 100,
+      "status": {
+        "bestsellerTier": 100,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      }
+    }
+  ],
+  "reaction": null,
+  "reaction_count": 86,
+  "comment_count": 32,
+  "child_comment_count": 12,
+  "is_geoblocked": false,
+  "audio_items": [
+    {
+      "post_id": 214011077,
+      "voice_id": "voiceover",
+      "audio_url": "https://api.substack.com/api/v1/audio/upload/30d63514-50c5-4d9c-9250-ba4a8c25b585/src",
+      "type": "voiceover",
+      "status": "completed",
+      "duration": 1134.2367
+    }
+  ],
+  "is_editor_preview": false,
+  "hasCashtag": false,
+  "unlockedWithIP": false,
+  "unlockedWithCampaign": false,
+  "themeVariables": {
+    "color_theme_bg_pop": "#fc5528",
+    "background_pop": "#fc5528",
+    "color_theme_bg_web": null,
+    "cover_bg_color": "#FFFFFF",
+    "cover_bg_color_secondary": "#f0f0f0",
+    "background_pop_darken": "#fc410f",
+    "print_on_pop": "#ffffff",
+    "color_theme_bg_pop_darken": "#fc410f",
+    "color_theme_print_on_pop": "#ffffff",
+    "color_theme_bg_pop_20": "rgba(252, 85, 40, 0.2)",
+    "color_theme_bg_pop_30": "rgba(252, 85, 40, 0.3)",
+    "print_pop": "#fc5528",
+    "color_theme_accent": "#fc5528",
+    "cover_print_primary": "#363737",
+    "cover_print_secondary": "#757575",
+    "cover_print_tertiary": "#b6b6b6",
+    "cover_border_color": "#fc5528",
+    "font_family_headings_preset": "'SF Pro Display', -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "font_weight_headings_preset": 700,
+    "font_family_body_preset": "Spectral,sans-serif",
+    "font_weight_body_preset": 400,
+    "font_size_body_offset": "1px",
+    "font_preset_heading": "sans",
+    "font_preset_body": "classic_serif",
+    "home_hero": "magazine-5",
+    "home_posts": "custom",
+    "home_show_top_posts": true,
+    "web_bg_color": "#ffffff",
+    "background_contrast_1": "#f0f0f0",
+    "background_contrast_2": "#dddddd",
+    "background_contrast_3": "#b7b7b7",
+    "background_contrast_4": "#929292",
+    "background_contrast_5": "#515151",
+    "color_theme_bg_contrast_1": "#f0f0f0",
+    "color_theme_bg_contrast_2": "#dddddd",
+    "color_theme_bg_contrast_3": "#b7b7b7",
+    "color_theme_bg_contrast_4": "#929292",
+    "color_theme_bg_contrast_5": "#515151",
+    "color_theme_bg_elevated": "#ffffff",
+    "color_theme_bg_elevated_secondary": "#f0f0f0",
+    "color_theme_bg_elevated_tertiary": "#dddddd",
+    "color_theme_detail": "#e6e6e6",
+    "background_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "color_theme_bg_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "theme_bg_is_dark": "0",
+    "print_on_web_bg_color": "#363737",
+    "print_secondary_on_web_bg_color": "#868787",
+    "footer_bg_color": "#ffffff",
+    "footer_bg_color_h": "0",
+    "footer_bg_color_s": "0%",
+    "footer_bg_color_l": "100%",
+    "print_on_footer_bg_color": "#363737",
+    "print_secondary_on_footer_bg_color": "#868787",
+    "footer_bg_contrast_1": "#f0f0f0",
+    "footer_bg_contrast_2": "#dddddd",
+    "footer_bg_contrast_3": "#b7b7b7",
+    "footer_bg_contrast_4": "#929292",
+    "footer_bg_elevated": "#ffffff",
+    "footer_bg_elevated_secondary": "#f0f0f0",
+    "footer_bg_elevated_tertiary": "#dddddd",
+    "footer_detail_color": "#e6e6e6",
+    "subscribe_bg_color": "#fafafa",
+    "subscribe_bg_color_h": "0",
+    "subscribe_bg_color_s": "0%",
+    "subscribe_bg_color_l": "98.0392156862745%",
+    "print_on_subscribe_bg_color": "#363737",
+    "print_secondary_on_subscribe_bg_color": "#848585",
+    "subscribe_bg_contrast_1": "#ebebeb",
+    "subscribe_bg_contrast_2": "#d8d8d8",
+    "subscribe_bg_contrast_3": "#b3b3b3",
+    "subscribe_bg_contrast_4": "#909090",
+    "subscribe_bg_elevated": "#fafafa",
+    "subscribe_bg_elevated_secondary": "#ebebeb",
+    "subscribe_bg_elevated_tertiary": "#d8d8d8",
+    "subscribe_detail_color": "#e1e1e1",
+    "background_pop_rgb": "252, 85, 40",
+    "color_theme_bg_pop_rgb": "252, 85, 40",
+    "color_theme_accent_rgb": "252, 85, 40"
+  },
+  "comments": [
+    {
+      "id": 333344586,
+      "body": "Thanks for the shout out, Jeremy! If anyone's looking for a fresh and unorthodox perspective on wealth inequality, please check out my book.\n\nAlso, great piece. A few thoughts:\n\n1. Health insurance loss ratios are federally mandated to be between 80% and 85%. Homeowners and auto insurance loss ratio laws are set at the state level and are generally much lower. Could some skilled politician make this an issue in the next election? Probably not, as it's too esoteric and narrow of an issue, but I suppose there's always a chance.\n\n2. Housing affordability is one of the biggest issues driving younger people away from capitalism and the American system. There are fairly straightforward things we could do to address the problem (mostly supply-side interventions), but so far we haven't mustered the political will to get them done at the federal level. I think the ultra wealthy themselves can and should step up here. I go into this in detail in my book.\n\n3. As a homeowner, I know all too well the feeling of facing some expense that should be covered by my homeowners insurance, only to find out that the deductible is so high that my policy effectively won\u2019t cover it. Beyond annoying.",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1",
+          "title": null
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Thanks for the shout out, Jeremy! If anyone's looking for a fresh and unorthodox perspective on wealth inequality, please check out my book."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Also, great piece. A few thoughts:"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "1. Health insurance loss ratios are federally mandated to be between 80% and 85%. Homeowners and auto insurance loss ratio laws are set at the state level and are generally much lower. Could some skilled politician make this an issue in the next election? Probably not, as it's too esoteric and narrow of an issue, but I suppose there's always a chance."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "2. Housing affordability is one of the biggest issues driving younger people away from capitalism and the American system. There are fairly straightforward things we could do to address the problem (mostly supply-side interventions), but so far we haven't mustered the political will to get them done at the federal level. I think the ultra wealthy themselves can and should step up here. I go into this in detail in my book."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "3. As a homeowner, I know all too well the feeling of facing some expense that should be covered by my homeowners insurance, only to find out that the deductible is so high that my policy effectively won\u2019t cover it. Beyond annoying."
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 214011077,
+      "user_id": 423545984,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2026-09-09T17:48:58.976Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "Chris Kelly",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/4a52d4be-4826-46c1-af1e-b5ded4878cae_1600x1600.png",
+      "handle": "chrisjkelly",
+      "reactor_names": [
+        "Jeremy Ney"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 2
+      },
+      "reaction_count": 2,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "chrisjkelly",
+      "metadata": {
+        "is_author": false,
+        "membership_state": "subscribed",
+        "eligibleForGift": false,
+        "author_on_other_pub": {
+          "name": "A Solution to Wealth Inequality",
+          "id": 7201181,
+          "base_url": "https://wealthinequality.substack.com"
+        }
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": 1,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "subscriber",
+          "tier": 1,
+          "accent_colors": {
+            "fg": {
+              "light": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "dark": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            },
+            "bg": {
+              "light": {
+                "r": 252,
+                "g": 85,
+                "b": 40,
+                "a": 1
+              },
+              "dark": {
+                "r": 252,
+                "g": 85,
+                "b": 40,
+                "a": 1
+              }
+            }
+          }
+        },
+        "subscriber": null
+      },
+      "score": 7,
+      "children_count": 1,
+      "reported_by_user": false,
+      "restacked": false,
+      "childrenSummary": "3 replies by Jeremy Ney and others"
+    },
+    {
+      "id": 333176172,
+      "body": "so depressing",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1",
+          "title": null
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "so depressing"
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 214011077,
+      "user_id": 17812671,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2026-09-09T14:04:29.971Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "pamela bridges",
+      "photo_url": null,
+      "handle": "pamelabridges483628",
+      "reactor_names": [
+        "Jeremy Ney"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 2
+      },
+      "reaction_count": 2,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "pamelabridges483628",
+      "metadata": {
+        "is_author": false,
+        "membership_state": "unsubscribed",
+        "eligibleForGift": false
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": null,
+        "subscriber": null
+      },
+      "score": 7,
+      "children_count": 0,
+      "reported_by_user": false,
+      "restacked": false
+    }
+  ]
+}

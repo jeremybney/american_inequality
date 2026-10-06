@@ -1,0 +1,525 @@
+{
+  "audience": "everyone",
+  "audience_before_archived": null,
+  "canonical_url": "https://americaninequality.substack.com/p/alcohol-and-inequality",
+  "default_comment_sort": null,
+  "editor_v2": false,
+  "exempt_from_archive_paywall": false,
+  "free_unlock_required": false,
+  "id": 171517582,
+  "podcast_art_url": null,
+  "podcast_duration": null,
+  "podcast_preview_upload_id": null,
+  "podcast_upload_id": null,
+  "podcast_url": null,
+  "post_date": "2025-09-03T14:33:20.086Z",
+  "updated_at": "2025-12-30T22:13:36.104Z",
+  "publication_id": 267573,
+  "search_engine_description": null,
+  "search_engine_title": null,
+  "section_id": null,
+  "should_send_free_preview": true,
+  "show_guest_bios": true,
+  "slug": "alcohol-and-inequality",
+  "social_title": null,
+  "subtitle": "Why drinking deaths fall by half by crossing from Nevada to Utah",
+  "teaser_post_eligible": true,
+  "title": "Alcohol Fuels a Dangerous Divide",
+  "type": "newsletter",
+  "video_upload_id": null,
+  "write_comment_permissions": "everyone",
+  "meter_type": "none",
+  "live_stream_id": null,
+  "is_published": true,
+  "restacks": 53,
+  "reactions": {
+    "\u2764": 180
+  },
+  "top_exclusions": [],
+  "pins": [
+    267573
+  ],
+  "section_pins": [],
+  "has_shareable_clips": false,
+  "previous_post_slug": "what-we-know-about-direct-cash",
+  "next_post_slug": "unemployment-tanzina-vega",
+  "cover_image": "https://substackcdn.com/image/fetch/$s_!VAff!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F997706fb-bf96-462f-be69-e682415ae312_1240x1132.png",
+  "cover_image_is_square": false,
+  "cover_image_is_explicit": false,
+  "videoUpload": null,
+  "podcastFields": {
+    "post_id": 171517582,
+    "podcast_episode_number": null,
+    "podcast_season_number": null,
+    "podcast_episode_type": null,
+    "should_syndicate_to_other_feed": true,
+    "syndicate_to_section_id": null,
+    "hide_from_feed": false,
+    "free_podcast_url": null,
+    "free_podcast_duration": null,
+    "preview_contains_ad": false,
+    "was_imported_self_serve_sync": false,
+    "draft_free_podcast_url": null,
+    "draft_free_podcast_duration": null
+  },
+  "podcastUpload": null,
+  "podcastPreviewUpload": null,
+  "voiceover_upload_id": "3b353662-5219-4d10-a5db-c2b729acc36d",
+  "voiceoverUpload": {
+    "id": "3b353662-5219-4d10-a5db-c2b729acc36d",
+    "name": "America_s_Alcohol_Crisis__Unpacking_the_Unequal_Impact_and_Paths_to_Progress.m4a",
+    "created_at": "2025-08-21T13:37:45.655Z",
+    "uploaded_at": "2025-08-21T13:37:48.216Z",
+    "publication_id": 267573,
+    "state": "transcoded",
+    "post_id": 171517582,
+    "user_id": 11624125,
+    "duration": 844.40814,
+    "height": null,
+    "width": null,
+    "thumbnail_id": 1,
+    "preview_start": null,
+    "preview_duration": null,
+    "media_type": "audio",
+    "primary_file_size": 10133349,
+    "is_mux": false,
+    "mux_asset_id": null,
+    "mux_playback_id": null,
+    "mux_preview_asset_id": null,
+    "mux_preview_playback_id": null,
+    "mux_rendition_quality": null,
+    "mux_preview_rendition_quality": null,
+    "explicit": false,
+    "copyright_infringement": null,
+    "src_media_upload_id": null,
+    "live_stream_id": null
+  },
+  "has_voiceover": true,
+  "description": "Why drinking deaths fall by half by crossing from Nevada to Utah",
+  "body_html": "<p><strong>INTERESTING ON THE WEB</strong></p><p></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!VAff!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F997706fb-bf96-462f-be69-e682415ae312_1240x1132.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!VAff!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F997706fb-bf96-462f-be69-e682415ae312_1240x1132.png 424w, https://substackcdn.com/image/fetch/$s_!VAff!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F997706fb-bf96-462f-be69-e682415ae312_1240x1132.png 848w, https://substackcdn.com/image/fetch/$s_!VAff!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F997706fb-bf96-462f-be69-e682415ae312_1240x1132.png 1272w, https://substackcdn.com/image/fetch/$s_!VAff!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F997706fb-bf96-462f-be69-e682415ae312_1240x1132.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!VAff!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F997706fb-bf96-462f-be69-e682415ae312_1240x1132.png\" width=\"1240\" height=\"1132\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/997706fb-bf96-462f-be69-e682415ae312_1240x1132.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1132,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!VAff!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F997706fb-bf96-462f-be69-e682415ae312_1240x1132.png 424w, https://substackcdn.com/image/fetch/$s_!VAff!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F997706fb-bf96-462f-be69-e682415ae312_1240x1132.png 848w, https://substackcdn.com/image/fetch/$s_!VAff!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F997706fb-bf96-462f-be69-e682415ae312_1240x1132.png 1272w, https://substackcdn.com/image/fetch/$s_!VAff!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F997706fb-bf96-462f-be69-e682415ae312_1240x1132.png 1456w\" sizes=\"100vw\" fetchpriority=\"high\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p>Alcohol is one of the worst killers in America. Alcohol kills more people than opioids and suicides combined each year. Every 3 minutes, 1 person dies in America due to alcohol abuse, according to <a href=\"https://www.cdc.gov/alcohol/facts-stats/index.html\">data</a> from the CDC. By the time you finish this article, at least one person will be dead. Alcohol shortened the lives of those who died by an average of 24 years, leading to 4 million years of potential life lost. The number of alcohol-related deaths <a href=\"https://www.nytimes.com/2024/11/22/health/alcohol-deaths-americans.html\">more than doubled</a> among Americans between 1999 and 2020.</p><div class=\"subscription-widget-wrap-editor\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe&quot;,&quot;language&quot;:&quot;en&quot;}\" data-component-name=\"SubscribeWidgetToDOM\"><div class=\"subscription-widget show-subscribe\"><div class=\"preamble\"><p class=\"cta-caption\">American Inequality is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.</p></div><form class=\"subscription-widget-subscribe\"><input type=\"email\" class=\"email-input\" name=\"email\" placeholder=\"Type your email\u2026\" tabindex=\"-1\"><input type=\"submit\" class=\"button primary\" value=\"Subscribe\"><div class=\"fake-input-wrapper\"><div class=\"fake-input\"></div><div class=\"fake-button\"></div></div></form></div></div><p>On August 13, Gallup Poll released <a href=\"https://news.gallup.com/poll/693362/drinking-rate-new-low-alcohol-concerns-surge.aspx\">survey results</a> reporting that only 54% of U.S. adults said they consumed alcohol, the lowest percentage in Gallup\u2019s 90 years of collecting data on drinking behavior. Those who did drink alcohol said they were consuming less, the poll found.</p><p>At the same time, I consistently hear this strong narrative that alcohol consumption is good because it also means higher socialization. \u201cWhat\u2019s wrong with young people today? They don\u2019t get drunk any more,\u201d declared one <a href=\"https://www.theguardian.com/commentisfree/2018/oct/11/young-people-drunk-acohol-millenials\">Guardian headline</a>. \u201cChampagne sales are down. Are parties dying too?\u201d asked another <a href=\"https://www.washingtonpost.com/style/of-interest/2025/03/17/parties-are-dead/\">WaPo </a>piece. \u201cWe may have already hit peak booze,\u201d wrote another <a href=\"https://www.bloomberg.com/opinion/articles/2025-04-20/peak-booze-alcohol-consumption-may-be-in-terminal-decline\">Bloomberg</a> article that praised a beloved tradition. There\u2019s an adage that \u201cEvery drink takes five minutes off your life.\u201d In January 2025, Derek Thompson wrote an <a href=\"https://www.theatlantic.com/ideas/archive/2025/01/moderate-drinking-warning-labels-cancer/681322/\">Atlantic article</a> that captured something a bit odd about this phrase. \u201cMaybe the thought scares you. Personally, I find comfort in it,\u201d Thompson wrote.</p><p>For years Americans were fed a false idea that alcohol might be good for you. \u201cThere was this perception that a glass of red wine with dinner every night might actually help you live longer,\u201d said<a href=\"https://www.nytimes.com/2025/08/13/well/us-alcohol-drinking-low-poll.html\"> Dr. Scott Hadland</a>, the chief of adolescent and young adult medicine at Mass General for Children and an addiction specialist. In the 1990s, some doctors even encouraged moderate drinking.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!3IQk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F64099894-d10e-4e40-a874-b01aa92c7816_1240x1128.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!3IQk!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F64099894-d10e-4e40-a874-b01aa92c7816_1240x1128.png 424w, https://substackcdn.com/image/fetch/$s_!3IQk!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F64099894-d10e-4e40-a874-b01aa92c7816_1240x1128.png 848w, https://substackcdn.com/image/fetch/$s_!3IQk!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F64099894-d10e-4e40-a874-b01aa92c7816_1240x1128.png 1272w, https://substackcdn.com/image/fetch/$s_!3IQk!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F64099894-d10e-4e40-a874-b01aa92c7816_1240x1128.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!3IQk!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F64099894-d10e-4e40-a874-b01aa92c7816_1240x1128.png\" width=\"1240\" height=\"1128\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/64099894-d10e-4e40-a874-b01aa92c7816_1240x1128.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1128,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!3IQk!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F64099894-d10e-4e40-a874-b01aa92c7816_1240x1128.png 424w, https://substackcdn.com/image/fetch/$s_!3IQk!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F64099894-d10e-4e40-a874-b01aa92c7816_1240x1128.png 848w, https://substackcdn.com/image/fetch/$s_!3IQk!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F64099894-d10e-4e40-a874-b01aa92c7816_1240x1128.png 1272w, https://substackcdn.com/image/fetch/$s_!3IQk!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F64099894-d10e-4e40-a874-b01aa92c7816_1240x1128.png 1456w\" sizes=\"100vw\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p>Consumption of alcohol is unequivocally dangerous for communities. Depending on where you are born, you may be far more likely to die from alcohol than in other parts of the U.S. Lax state liquor laws, lower enforcement of those laws, or higher rates of drunk driving \u2013 particularly in rural areas \u2014 may kill you at a much younger age. When it comes to different demographics, some communities are far more likely to suffer from the onslaughts of alcohol than others.</p><h1><strong>STATE IMPACTS OF LAX LIQUOR LAWS</strong></h1><p>Inequalities in alcohol\u2019s impact on communities is clear in the data. Stepping just a few feet across the state border from Lincoln County, Nevada to Washington County, Utah drops the excessive drinking rate by half, from 24% to 12%. Nevada has the weakest liquor laws of any state in the nation while Utah has some of the strongest. Las Vegas drives Nevada\u2019s lax liquor laws, permitting people to buy liquor 24/7, to enshrine that public intoxication is not a crime, to ban \u201clast calls\u201d at bars, and to codify no state-level Alcoholic Beverage Control (ABC) law, meaning there are no state regulations on labeling, advertising, or retail outlets for alcohol.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!fuDZ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6df5682-ac66-4a58-9ae4-aa0aa20d2c59_1600x1088.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!fuDZ!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6df5682-ac66-4a58-9ae4-aa0aa20d2c59_1600x1088.png 424w, https://substackcdn.com/image/fetch/$s_!fuDZ!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6df5682-ac66-4a58-9ae4-aa0aa20d2c59_1600x1088.png 848w, https://substackcdn.com/image/fetch/$s_!fuDZ!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6df5682-ac66-4a58-9ae4-aa0aa20d2c59_1600x1088.png 1272w, https://substackcdn.com/image/fetch/$s_!fuDZ!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6df5682-ac66-4a58-9ae4-aa0aa20d2c59_1600x1088.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!fuDZ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6df5682-ac66-4a58-9ae4-aa0aa20d2c59_1600x1088.png\" width=\"1456\" height=\"990\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/e6df5682-ac66-4a58-9ae4-aa0aa20d2c59_1600x1088.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:990,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!fuDZ!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6df5682-ac66-4a58-9ae4-aa0aa20d2c59_1600x1088.png 424w, https://substackcdn.com/image/fetch/$s_!fuDZ!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6df5682-ac66-4a58-9ae4-aa0aa20d2c59_1600x1088.png 848w, https://substackcdn.com/image/fetch/$s_!fuDZ!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6df5682-ac66-4a58-9ae4-aa0aa20d2c59_1600x1088.png 1272w, https://substackcdn.com/image/fetch/$s_!fuDZ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6df5682-ac66-4a58-9ae4-aa0aa20d2c59_1600x1088.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p>Utah, on the other hand, has a high mormon population and high altitudes which led to high restrictions on alcohol: You must order food if you\u2019re ordering alcohol at a restaurant, all liquor bottles need a \u2018metered-pour\u2019 which control how much alcohol is dispensed from a bottle, beer at grocery stores can\u2019t be more than 5% though this was recently 3.2%, and liquor can\u2019t be purchased on Sundays.</p><p>The death rate from alcohol in Nevada is <a href=\"https://drugabusestatistics.org/alcohol-abuse-statistics/#nevada\">twice as high </a>as it is in Utah.</p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe now&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/subscribe?\"><span>Subscribe now</span></a></p><p>Differences in saws aren\u2019t the only thing that causes death rates to change \u2014 low enforcement of those laws also leads to unequal outcomes. Up until 2023, Wisconsin was one of only a <a href=\"https://pbswisconsin.org/news-item/wisconsins-alcohol-industry-gets-behind-update-greater-enforcement-of-laws/\">handful of states</a> that didn\u2019t have a dedicated office charged with enforcement of alcohol laws. One official explained that alcohol enforcement in the state \u201cwent to hell\u201d for decades as lobbyists helped wholesalers skirt many state laws, like shipping beers directly to consumers. Wisconsin is \u201clocked in this weird death grip with alcohol,\u201d said<a href=\"https://pbswisconsin.org/news-item/wisconsins-death-grip-with-alcohol-is-killing-more-residents/\"> John Eich</a>, director of the Wisconsin Office of Rural Health. \u201cThere\u2019s a cultural level of acceptance of excessive drinking.\u201d Wisconsin ranks the <a href=\"https://www.mcw.edu/departments/comprehensive-injury-center/wi-alcohol-policy-project/policies-and-procedures/scaoda-report#:~:text=Wisconsin%20ranks%20the%20highest%20in,heavy%20drinking%20and%20underage%20drinking.\">highest in the nation</a> for excessive alcohol use which includes binge drinking, drinking while pregnant, heavy drinking and underage drinking. The powerful trade group the Tavern League of Wisconsin and the well-rehearsed phrase \u201cDrink Wisconsibly\u201d all reinforce this culture. Drinking deaths for Wisconsinites sites <a href=\"https://pbswisconsin.org/news-item/wisconsins-death-grip-with-alcohol-is-killing-more-residents/\">tripled</a> from 6.7 to 18.5 per 100,000 from 1999 to 2020.</p><p>States with lax liquor laws have far <a href=\"https://www.recoveryanswers.org/research-post/does-alcohol-policy-enforcement-decrease-harmful-drinking/\">higher death rates</a> from alcohol and more drunk driving incidents. While culture and enforcement of these laws are a factor too, inequality in outcomes persist depending on which side of a state border a person is born on.</p><h1><strong>INEQUALITY FROM ALCOHOL</strong></h1><p>Inequality is rampant when it comes to how different communities experience alcohol:</p><ul><li><p>Native Americans are <a href=\"https://www.kff.org/mental-health/a-look-at-the-latest-alcohol-death-data-and-change-over-the-last-decade/#:~:text=In%202022%20there%20was%20wide,increase%20happened%20during%20pandemic%20years.\">five-times</a> more likely to die from alcohol abuse than their White peers, largely because support for these communities is far lower</p></li><li><p>Low-income Americans are <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC4872618/\">twice as likely</a> to die from alcohol as their high-income peers</p></li><li><p>Liquor stores tend to <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9963869/\">concentrate</a> in low-income or high-poverty communities</p></li><li><p>When sin-taxes are lowered on alcohol or prices decline, low-income people <a href=\"https://onlinelibrary.wiley.com/doi/10.1111/dar.13989\">die at higher rates</a> from the change than high-income people do</p></li><li><p>Men in rural areas are <a href=\"https://www.cdc.gov/nchs/products/databriefs/db383.htm\">18% more likely</a> to die from alcohol compared to their urban peers (controlling for income, education, and demographics). Rural women were 23% more likely.</p></li><li><p>Men who are dependent on alcohol are <a href=\"https://www.bbc.com/news/uk-50887893\">six-times</a> more likely to be arrested for threatening, attacking or sexually assaulting their wives, girlfriends or female ex-partners than men who are not dependent.</p></li></ul><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!CkHW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F377a41de-a61a-40f6-9200-992a17a1fead_1600x449.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!CkHW!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F377a41de-a61a-40f6-9200-992a17a1fead_1600x449.png 424w, https://substackcdn.com/image/fetch/$s_!CkHW!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F377a41de-a61a-40f6-9200-992a17a1fead_1600x449.png 848w, https://substackcdn.com/image/fetch/$s_!CkHW!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F377a41de-a61a-40f6-9200-992a17a1fead_1600x449.png 1272w, https://substackcdn.com/image/fetch/$s_!CkHW!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F377a41de-a61a-40f6-9200-992a17a1fead_1600x449.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!CkHW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F377a41de-a61a-40f6-9200-992a17a1fead_1600x449.png\" width=\"1456\" height=\"409\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/377a41de-a61a-40f6-9200-992a17a1fead_1600x449.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:409,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!CkHW!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F377a41de-a61a-40f6-9200-992a17a1fead_1600x449.png 424w, https://substackcdn.com/image/fetch/$s_!CkHW!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F377a41de-a61a-40f6-9200-992a17a1fead_1600x449.png 848w, https://substackcdn.com/image/fetch/$s_!CkHW!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F377a41de-a61a-40f6-9200-992a17a1fead_1600x449.png 1272w, https://substackcdn.com/image/fetch/$s_!CkHW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F377a41de-a61a-40f6-9200-992a17a1fead_1600x449.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><h1><strong>A POSITIVE TREND</strong></h1><p>Last year was the first on record, going back to 1975, that fewer than 50 percent of high school seniors said they\u2019d ever had a drink of alcohol. As recently as 1989, the share was higher than 90 percent. While some view this as a negative sign that teens are not socializing enough or not taking enough risks, I view it as a positive sign. Alcohol is bad for communities and especially bad for young people. Mounting research suggests that <a href=\"https://www.nytimes.com/2023/01/13/well/mind/alcohol-health-effects.html\">even a little alcohol</a> takes a toll on the body, damaging DNA. Last year, Dr. Vivek Murthy, then the surgeon general, stressed that drinking caused <a href=\"https://www.nytimes.com/2025/07/28/well/liver-cancer-prevention.html\">preventable cancers</a> and <a href=\"https://www.nytimes.com/2025/01/03/health/alcohol-surgeon-general-warning.html\">called for alcoholic beverages</a> to carry warning labels, like cigarettes. Let\u2019s not conflate alcohol and socialization.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!Zcj5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3460fe6-16d0-4d6f-9531-806902532620_1330x1024.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!Zcj5!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3460fe6-16d0-4d6f-9531-806902532620_1330x1024.png 424w, https://substackcdn.com/image/fetch/$s_!Zcj5!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3460fe6-16d0-4d6f-9531-806902532620_1330x1024.png 848w, https://substackcdn.com/image/fetch/$s_!Zcj5!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3460fe6-16d0-4d6f-9531-806902532620_1330x1024.png 1272w, https://substackcdn.com/image/fetch/$s_!Zcj5!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3460fe6-16d0-4d6f-9531-806902532620_1330x1024.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!Zcj5!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3460fe6-16d0-4d6f-9531-806902532620_1330x1024.png\" width=\"1330\" height=\"1024\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/c3460fe6-16d0-4d6f-9531-806902532620_1330x1024.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1024,&quot;width&quot;:1330,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!Zcj5!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3460fe6-16d0-4d6f-9531-806902532620_1330x1024.png 424w, https://substackcdn.com/image/fetch/$s_!Zcj5!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3460fe6-16d0-4d6f-9531-806902532620_1330x1024.png 848w, https://substackcdn.com/image/fetch/$s_!Zcj5!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3460fe6-16d0-4d6f-9531-806902532620_1330x1024.png 1272w, https://substackcdn.com/image/fetch/$s_!Zcj5!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3460fe6-16d0-4d6f-9531-806902532620_1330x1024.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\"><a href=\"https://www.usatoday.com/story/money/2023/06/25/alcohol-laws-by-state-us/70344352007/\">Source</a></figcaption></figure></div><p>Only 50% of those aged 18 to 34 said they drank alcohol, the same as in 2024 and down from 59% in 2023. Just 56% of respondents 35 to 54 said they drank alcohol, falling from 70% in 2024.</p><h1><strong>THE PATH FORWARD</strong></h1><ol><li><p><strong>Stricter state laws</strong> \u2014 Utah offers an example of the best state alcohol laws in the nation. Communities would benefit tremendously from following Utah\u2019s example. Specifically, Utah is the <a href=\"https://www.findlaw.com/dui/laws-resources/comparing-state-dui-laws.html\">only state</a> in the nation that has a blood-alcohol content (BAC) limit of 0.05%. Every other state is 0.08%. A <a href=\"https://www.nhtsa.gov/press-releases/utah-lower-impaired-driving-law-study\">2022 study</a> from the National Highway Traffic Safety Administration Utah\u2019s fatal crash rate dropped by 19.8% in 2019, the first year under the lower legal limit, and the fatality rate decreased by 18.3%. The neighboring States of Arizona, Colorado, and Nevada did not show the same levels of improvement in fatal crash and fatality rates as Utah. 22% of those who drank alcohol indicated they had changed their behaviors once the law went into effect. Other laws that have shown to be beneficial are: (a) higher alcohol taxes; (b) Limiting days/hours of sale; and (c) enforcing dram shop liability laws, which means that places selling alcohol are responsible for the injuries or harms caused by illegally serving certain customers.</p></li></ol><ol start=\"2\"><li><p><strong>Limit alcohol establishment density, particularly in high-poverty areas: </strong><a href=\"https://onlinelibrary.wiley.com/doi/10.1002/jcop.22099\">One study </a>published in the Journal of Community Psychology that for every 1-unit increase in liquor store outlet density, there was a 7.3-year decrease in life expectancy. Areas with poverty rates exceeding 20% typically show 50% higher concentration of liquor stores and historically redlined areas tend to have much <a href=\"https://www.sciencedirect.com/science/article/pii/S2352827320303062\">higher concentrations</a> of establishments that sell alcohol. Los Angeles, Minneapolis, and Baltimore have all passed zoning regulations or passed laws that capped the number of liquor licenses in certain neighborhoods to reduce outlet density. <a href=\"https://sph.unc.edu/sph-news/closing-liquor-stores-in-residential-neighborhoods-could-prevent-homicides-and-save-millions-each-year/\">Studies</a> from UNC and Johns Hopkins have found that policies like these can prevent hundreds of homicides and save tens of millions of dollars each year.</p></li></ol><p>Over the last few years, the health harms of drinking have come into focus. Mounting research suggests that <a href=\"https://www.nytimes.com/2023/01/13/well/mind/alcohol-health-effects.html\">even a little alcohol</a> takes a toll on the body, damaging DNA. Last year, Dr. Vivek Murthy, then the surgeon general, stressed that drinking caused <a href=\"https://www.nytimes.com/2025/07/28/well/liver-cancer-prevention.html\">preventable cancers</a> and <a href=\"https://www.nytimes.com/2025/01/03/health/alcohol-surgeon-general-warning.html\">called for alcoholic beverages</a> to carry warning labels, like cigarettes. Hopefully this change can overpower the narrative that alcohol and socialization go hand-in-hand and that people can find a much safer way to spend time with each other.</p>",
+  "has_dynamic_content": false,
+  "truncated_body_text": "INTERESTING ON THE WEB",
+  "wordcount": 1524,
+  "post_preview_limit": null,
+  "language": "en",
+  "postTags": [
+    {
+      "id": "058b5ef0-9b14-4f83-b118-54600ee17d91",
+      "publication_id": 267573,
+      "name": "Binge Drinking",
+      "slug": "binge-drinking",
+      "hidden": false
+    },
+    {
+      "id": "43ca99c7-f0ee-4df8-8438-e135799c57c2",
+      "publication_id": 267573,
+      "name": "Drunk Driving",
+      "slug": "drunk-driving",
+      "hidden": false
+    },
+    {
+      "id": "45d23bee-1b3a-4c0b-96d7-74424f844681",
+      "publication_id": 267573,
+      "name": "Inequality",
+      "slug": "inequality",
+      "hidden": false
+    },
+    {
+      "id": "b650d234-5c14-4eb1-859b-515b67b5f4ea",
+      "publication_id": 267573,
+      "name": "Nevada",
+      "slug": "nevada",
+      "hidden": false
+    },
+    {
+      "id": "b6cf374f-38f2-4f96-98f8-e5fdc243f912",
+      "publication_id": 267573,
+      "name": "State Laws",
+      "slug": "state-laws",
+      "hidden": false
+    },
+    {
+      "id": "cb00868e-f681-450a-b02e-4aa904593bc9",
+      "publication_id": 267573,
+      "name": "Alcohol",
+      "slug": "alcohol",
+      "hidden": false
+    },
+    {
+      "id": "cb2e0b39-74ca-4539-a2c4-e67793a782a3",
+      "publication_id": 267573,
+      "name": "Utah",
+      "slug": "utah",
+      "hidden": false
+    },
+    {
+      "id": "d0d9619c-35d0-42d2-b436-2353718c0c26",
+      "publication_id": 267573,
+      "name": "business",
+      "slug": "business",
+      "hidden": false
+    },
+    {
+      "id": "e0fdaca7-775e-4117-8bd8-dba61bb30fae",
+      "publication_id": 267573,
+      "name": "Poverty",
+      "slug": "poverty",
+      "hidden": false
+    }
+  ],
+  "postCountryBlocks": [],
+  "headlineTest": null,
+  "coverImagePalette": {
+    "Vibrant": {
+      "rgb": [
+        236,
+        124,
+        84
+      ],
+      "population": 1
+    },
+    "DarkVibrant": {
+      "rgb": [
+        119.34000000000002,
+        41.1757894736842,
+        13.259999999999984
+      ],
+      "population": 0
+    },
+    "LightVibrant": {
+      "rgb": [
+        242,
+        179,
+        154
+      ],
+      "population": 180
+    },
+    "Muted": {
+      "rgb": [
+        124,
+        124,
+        124
+      ],
+      "population": 10
+    },
+    "DarkMuted": {
+      "rgb": [
+        137.70000000000002,
+        47.51052631578946,
+        15.299999999999985
+      ],
+      "population": 0
+    },
+    "LightMuted": {
+      "rgb": [
+        215,
+        186,
+        180
+      ],
+      "population": 62
+    }
+  },
+  "publishedBylines": [
+    {
+      "id": 11624125,
+      "name": "Jeremy Ney",
+      "handle": "jeremybney",
+      "photo_url": "https://substackcdn.com/image/fetch/$s_!LMzS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5fd31dcd-eff9-4585-b5a0-fc00ebf53e47_332x332.png",
+      "bio": "Data journalist, Columbia prof, former Federal Reserve. You've seen these maps. ",
+      "profile_set_up_at": "2021-06-29T14:33:27.162Z",
+      "reader_installed_at": "2022-03-29T00:47:52.882Z",
+      "publicationUsers": [
+        {
+          "id": 236337,
+          "user_id": 11624125,
+          "publication_id": 267573,
+          "role": "admin",
+          "public": true,
+          "is_primary": true,
+          "publication": {
+            "id": 267573,
+            "name": "American Inequality",
+            "subdomain": "americaninequality",
+            "custom_domain": null,
+            "custom_domain_optional": false,
+            "hero_text": "Mapping the country's greatest economic challenges",
+            "logo_url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ca313513-016e-48f0-9e6f-ef172c82864f_1252x1252.png",
+            "author_id": 11624125,
+            "primary_user_id": 11624125,
+            "theme_var_background_pop": "#2096FF",
+            "created_at": "2021-01-21T21:08:07.518Z",
+            "email_from_name": "Jeremy Ney",
+            "copyright": "Jeremy Ney",
+            "founding_plan_name": "Premium Access",
+            "community_enabled": true,
+            "invite_only": false,
+            "payments_state": "enabled",
+            "language": null,
+            "explicit": false,
+            "homepage_type": "magaziney",
+            "is_personal_mode": false,
+            "logo_url_wide": "https://substack-post-media.s3.amazonaws.com/public/images/d08f70b8-7140-4c87-9c25-f0ccf066820b_1642x486.png"
+          }
+        }
+      ],
+      "is_guest": false,
+      "bestseller_tier": 100,
+      "status": {
+        "bestsellerTier": 100,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      }
+    }
+  ],
+  "reaction": null,
+  "reaction_count": 180,
+  "comment_count": 19,
+  "child_comment_count": 10,
+  "audio_items": [
+    {
+      "post_id": 171517582,
+      "voice_id": "voiceover",
+      "audio_url": "https://api.substack.com/api/v1/audio/upload/3b353662-5219-4d10-a5db-c2b729acc36d/src",
+      "type": "voiceover",
+      "status": "completed",
+      "duration": 844.40814
+    },
+    {
+      "post_id": 171517582,
+      "voice_id": "en-US-OnyxTurboMultilingualNeural",
+      "audio_url": "https://substack-video.s3.amazonaws.com/video_upload/post/171517582/tts/5bb7824e-26b1-43fa-927d-9f061d1a0ee6/en-US-OnyxTurboMultilingualNeural.mp3",
+      "type": "tts",
+      "status": "completed"
+    }
+  ],
+  "is_geoblocked": false,
+  "is_editor_preview": false,
+  "hasCashtag": false,
+  "unlockedWithIP": false,
+  "unlockedWithCampaign": false,
+  "themeVariables": {
+    "color_theme_bg_pop": "#fc5528",
+    "background_pop": "#fc5528",
+    "color_theme_bg_web": null,
+    "cover_bg_color": "#FFFFFF",
+    "cover_bg_color_secondary": "#f0f0f0",
+    "background_pop_darken": "#fc410f",
+    "print_on_pop": "#ffffff",
+    "color_theme_bg_pop_darken": "#fc410f",
+    "color_theme_print_on_pop": "#ffffff",
+    "color_theme_bg_pop_20": "rgba(252, 85, 40, 0.2)",
+    "color_theme_bg_pop_30": "rgba(252, 85, 40, 0.3)",
+    "print_pop": "#fc5528",
+    "color_theme_accent": "#fc5528",
+    "cover_print_primary": "#363737",
+    "cover_print_secondary": "#757575",
+    "cover_print_tertiary": "#b6b6b6",
+    "cover_border_color": "#fc5528",
+    "font_family_headings_preset": "'SF Pro Display', -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "font_weight_headings_preset": 700,
+    "font_family_body_preset": "Spectral,sans-serif",
+    "font_weight_body_preset": 400,
+    "font_size_body_offset": "1px",
+    "font_preset_heading": "sans",
+    "font_preset_body": "classic_serif",
+    "home_hero": "magazine-5",
+    "home_posts": "custom",
+    "home_show_top_posts": true,
+    "web_bg_color": "#ffffff",
+    "background_contrast_1": "#f0f0f0",
+    "background_contrast_2": "#dddddd",
+    "background_contrast_3": "#b7b7b7",
+    "background_contrast_4": "#929292",
+    "background_contrast_5": "#515151",
+    "color_theme_bg_contrast_1": "#f0f0f0",
+    "color_theme_bg_contrast_2": "#dddddd",
+    "color_theme_bg_contrast_3": "#b7b7b7",
+    "color_theme_bg_contrast_4": "#929292",
+    "color_theme_bg_contrast_5": "#515151",
+    "color_theme_bg_elevated": "#ffffff",
+    "color_theme_bg_elevated_secondary": "#f0f0f0",
+    "color_theme_bg_elevated_tertiary": "#dddddd",
+    "color_theme_detail": "#e6e6e6",
+    "background_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "color_theme_bg_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "theme_bg_is_dark": "0",
+    "print_on_web_bg_color": "#363737",
+    "print_secondary_on_web_bg_color": "#868787",
+    "footer_bg_color": "#ffffff",
+    "footer_bg_color_h": "0",
+    "footer_bg_color_s": "0%",
+    "footer_bg_color_l": "100%",
+    "print_on_footer_bg_color": "#363737",
+    "print_secondary_on_footer_bg_color": "#868787",
+    "footer_bg_contrast_1": "#f0f0f0",
+    "footer_bg_contrast_2": "#dddddd",
+    "footer_bg_contrast_3": "#b7b7b7",
+    "footer_bg_contrast_4": "#929292",
+    "footer_bg_elevated": "#ffffff",
+    "footer_bg_elevated_secondary": "#f0f0f0",
+    "footer_bg_elevated_tertiary": "#dddddd",
+    "footer_detail_color": "#e6e6e6",
+    "subscribe_bg_color": "#fafafa",
+    "subscribe_bg_color_h": "0",
+    "subscribe_bg_color_s": "0%",
+    "subscribe_bg_color_l": "98.0392156862745%",
+    "print_on_subscribe_bg_color": "#363737",
+    "print_secondary_on_subscribe_bg_color": "#848585",
+    "subscribe_bg_contrast_1": "#ebebeb",
+    "subscribe_bg_contrast_2": "#d8d8d8",
+    "subscribe_bg_contrast_3": "#b3b3b3",
+    "subscribe_bg_contrast_4": "#909090",
+    "subscribe_bg_elevated": "#fafafa",
+    "subscribe_bg_elevated_secondary": "#ebebeb",
+    "subscribe_bg_elevated_tertiary": "#d8d8d8",
+    "subscribe_detail_color": "#e1e1e1",
+    "background_pop_rgb": "252, 85, 40",
+    "color_theme_bg_pop_rgb": "252, 85, 40",
+    "color_theme_accent_rgb": "252, 85, 40"
+  },
+  "comments": [
+    {
+      "id": 152012892,
+      "body": "I think a lot of people have dropped alcohol in favor of marijuana.",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1"
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I think a lot of people have dropped alcohol in favor of marijuana."
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 171517582,
+      "user_id": 12218351,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2025-09-03T15:19:25.152Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "Untrickled by Michelle Teheux",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/c120760d-0a6a-47b5-88ca-9363ed312fcb_1124x1110.png",
+      "handle": "michelleteheux",
+      "reactor_names": [
+        "Jeremy Ney"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 7
+      },
+      "reaction_count": 7,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "michelleteheux",
+      "metadata": {
+        "is_author": false,
+        "membership_state": null,
+        "eligibleForGift": true,
+        "author_on_other_pub": {
+          "name": "Untrickled",
+          "id": 808401,
+          "base_url": "https://michelleteheux.substack.com"
+        }
+      },
+      "user_bestseller_tier": 100,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": 100,
+        "subscriberTier": 1,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      },
+      "score": 12,
+      "children_count": 1,
+      "reported_by_user": false,
+      "restacked": false,
+      "childrenSummary": "2 replies by Jeremy Ney and others"
+    },
+    {
+      "id": 193363237,
+      "body": "Hate to call B.S. but B.S.  Look at the map, look at the blue, what do you find:  Evangelical Christians and Mormons out West.  Old fashioned Lutherans in the Mid-West.  Its culture and religion driving behavior, not laws.",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1"
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hate to call B.S. but B.S. Look at the map, look at the blue, what do you find: Evangelical Christians and Mormons out West. Old fashioned Lutherans in the Mid-West. Its culture and religion driving behavior, not laws."
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 171517582,
+      "user_id": 57319954,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2025-12-30T23:33:29.949Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "KD",
+      "photo_url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/90a58ed2-c37d-4dfb-af33-6d3aa75dc15c_144x144.png",
+      "handle": "kd12178378",
+      "reactor_names": [],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 9
+      },
+      "reaction_count": 9,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "kd12178378",
+      "metadata": {
+        "is_author": false,
+        "membership_state": null,
+        "eligibleForGift": true
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": null,
+      "score": 10,
+      "children_count": 1,
+      "reported_by_user": false,
+      "restacked": false,
+      "childrenSummary": "1 reply"
+    }
+  ]
+}

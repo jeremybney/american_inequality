@@ -1,0 +1,468 @@
+{
+  "audience": "everyone",
+  "audience_before_archived": null,
+  "canonical_url": "https://americaninequality.substack.com/p/life-expectancy-and-inequality",
+  "default_comment_sort": "most_recent_first",
+  "editor_v2": false,
+  "exempt_from_archive_paywall": false,
+  "free_unlock_required": false,
+  "id": 32009123,
+  "podcast_art_url": null,
+  "podcast_duration": null,
+  "podcast_preview_upload_id": null,
+  "podcast_upload_id": null,
+  "podcast_url": null,
+  "post_date": "2021-02-02T14:19:54.724Z",
+  "updated_at": "2026-10-05T15:25:33.642Z",
+  "publication_id": 267573,
+  "search_engine_description": null,
+  "search_engine_title": null,
+  "section_id": null,
+  "should_send_free_preview": false,
+  "show_guest_bios": false,
+  "slug": "life-expectancy-and-inequality",
+  "social_title": "Life Expectancy and Inequality",
+  "subtitle": "America is experiencing the greatest gap in life expectancy across regions in the last 40 years. ",
+  "teaser_post_eligible": false,
+  "title": "Life Expectancy and Inequality",
+  "type": "newsletter",
+  "video_upload_id": null,
+  "write_comment_permissions": "everyone",
+  "meter_type": "none",
+  "live_stream_id": null,
+  "is_published": true,
+  "restacks": 10,
+  "reactions": {
+    "\u2764": 80
+  },
+  "top_exclusions": [],
+  "pins": [
+    267573
+  ],
+  "section_pins": [],
+  "has_shareable_clips": false,
+  "previous_post_slug": "launching-american-inequality",
+  "next_post_slug": "food-deserts-and-inequality",
+  "cover_image": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb553faf-565e-477b-948f-f746b7480c81_1240x1042.png",
+  "cover_image_is_square": false,
+  "cover_image_is_explicit": false,
+  "videoUpload": null,
+  "podcastFields": {
+    "post_id": 32009123,
+    "podcast_episode_number": null,
+    "podcast_season_number": null,
+    "podcast_episode_type": null,
+    "should_syndicate_to_other_feed": null,
+    "syndicate_to_section_id": null,
+    "hide_from_feed": false,
+    "free_podcast_url": null,
+    "free_podcast_duration": null,
+    "preview_contains_ad": false,
+    "was_imported_self_serve_sync": false,
+    "draft_free_podcast_url": null,
+    "draft_free_podcast_duration": null
+  },
+  "podcastUpload": null,
+  "podcastPreviewUpload": null,
+  "voiceover_upload_id": null,
+  "voiceoverUpload": null,
+  "has_voiceover": false,
+  "description": "America is experiencing the greatest gap in life expectancy across regions in the last 40 years",
+  "body_html": "<div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!qxS1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb553faf-565e-477b-948f-f746b7480c81_1240x1042.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!qxS1!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb553faf-565e-477b-948f-f746b7480c81_1240x1042.png 424w, https://substackcdn.com/image/fetch/$s_!qxS1!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb553faf-565e-477b-948f-f746b7480c81_1240x1042.png 848w, https://substackcdn.com/image/fetch/$s_!qxS1!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb553faf-565e-477b-948f-f746b7480c81_1240x1042.png 1272w, https://substackcdn.com/image/fetch/$s_!qxS1!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb553faf-565e-477b-948f-f746b7480c81_1240x1042.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!qxS1!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb553faf-565e-477b-948f-f746b7480c81_1240x1042.png\" width=\"1240\" height=\"1042\" data-attrs=\"{&quot;src&quot;:&quot;https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/eb553faf-565e-477b-948f-f746b7480c81_1240x1042.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1042,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:614333,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!qxS1!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb553faf-565e-477b-948f-f746b7480c81_1240x1042.png 424w, https://substackcdn.com/image/fetch/$s_!qxS1!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb553faf-565e-477b-948f-f746b7480c81_1240x1042.png 848w, https://substackcdn.com/image/fetch/$s_!qxS1!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb553faf-565e-477b-948f-f746b7480c81_1240x1042.png 1272w, https://substackcdn.com/image/fetch/$s_!qxS1!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb553faf-565e-477b-948f-f746b7480c81_1240x1042.png 1456w\" sizes=\"100vw\" fetchpriority=\"high\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://datawrapper.dwcdn.net/zNqoD/9/&quot;,&quot;text&quot;:&quot;Explore interactive map&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://datawrapper.dwcdn.net/zNqoD/9/\"><span>Explore interactive map</span></a></p><p>America is seeing the greatest gap in life expectancy across regions in the last 40 years. While most people will live to 78, some Americans are likely to die more than a decade earlier if they happen to be born in a handful of other counties in the US. Average lifespan has generally been increasing over the last 40 years as advances in medicine, social factors, and quality of life have helped people live longer, however, many Americans have not seen this benefit. As a result some Americans are actually dying far younger than they used to. While life may be unequal, death should not be.&nbsp;</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!Vhu0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37a8859b-8df1-4a97-8159-29cd32e4d8ee_721x474.jpeg\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!Vhu0!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37a8859b-8df1-4a97-8159-29cd32e4d8ee_721x474.jpeg 424w, https://substackcdn.com/image/fetch/$s_!Vhu0!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37a8859b-8df1-4a97-8159-29cd32e4d8ee_721x474.jpeg 848w, https://substackcdn.com/image/fetch/$s_!Vhu0!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37a8859b-8df1-4a97-8159-29cd32e4d8ee_721x474.jpeg 1272w, https://substackcdn.com/image/fetch/$s_!Vhu0!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37a8859b-8df1-4a97-8159-29cd32e4d8ee_721x474.jpeg 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!Vhu0!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37a8859b-8df1-4a97-8159-29cd32e4d8ee_721x474.jpeg\" width=\"721\" height=\"474\" data-attrs=\"{&quot;src&quot;:&quot;https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/37a8859b-8df1-4a97-8159-29cd32e4d8ee_721x474.jpeg&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:474,&quot;width&quot;:721,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:108817,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/jpeg&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!Vhu0!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37a8859b-8df1-4a97-8159-29cd32e4d8ee_721x474.jpeg 424w, https://substackcdn.com/image/fetch/$s_!Vhu0!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37a8859b-8df1-4a97-8159-29cd32e4d8ee_721x474.jpeg 848w, https://substackcdn.com/image/fetch/$s_!Vhu0!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37a8859b-8df1-4a97-8159-29cd32e4d8ee_721x474.jpeg 1272w, https://substackcdn.com/image/fetch/$s_!Vhu0!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F37a8859b-8df1-4a97-8159-29cd32e4d8ee_721x474.jpeg 1456w\" sizes=\"100vw\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">NYC in the 1980s</figcaption></figure></div><p>In 1980, the average American lived to be 74 years old. Infant mortality in particular has greatly decreased, falling by <a href=\"https://www.cdc.gov/nchs/data/hus/2012/023.pdf\">more than half</a> over in the last 40 years.The parts of America that were the wealthiest, healthiest, and safest lived as long as the average person does today. In this sense, America has made great strides in helping people live longer on the whole. Nevertheless, as we look at data from the <a href=\"http://ghdx.healthdata.org/us-data\">Global Health Data Exchange</a>, certain counties in America are not growing at the same rate as other counties, largely for reasons that policymakers understand well.&nbsp;</p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe now&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/subscribe?\"><span>Subscribe now</span></a></p><p>Drug overdoses and heart disease have been some of the leading causes of these increases in deaths. Over the last 20 years, drug overdose deaths in midlife have increased nearly 400% while suicides have <a href=\"https://wonder.cdc.gov/controller/datarequest/D158;jsessionid=350AB167314ADA4EFBD9B87FF62E#Top\">increased</a> 71% from 28,000 per year to 48,000 per year. The COVID-19 pandemic has only accelerated these rates of drug overdoses and suicides, the impact of which America is still waiting to see. Moreover, heart disease is now the leading cause of death in America, claiming <a href=\"https://www.cdc.gov/nchs/fastats/leading-causes-of-death.htm\">655,000 individuals per year</a>. Healthier lifestyles and exercise can dramatically reduce a person\u2019s risk, but healthier food options are more and more out of reach for millions of Americans.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!wurb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab5e03be-a684-46ff-b400-5dcbfe98c057_2040x840.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!wurb!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab5e03be-a684-46ff-b400-5dcbfe98c057_2040x840.png 424w, https://substackcdn.com/image/fetch/$s_!wurb!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab5e03be-a684-46ff-b400-5dcbfe98c057_2040x840.png 848w, https://substackcdn.com/image/fetch/$s_!wurb!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab5e03be-a684-46ff-b400-5dcbfe98c057_2040x840.png 1272w, https://substackcdn.com/image/fetch/$s_!wurb!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab5e03be-a684-46ff-b400-5dcbfe98c057_2040x840.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!wurb!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab5e03be-a684-46ff-b400-5dcbfe98c057_2040x840.png\" width=\"1456\" height=\"600\" data-attrs=\"{&quot;src&quot;:&quot;https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ab5e03be-a684-46ff-b400-5dcbfe98c057_2040x840.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:600,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:209609,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!wurb!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab5e03be-a684-46ff-b400-5dcbfe98c057_2040x840.png 424w, https://substackcdn.com/image/fetch/$s_!wurb!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab5e03be-a684-46ff-b400-5dcbfe98c057_2040x840.png 848w, https://substackcdn.com/image/fetch/$s_!wurb!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab5e03be-a684-46ff-b400-5dcbfe98c057_2040x840.png 1272w, https://substackcdn.com/image/fetch/$s_!wurb!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fab5e03be-a684-46ff-b400-5dcbfe98c057_2040x840.png 1456w\" sizes=\"100vw\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://medium.com/american-inequality/life-expectancy-and-inequality-7eb4d58617b8&quot;,&quot;text&quot;:&quot;View Interactive Chart&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://medium.com/american-inequality/life-expectancy-and-inequality-7eb4d58617b8\"><span>View Interactive Chart</span></a></p><h3><strong>More Money Means More Time&nbsp;Alive</strong></h3><p>Money has become an increasingly strong determinant of who will live longer. People in wealthy counties outlive their poorer counterparts by as much as 20 years now, the greatest gap that in ages that America has seen in 40 years. In South Dakota\u2019s Oglala Lakota county, for example, the average life expectancy is 66.8, making it the worst county in America. The median income in Oglala Lakota is $30,347, which stands in stark contrast to Colorado\u2019s Summit County where life expectancy is 86.9, making it the highest in the country. Median income in Summit is more than 2.5x higher than it is in Oglala Lakota.&nbsp;</p><p>When we dive deeper than the county level, we see this relationship between money and life expectancy come into even clearer focus. Raj Chetty at Harvard analyzed 1.4 billion individual tax records between 1999\u20132014 and matched those to death records. <a href=\"https://jamanetwork.com/journals/jama/article-abstract/2513561#:~:text=First%2C%20higher%20income%20was%20associated,to%2010.3%20years%29%20for%20women.\">His findings</a> were alarming:&nbsp;</p><blockquote><p><em>First\u2026 the gap in life expectancy between the richest 1% and poorest 1% of individuals was 14.6 years for men and 10.1 years for women. Second, inequality in life expectancy increased over time. Between 2001 and 2014, life expectancy increased by 2.34 years for men and 2.91 years for women in the top 5% of the income distribution, but by only 0.32 years for men and 0.04 years for women in the bottom 5%.&nbsp;</em></p></blockquote><p></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!TOs-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2decf5cf-335a-485c-b0d7-9a62057c4704_1240x1240.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!TOs-!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2decf5cf-335a-485c-b0d7-9a62057c4704_1240x1240.png 424w, https://substackcdn.com/image/fetch/$s_!TOs-!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2decf5cf-335a-485c-b0d7-9a62057c4704_1240x1240.png 848w, https://substackcdn.com/image/fetch/$s_!TOs-!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2decf5cf-335a-485c-b0d7-9a62057c4704_1240x1240.png 1272w, https://substackcdn.com/image/fetch/$s_!TOs-!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2decf5cf-335a-485c-b0d7-9a62057c4704_1240x1240.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!TOs-!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2decf5cf-335a-485c-b0d7-9a62057c4704_1240x1240.png\" width=\"1240\" height=\"1240\" data-attrs=\"{&quot;src&quot;:&quot;https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/2decf5cf-335a-485c-b0d7-9a62057c4704_1240x1240.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1240,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:401587,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!TOs-!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2decf5cf-335a-485c-b0d7-9a62057c4704_1240x1240.png 424w, https://substackcdn.com/image/fetch/$s_!TOs-!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2decf5cf-335a-485c-b0d7-9a62057c4704_1240x1240.png 848w, https://substackcdn.com/image/fetch/$s_!TOs-!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2decf5cf-335a-485c-b0d7-9a62057c4704_1240x1240.png 1272w, https://substackcdn.com/image/fetch/$s_!TOs-!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2decf5cf-335a-485c-b0d7-9a62057c4704_1240x1240.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://medium.com/american-inequality/life-expectancy-and-inequality-7eb4d58617b8&quot;,&quot;text&quot;:&quot;View Interactive Chart&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://medium.com/american-inequality/life-expectancy-and-inequality-7eb4d58617b8\"><span>View Interactive Chart</span></a></p><p>Diving deeper into the bottom five worst counties for  expectancy yields some interestiing results. Four of these five counties all have Native American populations higher than 80%. The remaining county, Union in Florida, is not majority Native American, but instead is home to the state\u2019s largest prison population. On average, none of the 31,000 people in these five counties will live past the age of 70.&nbsp;</p><p></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!R4sX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb62230b4-2eb3-4b54-bd7c-3202845d0260_766x407.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!R4sX!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb62230b4-2eb3-4b54-bd7c-3202845d0260_766x407.png 424w, https://substackcdn.com/image/fetch/$s_!R4sX!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb62230b4-2eb3-4b54-bd7c-3202845d0260_766x407.png 848w, https://substackcdn.com/image/fetch/$s_!R4sX!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb62230b4-2eb3-4b54-bd7c-3202845d0260_766x407.png 1272w, https://substackcdn.com/image/fetch/$s_!R4sX!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb62230b4-2eb3-4b54-bd7c-3202845d0260_766x407.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!R4sX!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb62230b4-2eb3-4b54-bd7c-3202845d0260_766x407.png\" width=\"766\" height=\"407\" data-attrs=\"{&quot;src&quot;:&quot;https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/b62230b4-2eb3-4b54-bd7c-3202845d0260_766x407.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:407,&quot;width&quot;:766,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:84915,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!R4sX!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb62230b4-2eb3-4b54-bd7c-3202845d0260_766x407.png 424w, https://substackcdn.com/image/fetch/$s_!R4sX!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb62230b4-2eb3-4b54-bd7c-3202845d0260_766x407.png 848w, https://substackcdn.com/image/fetch/$s_!R4sX!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb62230b4-2eb3-4b54-bd7c-3202845d0260_766x407.png 1272w, https://substackcdn.com/image/fetch/$s_!R4sX!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb62230b4-2eb3-4b54-bd7c-3202845d0260_766x407.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Source: <a href=\"https://www.usnews.com/news/blogs/data-mine/2015/01/05/black-americans-have-fewer-years-to-live-heres-why\">US News</a></figcaption></figure></div><p>The national average life expectancy of 78 masks deep differences across race. Black men and Black women tend to die <a href=\"https://www.cdc.gov/nchs/data/hus/2017/015.pdf\">3-4 years</a> before their White counterparts, though this gap has been narrowing slowly <a href=\"https://www.usnews.com/news/blogs/data-mine/2015/01/05/black-americans-have-fewer-years-to-live-heres-why\">since 1970</a>. The COVID19 pandemic has shown these disparities clearly, as Black American have been dying at a rate <a href=\"https://www.statnews.com/2020/06/09/systemic-racism-black-health-disparities/\">2.4-times</a> that of White Americans. A history of racist policies in the United States has meant that Black Americans are much more likely to live in <a href=\"https://medium.com/american-inequality/food-and-inequality-904a171cce9c\">food deserts</a>, less likely to receive appropriate <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK24693/\">healthcare</a>, have higher rates of <a href=\"https://www.usnews.com/news/blogs/data-mine/2015/01/05/black-americans-have-fewer-years-to-live-heres-why\">maternal mortality</a>, and are more likely to die young from <a href=\"https://www.usnews.com/news/blogs/data-mine/2015/01/05/black-americans-have-fewer-years-to-live-heres-why\">homicides</a>. While being born in one part of the country may contribute to the age that you die, race is still an unfortunately powerful determinant too. </p><p>While lifespans have generally increased since 1980, a few pockets in America have actually seen <em>decreasing</em> life expectancy. 13 counties in the US have had falling life expectancy, 8 of which are in Kentucky and all of which are in the South. These counties are overwhelmingly white and have a <a href=\"https://kentuckytoday.com/stories/study-life-expectancy-in-kentucky-ranks-45th-at-758-years,19945\">high incidence</a> of heart disease, cancer, and drug overdoses.&nbsp;</p><p>For a short period, life expectancy actually decreased in America, largely driven by drastic challenges in these low-income communities. From 2014\u20132017, life expectancy decreased for the first time since 1915\u20131918 during the end of WW1.</p><p>Rising healthcare costs pose greater burdens for low-income Americans. Over the last 20 years, healthcare costs per person have <a href=\"https://datawrapper.dwcdn.net/2n6JA/2/\">more than doubled</a>. While the Affordable Care Act was able to decrease the <em>rate</em> of this rise since it was passed in 2010, many Americans struggle to afford this $10,624 cost. Compared to other OECD nations, the United States greatly surpasses other countries with more than double the per-capita costs of the UK, Japan, Canada, and Israel.  If Americans cannot afford the cost of healthcare, they will die earlier without that care. This is a domain where America does not want to be #1.&nbsp;</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!rUuL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdea0c953-dd0b-425b-aa3d-4c8c8be815f8_1240x1574.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!rUuL!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdea0c953-dd0b-425b-aa3d-4c8c8be815f8_1240x1574.png 424w, https://substackcdn.com/image/fetch/$s_!rUuL!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdea0c953-dd0b-425b-aa3d-4c8c8be815f8_1240x1574.png 848w, https://substackcdn.com/image/fetch/$s_!rUuL!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdea0c953-dd0b-425b-aa3d-4c8c8be815f8_1240x1574.png 1272w, https://substackcdn.com/image/fetch/$s_!rUuL!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdea0c953-dd0b-425b-aa3d-4c8c8be815f8_1240x1574.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!rUuL!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdea0c953-dd0b-425b-aa3d-4c8c8be815f8_1240x1574.png\" width=\"582\" height=\"738.7645161290322\" data-attrs=\"{&quot;src&quot;:&quot;https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/dea0c953-dd0b-425b-aa3d-4c8c8be815f8_1240x1574.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1574,&quot;width&quot;:1240,&quot;resizeWidth&quot;:582,&quot;bytes&quot;:443616,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!rUuL!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdea0c953-dd0b-425b-aa3d-4c8c8be815f8_1240x1574.png 424w, https://substackcdn.com/image/fetch/$s_!rUuL!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdea0c953-dd0b-425b-aa3d-4c8c8be815f8_1240x1574.png 848w, https://substackcdn.com/image/fetch/$s_!rUuL!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdea0c953-dd0b-425b-aa3d-4c8c8be815f8_1240x1574.png 1272w, https://substackcdn.com/image/fetch/$s_!rUuL!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdea0c953-dd0b-425b-aa3d-4c8c8be815f8_1240x1574.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://medium.com/american-inequality/life-expectancy-and-inequality-7eb4d58617b8&quot;,&quot;text&quot;:&quot;View Interactive Chart&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://medium.com/american-inequality/life-expectancy-and-inequality-7eb4d58617b8\"><span>View Interactive Chart</span></a></p><h3>The Path&nbsp;Forward</h3><p>Longer lives don\u2019t always mean healthier lives, but health advocates know how to improve life expectancy for neglected counties. First, interventions need to be made to reduce health risks that can lead to early deaths, and second, costs of healthcare need to continue to come down given the strong relationship between life expectancy and income.&nbsp;</p><p><strong>Reducing health risks</strong>\u2014The US needs to reduce the risk of heart disease and drug overdose. For heart disease, early interventions like improving diets, increasing exercise, reducing cholesterol, and decreasing a person\u2019s blood pressure can ensure that more Americans stay out of hospitals and avoid early death. As the leading cause of death in America, we can do more to ensure that more&nbsp;<a href=\"https://www.cdc.gov/nchs/fastats/leading-causes-of-death.htm\">655,000 individuals per year</a>&nbsp;don\u2019t die from this disease. For drug overdoses, we need to reduce the over-prescription of opioids and also help those who are already addicted. State and local governments can improve mental health facilities, provide drug overdose prevention kits with naloxone vials, and create protective locations for Americans in need. Mississippi, Alabama, and Kentucky are the states with the lowest life expectancies and also some of the highest incidences of heart disease and drug overdose and so interventions should begin here first.</p><p><strong>Reducing healthcare costs\u200a</strong>\u2014\u200aFor the <a href=\"https://www.census.gov/library/publications/2019/demo/p60-266.html#:~:text=In%202018%2C%20there%20were%2038.1,17.4%20percent%20to%2016.2%20percent.\">38 million</a> Americans living in poverty, healthcare costs can often be almost half of a family\u2019s income. According to the <a href=\"https://www.cms.gov/research-statistics-data-and-systems/research/actuarialstudies/downloads/ppaca_2010-04-22.pdf\">Department of Health and Human Services</a>, the Affordable Care Act was able to reduce healthcare spending by <a href=\"https://www.statnews.com/2019/03/22/affordable-care-act-controls-costs/\">$2,000 per person</a> from 2010\u20132017. Nevertheless, countervailing factors like <a href=\"https://www.healthsystemtracker.org/chart-collection/recent-forecasted-trends-prescription-drug-spending/\">rising prescription drug costs</a> and <a href=\"https://www.investopedia.com/insurance/why-do-healthcare-costs-keep-rising/\">rising hospital costs</a> have offset some of these reductions. Telehealth services have greatly reduced the cost and barriers associated with healthcare. Families in rural regions can now access medical services even when they\u2019re miles away from a hospital.&nbsp;</p><p>If America plans to reduce the gap in life expectancy across counties, then policymakers will need to enact changes quickly. We cannot allow some people to lose 20 years of their life just because they were born in one county and not another. Reducing health risks and reducing healthcare costs means that some on Oglala Lakota county can live past 67, that a parent making $40,000 per year doesn\u2019t die half a decade earlier than the national average, and that Americans everywhere can live longer to watch their children and grandchildren grow up.&nbsp;</p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/?utm_source=substack&amp;utm_medium=email&amp;utm_content=share&amp;action=share&quot;,&quot;text&quot;:&quot;Share American Inequality&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/?utm_source=substack&amp;utm_medium=email&amp;utm_content=share&amp;action=share\"><span>Share American Inequality</span></a></p>",
+  "has_dynamic_content": false,
+  "truncated_body_text": "America is seeing the greatest gap in life expectancy across regions in the last 40 years. While most people will live to 78, some Americans are likely to die more than a decade earlier if they happen to be born in a handful of other counties in the US. Average lifespan has generally been increasing over the last 40 years as advances in medicine, social\u2026",
+  "wordcount": 1334,
+  "post_preview_limit": null,
+  "language": "en",
+  "postTags": [
+    {
+      "id": "08168e00-23ae-4c59-abdd-cbe47f99c365",
+      "publication_id": 267573,
+      "name": "life expectancy",
+      "slug": "life-expectancy",
+      "hidden": false
+    },
+    {
+      "id": "41395506-40bd-4270-b6fb-1d7d96acce88",
+      "publication_id": 267573,
+      "name": "U.S. Politics",
+      "slug": "us-politics",
+      "hidden": false
+    },
+    {
+      "id": "6784bf5e-8b62-4a4d-bfc9-82238e84ba2c",
+      "publication_id": 267573,
+      "name": "Black",
+      "slug": "black",
+      "hidden": false
+    },
+    {
+      "id": "713eea61-8117-4fdd-80da-0fd4e458a16e",
+      "publication_id": 267573,
+      "name": "Healthcare",
+      "slug": "healthcare",
+      "hidden": false
+    },
+    {
+      "id": "78d910e2-6fde-47a5-9f8c-84d25e7d21de",
+      "publication_id": 267573,
+      "name": "Housing",
+      "slug": "housing",
+      "hidden": false
+    },
+    {
+      "id": "d0d9619c-35d0-42d2-b436-2353718c0c26",
+      "publication_id": 267573,
+      "name": "business",
+      "slug": "business",
+      "hidden": false
+    },
+    {
+      "id": "e0fdaca7-775e-4117-8bd8-dba61bb30fae",
+      "publication_id": 267573,
+      "name": "Poverty",
+      "slug": "poverty",
+      "hidden": false
+    }
+  ],
+  "postCountryBlocks": [],
+  "headlineTest": null,
+  "coverImagePalette": {
+    "Vibrant": {
+      "rgb": [
+        71,
+        132,
+        188
+      ],
+      "population": 10
+    },
+    "DarkVibrant": {
+      "rgb": [
+        36,
+        108,
+        172
+      ],
+      "population": 1
+    },
+    "LightVibrant": {
+      "rgb": [
+        243,
+        183,
+        159
+      ],
+      "population": 217
+    },
+    "Muted": {
+      "rgb": [
+        111,
+        111,
+        111
+      ],
+      "population": 13
+    },
+    "DarkMuted": {
+      "rgb": [
+        87,
+        87,
+        87
+      ],
+      "population": 5
+    },
+    "LightMuted": {
+      "rgb": [
+        210,
+        178,
+        170
+      ],
+      "population": 4
+    }
+  },
+  "publishedBylines": [
+    {
+      "id": 11624125,
+      "name": "Jeremy Ney",
+      "handle": "jeremybney",
+      "photo_url": "https://substackcdn.com/image/fetch/$s_!LMzS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5fd31dcd-eff9-4585-b5a0-fc00ebf53e47_332x332.png",
+      "bio": "Data journalist, Columbia prof, former Federal Reserve. You've seen these maps. ",
+      "profile_set_up_at": "2021-06-29T14:33:27.162Z",
+      "reader_installed_at": "2022-03-29T00:47:52.882Z",
+      "publicationUsers": [
+        {
+          "id": 236337,
+          "user_id": 11624125,
+          "publication_id": 267573,
+          "role": "admin",
+          "public": true,
+          "is_primary": true,
+          "publication": {
+            "id": 267573,
+            "name": "American Inequality",
+            "subdomain": "americaninequality",
+            "custom_domain": null,
+            "custom_domain_optional": false,
+            "hero_text": "Mapping the country's greatest economic challenges",
+            "logo_url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ca313513-016e-48f0-9e6f-ef172c82864f_1252x1252.png",
+            "author_id": 11624125,
+            "primary_user_id": 11624125,
+            "theme_var_background_pop": "#2096FF",
+            "created_at": "2021-01-21T21:08:07.518Z",
+            "email_from_name": "Jeremy Ney",
+            "copyright": "Jeremy Ney",
+            "founding_plan_name": "Premium Access",
+            "community_enabled": true,
+            "invite_only": false,
+            "payments_state": "enabled",
+            "language": null,
+            "explicit": false,
+            "homepage_type": "magaziney",
+            "is_personal_mode": false,
+            "logo_url_wide": "https://substack-post-media.s3.amazonaws.com/public/images/d08f70b8-7140-4c87-9c25-f0ccf066820b_1642x486.png"
+          }
+        }
+      ],
+      "is_guest": false,
+      "bestseller_tier": 100,
+      "status": {
+        "bestsellerTier": 100,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      }
+    }
+  ],
+  "reaction": null,
+  "reaction_count": 80,
+  "comment_count": 36,
+  "child_comment_count": 12,
+  "audio_items": [
+    {
+      "post_id": 32009123,
+      "voice_id": "en-US-OnyxTurboMultilingualNeural",
+      "audio_url": "https://substack-video.s3.amazonaws.com/video_upload/post/32009123/tts/295bf60a-35a7-44ec-9058-737218d3dccb/en-US-OnyxTurboMultilingualNeural.mp3",
+      "type": "tts",
+      "status": "completed"
+    }
+  ],
+  "is_geoblocked": false,
+  "is_editor_preview": false,
+  "hasCashtag": false,
+  "unlockedWithIP": false,
+  "unlockedWithCampaign": false,
+  "themeVariables": {
+    "color_theme_bg_pop": "#fc5528",
+    "background_pop": "#fc5528",
+    "color_theme_bg_web": null,
+    "cover_bg_color": "#FFFFFF",
+    "cover_bg_color_secondary": "#f0f0f0",
+    "background_pop_darken": "#fc410f",
+    "print_on_pop": "#ffffff",
+    "color_theme_bg_pop_darken": "#fc410f",
+    "color_theme_print_on_pop": "#ffffff",
+    "color_theme_bg_pop_20": "rgba(252, 85, 40, 0.2)",
+    "color_theme_bg_pop_30": "rgba(252, 85, 40, 0.3)",
+    "print_pop": "#fc5528",
+    "color_theme_accent": "#fc5528",
+    "cover_print_primary": "#363737",
+    "cover_print_secondary": "#757575",
+    "cover_print_tertiary": "#b6b6b6",
+    "cover_border_color": "#fc5528",
+    "font_family_headings_preset": "'SF Pro Display', -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "font_weight_headings_preset": 700,
+    "font_family_body_preset": "Spectral,sans-serif",
+    "font_weight_body_preset": 400,
+    "font_size_body_offset": "1px",
+    "font_preset_heading": "sans",
+    "font_preset_body": "classic_serif",
+    "home_hero": "magazine-5",
+    "home_posts": "custom",
+    "home_show_top_posts": true,
+    "web_bg_color": "#ffffff",
+    "background_contrast_1": "#f0f0f0",
+    "background_contrast_2": "#dddddd",
+    "background_contrast_3": "#b7b7b7",
+    "background_contrast_4": "#929292",
+    "background_contrast_5": "#515151",
+    "color_theme_bg_contrast_1": "#f0f0f0",
+    "color_theme_bg_contrast_2": "#dddddd",
+    "color_theme_bg_contrast_3": "#b7b7b7",
+    "color_theme_bg_contrast_4": "#929292",
+    "color_theme_bg_contrast_5": "#515151",
+    "color_theme_bg_elevated": "#ffffff",
+    "color_theme_bg_elevated_secondary": "#f0f0f0",
+    "color_theme_bg_elevated_tertiary": "#dddddd",
+    "color_theme_detail": "#e6e6e6",
+    "background_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "color_theme_bg_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "theme_bg_is_dark": "0",
+    "print_on_web_bg_color": "#363737",
+    "print_secondary_on_web_bg_color": "#868787",
+    "footer_bg_color": "#ffffff",
+    "footer_bg_color_h": "0",
+    "footer_bg_color_s": "0%",
+    "footer_bg_color_l": "100%",
+    "print_on_footer_bg_color": "#363737",
+    "print_secondary_on_footer_bg_color": "#868787",
+    "footer_bg_contrast_1": "#f0f0f0",
+    "footer_bg_contrast_2": "#dddddd",
+    "footer_bg_contrast_3": "#b7b7b7",
+    "footer_bg_contrast_4": "#929292",
+    "footer_bg_elevated": "#ffffff",
+    "footer_bg_elevated_secondary": "#f0f0f0",
+    "footer_bg_elevated_tertiary": "#dddddd",
+    "footer_detail_color": "#e6e6e6",
+    "subscribe_bg_color": "#fafafa",
+    "subscribe_bg_color_h": "0",
+    "subscribe_bg_color_s": "0%",
+    "subscribe_bg_color_l": "98.0392156862745%",
+    "print_on_subscribe_bg_color": "#363737",
+    "print_secondary_on_subscribe_bg_color": "#848585",
+    "subscribe_bg_contrast_1": "#ebebeb",
+    "subscribe_bg_contrast_2": "#d8d8d8",
+    "subscribe_bg_contrast_3": "#b3b3b3",
+    "subscribe_bg_contrast_4": "#909090",
+    "subscribe_bg_elevated": "#fafafa",
+    "subscribe_bg_elevated_secondary": "#ebebeb",
+    "subscribe_bg_elevated_tertiary": "#d8d8d8",
+    "subscribe_detail_color": "#e1e1e1",
+    "background_pop_rgb": "252, 85, 40",
+    "color_theme_bg_pop_rgb": "252, 85, 40",
+    "color_theme_accent_rgb": "252, 85, 40"
+  },
+  "comments": [
+    {
+      "id": 14188462,
+      "body": "Re the relationship between income and longevity, it may be that people that are intellectually capable of making higher incomes are also intellectually capable of making better decisions regarding healthy lifestyles. Longevity and incomes may be indirectly related, not directly related. Logically this hypothesis hangs together. It would be worth looking at.\n ",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1"
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Re the relationship between income and longevity, it may be that people that are intellectually capable of making higher incomes are also intellectually capable of making better decisions regarding healthy lifestyles. Longevity and incomes may be indirectly related, not directly related. Logically this hypothesis hangs together. It would be worth looking at."
+              }
+            ]
+          },
+          {
+            "type": "paragraph"
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 32009123,
+      "user_id": 138031532,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2023-04-03T05:17:26.258Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "Richard carlson",
+      "photo_url": null,
+      "handle": null,
+      "reactor_names": [
+        "Jeremy Ney"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 5
+      },
+      "reaction_count": 5,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "138031532-richard-carlson",
+      "metadata": {
+        "is_author": false,
+        "membership_state": null,
+        "eligibleForGift": true
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": null,
+        "subscriber": null
+      },
+      "score": 10,
+      "children_count": 2,
+      "reported_by_user": false,
+      "restacked": false,
+      "childrenSummary": "3 replies by Jeremy Ney and others"
+    },
+    {
+      "id": 8537928,
+      "body": "Download the data and check out the insights here: https://www.americaninequality.io/life-expectancy",
+      "body_json": null,
+      "publication_id": 267573,
+      "post_id": 32009123,
+      "user_id": 11624125,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2022-08-21T22:48:46.235Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "Jeremy Ney",
+      "photo_url": "https://substackcdn.com/image/fetch/$s_!LMzS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5fd31dcd-eff9-4585-b5a0-fc00ebf53e47_332x332.png",
+      "handle": "jeremybney",
+      "reactor_names": [],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 1
+      },
+      "reaction_count": 1,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "jeremybney",
+      "metadata": {
+        "is_author": true,
+        "membership_state": null,
+        "eligibleForGift": false,
+        "author_on_other_pub": {
+          "name": "American Inequality",
+          "id": 267573,
+          "base_url": "https://americaninequality.substack.com"
+        }
+      },
+      "user_bestseller_tier": 100,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": 100,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      },
+      "score": 10,
+      "children_count": 0,
+      "reported_by_user": false,
+      "restacked": false
+    }
+  ]
+}

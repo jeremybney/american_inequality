@@ -1,0 +1,100 @@
+{
+  "cover.jpg": {
+    "credit": "Image: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png"
+  },
+  "article_01.png": {
+    "credit": "Voting Population by Generation (1990-2030)",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/5754e5f7-6371-4854-9142-59b1e92a7e78_927x717.png"
+  },
+  "article_02.png": {
+    "credit": "Total births per year (1909-2018)",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/3cf05387-0f63-46e4-b09f-4a004e00ed9a_970x720.png"
+  },
+  "article_03.gif": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/d15ecfc1-1459-40f4-b4c0-313cf4701cba_778x530.gif"
+  },
+  "article_04.gif": {
+    "credit": "Average age of the House and Senate since 1789",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/d1374d01-92ff-4433-994e-7edda4a8f0a3_800x575.gif"
+  },
+  "article_05.gif": {
+    "credit": "Generation Distribution of Congress",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/c88bd6be-d241-4a28-9c9b-6925c716f777_800x616.gif"
+  },
+  "article_06.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/79261bc5-c64b-4404-8ea9-f1b26f7cc153_1220x1224.png"
+  },
+  "article_07.png": {
+    "credit": "Immigration counts per year (1820-2023)",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/633f50c2-055f-49d1-9372-145b7618ef5e_956x763.png"
+  },
+  "article_08.png": {
+    "credit": "Distribution of Wealth (2025). Larger bar equates to larger percent share",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/22a980b7-275a-498e-8b78-377137295505_780x791.png"
+  },
+  "article_09.gif": {
+    "credit": "Distribution of Wealth over time (1990-2025). Larger area on graph equates to larger percent share",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/0528f5a0-8225-45f4-95bd-3e2bf13e6e22_800x631.gif"
+  },
+  "article_10.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/77f15e78-0161-4e31-b73e-30cd2ef905f5_785x411.png"
+  },
+  "hook.jpg": {
+    "credit": "Photo: Felton Davis, CC BY 2.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:054_Long_Island.jpg"
+  },
+  "capitol.jpg": {
+    "credit": "Photo: Diliff, CC BY 2.5 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:US_Capitol_dome_Jan_2006.jpg"
+  },
+  "bighome.jpg": {
+    "credit": "Photo: Infrogmation of New Orleans, CC BY-SA 2.5 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Kenner26May2015_McMansion.jpg"
+  },
+  "la.jpg": {
+    "credit": "Photo: Tuxyso, CC BY-SA 3.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Aerial_view_2013.jpg"
+  },
+  "boom.jpg": {
+    "credit": "Photo: Unknown author, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Couple_with_a_child_and_two_cars.jpg"
+  },
+  "hook_clip.mp4": {
+    "credit": "Video: SurveillancePigeon (Pixabay)",
+    "url": "https://pixabay.com/videos/id-136838/"
+  },
+  "build_clip.mp4": {
+    "credit": "Video: D-GM (Pixabay)",
+    "url": "https://pixabay.com/videos/id-121409/"
+  },
+  "young_clip.mp4": {
+    "credit": "Video: Surprising_Media (Pixabay)",
+    "url": "https://pixabay.com/videos/id-219797/"
+  },
+  "news_wapo.webp": {
+    "credit": "Screenshot: The Washington Post",
+    "url": null
+  },
+  "news_cnbc.png": {
+    "credit": "Screenshot: CNBC Television (YouTube)",
+    "url": null
+  },
+  "news_presser.webp": {
+    "credit": "Photo provided by the author",
+    "url": null
+  },
+  "news_urban.pdf": {
+    "credit": "Urban Institute, The Great Inequality Transfer (2024)",
+    "url": "https://www.urban.org/sites/default/files/2024-10/The_Great_Inequality_Transfer.pdf",
+    "kind": "report"
+  },
+  "news_inheritance.png": {
+    "credit": "Screenshot: The Washington Post",
+    "url": "https://finance.yahoo.com/economy/articles/gen-x-and-millennials-are-set-to-inherit-trillions-if-theyre-already-rich-130000294.html",
+    "headline": "Boomers\u2019 massive wealth will mostly be passed down to people who are already rich"
+  }
+}

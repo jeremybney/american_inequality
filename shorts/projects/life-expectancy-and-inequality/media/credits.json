@@ -1,0 +1,47 @@
+{
+  "cover.jpg": {
+    "credit": "Image: American Inequality",
+    "url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/eb553faf-565e-477b-948f-f746b7480c81_1240x1042.png"
+  },
+  "article_01.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/eb553faf-565e-477b-948f-f746b7480c81_1240x1042.png"
+  },
+  "article_02.jpeg": {
+    "credit": "NYC in the 1980s",
+    "url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/37a8859b-8df1-4a97-8159-29cd32e4d8ee_721x474.jpeg"
+  },
+  "article_03.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ab5e03be-a684-46ff-b400-5dcbfe98c057_2040x840.png"
+  },
+  "article_04.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/2decf5cf-335a-485c-b0d7-9a62057c4704_1240x1240.png"
+  },
+  "article_05.png": {
+    "credit": "Source: US News",
+    "url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/b62230b4-2eb3-4b54-bd7c-3202845d0260_766x407.png"
+  },
+  "article_06.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/dea0c953-dd0b-425b-aa3d-4c8c8be815f8_1240x1574.png"
+  },
+  "news_report.pdf": {
+    "credit": "inequalityink.org",
+    "url": "https://inequalityink.org/wp-content/uploads/2026/03/Health-care-costs-strain-budgets-and-shorten-lives-March-27-2026-latest.pdf",
+    "kind": "report"
+  },
+  "hook_clip.mp4": {
+    "credit": "Video: Trek_Jason (Pixabay)",
+    "url": "https://pixabay.com/videos/id-91641/"
+  },
+  "pineridge.jpg": {
+    "credit": "Photo: Badlands National Park, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Stronghold_Unit,_Badlands_National_Park.jpg"
+  },
+  "kentucky.jpg": {
+    "credit": "Photo: Appbirdky, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Downtown_Hazard,_Kentucky_(on_Main_Street).jpg"
+  }
+}

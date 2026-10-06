@@ -22,3 +22,17 @@ myenv2/
 
 service_account.json
 google_sheets_oauth.json
+
+# Shorts video pipeline: rendered outputs and caches
+shorts/projects/*/output/
+shorts/projects/*/.cache/
+shorts/projects/_test/
+# Stock video clips are large (often 100MB+ in 4K); re-download with `search/pick` instead
+shorts/projects/*/media/*.mp4
+shorts/projects/*/media/*.mov
+shorts/projects/*/media/*.webm
+# Voice recordings (personal; re-downloadable from the Shorts Queue page)
+shorts/projects/*/media/voiceover*
+shorts/.env
+shorts/assets/.music_catalog.json
+shorts/projects/*/media/music.mp3
