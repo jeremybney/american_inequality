@@ -294,5 +294,117 @@
     "feel": "Bright, Relaxed, Calming, Uplifting",
     "credit": "Music: “Inspired” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
-  "music_credit": "Music: “Inspired” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  "music_credit": "Music: “Inspired” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
+  "voiceover": {
+    "file": "voiceover.m4a",
+    "clean": "voiceover_clean.wav",
+    "duration": 81.99,
+    "mix": "voiceover_studio.wav",
+    "studio": [
+      "room echo + noise removed (DeepFilterNet 3)",
+      "60-150 Hz +1.5 dB",
+      "300-600 Hz -3.7 dB"
+    ],
+    "cues": [
+      {
+        "scene": 0,
+        "line": 0,
+        "text": "Where you're born can cost you 20 years of life.",
+        "start": 0.16,
+        "end": 2.68,
+        "matched": 1.0
+      },
+      {
+        "scene": 1,
+        "line": 0,
+        "text": "In Oglala Lakota County, South Dakota, life expectancy is just 66.8 years, the lowest in America.",
+        "start": 3.18,
+        "end": 10.02,
+        "matched": 0.94
+      },
+      {
+        "scene": 2,
+        "line": 0,
+        "text": "But in Summit County, Colorado, Americans live to 86.9 years, the highest in America.",
+        "start": 10.52,
+        "end": 15.64,
+        "matched": 0.93
+      },
+      {
+        "scene": 3,
+        "line": 0,
+        "text": "This is the greatest gap in life expectancy across regions in the last 40 years.",
+        "start": 16.14,
+        "end": 20.46,
+        "matched": 1.0
+      },
+      {
+        "scene": 4,
+        "line": 0,
+        "text": "Much of this has to do with wealth. Households in Summit earn 2.5 times more than in Oglala Lakota.",
+        "start": 20.96,
+        "end": 26.35,
+        "matched": 0.95
+      },
+      {
+        "scene": 5,
+        "line": 0,
+        "text": "The more money you have, the longer you live. The richest 1% of men outlive the poorest 1% by 14.6 years, and for women it's 10.1.",
+        "start": 26.85,
+        "end": 36.56,
+        "matched": 0.79
+      },
+      {
+        "scene": 6,
+        "line": 0,
+        "text": "Data from 1.4 billion tax records reveals a brutal divide. From 2001 to 2014, the richest men gained 2.3 years of life while the poorest gained just a third of a year.",
+        "start": 37.06,
+        "end": 48.78,
+        "matched": 0.91
+      },
+      {
+        "scene": 7,
+        "line": 0,
+        "text": "Life expectancy collapse is largely concentrated in the South. Since 1980, 13 counties have seen life expectancy fall, and 8 of them are in Kentucky.",
+        "start": 49.28,
+        "end": 57.82,
+        "matched": 1.0
+      },
+      {
+        "scene": 8,
+        "line": 0,
+        "text": "With expensive healthcare in the US, it is hard to get ahead. Healthcare in America costs $10,624 per person, more than double that of the UK, Japan, or Canada.",
+        "start": 58.32,
+        "end": 68.21,
+        "matched": 0.82
+      },
+      {
+        "scene": 9,
+        "line": 0,
+        "text": "If Americans cannot afford the cost of healthcare, they are destined to die earlier.",
+        "start": 68.71,
+        "end": 72.09,
+        "matched": 0.64
+      },
+      {
+        "scene": 10,
+        "line": 0,
+        "text": "We cannot allow some people to lose 20 years of their life just because they were unlucky enough to be born in one place and not another.",
+        "start": 72.65,
+        "end": 78.81,
+        "matched": 1.0
+      },
+      {
+        "scene": 11,
+        "line": 0,
+        "text": "You can read the full story on American Inequality.",
+        "start": 79.31,
+        "end": 81.38,
+        "matched": 1.0
+      }
+    ],
+    "transcript": "where you're born can cost you 20 years of life. In Oglala Lakota County, South Dakota, life expectancy is just 66 .8 years, the lowest in America. But in Summit County, Colorado, Americans live to 86 .9 years, the highest in America. This is the greatest gap in life expectancy across regions in the last 40 years. Much of this has to do with wealth. Households in Summit earn 2 .5 times more than in Oglala Lakota. The more money you have, the more money you have. have the longer you live. The rich is 1 % of men outlived the poorest 1 % by 14 .6 years and for women it's 10 .1. Data from 1 .4 billion tax records reveals a brutal divide. From 2001 to 2014 the richest men gained 2 .3 years of life while the poorest gained just a third of the year. Life expectancy collapse is largely concentrated in the south. Since 1980, 13 counties have seen life expectancy fall, and eight of them are in Kentucky. With expensive health care in the U .S., it is hard to get ahead. Health care in America costs $10 ,624 per person, more than doubled out of the UK, Japan, or Canada. Americans cannot afford the cost of health care to their deaths and to die earlier. We cannot allow some people to lose 20 years of their life just because they were unlucky enough to be born in one place and not another. You can read the full story on American inequality.",
+    "pauses_trimmed_s": 5.1,
+    "max_gap": 0.5
+  }
 }
