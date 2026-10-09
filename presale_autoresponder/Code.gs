@@ -14,6 +14,9 @@ var WATCHED_FORMS = [
 var REPLY_SUBJECT = 'Your bonus content for The Opportunity Map presale';
 var SENDER_NAME = 'Jeremy Ney';
 var DONE_LABEL = 'Presale bonus sent';
+// "Opportunity Map Presale Submissions" sheet; every submission is logged to its Submissions tab.
+var SHEET_ID = '1clGrdE3eQo0bbi8AEn_sJKtatPHCKawqBaSkl7vuJUc';
+var SHEET_TAB = 'Submissions';
 var LINKS = {
   whatsapp: 'https://chat.whatsapp.com/GpBoiUrRk7OHWcHrvsV7v0',
   bonus: 'https://youtube.com/playlist?list=PLUryKyLf39gI&si=eZ_IxPmutjR0cLZ1',
@@ -39,12 +42,15 @@ function processSubmissions() {
         var fields = parseSubmission(message.getPlainBody());
         if (!fields.email) {
           console.warn('No valid email found in message ' + message.getId() + '; skipping.');
+          logSubmission(message, form, fields, 'Not sent: no valid email');
           props.setProperty(key, 'skipped');
           return;
         }
 
         sendBonusEmail(fields.email, fields.name);
-        props.setProperty(key, new Date().toISOString());
+        var sentAt = new Date();
+        props.setProperty(key, sentAt.toISOString());
+        logSubmission(message, form, fields, sentAt);
         thread.addLabel(label);
         console.log('Sent bonus email to ' + fields.email);
       });
@@ -61,7 +67,37 @@ function parseSubmission(body) {
   var name = matchField(body, /^\s*(?:first\s+name|full\s+name|name)\s*:\s*(.+?)\s*$/im);
   var email = matchField(body, /^\s*e-?mail\s*:\s*(\S+@\S+?)\s*$/im);
   if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) email = '';
-  return { name: name, email: email };
+  var order = matchField(body, /^\s*order\s+number\s*:\s*(.+?)\s*$/im);
+  return { name: name, email: email, order: order };
+}
+
+/**
+ * Adds the submission to the sheet, or fills in "Bonus email sent" if a row
+ * with the same Gmail message ID is already there.
+ * Columns: Submitted | Form | Name | Email | Order number | Bonus email sent | Gmail message ID
+ */
+function logSubmission(message, form, fields, sent) {
+  try {
+    var sheet = SpreadsheetApp.openById(SHEET_ID).getSheetByName(SHEET_TAB);
+    var ids = sheet.getRange('G:G').getValues().map(function (r) { return String(r[0]); });
+    var row = ids.indexOf(message.getId());
+    if (row > -1) {
+      sheet.getRange(row + 1, 6).setValue(sent);
+      return;
+    }
+    sheet.appendRow([
+      message.getDate(),
+      form.subject.replace(' got a new submission', ''),
+      fields.name,
+      fields.email,
+      fields.order,
+      sent,
+      message.getId()
+    ]);
+  } catch (e) {
+    // A logging problem should never stop buyers from getting their email.
+    console.error('Could not log submission ' + message.getId() + ': ' + e);
+  }
 }
 
 function matchField(body, regex) {

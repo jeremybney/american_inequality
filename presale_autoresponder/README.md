@@ -9,12 +9,18 @@ A Google Apps Script that runs in your Gmail account. Every 5 minutes it looks f
 
 It reads the `Name` / `First name` and `Email` fields from the submission summary. Then it sends the buyer the "Your bonus content for The Opportunity Map presale" email from your Gmail. Each submission is answered only once. Handled threads get the Gmail label **Presale bonus sent**.
 
+Every submission is also added to the [Opportunity Map Presale Submissions](https://docs.google.com/spreadsheets/d/1clGrdE3eQo0bbi8AEn_sJKtatPHCKawqBaSkl7vuJUc/edit) sheet. Each row has the submission time, form, name, email, order number, the time the bonus email went out, and the Gmail message ID.
+
 ## Setup (about 5 minutes)
 
 1. While signed in as jeremybney@gmail.com, go to https://script.google.com and click **New project**. Name it "Presale auto-responder".
 2. Delete the sample code in `Code.gs` and paste in the contents of [`Code.gs`](Code.gs). Save.
 3. Choose `sendTestEmail` from the function dropdown and click **Run**. Google will ask you to authorize Gmail access. Click through ("Advanced → Go to project" if it warns that the app is unverified, because it's your own script). Check your inbox for the preview.
 4. Choose `installTrigger` and click **Run**. The responder is now live.
+
+## Updating the script
+
+Paste the new `Code.gs` over the old one and save. If the update uses a new Google service (the sheet logging added Google Sheets), run `sendTestEmail` once so Google asks you to approve the new access. Until you approve it, the trigger fails. The trigger itself stays in place.
 
 ## Notes
 
