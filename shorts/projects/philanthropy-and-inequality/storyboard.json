@@ -38,7 +38,7 @@
       "chip": "Philanthropy · American Inequality",
       "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
       "say": [
-        "Despite record-breaking wealth, American philanthropy has hit an all-time low."
+        "Despite record-breaking wealth in America, philanthropy has now hit record-breaking lows."
       ]
     },
     {
@@ -61,7 +61,7 @@
       ],
       "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
       "say": [
-        "Meanwhile government funding to nonprofits and social services has plunged."
+        "At a time when low-income households need more than ever because government is cutting social services, elites are pulling back from donations."
       ]
     },
     {
@@ -96,31 +96,7 @@
       "zoom_dur": 2.4,
       "source": "Urban Institute · American Inequality",
       "say": [
-        "Without government grants, most nonprofits in every state would run at a loss."
-      ]
-    },
-    {
-      "type": "vbars",
-      "title": "Share of American households that give to charity",
-      "bars": [
-        {
-          "label": "About 20 years ago",
-          "value": 66,
-          "display": "nearly 2/3",
-          "color": "white",
-          "at": 2.0
-        },
-        {
-          "label": "Today",
-          "value": 41,
-          "suffix": "%",
-          "color": "yellow",
-          "at": 3.6
-        }
-      ],
-      "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
-      "say": [
-        "Everyday donors left first, since nearly two-thirds of households gave twenty years ago and just 41% give today."
+        "Without donations and government grants, most nonprofits in every state would run at a loss."
       ]
     },
     {
@@ -184,7 +160,7 @@
       "bottom": 1290,
       "source": "Bank of America",
       "say": [
-        "Even among affluent households, the share who give has fallen from 91% in 2015 to 81%."
+        "But the data reveals that in 2015 91% of affluent households gave to charity. Now, this has fallen to 81%."
       ]
     },
     {
@@ -208,37 +184,115 @@
       },
       "source": "Giving USA via American Inequality",
       "say": [
-        "That hurts, since charities run on big donors, who gave nearly 78% of all dollars in 2024."
+        "Charities rely heavily on big donors. In 2024, donors giving over $50,000 accounted for nearly 78% of total dollars."
       ]
     },
     {
       "type": "vbars",
-      "title": "What a $1,000 charitable deduction saves you",
+      "title": "Share of American households that give to charity",
       "bars": [
         {
-          "label": "12% tax bracket",
-          "value": 120,
-          "prefix": "$",
+          "label": "About 20 years ago",
+          "value": 66,
+          "display": "nearly 2/3",
           "color": "white",
-          "at": 2.4
+          "at": 2.0
         },
         {
-          "label": "35% tax bracket",
-          "value": 350,
-          "prefix": "$",
+          "label": "Today",
+          "value": 41,
+          "suffix": "%",
           "color": "yellow",
-          "at": 3.8
+          "at": 3.6
         }
       ],
-      "annotation": {
-        "text": "about 3x",
-        "bar": 1,
-        "at": 4.8,
-        "color": "yellow"
-      },
       "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
       "say": [
-        "The tax code is part of the reason, since a $1,000 deduction saves $120 in the 12% bracket and $350 in the 35% bracket."
+        "Everyday donors have retreated too. Nearly two-thirds of households gave twenty years ago. Today, it is just 41%."
+      ]
+    },
+    {
+      "type": "line",
+      "title": "Households that volunteer",
+      "series": [
+        {
+          "label": "Affluent",
+          "color": "white",
+          "suffix": "%",
+          "points": [
+            [
+              2015,
+              50
+            ],
+            [
+              2017,
+              48
+            ],
+            [
+              2020,
+              30
+            ],
+            [
+              2022,
+              37
+            ],
+            [
+              2024,
+              43
+            ]
+          ]
+        },
+        {
+          "label": "General public",
+          "color": "navy",
+          "suffix": "%",
+          "points": [
+            [
+              2017,
+              30
+            ],
+            [
+              2019,
+              30
+            ],
+            [
+              2021,
+              24
+            ],
+            [
+              2023,
+              28
+            ]
+          ]
+        }
+      ],
+      "x_ticks": [
+        2015,
+        2020,
+        2024
+      ],
+      "y_range": [
+        0,
+        60
+      ],
+      "y_ticks": [
+        0,
+        20,
+        40,
+        60
+      ],
+      "counter": {
+        "series": 0,
+        "suffix": "%",
+        "label": "of affluent households volunteer"
+      },
+      "draw_at": 1.8,
+      "draw": 3.2,
+      "top": 820,
+      "bottom": 1290,
+      "source": "Bank of America",
+      "say": [
+        "Dollars aren't the only thing disappearing. 50% of affluent households volunteered their time in 2015. Today, only 43% volunteer. For the general public, the decline is even sharper."
       ]
     },
     {
@@ -259,7 +313,7 @@
       ],
       "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
       "say": [
-        "It's a stark departure from the Gilded Age, when Carnegie felt obligated to give and built thousands of libraries."
+        "It's a stark departure from the Gilded Age, when Carnegie, Rockefeller, and Mellon felt obligated to give, building hundreds of libraries and cultural centers."
       ]
     },
     {
@@ -274,7 +328,7 @@
       "y": 0.43,
       "source": "Home Economics (Forbes, Chronicle of Philanthropy)",
       "say": [
-        "Today's richest, like Bezos, Musk and Zuckerberg, have given away a far smaller share of their wealth."
+        "Today's richest, like Bezos, Musk and Zuckerberg, have given away a fraction of their wealth, sometimes as low as 1/100th."
       ],
       "max_height": 1050,
       "zoom_to": [
@@ -348,7 +402,7 @@
         }
       ],
       "say": [
-        "Philanthropy is being asked to fill gaps in public systems it could never replace."
+        "Philanthropy is being asked to fill gaps in public systems that desperately need help, but those elite donors aren't answering the call."
       ],
       "backdrop": {
         "media": "volunteers.jpg",
@@ -363,7 +417,7 @@
     {
       "type": "statement",
       "kicker": "What comes next",
-      "text": "Fund the common interest through {collective action.}",
+      "text": "Reform tax incentives and fund {the common interest.}",
       "backdrop": {
         "media": "library_interior.jpeg",
         "dim": 0.5,
@@ -374,7 +428,7 @@
         ]
       },
       "say": [
-        "We need to reform tax incentives and fund the common interest through collective action instead of a few billionaires."
+        "We need to reform tax incentives and fund the common interest instead of relying on a few billionaires who ebb and flow in their support of public needs."
       ]
     },
     {
