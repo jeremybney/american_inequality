@@ -1,0 +1,603 @@
+{
+  "audience": "everyone",
+  "audience_before_archived": null,
+  "canonical_url": "https://americaninequality.substack.com/p/philanthropy-and-inequality",
+  "default_comment_sort": null,
+  "editor_v2": false,
+  "exempt_from_archive_paywall": false,
+  "free_unlock_required": false,
+  "id": 194795985,
+  "podcast_art_url": null,
+  "podcast_duration": null,
+  "podcast_preview_upload_id": null,
+  "podcast_upload_id": null,
+  "podcast_url": null,
+  "post_date": "2026-04-29T14:34:01.729Z",
+  "updated_at": "2026-04-29T16:37:40.260Z",
+  "publication_id": 267573,
+  "search_engine_description": null,
+  "search_engine_title": null,
+  "section_id": null,
+  "should_send_free_preview": false,
+  "show_guest_bios": true,
+  "slug": "philanthropy-and-inequality",
+  "social_title": "Why Philanthropy is Silent in the Golden Age of Wealth",
+  "subtitle": "Donors are standing on the sideline as the U.S. government retreats from social services",
+  "teaser_post_eligible": true,
+  "title": "Why Philanthropy is Silent in the Golden Age of Wealth",
+  "type": "newsletter",
+  "video_upload_id": null,
+  "write_comment_permissions": "everyone",
+  "meter_type": "none",
+  "live_stream_id": null,
+  "is_published": true,
+  "restacks": 43,
+  "reactions": {
+    "\u2764": 140
+  },
+  "top_exclusions": [],
+  "pins": [],
+  "section_pins": [],
+  "has_shareable_clips": false,
+  "previous_post_slug": "your-brain-on-inequality-with-hanna",
+  "next_post_slug": "what-caused-the-decline-in-charitable-giving",
+  "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/3bf4c4ac-4dc7-49b3-89a4-978b922491b6_600x435.webp",
+  "cover_image_is_square": false,
+  "cover_image_is_explicit": false,
+  "videoUpload": null,
+  "podcastFields": {
+    "post_id": 194795985,
+    "podcast_episode_number": null,
+    "podcast_season_number": null,
+    "podcast_episode_type": null,
+    "should_syndicate_to_other_feed": null,
+    "syndicate_to_section_id": null,
+    "hide_from_feed": false,
+    "free_podcast_url": null,
+    "free_podcast_duration": null,
+    "preview_contains_ad": false,
+    "was_imported_self_serve_sync": false,
+    "draft_free_podcast_url": null,
+    "draft_free_podcast_duration": null
+  },
+  "podcastUpload": null,
+  "podcastPreviewUpload": null,
+  "voiceover_upload_id": null,
+  "voiceoverUpload": null,
+  "has_voiceover": false,
+  "description": "As government retreats from social services, why are wealthy donors standing on the sidelines?",
+  "body_html": "<p>The devastating headlines seem endless: billions slashed from global health, science starved of funding, and social safety nets shredded overnight. Over the past year, government funding to nonprofits, research labs, and social services has plummeted. We are told that as the state retreats, the titans of industry will advance. We are promised that private charity and billionaires who now have more resources will patch the holes left by public policy. It is a seductive logic that the \u201cinvisible hand\u201d of the market is also a helping hand. The reality is, however, that support is not coming. Billionaires are giving less than ever. Despite record-breaking wealth, American philanthropy has hit an all-time low. At a time when we need more and more people to step in, those with the deepest pockets are retreating to the sidelines.</p><div class=\"subscription-widget-wrap-editor\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe&quot;,&quot;language&quot;:&quot;en&quot;}\" data-component-name=\"SubscribeWidgetToDOM\"><div class=\"subscription-widget show-subscribe\"><div class=\"preamble\"><p class=\"cta-caption\">Thanks for reading American Inequality! To become part of our amazing community, add your email here for future updates.</p></div><form class=\"subscription-widget-subscribe\"><input type=\"email\" class=\"email-input\" name=\"email\" placeholder=\"Type your email\u2026\" tabindex=\"-1\"><input type=\"submit\" class=\"button primary\" value=\"Subscribe\"><div class=\"fake-input-wrapper\"><div class=\"fake-input\"></div><div class=\"fake-button\"></div></div></form></div></div><p></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!ctTv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dd66306-0ff9-4286-80d9-4478645453ee_1240x1104.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!ctTv!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dd66306-0ff9-4286-80d9-4478645453ee_1240x1104.png 424w, https://substackcdn.com/image/fetch/$s_!ctTv!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dd66306-0ff9-4286-80d9-4478645453ee_1240x1104.png 848w, https://substackcdn.com/image/fetch/$s_!ctTv!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dd66306-0ff9-4286-80d9-4478645453ee_1240x1104.png 1272w, https://substackcdn.com/image/fetch/$s_!ctTv!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dd66306-0ff9-4286-80d9-4478645453ee_1240x1104.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!ctTv!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dd66306-0ff9-4286-80d9-4478645453ee_1240x1104.png\" width=\"1240\" height=\"1104\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/6dd66306-0ff9-4286-80d9-4478645453ee_1240x1104.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1104,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!ctTv!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dd66306-0ff9-4286-80d9-4478645453ee_1240x1104.png 424w, https://substackcdn.com/image/fetch/$s_!ctTv!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dd66306-0ff9-4286-80d9-4478645453ee_1240x1104.png 848w, https://substackcdn.com/image/fetch/$s_!ctTv!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dd66306-0ff9-4286-80d9-4478645453ee_1240x1104.png 1272w, https://substackcdn.com/image/fetch/$s_!ctTv!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dd66306-0ff9-4286-80d9-4478645453ee_1240x1104.png 1456w\" sizes=\"100vw\" fetchpriority=\"high\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Nonprofits in Louisiana, Northern California, and parts of the Midwest are struggling due to a loss of government grants. Zoom into your home town and see how nonprofits are navigating the loss of federal funding - <a href=\"https://www.datawrapper.de/_/uFWW0/\">explore the map</a></figcaption></figure></div><h1><strong>Top-Heavy Philanthropy</strong></h1><p>About 20 years ago, nearly two-thirds of American households donated to charity. Today, the share of Americans donating to philanthropy has dropped to just 41%. Most philanthropies, however, are dependent on large donors and government grants to support their operations. It is often much easier for them to secure a $200,000 donation or grant than to receive 10,000 donations of $20. In 2024, donors giving over $50,000 accounted for nearly <a href=\"https://www.nonprofitpro.com/article/fundraising-effectiveness-project-data-shows-nonprofits-are-failing-to-engage-microdonors/\">78%</a> of total dollars. Those top-heavy donors have started to disappear from the philanthropy landscape, despite huge accumulations of wealth in those households.</p><p>A <a href=\"https://www.privatebank.bankofamerica.com/articles/bank-of-america-study-of-philanthropy.html\">study</a> from Bank of America found that in 2024, 81% of affluent households made charitable contributions, with donors giving an average of more than $33k, more than 10 times the giving level of the general population. And even among this cohort with the most means, participation in charitable giving has declined from 91% in 2015.</p><p>So why is philanthropy silent in the golden age of inequality? The answer is less a matter of total dollars and more a crisis of participation and misplaced incentives. For the general public, the price of eggs and gas has simply priced many out of their traditional $50 or $100 donation habits, while the ultra-wealthy are increasingly prioritizing family needs and legacy preservation over broader social welfare. Trump era tax cuts have it far easier for them to accumulate wealth without further incentivizing the ultra wealthy to donate. They can now collect more money without the additional benefit that a donation may have for them. On a psychological level, with so many cuts across the social safety net, it can be hard for both middle income and wealthy families to know where to start. Decision fatigue creeps in which can lead to overall paralysis, limiting any given at all. </p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!m6Pr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa02b241-ee1d-4cd6-a4ac-090a3e2dc4e6_1240x678.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!m6Pr!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa02b241-ee1d-4cd6-a4ac-090a3e2dc4e6_1240x678.png 424w, https://substackcdn.com/image/fetch/$s_!m6Pr!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa02b241-ee1d-4cd6-a4ac-090a3e2dc4e6_1240x678.png 848w, https://substackcdn.com/image/fetch/$s_!m6Pr!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa02b241-ee1d-4cd6-a4ac-090a3e2dc4e6_1240x678.png 1272w, https://substackcdn.com/image/fetch/$s_!m6Pr!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa02b241-ee1d-4cd6-a4ac-090a3e2dc4e6_1240x678.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!m6Pr!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa02b241-ee1d-4cd6-a4ac-090a3e2dc4e6_1240x678.png\" width=\"1240\" height=\"678\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/aa02b241-ee1d-4cd6-a4ac-090a3e2dc4e6_1240x678.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:678,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!m6Pr!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa02b241-ee1d-4cd6-a4ac-090a3e2dc4e6_1240x678.png 424w, https://substackcdn.com/image/fetch/$s_!m6Pr!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa02b241-ee1d-4cd6-a4ac-090a3e2dc4e6_1240x678.png 848w, https://substackcdn.com/image/fetch/$s_!m6Pr!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa02b241-ee1d-4cd6-a4ac-090a3e2dc4e6_1240x678.png 1272w, https://substackcdn.com/image/fetch/$s_!m6Pr!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa02b241-ee1d-4cd6-a4ac-090a3e2dc4e6_1240x678.png 1456w\" sizes=\"100vw\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Even the wealthiest donors are giving much less today than a decade ago. <a href=\"https://www.datawrapper.de/_/Dx7Op/?v=2\">Explore our interactive data</a></figcaption></figure></div><p>Ultimately, in a society where wealth is highly concentrated, the wealthy often become more isolated from the very communities in need, leading to a generosity gap where the perception of necessity\u2014and the empathy that drives giving\u2014diminishes as one moves further up the economic ladder. </p><p>This disconnect marks a stark departure from the Gilded Age, when titans like Carnegie and Rockefeller viewed philanthropy through the lens of the \u201cGospel of Wealth\u201d\u2014a philosophy that treated their fortunes effectively as a public trust, one that recognized was a deeply intertwined with the systems that helped give them that wealth. They believed they were morally obligated to redistribute within their own lifetimes to ensure social stability. Unlike the \u201chands-off\u201d or tax-optimized approach of today\u2019s ultra-wealthy, these early industrialist donors were driven by a fear that extreme inequality would lead to total social upheaval, prompting them to build physical, permanent civic infrastructures like thousands of public libraries that mandated ongoing community engagement rather than just passive, digital capital transfers. </p><p>Like most issues of inequality in this country, these divides can be traced back to incentives. The reality of our tax code means that the deductions offered to donors are far more valuable the higher your income is. If you are in the 12% bracket, a $1,000 deduction saves you $120. If you are in the 35% bracket, that same $1,000 deduction saves you up to $350. The tax code treats a billionaire\u2019s dollar as three times more \u201cvaluable\u201d than a teacher\u2019s dollar when it flows toward a nonprofit. The very wealthy donate stocks or real estate, which creates a massive tax loophole. They don\u2019t have to pay capital gains tax on the profit the asset made, but they still get to deduct the full current market value of the asset from their income. When the government subsidizes billionaire giving through these deductions, it is essentially allowing private individuals to decide how \u201cpublic\u201d money is spent, all while those families have their names on the wings of museums, hospitals, and libraries.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!oqAQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa3b3825-fa90-469f-a2b4-6343960c8aed_661x680.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!oqAQ!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa3b3825-fa90-469f-a2b4-6343960c8aed_661x680.png 424w, https://substackcdn.com/image/fetch/$s_!oqAQ!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa3b3825-fa90-469f-a2b4-6343960c8aed_661x680.png 848w, https://substackcdn.com/image/fetch/$s_!oqAQ!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa3b3825-fa90-469f-a2b4-6343960c8aed_661x680.png 1272w, https://substackcdn.com/image/fetch/$s_!oqAQ!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa3b3825-fa90-469f-a2b4-6343960c8aed_661x680.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!oqAQ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa3b3825-fa90-469f-a2b4-6343960c8aed_661x680.png\" width=\"661\" height=\"680\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/aa3b3825-fa90-469f-a2b4-6343960c8aed_661x680.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:680,&quot;width&quot;:661,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!oqAQ!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa3b3825-fa90-469f-a2b4-6343960c8aed_661x680.png 424w, https://substackcdn.com/image/fetch/$s_!oqAQ!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa3b3825-fa90-469f-a2b4-6343960c8aed_661x680.png 848w, https://substackcdn.com/image/fetch/$s_!oqAQ!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa3b3825-fa90-469f-a2b4-6343960c8aed_661x680.png 1272w, https://substackcdn.com/image/fetch/$s_!oqAQ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa3b3825-fa90-469f-a2b4-6343960c8aed_661x680.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Carnegie and Rockefeller were very generous philanthropists, but Bezos, Musk, and Zuckerberg seem unwilling to give as much away. Source: <a href=\"https://homeeconomics.substack.com/p/we-deserve-better-billionaires\">Home Economics</a></figcaption></figure></div><p>The direction money flows has great consequences. <a href=\"https://www.nonprofitpro.com/article/affluent-americans-give-more-strategically-but-fewer-are-donating/#:~:text=1.,as%20much%20as%20non%2Dvolunteers.\">Research</a> finds that donors of varying income strata give to very different types of causes. Wealthier donors give to higher education and arts, while lower and middle income donors focus more of their giving on basic human needs around direct services, such as food banks or shelters. And as discussed, with a donor base shrinking, the distribution of where the funds go shift duly. When philanthropy concentrates with a certain few, it shifts who decides where resources belong, which communities are served, and which problems are deemed worth solving.</p><h1><strong>Nonprofits face existential crisis</strong></h1><p>In spring 2025, about one in three communities serving nonprofits in the US reported losing federal, state and local funding. The <a href=\"https://cep.org/report-backpacks/a-sector-in-crisis-how-u-s-nonprofits-and-foundations-are-responding-to-threats/?section=intro\">Center for Effective Philanthropy </a>found that 61% of nonprofits say the current environment poses moderate to significant risk to their continued operation and a majority of nonprofits have seen staff reductions and programming cuts. That same report notes that 87% of foundation leaders report increased demand for grant funding. These funding restraints have downstream effects on many very real societal issues - homelessness, hunger, access to health care, education, fair and equal access to trial, etc.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!Ajbk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e04b758-45c4-44d5-a266-9546944c39be_1294x354.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!Ajbk!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e04b758-45c4-44d5-a266-9546944c39be_1294x354.png 424w, https://substackcdn.com/image/fetch/$s_!Ajbk!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e04b758-45c4-44d5-a266-9546944c39be_1294x354.png 848w, https://substackcdn.com/image/fetch/$s_!Ajbk!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e04b758-45c4-44d5-a266-9546944c39be_1294x354.png 1272w, https://substackcdn.com/image/fetch/$s_!Ajbk!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e04b758-45c4-44d5-a266-9546944c39be_1294x354.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!Ajbk!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e04b758-45c4-44d5-a266-9546944c39be_1294x354.png\" width=\"1294\" height=\"354\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/8e04b758-45c4-44d5-a266-9546944c39be_1294x354.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:354,&quot;width&quot;:1294,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!Ajbk!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e04b758-45c4-44d5-a266-9546944c39be_1294x354.png 424w, https://substackcdn.com/image/fetch/$s_!Ajbk!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e04b758-45c4-44d5-a266-9546944c39be_1294x354.png 848w, https://substackcdn.com/image/fetch/$s_!Ajbk!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e04b758-45c4-44d5-a266-9546944c39be_1294x354.png 1272w, https://substackcdn.com/image/fetch/$s_!Ajbk!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8e04b758-45c4-44d5-a266-9546944c39be_1294x354.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Have people shifted away from giving money to instead give their time? The answer is No. Volunteering hours and percent of households volunteering have declined. <a href=\"https://www.privatebank.bankofamerica.com/articles/bank-of-america-study-of-philanthropy.html\">Source: Bank of America</a></figcaption></figure></div><p><a href=\"https://www.urban.org/research/publication/how-government-funding-disruptions-affected-nonprofits-early-2025\">Nearly $100m in housing contracts</a> to nonprofits were canceled just this past winter alone. These are meals unserved, rooms sitting vacant, and our most marginalized left without a meaningful community.</p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/?utm_source=substack&amp;utm_medium=email&amp;utm_content=share&amp;action=share&quot;,&quot;text&quot;:&quot;Share American Inequality&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/?utm_source=substack&amp;utm_medium=email&amp;utm_content=share&amp;action=share\"><span>Share American Inequality</span></a></p><h1><strong>How do we decide what is funded?</strong></h1><p>Philanthropy, at its best, complements public investment and fills the gaps that communities have long depended on. At its worst, it becomes a surrogate for democratic accountability, allowing the private preferences of a privileged few to make decisions that should belong to everyone. Bill Gates decided that Malaria is the disease that we need to eradicate from the world, but where was the vote or public policy choice for that? In 2010, Mark Zuckerberg went on Oprah and pledged $100 million to \u201cfix\u201d Newark\u2019s public schools, despite the need being far greater in many other parts of the country. As Caitlin Cosgrove, co-founder and partner of <a href=\"https://www.effectivephilanthropyadvisors.org/\">Effective Philanthropy Advisors</a>, observes\u201c the biggest shift isn\u2019t just how much money is in the system, it\u2019s who gets to decide where it goes. Philanthropy is being asked to fill gaps in public systems it could never replace, even as giving and influence concentrate in fewer hands.\u201d</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!vUEm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d4ed90-a1a5-410b-9ea8-2dfa48e23f58_1040x1084.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!vUEm!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d4ed90-a1a5-410b-9ea8-2dfa48e23f58_1040x1084.png 424w, https://substackcdn.com/image/fetch/$s_!vUEm!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d4ed90-a1a5-410b-9ea8-2dfa48e23f58_1040x1084.png 848w, https://substackcdn.com/image/fetch/$s_!vUEm!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d4ed90-a1a5-410b-9ea8-2dfa48e23f58_1040x1084.png 1272w, https://substackcdn.com/image/fetch/$s_!vUEm!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d4ed90-a1a5-410b-9ea8-2dfa48e23f58_1040x1084.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!vUEm!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d4ed90-a1a5-410b-9ea8-2dfa48e23f58_1040x1084.png\" width=\"1040\" height=\"1084\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/a9d4ed90-a1a5-410b-9ea8-2dfa48e23f58_1040x1084.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1084,&quot;width&quot;:1040,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!vUEm!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d4ed90-a1a5-410b-9ea8-2dfa48e23f58_1040x1084.png 424w, https://substackcdn.com/image/fetch/$s_!vUEm!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d4ed90-a1a5-410b-9ea8-2dfa48e23f58_1040x1084.png 848w, https://substackcdn.com/image/fetch/$s_!vUEm!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d4ed90-a1a5-410b-9ea8-2dfa48e23f58_1040x1084.png 1272w, https://substackcdn.com/image/fetch/$s_!vUEm!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9d4ed90-a1a5-410b-9ea8-2dfa48e23f58_1040x1084.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Foundations and Corporations are now doing far more giving, separating individuals from causes. Explore our <a href=\"https://www.datawrapper.de/_/R8U6c/\">interactive chart</a> or download the data for your own work</figcaption></figure></div><h1><strong>Will Young Donors Change the Game?</strong></h1><p>How do we address the gaps in philanthropy at the same time that the federal government is refusing to fund the organizations that need it most?</p><p>Younger donors have different expectations of what they want to see in the world and from institutions they support or causes they care about. A <a href=\"https://scholarworks.indianapolis.iu.edu/server/api/core/bitstreams/09c0b75d-2473-4a47-b4b9-8795cf455290/content\">2025 national study by the Indiana University Lilly Family School of Philanthropy </a>found that 64% of next-gen donors \u201csupport causes, not institutions.\u201d Their donations go to social justice, racial equity, mental health initiatives, and climate far more than traditional charity. Gen-Z gives at lower levels, but show high rates of engagements with social causes, mutual aid networks, and prefer direct giving platforms to remove the traditional institutions from the mix.When it comes to where that money goes, <a href=\"https://apcoworldwide.com/blog/the-new-face-of-philanthropy-how-gen-z-is-bypassing-traditional-systems/\">57% of Gen Z </a>believe giving directly through platforms like GiveDirectly, GoFundMe, and mutual aid networks has more impact than traditional nonprofit donations. Young donors are more cognizant of supporting the recipient and their mission, thereby creating a more balanced relationship between the donor and the nonprofit. It\u2019s more about the impact than the establishment. A great wealth transfer is underway with over <a href=\"https://americaninequality.substack.com/p/boomers-wealth-millenials-gen-z\">$84 million </a>in assets changing hands between generations through 2045 and the donors inheriting that wealth have different philosophies than the generation before.</p><h1><strong>Philanthropy for the people</strong></h1><p>As <a href=\"https://www.effectivephilanthropyadvisors.org/about-us\">Cosgrove </a>puts it, \u201cwealth and need are both growing, and philanthropy is, in many ways, standing still or pulling back as many of the old norms around large-scale giving fall away. This is fundamentally undemocratic, raising real questions about which needs get prioritized and who gets to make that call.\u201d Instead of asking \u201chow much are people giving,\u201d we need to ask who controls where that money goes, and whether it\u2019s reaching the communities that need it most. This is critical given that the safety nets have been removed overnight and the philanthropic sector is being asked to carry that enormous weight. MacKenzie Scott donated over <a href=\"https://yieldgiving.com\">$26 billion to more than 2,700 non-profit organizations since 2019</a>. While admirable and morally right given the amount of money she has, it should not be required for much of our necessary social services to run and nonprofits to function.</p><p>Figuring this out requires much more than analyzing donor trends. We need to reform our tax incentives and engage in a dialogue about what it means to fund the common interest. Our goal ought to be to collective action instead of relying on a few very wealthy individuals who can prop the system up. That system falls apart when those people stand on the sideline, or when they fund personal projects that leave millions behind. </p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe now&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/subscribe?\"><span>Subscribe now</span></a></p><div><hr></div><h3><strong>INTERESTING ON THE WEB</strong></h3><ul><li><p>Guaranteed income helps people leaving jail and prison, and that helps everyone - <a href=\"https://www.prisonpolicy.org/blog/2026/04/10/guaranteed_income/\">Prison Policy Initiative</a></p></li><li><p>How an inclusive community for people living with mental illness offers an alternative to hospitals and social isolation - <a href=\"https://progressive.org/magazine/where-everybody-knows-your-name-monk-20260414/\">Progressive Magazine</a></p></li><li><p>Your brain on inequality, with Hanna Horvath - <a href=\"http://As government retreats from social services, why are\">Substack</a></p></li><li><p>The American Inequality <a href=\"https://americaninequality.substack.com/p/life-expectancy-and-inequality\">life expectancy map</a> soared around the internet again this past week - <a href=\"https://substack.com/@jeremybney/note/c-246817750\">The internet</a></p></li><li><p>Paul Peterson interviewed Jeremy on Harvard\u2019s <em>Education Exchange</em> about disability in higher education - <a href=\"https://open.spotify.com/episode/5s1NcPZjhhbAP4xSul6oYJ?si=tQ91S75aTSuBiozsJs8GZw&amp;t=2&amp;nd=1&amp;dlsi=f726ddc3ff294560\">Education Exchange</a></p></li><li><p>The most impactful inventions of all time - <a href=\"https://www.wsj.com/us-news/the-most-impactful-u-s-inventions-bf44040d?st=metZMj&amp;reflink=desktopwebshare_permalink\">WSJ</a></p></li><li><p>I\u2019ll be live with <span class=\"mention-wrap\" data-attrs=\"{&quot;name&quot;:&quot;David Roberts&quot;,&quot;id&quot;:841675,&quot;type&quot;:&quot;user&quot;,&quot;url&quot;:null,&quot;photo_url&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/a2e5f517-6c9a-4297-9363-f3620b242ad6_700x700.png&quot;,&quot;uuid&quot;:&quot;161902df-c23b-4069-962f-26908a01dcb9&quot;}\" data-component-name=\"MentionToDOM\"></span> talking about many of the topics from today\u2019s article on Monday (5/4) at 4pm ET - <a href=\"https://open.substack.com/live-stream/180376\">Register for the event</a></p></li></ul><div><hr></div><p>My friend <span class=\"mention-wrap\" data-attrs=\"{&quot;name&quot;:&quot;Simone Stolzoff&quot;,&quot;id&quot;:281511,&quot;type&quot;:&quot;user&quot;,&quot;url&quot;:null,&quot;photo_url&quot;:&quot;https://substackcdn.com/image/fetch/$s_!V-OL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0729152b-0801-4f3a-ba9c-9c545114b02e_1440x1440.jpeg&quot;,&quot;uuid&quot;:&quot;9b43eb78-0cc1-4b26-84de-ba06e90a32e9&quot;}\" data-component-name=\"MentionToDOM\"></span> has a new book coming out next week that I think readers of <em>American Inequality</em> will love. It\u2019s called <a href=\"https://www.amazon.com/How-Not-Know-Uncertainty-Demands/dp/1324089458\">How to Not Know</a> and it\u2019s about how to get better at dealing with uncertainty. I found it fascinating\u2014not to mention that one of the chapters is about my old team at the Federal Reserve so I\u2019m excited that he is showing them off. It\u2019s a book that couldn\u2019t be coming out at a better time. Check it out: <a href=\"https://www.amazon.com/How-Not-Know-Uncertainty-Demands/dp/1324089458\">https://www.amazon.com/How-Not-Know-Uncertainty-Demands/dp/1324089458 </a></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!vpSj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!vpSj!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg 424w, https://substackcdn.com/image/fetch/$s_!vpSj!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg 848w, https://substackcdn.com/image/fetch/$s_!vpSj!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg 1272w, https://substackcdn.com/image/fetch/$s_!vpSj!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!vpSj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg\" width=\"1170\" height=\"862\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/fd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:862,&quot;width&quot;:1170,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:271609,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/jpeg&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:&quot;https://americaninequality.substack.com/i/194795985?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!vpSj!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg 424w, https://substackcdn.com/image/fetch/$s_!vpSj!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg 848w, https://substackcdn.com/image/fetch/$s_!vpSj!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg 1272w, https://substackcdn.com/image/fetch/$s_!vpSj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a></figure></div>",
+  "has_dynamic_content": false,
+  "truncated_body_text": "The devastating headlines seem endless: billions slashed from global health, science starved of funding, and social safety nets shredded overnight. Over the past year, government funding to nonprofits, research labs, and social services has plummeted. We are told that as the state retreats, the titans of industry will advance. We are promised that priva\u2026",
+  "wordcount": 1842,
+  "post_preview_limit": null,
+  "language": "en",
+  "postTags": [
+    {
+      "id": "41395506-40bd-4270-b6fb-1d7d96acce88",
+      "publication_id": 267573,
+      "name": "U.S. Politics",
+      "slug": "us-politics",
+      "hidden": false
+    },
+    {
+      "id": "47510a2d-c793-441b-80e2-a3e39a48263c",
+      "publication_id": 267573,
+      "name": "Wealthy Donors",
+      "slug": "wealthy-donors",
+      "hidden": false
+    },
+    {
+      "id": "4f07feef-058b-4f68-8a7a-eadeeed23a40",
+      "publication_id": 267573,
+      "name": "Philanthropy",
+      "slug": "philanthropy",
+      "hidden": false
+    },
+    {
+      "id": "6c1a284c-a533-4f33-883f-e727c9e0b13d",
+      "publication_id": 267573,
+      "name": "America",
+      "slug": "america",
+      "hidden": false
+    },
+    {
+      "id": "7824582e-e75f-487d-a554-45feaf6b3e0e",
+      "publication_id": 267573,
+      "name": "Donations",
+      "slug": "donations",
+      "hidden": false
+    },
+    {
+      "id": "b11421df-7ceb-42bb-90c5-e1b1c7b4a839",
+      "publication_id": 267573,
+      "name": "Donors",
+      "slug": "donors",
+      "hidden": false
+    },
+    {
+      "id": "c2009f8f-ae69-4aa2-a767-42de750b103a",
+      "publication_id": 267573,
+      "name": "Musk",
+      "slug": "musk",
+      "hidden": false
+    },
+    {
+      "id": "d0d9619c-35d0-42d2-b436-2353718c0c26",
+      "publication_id": 267573,
+      "name": "business",
+      "slug": "business",
+      "hidden": false
+    },
+    {
+      "id": "da93803e-8829-453f-ae43-bcb4fcade806",
+      "publication_id": 267573,
+      "name": "Bezos",
+      "slug": "bezos",
+      "hidden": false
+    }
+  ],
+  "postCountryBlocks": [],
+  "headlineTest": null,
+  "coverImagePalette": {
+    "Vibrant": {
+      "rgb": [
+        60,
+        188,
+        123
+      ],
+      "population": 4389
+    },
+    "DarkVibrant": {
+      "rgb": [
+        129,
+        57,
+        54
+      ],
+      "population": 6
+    },
+    "LightVibrant": {
+      "rgb": [
+        138,
+        185,
+        242
+      ],
+      "population": 1053
+    },
+    "Muted": {
+      "rgb": [
+        83,
+        178,
+        154
+      ],
+      "population": 146
+    },
+    "DarkMuted": {
+      "rgb": [
+        34,
+        45,
+        60
+      ],
+      "population": 319
+    },
+    "LightMuted": {
+      "rgb": [
+        180,
+        188,
+        204
+      ],
+      "population": 1
+    }
+  },
+  "publishedBylines": [
+    {
+      "id": 11624125,
+      "name": "Jeremy Ney",
+      "handle": "jeremybney",
+      "photo_url": "https://substackcdn.com/image/fetch/$s_!LMzS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5fd31dcd-eff9-4585-b5a0-fc00ebf53e47_332x332.png",
+      "bio": "Data journalist, Columbia prof, former Federal Reserve. You've seen these maps. ",
+      "profile_set_up_at": "2021-06-29T14:33:27.162Z",
+      "reader_installed_at": "2022-03-29T00:47:52.882Z",
+      "publicationUsers": [
+        {
+          "id": 236337,
+          "user_id": 11624125,
+          "publication_id": 267573,
+          "role": "admin",
+          "public": true,
+          "is_primary": true,
+          "publication": {
+            "id": 267573,
+            "name": "American Inequality",
+            "subdomain": "americaninequality",
+            "custom_domain": null,
+            "custom_domain_optional": false,
+            "hero_text": "Mapping the country's greatest economic challenges",
+            "logo_url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ca313513-016e-48f0-9e6f-ef172c82864f_1252x1252.png",
+            "author_id": 11624125,
+            "primary_user_id": 11624125,
+            "theme_var_background_pop": "#2096FF",
+            "created_at": "2021-01-21T21:08:07.518Z",
+            "email_from_name": "Jeremy Ney",
+            "copyright": "Jeremy Ney",
+            "founding_plan_name": "Premium Access",
+            "community_enabled": true,
+            "invite_only": false,
+            "payments_state": "enabled",
+            "language": null,
+            "explicit": false,
+            "homepage_type": "magaziney",
+            "is_personal_mode": false,
+            "logo_url_wide": "https://substack-post-media.s3.amazonaws.com/public/images/d08f70b8-7140-4c87-9c25-f0ccf066820b_1642x486.png"
+          }
+        }
+      ],
+      "is_guest": false,
+      "bestseller_tier": 100,
+      "status": {
+        "bestsellerTier": 100,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      }
+    },
+    {
+      "id": 6777665,
+      "name": "Zoe Siegel",
+      "handle": "zoesiegel",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/1b3cdeaa-9fdc-4dbb-9e00-1347131f3fd4_800x800.jpeg",
+      "bio": null,
+      "profile_set_up_at": "2024-02-15T18:49:30.183Z",
+      "reader_installed_at": "2024-09-23T23:49:49.602Z",
+      "publicationUsers": [
+        {
+          "id": 2619961,
+          "user_id": 6777665,
+          "publication_id": 267573,
+          "role": "admin",
+          "public": true,
+          "is_primary": false,
+          "publication": {
+            "id": 267573,
+            "name": "American Inequality",
+            "subdomain": "americaninequality",
+            "custom_domain": null,
+            "custom_domain_optional": false,
+            "hero_text": "Mapping the country's greatest economic challenges",
+            "logo_url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ca313513-016e-48f0-9e6f-ef172c82864f_1252x1252.png",
+            "author_id": 11624125,
+            "primary_user_id": 11624125,
+            "theme_var_background_pop": "#2096FF",
+            "created_at": "2021-01-21T21:08:07.518Z",
+            "email_from_name": "Jeremy Ney",
+            "copyright": "Jeremy Ney",
+            "founding_plan_name": "Premium Access",
+            "community_enabled": true,
+            "invite_only": false,
+            "payments_state": "enabled",
+            "language": null,
+            "explicit": false,
+            "homepage_type": "magaziney",
+            "is_personal_mode": false,
+            "logo_url_wide": "https://substack-post-media.s3.amazonaws.com/public/images/d08f70b8-7140-4c87-9c25-f0ccf066820b_1642x486.png"
+          }
+        }
+      ],
+      "is_guest": false,
+      "bestseller_tier": 100,
+      "status": {
+        "bestsellerTier": 100,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      }
+    }
+  ],
+  "reaction": null,
+  "reaction_count": 140,
+  "comment_count": 20,
+  "child_comment_count": 8,
+  "audio_items": [
+    {
+      "post_id": 194795985,
+      "voice_id": "en-US-OnyxTurboMultilingualNeural",
+      "audio_url": "https://substack-video.s3.amazonaws.com/video_upload/post/194795985/tts/9f62bb82-2439-4352-9526-aa77e99df1e5/en-US-OnyxTurboMultilingualNeural.mp3",
+      "type": "tts",
+      "status": "completed"
+    }
+  ],
+  "is_geoblocked": false,
+  "is_editor_preview": false,
+  "hasCashtag": false,
+  "unlockedWithIP": false,
+  "unlockedWithCampaign": false,
+  "themeVariables": {
+    "color_theme_bg_pop": "#fc5528",
+    "background_pop": "#fc5528",
+    "color_theme_bg_web": null,
+    "cover_bg_color": "#FFFFFF",
+    "cover_bg_color_secondary": "#f0f0f0",
+    "background_pop_darken": "#fc410f",
+    "print_on_pop": "#ffffff",
+    "color_theme_bg_pop_darken": "#fc410f",
+    "color_theme_print_on_pop": "#ffffff",
+    "color_theme_bg_pop_20": "rgba(252, 85, 40, 0.2)",
+    "color_theme_bg_pop_30": "rgba(252, 85, 40, 0.3)",
+    "print_pop": "#fc5528",
+    "color_theme_accent": "#fc5528",
+    "cover_print_primary": "#363737",
+    "cover_print_secondary": "#757575",
+    "cover_print_tertiary": "#b6b6b6",
+    "cover_border_color": "#fc5528",
+    "font_family_headings_preset": "'SF Pro Display', -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "font_weight_headings_preset": 700,
+    "font_family_body_preset": "Spectral,sans-serif",
+    "font_weight_body_preset": 400,
+    "font_size_body_offset": "1px",
+    "font_preset_heading": "sans",
+    "font_preset_body": "classic_serif",
+    "home_hero": "magazine-5",
+    "home_posts": "custom",
+    "home_show_top_posts": true,
+    "web_bg_color": "#ffffff",
+    "background_contrast_1": "#f0f0f0",
+    "background_contrast_2": "#dddddd",
+    "background_contrast_3": "#b7b7b7",
+    "background_contrast_4": "#929292",
+    "background_contrast_5": "#515151",
+    "color_theme_bg_contrast_1": "#f0f0f0",
+    "color_theme_bg_contrast_2": "#dddddd",
+    "color_theme_bg_contrast_3": "#b7b7b7",
+    "color_theme_bg_contrast_4": "#929292",
+    "color_theme_bg_contrast_5": "#515151",
+    "color_theme_bg_elevated": "#ffffff",
+    "color_theme_bg_elevated_secondary": "#f0f0f0",
+    "color_theme_bg_elevated_tertiary": "#dddddd",
+    "color_theme_detail": "#e6e6e6",
+    "background_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "color_theme_bg_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "theme_bg_is_dark": "0",
+    "print_on_web_bg_color": "#363737",
+    "print_secondary_on_web_bg_color": "#868787",
+    "footer_bg_color": "#ffffff",
+    "footer_bg_color_h": "0",
+    "footer_bg_color_s": "0%",
+    "footer_bg_color_l": "100%",
+    "print_on_footer_bg_color": "#363737",
+    "print_secondary_on_footer_bg_color": "#868787",
+    "footer_bg_contrast_1": "#f0f0f0",
+    "footer_bg_contrast_2": "#dddddd",
+    "footer_bg_contrast_3": "#b7b7b7",
+    "footer_bg_contrast_4": "#929292",
+    "footer_bg_elevated": "#ffffff",
+    "footer_bg_elevated_secondary": "#f0f0f0",
+    "footer_bg_elevated_tertiary": "#dddddd",
+    "footer_detail_color": "#e6e6e6",
+    "subscribe_bg_color": "#fafafa",
+    "subscribe_bg_color_h": "0",
+    "subscribe_bg_color_s": "0%",
+    "subscribe_bg_color_l": "98.0392156862745%",
+    "print_on_subscribe_bg_color": "#363737",
+    "print_secondary_on_subscribe_bg_color": "#848585",
+    "subscribe_bg_contrast_1": "#ebebeb",
+    "subscribe_bg_contrast_2": "#d8d8d8",
+    "subscribe_bg_contrast_3": "#b3b3b3",
+    "subscribe_bg_contrast_4": "#909090",
+    "subscribe_bg_elevated": "#fafafa",
+    "subscribe_bg_elevated_secondary": "#ebebeb",
+    "subscribe_bg_elevated_tertiary": "#d8d8d8",
+    "subscribe_detail_color": "#e1e1e1",
+    "background_pop_rgb": "252, 85, 40",
+    "color_theme_bg_pop_rgb": "252, 85, 40",
+    "color_theme_accent_rgb": "252, 85, 40"
+  },
+  "comments": [
+    {
+      "id": 251533885,
+      "body": "There's a population missing in this analysis \u2014 the nonprofit workforce itself.\n\nWhen we skip from inconsistent funding directly to poor outcomes for the people being served. What we overlook is what chronic instability does to the workers in between. When staff can't predict whether their program exists next year \u2014 or whether they can fill their oil tank this month \u2014 they don't have the nervous system capacity for the creativity and cooperation the work requires.\n\nMany nonprofit workers are only one or two missed paychecks away from qualifying for the very services they provide.",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1",
+          "title": null
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "There's a population missing in this analysis \u2014 the nonprofit workforce itself."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "When we skip from inconsistent funding directly to poor outcomes for the people being served. What we overlook is what chronic instability does to the workers in between. When staff can't predict whether their program exists next year \u2014 or whether they can fill their oil tank this month \u2014 they don't have the nervous system capacity for the creativity and cooperation the work requires."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Many nonprofit workers are only one or two missed paychecks away from qualifying for the very services they provide."
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 194795985,
+      "user_id": 221489114,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2026-04-30T13:23:06.300Z",
+      "edited_at": "2026-04-30T13:34:07.785Z",
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "Heather Rebmann Hernandez, MSW",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/7db991c8-8bed-4fd5-a987-7f79103ff5bc_4000x3000.jpeg",
+      "handle": "beyondteambuilding",
+      "reactor_names": [
+        "Jeremy Ney",
+        "Zoe Siegel"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 10
+      },
+      "reaction_count": 10,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "beyondteambuilding",
+      "metadata": {
+        "is_author": false,
+        "membership_state": null,
+        "eligibleForGift": true,
+        "author_on_other_pub": {
+          "name": "Beyond Team Building",
+          "id": 4696542,
+          "base_url": "https://beyondteambuilding.substack.com"
+        }
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": null,
+        "subscriber": null
+      },
+      "score": 15,
+      "children_count": 1,
+      "reported_by_user": false,
+      "restacked": false,
+      "childrenSummary": "1 reply"
+    },
+    {
+      "id": 251035559,
+      "body": "WOWOW",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1",
+          "title": null
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "WOWOW"
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 194795985,
+      "user_id": 108046578,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2026-04-29T14:49:40.615Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "Edward Quince",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/858cdb87-5593-4d90-8738-9b153364f502_1524x1524.jpeg",
+      "handle": "edwardquince",
+      "reactor_names": [
+        "Zoe Siegel",
+        "Jeremy Ney"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 3
+      },
+      "reaction_count": 3,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "edwardquince",
+      "metadata": {
+        "is_author": false,
+        "membership_state": "subscribed",
+        "eligibleForGift": false
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": 1,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "subscriber",
+          "tier": 1,
+          "accent_colors": {
+            "fg": {
+              "light": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "dark": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            },
+            "bg": {
+              "light": {
+                "r": 252,
+                "g": 85,
+                "b": 40,
+                "a": 1
+              },
+              "dark": {
+                "r": 252,
+                "g": 85,
+                "b": 40,
+                "a": 1
+              }
+            }
+          }
+        },
+        "subscriber": null
+      },
+      "score": 8,
+      "children_count": 0,
+      "reported_by_user": false,
+      "restacked": false
+    }
+  ]
+}

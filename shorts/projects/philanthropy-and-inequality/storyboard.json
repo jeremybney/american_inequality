@@ -1,0 +1,396 @@
+{
+  "title": "Why Philanthropy is Silent in the Golden Age of Wealth — TikTok",
+  "wpm": 175,
+  "hold": 0.25,
+  "article": {
+    "section": "The Dividing Line"
+  },
+  "notes": [
+    "Hook question: with record wealth at the top and government funding cut, why is American giving at an all-time low? Answer, built scene by scene: everyday donors dropped out, even the affluent give less, the tax code rewards the richest givers most, today's billionaires give far less than Gilded Age titans, and nonprofits are left at risk. The close names the fix: reform tax incentives and fund the common interest collectively.",
+    "All figures are from the article (Apr 29, 2026) and the sources it cites (Bank of America, Giving USA, Center for Effective Philanthropy, Urban Institute, Lilly Family School). Co-authored post, so the narration uses 'we'."
+  ],
+  "post": {
+    "headline": "Billionaires are giving less than ever",
+    "caption": "American wealth is at a record high, but philanthropy has hit an all-time low. Twenty years ago nearly two-thirds of households gave to charity, and today just 41% do, while 61% of nonprofits say their survival is at risk.",
+    "cta": "Full story and interactive charts at the link in bio.",
+    "hashtags": [
+      "inequality",
+      "philanthropy",
+      "billionaires",
+      "nonprofits",
+      "charity",
+      "taxes"
+    ]
+  },
+  "scenes": [
+    {
+      "type": "photo",
+      "media": "hook.jpg",
+      "query": "Superyacht",
+      "dim": 0.35,
+      "zoom": [
+        1.0,
+        1.18
+      ],
+      "headline": {
+        "text": "Billionaires are giving {less than ever.}"
+      },
+      "chip": "Philanthropy · American Inequality",
+      "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
+      "say": [
+        "Despite record-breaking wealth, American philanthropy has hit an all-time low."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "foodbank.jpg",
+      "query": "Food bank line",
+      "dim": 0.4,
+      "zoom": [
+        1.05,
+        1.15
+      ],
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "FUNDING CUT",
+          "y": 0.32,
+          "at": 1.6,
+          "angle": -3
+        }
+      ],
+      "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
+      "say": [
+        "Meanwhile government funding to nonprofits and social services has plunged."
+      ]
+    },
+    {
+      "type": "article_card",
+      "chips": [
+        "WHO GIVES",
+        "WHO DECIDES",
+        "WHO'S LEFT OUT"
+      ],
+      "chips_at": 1.4,
+      "say": [
+        "We looked at why those with the deepest pockets are retreating to the sidelines."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_01.png",
+      "crop": [
+        0,
+        0.15,
+        1,
+        0.92
+      ],
+      "y": 0.42,
+      "zoom_to": [
+        0.4,
+        0.55,
+        0.8,
+        0.95
+      ],
+      "zoom_at": 1.6,
+      "zoom_dur": 2.4,
+      "source": "Urban Institute · American Inequality",
+      "say": [
+        "Without government grants, most nonprofits in every state would run at a loss."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Share of American households that give to charity",
+      "bars": [
+        {
+          "label": "About 20 years ago",
+          "value": 66,
+          "display": "nearly 2/3",
+          "color": "white",
+          "at": 2.0
+        },
+        {
+          "label": "Today",
+          "value": 41,
+          "suffix": "%",
+          "color": "yellow",
+          "at": 3.6
+        }
+      ],
+      "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
+      "say": [
+        "Everyday donors left first, since nearly two-thirds of households gave twenty years ago and just 41% give today."
+      ]
+    },
+    {
+      "type": "line",
+      "title": "Affluent households that give to charity",
+      "series": [
+        {
+          "label": "",
+          "color": "white",
+          "area": true,
+          "suffix": "%",
+          "head_label": false,
+          "points": [
+            [
+              2015,
+              91
+            ],
+            [
+              2017,
+              90
+            ],
+            [
+              2020,
+              88
+            ],
+            [
+              2022,
+              85
+            ],
+            [
+              2024,
+              81
+            ]
+          ]
+        }
+      ],
+      "x_ticks": [
+        2015,
+        2020,
+        2024
+      ],
+      "y_range": [
+        60,
+        100
+      ],
+      "y_ticks": [
+        60,
+        70,
+        80,
+        90,
+        100
+      ],
+      "counter": {
+        "series": 0,
+        "suffix": "%",
+        "label": "of affluent households give"
+      },
+      "draw_at": 2.0,
+      "draw": 3.0,
+      "top": 820,
+      "bottom": 1290,
+      "source": "Bank of America",
+      "say": [
+        "Even among affluent households, the share who give has fallen from 91% in 2015 to 81%."
+      ]
+    },
+    {
+      "type": "waffle",
+      "title": "Every $100 given to charity in 2024",
+      "groups": [
+        {
+          "label": "Donors giving over $50,000",
+          "count": 78,
+          "color": "navy"
+        }
+      ],
+      "fill_at": 1.6,
+      "fill": 2.4,
+      "big": {
+        "value": 78,
+        "prefix": "$",
+        "label": "from the biggest donors",
+        "color": "yellow",
+        "at": 3.6
+      },
+      "source": "Giving USA via American Inequality",
+      "say": [
+        "That hurts, since charities run on big donors, who gave nearly 78% of all dollars in 2024."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "What a $1,000 charitable deduction saves you",
+      "bars": [
+        {
+          "label": "12% tax bracket",
+          "value": 120,
+          "prefix": "$",
+          "color": "white",
+          "at": 2.4
+        },
+        {
+          "label": "35% tax bracket",
+          "value": 350,
+          "prefix": "$",
+          "color": "yellow",
+          "at": 3.8
+        }
+      ],
+      "annotation": {
+        "text": "about 3x",
+        "bar": 1,
+        "at": 4.8,
+        "color": "yellow"
+      },
+      "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
+      "say": [
+        "The tax code is part of the reason, since a $1,000 deduction saves $120 in the 12% bracket and $350 in the 35% bracket."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "carnegie_library.jpg",
+      "query": "Carnegie library",
+      "dim": 0.35,
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "overlays": [
+        {
+          "kind": "tag",
+          "text": "the Gospel of Wealth",
+          "y": 0.3
+        }
+      ],
+      "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
+      "say": [
+        "It's a stark departure from the Gilded Age, when Carnegie felt obligated to give and built thousands of libraries."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_03.png",
+      "crop": [
+        0,
+        0,
+        1,
+        0.9
+      ],
+      "y": 0.43,
+      "source": "Home Economics (Forbes, Chronicle of Philanthropy)",
+      "say": [
+        "Today's richest, like Bezos, Musk and Zuckerberg, have given away a far smaller share of their wealth."
+      ],
+      "max_height": 1050,
+      "zoom_to": [
+        0.0,
+        0.35,
+        0.7,
+        1.0
+      ],
+      "zoom_at": 2.2,
+      "zoom_dur": 2.6
+    },
+    {
+      "type": "photo",
+      "media": "concert_hall.jpg",
+      "query": "David Geffen Hall",
+      "dim": 0.4,
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
+      "say": [
+        "Who gives shapes what gets funded, as wealthy donors favor universities and the arts while everyday donors fund food banks."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Nonprofits under strain",
+      "bars": [
+        {
+          "label": "Nonprofits whose survival is at risk",
+          "value": 61,
+          "suffix": "%",
+          "color": "white",
+          "at": 2.0
+        },
+        {
+          "label": "Foundations seeing more demand",
+          "value": 87,
+          "suffix": "%",
+          "color": "yellow",
+          "at": 3.6
+        }
+      ],
+      "source": "Center for Effective Philanthropy",
+      "say": [
+        "Now 61% of nonprofits say their survival is at risk, while 87% of foundations report rising demand."
+      ]
+    },
+    {
+      "type": "news",
+      "kicker": "In the news",
+      "items": [
+        {
+          "media": "news_fortune.png",
+          "outlet": "Fortune",
+          "date": "Sep 26, 2026",
+          "crop": [
+            0,
+            0.22,
+            1,
+            0.9
+          ],
+          "highlight": [
+            0.023,
+            0.199,
+            0.977,
+            0.546
+          ],
+          "at": 0.1
+        }
+      ],
+      "say": [
+        "Philanthropy is being asked to fill gaps in public systems it could never replace."
+      ],
+      "backdrop": {
+        "media": "volunteers.jpg",
+        "dim": 0.5,
+        "blur": 3,
+        "zoom": [
+          1.0,
+          1.1
+        ]
+      }
+    },
+    {
+      "type": "statement",
+      "kicker": "What comes next",
+      "text": "Fund the common interest through {collective action.}",
+      "backdrop": {
+        "media": "library_interior.jpeg",
+        "dim": 0.5,
+        "blur": 4,
+        "zoom": [
+          1.0,
+          1.12
+        ]
+      },
+      "say": [
+        "We need to reform tax incentives and fund the common interest through collective action instead of a few billionaires."
+      ]
+    },
+    {
+      "type": "outro",
+      "say": [
+        "You can read the full story on American Inequality."
+      ]
+    }
+  ],
+  "music": {
+    "title": "Beauty Flow",
+    "file": "music.mp3",
+    "start_scene": 1,
+    "level_db": -21.0,
+    "feel": "Calming, Grooving, Driving",
+    "credit": "Music: “Beauty Flow” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  },
+  "music_credit": "Music: “Beauty Flow” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+}

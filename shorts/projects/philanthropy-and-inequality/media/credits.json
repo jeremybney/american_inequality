@@ -1,0 +1,55 @@
+{
+  "cover.jpg": {
+    "credit": "Image: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/3bf4c4ac-4dc7-49b3-89a4-978b922491b6_600x435.webp"
+  },
+  "article_01.png": {
+    "credit": "Nonprofits in Louisiana, Northern California, and parts of the Midwest are struggling due to a loss of government grants",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/6dd66306-0ff9-4286-80d9-4478645453ee_1240x1104.png"
+  },
+  "article_02.png": {
+    "credit": "Even the wealthiest donors are giving much less today than a decade ago. Explore our interactive data",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/aa02b241-ee1d-4cd6-a4ac-090a3e2dc4e6_1240x678.png"
+  },
+  "article_03.png": {
+    "credit": "Carnegie and Rockefeller were very generous philanthropists, but Bezos, Musk, and Zuckerberg seem unwilling to give as m",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/aa3b3825-fa90-469f-a2b4-6343960c8aed_661x680.png"
+  },
+  "article_04.png": {
+    "credit": "Have people shifted away from giving money to instead give their time? The answer is No. Volunteering hours and percent ",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/8e04b758-45c4-44d5-a266-9546944c39be_1294x354.png"
+  },
+  "article_05.png": {
+    "credit": "Foundations and Corporations are now doing far more giving, separating individuals from causes. Explore our interactive ",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/a9d4ed90-a1a5-410b-9ea8-2dfa48e23f58_1040x1084.png"
+  },
+  "article_06.jpeg": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/fd892a9e-2519-4fd1-a443-3965a204d533_1170x862.jpeg"
+  },
+  "news_fortune.png": {
+    "credit": "Screenshot: Fortune",
+    "url": "https://fortune.com/2026/09/26/foundations-nonprofit-crisis-endowment-giving/",
+    "headline": "We\u2019re researchers tracking the nonprofit crisis. Philanthropy\u2019s response is not enough | Fortune"
+  },
+  "hook.jpg": {
+    "credit": "Photo: Davidley, CC0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Samsara_Yacht.jpg"
+  },
+  "foodbank.jpg": {
+    "credit": "Photo: Wikideas1, CC0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Food_pantry_car_line.jpg"
+  },
+  "volunteers.jpg": {
+    "credit": "Photo: U.S. Navy photo by Mass Communication Specialist 2nd Class M, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:US_Navy_090903-N-5366K-100_Recruiters_assigned_to_the_Ohio_Navy_Recruiting_District_and_members_of_the_Navy_parachute_team_work_a_production_line_with_civilians_to_box_food_at_the_Mid-Ohio_food_bank_during_the_Central_Ohio_Navy.jpg"
+  },
+  "concert_hall.jpg": {
+    "credit": "Photo: Jun Seita from Palo Alto, CA, U.S., CC BY 2.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:New_York_Philharmonic_at_Avery_Fisher_Hall_(7230083424).jpg"
+  },
+  "library_interior.jpeg": {
+    "credit": "Photo: Julien Chatelain from Paris, France, CC BY-SA 2.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:New_York_Public_Library_Rose_Main_Reading_Room.jpeg"
+  }
+}
