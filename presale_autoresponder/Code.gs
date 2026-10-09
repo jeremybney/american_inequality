@@ -27,6 +27,17 @@ var LINKS = {
 
 /** Entry point for the time-driven trigger. */
 function processSubmissions() {
+  // If a previous run is still going, skip this one so nobody gets emailed twice.
+  var lock = LockService.getScriptLock();
+  if (!lock.tryLock(1000)) return;
+  try {
+    processNewSubmissions();
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function processNewSubmissions() {
   var props = PropertiesService.getScriptProperties();
   var label = GmailApp.getUserLabelByName(DONE_LABEL) || GmailApp.createLabel(DONE_LABEL);
 
