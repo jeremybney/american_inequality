@@ -421,5 +421,141 @@
     "credit": "Music: “Limit 70” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
   "music_credit": "Music: “Limit 70” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
-  "max_seconds": 100
+  "max_seconds": 100,
+  "voiceover": {
+    "file": "voiceover.m4a",
+    "clean": "voiceover_clean.wav",
+    "duration": 95.11,
+    "mix": "voiceover_studio.wav",
+    "studio": [
+      "room echo + noise removed (DeepFilterNet 3)",
+      "60-150 Hz +1.5 dB",
+      "300-600 Hz -4.0 dB"
+    ],
+    "cues": [
+      {
+        "scene": 0,
+        "line": 0,
+        "text": "Every year, 3.5 million adults are hospitalized for completely preventable reasons.",
+        "start": 0.17,
+        "end": 4.88,
+        "matched": 0.91
+      },
+      {
+        "scene": 1,
+        "line": 0,
+        "text": "Two-thirds of ER visits by privately insured Americans aren't actual emergencies.",
+        "start": 5.38,
+        "end": 9.62,
+        "matched": 1.0
+      },
+      {
+        "scene": 2,
+        "line": 0,
+        "text": "At American Inequality, we found these numbers are really a map of who lacks access to care.",
+        "start": 10.32,
+        "end": 14.75,
+        "matched": 1.0
+      },
+      {
+        "scene": 3,
+        "line": 0,
+        "text": "That map is darkest across Appalachia and the South, and in Mingo County, West Virginia, 1 in 10 hospital stays was preventable.",
+        "start": 15.25,
+        "end": 22.0,
+        "matched": 1.0
+      },
+      {
+        "scene": 4,
+        "line": 0,
+        "text": "Across state lines the gap is just as stark, with West Virginia's rate almost three times Hawaii's.",
+        "start": 22.5,
+        "end": 27.34,
+        "matched": 1.0
+      },
+      {
+        "scene": 5,
+        "line": 0,
+        "text": "There are 2 key reasons for the divide.",
+        "start": 27.84,
+        "end": 28.96,
+        "matched": 1.0
+      },
+      {
+        "scene": 6,
+        "line": 0,
+        "text": "The first is money. Americans in the poorest neighborhoods are 2.5 times more likely to have a preventable hospital stay because they usually can't afford recurring care.",
+        "start": 30.01,
+        "end": 37.96,
+        "matched": 0.96
+      },
+      {
+        "scene": 7,
+        "line": 0,
+        "text": "The second is access, 1 in 5 working-age adults can't get an appointment or a doctor outside work hours.",
+        "start": 38.46,
+        "end": 44.38,
+        "matched": 1.0
+      },
+      {
+        "scene": 8,
+        "line": 0,
+        "text": "By the time they reach the ER, a visit for a common condition costs more than $2,000, twelve times a doctor's office.",
+        "start": 44.88,
+        "end": 51.51,
+        "matched": 0.92
+      },
+      {
+        "scene": 9,
+        "line": 0,
+        "text": "These are costly for individuals, but they are a revenue machine for hospitals. From 2009 to 2016 the average ER facility fee nearly doubled, from $452 to $894.",
+        "start": 52.01,
+        "end": 63.21,
+        "matched": 0.97
+      },
+      {
+        "scene": 10,
+        "line": 0,
+        "text": "Meanwhile family doctors who could offer preventative care are underfunded. They see over 35% of patient visits annually but receive only 5% of US healthcare spending.",
+        "start": 63.71,
+        "end": 73.66,
+        "matched": 0.86
+      },
+      {
+        "scene": 11,
+        "line": 0,
+        "text": "The system pays well for the emergency room, but pays poorly for the appointment that would have prevented it.",
+        "start": 74.16,
+        "end": 79.02,
+        "matched": 0.95
+      },
+      {
+        "scene": 12,
+        "line": 0,
+        "text": "Solutions exist. When states expand Medicaid, preventable hospitalizations fall, and pneumonia stays drop by two-thirds.",
+        "start": 79.52,
+        "end": 86.28,
+        "matched": 0.94
+      },
+      {
+        "scene": 13,
+        "line": 0,
+        "text": "Preventable hospitalizations can fall when the system pays for prevention as reliably as it pays for treatment.",
+        "start": 86.78,
+        "end": 92.09,
+        "matched": 1.0
+      },
+      {
+        "scene": 14,
+        "line": 0,
+        "text": "You can read the full story on American Inequality.",
+        "start": 92.59,
+        "end": 94.59,
+        "matched": 1.0
+      }
+    ],
+    "transcript": "Every year, 3 .5 million adults are hospitalized for completely preventable reasons. Two -thirds of ER visits by privately insured Americans aren't actual emergencies. At American Inequality, we found these numbers are really a map of who lacks access to care. That map is darkest across Appalachia and the South, and in Mingo County, West Virginia, 1 in 10 hospital stays was preventable. Across state lines the gap is just as stark, with West Virginia's rate almost three times Hawaii's. There are two key reasons for the divide. The first is money. Americans in the poorest neighborhoods are 2 .5 times more likely to have a preventable hospital stay because they usually can't afford recurring care. The second is access. One in five working -age adults can't get an appointment or a doctor outside of work hours. By the time they reach the ER, a visit for a common condition costs more than $2 ,000, 12 times a regular doctor's office. These are costly for individuals, but they are a revenue machine for hospitals. From 2009 to 2016, the average ER facility feed nearly doubled from $452 to $894. Meanwhile, family doctors who could offer preventative care are underfunded. They see over 35 % of patient visits annually, but receive only 5 % of U .S. health care spending. The system pays well for the emergency room and pays poorly for the appointment that would have prevented it. Solutions exist when states expand Medicaid, preventable hospitalizations fall, and pneumonia stays dropped by two -thirds. Preventable hospitalizations can fall when the system pays for prevention as reliably as it pays for treatment. You can read the full story on American inequality.",
+    "pauses_trimmed_s": 5.19,
+    "max_gap": 0.5
+  }
 }
