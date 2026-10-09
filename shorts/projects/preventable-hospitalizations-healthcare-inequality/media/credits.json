@@ -1,0 +1,38 @@
+{
+  "cover.jpg": {
+    "credit": "Image: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/c548d293-3a84-41ee-9ff9-5e3ba90f6cfc_1200x630.png"
+  },
+  "article_01.png": {
+    "credit": "Check out your hometown",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/810db88f-439f-46b6-8227-d870af400e7b_1240x1276.png"
+  },
+  "article_02.png": {
+    "credit": "Explore the data on types of preventable hospitalizations",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/54adb938-1079-4f00-9e25-4e86577598bc_1240x1068.png"
+  },
+  "article_03.png": {
+    "credit": "Low-income Americans are 2.5x more likely to have a preventable hospitalization compared to their wealthier peers (1st v",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/538e6be9-031b-430b-b707-44d129771ca9_1342x1114.png"
+  },
+  "article_04.png": {
+    "credit": "Every year, 3.5 million adults have preventable hospitalizations and children have 108,300 preventable hospitalizations,",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png"
+  },
+  "article_05.png": {
+    "credit": "16% of US adults used the ER when they didn\u2019t have to, compared to 11% for the average of our peer countries - our data",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png"
+  },
+  "hook.jpg": {
+    "credit": "Photo: Simtropolitan, CC BY 3.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Emergency_room,_Holyoke_Medical_Center.jpg"
+  },
+  "er.jpg": {
+    "credit": "Photo: Tony Webster from Minneapolis, Minnesota, CC BY-SA 2.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Emergency_Room_(18359923719).jpg"
+  },
+  "clinic.jpg": {
+    "credit": "Photo: Yrem13, CC BY-SA 3.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Lady_reading_in_a_waiting_room.JPG"
+  }
+}

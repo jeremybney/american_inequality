@@ -1,0 +1,701 @@
+{
+  "audience": "everyone",
+  "audience_before_archived": null,
+  "canonical_url": "https://americaninequality.substack.com/p/preventable-hospitalizations-healthcare-inequality",
+  "default_comment_sort": null,
+  "editor_v2": false,
+  "exempt_from_archive_paywall": false,
+  "free_unlock_required": false,
+  "id": 218719310,
+  "podcast_art_url": null,
+  "podcast_duration": null,
+  "podcast_preview_upload_id": null,
+  "podcast_upload_id": null,
+  "podcast_url": null,
+  "post_date": "2026-10-07T14:33:09.521Z",
+  "updated_at": "2026-10-08T12:22:21.840Z",
+  "publication_id": 267573,
+  "search_engine_description": null,
+  "search_engine_title": null,
+  "section_id": null,
+  "should_send_free_preview": false,
+  "show_guest_bios": true,
+  "slug": "preventable-hospitalizations-healthcare-inequality",
+  "social_title": "How the ER Became the New Doctor\u2019s Office",
+  "subtitle": "Millions of Americans land in the hospital for problems a regular doctor could have caught. That's not an accident.",
+  "teaser_post_eligible": true,
+  "title": "How the ER Became the New Doctor\u2019s Office",
+  "type": "newsletter",
+  "video_upload_id": null,
+  "write_comment_permissions": "everyone",
+  "meter_type": "none",
+  "live_stream_id": null,
+  "is_published": true,
+  "restacks": 14,
+  "reactions": {
+    "\u2764": 25
+  },
+  "top_exclusions": [],
+  "pins": [],
+  "section_pins": [],
+  "has_shareable_clips": false,
+  "previous_post_slug": "the-future-of-public-policy-and-prosperity",
+  "next_post_slug": null,
+  "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/c548d293-3a84-41ee-9ff9-5e3ba90f6cfc_1200x630.png",
+  "cover_image_is_square": false,
+  "cover_image_is_explicit": false,
+  "videoUpload": null,
+  "podcastFields": {
+    "post_id": 218719310,
+    "podcast_episode_number": null,
+    "podcast_season_number": null,
+    "podcast_episode_type": null,
+    "should_syndicate_to_other_feed": null,
+    "syndicate_to_section_id": null,
+    "hide_from_feed": false,
+    "free_podcast_url": null,
+    "free_podcast_duration": null,
+    "preview_contains_ad": false,
+    "was_imported_self_serve_sync": false,
+    "draft_free_podcast_url": null,
+    "draft_free_podcast_duration": null
+  },
+  "podcastUpload": null,
+  "podcastPreviewUpload": null,
+  "voiceover_upload_id": null,
+  "voiceoverUpload": null,
+  "has_voiceover": false,
+  "description": "Millions of Americans land in the hospital for problems a regular doctor could have caught. That's not an accident.",
+  "body_html": "<p><strong>I\u2019ve got a big announcement coming soon about the book so make sure to <a href=\"https://americaninequality.substack.com/\">join the newsletter</a> because you\u2019ll hear about everything first here!</strong> <em>Let\u2019s dive in.</em> </p><div><hr></div><p>Every year, <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK559945/\">3.5 million</a> adults and 108,000 children are admitted to hospitals for what doctors deem a completely preventable stay. Compare to our peer countries, the US has <a href=\"https://www.healthsystemtracker.org/indicator/quality/preventable-hospital-admissions/#Healthcare-Associated%20Infections%20(HAIs)%20in%20acute%20care%20hospitals,%20by%20Standardized%20Infection%20Ratio%20(SIR),%202015-2022\">twice</a> as many preventable hospitalizations for heart disease and diabetes.</p><p> When it comes to emergency room visits , <a href=\"https://www.usnews.com/news/health-news/articles/2019-07-22/avoidable-er-visits-fuel-us-health-care-costs\">27 million</a> privately insured individuals visit an ER every year, but two-thirds of those visits are avoidable and<a href=\"https://www.unitedhealthgroup.com/newsroom/posts/2019-07-22-high-cost-emergency-department-visits.html?cid=IC:UHG:OA:7.22.19:standard:NAT:Newsroom\"> not an actual emergency</a>. Many of these people end up in the emergency room because they didn\u2019t seek care when the early warning signs first started creeping up, or because an ER is the only real medial option available to them.</p><div class=\"subscription-widget-wrap-editor\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe&quot;,&quot;language&quot;:&quot;en&quot;}\" data-component-name=\"SubscribeWidgetToDOM\"><div class=\"subscription-widget show-subscribe\"><div class=\"preamble\"><p class=\"cta-caption\">American Inequality is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.</p></div><form class=\"subscription-widget-subscribe\"><input type=\"email\" class=\"email-input\" name=\"email\" placeholder=\"Type your email\u2026\" tabindex=\"-1\"><input type=\"submit\" class=\"button primary\" value=\"Subscribe\"><div class=\"fake-input-wrapper\"><div class=\"fake-input\"></div><div class=\"fake-button\"></div></div></form></div></div><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!LKtM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F810db88f-439f-46b6-8227-d870af400e7b_1240x1276.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!LKtM!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F810db88f-439f-46b6-8227-d870af400e7b_1240x1276.png 424w, https://substackcdn.com/image/fetch/$s_!LKtM!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F810db88f-439f-46b6-8227-d870af400e7b_1240x1276.png 848w, https://substackcdn.com/image/fetch/$s_!LKtM!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F810db88f-439f-46b6-8227-d870af400e7b_1240x1276.png 1272w, https://substackcdn.com/image/fetch/$s_!LKtM!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F810db88f-439f-46b6-8227-d870af400e7b_1240x1276.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!LKtM!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F810db88f-439f-46b6-8227-d870af400e7b_1240x1276.png\" width=\"1240\" height=\"1276\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/810db88f-439f-46b6-8227-d870af400e7b_1240x1276.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1276,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!LKtM!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F810db88f-439f-46b6-8227-d870af400e7b_1240x1276.png 424w, https://substackcdn.com/image/fetch/$s_!LKtM!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F810db88f-439f-46b6-8227-d870af400e7b_1240x1276.png 848w, https://substackcdn.com/image/fetch/$s_!LKtM!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F810db88f-439f-46b6-8227-d870af400e7b_1240x1276.png 1272w, https://substackcdn.com/image/fetch/$s_!LKtM!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F810db88f-439f-46b6-8227-d870af400e7b_1240x1276.png 1456w\" sizes=\"100vw\" fetchpriority=\"high\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\"><a href=\"https://datawrapper.dwcdn.net/GvFCG/2/\">Check out your hometown</a></figcaption></figure></div><p>These visits are not only preventable, but they are expensive. For common conditions that primary care could have treated, the average visit costs<a href=\"https://www.unitedhealthgroup.com/content/dam/UHG/PDF/2019/UHG-Avoidable-ED-Visits.pdf\"> more than $2,000</a>, or 12x higher than visiting a physician\u2019s office. Across the system, preventable emergency spending has been estimated at<a href=\"https://www.dmagazine.com/healthcare-business/2019/02/the-u-s-wastes-8-3-billion-annually-on-er-visits-is-there-a-local-solution/\"> $8.3 billion</a> a year.</p><p>Why does America have so many preventable hospitalizations each year? The more I dug into the piece, the more I realized these numbers are usually told as a story about waste - a waste of much needed medical care elsewhere, a waste of patient time, and a waste of money. But came to believe that these numbers are better understood as a map of who lacks access to care a system that is set up to force people to pay out when they fall, rather than stopping them from falling in the first place.</p><h1><strong>What counts as preventable</strong></h1><p>Preventable hospitalizations are tracked closely by the US government and basically refer to any time someone has to stay in the hospital for a medical problem that could have been treated safely at a regular doctor\u2019s office or clinic.</p><p><a href=\"https://www.uclahealth.org/news/article/preventive-vs-diagnostic-care-what-to-know-and-why-it-matters\">UCLA Health</a> offers a clear analogy - <em>Think of it like car maintenance: if you get your oil changed and your brakes checked regularly, you can avoid a major engine breakdown. In healthcare, getting regular checkups, taking the right medications, and catching warning signs early keeps a manageable health issue from turning into a major emergency.</em></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!MqFv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54adb938-1079-4f00-9e25-4e86577598bc_1240x1068.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!MqFv!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54adb938-1079-4f00-9e25-4e86577598bc_1240x1068.png 424w, https://substackcdn.com/image/fetch/$s_!MqFv!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54adb938-1079-4f00-9e25-4e86577598bc_1240x1068.png 848w, https://substackcdn.com/image/fetch/$s_!MqFv!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54adb938-1079-4f00-9e25-4e86577598bc_1240x1068.png 1272w, https://substackcdn.com/image/fetch/$s_!MqFv!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54adb938-1079-4f00-9e25-4e86577598bc_1240x1068.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!MqFv!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54adb938-1079-4f00-9e25-4e86577598bc_1240x1068.png\" width=\"1240\" height=\"1068\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/54adb938-1079-4f00-9e25-4e86577598bc_1240x1068.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1068,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!MqFv!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54adb938-1079-4f00-9e25-4e86577598bc_1240x1068.png 424w, https://substackcdn.com/image/fetch/$s_!MqFv!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54adb938-1079-4f00-9e25-4e86577598bc_1240x1068.png 848w, https://substackcdn.com/image/fetch/$s_!MqFv!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54adb938-1079-4f00-9e25-4e86577598bc_1240x1068.png 1272w, https://substackcdn.com/image/fetch/$s_!MqFv!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54adb938-1079-4f00-9e25-4e86577598bc_1240x1068.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\"><a href=\"https://datawrapper.dwcdn.net/zhYNP/2/\">Explore the data on types of preventable hospitalizations</a></figcaption></figure></div><p>The federal government <a href=\"https://www.cdc.gov/mmwr/preview/mmwrhtml/su6203a23.htm?s_cid%C2%A0%3Dsu6203a23_x\">tracks</a> preventable hospitalizations with a standard set of measures. The list is mainly made of 7 chronic diseases: diabetes complications, COPD, asthma, hypertension, heart failure, bacterial pneumonia and urinary tract infections.</p><h1><strong>Access and location</strong></h1><p>About<a href=\"https://www.healthsystemtracker.org/chart-collection/quality-u-s-healthcare-system-compare-countries/\"> 20% of young and middle-aged adults</a> report barriers to care that have nothing to do with cost: no open appointments, or no provider available during working hours. In 2023, 16% of U.S. adults ages 19 to 64 used an ER for care a regular doctor could have provided, or because they had no regular doctor. In peer countries, the figure was 11%.</p><p>The burden is not spread evenly. Among Medicare fee-for-service beneficiaries,<a href=\"https://www.beckershospitalreview.com/rankings-and-ratings/preventable-hospitalizations-all-50-states-ranked-2/\"> West Virginia had the highest rate</a> of preventable hospitalizations in 2020: about 4,041 per 100,000 enrollees. In Mingo County, West Virginia 1 in 10 hospitalizations could have been prevented. <em>Long-time readers may remember Mingo County from our <a href=\"https://americaninequality.substack.com/p/sleep-and-inequality\">2024 article</a> on which counties get the least sleep.</em> Hawaii, at 1,411, had less than half West Virginia\u2019s rate. On a county level, Colorado has 6 of the top 10 counties for most hospitalizations prevented and Connecticut has the other 4.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!FXfA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F538e6be9-031b-430b-b707-44d129771ca9_1342x1114.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!FXfA!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F538e6be9-031b-430b-b707-44d129771ca9_1342x1114.png 424w, https://substackcdn.com/image/fetch/$s_!FXfA!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F538e6be9-031b-430b-b707-44d129771ca9_1342x1114.png 848w, https://substackcdn.com/image/fetch/$s_!FXfA!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F538e6be9-031b-430b-b707-44d129771ca9_1342x1114.png 1272w, https://substackcdn.com/image/fetch/$s_!FXfA!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F538e6be9-031b-430b-b707-44d129771ca9_1342x1114.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!FXfA!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F538e6be9-031b-430b-b707-44d129771ca9_1342x1114.png\" width=\"1342\" height=\"1114\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/538e6be9-031b-430b-b707-44d129771ca9_1342x1114.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1114,&quot;width&quot;:1342,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!FXfA!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F538e6be9-031b-430b-b707-44d129771ca9_1342x1114.png 424w, https://substackcdn.com/image/fetch/$s_!FXfA!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F538e6be9-031b-430b-b707-44d129771ca9_1342x1114.png 848w, https://substackcdn.com/image/fetch/$s_!FXfA!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F538e6be9-031b-430b-b707-44d129771ca9_1342x1114.png 1272w, https://substackcdn.com/image/fetch/$s_!FXfA!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F538e6be9-031b-430b-b707-44d129771ca9_1342x1114.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Low-income Americans are 2.5x more likely to have a preventable hospitalization compared to their wealthier peers (1st vs. 4th quartile) - <a href=\"https://hcup-us.ahrq.gov/reports/statbriefs/sb259-Potentially-Preventable-Hospitalizations-2017.jsp\">source</a></figcaption></figure></div><p>Federal researchers estimated that if residents of the lowest-income neighborhoods had the same rate of preventable hospitalizations as the highest-income ones, there would have been<a href=\"https://www.cdc.gov/Mmwr/preview/mmwrhtml/su6001a17.htm\"> more than 560,000 fewer hospitalizations</a> per year. This would have saved the medical system $6.4 billion, and individuals would have not had to spend thousands of dollars.</p><p>A preventable hospitalization is less a personal failure than a measure of where you live and what you earn.</p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe now&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/subscribe?\"><span>Subscribe now</span></a></p><h1><strong>Who benefits</strong></h1><p>If preventable hospitalizations are so costly, why do they persist? Part of the answer is that, for much of the system, they are not a cost at all. They are revenue.</p><p><strong>Hospitals: </strong>Between 2009 and 2016, emergency room spending per person with employer insurance<a href=\"https://healthcostinstitute.org/news/entry/modern-healthcare-er-spending-rises-with-increasing-prices-severity-of-visits\"> rose about 98%</a>, even though the number of visits barely changed. The average ER facility fee climbed from $452 to $894. Much of the growth came from billing. Use of the highest-severity code<a href=\"https://www.eso.com/?p=5965\"> rose 38%, and its price rose 77%</a>, while use of the lowest-severity code fell 41%. The Health Care Cost Institute notes that hospitals have a<a href=\"https://healthcostinstitute.org/?p=10926\"> financial incentive to code visits as more severe</a>. When Americans bypass routine visits and end up in hospitals, dollar signs walk through the door.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!U4CV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!U4CV!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png 424w, https://substackcdn.com/image/fetch/$s_!U4CV!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png 848w, https://substackcdn.com/image/fetch/$s_!U4CV!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png 1272w, https://substackcdn.com/image/fetch/$s_!U4CV!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!U4CV!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png\" width=\"1318\" height=\"688\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:688,&quot;width&quot;:1318,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!U4CV!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png 424w, https://substackcdn.com/image/fetch/$s_!U4CV!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png 848w, https://substackcdn.com/image/fetch/$s_!U4CV!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png 1272w, https://substackcdn.com/image/fetch/$s_!U4CV!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Every year, 3.5 million adults have preventable hospitalizations and children have 108,300 preventable hospitalizations, costing billions - <a href=\"https://hcup-us.ahrq.gov/reports/statbriefs/sb259-Potentially-Preventable-Hospitalizations-2017.jsp\">source</a></figcaption></figure></div><p><strong>Insurers: </strong>The federal government pays Medicare Advantage plans a risk-adjusted amount for each enrollee. The sicker the enrollee is documented to be, the more Medicare pays the insurer. MedPAC estimates that Medicare will pay Advantage plans<a href=\"https://www.kff.org/medicare/decoding-medicare-advantage-coding-intensity/\"> $76 billion more in 2026</a> than it would spend on the same people in traditional Medicare. About $28 billion of that comes from plans coding their members as sicker.</p><p>Our medical system is designed to pay hospitals and insurers and not pay doctors. Primary care physicians see<a href=\"https://www.milbank.org/publications/states-lead-efforts-to-increase-primary-care-spending/\"> more than 35% of patient visits</a>, yet receive only about 5% of health spending. In Medicare, the program for the oldest and sickest Americans, it was just 3.4%. The system pays well for the hospital stay and poorly for the appointment that would have prevented it.</p><h2><strong>Pressure testing the data</strong></h2><p>The rate of potentially preventable adult inpatient stays<a href=\"https://hcup-us.ahrq.gov/reports/statbriefs/sb195-Potentially-Preventable-Hospitalizations.jsp\"> fell about 19% between 2005 and 2012</a>, more than twice the decline in hospital stays overall. The South, long the worst-performing region,<a href=\"https://www.hcup-us.ahrq.gov/reports/statbriefs/sb178-Preventable-Hospitalizations-by-Region.jsp\"> narrowed its gap</a> with the national average over the same period.</p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/p/preventable-hospitalizations-healthcare-inequality/comments&quot;,&quot;text&quot;:&quot;Leave a comment&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/p/preventable-hospitalizations-healthcare-inequality/comments\"><span>Leave a comment</span></a></p><p>\u201cAvoidable\u201d is harder to define than the CDC might let on. <a href=\"https://www.ucsf.edu/news/2013/03/98785/charges-emergency-room-visits-often-based-incorrect-assumptions\">A 2013 study in JAMA</a> found that only about 6% of ER visits ended in a primary care-treatable diagnosis, but the symptoms those patients came in with matched nearly 89% of all ER visits. Chest pain at the door might be heartburn, or might a heart attack, and it can be very hard to tell for many. The researchers estimated that a triage nurse turning patients away by complaint would be wrong about 93% of the time.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!VCgD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!VCgD!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png 424w, https://substackcdn.com/image/fetch/$s_!VCgD!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png 848w, https://substackcdn.com/image/fetch/$s_!VCgD!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png 1272w, https://substackcdn.com/image/fetch/$s_!VCgD!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!VCgD!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png\" width=\"1340\" height=\"786\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:786,&quot;width&quot;:1340,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!VCgD!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png 424w, https://substackcdn.com/image/fetch/$s_!VCgD!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png 848w, https://substackcdn.com/image/fetch/$s_!VCgD!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png 1272w, https://substackcdn.com/image/fetch/$s_!VCgD!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png 1456w\" sizes=\"100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-GK1x3M\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button tabindex=\"0\" type=\"button\" class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-GK1x3M\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">16% of US adults used the ER when they didn\u2019t have to, compared to 11% for the average of our peer countries - <a href=\"https://datawrapper.dwcdn.net/1X8iu/1/\">our data</a></figcaption></figure></div><h2><strong>A lesson from 1999</strong></h2><p><a href=\"https://www.yahoo.com/news/articles/could-cut-180-000-preventable-113000619.html\">In 1999</a>, the Institute of Medicine\u2019s landmark report <em>To Err Is Human</em> estimated that 44,000 to 98,000 Americans died each year from preventable medical errors. It was supposed to spark accountability, transparency and systemic change. About a decade later, a federal inspector general\u2019s review estimated that adverse events in hospitals contributed to the deaths of roughly 180,000 Medicare patients in a single year. American were still ending up in hospitals unnecessarily and dying by the hundreds of thousands because of it.</p><p>Naming a problem does little when the incentives around it stay the same. When states expand Medicaid, preventable hospitalizations rates <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10546541/\">plummet</a>, with hospitalizations from pneumonia dropping by two-thirds.  Preventable hospitalizations will fall when the system pays for prevention as reliably as it pays for treatment, and when a family in Appalachia or the Mississippi Delta can see a doctor as easily as a family in Colorado or Connecticut.</p><div><hr></div><h4><strong>INTERESTING ON THE WEB</strong></h4><ul><li><p>A new groundbreaking report on the $177 billion in cancelled contracts from the current administration and what it is doing to hospitals, schools, and local governments - <a href=\"https://www.lostfunds.org/\">Lost Funds</a> </p></li><li><p>Pretty fun new site called the California Oligarch\u2019s Index and I like that they included a methodology - <a href=\"https://www.californiaoligarchs.com/issues\">Site</a>, <a href=\"https://www.californiaoligarchs.com/methodology.pdf\">methodology</a></p></li><li><p>OpenResearch published its data on unconditional cash transfers - <a href=\"https://www.lse.ac.uk/global-ai-forum/announcements/openresearch\">OpenAI</a></p></li><li><p>I spoke with Micah Lasher who is most likely going to be joining Congress next month in NY12 - <a href=\"https://open.substack.com/live-stream/388241\">Substack Live</a></p></li><li><p>Don\u2019t forget to check out our new weekly series called Charts that Explain the World </p></li></ul><div class=\"digest-post-embed\" data-attrs=\"{&quot;nodeId&quot;:&quot;01863dac-1a06-4557-a37e-d19cc7f7895b&quot;,&quot;caption&quot;:&quot;Welcome to your weekly briefing of the charts, maps, and insights that help you quickly make sense of the foundational patterns shaping our world today. Join us later today for a Substack Live with Micah Lasher who is set to be in Congress in November and next week we\u2019ll be sitting with Anand Giridharadas to discuss homelessness, urban crises, and hope \u2026&quot;,&quot;cta&quot;:null,&quot;showBylines&quot;:true,&quot;showDescription&quot;:true,&quot;showImage&quot;:true,&quot;size&quot;:&quot;lg&quot;,&quot;isEditorNode&quot;:true,&quot;title&quot;:&quot;Charts that Explain the World No. 7&quot;,&quot;publishedBylines&quot;:[{&quot;id&quot;:46869049,&quot;name&quot;:&quot;Michael Tiede&quot;,&quot;bio&quot;:&quot;Data Scientist, Computational Social Science. Using data for social good. Based in Los Angeles&quot;,&quot;photo_url&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/36c116bf-550c-4df7-8f02-7949fa49e637_1281x854.jpeg&quot;,&quot;is_guest&quot;:false,&quot;bestseller_tier&quot;:100}],&quot;post_date&quot;:&quot;2026-10-06T13:33:34.698Z&quot;,&quot;cover_image&quot;:&quot;https://substackcdn.com/image/fetch/$s_!iohG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fff37c09e-ab49-449c-b209-41b3eb4ac6cc_1280x1649.png&quot;,&quot;cover_image_alt&quot;:null,&quot;canonical_url&quot;:&quot;https://americaninequality.substack.com/p/charts-that-explain-the-world-no7&quot;,&quot;section_name&quot;:&quot;The Dividing Line&quot;,&quot;video_upload_id&quot;:null,&quot;id&quot;:219022855,&quot;type&quot;:&quot;newsletter&quot;,&quot;reaction_count&quot;:7,&quot;comment_count&quot;:0,&quot;publication_id&quot;:267573,&quot;publication_name&quot;:&quot;American Inequality&quot;,&quot;publication_logo_url&quot;:&quot;https://substackcdn.com/image/fetch/$s_!DzQD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fca313513-016e-48f0-9e6f-ef172c82864f_1252x1252.png&quot;,&quot;belowTheFold&quot;:true,&quot;youtube_url&quot;:null,&quot;show_links&quot;:null,&quot;feed_url&quot;:null}\"></div>",
+  "has_dynamic_content": false,
+  "truncated_body_text": "I\u2019ve got a big announcement coming soon about the book so make sure to join the newsletter because you\u2019ll hear about everything first here! Let\u2019s dive in.",
+  "wordcount": 1302,
+  "post_preview_limit": null,
+  "language": "en",
+  "postTags": [
+    {
+      "id": "41395506-40bd-4270-b6fb-1d7d96acce88",
+      "publication_id": 267573,
+      "name": "U.S. Politics",
+      "slug": "us-politics",
+      "hidden": false
+    },
+    {
+      "id": "45d23bee-1b3a-4c0b-96d7-74424f844681",
+      "publication_id": 267573,
+      "name": "Inequality",
+      "slug": "inequality",
+      "hidden": false
+    },
+    {
+      "id": "6bf63dbc-b494-41ae-9d44-30f66358b4ed",
+      "publication_id": 267573,
+      "name": "preventable",
+      "slug": "preventable",
+      "hidden": false
+    },
+    {
+      "id": "713eea61-8117-4fdd-80da-0fd4e458a16e",
+      "publication_id": 267573,
+      "name": "Healthcare",
+      "slug": "healthcare",
+      "hidden": false
+    },
+    {
+      "id": "8ed15ca0-2571-44a3-b3bf-c30ff319d516",
+      "publication_id": 267573,
+      "name": "Insurance",
+      "slug": "insurance",
+      "hidden": false
+    },
+    {
+      "id": "c0b216ba-debc-4754-a250-e710c16da4ef",
+      "publication_id": 267573,
+      "name": "hospitals",
+      "slug": "hospitals",
+      "hidden": false
+    },
+    {
+      "id": "d0d9619c-35d0-42d2-b436-2353718c0c26",
+      "publication_id": 267573,
+      "name": "business",
+      "slug": "business",
+      "hidden": false
+    }
+  ],
+  "postCountryBlocks": [],
+  "headlineTest": null,
+  "coverImagePalette": {
+    "Vibrant": {
+      "rgb": [
+        244,
+        180,
+        4
+      ],
+      "population": 2503
+    },
+    "DarkVibrant": {
+      "rgb": [
+        200,
+        151,
+        7
+      ],
+      "population": 96
+    },
+    "LightVibrant": {
+      "rgb": [
+        228,
+        108,
+        116
+      ],
+      "population": 3
+    },
+    "Muted": {
+      "rgb": [
+        132,
+        132,
+        116
+      ],
+      "population": 2
+    },
+    "DarkMuted": {
+      "rgb": [
+        68,
+        62,
+        50
+      ],
+      "population": 352
+    },
+    "LightMuted": {
+      "rgb": [
+        208,
+        198,
+        170
+      ],
+      "population": 12
+    }
+  },
+  "publishedBylines": [
+    {
+      "id": 11624125,
+      "name": "Jeremy Ney",
+      "handle": "jeremybney",
+      "photo_url": "https://substackcdn.com/image/fetch/$s_!LMzS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5fd31dcd-eff9-4585-b5a0-fc00ebf53e47_332x332.png",
+      "bio": "Data journalist, Columbia prof, former Federal Reserve. You've seen these maps. ",
+      "profile_set_up_at": "2021-06-29T14:33:27.162Z",
+      "reader_installed_at": "2022-03-29T00:47:52.882Z",
+      "publicationUsers": [
+        {
+          "id": 236337,
+          "user_id": 11624125,
+          "publication_id": 267573,
+          "role": "admin",
+          "public": true,
+          "is_primary": true,
+          "publication": {
+            "id": 267573,
+            "name": "American Inequality",
+            "subdomain": "americaninequality",
+            "custom_domain": null,
+            "custom_domain_optional": false,
+            "hero_text": "Mapping the country's greatest economic challenges",
+            "logo_url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ca313513-016e-48f0-9e6f-ef172c82864f_1252x1252.png",
+            "author_id": 11624125,
+            "primary_user_id": 11624125,
+            "theme_var_background_pop": "#2096FF",
+            "created_at": "2021-01-21T21:08:07.518Z",
+            "email_from_name": "Jeremy Ney",
+            "copyright": "Jeremy Ney",
+            "founding_plan_name": "Premium Access",
+            "community_enabled": true,
+            "invite_only": false,
+            "payments_state": "enabled",
+            "language": null,
+            "explicit": false,
+            "homepage_type": "magaziney",
+            "is_personal_mode": false,
+            "logo_url_wide": "https://substack-post-media.s3.amazonaws.com/public/images/d08f70b8-7140-4c87-9c25-f0ccf066820b_1642x486.png"
+          }
+        }
+      ],
+      "is_guest": false,
+      "bestseller_tier": 100,
+      "status": {
+        "bestsellerTier": 100,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      }
+    }
+  ],
+  "reaction": null,
+  "reaction_count": 25,
+  "comment_count": 7,
+  "child_comment_count": 3,
+  "audio_items": [
+    {
+      "post_id": 218719310,
+      "voice_id": "en-US-OnyxTurboMultilingualNeural",
+      "audio_url": "https://substack-video.s3.amazonaws.com/video_upload/post/218719310/tts/86571ad3-39c1-464a-b905-0b36da897743/en-US-OnyxTurboMultilingualNeural.mp3",
+      "type": "tts",
+      "status": "completed"
+    }
+  ],
+  "is_geoblocked": false,
+  "is_editor_preview": false,
+  "hasCashtag": false,
+  "unlockedWithIP": false,
+  "unlockedWithCampaign": false,
+  "themeVariables": {
+    "color_theme_bg_pop": "#fc5528",
+    "background_pop": "#fc5528",
+    "color_theme_bg_web": null,
+    "cover_bg_color": "#FFFFFF",
+    "cover_bg_color_secondary": "#f0f0f0",
+    "background_pop_darken": "#fc410f",
+    "print_on_pop": "#ffffff",
+    "color_theme_bg_pop_darken": "#fc410f",
+    "color_theme_print_on_pop": "#ffffff",
+    "color_theme_bg_pop_20": "rgba(252, 85, 40, 0.2)",
+    "color_theme_bg_pop_30": "rgba(252, 85, 40, 0.3)",
+    "print_pop": "#fc5528",
+    "color_theme_accent": "#fc5528",
+    "cover_print_primary": "#363737",
+    "cover_print_secondary": "#757575",
+    "cover_print_tertiary": "#b6b6b6",
+    "cover_border_color": "#fc5528",
+    "font_family_headings_preset": "'SF Pro Display', -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "font_weight_headings_preset": 700,
+    "font_family_body_preset": "Spectral,sans-serif",
+    "font_weight_body_preset": 400,
+    "font_size_body_offset": "1px",
+    "font_preset_heading": "sans",
+    "font_preset_body": "classic_serif",
+    "home_hero": "magazine-5",
+    "home_posts": "custom",
+    "home_show_top_posts": true,
+    "web_bg_color": "#ffffff",
+    "background_contrast_1": "#f0f0f0",
+    "background_contrast_2": "#dddddd",
+    "background_contrast_3": "#b7b7b7",
+    "background_contrast_4": "#929292",
+    "background_contrast_5": "#515151",
+    "color_theme_bg_contrast_1": "#f0f0f0",
+    "color_theme_bg_contrast_2": "#dddddd",
+    "color_theme_bg_contrast_3": "#b7b7b7",
+    "color_theme_bg_contrast_4": "#929292",
+    "color_theme_bg_contrast_5": "#515151",
+    "color_theme_bg_elevated": "#ffffff",
+    "color_theme_bg_elevated_secondary": "#f0f0f0",
+    "color_theme_bg_elevated_tertiary": "#dddddd",
+    "color_theme_detail": "#e6e6e6",
+    "background_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "color_theme_bg_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "theme_bg_is_dark": "0",
+    "print_on_web_bg_color": "#363737",
+    "print_secondary_on_web_bg_color": "#868787",
+    "footer_bg_color": "#ffffff",
+    "footer_bg_color_h": "0",
+    "footer_bg_color_s": "0%",
+    "footer_bg_color_l": "100%",
+    "print_on_footer_bg_color": "#363737",
+    "print_secondary_on_footer_bg_color": "#868787",
+    "footer_bg_contrast_1": "#f0f0f0",
+    "footer_bg_contrast_2": "#dddddd",
+    "footer_bg_contrast_3": "#b7b7b7",
+    "footer_bg_contrast_4": "#929292",
+    "footer_bg_elevated": "#ffffff",
+    "footer_bg_elevated_secondary": "#f0f0f0",
+    "footer_bg_elevated_tertiary": "#dddddd",
+    "footer_detail_color": "#e6e6e6",
+    "subscribe_bg_color": "#fafafa",
+    "subscribe_bg_color_h": "0",
+    "subscribe_bg_color_s": "0%",
+    "subscribe_bg_color_l": "98.0392156862745%",
+    "print_on_subscribe_bg_color": "#363737",
+    "print_secondary_on_subscribe_bg_color": "#848585",
+    "subscribe_bg_contrast_1": "#ebebeb",
+    "subscribe_bg_contrast_2": "#d8d8d8",
+    "subscribe_bg_contrast_3": "#b3b3b3",
+    "subscribe_bg_contrast_4": "#909090",
+    "subscribe_bg_elevated": "#fafafa",
+    "subscribe_bg_elevated_secondary": "#ebebeb",
+    "subscribe_bg_elevated_tertiary": "#d8d8d8",
+    "subscribe_detail_color": "#e1e1e1",
+    "background_pop_rgb": "252, 85, 40",
+    "color_theme_bg_pop_rgb": "252, 85, 40",
+    "color_theme_accent_rgb": "252, 85, 40"
+  },
+  "comments": [
+    {
+      "id": 355131138,
+      "body": "Thank you. As a 92-year old trying to get an annual checkup (free with my insurance) in Chicago, I have given up. Invited for a mammogram, hoping I can get a referral for a scan instead, but it likely won\u2019t be easy. Knew I was supposed to die of COVID, but survived to write GOTV postcards with Indivisible and TonyTheDemocrat. Maybe after the election I can get back into the fight.\n\nPS Lived 10 years on a small boat in the canals of France. Nurse came daily to the boat to check on me after a double pulmonary embolism (three weeks in hospital, including intensive care for 36 hours cost less than a day\u2019s hospital stay here at the time (2002-2011).\n\nYour article is a must-read!",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1",
+          "title": null
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Thank you. As a 92-year old trying to get an annual checkup (free with my insurance) in Chicago, I have given up. Invited for a mammogram, hoping I can get a referral for a scan instead, but it likely won\u2019t be easy. Knew I was supposed to die of COVID, but survived to write GOTV postcards with Indivisible and TonyTheDemocrat. Maybe after the election I can get back into the fight."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "PS Lived 10 years on a small boat in the canals of France. Nurse came daily to the boat to check on me after a double pulmonary embolism (three weeks in hospital, including intensive care for 36 hours cost less than a day\u2019s hospital stay here at the time (2002-2011)."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Your article is a must-read!"
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 218719310,
+      "user_id": 50704652,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2026-10-07T14:48:17.838Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "Virginia Witmer",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/a7526330-2e5a-4be7-a76a-704e78596b4c_144x144.png",
+      "handle": "virginiawitmer1",
+      "reactor_names": [
+        "Zoe Siegel",
+        "Jeremy Ney"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 2
+      },
+      "reaction_count": 2,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "virginiawitmer1",
+      "metadata": {
+        "is_author": false,
+        "membership_state": null,
+        "eligibleForGift": true,
+        "author_on_other_pub": {
+          "name": "Virginia\u2019s Substack",
+          "id": 2315478,
+          "base_url": "https://virginia162.substack.com"
+        }
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": 1,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "subscriber",
+          "tier": 1,
+          "accent_colors": null
+        },
+        "subscriber": null
+      },
+      "score": 7,
+      "children_count": 1,
+      "reported_by_user": false,
+      "restacked": false,
+      "childrenSummary": "4 replies by Jeremy Ney and others"
+    },
+    {
+      "id": 355199092,
+      "body": "I WILL TELL YOU THE FACTS; YOU TELL ME WHAT YOU WILL DO ABOUT THEM\n\n1.) We have a certifiably crazy man in the White House who lies compulsively. Back in 2016, I professionally diagnosed him as a narcissistic sociopath with obsessive delusions and a frotteuristic disorder.\n\n2.) We have a non-functioning, brown-nosed Congress with 217 mesmerized Republican members of the House and 50 Republican senators controlled by Trump.\n\n3.) A Supreme Court that has 6 judges who are working to confirm Trump as an authoritarian leader.\n\n4.) A Justice Department that is functioning as Trump\u2019s legal team.\n\n5.) The FBI is Trump\u2019s enforcement agency.\n\n6.) A private Gestapo army is roaming our streets and taking people away without any legal authority.\n\n7.) The world realizes that we are becoming a totalitarian country and must reorganize with that in mind.\n\n8.) A president who has invaded other countries and can be considered a war criminal.\n\n9.) Controlling and eliminating free speech and the press\u2019s ability to obtain facts, and reducing or eliminating voting rights.\n\nThese are the facts; now tell me what you plan to do! Are you planning anything?\n\n1.) These are the massive facts, and all knowledgeable academic professionals will say that they are always found in a totalitarian state.\n\n2.) Yes, we will win in November, and the Democrats will take control of the House and the Senate, and I say big deal. The president can veto any bill that passes through the House and the Senate. Republicans in the House and Senate will still be there and will wait for the next election. Democrats can pass bills to change the president\u2019s power, but he can veto those bills.\n\n3.) Organize marches like the No-King march, but what does that change? Nothing!\n\n4.) No plans because you believe it will right itself.\n\n5.) What must happen for you to think that something must be done seriously?\n\n6.) What if the stock market crashes again?\n\n7.) What if seniors realize that their Social Security payments will be reduced?\n\n8.) What if medical insurance doubles in cost?\n\n9.) What if a year from now we are still at war with Iran?\n\nIf the stated facts are not enough to worry you, what will? Do you think this is beyond our control and that we must live with it? People, what must happen for you to wake up and see our present situation as threatening and dangerous? Are you going to walk off the plank without a fight? Maybe you think it is acceptable and easier for our country to have a king? Do you consider the stated facts a serious reason to be worried, agitated, and frightened? Since 1970, the conservative think tank Heritage Foundation has been financed by billionaires with the sole purpose of developing a plan to control our country by the few in power. Fifty-six years later, they succeeded; we are now a country that is and can be controlled by an elite group of people. Do you believe that? If not, how do I get you to see this reality?\n\nPeople, our fate is not sealed; there are ways to stop it, to stop what is in process, but it requires you to wake up and prepare for major changes that must happen for us to outmaneuver the conservative Republican plan. Are you game? I am, and I know ways we can build a better democracy and defeat the billionaires\u2019 plans.",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1",
+          "title": null
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "I WILL TELL YOU THE FACTS; YOU TELL ME WHAT YOU WILL DO ABOUT THEM"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "1.) We have a certifiably crazy man in the White House who lies compulsively. Back in 2016, I professionally diagnosed him as a narcissistic sociopath with obsessive delusions and a frotteuristic disorder."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "2.) We have a non-functioning, brown-nosed Congress with 217 mesmerized Republican members of the House and 50 Republican senators controlled by Trump."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "3.) A Supreme Court that has 6 judges who are working to confirm Trump as an authoritarian leader."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "4.) A Justice Department that is functioning as Trump\u2019s legal team."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "5.) The FBI is Trump\u2019s enforcement agency."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "6.) A private Gestapo army is roaming our streets and taking people away without any legal authority."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "7.) The world realizes that we are becoming a totalitarian country and must reorganize with that in mind."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "8.) A president who has invaded other countries and can be considered a war criminal."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "9.) Controlling and eliminating free speech and the press\u2019s ability to obtain facts, and reducing or eliminating voting rights."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "These are the facts; now tell me what you plan to do! Are you planning anything?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "1.) These are the massive facts, and all knowledgeable academic professionals will say that they are always found in a totalitarian state."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "2.) Yes, we will win in November, and the Democrats will take control of the House and the Senate, and I say big deal. The president can veto any bill that passes through the House and the Senate. Republicans in the House and Senate will still be there and will wait for the next election. Democrats can pass bills to change the president\u2019s power, but he can veto those bills."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "3.) Organize marches like the No-King march, but what does that change? Nothing!"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "4.) No plans because you believe it will right itself."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "5.) What must happen for you to think that something must be done seriously?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "6.) What if the stock market crashes again?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "7.) What if seniors realize that their Social Security payments will be reduced?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "8.) What if medical insurance doubles in cost?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "9.) What if a year from now we are still at war with Iran?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "If the stated facts are not enough to worry you, what will? Do you think this is beyond our control and that we must live with it? People, what must happen for you to wake up and see our present situation as threatening and dangerous? Are you going to walk off the plank without a fight? Maybe you think it is acceptable and easier for our country to have a king? Do you consider the stated facts a serious reason to be worried, agitated, and frightened? Since 1970, the conservative think tank Heritage Foundation has been financed by billionaires with the sole purpose of developing a plan to control our country by the few in power. Fifty-six years later, they succeeded; we are now a country that is and can be controlled by an elite group of people. Do you believe that? If not, how do I get you to see this reality?"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "People, our fate is not sealed; there are ways to stop it, to stop what is in process, but it requires you to wake up and prepare for major changes that must happen for us to outmaneuver the conservative Republican plan. Are you game? I am, and I know ways we can build a better democracy and defeat the billionaires\u2019 plans."
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 218719310,
+      "user_id": 4845552,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2026-10-07T16:10:38.357Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "RICHMOND DOCTOR",
+      "photo_url": "https://substackcdn.com/image/fetch/$s_!UNTZ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb57dd34-9cd1-43e6-a236-404b2e171ae5_144x144.png",
+      "handle": "richmonddoctor1",
+      "reactor_names": [
+        "Jeremy Ney"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 1
+      },
+      "reaction_count": 1,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "richmonddoctor1",
+      "metadata": {
+        "is_author": false,
+        "membership_state": null,
+        "eligibleForGift": true,
+        "author_on_other_pub": {
+          "name": "RICHMOND DOCTOR",
+          "id": 2034898,
+          "base_url": "https://roccociriglianophd.substack.com"
+        }
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": 10,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "subscriber",
+          "tier": 10,
+          "accent_colors": null
+        },
+        "subscriber": null
+      },
+      "score": 6,
+      "children_count": 0,
+      "reported_by_user": false,
+      "restacked": false
+    }
+  ]
+}
