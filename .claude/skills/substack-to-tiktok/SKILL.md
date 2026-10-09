@@ -363,6 +363,9 @@ Example in the right voice (from the generational wealth video):
   (the news card, the closing `statement`, a `checklist`) a `backdrop` photo or clip that fits
   the line (a hospital interior behind a line about paying for treatment), and use real photos
   for beats about people and places. Charts stay on orange so the bars read cleanly.
+  A backdrop shows the place or thing the card or line is about (a headline about Michigan →
+  the Michigan Capitol or a Michigan city). Avoid posed portraits of strangers or
+  fashion and magazine shoots: a random person's face behind a headline reads as odd.
 - On-screen text never gets ahead of the narration. Time stats, bars, checklist items and
   typed statements with `at` so each appears as it's said.
 

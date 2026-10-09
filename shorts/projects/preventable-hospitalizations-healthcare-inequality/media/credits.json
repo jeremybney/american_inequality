@@ -20,7 +20,7 @@
     "url": "https://substack-post-media.s3.amazonaws.com/public/images/6dbfa988-0ad4-4b45-b2ac-5b4c3ad4cca8_1318x688.png"
   },
   "article_05.png": {
-    "credit": "16% of US adults used the ER when they didn\u2019t have to, compared to 11% for the average of our peer countries - our data",
+    "credit": "16% of US adults used the ER when they didn’t have to, compared to 11% for the average of our peer countries - our data",
     "url": "https://substack-post-media.s3.amazonaws.com/public/images/033a2922-f34b-4e69-8d73-a69e8c7442e3_1340x786.png"
   },
   "hook.jpg": {
@@ -43,12 +43,12 @@
     "credit": "Photo: Tifa Zabat, CC BY-SA 4.0 (Wikimedia Commons)",
     "url": "https://commons.wikimedia.org/wiki/File:Emergency_Waiting_Room_-_Aberdeen_Royal_Infirmary.jpg"
   },
-  "checkup.jpg": {
-    "credit": "Photo: SELF Magazine, CC BY 2.0 (Wikimedia Commons)",
-    "url": "https://commons.wikimedia.org/wiki/File:Doctor_using_stethoscope_to_examine_a_woman_(48545971856).jpg"
-  },
   "pills.jpg": {
     "credit": "Photo: Pfc. Nikki Phongsisattanak, Public domain (Wikimedia Commons)",
     "url": "https://commons.wikimedia.org/wiki/File:Camp_Lejeune_hosts_annual_Drug_Take-Back_event_120428-M-GL246-022.jpg"
+  },
+  "michigan_capitol.jpg": {
+    "credit": "Photo: w_lemay, CC BY-SA 2.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Dome,_Michigan_State_Capitol,_Capitol_Avenue,_Lansing,_MI_-_54383136026.jpg"
   }
 }
