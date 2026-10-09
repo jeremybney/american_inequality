@@ -443,9 +443,6 @@ def cmd_script(a):
     out_dir.mkdir(exist_ok=True)
     tl = engine.Timeline(pdir)
     checks.report(tl)
-    if not a.start and a.end is None and not a.no_captions:
-        phone = make_phone_copy(video, tl.duration)
-        print(f"      {phone}  (phone copy for the Shorts Queue, {phone.stat().st_size / 1e6:.1f} MB)")
     export.write_script(tl, out_dir / "script.md")
     export.write_srt(tl, out_dir / "captions.srt")
     export.write_post(tl, out_dir / "tiktok_post.txt")
