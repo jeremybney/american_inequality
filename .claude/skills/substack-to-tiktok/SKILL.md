@@ -358,6 +358,11 @@ Example in the right voice (from the generational wealth video):
   comparison instead: bars growing side by side (`vbars`/`hbars`), a line rising (`line` with a
   `counter`), or the article's own chart (`figure`). Keep `big_number` for big, striking
   figures ("$84T"), ideally over a blurred photo or paired with a second stat.
+- **Visual texture throughout: don't let the video go wall-to-wall orange.** After the opening
+  photos, a run of orange charts reads as one long flat slide. Break it up: give non-chart beats
+  (the news card, the closing `statement`, a `checklist`) a `backdrop` photo or clip that fits
+  the line (a hospital interior behind a line about paying for treatment), and use real photos
+  for beats about people and places. Charts stay on orange so the bars read cleanly.
 - On-screen text never gets ahead of the narration. Time stats, bars, checklist items and
   typed statements with `at` so each appears as it's said.
 

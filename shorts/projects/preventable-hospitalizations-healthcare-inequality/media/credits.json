@@ -34,5 +34,21 @@
   "clinic.jpg": {
     "credit": "Photo: Yrem13, CC BY-SA 3.0 (Wikimedia Commons)",
     "url": "https://commons.wikimedia.org/wiki/File:Lady_reading_in_a_waiting_room.JPG"
+  },
+  "waiting.jpg": {
+    "credit": "Photo: Jorge Barrios Riquelme, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Hospital_El_Carmen_-_Maip%C3%BA_-_Interior.jpg"
+  },
+  "hospital_hall.jpg": {
+    "credit": "Photo: Tifa Zabat, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Emergency_Waiting_Room_-_Aberdeen_Royal_Infirmary.jpg"
+  },
+  "checkup.jpg": {
+    "credit": "Photo: SELF Magazine, CC BY 2.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Doctor_using_stethoscope_to_examine_a_woman_(48545971856).jpg"
+  },
+  "pills.jpg": {
+    "credit": "Photo: Pfc. Nikki Phongsisattanak, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Camp_Lejeune_hosts_annual_Drug_Take-Back_event_120428-M-GL246-022.jpg"
   }
 }

@@ -28,6 +28,7 @@ scene lasts as long as it takes to say its lines at `wpm`.
 | `source` | small print under the caption: the data source for that beat |
 | `duration` | force a length in seconds (otherwise derived from `say`) |
 | `hold` | extra seconds after the last line (default 0.35) |
+| `backdrop` | chart, `statement`, `checklist` and `news` scenes: a photo or clip behind the graphic instead of orange. `"backdrop": "hall.jpg"` or `{"media": "hall.jpg", "dim": 0.5, "blur": 4, "zoom": [1.0, 1.12], "focus": [0.5, 0.5]}`. Small labels turn yellow and captions take the photo style; its credit joins the source line |
 | `crossfade` | seconds of crossfade into this scene (default 0.3; 0 = hard cut) |
 
 Chart scenes (everything on the orange background) also take `title`,
@@ -103,7 +104,7 @@ Animated GIFs play.
 - `media`: screenshot or image, or a `.pdf` (`page`, default the first page). Save items with `make_short.py grab`.
 - `crop`: `[x0, y0, x1, y1]` fractions. `highlight`: marker box in fractions of the cropped image.
 - `kind: "video"` draws a play button; `title` adds a caption bar under the image.
-- `kicker` (default "In the news"); `backdrop`: a photo to blur behind the cards instead of orange.
+- `kicker` (default "In the news"); `backdrop`: a photo or clip behind the cards instead of orange (see fields every scene accepts).
 - The source line lists every outlet and date automatically (override with `source`).
 
 ## `article_card`

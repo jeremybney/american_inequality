@@ -26,12 +26,28 @@ class Scene:
         self.spec = spec
         self.ctx = ctx
         self.dur = 5.0
+        self._backdrop = None
+        bd = spec.get("backdrop")
+        if bd:  # a photo or clip behind the graphic, so the frame has texture instead of flat orange
+            bspec = {"media": bd, "dim": 0.55, "blur": 6} if isinstance(bd, str) else dict(bd)
+            self._backdrop = PhotoScene(bspec, ctx)
+            self.dark = True
 
     def prepare(self, duration):
         self.dur = duration
+        if self._backdrop:
+            self._backdrop.prepare(duration)
+
+    def backdrop(self, t):
+        """The backdrop frame for time t, or None when the scene has none."""
+        return self._backdrop.background(t) if self._backdrop else None
+
+    def backdrop_credit(self):
+        return self._backdrop.source_line() if self._backdrop else None
 
     def source_line(self):
-        return self.spec.get("source")
+        parts = [x for x in (self.backdrop_credit(), self.spec.get("source")) if x]
+        return " · ".join(parts) or None
 
     def render(self, t):
         raise NotImplementedError
@@ -46,9 +62,14 @@ class Scene:
 class ChartScene(Scene):
     """Orange background + optional title/subtitle, like Tal's chart beats."""
 
+    def accent(self):
+        """Colour for small labels: navy on orange, yellow over a backdrop photo."""
+        return T.YELLOW if self._backdrop else T.NAVY
+
     def canvas(self, t):
-        variant = self.spec.get("background", "orange")
-        img = G.orange_background(variant).copy()
+        img = self.backdrop(t)
+        if img is None:
+            img = G.orange_background(self.spec.get("background", "orange")).copy()
         d = ImageDraw.Draw(img, "RGBA")
         a = G.ease_out(G.prog(t, 0.0, 0.35))
         y = T.CHART_TITLE_Y
@@ -62,7 +83,7 @@ class ChartScene(Scene):
         if sub:
             f = G.font("mono_semi", 28)
             for line in G.wrap(sub, f, T.W - 2 * T.MARGIN):
-                G.draw_centered(d, T.W / 2, y + 6, line, f, G.rgba(T.NAVY, a))
+                G.draw_centered(d, T.W / 2, y + 6, line, f, G.rgba(self.accent(), a))
                 y += f.size * 1.35
         note = self.spec.get("note")
         if note:
@@ -70,7 +91,7 @@ class ChartScene(Scene):
             f = G.font("mono_med", 26)
             ny = self.spec.get("note_y", T.CHART_BOTTOM + 20)
             for line in G.wrap(note, f, T.W - 2 * T.MARGIN):
-                G.draw_centered(d, T.W / 2, ny, line, f, G.rgba(T.NAVY, na))
+                G.draw_centered(d, T.W / 2, ny, line, f, G.rgba(self.accent(), na))
                 ny += f.size * 1.35
         return img, d
 
@@ -944,7 +965,7 @@ class StatementScene(ChartScene):
         kick = self.spec.get("kicker")
         if kick:
             kf = G.font("mono_semi", 30)
-            G.draw_centered(d, T.W / 2, y - 80, kick.upper(), kf, G.rgba(T.NAVY, G.ease_out(G.prog(t, 0, 0.4))))
+            G.draw_centered(d, T.W / 2, y - 80, kick.upper(), kf, G.rgba(self.accent(), G.ease_out(G.prog(t, 0, 0.4))))
         space = f.getlength(" ")
         for i, line in enumerate(lines):
             full_w = sum(f.getlength(w) for w, _ in line) + space * (len(line) - 1)
@@ -1205,7 +1226,7 @@ class NewsScene(Scene):
 
     def source_line(self):
         if self.spec.get("source"):
-            return self.spec["source"]
+            return " · ".join(x for x in (self.backdrop_credit(), self.spec["source"]) if x)
         outs = []
         for it, *_ in self.cards:
             o = it.get("outlet", "")
@@ -1213,15 +1234,13 @@ class NewsScene(Scene):
                 o += f" ({it['date']})"
             if o and o not in outs:
                 outs.append(o)
-        return ("Sources: " + "; ".join(outs)) if outs else None
+        line = ("Sources: " + "; ".join(outs)) if outs else None
+        return " · ".join(x for x in (self.backdrop_credit(), line) if x) or None
 
     def render(self, t):
-        bg = self.spec.get("backdrop")
-        if bg:
-            if not hasattr(self, "_bd"):
-                self._bd = M.load_still(str(self.ctx.media_path(bg)), (0.5, 0.5), 0.55, 14)
-            img = M.kenburns_frame(self._bd, G.clamp01(t / self.dur), (1.0, 1.06))
-        else:
+        img = self.backdrop(t)
+        bg = img is not None
+        if not bg:
             img = G.orange_background().copy()
         d = ImageDraw.Draw(img, "RGBA")
         kick = self.spec.get("kicker", "In the news")

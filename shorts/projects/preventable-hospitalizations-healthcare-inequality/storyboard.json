@@ -38,7 +38,7 @@
       "chip": "Healthcare · American Inequality",
       "source": "AHRQ",
       "say": [
-        "Every year, 3.5 million adults are hospitalized for preventable reasons."
+        "Every year, 3.5 million adults are hospitalized for completely preventable reasons."
       ],
       "pan": [
         [
@@ -84,7 +84,7 @@
       ],
       "chips_at": 1.4,
       "say": [
-        "We found these numbers are really a map of who lacks access to care."
+        "At American Inequality, we found these numbers are really a map of who lacks access to care."
       ]
     },
     {
@@ -139,54 +139,83 @@
       ]
     },
     {
+      "type": "checklist",
+      "title": "2 reasons for the divide",
+      "items": [
+        {
+          "text": "Money",
+          "color": "navy"
+        },
+        {
+          "text": "Access",
+          "color": "navy"
+        }
+      ],
+      "stagger": 0.6,
+      "size": 72,
+      "row_height": 150,
+      "backdrop": {
+        "media": "pills.jpg",
+        "dim": 0.55,
+        "blur": 3,
+        "zoom": [
+          1.0,
+          1.1
+        ]
+      },
+      "say": [
+        "There are 2 key reasons for the divide."
+      ]
+    },
+    {
       "type": "hbars",
       "title": "Preventable hospital stays",
-      "subtitle": "chronic conditions, per 100,000 people, by neighborhood income",
+      "subtitle": "chronic conditions per 100k, by neighborhood income",
       "bars": [
         {
           "label": "Poorest quarter",
           "value": 1596.7,
           "decimals": 0,
           "color": "yellow",
-          "at": 2.4
+          "at": 1.6
         },
         {
           "label": "Second",
           "value": 1056.2,
           "decimals": 0,
           "color": "white",
-          "at": 3.0
+          "at": 2.2
         },
         {
           "label": "Third",
           "value": 831.5,
           "decimals": 0,
           "color": "white",
-          "at": 3.5
+          "at": 2.7
         },
         {
           "label": "Richest quarter",
           "value": 645.3,
           "decimals": 0,
           "color": "navy",
-          "at": 4.0
+          "at": 3.2
         }
       ],
       "max": 1800,
       "source": "AHRQ",
       "say": [
-        "Income draws the sharpest line, since Americans in the poorest neighborhoods are 2.5 times more likely to have a preventable hospital stay."
+        "The first is money. Americans in the poorest neighborhoods are 2.5 times more likely to have a preventable hospital stay because they usually can't afford recurring care."
       ]
     },
     {
       "type": "photo",
-      "media": "clinic.jpg",
-      "query": "doctor office appointment",
+      "media": "waiting.jpg",
+      "query": "Hospital waiting rooms",
       "zoom": [
         1.0,
         1.1
       ],
-      "dim": 0.3,
+      "dim": 0.4,
       "overlays": [
         {
           "kind": "stamp",
@@ -199,7 +228,7 @@
       ],
       "source": "How the ER Became the New Doctor's Office · American Inequality",
       "say": [
-        "Part of this is access, since about 1 in 5 younger adults can't get an appointment or a doctor outside work hours."
+        "The second is access, 1 in 5 working-age adults can't get an appointment or a doctor outside work hours."
       ]
     },
     {
@@ -280,7 +309,7 @@
       "bottom": 1290,
       "source": "Health Care Cost Institute",
       "say": [
-        "For hospitals that fall is revenue, and from 2009 to 2016 the average ER facility fee nearly doubled, from $452 to $894."
+        "These are costly for individuals, but they are a revenue machine for hospitals. From 2009 to 2016 the average ER facility fee nearly doubled, from $452 to $894."
       ]
     },
     {
@@ -304,7 +333,7 @@
       ],
       "source": "How the ER Became the New Doctor's Office · American Inequality",
       "say": [
-        "Meanwhile the doctors who could prevent it see over 35% of patient visits yet get about 5% of health spending."
+        "Meanwhile family doctors who could offer preventative care are underfunded. They see over 35% of patient visits annually but receive only 5% of US healthcare spending."
       ]
     },
     {
@@ -319,8 +348,17 @@
         }
       ],
       "say": [
-        "The system pays well for the hospital stay and poorly for the appointment that would have prevented it."
-      ]
+        "The system pays well for the emergency room, but pays poorly for the appointment that would have prevented it."
+      ],
+      "backdrop": {
+        "media": "checkup.jpg",
+        "dim": 0.5,
+        "blur": 6,
+        "focus": [
+          0.4,
+          0.4
+        ]
+      }
     },
     {
       "type": "vbars",
@@ -343,7 +381,7 @@
       ],
       "source": "How the ER Became the New Doctor's Office · American Inequality",
       "say": [
-        "When states expand Medicaid, preventable hospitalizations fall, and pneumonia stays drop by two-thirds."
+        "Solutions exist. When states expand Medicaid, preventable hospitalizations fall, and pneumonia stays drop by two-thirds."
       ]
     },
     {
@@ -351,8 +389,17 @@
       "kicker": "What comes next",
       "text": "Pay for prevention as reliably as {we pay for treatment.}",
       "say": [
-        "Preventable hospitalizations will fall when the system pays for prevention as reliably as it pays for treatment."
-      ]
+        "Preventable hospitalizations can fall when the system pays for prevention as reliably as it pays for treatment."
+      ],
+      "backdrop": {
+        "media": "hospital_hall.jpg",
+        "dim": 0.5,
+        "blur": 4,
+        "zoom": [
+          1.0,
+          1.12
+        ]
+      }
     },
     {
       "type": "outro",
@@ -369,5 +416,6 @@
     "feel": "Calming, Grooving, Relaxed",
     "credit": "Music: “Limit 70” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
-  "music_credit": "Music: “Limit 70” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  "music_credit": "Music: “Limit 70” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
+  "max_seconds": 100
 }

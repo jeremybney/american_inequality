@@ -91,7 +91,7 @@ def check(tl):
         url = info.get("url") if isinstance(info, dict) else None
         key = M._source_key(url)
         if url and not name.startswith(M.OWN_MEDIA) and key in used and \
-                any(str(sc.get("media", "")) == name for sc in scenes):
+                any(name in (str(sc.get("media", "")), _backdrop_name(sc)) for sc in scenes):
             errors.append(f"{name} was already used in the {used[key]} video; every video needs new photos "
                           "and clips (search again and pick a fresh one)")
 
@@ -158,3 +158,9 @@ def report(tl, strict=True):
     if not errors and not warnings:
         print(f"  ✓ house rules pass ({tl.duration:.0f}s)")
     return errors
+
+
+def _backdrop_name(scene):
+    bd = scene.get("backdrop")
+    return str(bd.get("media", "")) if isinstance(bd, dict) else str(bd or "")
+
