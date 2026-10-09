@@ -71,10 +71,26 @@ def http_json(url, headers=None):
 
 
 def download(url, dest, headers=None):
+    import urllib.error
     dest = Path(dest)
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_bytes(http_get(url, headers, timeout=60, retries=3))
+    try:
+        data = http_get(url, headers, timeout=60, retries=3)
+    except urllib.error.HTTPError as e:
+        thumb = _commons_thumb(url, 1280)
+        if e.code != 429 or not thumb:
+            raise
+        # Wikimedia rate-limits full-size originals far harder than its standard thumbnail sizes
+        print("  original rate-limited by Wikimedia; using its 1280px rendition", flush=True)
+        data = http_get(thumb, headers, timeout=60, retries=3)
+    dest.write_bytes(data)
     return dest
+
+
+def _commons_thumb(url, width):
+    """The standard-size thumbnail URL for a Commons original, or None for other hosts."""
+    m = re.match(r"https://upload\.wikimedia\.org/wikipedia/commons/(\w/\w\w)/([^/?]+)$", url)
+    return f"https://upload.wikimedia.org/wikipedia/commons/thumb/{m.group(1)}/{m.group(2)}/{width}px-{m.group(2)}" if m else None
 
 
 # --- Credits ------------------------------------------------------------------------
