@@ -61,7 +61,7 @@
       ],
       "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
       "say": [
-        "At a time when low-income households need more help than ever because government is cutting social services, elites are pulling back from donations."
+        "At a time when government is cutting social services, elites are also pulling back from donations, leaving low-income communities reeling."
       ]
     },
     {
@@ -96,7 +96,7 @@
       "zoom_dur": 2.0,
       "source": "Urban Institute · American Inequality",
       "say": [
-        "Without donations and government grants, most nonprofits in the US would run at a loss. Louisiana's social safety net would collapse."
+        "Without donations and government grants, most nonprofits in the US would run at a loss. Nonprofits in Louisiana would be hardest hit of any state."
       ],
       "overlays": [
         {
@@ -194,7 +194,7 @@
       },
       "source": "Giving USA via American Inequality",
       "say": [
-        "Charities rely heavily on big donors. In 2024, donors giving over $50,000 accounted for nearly 78% of total dollars."
+        "Charities rely heavily on big donors. In 2024, donors giving over $50,000 accounted for nearly 78% of total funds given to charities."
       ]
     },
     {
@@ -487,5 +487,149 @@
     "credit": "Music: “Beauty Flow” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
   "music_credit": "Music: “Beauty Flow” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
-  "max_seconds": 118
+  "max_seconds": 118,
+  "voiceover": {
+    "file": "voiceover.m4a",
+    "clean": "voiceover_clean.wav",
+    "duration": 110.34,
+    "mix": "voiceover_studio.wav",
+    "studio": [
+      "room echo + noise removed (DeepFilterNet 3)",
+      "60-150 Hz +1.5 dB",
+      "300-600 Hz -4.0 dB"
+    ],
+    "cues": [
+      {
+        "scene": 0,
+        "line": 0,
+        "text": "Despite record-breaking wealth in America, philanthropy has now hit record-breaking lows.",
+        "start": 0.15,
+        "end": 2.01,
+        "matched": 0.38
+      },
+      {
+        "scene": 1,
+        "line": 0,
+        "text": "At a time when government is cutting social services, elites are also pulling back from donations, leaving low-income communities reeling.",
+        "start": 2.51,
+        "end": 8.72,
+        "matched": 1.0
+      },
+      {
+        "scene": 2,
+        "line": 0,
+        "text": "We looked at why those with the deepest pockets are retreating to the sidelines.",
+        "start": 9.22,
+        "end": 12.02,
+        "matched": 1.0
+      },
+      {
+        "scene": 3,
+        "line": 0,
+        "text": "Without donations and government grants, most nonprofits in the US would run at a loss. Nonprofits in Louisiana would be hardest hit of any state.",
+        "start": 12.66,
+        "end": 20.01,
+        "matched": 1.0
+      },
+      {
+        "scene": 4,
+        "line": 0,
+        "text": "But the data reveals that in 2015 91% of affluent households gave to charity. Now, this has fallen to 81%.",
+        "start": 20.51,
+        "end": 27.65,
+        "matched": 0.96
+      },
+      {
+        "scene": 5,
+        "line": 0,
+        "text": "Charities rely heavily on big donors. In 2024, donors giving over $50,000 accounted for nearly 78% of total funds given to charities.",
+        "start": 28.15,
+        "end": 36.33,
+        "matched": 0.89
+      },
+      {
+        "scene": 6,
+        "line": 0,
+        "text": "Everyday donors have retreated too. Nearly two-thirds of households gave twenty years ago. Today, it is just 41%.",
+        "start": 36.83,
+        "end": 43.67,
+        "matched": 0.86
+      },
+      {
+        "scene": 7,
+        "line": 0,
+        "text": "Dollars aren't the only thing disappearing. 50% of affluent households volunteered their time in 2015. Today, only 43% volunteer. For the general public, it's lower still, at just 28%.",
+        "start": 44.1,
+        "end": 56.09,
+        "matched": 0.92
+      },
+      {
+        "scene": 8,
+        "line": 0,
+        "text": "The tax code rewards the richest givers, since a $1,000 deduction saves $120 in the 12% bracket and $350 in the 35% bracket.",
+        "start": 56.09,
+        "end": 65.75,
+        "matched": 0.87
+      },
+      {
+        "scene": 9,
+        "line": 0,
+        "text": "It's a stark departure from the Gilded Age, when Carnegie, Rockefeller, and Mellon felt obligated to give, building thousands of libraries and cultural centers.",
+        "start": 66.25,
+        "end": 73.71,
+        "matched": 0.96
+      },
+      {
+        "scene": 10,
+        "line": 0,
+        "text": "Today's richest, like Bezos, Musk and Zuckerberg, have given away a fraction of their wealth, sometimes as low as 1/100th.",
+        "start": 74.21,
+        "end": 81.47,
+        "matched": 1.0
+      },
+      {
+        "scene": 11,
+        "line": 0,
+        "text": "Who gives shapes what gets funded, as wealthy donors favor universities and the arts while everyday donors fund food banks.",
+        "start": 81.97,
+        "end": 87.75,
+        "matched": 0.9
+      },
+      {
+        "scene": 12,
+        "line": 0,
+        "text": "Now 61% of nonprofits say their survival is at risk, while 87% of foundations report rising demand.",
+        "start": 88.25,
+        "end": 94.15,
+        "matched": 0.86
+      },
+      {
+        "scene": 13,
+        "line": 0,
+        "text": "Philanthropy is being asked to fill gaps in public systems that desperately need help, but those elite donors aren't answering the call.",
+        "start": 94.65,
+        "end": 100.68,
+        "matched": 1.0
+      },
+      {
+        "scene": 14,
+        "line": 0,
+        "text": "We need to reform tax incentives and fund the common interest instead of relying on a few billionaires who ebb and flow in their support of public needs.",
+        "start": 101.18,
+        "end": 107.42,
+        "matched": 0.96
+      },
+      {
+        "scene": 15,
+        "line": 0,
+        "text": "You can read the full story on American Inequality.",
+        "start": 107.92,
+        "end": 109.79,
+        "matched": 1.0
+      }
+    ],
+    "transcript": "have now hit record -breaking lows. At a time when government is cutting social services, elites are also pulling back from donations, leaving low -income communities reeling. We looked at why those with the deepest pockets are retreating to the sidelines. Without donations and government grants, most nonprofits in the US would run at a loss. Nonprofits in Louisiana would be the hardest hit of any state. But the data reveals that in 2015 91 % of affluent households gave to charity. Now, this has fallen to 81%. Charities will add heavily on big donors. In 2024, donors giving over $50 ,000 accounted for nearly 78 % of total funds given to charities. Every day donors have retreated to. Nearly two -thirds of households gave 20 years ago. Today is just 41%. Dollars aren't the only thing disappearing. Fifty percent of affluent households volunteered their time in 2015. Today only 43 % volunteer. volunteer. For the general of public, it's still lower. It's just 28%. The tax code rewards the richest givers since a $1 ,000 deduction saves $120 in the 12 % bracket, but $350 in the 35 % bracket. It's a stark departure from the Gilded Age and Carnegie, Rockefeller, and Mellon felt obligated to give, building thousands of libraries and cultural centers. Today's richest, like Bezos, Musk, and Zuckerberg, may have given away a fraction of their wealth, sometimes as low as 1 100th. Who gives, shapes, what gets funded, as wealthy donors favor universities and yards while everyday donors fund food banks. Now, 61 % of non -profits say their survival is at risk while 87 % of foundations report rising demand. Philanthropy is being asked to fill gaps in public systems that desperately need help, but those elite donors aren't answering the call. We need to reform tax incentives and fund a common interest instead of relying on a few billionaires who are ebb and flow in their support of public needs. You can read the full story on American inequality.",
+    "pauses_trimmed_s": 4.609999999999999,
+    "max_gap": 0.5
+  }
 }
