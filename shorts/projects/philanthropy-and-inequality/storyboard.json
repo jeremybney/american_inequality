@@ -61,7 +61,7 @@
       ],
       "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
       "say": [
-        "At a time when low-income households need more than ever because government is cutting social services, elites are pulling back from donations."
+        "At a time when low-income households need more help than ever because government is cutting social services, elites are pulling back from donations."
       ]
     },
     {
@@ -87,16 +87,26 @@
       ],
       "y": 0.42,
       "zoom_to": [
-        0.4,
-        0.55,
-        0.8,
-        0.95
+        0.44,
+        0.6,
+        0.74,
+        0.9
       ],
-      "zoom_at": 1.6,
-      "zoom_dur": 2.4,
+      "zoom_at": 2.6,
+      "zoom_dur": 2.0,
       "source": "Urban Institute · American Inequality",
       "say": [
-        "Without donations and government grants, most nonprofits in every state would run at a loss."
+        "Without donations and government grants, most nonprofits in the US would run at a loss. Louisiana's social safety net would collapse."
+      ],
+      "overlays": [
+        {
+          "kind": "tag",
+          "text": "Louisiana",
+          "x": 0.5,
+          "y": 0.2,
+          "at": 4.0,
+          "background": "navy"
+        }
       ]
     },
     {
@@ -292,7 +302,37 @@
       "bottom": 1290,
       "source": "Bank of America",
       "say": [
-        "Dollars aren't the only thing disappearing. 50% of affluent households volunteered their time in 2015. Today, only 43% volunteer. For the general public, the decline is even sharper."
+        "Dollars aren't the only thing disappearing. 50% of affluent households volunteered their time in 2015. Today, only 43% volunteer. For the general public, it's lower still, at just 28%."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "What a $1,000 charitable deduction saves you",
+      "bars": [
+        {
+          "label": "12% tax bracket",
+          "value": 120,
+          "prefix": "$",
+          "color": "white",
+          "at": 2.4
+        },
+        {
+          "label": "35% tax bracket",
+          "value": 350,
+          "prefix": "$",
+          "color": "yellow",
+          "at": 3.8
+        }
+      ],
+      "annotation": {
+        "text": "about 3x",
+        "bar": 1,
+        "at": 4.8,
+        "color": "yellow"
+      },
+      "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
+      "say": [
+        "The tax code rewards the richest givers, since a $1,000 deduction saves $120 in the 12% bracket and $350 in the 35% bracket."
       ]
     },
     {
@@ -313,7 +353,7 @@
       ],
       "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
       "say": [
-        "It's a stark departure from the Gilded Age, when Carnegie, Rockefeller, and Mellon felt obligated to give, building hundreds of libraries and cultural centers."
+        "It's a stark departure from the Gilded Age, when Carnegie, Rockefeller, and Mellon felt obligated to give, building thousands of libraries and cultural centers."
       ]
     },
     {
@@ -446,5 +486,6 @@
     "feel": "Calming, Grooving, Driving",
     "credit": "Music: “Beauty Flow” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
-  "music_credit": "Music: “Beauty Flow” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  "music_credit": "Music: “Beauty Flow” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
+  "max_seconds": 118
 }

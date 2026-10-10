@@ -169,7 +169,9 @@ background while you read the article). It writes `visual_plan.md` and contact s
 **A. The author's own images (`media/article_NN.*`, sheet `.cache/plan/article_images.jpg`)**
 - **Maps → reuse.** County, state or metro maps are the author's signature visual and
   can't be rebuilt quickly. Use a `figure` scene and push into the region the narration
-  names (`zoom_to`).
+  names (`zoom_to`). **A zoom always lands on a place the line names**: if the camera pushes into
+  Louisiana, the narration says something about Louisiana (from the article, e.g. its
+  figure caption), and a `tag` overlay labels it. Never zoom into an unnamed region.
 - **Distinctive graphics → reuse.** Anything that isn't a plain line or bar chart (a
   Congress hemicycle, a scatter of districts, an annotated timeline) goes in a `figure`
   scene. For animated GIFs, look at the frames and choose a `frames: [a, b]` range that
@@ -366,6 +368,9 @@ Example in the right voice (from the generational wealth video):
   A backdrop shows the place or thing the card or line is about (a headline about Michigan →
   the Michigan Capitol or a Michigan city). Avoid posed portraits of strangers or
   fashion and magazine shoots: a random person's face behind a headline reads as odd.
+- **Keep every line true to its visual.** If the narration says more than the chart shows
+  ("donations and grants" over a map of grants alone, "even sharper" over a smaller drop),
+  flag it to the author before rendering.
 - On-screen text never gets ahead of the narration. Time stats, bars, checklist items and
   typed statements with `at` so each appears as it's said.
 
