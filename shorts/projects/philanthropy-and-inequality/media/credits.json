@@ -30,7 +30,7 @@
   "news_fortune.png": {
     "credit": "Screenshot: Fortune",
     "url": "https://fortune.com/2026/09/26/foundations-nonprofit-crisis-endowment-giving/",
-    "headline": "We\u2019re researchers tracking the nonprofit crisis. Philanthropy\u2019s response is not enough | Fortune"
+    "headline": "We’re researchers tracking the nonprofit crisis. Philanthropy’s response is not enough | Fortune"
   },
   "hook.jpg": {
     "credit": "Photo: Davidley, CC0 (Wikimedia Commons)",
@@ -44,10 +44,6 @@
     "credit": "Photo: U.S. Navy photo by Mass Communication Specialist 2nd Class M, Public domain (Wikimedia Commons)",
     "url": "https://commons.wikimedia.org/wiki/File:US_Navy_090903-N-5366K-100_Recruiters_assigned_to_the_Ohio_Navy_Recruiting_District_and_members_of_the_Navy_parachute_team_work_a_production_line_with_civilians_to_box_food_at_the_Mid-Ohio_food_bank_during_the_Central_Ohio_Navy.jpg"
   },
-  "concert_hall.jpg": {
-    "credit": "Photo: Jun Seita from Palo Alto, CA, U.S., CC BY 2.0 (Wikimedia Commons)",
-    "url": "https://commons.wikimedia.org/wiki/File:New_York_Philharmonic_at_Avery_Fisher_Hall_(7230083424).jpg"
-  },
   "library_interior.jpeg": {
     "credit": "Photo: Julien Chatelain from Paris, France, CC BY-SA 2.0 (Wikimedia Commons)",
     "url": "https://commons.wikimedia.org/wiki/File:New_York_Public_Library_Rose_Main_Reading_Room.jpeg"
@@ -55,5 +51,9 @@
   "carnegie_library.jpg": {
     "credit": "Photo: Larry D. Moore, CC BY 4.0 (Wikimedia Commons)",
     "url": "https://commons.wikimedia.org/wiki/File:Carnegie_library_cleburne_2010.jpg"
+  },
+  "irs.jpg": {
+    "credit": "Photo: G. Edward Johnson, CC BY 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Close-up_of_sign_for_the_Internal_Revenue_Service_building_Washington_DC_2025-02-07_13-21-58_1.jpg"
   }
 }

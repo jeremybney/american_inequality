@@ -61,7 +61,7 @@
       ],
       "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
       "say": [
-        "At a time when government is cutting social services, elites are also pulling back from donations, leaving low-income communities reeling."
+        "At a time when government is cutting social services, elites are also pulling back on donations, doubling the disadvantage for low-income families."
       ]
     },
     {
@@ -96,7 +96,7 @@
       "zoom_dur": 2.0,
       "source": "Urban Institute · American Inequality",
       "say": [
-        "Without donations and government grants, most nonprofits in the US would run at a loss. Nonprofits in Louisiana would be hardest hit of any state."
+        "The data reveals that without donations and government grants, most nonprofits in the US would run at a loss. Louisiana is the state that would see the highest share of nonprofits collapse."
       ],
       "overlays": [
         {
@@ -170,7 +170,7 @@
       "bottom": 1290,
       "source": "Bank of America",
       "say": [
-        "But the data reveals that in 2015 91% of affluent households gave to charity. Now, this has fallen to 81%."
+        "We're living in an age of hoarding. In 2015 91% of affluent households gave to charity. Now, this has fallen to 81%."
       ]
     },
     {
@@ -194,7 +194,7 @@
       },
       "source": "Giving USA via American Inequality",
       "say": [
-        "Charities rely heavily on big donors. In 2024, donors giving over $50,000 accounted for nearly 78% of total funds given to charities."
+        "Charities rely heavily on big donors. In 2024, donors giving over $50,000 accounted for nearly 78% of total donated dollars."
       ]
     },
     {
@@ -218,7 +218,7 @@
       ],
       "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
       "say": [
-        "Everyday donors have retreated too. Nearly two-thirds of households gave twenty years ago. Today, it is just 41%."
+        "But the affluent aren't the only ones hoarding. Everyday donors have retreated too. Nearly two-thirds of households gave twenty years ago. Today, it is just 41%."
       ]
     },
     {
@@ -302,7 +302,7 @@
       "bottom": 1290,
       "source": "Bank of America",
       "say": [
-        "Dollars aren't the only thing disappearing. 50% of affluent households volunteered their time in 2015. Today, only 43% volunteer. For the general public, it's lower still, at just 28%."
+        "People are not only hoarding money, but also time. 50% of affluent households volunteered their time in 2015. Today, only 43% volunteer. For the general public, it's lower still, at just 28%."
       ]
     },
     {
@@ -332,7 +332,7 @@
       },
       "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
       "say": [
-        "The tax code rewards the richest givers, since a $1,000 deduction saves $120 in the 12% bracket and $350 in the 35% bracket."
+        "Trump era tax cuts make it easier for wealthy households to accumulate wealth without the incentive to donate more. A $1,000 donation for someone in the 35% bracket now saves $350, but not long ago it would save $500 for the top marginal tax bracket."
       ]
     },
     {
@@ -353,7 +353,7 @@
       ],
       "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
       "say": [
-        "It's a stark departure from the Gilded Age, when Carnegie, Rockefeller, and Mellon felt obligated to give, building thousands of libraries and cultural centers."
+        "It's a stark departure from the Gilded Age, when Carnegie, Rockefeller, and Mellon felt obligated to give, building hundreds of libraries and cultural centers."
       ]
     },
     {
@@ -368,7 +368,7 @@
       "y": 0.43,
       "source": "Home Economics (Forbes, Chronicle of Philanthropy)",
       "say": [
-        "Today's richest, like Bezos, Musk and Zuckerberg, have given away a fraction of their wealth, sometimes as low as 1/100th."
+        "Today's richest, like Bezos, Musk and Zuckerberg, have given away a tiny fraction of their wealth compared to those tycoons, sometimes as low as $1 for every $100 Rockefeller would give."
       ],
       "max_height": 1050,
       "zoom_to": [
@@ -382,8 +382,8 @@
     },
     {
       "type": "photo",
-      "media": "concert_hall.jpg",
-      "query": "David Geffen Hall",
+      "media": "irs.jpg",
+      "query": "Internal Revenue Service Building",
       "dim": 0.4,
       "zoom": [
         1.0,
@@ -391,7 +391,11 @@
       ],
       "source": "Why Philanthropy is Silent in the Golden Age of Wealth · American Inequality",
       "say": [
-        "Who gives shapes what gets funded, as wealthy donors favor universities and the arts while everyday donors fund food banks."
+        "The government offers tax incentives to donate because it relies on wealthy donors to contribute to the society that gave them so much."
+      ],
+      "focus": [
+        0.3,
+        0.5
       ]
     },
     {
