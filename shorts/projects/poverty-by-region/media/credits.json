@@ -1,0 +1,51 @@
+{
+  "cover.jpg": {
+    "credit": "Image: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/2097ad7c-e988-4e6f-aa31-72e5b5017647_1240x1078.png"
+  },
+  "article_01.png": {
+    "credit": "Zoom in on your hometown and download the data - link",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/2097ad7c-e988-4e6f-aa31-72e5b5017647_1240x1078.png"
+  },
+  "article_02.png": {
+    "credit": "Check out your state and download the data - link",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/5422a6be-4012-4870-8c24-07dc9aa3d702_1240x1184.png"
+  },
+  "article_03.jpeg": {
+    "credit": "SoFi estimates the average annual cost of living in California is $53,802. Fast food workers make $16,800 annually. Char",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/297f6ef1-3376-4e0a-b711-cd108363217d_2560x1463.jpeg"
+  },
+  "article_04.png": {
+    "credit": "Check out the interactive data viz - link",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/5a24ab6c-6688-44de-93bb-68b257c05e42_1440x1240.png"
+  },
+  "news_census.pdf": {
+    "credit": "www2.census.gov",
+    "url": "https://www2.census.gov/library/publications/2026/demo/p60-290.pdf",
+    "kind": "report"
+  },
+  "hook.jpg": {
+    "credit": "Photo: Russ Allison Loar, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Skid_Row_Campers_in_downtown_Los_Angeles.jpg"
+  },
+  "lunch.jpg": {
+    "credit": "Photo: USDAgov, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Secretary_Vilsack_Visit_to_Annandale_Terrace_Elementary_School,_VA_(20231011-USDA-OSEC-CDP-0055).jpg"
+  },
+  "lunch2.jpg": {
+    "credit": "Photo: USDAgov, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Secretary_Vilsack_Visit_to_Annandale_Terrace_Elementary_School,_VA_(20231011-USDA-OSEC-CDP-0034).jpg"
+  },
+  "delta_shack.jpg": {
+    "credit": "Photo: Dorothea Lange, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Abandoned_tenant_house_on_a_mechanized_plantation_of_the_Mississippi_Delta,_8b32027.jpg"
+  },
+  "fastfood.jpg": {
+    "credit": "Photo: Fibonacci Blue from Minnesota, USA, CC BY 2.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Fast_food_workers_on_strike_for_higher_minimum_wage_and_better_benefits_(26399951576).jpg"
+  },
+  "census_hq.jpg": {
+    "credit": "Photo: United States Census Bureau / Oficina del Censo de los Estad, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Census_Bureau_headquarters,_Suitland,_Maryland,_2007.jpg"
+  }
+}
