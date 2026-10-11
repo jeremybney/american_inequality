@@ -33,18 +33,18 @@
         1.15
       ],
       "headline": {
-        "text": "Poverty saw its {biggest one-year jump} ever."
+        "text": "{35 million} Americans live in poverty."
       },
       "chip": "Poverty · American Inequality",
-      "source": "U.S. Census",
+      "source": "U.S. Census (2025)",
       "say": [
-        "In 2022, U.S. poverty had its largest one-year rise ever."
+        "35 million Americans live in poverty,"
       ]
     },
     {
       "type": "photo",
-      "media": "lunch.jpg",
-      "query": "School lunch line children",
+      "media": "tents.jpg",
+      "query": "Skid Row Los Angeles",
       "dim": 0.4,
       "zoom": [
         1.05,
@@ -53,15 +53,57 @@
       "overlays": [
         {
           "kind": "stamp",
-          "text": "CHILD POVERTY 2X",
+          "text": "STUBBORNLY HIGH",
           "y": 0.3,
-          "at": 1.6,
-          "angle": -3
+          "at": 0.8,
+          "angle": -3,
+          "size": 46
         }
       ],
-      "source": "U.S. Census",
+      "source": "U.S. Census (SPM)",
       "say": [
-        "Child poverty more than doubled in a single year, from 5.2% to 12.4%."
+        "a rate that has remained stubbornly high since the pandemic."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "lunch.jpg",
+      "query": "School lunch line children",
+      "dim": 0.5,
+      "zoom": [
+        1.0,
+        1.18
+      ],
+      "overlays": [
+        {
+          "kind": "surge",
+          "from": 5.2,
+          "to": 12.4,
+          "decimals": 1,
+          "suffix": "%",
+          "y": 0.33,
+          "at": 2.9,
+          "count": 1.0,
+          "label_from": "child poverty in 2021",
+          "label_to": "child poverty in 2022",
+          "slam": "MORE THAN DOUBLED",
+          "slam_dy": 0.13
+        },
+        {
+          "kind": "tag",
+          "text": "STILL ABOVE 13% · 2023–2025",
+          "y": 0.6,
+          "at": 6.2,
+          "background": "navy",
+          "size": 34
+        }
+      ],
+      "source": "U.S. Census (SPM)",
+      "say": [
+        "Even child poverty, which more than doubled in 2022 from 5.2% to 12.4%, has stayed above 13% for the last 3 years."
+      ],
+      "punch": [
+        4.25
       ]
     },
     {
@@ -73,7 +115,7 @@
       ],
       "chips_at": 1.4,
       "say": [
-        "I looked at where poverty lives and why it came back so fast."
+        "I looked at where poverty lives, why it rose so quickly, and why it hasn't fallen back to historical levels."
       ]
     },
     {
@@ -223,7 +265,7 @@
       ],
       "source": "Why poverty is rising in America · American Inequality",
       "say": [
-        "Child poverty would have been nearly 50% lower in 2022 if the expanded credit had stayed."
+        "Research shows child poverty would have been nearly half as low in 2022 if the expanded credit had stayed."
       ]
     },
     {
@@ -269,7 +311,7 @@
       "y": 0.44,
       "source": "U.S. Census (SPM) · American Inequality",
       "say": [
-        "Where you live matters, and California, Florida and Mississippi have the highest poverty rates of any state."
+        "Where you live matters, and California and Florida have the highest poverty rates of any state because affordability is so low."
       ]
     },
     {
@@ -326,7 +368,7 @@
       ],
       "source": "Why poverty is rising in America · American Inequality",
       "say": [
-        "In Mississippi, Black residents are three times more likely to live in poverty than White residents."
+        "Demographics also shape the divide. In Mississippi, Black residents are three times more likely to live in poverty than White residents."
       ]
     },
     {
@@ -350,7 +392,7 @@
       ],
       "source": "U.S. Commission on Civil Rights",
       "say": [
-        "In Tunica County, 68% of Black families live in poverty, compared to 12% of White families."
+        "In Tunica County, MS, 68% of Black families live in poverty, compared to 12% of White families."
       ]
     },
     {
@@ -375,7 +417,7 @@
       ],
       "source": "Why poverty is rising in America · American Inequality",
       "say": [
-        "A job isn't always enough, since 6.3 million people in poverty work full-time."
+        "A job isn't always enough to lift someone out of poverty, since 6.3 million people in poverty work full-time."
       ]
     },
     {
@@ -407,7 +449,7 @@
       "max": 70000,
       "source": "Economic Roundtable",
       "say": [
-        "In California, frontline fast food workers earn about $16,800 a year, just 27% of what workers in other industries make."
+        "Some industries have much higher poverty than others. In California, frontline fast food workers earn about $16,800 a year, just 27% of what workers in other industries make."
       ]
     },
     {
@@ -431,7 +473,7 @@
         ]
       },
       "say": [
-        "Since the expanded credit ended, poverty has never returned to its 2021 low."
+        "Once lawmakers let the pandemic era benefits expire, poverty has floated well above its 2021 lows."
       ]
     },
     {
@@ -448,7 +490,7 @@
         ]
       },
       "say": [
-        "The EITC and Child Tax Credit lifted 10.6 million people above the poverty line, and expanding them would bring poverty down."
+        "The EITC and Child Tax Credit lifted 10.6 million people above the poverty line, and we now have clear evidence that expanding these programs would bring poverty down."
       ]
     },
     {
@@ -466,5 +508,6 @@
     "feel": "Calming, Grooving, Relaxed",
     "credit": "Music: “Screen Saver” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
-  "music_credit": "Music: “Screen Saver” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  "music_credit": "Music: “Screen Saver” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
+  "max_seconds": 112
 }

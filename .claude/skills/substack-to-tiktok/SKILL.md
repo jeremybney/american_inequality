@@ -262,6 +262,10 @@ quoted `headline` cards).
 - **The first shot lasts under 4.5 seconds**: one short spoken line over the most striking
   footage, with the typed headline, and then cut. The second fact of the hook gets its own
   shot (a second clip or photo).
+- **The second shot has to hit as hard as the first.** It carries the hook's biggest number, so
+  don't leave it as a small stamp on a photo. Use a `surge` overlay: the number races up while
+  growing to fill the screen, lands with a flash and a `punch` on the photo, and a `slam`
+  banner names the change ("MORE THAN DOUBLED"). Time the landing to the word that says it.
 - After that, change the visual at least every ~7 seconds. One sentence per scene is the norm.
 - Use motion early: stock footage or a photo with a push-in for the first two shots.
 

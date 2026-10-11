@@ -76,6 +76,7 @@ Overlays (`kind`):
 | `stat` | `value`, `prefix`, `suffix`, `decimals`, `label`, `y`, `color`, `at`, `count` | giant count-up over the photo ("$44M"); pair with `blur` |
 | `tag` | `text`, `x`, `y`, `background`, `color` | orange pill label ("the 4% that's metered:") |
 | `callout` | `text`, `sub`, `x`, `y`, `point: [x, y]`, `color` | value box with a leader line ("$0.00") |
+| `surge` | `from`, `to`, `decimals`, `prefix`/`suffix`, `at`, `count`, `size_from`, `size_to`, `label_from`, `label_to`, `slam`, `slam_at`, `slam_dy`, `flash` | the one jump the viewer must feel: a huge number races `from`→`to` while swelling and turning yellow, lands with an overshoot and white flash, then a `slam` banner ("MORE THAN DOUBLED") crashes in. Pair with the photo's `punch: [seconds]` (a push-in jolt on landing) |
 | `line_draw` | `points: [[x, y], …]`, `draw`, `width`, `color` | a line tracing itself across the photo (drawn under the headline) |
 
 ## `figure` (alias `map`): reuse the author's own map or graphic

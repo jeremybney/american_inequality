@@ -193,7 +193,16 @@ class PhotoScene(Scene):
             return fr
         zoom = self.spec.get("zoom", [1.0, 1.12])
         pan = self.spec.get("pan", [[0.5, 0.5], [0.5, 0.5]])
-        return M.kenburns_frame(self.still, G.ease_in_out(p) * 0.3 + p * 0.7, zoom, pan)
+        return self._punch(M.kenburns_frame(self.still, G.ease_in_out(p) * 0.3 + p * 0.7, zoom, pan), t)
+
+    def _punch(self, fr, t):
+        """A quick push-in jolt at each `punch` time (seconds), for a number slamming in."""
+        import math
+        bump = sum(0.07 * math.exp(-(t - pt) / 0.12) for pt in self.spec.get("punch", []) if 0 <= t - pt < 0.8)
+        if bump < 1e-3:
+            return fr
+        w, h = T.W / (1 + bump), T.H / (1 + bump)
+        return fr.resize((T.W, T.H), Image.BILINEAR, box=((T.W - w) / 2, (T.H - h) / 2, (T.W + w) / 2, (T.H + h) / 2))
 
     def render(self, t):
         img = self.background(t)
@@ -297,6 +306,8 @@ def draw_overlay(img, d, ov, t, scene):
                 lay = G.shadowed_text_layer([line], lf, T.TITLE, lf.size * 1.2, T.W - 100, shadow=T.INK,
                                             shadow_alpha=0.8, blur=10)
                 G.paste_rgba(img, lay, (20, cy + f.size * 0.55 + i * lf.size * 1.25 - 30), a)
+    elif kind == "surge":
+        _draw_surge(img, ov, t, cx, cy)
     elif kind == "tag":
         f = G.font("mono", ov.get("size", 32))
         txt = ov["text"]
@@ -329,6 +340,47 @@ def draw_overlay(img, d, ov, t, scene):
         seg = _partial_polyline(pts, dp)
         if len(seg) > 1:
             d.line(seg, fill=G.rgba(T.color(ov.get("color", "orange"))), width=ov.get("width", 10), joint="curve")
+
+
+def _draw_surge(img, ov, t, cx, cy):
+    """A number that races from `from` to `to` while it swells and turns yellow, lands with an
+    overshoot and a white flash, then a `slam` banner crashes in over it. For the one jump the
+    viewer must feel ("5.2% -> 12.4%, more than doubled")."""
+    at, count = ov.get("at", 0.5), ov.get("count", 1.2)
+    p_in = G.prog(t, at, 0.3)
+    p = G.prog(t, at + 0.35, count)
+    land = at + 0.35 + count
+    v0, v1 = ov["from"], ov["to"]
+    val = v0 + (v1 - v0) * (p ** 1.6)               # accelerates into the landing
+    s0, s1 = ov.get("size_from", 150), ov.get("size_to", 290)
+    size = s0 + (s1 - s0) * G.ease_in_out(p)
+    pop = G.ease_back(G.prog(t, land, 0.35), 2.2) if t >= land else 1.0
+    scale = (0.6 + 0.4 * G.ease_back(p_in, 1.8)) * (1 + 0.18 * (1 - pop) if t >= land else 1)
+    col = G.mix(T.TITLE, T.color(ov.get("color", "yellow")), G.clamp01(p * 1.2))
+    f = G.font("display", int(size * scale))
+    txt = fmt_from(ov, val)
+    lay = G.shadowed_text_layer([txt], f, col, f.size * 1.1, T.W + 200, shadow=T.INK, shadow_alpha=0.8, blur=20)
+    G.paste_rgba(img, lay, (cx - lay.width / 2, cy - lay.height / 2), G.ease_out(p_in))
+    lf = G.font("mono", 34)
+    lbl = ov.get("label_to") if p >= 0.5 else ov.get("label_from")
+    if lbl:
+        ll = G.shadowed_text_layer([lbl.upper()], lf, T.TITLE, lf.size * 1.2, T.W, shadow=T.INK, shadow_alpha=0.8, blur=8)
+        G.paste_rgba(img, ll, (cx - ll.width / 2, cy + f.size * 0.55), G.ease_out(p_in))
+    if ov.get("flash", True) and 0 <= t - land < 0.25:   # white flash on landing
+        fl = Image.new("RGBA", img.size, (255, 255, 255, int(150 * (1 - (t - land) / 0.25))))
+        img.paste(fl, (0, 0), fl)
+    slam = ov.get("slam")
+    sat = ov.get("slam_at", land + 0.25)
+    if slam and t >= sat:
+        q = G.prog(t, sat, 0.22)
+        sf = G.font("display", ov.get("slam_size", 96))
+        w = sf.getlength(slam) + 90
+        band = Image.new("RGBA", (int(w), int(sf.size * 1.5)), (0, 0, 0, 0))
+        bd = ImageDraw.Draw(band)
+        bd.rectangle((0, 0, band.width, band.height), fill=G.rgba(T.color(ov.get("slam_color", "yellow"))))
+        bd.text((45, sf.size * 0.2), slam, font=sf, fill=G.rgba(T.INK))
+        G.rotated_paste(img, band, (cx, cy + ov.get("slam_dy", 0.17) * T.H), ov.get("slam_angle", -6),
+                        min(1.0, q * 2), 2.2 - 1.2 * G.ease_out(q))
 
 
 def _partial_polyline(pts, p):
