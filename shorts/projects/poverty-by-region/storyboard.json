@@ -38,31 +38,7 @@
       "chip": "Poverty · American Inequality",
       "source": "U.S. Census (2025)",
       "say": [
-        "35 million Americans live in poverty,"
-      ]
-    },
-    {
-      "type": "photo",
-      "media": "tents.jpg",
-      "query": "Skid Row Los Angeles",
-      "dim": 0.4,
-      "zoom": [
-        1.05,
-        1.15
-      ],
-      "overlays": [
-        {
-          "kind": "stamp",
-          "text": "STUBBORNLY HIGH",
-          "y": 0.3,
-          "at": 0.8,
-          "angle": -3,
-          "size": 46
-        }
-      ],
-      "source": "U.S. Census (SPM)",
-      "say": [
-        "a rate that has remained stubbornly high since the pandemic."
+        "35 million Americans live in poverty, a rate that has remained stubbornly high since the pandemic."
       ]
     },
     {
@@ -265,7 +241,7 @@
       ],
       "source": "Why poverty is rising in America · American Inequality",
       "say": [
-        "Research shows child poverty would have been nearly half as low in 2022 if the expanded credit had stayed."
+        "Research shows child poverty would have been 50% lower in 2022 if the expanded credit had stayed."
       ]
     },
     {
@@ -311,7 +287,7 @@
       "y": 0.44,
       "source": "U.S. Census (SPM) · American Inequality",
       "say": [
-        "Where you live matters, and California and Florida have the highest poverty rates of any state because affordability is so low."
+        "Where you live matters. California has the highest poverty rate of any state because affordability is so bad. Florida has the second worst because opportunity is so low."
       ]
     },
     {
