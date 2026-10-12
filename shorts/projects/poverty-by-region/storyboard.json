@@ -485,5 +485,142 @@
     "credit": "Music: “Screen Saver” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
   "music_credit": "Music: “Screen Saver” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
-  "max_seconds": 112
+  "max_seconds": 112,
+  "voiceover": {
+    "file": "voiceover.m4a",
+    "clean": "voiceover_clean.wav",
+    "duration": 102.1,
+    "mix": "voiceover_studio.wav",
+    "studio": [
+      "room echo + noise removed (DeepFilterNet 3)",
+      "60-150 Hz +1.5 dB",
+      "300-600 Hz -3.1 dB",
+      "2500-5000 Hz +2.9 dB"
+    ],
+    "cues": [
+      {
+        "scene": 0,
+        "line": 0,
+        "text": "35 million Americans live in poverty, a rate that has remained stubbornly high since the pandemic.",
+        "start": 0.15,
+        "end": 4.67,
+        "matched": 1.0
+      },
+      {
+        "scene": 1,
+        "line": 0,
+        "text": "Even child poverty, which more than doubled in 2022 from 5.2% to 12.4%, has stayed above 13% for the last 3 years.",
+        "start": 5.17,
+        "end": 13.1,
+        "matched": 0.85
+      },
+      {
+        "scene": 2,
+        "line": 0,
+        "text": "I looked at where poverty lives, why it rose so quickly, and why it hasn't fallen back to historical levels.",
+        "start": 13.6,
+        "end": 18.86,
+        "matched": 1.0
+      },
+      {
+        "scene": 3,
+        "line": 0,
+        "text": "Pandemic aid like the expanded Child Tax Credit pushed poverty to record lows, and when it expired the gains vanished.",
+        "start": 19.36,
+        "end": 24.7,
+        "matched": 1.0
+      },
+      {
+        "scene": 4,
+        "line": 0,
+        "text": "Research shows child poverty would have been 50% lower in 2022 if the expanded credit had stayed.",
+        "start": 25.2,
+        "end": 31.357,
+        "matched": 0.8
+      },
+      {
+        "scene": 5,
+        "line": 0,
+        "text": "Inflation raised the bar too, since the poverty line for a family of four jumped nearly 10% to $34,518.",
+        "start": 31.857,
+        "end": 37.887,
+        "matched": 0.92
+      },
+      {
+        "scene": 6,
+        "line": 0,
+        "text": "Where you live matters. California has the highest poverty rate of any state because affordability is so bad. Florida has the second worst because opportunity is so low.",
+        "start": 38.007,
+        "end": 47.087,
+        "matched": 1.0
+      },
+      {
+        "scene": 7,
+        "line": 0,
+        "text": "In Gadsden County on the Florida panhandle, one in four people live in poverty, and two in five children do.",
+        "start": 47.587,
+        "end": 52.797,
+        "matched": 0.95
+      },
+      {
+        "scene": 8,
+        "line": 0,
+        "text": "Demographics also shape the divide. In Mississippi, Black residents are three times more likely to live in poverty than White residents.",
+        "start": 53.297,
+        "end": 59.437,
+        "matched": 0.9
+      },
+      {
+        "scene": 9,
+        "line": 0,
+        "text": "In Tunica County, MS, 68% of Black families live in poverty, compared to 12% of White families.",
+        "start": 59.937,
+        "end": 66.297,
+        "matched": 0.8
+      },
+      {
+        "scene": 10,
+        "line": 0,
+        "text": "A job isn't always enough to lift someone out of poverty, since 6.3 million people in poverty work full-time.",
+        "start": 66.797,
+        "end": 72.637,
+        "matched": 0.95
+      },
+      {
+        "scene": 11,
+        "line": 0,
+        "text": "Some industries have much higher poverty than others. In California, frontline fast food workers earn about $16,800 a year, just 27% of what workers in other industries make.",
+        "start": 73.137,
+        "end": 83.727,
+        "matched": 0.85
+      },
+      {
+        "scene": 12,
+        "line": 0,
+        "text": "Once lawmakers let the pandemic era benefits expire, poverty has floated well above its 2021 lows.",
+        "start": 84.227,
+        "end": 89.407,
+        "matched": 1.0
+      },
+      {
+        "scene": 13,
+        "line": 0,
+        "text": "The EITC and Child Tax Credit lifted 10.6 million people above the poverty line, and we now have clear evidence that expanding these programs would bring poverty down.",
+        "start": 89.907,
+        "end": 99.147,
+        "matched": 0.96
+      },
+      {
+        "scene": 14,
+        "line": 0,
+        "text": "You can read the full story on American Inequality.",
+        "start": 99.647,
+        "end": 101.487,
+        "matched": 1.0
+      }
+    ],
+    "transcript": "$35 million Americans live in poverty, a rate that has remained stubbornly high since the pandemic. Even child poverty, which more than doubled in 2022 from 5 .2 % to 12 .4%, has stayed above 13 % for the last 3 years. I looked at where poverty lives, why it rose so quickly, and why it hasn't fallen back to historical levels. Pandemic aid like the expanded Child Tax Credit pushed poverty to record lows, and when it expired, the gains vanished. Research shows child poverty would have been 50 % lower in the pandemic, and why it hasn't fallen back to historical levels. lower in 2022 with the expanded credit state. Inflation raised the bar too since the poverty line for a family of four jumped nearly 10 % to $34 ,518, where you live matters. California has the highest poverty rate of any state because affordability is so bad. Florida has the second worst because opportunity is so low. In Gadson County on the Florida Panhandle, one in four people live in poverty and two in five children do. Demographics also shaped the divide. From Mississippi, black residents are three times more likely to live in poverty than white residents. In too Niki County, Mississippi, 68 % of black families live in poverty compared to 12 % of white families. A job isn't always enough to lift someone out of poverty, since 6 .3 million people in poverty work full -time. Some industries have much higher poverty than others. In California, frontline fast -food workers earn about $16 ,800 a year, just 27 % of workers workers and other industries made. Once lawmakers let the pandemic era benefits expire, poverty has floated well above its 2021 lows. The EITC and Child Tax Credit lifted 10 .6 million people above the poverty line, and we now have clear evidence that expanding these programs would bring poverty down. You can read the full story on American inequality.",
+    "pauses_trimmed_s": 4.1,
+    "max_gap": 0.5
+  }
 }
