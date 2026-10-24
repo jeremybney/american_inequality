@@ -133,7 +133,7 @@ function buildHtmlBody(greeting) {
     '<li>You\'ve unlocked access to bonus <a href="' + LINKS.bonus + '">behind-the-scenes content</a> and actionable ideas for creating change in your community.</li>',
     '<li>If you want to create change in your community and help spread the word about The Opportunity Map, <a href="' + LINKS.whatsapp + '">join this WhatsApp group</a> where we will be connecting across places and sharing ideas for how to get the word out there. Plus, it\'ll just be fun and occasionally I\'ll send jokes and pictures in there.</li>',
     '</ul>',
-    '<p>In the meantime, please <a href="' + LINKS.share + '">share the book with a friend</a> or ',
+    '<p>In the meantime, please <a href="' + LINKS.share + '">share the book</a> with a friend or ',
     '<a href="' + LINKS.donate + '">donate a copy</a> to help fill a struggling public library in America.</p>',
     '<p>Most sincerely,<br>Jeremy</p>',
     '</div>'
