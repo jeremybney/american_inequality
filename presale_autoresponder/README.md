@@ -24,9 +24,9 @@ Paste the new `Code.gs` over the old one and save. If the update uses a new Goog
 
 ## Notes
 
-- **Existing submissions:** the script checks messages from the last 7 days. Your two test submissions from Oct 4 (Jane Test2 / John Test) will therefore get a reply on the first run. Both go to your own address, which makes a handy end-to-end test.
+- **Existing submissions:** the script checks messages from the last 7 days, and skips any submission it has already answered.
 - **Greeting** uses the first word of the name ("Jane Test2" → "Hi Jane,"). If no name is found, it says "Hi there,".
 - **Logs:** in the Apps Script editor, open **Executions** to see who was emailed.
 - **Limits:** a free Gmail account can send about 100 Apps Script emails per day. Google Workspace accounts can send about 1,500.
 - **To stop it:** open **Triggers** (the clock icon) and delete the `processSubmissions` trigger.
-- **To edit the copy or links:** change `LINKS`, `buildHtmlBody` and `buildPlainBody` in `Code.gs`.
+- **To edit the copy or links:** edit the [Presale Bonus Email](https://claude.ai/artifact/Tr9u1y6GZiu1UjGU5jAfxY) doc and ask Claude to update the script, or change `LINKS`, `buildHtmlBody` and `buildPlainBody` in `Code.gs` directly.

@@ -18,10 +18,9 @@ var DONE_LABEL = 'Presale bonus sent';
 var SHEET_ID = '1clGrdE3eQo0bbi8AEn_sJKtatPHCKawqBaSkl7vuJUc';
 var SHEET_TAB = 'Submissions';
 var LINKS = {
+  bonus: 'https://bit.ly/4jEyfwq',
   whatsapp: 'https://chat.whatsapp.com/GpBoiUrRk7OHWcHrvsV7v0',
-  bonus: 'https://youtube.com/playlist?list=PLUryKyLf39gI&si=eZ_IxPmutjR0cLZ1',
-  album: 'https://myalbum.com/album/SPz2zopRhSdxyi/?invite=a4b14aca-bd6d-4752-b26c-0513b5435a65',
-  amazon: 'https://www.amazon.com/dp/1541705874',
+  share: 'https://www.theopportunitymap.com/#presale',
   donate: 'https://www.worthybooks.org/the-opportunity-map'
 };
 
@@ -129,14 +128,13 @@ function buildHtmlBody(greeting) {
   return [
     '<div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5;color:#222;">',
     '<p>' + greeting + '</p>',
-    '<p>Thank you for purchasing your copy of <i>The Opportunity Map</i>! We\'ve got some bonuses for you:</p>',
+    '<p>Thank you for purchasing your copy of <i>The Opportunity Map</i>! I\'ve got some awesome bonus material for you:</p>',
     '<ul>',
-    '<li><a href="' + LINKS.whatsapp + '">Join our WhatsApp Street Team</a>, where we\'ll be sharing information about events, book updates, and ways to connect with others.</li>',
-    '<li>You\'ve unlocked access to <a href="' + LINKS.bonus + '">all our bonus content for the book</a>, which I\'ll update every 2 weeks in the lead up to launch.</li>',
-    '<li>I\'m sharing a <a href="' + LINKS.album + '">behind-the-scenes album of all my travels for the book</a> to give you a deeper sense of what these communities are like.</li>',
+    '<li>You\'ve unlocked access to bonus <a href="' + LINKS.bonus + '">behind-the-scenes content</a> and actionable ideas for creating change in your community.</li>',
+    '<li>If you want to create change in your community and help spread the word about The Opportunity Map, <a href="' + LINKS.whatsapp + '">join this WhatsApp group</a> where we will be connecting across places and sharing ideas for how to get the word out there. Plus, it\'ll just be fun and occasionally I\'ll send jokes and pictures in there.</li>',
     '</ul>',
-    '<p>In the meantime, please <a href="' + LINKS.amazon + '">share the book with a friend</a> or ',
-    '<a href="' + LINKS.donate + '">donate a copy</a> to help fill a struggling library in one of the left-behind places profiled in <i>The Opportunity Map</i>.</p>',
+    '<p>In the meantime, please <a href="' + LINKS.share + '">share the book with a friend</a> or ',
+    '<a href="' + LINKS.donate + '">donate a copy</a> to help fill a struggling public library in America.</p>',
     '<p>Most sincerely,<br>Jeremy</p>',
     '</div>'
   ].join('\n');
@@ -147,13 +145,12 @@ function buildPlainBody(greeting) {
   return [
     greeting,
     '',
-    'Thank you for purchasing your copy of The Opportunity Map! We\'ve got some bonuses for you:',
+    'Thank you for purchasing your copy of The Opportunity Map! I\'ve got some awesome bonus material for you:',
     '',
-    '* Join our WhatsApp Street Team, where we\'ll be sharing information about events, book updates, and ways to connect with others: ' + LINKS.whatsapp,
-    '* You\'ve unlocked access to all our bonus content for the book, which I\'ll update every 2 weeks in the lead up to launch: ' + LINKS.bonus,
-    '* I\'m sharing a behind-the-scenes album of all my travels for the book to give you a deeper sense of what these communities are like: ' + LINKS.album,
+    '* You\'ve unlocked access to bonus behind-the-scenes content and actionable ideas for creating change in your community: ' + LINKS.bonus,
+    '* If you want to create change in your community and help spread the word about The Opportunity Map, join this WhatsApp group where we will be connecting across places and sharing ideas for how to get the word out there. Plus, it\'ll just be fun and occasionally I\'ll send jokes and pictures in there: ' + LINKS.whatsapp,
     '',
-    'In the meantime, please share the book with a friend (' + LINKS.amazon + ') or donate a copy (' + LINKS.donate + ') to help fill a struggling library in one of the left-behind places profiled in The Opportunity Map.',
+    'In the meantime, please share the book with a friend (' + LINKS.share + ') or donate a copy (' + LINKS.donate + ') to help fill a struggling public library in America.',
     '',
     'Most sincerely,',
     'Jeremy'
