@@ -33,7 +33,7 @@ Paste the new `Code.gs` over the old one and save. If the update uses a new Goog
 
 # Donor thank-you email (`DonorThankYou.gs`)
 
-A separate Apps Script project, independent of the presale auto-responder. Every 10 minutes it reads the **Book Sale Overview** tab of the [OPM Fulfillment Breakdown](https://docs.google.com/spreadsheets/d/1oGdXnUso53Kzq0PLFV__A0ynOT7nZl5g7EitIKV6yfc/edit?gid=572641840) sheet, from row 111 down. If a Shopify Worthy order row (column A starts with "SW") has 5 to 9 copies (inclusive) in column D, it emails the donor once. The email thanks them for the copies and links the Opportunity Mapping Playbook. The donor's name and email come from column B.
+A separate Apps Script project, independent of the presale auto-responder. Every 10 minutes it reads the **Book Sale Overview** tab of the [OPM Fulfillment Breakdown](https://docs.google.com/spreadsheets/d/1oGdXnUso53Kzq0PLFV__A0ynOT7nZl5g7EitIKV6yfc/edit?gid=572641840) sheet. If a Shopify Worthy order from SW36 on (the order on row 111 at setup; earlier orders are skipped even if rows move) has 5 to 9 copies (inclusive) in column D, it emails the donor once. The email thanks them for the copies and links the Opportunity Mapping Playbook. The donor's name and email come from column B.
 
 The script only reads that sheet; it never writes to it.
 

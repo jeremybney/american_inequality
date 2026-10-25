@@ -2,8 +2,8 @@
  * The Opportunity Map — donor thank-you email (Google Apps Script).
  *
  * Checks the "Book Sale Overview" tab of the OPM Fulfillment Breakdown sheet.
- * For each Shopify Worthy order from row 111 down whose copy count (column D)
- * is 5 to 9 (inclusive), it emails the donor once with the Opportunity Mapping
+ * For each Shopify Worthy order from SW36 on (the first order on row 111 when
+ * this was set up) whose copy count (column D) is 5 to 9 (inclusive), it emails the donor once with the Opportunity Mapping
  * Playbook.
  *
  * Runs in its own Apps Script project, separate from the presale auto-responder.
@@ -11,7 +11,9 @@
 
 var DONOR_SHEET_ID = '1oGdXnUso53Kzq0PLFV__A0ynOT7nZl5g7EitIKV6yfc';
 var DONOR_SHEET_TAB = 'Book Sale Overview';
-var DONOR_START_ROW = 111;
+// Orders SW1-SW35 (rows 61-110) came before this was set up and are skipped.
+// Going by order number rather than row means inserted rows can't pull them in.
+var DONOR_FIRST_ORDER = 36;
 var DONOR_MIN_COPIES = 5;  // inclusive
 var DONOR_MAX_COPIES = 9;  // inclusive
 var DONOR_SUBJECT = 'Thank you for donating copies of The Opportunity Map';
@@ -30,17 +32,25 @@ function donorCheckSheet() {
 
 function donorProcessRows() {
   var props = PropertiesService.getScriptProperties();
-  var sheet = SpreadsheetApp.openById(DONOR_SHEET_ID).getSheetByName(DONOR_SHEET_TAB);
-  var lastRow = sheet.getLastRow();
-  if (lastRow < DONOR_START_ROW) return;
+  donorMatchingRows().forEach(function (m) {
+    if (props.getProperty(m.key)) return;
+    donorSendEmail(m.email, m.firstName, m.copies);
+    props.setProperty(m.key, new Date().toISOString());
+    console.log('Row ' + m.row + ' (' + m.order + '): sent donor thank-you to ' + m.email);
+  });
+}
 
+/** Order rows from SW36 on with 5-9 copies and an email in column B. */
+function donorMatchingRows() {
+  var sheet = SpreadsheetApp.openById(DONOR_SHEET_ID).getSheetByName(DONOR_SHEET_TAB);
   // Columns A (order), B (name + email), D (total books).
-  var rows = sheet.getRange(DONOR_START_ROW, 1, lastRow - DONOR_START_ROW + 1, 4).getValues();
+  var rows = sheet.getRange(1, 1, sheet.getLastRow(), 4).getValues();
+  var matches = [];
   rows.forEach(function (r, i) {
     var order = String(r[0]).trim();
-    // Only Shopify Worthy order rows ("SW36-Shopify Order 1448"); skips the
-    // Author Stock, TOTAL and Finance Overview rows further down.
-    if (!/^SW/i.test(order)) return;
+    // Shopify Worthy order rows look like "SW36-Shopify Order 1448" (or "SW-20-...").
+    var num = order.match(/^SW-?(\d+)/i);
+    if (!num || Number(num[1]) < DONOR_FIRST_ORDER) return;
 
     var copies = Number(String(r[3]).replace(/,/g, ''));
     if (!(copies >= DONOR_MIN_COPIES && copies <= DONOR_MAX_COPIES)) return;
@@ -48,13 +58,12 @@ function donorProcessRows() {
     var contact = donorParseContact(String(r[1]));
     if (!contact.email) return;  // Email not filled in yet; try again next run.
 
-    var key = 'donor_' + order + '|' + contact.email.toLowerCase();
-    if (props.getProperty(key)) return;
-
-    donorSendEmail(contact.email, contact.firstName, copies);
-    props.setProperty(key, new Date().toISOString());
-    console.log('Row ' + (DONOR_START_ROW + i) + ': sent donor thank-you to ' + contact.email);
+    matches.push({
+      row: i + 1, order: order, copies: copies, email: contact.email, firstName: contact.firstName,
+      key: 'donor_' + order + '|' + contact.email.toLowerCase()
+    });
   });
+  return matches;
 }
 
 /** Column B looks like "Seth Harper\nseth.t.harper@gmail.com". */
@@ -122,20 +131,12 @@ function donorInstallTrigger() {
  */
 function donorDryRun() {
   var props = PropertiesService.getScriptProperties();
-  var sheet = SpreadsheetApp.openById(DONOR_SHEET_ID).getSheetByName(DONOR_SHEET_TAB);
-  var lastRow = sheet.getLastRow();
-  var rows = sheet.getRange(DONOR_START_ROW, 1, Math.max(lastRow - DONOR_START_ROW + 1, 1), 4).getValues();
-  var count = 0;
-  rows.forEach(function (r, i) {
-    var order = String(r[0]).trim();
-    var copies = Number(String(r[3]).replace(/,/g, ''));
-    var contact = donorParseContact(String(r[1]));
-    if (!/^SW/i.test(order) || !(copies >= DONOR_MIN_COPIES && copies <= DONOR_MAX_COPIES) || !contact.email) return;
-    var already = props.getProperty('donor_' + order + '|' + contact.email.toLowerCase());
-    console.log('Row ' + (DONOR_START_ROW + i) + ': ' + order + ', ' + contact.email + ', ' + copies + ' copies' + (already ? ' (already sent)' : ' -> WOULD SEND'));
-    count++;
+  var matches = donorMatchingRows();
+  matches.forEach(function (m) {
+    console.log('Row ' + m.row + ': ' + m.order + ', ' + m.email + ', ' + m.copies + ' copies' +
+      (props.getProperty(m.key) ? ' (already sent)' : ' -> WOULD SEND'));
   });
-  console.log(count + ' matching row(s) from row ' + DONOR_START_ROW + ' down.');
+  console.log(matches.length + ' matching order(s) from SW' + DONOR_FIRST_ORDER + ' on.');
 }
 
 /** Run from the editor to email yourself a preview (uses 5 copies as the example). */
