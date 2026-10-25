@@ -33,14 +33,15 @@ Paste the new `Code.gs` over the old one and save. If the update uses a new Goog
 
 # Donor thank-you email (`DonorThankYou.gs`)
 
-A second script in the same Apps Script project. Every 10 minutes it reads the **Book Sale Overview** tab of the [OPM Fulfillment Breakdown](https://docs.google.com/spreadsheets/d/1oGdXnUso53Kzq0PLFV__A0ynOT7nZl5g7EitIKV6yfc/edit?gid=572641840) sheet, from row 111 down. If a Shopify Worthy order row (column A starts with "SW") has 6, 7 or 8 copies in column D, it emails the donor once. The email thanks them for the copies and links the Opportunity Mapping Playbook. The donor's name and email come from column B.
+A separate Apps Script project, independent of the presale auto-responder. Every 10 minutes it reads the **Book Sale Overview** tab of the [OPM Fulfillment Breakdown](https://docs.google.com/spreadsheets/d/1oGdXnUso53Kzq0PLFV__A0ynOT7nZl5g7EitIKV6yfc/edit?gid=572641840) sheet, from row 111 down. If a Shopify Worthy order row (column A starts with "SW") has 5 to 9 copies (inclusive) in column D, it emails the donor once. The email thanks them for the copies and links the Opportunity Mapping Playbook. The donor's name and email come from column B.
 
 The script only reads that sheet; it never writes to it.
 
 ## Setup
 
-1. In the existing Apps Script project, click **+** next to Files, choose **Script**, and name it `DonorThankYou`. Paste in [`DonorThankYou.gs`](DonorThankYou.gs) and save.
-2. Run `donorDryRun`. It sends nothing and lists the rows that would get an email in the Execution log.
+1. Go to https://script.google.com and click **New project**. Name it "Donor thank-you". Replace the sample code in `Code.gs` with [`DonorThankYou.gs`](DonorThankYou.gs) and save.
+2. Run `donorDryRun`. Google asks you to approve Gmail and Sheets access the first time.
+   It sends nothing and lists the rows that would get an email in the Execution log.
 3. Run `donorSendTestEmail` to get a preview in your own inbox.
 4. Run `donorInstallTrigger`. It's now live.
 

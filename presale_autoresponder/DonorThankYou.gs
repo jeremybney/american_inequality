@@ -3,17 +3,17 @@
  *
  * Checks the "Book Sale Overview" tab of the OPM Fulfillment Breakdown sheet.
  * For each Shopify Worthy order from row 111 down whose copy count (column D)
- * is 6, 7 or 8, it emails the donor once with the Opportunity Mapping Playbook.
+ * is 5 to 9 (inclusive), it emails the donor once with the Opportunity Mapping
+ * Playbook.
  *
- * Lives in the same Apps Script project as Code.gs; every name here starts
- * with "donor" so nothing clashes with the presale auto-responder.
+ * Runs in its own Apps Script project, separate from the presale auto-responder.
  */
 
 var DONOR_SHEET_ID = '1oGdXnUso53Kzq0PLFV__A0ynOT7nZl5g7EitIKV6yfc';
 var DONOR_SHEET_TAB = 'Book Sale Overview';
 var DONOR_START_ROW = 111;
-var DONOR_MIN_COPIES = 6;  // "greater than 5"
-var DONOR_MAX_COPIES = 8;  // "less than 9"
+var DONOR_MIN_COPIES = 5;  // inclusive
+var DONOR_MAX_COPIES = 9;  // inclusive
 var DONOR_SUBJECT = 'Thank you for donating copies of The Opportunity Map';
 var DONOR_PLAYBOOK_URL = 'https://cultureof.one/peer-places/';
 
@@ -138,7 +138,7 @@ function donorDryRun() {
   console.log(count + ' matching row(s) from row ' + DONOR_START_ROW + ' down.');
 }
 
-/** Run from the editor to email yourself a preview (uses 6 copies as the example). */
+/** Run from the editor to email yourself a preview (uses 5 copies as the example). */
 function donorSendTestEmail() {
-  donorSendEmail(Session.getActiveUser().getEmail(), 'Jeremy', 6);
+  donorSendEmail(Session.getActiveUser().getEmail(), 'Jeremy', 5);
 }
