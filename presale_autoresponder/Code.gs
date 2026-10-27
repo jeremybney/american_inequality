@@ -20,6 +20,7 @@ var SHEET_TAB = 'Submissions';
 var LINKS = {
   bonus: 'https://bit.ly/4jEyfwq',
   whatsapp: 'https://chat.whatsapp.com/GpBoiUrRk7OHWcHrvsV7v0',
+  album: 'https://myalbum.com/album/SPz2zopRhSdxyi/?invite=a4b14aca-bd6d-4752-b26c-0513b5435a65',
   share: 'https://www.theopportunitymap.com/#presale',
   donate: 'https://www.worthybooks.org/the-opportunity-map'
 };
@@ -132,6 +133,7 @@ function buildHtmlBody(greeting) {
     '<ul>',
     '<li>You\'ve unlocked access to bonus <a href="' + LINKS.bonus + '">behind-the-scenes content</a> and actionable ideas for creating change in your community.</li>',
     '<li>If you want to create change in your community and help spread the word about The Opportunity Map, <a href="' + LINKS.whatsapp + '">join this WhatsApp group</a> where we will be connecting across places and sharing ideas for how to get the word out there. Plus, it\'ll just be fun and occasionally I\'ll send jokes and pictures in there.</li>',
+    '<li>I\'m sharing a <a href="' + LINKS.album + '">photo album of all my travels for the book</a> to give you a deeper sense of what these communities are like.</li>',
     '</ul>',
     '<p>In the meantime, please <a href="' + LINKS.share + '">share the book</a> with a friend or ',
     '<a href="' + LINKS.donate + '">donate a copy</a> to help fill a struggling public library in America.</p>',
@@ -149,6 +151,7 @@ function buildPlainBody(greeting) {
     '',
     '* You\'ve unlocked access to bonus behind-the-scenes content and actionable ideas for creating change in your community: ' + LINKS.bonus,
     '* If you want to create change in your community and help spread the word about The Opportunity Map, join this WhatsApp group where we will be connecting across places and sharing ideas for how to get the word out there. Plus, it\'ll just be fun and occasionally I\'ll send jokes and pictures in there: ' + LINKS.whatsapp,
+    '* I\'m sharing a photo album of all my travels for the book to give you a deeper sense of what these communities are like: ' + LINKS.album,
     '',
     'In the meantime, please share the book with a friend (' + LINKS.share + ') or donate a copy (' + LINKS.donate + ') to help fill a struggling public library in America.',
     '',
