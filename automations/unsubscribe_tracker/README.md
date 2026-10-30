@@ -34,9 +34,13 @@ It runs in your own Google account, so there is nothing to pay for or host.
 6. Done. Under **Triggers** (the clock icon) you should see `checkUnsubscribes`
    set to run every minute.
 
-`setup()` starts tracking from the moment you run it. If some emails came in
-between turning off Zapier and running setup, run
-`backfillSince('2026-10-29 16:00')` with the time you turned the Zaps off.
+`setup()` starts tracking from the moment you run it. To pick up emails from
+before that, run `backfillSince('2026-10-29T16:00:00Z')` with a UTC time. It
+re-reads every unsubscribe email since then, so choose a time after the last
+row already in the sheet to avoid duplicates.
+
+If rows stop showing up, run `diagnose()` and check the log. It lists recent
+unsubscribe emails and what the script reads from each one.
 
 ## Maintenance
 

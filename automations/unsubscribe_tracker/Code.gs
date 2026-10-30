@@ -21,6 +21,7 @@ const ROW_SUBJECT = 'Email from American Inequality';  // what the zaps wrote in
 const SEARCH_QUERY =
   'in:anywhere from:no-reply@substack.com ' +
   'subject:("Unsubscription for American Inequality" OR "Email disabled for American Inequality")';
+const DAY_MS = 24 * 60 * 60 * 1000;
 
 const OVERLAP_MS = 60 * 60 * 1000;            // re-scan the last hour to catch late arrivals
 const SEEN_RETENTION_MS = 3 * 24 * 60 * 60 * 1000;
@@ -51,7 +52,9 @@ function setup() {
 function backfillSince(dateString) {
   const sinceMs = new Date(dateString).getTime();
   if (isNaN(sinceMs)) throw new Error('Could not parse date: ' + dateString);
-  PropertiesService.getScriptProperties().setProperty(PROP_CURSOR, String(sinceMs + OVERLAP_MS));
+  const props = PropertiesService.getScriptProperties();
+  props.setProperty(PROP_CURSOR, String(sinceMs + OVERLAP_MS));
+  props.setProperty(PROP_SEEN, '{}');
   checkUnsubscribes();
 }
 
@@ -65,9 +68,9 @@ function checkUnsubscribes() {
     const seen = JSON.parse(props.getProperty(PROP_SEEN) || '{}');
     const sinceMs = cursorMs - OVERLAP_MS;
 
-    // Gmail's after: accepts epoch seconds.
-    const query = SEARCH_QUERY + ' after:' + Math.floor(sinceMs / 1000);
-    const threads = GmailApp.search(query, 0, 100);
+    // Search by whole days and filter to the exact time below.
+    const days = Math.ceil((Date.now() - sinceMs) / DAY_MS) + 1;
+    const threads = GmailApp.search(SEARCH_QUERY + ' newer_than:' + days + 'd', 0, 100);
 
     const found = [];
     threads.forEach(thread => {
@@ -76,9 +79,10 @@ function checkUnsubscribes() {
         const id = msg.getId();
         const dateMs = msg.getDate().getTime();
         if (dateMs < sinceMs || seen[id]) return;
-        const parsed = parseNotification(msg.getSubject(), msg.getPlainBody());
+        // Substack sends these as HTML only, so read the HTML body.
+        const parsed = parseNotification(msg.getSubject(), htmlToText(msg.getBody()));
         if (parsed) found.push({ id, dateMs, threadId: thread.getId(), parsed });
-        else seen[id] = dateMs;  // not one of ours; don't look at it again
+        else console.warn('Could not read unsubscribe email ' + id + ': ' + msg.getSubject());
       });
     });
 
@@ -124,14 +128,38 @@ function parseNotification(subject, body) {
   const isDisabled = /Email disabled for American Inequality/i.test(subject);
   if (!isUnsubscription && !isDisabled) return null;
 
-  const emailMatch = /Email:\s*([^\s<>()\[\]]+@[^\s<>()\[\]]+)/i.exec(body || '');
+  const emailMatch = /Email:\s*([A-Za-z0-9._%+'-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,})/i.exec(body || '');
   if (!emailMatch) return null;
   const statusMatch = /Prior status:\s*([A-Za-z ]+?Subscriber)/i.exec(body || '');
   const status = statusMatch ? statusMatch[1].trim() : '';
 
   // A paid cancellation goes to Paid; anything else (free unsubscribes) to Sheet1.
   const tab = isUnsubscription && /paid/i.test(status) ? 'paid' : 'regular';
-  return { email: emailMatch[1].replace(/[.,;]+$/, ''), status, tab };
+  return { email: emailMatch[1], status, tab };
+}
+
+/** Turns an HTML email body into text, one line per <br>/<p>. */
+function htmlToText(html) {
+  return (html || '')
+    .replace(/<(style|script)[^>]*>[\s\S]*?<\/\1>/gi, '')
+    .replace(/<br\s*\/?>|<\/(p|div|tr|li|h\d)>/gi, '\n')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)));
+}
+
+/** Run by hand to see what the script finds in Gmail right now (View > Logs). */
+function diagnose() {
+  const props = PropertiesService.getScriptProperties();
+  console.log('Cursor: ' + new Date(Number(props.getProperty(PROP_CURSOR))).toISOString());
+  console.log('Triggers: ' + ScriptApp.getProjectTriggers().map(t => t.getHandlerFunction()).join(', '));
+  GmailApp.search(SEARCH_QUERY + ' newer_than:2d', 0, 20).forEach(thread => {
+    thread.getMessages().slice(-10).forEach(msg => {
+      const parsed = parseNotification(msg.getSubject(), htmlToText(msg.getBody()));
+      console.log(msg.getDate().toISOString() + '  ' + msg.getSubject() + '  ->  ' + JSON.stringify(parsed));
+    });
+  });
 }
 
 function sheetByGid(ss, gid) {
@@ -152,4 +180,4 @@ function appendRows(sheet, rows) {
 }
 
 // Lets parseNotification be unit-tested under Node; ignored by Apps Script.
-if (typeof module !== 'undefined') module.exports = { parseNotification };
+if (typeof module !== 'undefined') module.exports = { parseNotification, htmlToText };
