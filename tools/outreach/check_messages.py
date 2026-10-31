@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Check iMessage and WhatsApp on this Mac for book-outreach replies.
+"""Check iMessage, WhatsApp and Instagram for book-outreach replies.
 
 Reads a CSV download of the "People who might buy book" tab, finds each
 person's phone numbers / emails (from the sheet, plus Mac Contacts by name),
-then looks through local iMessage and WhatsApp history for 1:1 conversations
-with them since --since.
+then looks through local iMessage and WhatsApp history (and, if given, an
+Instagram "Download your information" export) for 1:1 conversations with them
+since --since. Instagram has no phone numbers, so it is matched on display name.
 
 Writes a results CSV (no message text) with, per sheet row:
   reached_out  - you sent them a message since --since
@@ -14,11 +15,13 @@ Everything stays on this Mac; only the results CSV is written.
 
 Usage:
   python3 check_messages.py --sheet-csv ~/Downloads/people.csv
+  python3 check_messages.py --sheet-csv ~/Downloads/people.csv --instagram-export ~/Downloads/instagram-export.zip
 """
 import argparse
 import csv
 import datetime as dt
 import glob
+import json
 import os
 import re
 import shutil
@@ -26,6 +29,7 @@ import sqlite3
 import sys
 import tempfile
 import unicodedata
+import zipfile
 
 HOME = os.path.expanduser("~")
 IMESSAGE_DB = os.path.join(HOME, "Library/Messages/chat.db")
@@ -186,6 +190,54 @@ def whatsapp_events(path, tmp):
     return out
 
 
+def fix_ig_text(s):
+    """Instagram exports UTF-8 text as if it were Latin-1; undo that."""
+    try:
+        return (s or "").encode("latin-1").decode("utf-8")
+    except (UnicodeEncodeError, UnicodeDecodeError):
+        return s or ""
+
+
+def instagram_events(path, my_name, tmp):
+    """1:1 DM threads from an Instagram data export (JSON format), folder or .zip."""
+    if not os.path.exists(path):
+        print(f"  Instagram export not found at {path} - skipping.")
+        return []
+    if zipfile.is_zipfile(path):
+        root = os.path.join(tmp, "instagram")
+        with zipfile.ZipFile(path) as z:
+            z.extractall(root, [n for n in z.namelist() if "/messages/inbox/" in "/" + n and n.endswith(".json")])
+    else:
+        root = path
+    threads = []
+    for f in glob.glob(os.path.join(root, "**/messages/inbox/*/message_*.json"), recursive=True):
+        with open(f, encoding="utf-8") as fh:
+            data = json.load(fh)
+        names = [fix_ig_text(x.get("name")) for x in data.get("participants", [])]
+        threads.append((names, data.get("messages", [])))
+    if not threads:
+        print("  No DM threads found - was the export made in JSON format with Messages included?")
+        return []
+    if not my_name:  # you are the participant who appears in the most threads
+        counts = {}
+        for names, _ in threads:
+            for n in set(names):
+                counts[n] = counts.get(n, 0) + 1
+        my_name = max(counts, key=counts.get)
+        print(f"  Taking '{my_name}' as your Instagram name (override with --instagram-name)")
+    out = []
+    for names, msgs in threads:
+        others = [n for n in names if n != my_name]
+        if len(others) != 1:  # skip group chats
+            continue
+        for m in msgs:
+            out.append(dict(channel="Instagram", key=None, name=norm_name(others[0]),
+                            from_me=fix_ig_text(m.get("sender_name")) == my_name,
+                            when=dt.datetime.fromtimestamp(m.get("timestamp_ms", 0) / 1000),
+                            text=fix_ig_text(m.get("content"))))
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--sheet-csv", required=True, help="CSV download of the 'People who might buy book' tab")
@@ -198,6 +250,8 @@ def main():
     ap.add_argument("--contacts-db", action="append", help="AddressBook db (default: all found)")
     ap.add_argument("--no-imessage", action="store_true")
     ap.add_argument("--no-whatsapp", action="store_true")
+    ap.add_argument("--instagram-export", help="Instagram 'Download your information' export (JSON), folder or .zip")
+    ap.add_argument("--instagram-name", help="your display name in the Instagram export (default: auto-detect)")
     a = ap.parse_args()
 
     since = dt.datetime.strptime(a.since, "%Y-%m-%d")
@@ -224,6 +278,9 @@ def main():
         if not a.no_whatsapp:
             print("Reading WhatsApp...")
             events += whatsapp_events(a.whatsapp_db, tmp)
+        if a.instagram_export:
+            print("Reading Instagram export...")
+            events += instagram_events(os.path.expanduser(a.instagram_export), a.instagram_name, tmp)
         events = [e for e in events if e["when"] and e["when"] >= since]
         print(f"  {len(events)} one-to-one messages since {a.since}")
     finally:
@@ -239,8 +296,8 @@ def main():
     for e in events:
         targets = by_key.get(e["key"]) or []
         how = "number/email"
-        if not targets and e["name"]:  # WhatsApp chat with no usable number: match on chat name
-            targets, how = by_name.get(e["name"], []), "WhatsApp chat name"
+        if not targets and e["name"]:  # no usable number (Instagram, some WhatsApp chats): match on name
+            targets, how = by_name.get(e["name"], []), f"{e['channel']} chat name"
         for p in targets:
             s = stats.setdefault(p["row"], dict(sent=0, recv=0, first_sent=None, last_recv=None,
                                                 replied=False, book=False, channels=set(), how=set()))
