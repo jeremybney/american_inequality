@@ -120,6 +120,8 @@ def load_sheet(path):
         if not name:
             continue
         keys = {phone_key(get(c)) for c in PHONE_COLS} | {get(c).lower() for c in EMAIL_COLS if "@" in get(c)}
+        if get("Sheet row").isdigit():  # explicit row number (for trimmed exports)
+            i = int(get("Sheet row"))
         people.append(dict(row=i, name=name, keys={k for k in keys if k}, matched=set(),
                            H=get("Reached out?"), I=get("Responded?"),
                            spoke=get("Has Jeremy spoken to them about the book?")))

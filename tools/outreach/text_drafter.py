@@ -228,6 +228,9 @@ def draft(a):
         todo = todo[:a.limit]
     print(f"  Drafting {len(todo)} new texts")
     client = make_client()
+    if not client:  # leave the material for writing openers by hand (or by a Claude session)
+        with open(os.path.join(os.path.dirname(os.path.abspath(a.drafts)), "style_examples.txt"), "w") as f:
+            f.write("\n---\n".join(style))
     for i, (p, msgs, key) in enumerate(todo, 1):
         opener, note = ("", "No Claude client - write the opener yourself") if not client else \
             write_opener(client, style, p["name"], transcript(msgs))
@@ -235,6 +238,7 @@ def draft(a):
         drafts.append(dict(
             sheet_row=p["row"], name=p["name"], to=send_handle(key), status="draft", note=note,
             last_texted=f"{msgs[-1]['when']:%b %d, %Y}",
+            **({} if opener else {"convo": transcript(msgs)}),
             text=" ".join(x for x in (greeting, opener, body) if x),
             context=[dict(when=f"{e['when']:%b %d, %Y}", me=e["from_me"], text=e["text"][:300]) for e in msgs[-8:]],
         ))
@@ -431,11 +435,14 @@ def main():
     ap.add_argument("--port", type=int, default=8765)
     ap.add_argument("--dry-run", action="store_true", help="the Send button logs instead of sending")
     ap.add_argument("--no-browser", action="store_true")
+    ap.add_argument("--no-serve", action="store_true", help="draft only; don't start the review page")
     a = ap.parse_args()
     if not a.review:
         if not a.sheet_csv:
             ap.error("--sheet-csv is required unless you pass --review")
         draft(a)
+        if a.no_serve:
+            return
     if not load_drafts(a.drafts):
         sys.exit("No drafts to review.")
     serve(a)
