@@ -46,3 +46,38 @@ Instagram DMs are matched on display name only, since there are no phone numbers
 - **responded**: they sent a message after your first one.
 - People are matched by the phone numbers and emails in the sheet, plus numbers from Mac Contacts with the same name. For WhatsApp chats without a phone number, and for all Instagram DMs, the chat name is used.
 - Group chats are ignored.
+
+# Drafting and sending personalized outreach texts
+
+`text_drafter.py` drafts a personal text for everyone on the tab who has a phone number, isn't marked "Reached out?" yet, and has texted with you before. Then it opens a review page where you edit and send each one.
+
+Each draft reads: `NAME!! <a 1–2 sentence opener Claude writes from your recent texts with them> <your book announcement>`. Claude only writes the opener, in your own texting voice (it reads your recent sent texts, including earlier book texts, as examples), using only things that actually came up in your conversation with that person.
+
+## One-time setup
+
+1. Full Disk Access for Terminal (same as above).
+2. `pip3 install anthropic`
+3. A Claude API key from https://console.anthropic.com → API Keys. Then in Terminal: `export ANTHROPIC_API_KEY=sk-ant-...` (add that line to `~/.zshrc` to keep it). Without a key the drafts are still made, with the opener left for you to write.
+
+## Each run
+
+```
+cd ~/Downloads
+curl -sO https://raw.githubusercontent.com/jeremybney/american_inequality/claude/friendly-einstein-kbqksx/tools/outreach/check_messages.py
+curl -sO https://raw.githubusercontent.com/jeremybney/american_inequality/claude/friendly-einstein-kbqksx/tools/outreach/text_drafter.py
+python3 text_drafter.py --sheet-csv "The Opportunity Map Outreach and Topics - People who might buy book.csv" --limit 20
+```
+
+This drafts 20 people (the ones you texted most recently first), then opens http://localhost:8765. For each card:
+
+- **Edit** the text in the box. Open "Recent texts" to see what the opener was based on.
+- **Send** sends it through the Messages app (iMessage, falling back to SMS). It asks you to confirm first. The first time, macOS asks whether Terminal may control Messages; click OK.
+- **Skip** hides the card without sending.
+
+Nothing is sent until you click Send. Press Ctrl+C in Terminal when you're done. To come back later without re-drafting: `python3 text_drafter.py --review`. Running the drafting command again only drafts people who don't have a draft yet.
+
+Each send is logged to `sent_log.csv` (sheet row, name, number, time; no message text). Send that file to Claude to mark those people as "Reached out?" in the sheet.
+
+Options: `--dry-run` (the Send button only logs, so you can try it out safely), `--body-file announcement.txt` (use your own announcement text instead of the built-in one), `--limit N`.
+
+Privacy: to write the openers, your recent texts with each person (up to the last 40 messages) and a sample of your own sent texts go to Claude through your API key. Drafts are stored on your Mac in `drafts.json`.
