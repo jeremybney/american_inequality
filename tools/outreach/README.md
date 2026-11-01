@@ -49,7 +49,14 @@ Instagram DMs are matched on display name only, since there are no phone numbers
 
 # Drafting and sending personalized outreach texts
 
-`text_drafter.py` drafts a personal text for everyone on the tab who has a phone number, isn't marked "Reached out?" yet, and has texted with you before. Then it opens a review page where you edit and send each one.
+`text_drafter.py` drafts a personal text for everyone on the tab who:
+
+1. has a phone number you've texted with (iMessage/SMS) **in the last 3 years**, and
+2. **hasn't had any book outreach yet**: not ticked "Reached out?" or "Responded?", nothing in "Has Jeremy spoken to them about the book?", and no text or WhatsApp message from either of you since Jan 1, 2026 mentioning the book (any of: "book", "Opportunity Map", "pre-order", "galley", "blurb", or the Amazon / theopportunitymap.com links).
+
+The check is deliberately broad: a stray "book" (e.g. "did you book the flight?") means no draft for that person, rather than risking a second pitch. At the start it prints how many people were left out for each reason. Re-running it also removes unsent drafts for anyone who no longer qualifies (sent drafts are kept).
+
+Then it opens a review page where you edit and send each one.
 
 Each draft reads: `NAME!! <a 1–2 sentence opener Claude writes from your recent texts with them> <your book announcement>`. Claude only writes the opener, in your own texting voice (it reads your recent sent texts, including earlier book texts, as examples), using only things that actually came up in your conversation with that person.
 
@@ -78,6 +85,6 @@ Nothing is sent until you click Send. Press Ctrl+C in Terminal when you're done.
 
 Each send is logged to `sent_log.csv` (sheet row, name, number, time; no message text). Send that file to Claude to mark those people as "Reached out?" in the sheet.
 
-Options: `--dry-run` (the Send button only logs, so you can try it out safely), `--body-file announcement.txt` (use your own announcement text instead of the built-in one), `--limit N`.
+Options: `--max-age-days 1095` (how recent the last text must be), `--book-since 2026-01-01` (how far back a book mention counts), `--no-whatsapp`, `--dry-run` (the Send button only logs, so you can try it out safely), `--body-file announcement.txt` (use your own announcement text instead of the built-in one), `--limit N`.
 
 Privacy: to write the openers, your recent texts with each person (up to the last 40 messages) and a sample of your own sent texts go to Claude through your API key. Drafts are stored on your Mac in `drafts.json`.

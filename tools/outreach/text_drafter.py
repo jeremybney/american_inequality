@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 """Draft personalized book-outreach texts and review/send them from a local page.
 
-For everyone on the "People who might buy book" tab who has a phone number,
-isn't marked "Reached out?" yet, and has past iMessages with you, this:
+For everyone on the "People who might buy book" tab who
+  - has a phone number you've texted with in the last 3 years (--max-age-days), and
+  - hasn't had any book outreach yet: not marked "Reached out?"/"Responded?"/
+    "Has Jeremy spoken to them about the book?" in the sheet, and no text or
+    WhatsApp message (from either side) mentioning the book since --book-since,
+this:
   1. reads your recent 1:1 texts with them (local Messages database),
   2. asks Claude for a 1-2 sentence personal opener in your texting voice,
   3. assembles  NAME!! <opener> <your book announcement>,
@@ -29,6 +33,7 @@ import glob
 import html
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -49,6 +54,9 @@ DEFAULT_BODY = (
     "worked on https://www.amazon.com/dp/1541705874"
 )
 BOOK_WORDS = ("opportunity map", "pre-order", "preorder", "my book")
+# Anything that suggests the book already came up with this person. Deliberately broad:
+# a false match only means no draft for that person.
+BOOK_RE = re.compile(r"opportunity\s*map|pre-?\s?order|\bbook\b|galley|blurb|1541705874|theopportunitymap", re.I)
 
 SYSTEM = """You write the opening of a personal text message from Jeremy to someone he knows.
 The full text will read: "<NAME>!! <your opening> <Jeremy's book announcement>". You write only the opening.
@@ -84,7 +92,7 @@ def send_handle(key):
     return None
 
 
-def load_history(sheet_csv, since_days, imessage_db, contacts_dbs):
+def load_history(sheet_csv, since_days, imessage_db, contacts_dbs, whatsapp_db):
     tmp = tempfile.mkdtemp(prefix="drafter_")
     try:
         people = cm.load_sheet(sheet_csv)
@@ -92,6 +100,7 @@ def load_history(sheet_csv, since_days, imessage_db, contacts_dbs):
         for p in people:
             p["keys"] |= contacts.get(cm.norm_name(p["name"]), set())
         events = cm.imessage_events(imessage_db, tmp)
+        wa_events = cm.whatsapp_events(whatsapp_db, tmp) if whatsapp_db else []
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     cutoff = dt.datetime.now() - dt.timedelta(days=since_days)
@@ -103,18 +112,44 @@ def load_history(sheet_csv, since_days, imessage_db, contacts_dbs):
     by_key = {}
     for e in events:
         by_key.setdefault(e["key"], []).append(e)
-    return people, by_key, book + other
+    wa_by_key, wa_by_name = {}, {}
+    for e in wa_events:
+        if e["when"] and e["text"]:
+            wa_by_key.setdefault(e["key"], []).append(e)
+            if e["name"]:
+                wa_by_name.setdefault(e["name"], []).append(e)
+    return people, by_key, book + other, wa_by_key, wa_by_name
 
 
 def history_for(person, by_key):
+    """All 1:1 iMessages with this person, plus the phone number most recently used."""
     msgs, best_key, best_when = [], None, None
     for k in person["keys"]:
         for e in by_key.get(k, []):
             msgs.append(e)
-            if best_when is None or e["when"] > best_when:
+            if k.isdigit() and (best_when is None or e["when"] > best_when):
                 best_key, best_when = k, e["when"]
     msgs.sort(key=lambda e: e["when"])
     return msgs, best_key
+
+
+def check_person(p, by_key, wa_by_key, wa_by_name, book_since, recent_cutoff):
+    """Return (msgs, phone_key, None) if p should get a draft, else (None, None, reason)."""
+    if p["H"].upper() == "TRUE" or p["I"].upper() == "TRUE":
+        return None, None, "marked reached out / responded in the sheet"
+    if p.get("spoke", "").strip().lower() not in ("", "no", "n", "false"):
+        return None, None, "sheet says you've spoken to them about the book"
+    msgs, key = history_for(p, by_key)
+    if not msgs:
+        return None, None, "no iMessage history"
+    if not key:
+        return None, None, "no phone number in your texts with them"
+    if msgs[-1]["when"] < recent_cutoff:
+        return None, None, "haven't texted in over 3 years"
+    wa = [e for k in p["keys"] for e in wa_by_key.get(k, [])] + wa_by_name.get(cm.norm_name(p["name"]), [])
+    if any(e["when"] >= book_since and BOOK_RE.search(e["text"] or "") for e in msgs + wa):
+        return None, None, "the book already came up in texts/WhatsApp"
+    return msgs, key, None
 
 
 def transcript(msgs, n=40):
@@ -163,22 +198,35 @@ def write_opener(client, style, name, convo):
 
 def draft(a):
     print("Reading sheet, contacts and iMessage history...")
-    people, by_key, style = load_history(a.sheet_csv, a.style_days, a.imessage_db, a.contacts_db)
+    people, by_key, style, wa_by_key, wa_by_name = load_history(
+        a.sheet_csv, a.style_days, a.imessage_db, a.contacts_db, None if a.no_whatsapp else a.whatsapp_db)
     body = open(os.path.expanduser(a.body_file)).read().strip() if a.body_file else DEFAULT_BODY
-    drafts = load_drafts(a.drafts)
-    done = {d["sheet_row"] for d in drafts}
-    todo = []
+    book_since = dt.datetime.strptime(a.book_since, "%Y-%m-%d")
+    recent_cutoff = dt.datetime.now() - dt.timedelta(days=a.max_age_days)
+    eligible, skipped = {}, {}
     for p in people:
-        if p["H"].upper() == "TRUE" or p["row"] in done:
-            continue
-        msgs, key = history_for(p, by_key)
-        if not msgs or not send_handle(key):
-            continue
-        todo.append((p, msgs, key))
+        msgs, key, why = check_person(p, by_key, wa_by_key, wa_by_name, book_since, recent_cutoff)
+        if why:
+            skipped[why] = skipped.get(why, 0) + 1
+        else:
+            eligible[p["row"]] = (p, msgs, key)
+    print(f"  {len(eligible)} people qualify. Left out:")
+    for why, n in sorted(skipped.items(), key=lambda x: -x[1]):
+        print(f"    {n:5d}  {why}")
+
+    drafts = load_drafts(a.drafts)
+    stale = [d for d in drafts if d["status"] == "draft" and d["sheet_row"] not in eligible]
+    if stale:  # unsent drafts for people who no longer qualify
+        drafts = [d for d in drafts if d not in stale]
+        save_drafts(a.drafts, drafts)
+        print(f"  Removed {len(stale)} unsent drafts for people who don't qualify: "
+              + ", ".join(d["name"] for d in stale))
+    done = {d["sheet_row"] for d in drafts}
+    todo = [t for row, t in eligible.items() if row not in done]
     todo.sort(key=lambda t: t[1][-1]["when"], reverse=True)  # most recently texted first
     if a.limit:
         todo = todo[:a.limit]
-    print(f"  {len(todo)} people to draft (have past texts, not yet reached out)")
+    print(f"  Drafting {len(todo)} new texts")
     client = make_client()
     for i, (p, msgs, key) in enumerate(todo, 1):
         opener, note = ("", "No Claude client - write the opener yourself") if not client else \
@@ -186,6 +234,7 @@ def draft(a):
         greeting = first_name(p["name"]).upper() + "!!"
         drafts.append(dict(
             sheet_row=p["row"], name=p["name"], to=send_handle(key), status="draft", note=note,
+            last_texted=f"{msgs[-1]['when']:%b %d, %Y}",
             text=" ".join(x for x in (greeting, opener, body) if x),
             context=[dict(when=f"{e['when']:%b %d, %Y}", me=e["from_me"], text=e["text"][:300]) for e in msgs[-8:]],
         ))
@@ -288,7 +337,7 @@ def render(drafts):
         label = {"sent": "Sent", "skipped": "Skipped"}.get(d["status"], "")
         cards.append(f"""<div class="card {d['status']}" id="c{d['sheet_row']}" data-status="{d['status']}"
  data-name="{html.escape(d['name'])}"><div class="top"><span class="name">{html.escape(d['name'])}</span>
- <span class="to">{html.escape(d['to'])} · sheet row {d['sheet_row']}</span></div>
+ <span class="to">{html.escape(d['to'])} · last texted {html.escape(d.get('last_texted', '?'))} · sheet row {d['sheet_row']}</span></div>
  {f'<div class="note">{html.escape(d["note"])}</div>' if d.get("note") else ''}
  <textarea{disabled}>{html.escape(d['text'])}</textarea>
  <div class="row"><button class="send" onclick="act({d['sheet_row']},'send')"{disabled}>Send</button>
@@ -371,6 +420,12 @@ def main():
     ap.add_argument("--style-days", type=int, default=180, help="use your texts from this many days as voice examples")
     ap.add_argument("--imessage-db", default=cm.IMESSAGE_DB)
     ap.add_argument("--contacts-db", action="append", help="AddressBook db (default: all found)")
+    ap.add_argument("--whatsapp-db", default=cm.WHATSAPP_DB)
+    ap.add_argument("--no-whatsapp", action="store_true", help="don't check WhatsApp for earlier book mentions")
+    ap.add_argument("--max-age-days", type=int, default=3 * 365,
+                    help="only people you've texted within this many days (default: 3 years)")
+    ap.add_argument("--book-since", default="2026-01-01",
+                    help="a book mention in texts/WhatsApp on or after this date counts as outreach already done")
     ap.add_argument("--drafts", default="drafts.json")
     ap.add_argument("--sent-log", default="sent_log.csv")
     ap.add_argument("--port", type=int, default=8765)

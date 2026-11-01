@@ -121,7 +121,8 @@ def load_sheet(path):
             continue
         keys = {phone_key(get(c)) for c in PHONE_COLS} | {get(c).lower() for c in EMAIL_COLS if "@" in get(c)}
         people.append(dict(row=i, name=name, keys={k for k in keys if k}, matched=set(),
-                           H=get("Reached out?"), I=get("Responded?")))
+                           H=get("Reached out?"), I=get("Responded?"),
+                           spoke=get("Has Jeremy spoken to them about the book?")))
     return people
 
 
