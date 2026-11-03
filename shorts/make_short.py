@@ -62,7 +62,8 @@ def cmd_doctor(a):
             # any HTTP answer from the site itself means the network path is open
             status = f"ok (site answered {code})" if code else f"BLOCKED ({getattr(e, 'reason', e)})"
         print(f"  {name:<22} {status}")
-    for var, what in [("PIXABAY_API_KEY", "stock video/photos"), ("PEXELS_API_KEY", "stock video (optional)")]:
+    for var, what in [("ELEVENLABS_API_KEY", "the author's ElevenLabs voice"),
+                      ("PIXABAY_API_KEY", "stock video/photos"), ("PEXELS_API_KEY", "stock video (optional)")]:
         print(f"  {var:<22} {'set' if os.environ.get(var) else 'not set'}  ({what})")
     if os.environ.get("PIXABAY_API_KEY"):
         try:
@@ -297,6 +298,40 @@ def cmd_voice(a):
     print("Next: `stills` to review, then `render` (the voice is mixed in automatically).")
 
 
+def cmd_tts(a):
+    """Voice the script with the author's ElevenLabs voice (the default voiceover)."""
+    from aiq_shorts import tts
+    pdir = project(a.slug)
+    vo = tts.generate(pdir, voice_id=a.voice)
+    print(f"ElevenLabs voice: {vo['duration']:.1f}s, {len(vo['cues'])} lines "
+          f"({vo['lines_generated']} generated, the rest reused from the cache)")
+    tl = engine.Timeline(pdir, quiet=True)
+    checks.report(tl)
+
+
+def auto_voice(pdir, mode):
+    """Before a render: voice the script with ElevenLabs unless an uploaded recording that
+    still matches the script is in place (an upload always wins while it matches)."""
+    from aiq_shorts import tts
+    sb = json.loads((pdir / "storyboard.json").read_text())
+    vo = sb.get("voiceover") or {}
+    if mode == "off":
+        return
+    uploaded = vo and vo.get("source") != "elevenlabs"
+    if uploaded and not tts.stale(sb) and mode != "elevenlabs":
+        return
+    if vo.get("source") == "elevenlabs" and not tts.stale(sb) and mode != "elevenlabs":
+        return
+    if not tts.available() and mode != "elevenlabs":
+        print("  (no ELEVENLABS_API_KEY in this session; rendering with "
+              + ("the uploaded voice" if vo else "estimated timing and no voice") + ")")
+        return
+    if uploaded:
+        print("  The script changed since your recording, so ElevenLabs voices the new script.")
+    v = tts.generate(pdir, progress=False)
+    print(f"Voice: ElevenLabs, {v['duration']:.1f}s ({v['lines_generated']} lines generated)")
+
+
 def cmd_music(a):
     """Choose (or change) the background track for a video."""
     from aiq_shorts import music
@@ -357,6 +392,8 @@ def cmd_render(a):
         from aiq_shorts import music
         m = music.assign(pdir)
         print(f"Music: {m['title']} ({m['feel']})")
+    if not a.start and a.end is None:
+        auto_voice(pdir, a.voice)
     if checks.report(engine.Timeline(pdir, quiet=True)) and not a.force:
         raise SystemExit("Fix the ✗ items above (or pass --force) before rendering.")
     video = out_dir / f"{name}.mp4"
@@ -575,7 +612,15 @@ def main():
     p.add_argument("--crf", type=int, default=18)
     p.add_argument("--start", type=float, default=0.0)
     p.add_argument("--end", type=float)
+    p.add_argument("--voice", choices=["auto", "elevenlabs", "off"], default="auto",
+                   help="auto (default): ElevenLabs voices the script unless an uploaded recording still matches it; "
+                        "elevenlabs: regenerate with ElevenLabs even over an upload; off: leave the voice as it is")
     p.set_defaults(fn=cmd_render)
+
+    p = sub.add_parser("tts", help="voice the script with the author's ElevenLabs voice (the default voiceover)")
+    p.add_argument("slug")
+    p.add_argument("--voice", help="ElevenLabs voice ID (default: assets/voice.json)")
+    p.set_defaults(fn=cmd_tts)
 
     p = sub.add_parser("phone", help="re-make the phone copy (<slug>_phone.mp4, under 14 MB) of the last render")
     p.add_argument("slug")

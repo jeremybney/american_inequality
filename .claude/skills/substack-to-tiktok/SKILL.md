@@ -90,7 +90,34 @@ change), put that render there:
 Partial renders (`--start/--end`) and `--no-captions` renders don't count and don't make a
 phone copy.
 
-## Voiceovers (the author's real voice, never a synthetic one)
+## Voiceovers: the author's ElevenLabs voice by default, an uploaded recording when they send one
+**Default (since Nov 2026): ElevenLabs.** The author made a voice clone of themselves in
+ElevenLabs and asked for it to voice every video. `render` does this on its own: it speaks
+every `say` line with that voice (`aiq_shorts/tts.py`, the text-to-speech "with-timestamps"
+endpoint), joins the lines with a 0.42s pause, levels the track to -14 LUFS, and takes each
+line's cue from the returned character timestamps, so captions and reveals land exactly.
+`python shorts/make_short.py tts <slug>` does the same step on its own.
+- The voice ID and model live in `shorts/assets/voice.json` (voice `LN9NrroIIZhpFF0xZmVx`,
+  `eleven_multilingual_v2`). Its `pronounce` map gives the spoken form of anything the voice
+  misreads ("MS" → "Mississippi"); captions keep the written form. A storyboard can override
+  any of it under `"tts": {...}` (e.g. `voice_settings.speed`).
+- The key is `ELEVENLABS_API_KEY` in the environment settings (a new session picks it up;
+  `doctor` shows whether it's set). Never ask for the key in chat.
+- Lines are cached by text in `media/tts/`, so after script edits only the changed lines (and
+  their neighbours, which shape the delivery) are regenerated and billed. **After "apply my
+  script edits", just `render`:** the voice regenerates for the new lines automatically, so
+  the author doesn't re-record.
+- Listen for misreadings in the render (acronyms, state abbreviations, years, "$34,518").
+  Fix them with `pronounce` rather than by changing the caption text.
+- The queue item's `final_video.voiced` is true for an ElevenLabs render too.
+- `render --voice elevenlabs` regenerates over an uploaded recording; `--voice off` leaves
+  the voice as it is.
+
+**Upload still works and wins while it matches.** When the author uploads a recording on the
+page, sync it as below. A synced recording that still matches the script is used as is; once
+the script changes, `render` switches back to ElevenLabs for the new script and says so.
+
+### Syncing an uploaded recording
 The author records themselves reading the script: a voice memo, read from the page's
 Teleprompter, then uploaded on the Shorts Queue page. The page stores it as base64 text (the
 file store doesn't take audio types) and sets the item's `status: "voice"` and
@@ -121,8 +148,9 @@ When the user says "sync my voiceovers" (or similar):
 
 If the script changes after a sync, the engine falls back to estimated timing and warns. The
 author then re-records, or you re-run `voice` if only visuals changed. `voice <slug> --off`
-removes the voiceover. Never generate or clone the author's voice (the cleanup only removes
-echo and noise and reshapes tone; it never synthesizes speech).
+removes the voiceover. The only synthetic voice is the author's own ElevenLabs voice above;
+never generate speech with any other voice, and the studio cleanup of an uploaded recording
+only removes echo and noise and reshapes tone.
 
 When the author just wants a recording cleaned up ("make my audio sound better"), run
 `python shorts/make_short.py enhance <file or downloaded .txt> --ext <ext> --out <folder>`.
