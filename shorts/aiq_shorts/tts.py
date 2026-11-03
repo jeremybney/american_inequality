@@ -82,7 +82,7 @@ def spoken(text, cfg):
     """The text as the voice should read it (captions keep the original)."""
     import re
     for word, say in cfg.get("pronounce", {}).items():
-        text = re.sub(rf"\b{re.escape(word)}\b", say, text)
+        text = re.sub(rf"(?<![\w.]){re.escape(word)}(?![\w])", say, text)
     return text
 
 

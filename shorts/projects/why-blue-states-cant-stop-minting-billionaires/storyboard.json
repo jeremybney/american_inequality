@@ -408,7 +408,7 @@
       ],
       "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
       "say": [
-        "San Francisco also introduced a tax to ensure CEOs cannot make more than 100 times their local workers' median pay."
+        "San Francisco also introduced a tax on companies whose CEOs make more than 100 times their local workers' median pay."
       ]
     },
     {
@@ -443,5 +443,153 @@
     "feel": "Bright, Grooving",
     "credit": "Music: “Killing Time” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
-  "music_credit": "Music: “Killing Time” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  "music_credit": "Music: “Killing Time” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
+  "voiceover": {
+    "source": "elevenlabs",
+    "voice_id": "LN9NrroIIZhpFF0xZmVx",
+    "model_id": "eleven_multilingual_v2",
+    "file": "voiceover_tts.wav",
+    "clean": "voiceover_tts.wav",
+    "mix": "voiceover_tts.wav",
+    "duration": 110.85,
+    "cues": [
+      {
+        "scene": 0,
+        "line": 0,
+        "text": "America just had its biggest billionaire boom in 25 years.",
+        "start": 0.15,
+        "end": 3.587,
+        "matched": 1.0
+      },
+      {
+        "scene": 1,
+        "line": 0,
+        "text": "At American Inequality, we found that 64% of new billionaires came from states fully controlled by Democrats.",
+        "start": 4.007,
+        "end": 10.091,
+        "matched": 1.0
+      },
+      {
+        "scene": 2,
+        "line": 0,
+        "text": "Democrats keep promising to tax the rich, so we dug into why their own states can't do it.",
+        "start": 10.51,
+        "end": 15.2,
+        "matched": 1.0
+      },
+      {
+        "scene": 3,
+        "line": 0,
+        "text": "In the first place, the party's message is all about taxing billionaires, which comes up in about 15% of Democratic fundraising emails.",
+        "start": 15.621,
+        "end": 23.237,
+        "matched": 1.0
+      },
+      {
+        "scene": 4,
+        "line": 0,
+        "text": "The messaging is loud, but the bills keep stalling. Washington state's bill never passed because of constitutional limits, Illinois never got a vote, and New York's governor keeps resisting.",
+        "start": 23.657,
+        "end": 32.481,
+        "matched": 1.0
+      },
+      {
+        "scene": 5,
+        "line": 0,
+        "text": "California is now ground zero, with a one-time 5% tax on residents worth over $1 billion on the ballot.",
+        "start": 32.9,
+        "end": 38.891,
+        "matched": 1.0
+      },
+      {
+        "scene": 6,
+        "line": 0,
+        "text": "California alone added 37 new billionaires in a single year, more than any other state.",
+        "start": 39.311,
+        "end": 44.327,
+        "matched": 1.0
+      },
+      {
+        "scene": 7,
+        "line": 0,
+        "text": "Opponents of the bill warn that tech founders will flee, but California drew nearly 90% of U.S. venture capital dollars in early 2026.",
+        "start": 44.747,
+        "end": 52.038,
+        "matched": 1.0
+      },
+      {
+        "scene": 8,
+        "line": 0,
+        "text": "Governor Newsom says this fight belongs in DC, not with states, but history shows us that much of our progressive taxation has begun at the state level.",
+        "start": 52.458,
+        "end": 60.91,
+        "matched": 1.0
+      },
+      {
+        "scene": 9,
+        "line": 0,
+        "text": "Money is part of it too. Billionaire spending on presidential races grew from $16 million in 2008 to $2.6 billion in 2024.",
+        "start": 61.33,
+        "end": 69.503,
+        "matched": 1.0
+      },
+      {
+        "scene": 10,
+        "line": 0,
+        "text": "Dems know who foots the bill. $1.2 billion of the outside money in the 2024 race went to Democrats.",
+        "start": 69.923,
+        "end": 75.217,
+        "matched": 1.0
+      },
+      {
+        "scene": 11,
+        "line": 0,
+        "text": "And a roaring stock market lifts the top 0.1% far faster than everyone else, giving this group even more power.",
+        "start": 75.637,
+        "end": 82.278,
+        "matched": 1.0
+      },
+      {
+        "scene": 12,
+        "line": 0,
+        "text": "With statehouses stuck, the fight is moving to the local level, where progress still seems possible.",
+        "start": 82.698,
+        "end": 86.924,
+        "matched": 1.0
+      },
+      {
+        "scene": 13,
+        "line": 0,
+        "text": "For example, Los Angeles passed Measure ULA, a 4% tax on property sales above $5 million that funds renters and housing.",
+        "start": 87.344,
+        "end": 94.914,
+        "matched": 1.0
+      },
+      {
+        "scene": 14,
+        "line": 0,
+        "text": "San Francisco also introduced a tax on companies whose CEOs make more than 100 times their local workers' median pay.",
+        "start": 95.334,
+        "end": 101.928,
+        "matched": 1.0
+      },
+      {
+        "scene": 15,
+        "line": 0,
+        "text": "When cities lead, they prove the ultra-wealthy can pay into the places that made them rich.",
+        "start": 102.349,
+        "end": 107.039,
+        "matched": 1.0
+      },
+      {
+        "scene": 16,
+        "line": 0,
+        "text": "You can read the full story on American Inequality.",
+        "start": 107.459,
+        "end": 110.431,
+        "matched": 1.0
+      }
+    ],
+    "lines_generated": 5
+  }
 }

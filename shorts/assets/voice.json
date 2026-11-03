@@ -1,5 +1,9 @@
 {
   "voice_id": "LN9NrroIIZhpFF0xZmVx",
   "model_id": "eleven_multilingual_v2",
-  "pronounce": {"MS": "Mississippi"}
+  "pronounce": {
+    "MS": "Mississippi",
+    "ULA": "U.L.A.",
+    "0.1%": "zero point one percent"
+  }
 }
