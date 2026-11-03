@@ -100,7 +100,7 @@ def line_audio(text, prev, nxt, cfg, cache_dir):
     key = hashlib.sha1(json.dumps([cfg["voice_id"], body], sort_keys=True).encode()).hexdigest()[:16]
     wav, meta = cache_dir / f"{key}.wav", cache_dir / f"{key}.json"
     if not (wav.exists() and meta.exists()):
-        r = _post(f"/text-to-speech/{cfg['voice_id']}/with-timestamps?output_format=mp3_44100_192", body)
+        r = _post(f"/text-to-speech/{cfg['voice_id']}/with-timestamps?output_format=mp3_44100_128", body)
         mp3 = cache_dir / f"{key}.mp3"
         mp3.write_bytes(base64.b64decode(r["audio_base64"]))
         _ff("-i", str(mp3), "-ac", "1", "-ar", "48000", "-c:a", "pcm_s16le", str(wav))
