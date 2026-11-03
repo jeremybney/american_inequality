@@ -2,7 +2,7 @@
   "title": "Why Blue States Can't Stop Minting Billionaires — TikTok",
   "wpm": 175,
   "hold": 0.25,
-  "max_seconds": 115,
+  "max_seconds": 122,
   "article": {
     "section": "The Dividing Line"
   },
@@ -72,7 +72,7 @@
       ],
       "source": "Citizens for Tax Justice · American Inequality",
       "say": [
-        "At American Inequality, we found that 64% of the new ones came from states fully controlled by Democrats."
+        "At American Inequality, we found that 64% of new billionaires came from states fully controlled by Democrats."
       ]
     },
     {
@@ -84,7 +84,81 @@
       ],
       "chips_at": 1.4,
       "say": [
-        "Democrats keep promising to tax the rich, so we looked at why their own states can't do it."
+        "Democrats keep promising to tax the rich, so we dug into why their own states can't do it."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_02.png",
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "y": 0.43,
+      "source": "Political Email Archive (Derek Willis) via Andrew Hall",
+      "say": [
+        "In the first place, the party's message is all about taxing billionaires, which comes up in about 15% of Democratic fundraising emails."
+      ],
+      "max_height": 1100
+    },
+    {
+      "type": "checklist",
+      "title": "Wealth tax bills in blue states",
+      "items": [
+        {
+          "text": "Washington · blocked",
+          "color": "navy"
+        },
+        {
+          "text": "Illinois · no vote",
+          "color": "navy"
+        },
+        {
+          "text": "New York · resisted",
+          "color": "navy"
+        }
+      ],
+      "stagger": 1.6,
+      "size": 60,
+      "row_height": 140,
+      "backdrop": {
+        "media": "il_capitol.jpg",
+        "dim": 0.55,
+        "blur": 3,
+        "zoom": [
+          1.0,
+          1.1
+        ]
+      },
+      "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
+      "say": [
+        "The messaging is loud, but the bills keep stalling. Washington state's bill never passed because of constitutional limits, Illinois never got a vote, and New York's governor keeps resisting."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "vote.jpg",
+      "query": "Vote center California",
+      "dim": 0.45,
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 5,
+          "suffix": "%",
+          "label": "one-time tax on net worth over $1 billion",
+          "y": 0.3,
+          "at": 1.8
+        }
+      ],
+      "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
+      "say": [
+        "California is now ground zero, with a one-time 5% tax on residents worth over $1 billion on the ballot."
       ]
     },
     {
@@ -121,80 +195,6 @@
       ]
     },
     {
-      "type": "figure",
-      "media": "article_02.png",
-      "crop": [
-        0,
-        0,
-        1,
-        1
-      ],
-      "y": 0.43,
-      "source": "Political Email Archive (Derek Willis) via Andrew Hall",
-      "say": [
-        "The party's message has turned against them, and billionaires now come up in about 15% of Democratic fundraising emails."
-      ],
-      "max_height": 1100
-    },
-    {
-      "type": "checklist",
-      "title": "Wealth tax bills in blue states",
-      "items": [
-        {
-          "text": "Washington · blocked",
-          "color": "navy"
-        },
-        {
-          "text": "Illinois · no vote",
-          "color": "navy"
-        },
-        {
-          "text": "New York · resisted",
-          "color": "navy"
-        }
-      ],
-      "stagger": 1.6,
-      "size": 60,
-      "row_height": 140,
-      "backdrop": {
-        "media": "il_capitol.jpg",
-        "dim": 0.55,
-        "blur": 3,
-        "zoom": [
-          1.0,
-          1.1
-        ]
-      },
-      "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
-      "say": [
-        "Yet the bills keep stalling. Washington's hit constitutional limits, Illinois' never got a vote, and New York's governor keeps resisting."
-      ]
-    },
-    {
-      "type": "photo",
-      "media": "vote.jpg",
-      "query": "Vote center California",
-      "dim": 0.45,
-      "zoom": [
-        1.0,
-        1.12
-      ],
-      "overlays": [
-        {
-          "kind": "stat",
-          "value": 5,
-          "suffix": "%",
-          "label": "one-time tax on net worth over $1 billion",
-          "y": 0.3,
-          "at": 1.8
-        }
-      ],
-      "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
-      "say": [
-        "California is now ground zero, with a one-time 5% tax on residents worth over $1 billion on the ballot."
-      ]
-    },
-    {
       "type": "vbars",
       "title": "Share of U.S. venture capital dollars, early 2026",
       "bars": [
@@ -215,7 +215,7 @@
       ],
       "source": "Pitchbook",
       "say": [
-        "Opponents warn that founders will flee, but California drew nearly 90% of U.S. venture capital dollars in early 2026."
+        "Opponents of the bill warn that tech founders will flee, but California drew nearly 90% of U.S. venture capital dollars in early 2026."
       ]
     },
     {
@@ -242,7 +242,7 @@
       ],
       "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
       "say": [
-        "Governor Newsom says this fight belongs in Washington, but states proved the income tax worked before Washington adopted it in 1913."
+        "Governor Newsom says this fight belongs in DC, not with states, but history shows us that much of our progressive taxation has begun at the state level."
       ]
     },
     {
@@ -287,7 +287,7 @@
       ],
       "source": "Americans for Tax Fairness",
       "say": [
-        "Money is part of it, since billionaire spending on presidential races grew from $16 million in 2008 to $2.6 billion in 2024."
+        "Money is part of it too. Billionaire spending on presidential races grew from $16 million in 2008 to $2.6 billion in 2024."
       ]
     },
     {
@@ -311,7 +311,7 @@
       ],
       "source": "Brennan Center",
       "say": [
-        "Both parties take it, and $1.2 billion of the outside money in the 2024 race went to Democrats."
+        "Dems know who foots the bill. $1.2 billion of the outside money in the 2024 race went to Democrats."
       ]
     },
     {
@@ -326,7 +326,7 @@
       "y": 0.43,
       "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
       "say": [
-        "And a roaring stock market lifts the top 0.1% far faster than everyone else."
+        "And a roaring stock market lifts the top 0.1% far faster than everyone else, giving this group even more power."
       ]
     },
     {
@@ -362,7 +362,7 @@
         ]
       },
       "say": [
-        "With statehouses stuck, the fight is moving to the local level. Solutions exist."
+        "With statehouses stuck, the fight is moving to the local level, where progress still seems possible."
       ]
     },
     {
@@ -386,7 +386,7 @@
       ],
       "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
       "say": [
-        "Los Angeles passed Measure ULA, a 4% tax on property sales above $5 million that funds renters and housing."
+        "For example, Los Angeles passed Measure ULA, a 4% tax on property sales above $5 million that funds renters and housing."
       ]
     },
     {
@@ -410,7 +410,7 @@
       ],
       "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
       "say": [
-        "San Francisco taxes companies whose CEOs make over 100 times their local workers' median pay."
+        "San Francisco also introduced a tax to ensure CEOs cannot make more than 100 times their local workers' median pay."
       ]
     },
     {
