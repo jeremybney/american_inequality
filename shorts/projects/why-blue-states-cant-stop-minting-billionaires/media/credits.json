@@ -32,18 +32,6 @@
     "url": "https://komonews.com/news/nation-world/fact-check-team-california-voters-to-decide-first-ever-state-billionaire-wealth-tax-us-history-net-worth-challenges-gavin-newsom-wealthy-residents",
     "headline": "Fact Check Team: California voters to decide first-ever state billionaire wealth tax"
   },
-  "hook.jpg": {
-    "credit": "Photo: Wallace Lin (via InvadingInvader on Wikipedia), CC BY-SA 4.0 (Wikimedia Commons)",
-    "url": "https://commons.wikimedia.org/wiki/File:The_One_Bel_Air_House_by_Wallace_Lin.jpg"
-  },
-  "ca_capitol.jpg": {
-    "credit": "Photo: Frank Schulenburg, CC BY-SA 4.0 (Wikimedia Commons)",
-    "url": "https://commons.wikimedia.org/wiki/File:California_State_Capitol_during_blue_hour-3982.jpg"
-  },
-  "il_capitol.jpg": {
-    "credit": "Photo: Asher Heimermann, CC BY 3.0 (Wikimedia Commons)",
-    "url": "https://commons.wikimedia.org/wiki/File:Illinois_State_Capitol_distance.jpg"
-  },
   "vote.jpg": {
     "credit": "Photo: Minh Nguyen, CC BY-SA 4.0 (Wikimedia Commons)",
     "url": "https://commons.wikimedia.org/wiki/File:Vote_banner_outside_Holy_Cross_Church,_San_Jose,_California.jpg"
@@ -52,16 +40,36 @@
     "credit": "Photo: Unknown author, Public domain (Wikimedia Commons)",
     "url": "https://commons.wikimedia.org/wiki/File:16th_Amendment_income_tax_ratification_cartoon_02_05_1913.jpg"
   },
-  "la_city_hall.jpg": {
-    "credit": "Photo: Office of Los Angeles Mayor, Public domain (Wikimedia Commons)",
-    "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles_City_Hall_in_respect_to_Prince.jpg"
+  "yacht.mp4": {
+    "credit": "Video: blackmarketmusic (Pixabay)",
+    "url": "https://pixabay.com/videos/id-119442/"
   },
-  "ca_capitol_day.jpg": {
-    "credit": "Photo: Frank Schulenburg, CC BY-SA 4.0 (Wikimedia Commons)",
-    "url": "https://commons.wikimedia.org/wiki/File:California_State_Capitol,_June_2019.jpg"
+  "marina.mp4": {
+    "credit": "Video: caelan (Pixabay)",
+    "url": "https://pixabay.com/videos/id-31660/"
   },
-  "salesforce.jpg": {
-    "credit": "Photo: Beno\u00eet Prieur, CC0 (Wikimedia Commons)",
-    "url": "https://commons.wikimedia.org/wiki/File:View_of_Salesforce_Tower_(San_Francisco)_July_2022.jpg"
+  "pool.mp4": {
+    "credit": "Video: Ian5152 (Pixabay)",
+    "url": "https://pixabay.com/videos/id-213833/"
+  },
+  "convertible.mp4": {
+    "credit": "Video: VariousPhotography (Pixabay)",
+    "url": "https://pixabay.com/videos/id-2029/"
+  },
+  "champagne.mp4": {
+    "credit": "Video: twmx (Pixabay)",
+    "url": "https://pixabay.com/videos/id-223694/"
+  },
+  "protest.jpg": {
+    "credit": "Photo: Yuri Keegstra from Milwaukee, USA, CC BY-SA 2.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Protest_Tax_the_Rich!_(5521705234).jpg"
+  },
+  "rodeo.jpg": {
+    "credit": "Photo: DXR, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Buildings_at_North_Rodeo_Drive,_Beverly_Hills,_West_view_20110806_1_(cropped).jpg"
+  },
+  "ceo.mp4": {
+    "credit": "Video: MujtabaAhemad (Pixabay)",
+    "url": "https://pixabay.com/videos/id-199623/"
   }
 }

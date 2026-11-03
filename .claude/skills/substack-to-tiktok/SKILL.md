@@ -415,6 +415,11 @@ enforces it: `search`, `plan` and `autofill` hide results another video already 
 and `use` refuse them, and `render` fails if a scene's media file came from another video
 (stock media is matched by its source page in each project's `media/credits.json`).
 
+**Don't lean on buildings.** A capitol or city hall once is fine, but a run of building shots
+reads flat. For stories about the wealthy, show the wealth (yachts, marinas, private jets,
+luxury cars, resort pools, champagne, Rodeo Drive) and show people (protesters, workers,
+executives, voters). Stock footage (`search --video`) is often the best source for these.
+
 **Pick images that are both on point and gripping.** Each shot should match what its caption
 says *and* make someone stop scrolling: a tornado touching down for soaring insurance
 premiums, a luxury jet cabin for insurers' private jets, a specific landmark for a named place,

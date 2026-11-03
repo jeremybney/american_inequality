@@ -27,12 +27,11 @@
   "scenes": [
     {
       "type": "photo",
-      "media": "hook.jpg",
-      "query": "Bel Air mansion",
+      "media": "yacht.mp4",
       "dim": 0.35,
       "zoom": [
         1.0,
-        1.15
+        1.1
       ],
       "headline": {
         "text": "America has {960 billionaires.}"
@@ -45,12 +44,11 @@
     },
     {
       "type": "photo",
-      "media": "ca_capitol.jpg",
-      "query": "California State Capitol Sacramento",
+      "media": "marina.mp4",
       "dim": 0.5,
       "zoom": [
         1.0,
-        1.18
+        1.15
       ],
       "overlays": [
         {
@@ -73,7 +71,8 @@
       "source": "Citizens for Tax Justice · American Inequality",
       "say": [
         "At American Inequality, we found that 64% of new billionaires came from states fully controlled by Democrats."
-      ]
+      ],
+      "start": 4
     },
     {
       "type": "article_card",
@@ -124,7 +123,7 @@
       "size": 60,
       "row_height": 140,
       "backdrop": {
-        "media": "il_capitol.jpg",
+        "media": "protest.jpg",
         "dim": 0.55,
         "blur": 3,
         "zoom": [
@@ -312,7 +311,12 @@
       "source": "Brennan Center",
       "say": [
         "Dems know who foots the bill. $1.2 billion of the outside money in the 2024 race went to Democrats."
-      ]
+      ],
+      "backdrop": {
+        "media": "convertible.mp4",
+        "dim": 0.6,
+        "blur": 6
+      }
     },
     {
       "type": "figure",
@@ -353,13 +357,9 @@
         }
       ],
       "backdrop": {
-        "media": "vote.jpg",
+        "media": "champagne.mp4",
         "dim": 0.55,
-        "blur": 6,
-        "zoom": [
-          1.05,
-          1.1
-        ]
+        "blur": 4
       },
       "say": [
         "With statehouses stuck, the fight is moving to the local level, where progress still seems possible."
@@ -367,12 +367,11 @@
     },
     {
       "type": "photo",
-      "media": "la_city_hall.jpg",
-      "query": "Los Angeles City Hall",
-      "dim": 0.4,
+      "media": "pool.mp4",
+      "dim": 0.45,
       "zoom": [
         1.0,
-        1.12
+        1.08
       ],
       "overlays": [
         {
@@ -391,12 +390,11 @@
     },
     {
       "type": "photo",
-      "media": "salesforce.jpg",
-      "query": "Salesforce Tower San Francisco",
-      "dim": 0.4,
+      "media": "ceo.mp4",
+      "dim": 0.45,
       "zoom": [
         1.0,
-        1.12
+        1.06
       ],
       "overlays": [
         {
@@ -418,9 +416,9 @@
       "kicker": "What comes next",
       "text": "Don't wait on Washington. {Start local.}",
       "backdrop": {
-        "media": "ca_capitol_day.jpg",
+        "media": "rodeo.jpg",
         "dim": 0.55,
-        "blur": 5,
+        "blur": 4,
         "zoom": [
           1.05,
           1.15
