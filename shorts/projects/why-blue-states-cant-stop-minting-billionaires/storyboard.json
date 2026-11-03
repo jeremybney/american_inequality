@@ -1,0 +1,449 @@
+{
+  "title": "Why Blue States Can't Stop Minting Billionaires — TikTok",
+  "wpm": 175,
+  "hold": 0.25,
+  "max_seconds": 115,
+  "article": {
+    "section": "The Dividing Line"
+  },
+  "notes": [
+    "Hook question: Democrats run against billionaires, so why do most new billionaires come from states Democrats fully control? Answer, scene by scene: wealth tax bills keep stalling in blue statehouses, opponents' arguments don't hold up in the data, billionaire money in politics flows to both parties, and a roaring market keeps minting more. The close turns to cities that act on their own (LA's Measure ULA, SF's Overpaid Executive Tax).",
+    "All figures are from the article (Jul 29, 2026) and the sources it cites (Citizens for Tax Justice, Political Email Archive, Pitchbook, Brennan Center, Americans for Tax Fairness, UBS). The news card is from Jun 30, 2026. California's billionaire tax was on the Nov 3, 2026 ballot; the script doesn't state an outcome.",
+    "VOICE: ElevenLabs, generated only after the author approves the script. Render drafts with --voice off."
+  ],
+  "post": {
+    "headline": "Why blue states keep minting billionaires",
+    "caption": "Democrats have made taxing billionaires a core message, but 64% of the billionaires minted last year came from states Democrats fully control. Wealth tax bills keep stalling in their own statehouses, while cities like Los Angeles and San Francisco are acting on their own.",
+    "cta": "Full story and interactive maps at the link in bio.",
+    "hashtags": [
+      "inequality",
+      "billionaires",
+      "wealthtax",
+      "taxes",
+      "california",
+      "politics"
+    ]
+  },
+  "scenes": [
+    {
+      "type": "photo",
+      "media": "hook.jpg",
+      "query": "Bel Air mansion",
+      "dim": 0.35,
+      "zoom": [
+        1.0,
+        1.15
+      ],
+      "headline": {
+        "text": "America has {960 billionaires.}"
+      },
+      "chip": "Wealth · American Inequality",
+      "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
+      "say": [
+        "America just had its biggest billionaire boom in 25 years."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "ca_capitol.jpg",
+      "query": "California State Capitol Sacramento",
+      "dim": 0.5,
+      "zoom": [
+        1.0,
+        1.18
+      ],
+      "overlays": [
+        {
+          "kind": "surge",
+          "from": 0,
+          "to": 64,
+          "suffix": "%",
+          "y": 0.33,
+          "at": 1.6,
+          "count": 1.0,
+          "label_from": "of new billionaires",
+          "label_to": "of new billionaires",
+          "slam": "FROM BLUE STATES",
+          "slam_dy": 0.13
+        }
+      ],
+      "punch": [
+        2.95
+      ],
+      "source": "Citizens for Tax Justice · American Inequality",
+      "say": [
+        "At American Inequality, we found that 64% of the new ones came from states fully controlled by Democrats."
+      ]
+    },
+    {
+      "type": "article_card",
+      "chips": [
+        "WHO PROMISES",
+        "WHO STALLS",
+        "WHO ACTS"
+      ],
+      "chips_at": 1.4,
+      "say": [
+        "Democrats keep promising to tax the rich, so we looked at why their own states can't do it."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_01.png",
+      "crop": [
+        0,
+        0.13,
+        1,
+        0.9
+      ],
+      "y": 0.43,
+      "zoom_to": [
+        0.0,
+        0.3,
+        0.32,
+        0.72
+      ],
+      "zoom_at": 1.6,
+      "zoom_dur": 2.0,
+      "overlays": [
+        {
+          "kind": "tag",
+          "text": "California · 37 new billionaires",
+          "x": 0.5,
+          "y": 0.2,
+          "at": 3.4,
+          "background": "navy"
+        }
+      ],
+      "source": "Citizens for Tax Justice · American Inequality",
+      "say": [
+        "California alone added 37 new billionaires in a single year, more than any other state."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_02.png",
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "y": 0.43,
+      "source": "Political Email Archive (Derek Willis) via Andrew Hall",
+      "say": [
+        "The party's message has turned against them, and billionaires now come up in about 15% of Democratic fundraising emails."
+      ],
+      "max_height": 1100
+    },
+    {
+      "type": "checklist",
+      "title": "Wealth tax bills in blue states",
+      "items": [
+        {
+          "text": "Washington · blocked",
+          "color": "navy"
+        },
+        {
+          "text": "Illinois · no vote",
+          "color": "navy"
+        },
+        {
+          "text": "New York · resisted",
+          "color": "navy"
+        }
+      ],
+      "stagger": 1.6,
+      "size": 60,
+      "row_height": 140,
+      "backdrop": {
+        "media": "il_capitol.jpg",
+        "dim": 0.55,
+        "blur": 3,
+        "zoom": [
+          1.0,
+          1.1
+        ]
+      },
+      "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
+      "say": [
+        "Yet the bills keep stalling. Washington's hit constitutional limits, Illinois' never got a vote, and New York's governor keeps resisting."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "vote.jpg",
+      "query": "Vote center California",
+      "dim": 0.45,
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 5,
+          "suffix": "%",
+          "label": "one-time tax on net worth over $1 billion",
+          "y": 0.3,
+          "at": 1.8
+        }
+      ],
+      "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
+      "say": [
+        "California is now ground zero, with a one-time 5% tax on residents worth over $1 billion on the ballot."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Share of U.S. venture capital dollars, early 2026",
+      "bars": [
+        {
+          "label": "California",
+          "value": 90,
+          "display": "nearly 90%",
+          "color": "yellow",
+          "at": 2.6
+        },
+        {
+          "label": "Every other state",
+          "value": 10,
+          "display": "about 10%",
+          "color": "white",
+          "at": 3.4
+        }
+      ],
+      "source": "Pitchbook",
+      "say": [
+        "Opponents warn that founders will flee, but California drew nearly 90% of U.S. venture capital dollars in early 2026."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "income_tax_cartoon.jpg",
+      "query": "Sixteenth Amendment",
+      "dim": 0.3,
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "focus": [
+        0.5,
+        0.4
+      ],
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "STATES WENT FIRST",
+          "y": 0.28,
+          "at": 3.2,
+          "angle": -3
+        }
+      ],
+      "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
+      "say": [
+        "Governor Newsom says this fight belongs in Washington, but states proved the income tax worked before Washington adopted it in 1913."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Billionaire spending in presidential elections",
+      "bars": [
+        {
+          "label": "2008",
+          "value": 16,
+          "display": "$16M",
+          "color": "white",
+          "at": 2.4
+        },
+        {
+          "label": "2012",
+          "value": 231,
+          "display": "$231M",
+          "color": "white",
+          "at": 2.8
+        },
+        {
+          "label": "2016",
+          "value": 682,
+          "display": "$682M",
+          "color": "white",
+          "at": 3.2
+        },
+        {
+          "label": "2020",
+          "value": 1200,
+          "display": "$1.2B",
+          "color": "white",
+          "at": 3.6
+        },
+        {
+          "label": "2024",
+          "value": 2600,
+          "display": "$2.6B",
+          "color": "yellow",
+          "at": 4.0
+        }
+      ],
+      "source": "Americans for Tax Fairness",
+      "say": [
+        "Money is part of it, since billionaire spending on presidential races grew from $16 million in 2008 to $2.6 billion in 2024."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Super PAC and shell-group money in the 2024 race",
+      "bars": [
+        {
+          "label": "To Democrats",
+          "value": 1.2,
+          "display": "$1.2B",
+          "color": "yellow",
+          "at": 2.4
+        },
+        {
+          "label": "To everyone else",
+          "value": 0.7,
+          "display": "$0.7B",
+          "color": "white",
+          "at": 3.2
+        }
+      ],
+      "source": "Brennan Center",
+      "say": [
+        "Both parties take it, and $1.2 billion of the outside money in the 2024 race went to Democrats."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_03.png",
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "y": 0.43,
+      "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
+      "say": [
+        "And a roaring stock market lifts the top 0.1% far faster than everyone else."
+      ]
+    },
+    {
+      "type": "news",
+      "kicker": "In the news",
+      "items": [
+        {
+          "media": "news_komo.png",
+          "outlet": "KOMO",
+          "date": "Jun 30, 2026",
+          "crop": [
+            0,
+            0.36,
+            1,
+            0.82
+          ],
+          "highlight": [
+            0.02,
+            0.08,
+            0.98,
+            0.37
+          ],
+          "at": 0.1
+        }
+      ],
+      "backdrop": {
+        "media": "vote.jpg",
+        "dim": 0.55,
+        "blur": 6,
+        "zoom": [
+          1.05,
+          1.1
+        ]
+      },
+      "say": [
+        "With statehouses stuck, the fight is moving to the local level. Solutions exist."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "la_city_hall.jpg",
+      "query": "Los Angeles City Hall",
+      "dim": 0.4,
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "4% TAX ON SALES OVER $5M",
+          "y": 0.28,
+          "at": 2.0,
+          "angle": -3,
+          "size": 50
+        }
+      ],
+      "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
+      "say": [
+        "Los Angeles passed Measure ULA, a 4% tax on property sales above $5 million that funds renters and housing."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "salesforce.jpg",
+      "query": "Salesforce Tower San Francisco",
+      "dim": 0.4,
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 100,
+          "suffix": "x",
+          "label": "CEO pay over local workers' median that triggers the tax",
+          "y": 0.3,
+          "at": 1.8
+        }
+      ],
+      "source": "Why Blue States Can't Stop Minting Billionaires · American Inequality",
+      "say": [
+        "San Francisco taxes companies whose CEOs make over 100 times their local workers' median pay."
+      ]
+    },
+    {
+      "type": "statement",
+      "kicker": "What comes next",
+      "text": "Don't wait on Washington. {Start local.}",
+      "backdrop": {
+        "media": "ca_capitol_day.jpg",
+        "dim": 0.55,
+        "blur": 5,
+        "zoom": [
+          1.05,
+          1.15
+        ]
+      },
+      "say": [
+        "When cities lead, they prove the ultra-wealthy can pay into the places that made them rich."
+      ]
+    },
+    {
+      "type": "outro",
+      "say": [
+        "You can read the full story on American Inequality."
+      ]
+    }
+  ],
+  "music": {
+    "title": "Killing Time",
+    "file": "music.mp3",
+    "start_scene": 1,
+    "level_db": -21.0,
+    "feel": "Bright, Grooving",
+    "credit": "Music: “Killing Time” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  },
+  "music_credit": "Music: “Killing Time” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+}

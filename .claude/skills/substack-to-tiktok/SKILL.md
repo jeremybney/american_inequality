@@ -91,8 +91,12 @@ Partial renders (`--start/--end`) and `--no-captions` renders don't count and do
 phone copy.
 
 ## Voiceovers: the author's ElevenLabs voice by default, an uploaded recording when they send one
-**Default (since Nov 2026): ElevenLabs.** The author made a voice clone of themselves in
-ElevenLabs and asked for it to voice every video. `render` does this on its own: it speaks
+**Default (since Nov 2026): ElevenLabs, but only after the author approves the script.**
+ElevenLabs bills per character, so the order is always: write the script, render a silent
+draft (`render` never calls ElevenLabs by default), push it to the queue for edits, apply the
+edits, and generate audio **only when the author says to** ("add the ElevenLabs audio").
+Then `render --voice elevenlabs` (or `tts <slug>` first). Never generate audio on your own.
+The author made a voice clone of themselves in ElevenLabs. `tts` / `render --voice elevenlabs` speaks
 every `say` line with that voice (`aiq_shorts/tts.py`, the text-to-speech "with-timestamps"
 endpoint), joins the lines with a 0.42s pause, levels the track to -14 LUFS, and takes each
 line's cue from the returned character timestamps, so captions and reveals land exactly.
@@ -104,18 +108,17 @@ line's cue from the returned character timestamps, so captions and reveals land 
 - The key is `ELEVENLABS_API_KEY` in the environment settings (a new session picks it up;
   `doctor` shows whether it's set). Never ask for the key in chat.
 - Lines are cached by text in `media/tts/`, so after script edits only the changed lines (and
-  their neighbours, which shape the delivery) are regenerated and billed. **After "apply my
-  script edits", just `render`:** the voice regenerates for the new lines automatically, so
-  the author doesn't re-record.
+  their neighbours, which shape the delivery) are regenerated and billed. After script edits
+  on an already-voiced video, ask before regenerating (or regenerate when the author's request
+  includes the audio); the author never needs to re-record.
 - Listen for misreadings in the render (acronyms, state abbreviations, years, "$34,518").
   Fix them with `pronounce` rather than by changing the caption text.
 - The queue item's `final_video.voiced` is true for an ElevenLabs render too.
-- `render --voice elevenlabs` regenerates over an uploaded recording; `--voice off` leaves
-  the voice as it is.
+- `render` (default `--voice keep`) never calls ElevenLabs; `--voice elevenlabs` voices the
+  script now, even over an uploaded recording.
 
 **Upload still works and wins while it matches.** When the author uploads a recording on the
-page, sync it as below. A synced recording that still matches the script is used as is; once
-the script changes, `render` switches back to ElevenLabs for the new script and says so.
+page, sync it as below. A synced recording that still matches the script is used as is.
 
 ### Syncing an uploaded recording
 The author records themselves reading the script: a voice memo, read from the page's

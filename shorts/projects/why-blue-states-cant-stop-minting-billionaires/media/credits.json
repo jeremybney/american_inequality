@@ -1,0 +1,67 @@
+{
+  "cover.jpg": {
+    "credit": "Image: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/f4ef6013-9628-454d-b586-58d4f3fc8926_1220x808.png"
+  },
+  "article_01.png": {
+    "credit": "Explore our interactive map",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/03c9cfb3-54b2-4c16-9585-07a64504c2ab_1220x1188.png"
+  },
+  "article_02.png": {
+    "credit": "Chart: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/c9681700-a767-4629-8e9f-00fd3b7e3521_2048x1042.png"
+  },
+  "article_03.png": {
+    "credit": "In the 1990s, most household wealth grew at the same rate. But after the housing crisis, the top 0.1% of households have",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/4e901bf3-051c-4ce3-8322-a8945f90c3f3_600x500.png"
+  },
+  "article_04.png": {
+    "credit": "Explore the interactive chart",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/a151e40c-1bee-4af3-ae07-fa02ed76f7f8_1220x966.png"
+  },
+  "article_05.png": {
+    "credit": "Explore the interactive chart (and access the underlying data)",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/a4a77ef3-4687-473d-99e3-6ecccceb9145_1240x910.png"
+  },
+  "article_06.png": {
+    "credit": "A global outlier in millionaires - explore our interactive chart",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/18f061dd-5d8e-4166-8021-19a664f5b27a_1240x728.png"
+  },
+  "news_komo.png": {
+    "credit": "Screenshot: KOMO",
+    "url": "https://komonews.com/news/nation-world/fact-check-team-california-voters-to-decide-first-ever-state-billionaire-wealth-tax-us-history-net-worth-challenges-gavin-newsom-wealthy-residents",
+    "headline": "Fact Check Team: California voters to decide first-ever state billionaire wealth tax"
+  },
+  "hook.jpg": {
+    "credit": "Photo: Wallace Lin (via InvadingInvader on Wikipedia), CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:The_One_Bel_Air_House_by_Wallace_Lin.jpg"
+  },
+  "ca_capitol.jpg": {
+    "credit": "Photo: Frank Schulenburg, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:California_State_Capitol_during_blue_hour-3982.jpg"
+  },
+  "il_capitol.jpg": {
+    "credit": "Photo: Asher Heimermann, CC BY 3.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Illinois_State_Capitol_distance.jpg"
+  },
+  "vote.jpg": {
+    "credit": "Photo: Minh Nguyen, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Vote_banner_outside_Holy_Cross_Church,_San_Jose,_California.jpg"
+  },
+  "income_tax_cartoon.jpg": {
+    "credit": "Photo: Unknown author, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:16th_Amendment_income_tax_ratification_cartoon_02_05_1913.jpg"
+  },
+  "la_city_hall.jpg": {
+    "credit": "Photo: Office of Los Angeles Mayor, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Los_Angeles_City_Hall_in_respect_to_Prince.jpg"
+  },
+  "ca_capitol_day.jpg": {
+    "credit": "Photo: Frank Schulenburg, CC BY-SA 4.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:California_State_Capitol,_June_2019.jpg"
+  },
+  "salesforce.jpg": {
+    "credit": "Photo: Beno\u00eet Prieur, CC0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:View_of_Salesforce_Tower_(San_Francisco)_July_2022.jpg"
+  }
+}

@@ -315,7 +315,7 @@ def auto_voice(pdir, mode):
     from aiq_shorts import tts
     sb = json.loads((pdir / "storyboard.json").read_text())
     vo = sb.get("voiceover") or {}
-    if mode == "off":
+    if mode in ("off", "keep"):
         return
     uploaded = vo and vo.get("source") != "elevenlabs"
     if uploaded and not tts.stale(sb) and mode != "elevenlabs":
@@ -612,9 +612,10 @@ def main():
     p.add_argument("--crf", type=int, default=18)
     p.add_argument("--start", type=float, default=0.0)
     p.add_argument("--end", type=float)
-    p.add_argument("--voice", choices=["auto", "elevenlabs", "off"], default="auto",
-                   help="auto (default): ElevenLabs voices the script unless an uploaded recording still matches it; "
-                        "elevenlabs: regenerate with ElevenLabs even over an upload; off: leave the voice as it is")
+    p.add_argument("--voice", choices=["keep", "elevenlabs", "auto", "off"], default="keep",
+                   help="keep (default): never call ElevenLabs, use whatever voice is in place (the author approves "
+                        "the script before any audio is generated); elevenlabs: voice the script with ElevenLabs now, "
+                        "even over an upload; auto: ElevenLabs unless an uploaded recording still matches")
     p.set_defaults(fn=cmd_render)
 
     p = sub.add_parser("tts", help="voice the script with the author's ElevenLabs voice (the default voiceover)")
