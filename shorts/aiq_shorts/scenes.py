@@ -62,6 +62,21 @@ class Scene:
 class ChartScene(Scene):
     """Orange background + optional title/subtitle, like Tal's chart beats."""
 
+    def __init_subclass__(cls, **kw):
+        """Every chart scene draws the spec's `overlays` (a tag, stamp or stat) on top of its chart."""
+        super().__init_subclass__(**kw)
+        if "render" in cls.__dict__:
+            inner = cls.__dict__["render"]
+
+            def render(self, t, _inner=inner):
+                img = _inner(self, t)
+                if self.spec.get("overlays"):
+                    d = ImageDraw.Draw(img, "RGBA")
+                    for ov in self.spec["overlays"]:
+                        draw_overlay(img, d, ov, t, self)
+                return img
+            cls.render = render
+
     def accent(self):
         """Colour for small labels: navy on orange, yellow over a backdrop photo."""
         return T.YELLOW if self._backdrop else T.NAVY

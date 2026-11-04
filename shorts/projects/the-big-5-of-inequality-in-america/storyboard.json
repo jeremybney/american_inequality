@@ -2,7 +2,7 @@
   "title": "The Big 5 of Inequality — TikTok",
   "wpm": 175,
   "hold": 0.25,
-  "max_seconds": 132,
+  "max_seconds": 138,
   "article": {
     "section": "The Dividing Line"
   },
@@ -39,13 +39,45 @@
       "chip": "Affordability · American Inequality",
       "source": "The Big 5 of Inequality · American Inequality",
       "say": [
-        "In America, one bad month can knock a family into poverty,"
+        "In America, one bad month can destroy a family's savings."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "grocery.mp4",
+      "dim": 0.5,
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "overlays": [
+        {
+          "kind": "surge",
+          "from": 0,
+          "to": 34.5,
+          "decimals": 1,
+          "suffix": "M",
+          "y": 0.33,
+          "at": 3.0,
+          "count": 1.1,
+          "label_from": "Americans",
+          "label_to": "Americans",
+          "slam": "IN POVERTY",
+          "slam_dy": 0.13
+        }
+      ],
+      "punch": [
+        4.45
+      ],
+      "source": "U.S. Census (2025)",
+      "say": [
+        "But that bad month can usually come from just 1 of 5 big issue areas, which have now sent 34.5 million people into poverty."
       ]
     },
     {
       "type": "photo",
       "media": "vote.mp4",
-      "dim": 0.4,
+      "dim": 0.45,
       "zoom": [
         1.0,
         1.1
@@ -53,67 +85,22 @@
       "overlays": [
         {
           "kind": "stamp",
-          "text": "FALLING BEHIND",
+          "text": "UNDER $50K: SWUNG LEFT",
           "y": 0.3,
-          "at": 1.0,
-          "angle": -3
+          "at": 2.0,
+          "angle": -3,
+          "size": 54
         }
       ],
-      "source": "The Big 5 of Inequality · American Inequality",
+      "source": "2026 exit polls",
       "say": [
-        "and these midterms showed that too many Americans were falling behind."
-      ]
-    },
-    {
-      "type": "checklist",
-      "title": "The Big 5",
-      "items": [
-        {
-          "text": "Housing",
-          "color": "navy"
-        },
-        {
-          "text": "Healthcare",
-          "color": "navy"
-        },
-        {
-          "text": "Education",
-          "color": "navy"
-        },
-        {
-          "text": "Incomes",
-          "color": "navy"
-        },
-        {
-          "text": "Jobs",
-          "color": "navy"
-        }
-      ],
-      "stagger": 0.7,
-      "size": 68,
-      "row_height": 130,
-      "backdrop": {
-        "media": "grocery.mp4",
-        "dim": 0.6,
-        "blur": 4
-      },
-      "source": "The Big 5 of Inequality · American Inequality",
-      "say": [
-        "That bad month can usually come from 1 of 5 big issue areas, all linked to affordability and opportunity in America."
+        "These midterms showed that low-income Americans swung hard left, with more than half of voters with incomes below $50K now voting for Dems."
       ]
     },
     {
       "type": "article_card",
-      "chips": [
-        "HOUSING",
-        "HEALTH",
-        "SCHOOL",
-        "INCOME",
-        "JOBS"
-      ],
-      "chips_at": 1.2,
       "say": [
-        "I call these the Big 5 forces of inequality, and when one breaks, the others follow."
+        "Americans are begging for solutions in these 5 areas, because when one breaks, the others follow. Here is what we know today."
       ]
     },
     {
@@ -139,6 +126,15 @@
         "Housing comes first. Renters earning under $30,000 had a record-low $210 a month left after rent and utilities. A record 22.7 million renters now spend more than 30% of their income on rent."
       ],
       "overlays": [
+        {
+          "kind": "tag",
+          "text": "1 OF 5 · HOUSING",
+          "x": 0.5,
+          "y": 0.1,
+          "at": 0.2,
+          "background": "navy",
+          "size": 34
+        },
         {
           "kind": "tag",
           "text": "22.7M renters cost burdened · a record",
@@ -201,6 +197,17 @@
       "source": "KFF",
       "say": [
         "Healthcare is next. Family premiums now average $26,993 a year, and they grew 52% in a decade while inflation rose 32%."
+      ],
+      "overlays": [
+        {
+          "kind": "tag",
+          "text": "2 OF 5 · HEALTHCARE",
+          "x": 0.5,
+          "y": 0.1,
+          "at": 0.2,
+          "background": "navy",
+          "size": 34
+        }
       ]
     },
     {
@@ -247,6 +254,17 @@
       "source": "NCES, NAEP Long-Term Trend",
       "say": [
         "Education is third. Although 13-year-olds gained 21 points in math from 1978 to 2012, they lost 15 points by 2025, erasing any gains."
+      ],
+      "overlays": [
+        {
+          "kind": "tag",
+          "text": "3 OF 5 · EDUCATION",
+          "x": 0.5,
+          "y": 0.1,
+          "at": 0.2,
+          "background": "navy",
+          "size": 34
+        }
       ]
     },
     {
@@ -301,7 +319,18 @@
         "media": "cash.mp4",
         "dim": 0.6,
         "blur": 5
-      }
+      },
+      "overlays": [
+        {
+          "kind": "tag",
+          "text": "4 OF 5 · INCOMES",
+          "x": 0.5,
+          "y": 0.1,
+          "at": 0.2,
+          "background": "navy",
+          "size": 34
+        }
+      ]
     },
     {
       "type": "figure",
@@ -347,6 +376,17 @@
       "source": "Federal Reserve Bank of New York",
       "say": [
         "Jobs are the last force, and recent college grads now face higher unemployment than the average worker, an unprecedented shift."
+      ],
+      "overlays": [
+        {
+          "kind": "tag",
+          "text": "5 OF 5 · JOBS",
+          "x": 0.5,
+          "y": 0.1,
+          "at": 0.2,
+          "background": "navy",
+          "size": 34
+        }
       ]
     },
     {
