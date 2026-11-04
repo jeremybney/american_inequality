@@ -2,7 +2,7 @@
   "title": "The Big 5 of Inequality — TikTok",
   "wpm": 175,
   "hold": 0.25,
-  "max_seconds": 110,
+  "max_seconds": 132,
   "article": {
     "section": "The Dividing Line"
   },
@@ -27,7 +27,7 @@
   "scenes": [
     {
       "type": "photo",
-      "media": "bills.mp4",
+      "media": "counting.mp4",
       "dim": 0.35,
       "zoom": [
         1.0,
@@ -39,39 +39,67 @@
       "chip": "Affordability · American Inequality",
       "source": "The Big 5 of Inequality · American Inequality",
       "say": [
-        "In America, one bad month can knock a family into poverty."
+        "In America, one bad month can knock a family into poverty,"
       ]
     },
     {
       "type": "photo",
-      "media": "displaced.jpg",
-      "dim": 0.5,
+      "media": "vote.mp4",
+      "dim": 0.4,
       "zoom": [
         1.0,
-        1.15
+        1.1
       ],
       "overlays": [
         {
-          "kind": "surge",
-          "from": 0,
-          "to": 22.7,
-          "decimals": 1,
-          "suffix": "M",
-          "y": 0.33,
-          "at": 1.4,
-          "count": 1.0,
-          "label_from": "renters cost burdened",
-          "label_to": "renters cost burdened",
-          "slam": "A RECORD HIGH",
-          "slam_dy": 0.13
+          "kind": "stamp",
+          "text": "FALLING BEHIND",
+          "y": 0.3,
+          "at": 1.0,
+          "angle": -3
         }
       ],
-      "punch": [
-        2.75
-      ],
-      "source": "Harvard Joint Center for Housing Studies",
+      "source": "The Big 5 of Inequality · American Inequality",
       "say": [
-        "A record 22.7 million renters now spend more than 30% of their income on rent."
+        "and these midterms showed that too many Americans were falling behind."
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "The Big 5",
+      "items": [
+        {
+          "text": "Housing",
+          "color": "navy"
+        },
+        {
+          "text": "Healthcare",
+          "color": "navy"
+        },
+        {
+          "text": "Education",
+          "color": "navy"
+        },
+        {
+          "text": "Incomes",
+          "color": "navy"
+        },
+        {
+          "text": "Jobs",
+          "color": "navy"
+        }
+      ],
+      "stagger": 0.7,
+      "size": 68,
+      "row_height": 130,
+      "backdrop": {
+        "media": "grocery.mp4",
+        "dim": 0.6,
+        "blur": 4
+      },
+      "source": "The Big 5 of Inequality · American Inequality",
+      "say": [
+        "That bad month can usually come from 1 of 5 big issue areas, all linked to affordability and opportunity in America."
       ]
     },
     {
@@ -108,7 +136,18 @@
       "zoom_dur": 2.0,
       "source": "Harvard Joint Center for Housing Studies",
       "say": [
-        "Housing comes first. Renters earning under $30,000 had a record-low $210 a month left after rent and utilities."
+        "Housing comes first. Renters earning under $30,000 had a record-low $210 a month left after rent and utilities. A record 22.7 million renters now spend more than 30% of their income on rent."
+      ],
+      "overlays": [
+        {
+          "kind": "tag",
+          "text": "22.7M renters cost burdened · a record",
+          "x": 0.5,
+          "y": 0.2,
+          "at": 5.6,
+          "background": "navy",
+          "size": 30
+        }
       ]
     },
     {
@@ -132,31 +171,7 @@
       ],
       "source": "The Big 5 of Inequality · American Inequality",
       "say": [
-        "Owning is harder too, since a median home cost 2.5 times the median income in 1989, and 5 times today."
-      ]
-    },
-    {
-      "type": "photo",
-      "media": "classroom.mp4",
-      "dim": 0.45,
-      "zoom": [
-        1.0,
-        1.08
-      ],
-      "overlays": [
-        {
-          "kind": "stat",
-          "value": 1.5,
-          "decimals": 1,
-          "suffix": "M",
-          "label": "homeless students, the most on record",
-          "y": 0.3,
-          "at": 2.0
-        }
-      ],
-      "source": "U.S. Department of Education",
-      "say": [
-        "And losing a home follows kids to school, where a record 1.5 million students were homeless last year."
+        "Owning is harder too, since a median home cost 2.5 times the median income in 1989, but 5 times today."
       ]
     },
     {
@@ -231,7 +246,30 @@
       "zoom_dur": 2.0,
       "source": "NCES, NAEP Long-Term Trend",
       "say": [
-        "Education is slipping, as 13-year-olds gained 21 points in math from 1978 to 2012, then lost 15 of them by 2025."
+        "Education is third. Although 13-year-olds gained 21 points in math from 1978 to 2012, they lost 15 points by 2025, erasing any gains."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "classroom.mp4",
+      "dim": 0.45,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 2,
+          "suffix": "x",
+          "label": "as likely to attend an Ivy-Plus college with the same test scores",
+          "y": 0.3,
+          "at": 2.6
+        }
+      ],
+      "source": "Chetty, Deming and Friedman",
+      "say": [
+        "And access tracks wealth, since kids from the top 1% are more than twice as likely to attend an Ivy-Plus college as middle-class kids with the same test scores."
       ]
     },
     {
@@ -257,7 +295,7 @@
       ],
       "source": "Federal Reserve Distributional Financial Accounts",
       "say": [
-        "Incomes hit a record in 2025, but the top 1% now hold 32.5% of the nation's wealth while the bottom half holds just 2.5%."
+        "Incomes are 4th. They hit a record in 2025, but the top 1% now hold 32.5% of the nation's wealth while the bottom half holds just 2.5%."
       ],
       "backdrop": {
         "media": "cash.mp4",
@@ -308,7 +346,7 @@
       "zoom_dur": 2.0,
       "source": "Federal Reserve Bank of New York",
       "say": [
-        "Jobs are the last force, and recent college grads now face higher unemployment than the average worker."
+        "Jobs are the last force, and recent college grads now face higher unemployment than the average worker, an unprecedented shift."
       ]
     },
     {
@@ -368,7 +406,7 @@
         ]
       },
       "say": [
-        "Affordability was the top issue for voters this year, because families feel all five forces at once."
+        "Affordability was the top issue for voters this year, because families felt all five forces at once when they were showing up to cast their ballots."
       ]
     },
     {
@@ -376,9 +414,9 @@
       "kicker": "What comes next",
       "text": "Fix all five {together.}",
       "backdrop": {
-        "media": "bills.mp4",
+        "media": "counting.mp4",
         "dim": 0.6,
-        "blur": 6
+        "blur": 5
       },
       "say": [
         "We can't fix these one at a time, because for families they never arrive one at a time."

@@ -28,10 +28,6 @@
     "url": "https://www.wfsb.com/2026/10/20/affordability-top-issue-voters-november-election-nears/",
     "headline": "Affordability a top issue for voters as November election nears"
   },
-  "bills.mp4": {
-    "credit": "Video: DespiertaYa (Pixabay)",
-    "url": "https://pixabay.com/videos/id-272633/"
-  },
   "classroom.mp4": {
     "credit": "Video: u_bziv55ajln (Pixabay)",
     "url": "https://pixabay.com/videos/id-230084/"
@@ -44,10 +40,6 @@
     "credit": "Video: Hassas_Arts (Pixabay)",
     "url": "https://pixabay.com/videos/id-49808/"
   },
-  "displaced.jpg": {
-    "credit": "Photo: Elvert Barnes, CC BY-SA 2.0 (Wikimedia Commons)",
-    "url": "https://commons.wikimedia.org/wiki/File:National_Park_Service_Eviction_of_Homeless_Tents_Encampments,_Washington_DC_12.jpg"
-  },
   "jobfair.jpg": {
     "credit": "Photo: German Embassy London, CC BY 2.0 (Wikimedia Commons)",
     "url": "https://commons.wikimedia.org/wiki/File:Exhibitors_at_the_Career_Fair_(30983205220).jpg"
@@ -55,5 +47,17 @@
   "cash.mp4": {
     "credit": "Video: RoyBuri (Pixabay)",
     "url": "https://pixabay.com/videos/id-109146/"
+  },
+  "counting.mp4": {
+    "credit": "Video: Hassas_Arts (Pixabay)",
+    "url": "https://pixabay.com/videos/id-50628/"
+  },
+  "grocery.mp4": {
+    "credit": "Video: Expatsiam (Pixabay)",
+    "url": "https://pixabay.com/videos/id-31960/"
+  },
+  "vote.mp4": {
+    "credit": "Video: simmer65 (Pixabay)",
+    "url": "https://pixabay.com/videos/id-12847/"
   }
 }
