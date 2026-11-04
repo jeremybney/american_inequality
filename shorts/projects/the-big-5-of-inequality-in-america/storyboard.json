@@ -1,0 +1,403 @@
+{
+  "title": "The Big 5 of Inequality — TikTok",
+  "wpm": 175,
+  "hold": 0.25,
+  "max_seconds": 110,
+  "article": {
+    "section": "The Dividing Line"
+  },
+  "notes": [
+    "Hook question: why can one bad month push an American family into poverty? Answer, scene by scene: five forces (housing, healthcare, education, incomes, jobs) decide who gets ahead, each is under strain, and they are linked, so one shock spreads to the rest. Each section ends on its 'interconnected' link from the article, which leads into the next force. The close: fix them together, not one at a time.",
+    "All figures are from the article (Nov 4, 2026) and the sources it cites (Harvard JCHS, KFF, NAEP, Opportunity Insights, Federal Reserve, NY Fed, Desmond and Gershenson). Solo post, so the narration uses 'I'.",
+    "VOICE: ElevenLabs, generated only after the author approves the script. Render drafts with the default --voice keep."
+  ],
+  "post": {
+    "headline": "The 5 forces that decide who gets ahead",
+    "caption": "Housing, healthcare, education, incomes and jobs decide whether an American family gets ahead, and none of them works alone. A record 22.7 million renters are cost burdened, family health premiums hit $26,993, and losing a job often means losing your coverage too.",
+    "cta": "Full story and interactive charts at the link in bio.",
+    "hashtags": [
+      "inequality",
+      "affordability",
+      "housing",
+      "healthcare",
+      "economy",
+      "data"
+    ]
+  },
+  "scenes": [
+    {
+      "type": "photo",
+      "media": "bills.mp4",
+      "dim": 0.35,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "headline": {
+        "text": "{Five forces} decide who gets ahead."
+      },
+      "chip": "Affordability · American Inequality",
+      "source": "The Big 5 of Inequality · American Inequality",
+      "say": [
+        "In America, one bad month can knock a family into poverty."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "displaced.jpg",
+      "dim": 0.5,
+      "zoom": [
+        1.0,
+        1.15
+      ],
+      "overlays": [
+        {
+          "kind": "surge",
+          "from": 0,
+          "to": 22.7,
+          "decimals": 1,
+          "suffix": "M",
+          "y": 0.33,
+          "at": 1.4,
+          "count": 1.0,
+          "label_from": "renters cost burdened",
+          "label_to": "renters cost burdened",
+          "slam": "A RECORD HIGH",
+          "slam_dy": 0.13
+        }
+      ],
+      "punch": [
+        2.75
+      ],
+      "source": "Harvard Joint Center for Housing Studies",
+      "say": [
+        "A record 22.7 million renters now spend more than 30% of their income on rent."
+      ]
+    },
+    {
+      "type": "article_card",
+      "chips": [
+        "HOUSING",
+        "HEALTH",
+        "SCHOOL",
+        "INCOME",
+        "JOBS"
+      ],
+      "chips_at": 1.2,
+      "say": [
+        "I call these the Big 5 forces of inequality, and when one breaks, the others follow."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_01.png",
+      "crop": [
+        0,
+        0.1,
+        1,
+        0.92
+      ],
+      "y": 0.43,
+      "zoom_to": [
+        0.6,
+        0.15,
+        1.0,
+        0.8
+      ],
+      "zoom_at": 2.2,
+      "zoom_dur": 2.0,
+      "source": "Harvard Joint Center for Housing Studies",
+      "say": [
+        "Housing comes first. Renters earning under $30,000 had a record-low $210 a month left after rent and utilities."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Median home price vs. median household income",
+      "bars": [
+        {
+          "label": "1989",
+          "value": 2.5,
+          "display": "2.5x",
+          "color": "white",
+          "at": 2.2
+        },
+        {
+          "label": "Today",
+          "value": 5,
+          "display": "5x",
+          "color": "yellow",
+          "at": 3.2
+        }
+      ],
+      "source": "The Big 5 of Inequality · American Inequality",
+      "say": [
+        "Owning is harder too, since a median home cost 2.5 times the median income in 1989, and 5 times today."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "classroom.mp4",
+      "dim": 0.45,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 1.5,
+          "decimals": 1,
+          "suffix": "M",
+          "label": "homeless students, the most on record",
+          "y": 0.3,
+          "at": 2.0
+        }
+      ],
+      "source": "U.S. Department of Education",
+      "say": [
+        "And losing a home follows kids to school, where a record 1.5 million students were homeless last year."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Growth from 2014 to 2024",
+      "bars": [
+        {
+          "label": "Family health premiums",
+          "value": 52,
+          "suffix": "%",
+          "color": "yellow",
+          "at": 2.4
+        },
+        {
+          "label": "Inflation",
+          "value": 32,
+          "suffix": "%",
+          "color": "white",
+          "at": 3.2
+        }
+      ],
+      "backdrop": {
+        "media": "doctor.mp4",
+        "dim": 0.6,
+        "blur": 6
+      },
+      "source": "KFF",
+      "say": [
+        "Healthcare is next. Family premiums now average $26,993 a year, and they grew 52% in a decade while inflation rose 32%."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_02.png",
+      "crop": [
+        0,
+        0.1,
+        1,
+        0.92
+      ],
+      "y": 0.43,
+      "zoom_to": [
+        0.55,
+        0.05,
+        1.0,
+        0.75
+      ],
+      "zoom_at": 2.0,
+      "zoom_dur": 2.0,
+      "source": "KFF",
+      "say": [
+        "When enhanced ACA subsidies expired, marketplace enrollment fell for the first time in years, by about 3 million people."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_03.png",
+      "crop": [
+        0,
+        0.1,
+        1,
+        0.92
+      ],
+      "y": 0.43,
+      "zoom_to": [
+        0.55,
+        0.05,
+        1.0,
+        0.75
+      ],
+      "zoom_at": 2.2,
+      "zoom_dur": 2.0,
+      "source": "NCES, NAEP Long-Term Trend",
+      "say": [
+        "Education is slipping, as 13-year-olds gained 21 points in math from 1978 to 2012, then lost 15 of them by 2025."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Share of the nation's wealth, 2026",
+      "bars": [
+        {
+          "label": "Top 1%",
+          "value": 32.5,
+          "decimals": 1,
+          "suffix": "%",
+          "color": "yellow",
+          "at": 2.6
+        },
+        {
+          "label": "Bottom 50%",
+          "value": 2.5,
+          "decimals": 1,
+          "suffix": "%",
+          "color": "white",
+          "at": 3.4
+        }
+      ],
+      "source": "Federal Reserve Distributional Financial Accounts",
+      "say": [
+        "Incomes hit a record in 2025, but the top 1% now hold 32.5% of the nation's wealth while the bottom half holds just 2.5%."
+      ],
+      "backdrop": {
+        "media": "cash.mp4",
+        "dim": 0.6,
+        "blur": 5
+      }
+    },
+    {
+      "type": "figure",
+      "media": "article_05.png",
+      "crop": [
+        0,
+        0.1,
+        1,
+        0.92
+      ],
+      "y": 0.43,
+      "zoom_to": [
+        0.0,
+        0.1,
+        1.0,
+        0.55
+      ],
+      "zoom_at": 2.0,
+      "zoom_dur": 2.0,
+      "source": "Opportunity Insights",
+      "say": [
+        "That makes the climb steeper, since 92% of kids born in 1940 out-earned their parents, compared with half of those born in 1980."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_04.png",
+      "crop": [
+        0,
+        0.1,
+        1,
+        0.92
+      ],
+      "y": 0.43,
+      "zoom_to": [
+        0.55,
+        0.15,
+        1.0,
+        0.75
+      ],
+      "zoom_at": 2.2,
+      "zoom_dur": 2.0,
+      "source": "Federal Reserve Bank of New York",
+      "say": [
+        "Jobs are the last force, and recent college grads now face higher unemployment than the average worker."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "workers.mp4",
+      "dim": 0.45,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 53.5,
+          "decimals": 1,
+          "suffix": "%",
+          "label": "of Americans get health insurance through work",
+          "y": 0.3,
+          "at": 2.0
+        }
+      ],
+      "source": "The Big 5 of Inequality · American Inequality",
+      "say": [
+        "And since 53.5% of Americans get health insurance through work, losing a job often means losing your coverage, and then your rent."
+      ]
+    },
+    {
+      "type": "news",
+      "kicker": "In the news",
+      "items": [
+        {
+          "media": "news_wfsb.png",
+          "outlet": "WFSB",
+          "date": "Oct 20, 2026",
+          "crop": [
+            0,
+            0.3,
+            1,
+            0.62
+          ],
+          "highlight": [
+            0.02,
+            0.03,
+            0.98,
+            0.95
+          ],
+          "at": 0.1
+        }
+      ],
+      "backdrop": {
+        "media": "jobfair.jpg",
+        "dim": 0.55,
+        "blur": 5,
+        "zoom": [
+          1.0,
+          1.08
+        ]
+      },
+      "say": [
+        "Affordability was the top issue for voters this year, because families feel all five forces at once."
+      ]
+    },
+    {
+      "type": "statement",
+      "kicker": "What comes next",
+      "text": "Fix all five {together.}",
+      "backdrop": {
+        "media": "bills.mp4",
+        "dim": 0.6,
+        "blur": 6
+      },
+      "say": [
+        "We can't fix these one at a time, because for families they never arrive one at a time."
+      ]
+    },
+    {
+      "type": "outro",
+      "say": [
+        "You can read the full story on American Inequality."
+      ]
+    }
+  ],
+  "music": {
+    "title": "Pleasant Porridge",
+    "file": "music.mp3",
+    "start_scene": 1,
+    "level_db": -21.0,
+    "feel": "Calming, Grooving, Relaxed",
+    "credit": "Music: “Pleasant Porridge” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  },
+  "music_credit": "Music: “Pleasant Porridge” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+}

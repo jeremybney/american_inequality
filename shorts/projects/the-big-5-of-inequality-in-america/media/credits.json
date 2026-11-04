@@ -1,0 +1,59 @@
+{
+  "cover.jpg": {
+    "credit": "Image: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/9f146f09-7a37-4248-93f9-0b23ceb49160_1200x600.webp"
+  },
+  "article_01.png": {
+    "credit": "Renters earning under $30,000 had a record-low $210 a month left after rent and utilities in 2024, down from $410 in 201",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/7e837e99-cc51-4e2d-b10f-c09c0d4d2402_1700x1088.png"
+  },
+  "article_02.png": {
+    "credit": "ACA Marketplace enrollment fell 13% in 2026, from 22.1 million to 19.2 million people, after the enhanced subsidies expi",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/95b2a889-0aa2-4eb9-9b18-8048a3077cc1_1700x1088.png"
+  },
+  "article_03.png": {
+    "credit": "Thirteen-year-olds\u2019 average math score rose 21 points from 1978 to 2012, then lost 15 of them by 2025. Source: NCES, NAE",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/6d578116-bfc0-4dae-9132-41b43302cbd9_1700x1054.png"
+  },
+  "article_04.png": {
+    "credit": "92% of children born in 1940 grew up to out-earn their parents. For children born in 1984, it was a coin flip at 50%. So",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/4ae45a6e-4d80-477f-9f9a-ab8a1d0f3cb1_1700x986.png"
+  },
+  "article_05.png": {
+    "credit": "Recent college graduates have had higher unemployment than the average worker since 2019, the longest such stretch in da",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/9d8e2c6c-9cd6-435a-8db6-1c4cfab0813c_1700x1054.png"
+  },
+  "news_wfsb.png": {
+    "credit": "Screenshot: https://www.wfsb.com",
+    "url": "https://www.wfsb.com/2026/10/20/affordability-top-issue-voters-november-election-nears/",
+    "headline": "Affordability a top issue for voters as November election nears"
+  },
+  "bills.mp4": {
+    "credit": "Video: DespiertaYa (Pixabay)",
+    "url": "https://pixabay.com/videos/id-272633/"
+  },
+  "classroom.mp4": {
+    "credit": "Video: u_bziv55ajln (Pixabay)",
+    "url": "https://pixabay.com/videos/id-230084/"
+  },
+  "workers.mp4": {
+    "credit": "Video: TRAPHITHO (Pixabay)",
+    "url": "https://pixabay.com/videos/id-135892/"
+  },
+  "doctor.mp4": {
+    "credit": "Video: Hassas_Arts (Pixabay)",
+    "url": "https://pixabay.com/videos/id-49808/"
+  },
+  "displaced.jpg": {
+    "credit": "Photo: Elvert Barnes, CC BY-SA 2.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:National_Park_Service_Eviction_of_Homeless_Tents_Encampments,_Washington_DC_12.jpg"
+  },
+  "jobfair.jpg": {
+    "credit": "Photo: German Embassy London, CC BY 2.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Exhibitors_at_the_Career_Fair_(30983205220).jpg"
+  },
+  "cash.mp4": {
+    "credit": "Video: RoyBuri (Pixabay)",
+    "url": "https://pixabay.com/videos/id-109146/"
+  }
+}
