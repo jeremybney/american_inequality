@@ -477,5 +477,158 @@
     "feel": "Calming, Grooving, Relaxed",
     "credit": "Music: “Pleasant Porridge” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
-  "music_credit": "Music: “Pleasant Porridge” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  "music_credit": "Music: “Pleasant Porridge” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
+  "voiceover": {
+    "source": "elevenlabs",
+    "voice_id": "LN9NrroIIZhpFF0xZmVx",
+    "model_id": "eleven_multilingual_v2",
+    "file": "voiceover_tts.wav",
+    "clean": "voiceover_tts.wav",
+    "mix": "voiceover_tts.wav",
+    "duration": 134.07,
+    "cues": [
+      {
+        "scene": 0,
+        "line": 0,
+        "text": "In America, one bad month can destroy a family's savings.",
+        "start": 0.15,
+        "end": 3.494,
+        "matched": 1.0
+      },
+      {
+        "scene": 1,
+        "line": 0,
+        "text": "But that bad month can usually come from just 1 of 5 big issue areas, which have now sent 34.5 million people into poverty.",
+        "start": 3.914,
+        "end": 11.437,
+        "matched": 1.0
+      },
+      {
+        "scene": 2,
+        "line": 0,
+        "text": "These midterms showed that low-income Americans swung hard left, with more than half of voters with incomes below $50K now voting for Dems.",
+        "start": 11.857,
+        "end": 20.681,
+        "matched": 1.0
+      },
+      {
+        "scene": 3,
+        "line": 0,
+        "text": "Americans are begging for solutions in these 5 areas, because when one breaks, the others follow. Here is what we know today.",
+        "start": 21.101,
+        "end": 27.51,
+        "matched": 1.0
+      },
+      {
+        "scene": 4,
+        "line": 0,
+        "text": "Housing comes first. Renters earning under $30,000 had a record-low $210 a month left after rent and utilities. A record 22.7 million renters now spend more than 30% of their income on rent.",
+        "start": 27.929,
+        "end": 41.629,
+        "matched": 1.0
+      },
+      {
+        "scene": 5,
+        "line": 0,
+        "text": "Owning is harder too, since a median home cost 2.5 times the median income in 1989, but 5 times today.",
+        "start": 42.049,
+        "end": 48.504,
+        "matched": 1.0
+      },
+      {
+        "scene": 6,
+        "line": 0,
+        "text": "Healthcare is next. Family premiums now average $26,993 a year, and they grew 52% in a decade while inflation rose 32%.",
+        "start": 48.924,
+        "end": 58.351,
+        "matched": 1.0
+      },
+      {
+        "scene": 7,
+        "line": 0,
+        "text": "When enhanced ACA subsidies expired, marketplace enrollment fell for the first time in years, by about 3 million people.",
+        "start": 58.772,
+        "end": 65.645,
+        "matched": 1.0
+      },
+      {
+        "scene": 8,
+        "line": 0,
+        "text": "Education is third. Although 13-year-olds gained 21 points in math from 1978 to 2012, they lost 15 points by 2025, erasing any gains.",
+        "start": 66.065,
+        "end": 74.842,
+        "matched": 1.0
+      },
+      {
+        "scene": 9,
+        "line": 0,
+        "text": "And access tracks wealth, since kids from the top 1% are more than twice as likely to attend an Ivy-Plus college as middle-class kids with the same test scores.",
+        "start": 75.262,
+        "end": 83.946,
+        "matched": 1.0
+      },
+      {
+        "scene": 10,
+        "line": 0,
+        "text": "Incomes are 4th. They hit a record in 2025, but the top 1% now hold 32.5% of the nation's wealth while the bottom half holds just 2.5%.",
+        "start": 84.366,
+        "end": 95.001,
+        "matched": 1.0
+      },
+      {
+        "scene": 11,
+        "line": 0,
+        "text": "That makes the climb steeper, since 92% of kids born in 1940 out-earned their parents, compared with half of those born in 1980.",
+        "start": 95.421,
+        "end": 103.502,
+        "matched": 1.0
+      },
+      {
+        "scene": 12,
+        "line": 0,
+        "text": "Jobs are the last force, and recent college grads now face higher unemployment than the average worker, an unprecedented shift.",
+        "start": 103.921,
+        "end": 110.748,
+        "matched": 1.0
+      },
+      {
+        "scene": 13,
+        "line": 0,
+        "text": "And since 53.5% of Americans get health insurance through work, losing a job often means losing your coverage, and then your rent.",
+        "start": 111.168,
+        "end": 118.413,
+        "matched": 1.0
+      },
+      {
+        "scene": 14,
+        "line": 0,
+        "text": "Affordability was the top issue for voters this year, because families felt all five forces at once when they were showing up to cast their ballots.",
+        "start": 118.833,
+        "end": 126.171,
+        "matched": 1.0
+      },
+      {
+        "scene": 15,
+        "line": 0,
+        "text": "We can't fix these one at a time, because for families they never arrive one at a time.",
+        "start": 126.59,
+        "end": 130.909,
+        "matched": 1.0
+      },
+      {
+        "scene": 16,
+        "line": 0,
+        "text": "You can read the full story on American Inequality.",
+        "start": 131.329,
+        "end": 133.651,
+        "matched": 1.0
+      }
+    ],
+    "lines_generated": 3
+  },
+  "tts": {
+    "pronounce": {
+      "$26,993": "twenty-six thousand nine hundred ninety-three dollars"
+    }
+  }
 }
