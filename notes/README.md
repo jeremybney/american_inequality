@@ -6,10 +6,11 @@ written to match Jeremy's voice, scheduled at the times his notes actually do be
 ```
 batches/      one script per batch: pulls data, draws charts, writes the calendar
 charts/       rendered PNGs (1700px, Big 5 house style)
-existing/     Jeremy's previously published charts that batches can reuse
+existing/     Jeremy's best-performing published charts (reused sparingly; see VOICE.md)
 calendar/     the planned notes (JSON); mirrored into the Google Sheet for review
 aiq_notes/    charts.py (house style) · fred.py · acs.py · schedule.py · substack.py
-post_due.py   posts whatever is due (GitHub Actions, every 15 min)
+post_due.py   posts whatever is due (runs on Jeremy's Mac every 10 min; see local/README.md)
+local/        Mac installer + runner (Substack's Cloudflare check blocks cloud servers)
 learn.py      weekly: re-reads engagement, retunes posting windows, writes data/performance.md
 VOICE.md      voice rules + what the engagement data says works
 config.json   sheet id, Substack ids, "paused" kill switch
@@ -32,6 +33,11 @@ If you don't touch a row, it posts as written.
 Kill switch: set `"paused": true` in `config.json` (or set Status to Hold on everything).
 
 ## One-time setup
+
+**Posting runs on your Mac, not GitHub.** Follow `local/README.md` (one Terminal command).
+GitHub Actions still re-learns posting windows weekly and runs manual dry-runs.
+
+(Original GitHub-based steps, kept for reference:)
 
 1. **Substack cookie.** Log in to substack.com in a browser → DevTools → Application → Cookies →
    `https://substack.com` → copy the value of `substack.sid`.
