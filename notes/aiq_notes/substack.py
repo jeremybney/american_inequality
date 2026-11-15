@@ -9,6 +9,8 @@ out twice or garbled.
 Env:
   SUBSTACK_SID   value of the `substack.sid` cookie from a logged-in browser
 """
+from __future__ import annotations
+
 import base64
 import mimetypes
 import os
