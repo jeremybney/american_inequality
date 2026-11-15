@@ -14,6 +14,7 @@ from __future__ import annotations
 import base64
 import mimetypes
 import os
+import re
 from datetime import timezone
 from pathlib import Path
 
@@ -28,17 +29,34 @@ class SubstackError(RuntimeError):
     pass
 
 
+MENTION = re.compile(r"@\[([^\]]+)\]\((\d+)\)")   # @[Steve Rattner](1658881)
+
+
+def _inline(line):
+    """Text with @[Name](user_id) mentions -> ProseMirror inline nodes."""
+    out, pos = [], 0
+    for m in MENTION.finditer(line):
+        if m.start() > pos:
+            out.append({"type": "text", "text": line[pos:m.start()]})
+        out.append({"type": "substack_mention",
+                    "attrs": {"mentionType": "user", "label": m.group(1), "id": int(m.group(2))}})
+        pos = m.end()
+    if pos < len(line):
+        out.append({"type": "text", "text": line[pos:]})
+    return out
+
+
 def to_body_json(text: str) -> dict:
     """Plain text -> Substack's ProseMirror doc. Blank lines split paragraphs,
-    single newlines become hard breaks (so stat 'ladders' keep their shape)."""
+    single newlines become hard breaks (so stat 'ladders' keep their shape).
+    @[Name](user_id) becomes a real Substack @mention (credits and notifies them)."""
     paras = []
     for block in text.strip().split("\n\n"):
         content = []
         for j, line in enumerate(block.split("\n")):
             if j:
                 content.append({"type": "hard_break"})
-            if line:
-                content.append({"type": "text", "text": line})
+            content += _inline(line)
         paras.append({"type": "paragraph", "content": content})
     return {"type": "doc", "attrs": {"schemaVersion": "v1"}, "content": paras}
 

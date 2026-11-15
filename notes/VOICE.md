@@ -41,13 +41,44 @@ Derek Thompson mostly shares post cards and those underperform his own averages.
 - Emoji rarely (🤷 🤦🏻), never more than one, never at the start.
 - Tags people/outlets with @ sometimes; never hashtags.
 
+## Learned from Jeremy's own edits (Nov 2026, highest priority)
+
+Jeremy rewrote nine notes in the first batch. What he changed:
+
+- **No colons in sentences.** "Mississippi: 24.6%. DC: 24.5%." becomes a sentence. "Earlier this week: X" becomes
+  "at the same time that X". The only exception is the stat ladder (`1989: 22.8%` on its own lines), which is his format.
+- **Rarely "you".** Use Americans, households, families, people, workers, renters. ("How you define a problem" →
+  "How a problem gets defined".)
+- **Join the contrast into one flowing sentence** instead of staccato fragments. He replaced
+  "Corporate profits ... record. / Earlier this week: workers' share ... record low. / Same economy." with
+  "Corporate profits are now a bigger share of the economy than at any point on record at the same time that
+  workers' share of those gains just hit a record low."
+- **Cut the zinger, keep the stakes.** He deleted punchy kickers and political jabs ("Same economy.",
+  "The bill keeps shifting to paychecks.", "Inflation hits hardest at the bottom...", "it compounds every month")
+  and, where he added anything, it was what the number means for a real family ("the difference between a
+  secure household and living in a shelter"; prices that "show up for families right around the holidays").
+- **Let the stat stand alone when it's strong.** The corporate-tax note became just the two numbers.
+- **Drop setup lines.** "Same median-priced new home. Same 20% down." was cut; he went straight to the numbers.
+- **Ground claims in a source or document** ("When you look at old HUD documents...").
+
+## Reshares (others' charts + Jeremy's take)
+
+- Run `python3 aiq_notes/peers.py` to rank recent image notes from Rattner, Derek Thompson, Aziz Sunderji,
+  Our World in Data, Max Roser, Hannah Ritchie, Krugman by engagement per hour. Add others to `WATCH` freely.
+- Pick charts on Jeremy's beat (inequality, housing, wages, health, education, place). 2-4 a week.
+- Credit with a real Substack mention, written `@[Steve Rattner](1658881)` in the note text (the poster turns it
+  into a mention, which also notifies them). Say it plainly ("in this chart from", "Great map from").
+- Add Jeremy's view in one or two sentences tying it to his own data or that week's notes. Don't restate the chart.
+- Use their image as-is (it carries their branding and source); never alter or crop out their credit.
+- Twitter/X and LinkedIn aren't reachable from the content sessions yet; Substack notes are.
+
 ## Never (these read as AI)
 
 - Em dashes. Use a period or a comma.
 - "Here's the thing," "Let that sink in," "This is huge," "The reality is," "It's worth noting," "In today's economy."
 - "It's not X, it's Y." / "Not just X, but Y."
 - Three-item lists in every note. Rhetorical triplets as a habit.
-- Colons used for drama ("The result: ..."), more than one per note.
+- Colons in sentences at all (see Jeremy's edits above). Ladders are the only exception.
 - Opening with a question unless the whole note is the question.
 - Summarizing the chart's title back in the text word for word.
 - Wrap-up morals ("We have to do better." "The data is clear.").

@@ -1,5 +1,8 @@
 """Batch: Mon Nov 16 - Sun Nov 29, 2026 (42 notes).
 
+NOTE: calendar/2026-11-16.json was edited after generation (Jeremy's rewrites, voice
+fixes, three reshares). Re-running this script would overwrite those edits.
+
 Run:  python3 batches/b2026_11_16.py
 Writes charts to charts/2026-11-16/ and the calendar to calendar/2026-11-16.json.
 """
