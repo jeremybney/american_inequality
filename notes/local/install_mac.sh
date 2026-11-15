@@ -18,7 +18,7 @@ fi
 
 echo "2/5  Installing Python packages"
 python3 -m venv "$DIR/.venv"
-"$DIR/.venv/bin/pip" install -q --upgrade pip requests
+"$DIR/.venv/bin/pip" install -q --upgrade pip requests "urllib3<2"
 
 echo "3/5  Saving your Substack cookie in the macOS Keychain"
 echo "     Paste the value of the substack.sid cookie and press Return (it won't show):"
@@ -31,13 +31,11 @@ unset SID
 echo "4/5  Checking the login and a test upload (nothing gets published)"
 export SUBSTACK_SID="$(security find-generic-password -a "$USER" -s aiq-substack-sid -w)"
 cd "$DIR/notes"
-if ! "$DIR/.venv/bin/python" post_due.py --verify; then
-  echo; echo "Login check failed. Nothing was installed. Send Claude the error above."; exit 1
-fi
-"$DIR/.venv/bin/python" post_due.py --test-upload || { echo; echo "Upload test failed. Send Claude the error above."; exit 1; }
+"$DIR/.venv/bin/python" post_due.py --verify 2>/dev/null || echo "     (profile lookup skipped; the upload test below is the real login check)"
+"$DIR/.venv/bin/python" post_due.py --test-upload || { echo; echo "Upload test failed, so the login isn't working. Nothing was installed. Send Claude the error above."; exit 1; }
 unset SUBSTACK_SID
 
-echo "5/5  Scheduling the poster to check every 10 minutes"
+echo "5/5  Setting up the background job (runs every 10 minutes while the Mac is awake)"
 mkdir -p "$HOME/Library/LaunchAgents" "$DIR/logs"
 cat > "$PLIST" <<PL
 <?xml version="1.0" encoding="UTF-8"?>
@@ -55,7 +53,8 @@ launchctl unload "$PLIST" 2>/dev/null || true
 launchctl load "$PLIST"
 
 echo
-echo "Done. Notes will post on schedule while this Mac is awake."
+echo "Done. Whenever this Mac is awake it queues the next 48 hours of notes in Substack,"
+echo "and Substack publishes them on time even if the Mac is asleep or closed."
 echo "Log:        $DIR/logs/poster.log"
 echo "Stop:       launchctl unload $PLIST"
 echo "New cookie: bash $DIR/notes/local/install_mac.sh   (just run it again)"

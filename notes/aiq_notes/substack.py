@@ -14,6 +14,7 @@ from __future__ import annotations
 import base64
 import mimetypes
 import os
+from datetime import timezone
 from pathlib import Path
 
 import requests
@@ -101,13 +102,23 @@ class Client:
             raise SubstackError(f"attachment returned no id: {j}")
         return j["id"]
 
-    def post_note(self, text: str, image: str | None = None) -> dict:
-        attachment_ids = []
-        if image:
-            attachment_ids.append(self.attach_image(self.upload_image(image)))
+    def _payload(self, text, image):
         payload = {"bodyJson": to_body_json(text), "tabId": "for-you", "surface": "feed",
                    "replyMinimumRole": "everyone"}
-        if attachment_ids:
-            payload["attachmentIds"] = attachment_ids
-        j = self._req("POST", "/comment/feed", json=payload)
+        if image:
+            payload["attachmentIds"] = [self.attach_image(self.upload_image(image))]
+        return payload
+
+    def post_note(self, text: str, image: str | None = None) -> dict:
+        """Publish a note right now."""
+        j = self._req("POST", "/comment/feed", json=self._payload(text, image))
         return {"note_id": j.get("id"), "raw_keys": sorted(j.keys())[:20]}
+
+    def schedule_note(self, text: str, image: str | None, when) -> dict:
+        """Hand a note to Substack's own scheduler (same call the web app makes:
+        POST /comment/draft with trigger_at in UTC). Substack publishes it at `when`
+        whether or not this computer is on."""
+        payload = self._payload(text, image)
+        payload["trigger_at"] = when.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+        j = self._req("POST", "/comment/draft", json=payload)
+        return {"draft_id": j.get("id"), "trigger_at": payload["trigger_at"], "raw_keys": sorted(j.keys())[:20]}

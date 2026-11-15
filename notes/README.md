@@ -9,7 +9,7 @@ charts/       rendered PNGs (1700px, Big 5 house style)
 existing/     Jeremy's best-performing published charts (reused sparingly; see VOICE.md)
 calendar/     the planned notes (JSON); mirrored into the Google Sheet for review
 aiq_notes/    charts.py (house style) · fred.py · acs.py · schedule.py · substack.py
-post_due.py   posts whatever is due (runs on Jeremy's Mac every 10 min; see local/README.md)
+post_due.py   queues the next 48h of notes in Substack's native scheduler (runs on Jeremy's Mac; see local/README.md)
 local/        Mac installer + runner (Substack's Cloudflare check blocks cloud servers)
 learn.py      weekly: re-reads engagement, retunes posting windows, writes data/performance.md
 VOICE.md      voice rules + what the engagement data says works
@@ -24,7 +24,7 @@ The Google Sheet is the calendar. Edit any of these and the poster uses your ver
 | Column | What you can do |
 |---|---|
 | Post at (ET) | Move a note. Format `2026-11-16 07:04`. |
-| Status | `Scheduled` posts on time. `Approved` is the same, just a marker that you've looked. `Hold` or `Skip` never posts. |
+| Status | `Scheduled` posts on time (edits count until it's queued in Substack, ~48h ahead). `Approved` is the same, just a marker that you've looked. `Hold` or `Skip` never posts. |
 | Note text | Rewrite freely. Blank line = new paragraph, single line break = line break. |
 | Chart file | Swap the image: another path in this repo, or any public image URL. |
 
