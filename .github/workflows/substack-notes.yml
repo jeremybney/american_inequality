@@ -1,8 +1,9 @@
 name: Substack Notes
 
 on:
+  # Posting runs on Jeremy's Mac (notes/local/): Substack's Cloudflare check blocks
+  # cloud servers. GitHub only re-learns the posting windows and runs manual checks.
   schedule:
-    - cron: "7,22,37,52 * * * *"   # post anything due (times live in the calendar, not here)
     - cron: "41 8 * * 1"           # Mondays: re-learn posting windows from engagement
   workflow_dispatch:
     inputs:
@@ -34,14 +35,8 @@ jobs:
           python-version: "3.12"
       - run: pip install -q requests
 
-      - name: Post due notes
-        if: github.event_name == 'schedule' && github.event.schedule != '41 8 * * 1'
-        env:
-          SUBSTACK_SID: ${{ secrets.SUBSTACK_SID }}
-        run: python post_due.py
-
       - name: Re-learn posting windows
-        if: (github.event_name == 'schedule' && github.event.schedule == '41 8 * * 1') || inputs.action == 'learn'
+        if: github.event_name == 'schedule' || inputs.action == 'learn'
         run: python learn.py
 
       - name: Manual action

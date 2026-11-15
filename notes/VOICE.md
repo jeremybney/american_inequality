@@ -62,8 +62,12 @@ Derek Thompson mostly shares post cards and those underperform his own averages.
 - The headline is the takeaway ("The minimum wage is worth the least since 1949"), never a label ("Real minimum wage").
 - Always a source line and "Chart: Jeremy Ney | americaninequality.substack.com".
 - Big-stat card when one number carries it (aiq_notes/charts.big_stat).
-- Reuse Jeremy's published charts (existing/) when news makes one newly relevant. Note text must match
-  what that chart actually shows.
+- **Mostly net new.** Jeremy's readers have seen his archive. At least ~85% of each week's visuals are new:
+  fresh data releases, news, and charts rebuilt from other people's published data (credited in the source line).
+- Reuse one of Jeremy's own charts only if it came from a top performer (his best articles by likes/restacks:
+  philanthropy, generational wealth, disability/Ivy League, real estate & schools, stealth tax, homeless data,
+  blue-state billionaires; or a note that scored in his top 20) AND today's news makes it relevant again.
+  At most 3 a week. Note text must match what that chart actually shows.
 
 ## Fact rules
 

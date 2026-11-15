@@ -52,6 +52,11 @@ class Client:
 
     def _req(self, method, path, **kw):
         r = self.s.request(method, BASE + path, timeout=60, **kw)
+        if "Just a moment" in r.text[:2000] or "cf-chl" in r.text[:5000]:
+            raise SubstackError(
+                f"{method} {path} -> {r.status_code}: blocked by Substack's Cloudflare bot check before "
+                "login was checked. This happens from cloud servers (e.g. GitHub Actions). "
+                "Run the poster from your own computer instead (see notes/local/README.md).")
         if r.status_code >= 400:
             raise SubstackError(f"{method} {path} -> {r.status_code}: {r.text[:300]}")
         return r.json() if r.content else {}
@@ -59,14 +64,19 @@ class Client:
     # -- auth check -------------------------------------------------------
     def whoami(self):
         """Returns the logged-in user's id/handle, or raises."""
+        tried = []
         for path in ("/user/profile/self", "/subscriber/self", "/user/self"):
             try:
                 j = self._req("GET", path)
                 if isinstance(j, dict) and (j.get("id") or j.get("user_id")):
                     return {"id": j.get("id") or j.get("user_id"), "handle": j.get("handle"), "via": path}
-            except SubstackError:
-                continue
-        raise SubstackError("Could not confirm login. Is SUBSTACK_SID current?")
+                tried.append(f"{path}: no id in response")
+            except SubstackError as e:
+                if "Cloudflare" in str(e):
+                    raise
+                tried.append(str(e)[:160])
+        raise SubstackError("Could not confirm login (cookie expired or copied incorrectly?). Tried:\n  "
+                            + "\n  ".join(tried))
 
     # -- posting ------------------------------------------------------------
     def upload_image(self, path_or_url: str) -> str:

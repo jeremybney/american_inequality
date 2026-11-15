@@ -20,6 +20,7 @@ from aiq_notes import charts as C
 from aiq_notes.acs import load_state
 from aiq_notes.fred import series as S
 from aiq_notes.schedule import pick_time, ET
+from aiq_notes import batch_nov16_new as NEW
 
 BATCH = "2026-11-16"
 START = date(2026, 11, 16)
@@ -242,23 +243,16 @@ def build():
         bw=ch_black_white(), ppi=ch_ppi(), grocery=ch_grocery(), mortgage=ch_mortgage(),
         productivity=ch_productivity(), saving=ch_saving(), edu=ch_edu_unemp(),
         gini=gini, gini_bars=gini_bars, rent_map=rent_map, severe=severe,
-        # Jeremy's previously published charts
-        renters=existing("renters_210", "big5_renters_left_over.png"),
-        aca=existing("aca_enrollment", "big5_aca_enrollment.png"),
-        naep=existing("naep_math", "big5_naep_math.png"),
-        chetty=existing("chetty_coin_flip", "big5_chetty_coin_flip.png"),
-        grads=existing("grad_unemployment", "big5_grad_unemployment.png"),
+        electricity=NEW.electricity(P), credit=NEW.credit_cards(P), childpov=NEW.child_poverty(P),
+        valinc=NEW.value_income(P), rentwage=NEW.rent_wages(P), corptax=NEW.corp_tax(P),
+        income=NEW.median_income(P), kids=NEW.kids_uninsured(P), snapmap=NEW.snap_map(P),
+        rentjump=NEW.rent_jumps(P), gas=NEW.gas(P), povrace=NEW.poverty_race(P),
+        # Jeremy's previously published charts: only his best performers
+        # (top articles by likes/restacks) and only where today's news makes them new again
         insurance=existing("insurance_71", "stealth_insurance_premiums_map.webp"),
-        lifeexp=existing("life_expectancy_map", "life_expectancy_county_map.png"),
-        boomers=existing("boomers_homes", "boomers_buy_2_of_5_homes.png"),
-        drink=existing("excessive_drinking_map", "alcohol_excessive_drinking_map.png"),
         billmap=existing("billionaires_blue_states", "billionaires_blue_states_map.png"),
-        citizens=existing("citizens_united", "billionaire_election_spending.png"),
-        millionaires=existing("millionaires", "millionaires_by_country.png"),
         homeless=existing("homelessness_trend", "homelessness_trend.png"),
-        er=existing("er_use", "er_use_by_country.png"),
         giving=existing("affluent_giving", "affluent_giving.png"),
-        donations=existing("donation_sources", "individual_donations_share.png"),
     )
     st = dict(
         snap=C.big_stat(P("stat_snap"), "6.3M", "Americans who would lose SNAP under the USDA's new rule",
@@ -311,13 +305,11 @@ Workers' share of the economy just hit the lowest level ever recorded.
 
 BLS has tracked this since 1947. It has never been lower than it is right now.""",
         "New BLS productivity release (Q3 2026) shows labor share at a record low.", "new chart: BLS")
-    add("Housing", ch["renters"], """
-If you rent and make under $30,000, here's what was left each month after rent and utilities in 2024:
+    add("Incomes", ch["electricity"], """
+Electricity prices are up 43% since January 2021. Prices overall are up 28.5%.
 
-$210.
-
-That's for food, gas, childcare, everything. In 2019 it was $410.""",
-        "Evergreen Big 5 stat; strongest housing chart from the last article.", "my chart: Big 5")
+Lower-income families spend a much bigger share of their budget on utilities, so they feel this first. With data centers pulling more power every month, I don't see it slowing down.""",
+        "Oct CPI; winter utility bills; data-center power demand in the news.", "new chart: BLS")
     add("Incomes", ch["billmap"], """
 California just voted down a billionaire tax after tech spent $425 million to kill it.
 
@@ -338,11 +330,11 @@ The entire bottom half of the country owns 2.3%.
 
 1% of households have 14 times the wealth of 50% of households.""",
         "Fed DFA Q2 2026 shows record top-1% share.", "new chart: Federal Reserve")
-    add("Education", ch["chetty"], """
-92% of kids born in 1940 grew up to out-earn their parents. For kids born in 1980, it was a coin flip.
+    add("Incomes", ch["credit"], """
+Americans now owe a record $1.1 trillion on their credit cards. The average interest rate is 21%.
 
-The part that gets lost: faster growth alone only closes 29% of that gap. Sharing growth the way we did in the 1940s closes 71%.""",
-        "Evergreen; frames the 'growth vs. distribution' debate post-election.", "my chart: Big 5")
+Carrying a balance at 21% is one of the most expensive ways to be broke in America.""",
+        "Fed H.8 weekly data (Nov 4) shows a new record; Fed hike expected in December.", "new chart: Federal Reserve")
     # Wed Nov 18
     add("Incomes", ch["gini"], """
 New York is now the most unequal state in America, per new Census data. Then DC, Connecticut, Louisiana and California.
@@ -351,13 +343,11 @@ The most equal state? Utah.
 
 A lot of deep blue on the unequal end of this map. Something to sit with now that Democrats run Congress.""",
         "ACS 2025 1-year estimates just released.", "new map: Census ACS")
-    add("Education", ch["naep"], """
-13-year-olds gained 21 points in math between 1978 and 2012.
+    add("Incomes", ch["childpov"], """
+In Louisiana, 25% of kids live below the poverty line. Mississippi: 24.6%. DC: 24.5%.
 
-They've since lost 15 of them.
-
-It took 34 years to build those gains and 13 to give most of them back.""",
-        "Evergreen education chart; pairs with school-funding debates.", "my chart: Big 5")
+Nationally it's 14.8%. In the richest country in the world.""",
+        "ACS 2025 1-year estimates.", "new map: Census ACS")
     add("Employment", ch["minwage"], """
 Democrats just won the House and the Senate. Here's where I'd start.
 
@@ -389,11 +379,13 @@ The typical first-time homebuyer in America is now 40 years old. In 1981 it was 
 
 And a record share of first-time buyers paid all cash this year. That money isn't coming from paychecks. It's coming from parents.""",
         "NAR Profile of Home Buyers and Sellers (Nov 5).", "big stat: NAR")
-    add("Housing", ch["boomers"], """
-Boomers bought 2 out of every 5 homes in America last year.
+    add("Housing", ch["valinc"], """
+In Hawaii, the typical home costs 8.6 times the typical household income. California: 7.5x.
 
-Gen Z bought 3%.""",
-        "Follows the NAR first-time buyer news.", "my chart: generational wealth")
+West Virginia: 2.9x.
+
+The old rule of thumb was a home should cost about 3 years of income. Most of the country left that behind a long time ago.""",
+        "Follows the NAR first-time buyer news; ACS 2025.", "new chart: Census ACS")
     add("Housing", ch["severe"], """
 11.4 million renter households now spend more than half their income on rent.
 
@@ -413,22 +405,17 @@ Earlier this week: workers' share just hit a record low.
 
 Same economy.""",
         "BEA Q2 data; callback to Monday's labor share note.", "new chart: BEA")
-    add("Healthcare", ch["er"], """
-16% of American adults went to the ER for something a regular doctor could have handled, or because they didn't have a regular doctor.
+    add("Housing", ch["rentwage"], """
+Since 2006, rent is up 103%. Hourly pay is up 90%.
 
-Netherlands: 5%. Germany: 7%.
-
-The ER is the most expensive primary care office in the world.""",
-        "Weekend evening, lighter evergreen health chart.", "my chart: ER piece")
+That gap doesn't sound huge until you remember it compounds every month for 20 years.""",
+        "Weekend evening; Oct CPI and jobs data.", "new chart: BLS")
     # Sun Nov 22
-    add("Incomes", ch["citizens"], """
-Billionaire spending in presidential elections:
+    add("Incomes", ch["corptax"], """
+In the early 1950s, corporate income taxes made up about a third of federal tax revenue. Today it's 14%.
 
-2008: $16 million
-2024: $2.6 billion
-
-Citizens United came in between. California just watched tech spend $425 million to beat one ballot measure.""",
-        "Prop 40 aftermath.", "my chart: billionaires")
+And California voters just rejected a billionaire tax too. The bill keeps shifting to paychecks.""",
+        "Prop 40 aftermath; BEA Q2 data.", "new chart: BEA")
     add("Incomes", ch["ppi"], """
 Wholesale prices are up 6.5% from a year ago, the fastest pace since 2022.
 
@@ -436,19 +423,19 @@ That's what businesses pay. It shows up on store shelves a few months later, rig
 
 Inflation hits hardest at the bottom, where families spend nearly everything they make.""",
         "PPI release (Nov 13); Fed signaling a December hike.", "new chart: BLS")
-    add("Employment", ch["grads"], """
-Recent college grads have had higher unemployment than the average worker every year since 2019. Longest stretch on record.
+    add("Incomes", ch["income"], """
+Some actual good news: real median household income hit a record $87,460 in 2025.
 
-For 30 years a degree was the safest bet in the labor market. That's changing fast.""",
-        "Jobs report coverage on struggling grads (Nov 9).", "my chart: Big 5")
+Now put it next to the other record from this week. The top 1% hold 32.5% of all wealth.
+
+Both are true at the same time.""",
+        "Census income data; balances the record-inequality notes earlier in the week.", "new chart: Census")
     # Mon Nov 23
-    add("Healthcare", ch["aca"], """
-ACA open enrollment ends January 15.
+    add("Healthcare", ch["kids"], """
+4.6 million kids in America have no health insurance. In Texas it's 1 in 8.
 
-Last year, after the enhanced subsidies expired, people paid 114% more on average to keep the same plan. Enrollment fell 13%. About 3 million people.
-
-If you're on the marketplace, shop around this year. Seriously.""",
-        "2027 ACA open enrollment is underway.", "my chart: Big 5")
+Most uninsured kids already qualify for Medicaid or CHIP. Their families just aren't enrolled. Open enrollment runs through January 15.""",
+        "2027 ACA open enrollment; ACS 2025 shows uninsured kids rising in 32 states.", "new map: Census ACS")
     add("Housing", st["burdened"], """
 Half of all renters in America are now cost burdened. 22.5 million households, per new Census data.
 
@@ -463,13 +450,13 @@ Today: $2,117
 $830 more every month, and prices barely came down.""",
         "Mortgage rates back above 7%; Fed hike expected.", "new chart: Census/HUD + Freddie Mac")
     # Tue Nov 24
-    add("Incomes", ch["millionaires"], """
-America has 23.6 million millionaires. 6.9% of the population.
+    add("Incomes", ch["snapmap"], """
+Two days before Thanksgiving, here's who relies on SNAP right now.
 
-We added roughly 1,200 new millionaires a day in 2025.
+15.4 million households got food assistance in 2025. In New Mexico it's nearly 1 in 5. In Oregon, West Virginia and New York, about 1 in 6.
 
-China has the second most millionaires in the world. That's 0.38% of its population.""",
-        "Wealth-tax debate after Prop 40.", "my chart: billionaires piece")
+The USDA wants to cut 6.3 million people from the program.""",
+        "Thanksgiving week; USDA proposed SNAP rule (Nov 10).", "new map: Census ACS")
     add("Education", st["homeless_kids"], """
 Public schools counted 1.5 million homeless students. HUD's count of homeless kids: about 134,000.
 
@@ -477,19 +464,19 @@ That's an 11x gap. HUD doesn't count families doubled up with relatives or sleep
 
 How you define a problem decides how big it looks.""",
         "HUD's 'record drop' announcement; follow-up to Thursday's note.", "big stat: Ed + HUD")
-    add("Incomes", ch["donations"], """
-In 1984, individuals gave 80% of all charitable dollars in America. By 2024 it was 66%.
+    add("Housing", ch["rentjump"], """
+The biggest rent increases last year weren't in New York or California.
 
-Foundations picked up the slack. So more of our giving now runs through a few wealthy people's priorities, and less through everyone else's.""",
-        "Giving Tuesday is Dec 1; Thanksgiving week.", "my chart: philanthropy")
+New Hampshire: +11.8%. Maine: +9.8%. South Carolina: +9.7%. Then the Dakotas and Wyoming.
+
+The national average was 4.7%. When everyone moves somewhere cheap, it stops being cheap.""",
+        "ACS 2025 vs 2024; Realtor.com rent-hike coverage (Nov 12).", "new chart: Census ACS")
     # Wed Nov 25
-    add("Healthcare", ch["drink"], """
-Tonight is one of the biggest drinking nights of the year.
+    add("Incomes", ch["gas"], """
+Driving to Thanksgiving? Gas is averaging $4.00 a gallon. A year ago it was $3.06.
 
-How much people drink depends a lot on where they live. Cross from Lincoln County, Nevada into Washington County, Utah and the excessive drinking rate drops by half, from 24% to 12%.
-
-State laws matter.""",
-        "Thanksgiving Eve ('Blackout Wednesday').", "my chart: alcohol")
+That's a 31% jump, and it hits hardest for people who can't work from home.""",
+        "Thanksgiving travel day; EIA weekly prices.", "new chart: EIA")
     add("Incomes", ch["grocery"], """
 The Farm Bureau says Thanksgiving dinner got slightly cheaper this year. Good.
 
@@ -501,11 +488,11 @@ Groceries overall still cost 28% more than they did in January 2021. That's the 
 For everyone else it fell from 56% to 41%. That part isn't stinginess. Rent and groceries come first.""",
         "Thanksgiving / Giving Tuesday run-up.", "my chart: philanthropy")
     # Thu Nov 26 (Thanksgiving)
-    add("Healthcare", ch["lifeexp"], """
+    add("Incomes", ch["povrace"], """
 Happy Thanksgiving. It's also Native American Heritage Month.
 
-When I mapped life expectancy by county, four of the five counties where people die youngest were majority Native American. In Oglala Lakota County, South Dakota, it was 66.8 years.""",
-        "Thanksgiving + Native American Heritage Month.", "my map: life expectancy")
+18.1% of American Indian and Alaska Native people live below the poverty line, per new Census data. Black Americans: 19.9%. White Americans: 9.4%.""",
+        "Thanksgiving + Native American Heritage Month; ACS 2025.", "new chart: Census ACS")
     add("Employment", st["tipped"], """
 If you're eating out today, the federal minimum wage for your server is $2.13 an hour.
 

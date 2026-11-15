@@ -19,11 +19,11 @@
   "time_et": "11:57 AM",
   "block": "midday",
   "status": "Scheduled",
-  "pillar": "Housing",
-  "text": "If you rent and make under $30,000, here's what was left each month after rent and utilities in 2024:\n\n$210.\n\nThat's for food, gas, childcare, everything. In 2019 it was $410.",
-  "chart": "charts/2026-11-16/renters_210.png",
-  "why_now": "Evergreen Big 5 stat; strongest housing chart from the last article.",
-  "source_kind": "my chart: Big 5"
+  "pillar": "Incomes",
+  "text": "Electricity prices are up 43% since January 2021. Prices overall are up 28.5%.\n\nLower-income families spend a much bigger share of their budget on utilities, so they feel this first. With data centers pulling more power every month, I don't see it slowing down.",
+  "chart": "charts/2026-11-16/electricity.png",
+  "why_now": "Oct CPI; winter utility bills; data-center power demand in the news.",
+  "source_kind": "new chart: BLS"
  },
  {
   "id": "20261116-3",
@@ -71,11 +71,11 @@
   "time_et": "6:41 PM",
   "block": "afternoon",
   "status": "Scheduled",
-  "pillar": "Education",
-  "text": "92% of kids born in 1940 grew up to out-earn their parents. For kids born in 1980, it was a coin flip.\n\nThe part that gets lost: faster growth alone only closes 29% of that gap. Sharing growth the way we did in the 1940s closes 71%.",
-  "chart": "charts/2026-11-16/chetty_coin_flip.png",
-  "why_now": "Evergreen; frames the 'growth vs. distribution' debate post-election.",
-  "source_kind": "my chart: Big 5"
+  "pillar": "Incomes",
+  "text": "Americans now owe a record $1.1 trillion on their credit cards. The average interest rate is 21%.\n\nCarrying a balance at 21% is one of the most expensive ways to be broke in America.",
+  "chart": "charts/2026-11-16/credit_card_debt.png",
+  "why_now": "Fed H.8 weekly data (Nov 4) shows a new record; Fed hike expected in December.",
+  "source_kind": "new chart: Federal Reserve"
  },
  {
   "id": "20261118-1",
@@ -97,11 +97,11 @@
   "time_et": "12:12 PM",
   "block": "midday",
   "status": "Scheduled",
-  "pillar": "Education",
-  "text": "13-year-olds gained 21 points in math between 1978 and 2012.\n\nThey've since lost 15 of them.\n\nIt took 34 years to build those gains and 13 to give most of them back.",
-  "chart": "charts/2026-11-16/naep_math.png",
-  "why_now": "Evergreen education chart; pairs with school-funding debates.",
-  "source_kind": "my chart: Big 5"
+  "pillar": "Incomes",
+  "text": "In Louisiana, 25% of kids live below the poverty line. Mississippi: 24.6%. DC: 24.5%.\n\nNationally it's 14.8%. In the richest country in the world.",
+  "chart": "charts/2026-11-16/child_poverty_map.png",
+  "why_now": "ACS 2025 1-year estimates.",
+  "source_kind": "new map: Census ACS"
  },
  {
   "id": "20261118-3",
@@ -176,10 +176,10 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "Boomers bought 2 out of every 5 homes in America last year.\n\nGen Z bought 3%.",
-  "chart": "charts/2026-11-16/boomers_homes.png",
-  "why_now": "Follows the NAR first-time buyer news.",
-  "source_kind": "my chart: generational wealth"
+  "text": "In Hawaii, the typical home costs 8.6 times the typical household income. California: 7.5x.\n\nWest Virginia: 2.9x.\n\nThe old rule of thumb was a home should cost about 3 years of income. Most of the country left that behind a long time ago.",
+  "chart": "charts/2026-11-16/home_value_income.png",
+  "why_now": "Follows the NAR first-time buyer news; ACS 2025.",
+  "source_kind": "new chart: Census ACS"
  },
  {
   "id": "20261120-3",
@@ -227,11 +227,11 @@
   "time_et": "7:38 PM",
   "block": "evening",
   "status": "Scheduled",
-  "pillar": "Healthcare",
-  "text": "16% of American adults went to the ER for something a regular doctor could have handled, or because they didn't have a regular doctor.\n\nNetherlands: 5%. Germany: 7%.\n\nThe ER is the most expensive primary care office in the world.",
-  "chart": "charts/2026-11-16/er_use.png",
-  "why_now": "Weekend evening, lighter evergreen health chart.",
-  "source_kind": "my chart: ER piece"
+  "pillar": "Housing",
+  "text": "Since 2006, rent is up 103%. Hourly pay is up 90%.\n\nThat gap doesn't sound huge until you remember it compounds every month for 20 years.",
+  "chart": "charts/2026-11-16/rent_vs_wages.png",
+  "why_now": "Weekend evening; Oct CPI and jobs data.",
+  "source_kind": "new chart: BLS"
  },
  {
   "id": "20261122-1",
@@ -241,10 +241,10 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Incomes",
-  "text": "Billionaire spending in presidential elections:\n\n2008: $16 million\n2024: $2.6 billion\n\nCitizens United came in between. California just watched tech spend $425 million to beat one ballot measure.",
-  "chart": "charts/2026-11-16/citizens_united.png",
-  "why_now": "Prop 40 aftermath.",
-  "source_kind": "my chart: billionaires"
+  "text": "In the early 1950s, corporate income taxes made up about a third of federal tax revenue. Today it's 14%.\n\nAnd California voters just rejected a billionaire tax too. The bill keeps shifting to paychecks.",
+  "chart": "charts/2026-11-16/corporate_tax_share.png",
+  "why_now": "Prop 40 aftermath; BEA Q2 data.",
+  "source_kind": "new chart: BEA"
  },
  {
   "id": "20261122-2",
@@ -266,11 +266,11 @@
   "time_et": "8:56 PM",
   "block": "evening",
   "status": "Scheduled",
-  "pillar": "Employment",
-  "text": "Recent college grads have had higher unemployment than the average worker every year since 2019. Longest stretch on record.\n\nFor 30 years a degree was the safest bet in the labor market. That's changing fast.",
-  "chart": "charts/2026-11-16/grad_unemployment.png",
-  "why_now": "Jobs report coverage on struggling grads (Nov 9).",
-  "source_kind": "my chart: Big 5"
+  "pillar": "Incomes",
+  "text": "Some actual good news: real median household income hit a record $87,460 in 2025.\n\nNow put it next to the other record from this week. The top 1% hold 32.5% of all wealth.\n\nBoth are true at the same time.",
+  "chart": "charts/2026-11-16/median_income.png",
+  "why_now": "Census income data; balances the record-inequality notes earlier in the week.",
+  "source_kind": "new chart: Census"
  },
  {
   "id": "20261123-1",
@@ -280,10 +280,10 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Healthcare",
-  "text": "ACA open enrollment ends January 15.\n\nLast year, after the enhanced subsidies expired, people paid 114% more on average to keep the same plan. Enrollment fell 13%. About 3 million people.\n\nIf you're on the marketplace, shop around this year. Seriously.",
-  "chart": "charts/2026-11-16/aca_enrollment.png",
-  "why_now": "2027 ACA open enrollment is underway.",
-  "source_kind": "my chart: Big 5"
+  "text": "4.6 million kids in America have no health insurance. In Texas it's 1 in 8.\n\nMost uninsured kids already qualify for Medicaid or CHIP. Their families just aren't enrolled. Open enrollment runs through January 15.",
+  "chart": "charts/2026-11-16/kids_uninsured_map.png",
+  "why_now": "2027 ACA open enrollment; ACS 2025 shows uninsured kids rising in 32 states.",
+  "source_kind": "new map: Census ACS"
  },
  {
   "id": "20261123-2",
@@ -319,10 +319,10 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Incomes",
-  "text": "America has 23.6 million millionaires. 6.9% of the population.\n\nWe added roughly 1,200 new millionaires a day in 2025.\n\nChina has the second most millionaires in the world. That's 0.38% of its population.",
-  "chart": "charts/2026-11-16/millionaires.png",
-  "why_now": "Wealth-tax debate after Prop 40.",
-  "source_kind": "my chart: billionaires piece"
+  "text": "Two days before Thanksgiving, here's who relies on SNAP right now.\n\n15.4 million households got food assistance in 2025. In New Mexico it's nearly 1 in 5. In Oregon, West Virginia and New York, about 1 in 6.\n\nThe USDA wants to cut 6.3 million people from the program.",
+  "chart": "charts/2026-11-16/snap_map.png",
+  "why_now": "Thanksgiving week; USDA proposed SNAP rule (Nov 10).",
+  "source_kind": "new map: Census ACS"
  },
  {
   "id": "20261124-2",
@@ -344,11 +344,11 @@
   "time_et": "6:37 PM",
   "block": "afternoon",
   "status": "Scheduled",
-  "pillar": "Incomes",
-  "text": "In 1984, individuals gave 80% of all charitable dollars in America. By 2024 it was 66%.\n\nFoundations picked up the slack. So more of our giving now runs through a few wealthy people's priorities, and less through everyone else's.",
-  "chart": "charts/2026-11-16/donation_sources.png",
-  "why_now": "Giving Tuesday is Dec 1; Thanksgiving week.",
-  "source_kind": "my chart: philanthropy"
+  "pillar": "Housing",
+  "text": "The biggest rent increases last year weren't in New York or California.\n\nNew Hampshire: +11.8%. Maine: +9.8%. South Carolina: +9.7%. Then the Dakotas and Wyoming.\n\nThe national average was 4.7%. When everyone moves somewhere cheap, it stops being cheap.",
+  "chart": "charts/2026-11-16/rent_jumps.png",
+  "why_now": "ACS 2025 vs 2024; Realtor.com rent-hike coverage (Nov 12).",
+  "source_kind": "new chart: Census ACS"
  },
  {
   "id": "20261125-1",
@@ -357,11 +357,11 @@
   "time_et": "7:36 AM",
   "block": "morning",
   "status": "Scheduled",
-  "pillar": "Healthcare",
-  "text": "Tonight is one of the biggest drinking nights of the year.\n\nHow much people drink depends a lot on where they live. Cross from Lincoln County, Nevada into Washington County, Utah and the excessive drinking rate drops by half, from 24% to 12%.\n\nState laws matter.",
-  "chart": "charts/2026-11-16/excessive_drinking_map.png",
-  "why_now": "Thanksgiving Eve ('Blackout Wednesday').",
-  "source_kind": "my chart: alcohol"
+  "pillar": "Incomes",
+  "text": "Driving to Thanksgiving? Gas is averaging $4.00 a gallon. A year ago it was $3.06.\n\nThat's a 31% jump, and it hits hardest for people who can't work from home.",
+  "chart": "charts/2026-11-16/gas_prices.png",
+  "why_now": "Thanksgiving travel day; EIA weekly prices.",
+  "source_kind": "new chart: EIA"
  },
  {
   "id": "20261125-2",
@@ -396,11 +396,11 @@
   "time_et": "6:59 AM",
   "block": "morning",
   "status": "Scheduled",
-  "pillar": "Healthcare",
-  "text": "Happy Thanksgiving. It's also Native American Heritage Month.\n\nWhen I mapped life expectancy by county, four of the five counties where people die youngest were majority Native American. In Oglala Lakota County, South Dakota, it was 66.8 years.",
-  "chart": "charts/2026-11-16/life_expectancy_map.png",
-  "why_now": "Thanksgiving + Native American Heritage Month.",
-  "source_kind": "my map: life expectancy"
+  "pillar": "Incomes",
+  "text": "Happy Thanksgiving. It's also Native American Heritage Month.\n\n18.1% of American Indian and Alaska Native people live below the poverty line, per new Census data. Black Americans: 19.9%. White Americans: 9.4%.",
+  "chart": "charts/2026-11-16/poverty_by_race.png",
+  "why_now": "Thanksgiving + Native American Heritage Month; ACS 2025.",
+  "source_kind": "new chart: Census ACS"
  },
  {
   "id": "20261126-2",
