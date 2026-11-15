@@ -1,0 +1,64 @@
+name: Substack Notes
+
+on:
+  schedule:
+    - cron: "7,22,37,52 * * * *"   # post anything due (times live in the calendar, not here)
+    - cron: "41 8 * * 1"           # Mondays: re-learn posting windows from engagement
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "verify | dry-run | post-now | learn"
+        required: true
+        default: dry-run
+      note_id:
+        description: "Calendar ID for post-now (e.g. 20261116-1)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: substack-notes
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: notes
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests
+
+      - name: Post due notes
+        if: github.event_name == 'schedule' && github.event.schedule != '41 8 * * 1'
+        env:
+          SUBSTACK_SID: ${{ secrets.SUBSTACK_SID }}
+        run: python post_due.py
+
+      - name: Re-learn posting windows
+        if: (github.event_name == 'schedule' && github.event.schedule == '41 8 * * 1') || inputs.action == 'learn'
+        run: python learn.py
+
+      - name: Manual action
+        if: github.event_name == 'workflow_dispatch' && inputs.action != 'learn'
+        env:
+          SUBSTACK_SID: ${{ secrets.SUBSTACK_SID }}
+        run: |
+          case "${{ inputs.action }}" in
+            verify)   python post_due.py --verify ;;
+            dry-run)  python post_due.py --dry-run ;;
+            post-now) python post_due.py --now "${{ inputs.note_id }}" ;;
+            *) echo "unknown action"; exit 1 ;;
+          esac
+
+      - name: Save state
+        run: |
+          git config user.name "notes-bot"
+          git config user.email "notes-bot@users.noreply.github.com"
+          git add state data/timing_model.json data/performance.md 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "notes: update state" && git push)
