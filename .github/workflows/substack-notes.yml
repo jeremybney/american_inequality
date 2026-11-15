@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "verify | dry-run | post-now | learn"
+        description: "verify | dry-run | test-upload | post-now | learn"
         required: true
         default: dry-run
       note_id:
@@ -52,6 +52,7 @@ jobs:
           case "${{ inputs.action }}" in
             verify)   python post_due.py --verify ;;
             dry-run)  python post_due.py --dry-run ;;
+            test-upload) python post_due.py --test-upload ;;
             post-now) python post_due.py --now "${{ inputs.note_id }}" ;;
             *) echo "unknown action"; exit 1 ;;
           esac

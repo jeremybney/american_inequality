@@ -17,6 +17,7 @@ Usage:
   python3 post_due.py --dry-run    # show what would post
   python3 post_due.py --verify     # check the Substack login only
   python3 post_due.py --now ID     # post one note immediately (manual test)
+  python3 post_due.py --test-upload  # upload a chart without publishing anything
 """
 import argparse
 import csv
@@ -138,10 +139,19 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--verify", action="store_true")
     ap.add_argument("--now", metavar="ID")
+    ap.add_argument("--test-upload", action="store_true",
+                    help="upload one chart and create an attachment, without publishing a note")
     a = ap.parse_args()
 
     if a.verify:
         print(Client().whoami())
+        return
+    if a.test_upload:
+        c = Client()
+        url = c.upload_image(str(ROOT / "charts" / "2026-11-16" / "labor_share.png"))
+        print("image uploaded:", url)
+        print("attachment id:", c.attach_image(url))
+        print("nothing was published")
         return
     if CONFIG.get("paused"):
         print("paused in config.json")
