@@ -15,19 +15,17 @@ From your own Mac, Substack sees your home connection and your own login, same a
 
 3. Paste the cookie when asked (it stays hidden) and press Return.
 
-The installer checks your login and does a test upload that publishes nothing. If either fails it
+The installer does a test image upload that publishes nothing (that's the login check). If either fails it
 stops, installs nothing, and prints an error to send to Claude.
 
 The cookie is stored in your macOS Keychain, not in a file or in GitHub.
 
-## Keep the Mac awake at post times
+## What happens when
 
-Posts go out while the Mac is awake. A note whose time passed while it was asleep still posts if the
-Mac wakes within 3 hours; after that it's skipped (never dumped all at once).
-
-- Desktop / laptop on power: System Settings → Battery (or Energy) → Options →
-  turn on "Prevent automatic sleeping on power adapter when the display is off".
-- Laptop lid closed = asleep. Leave it open or plugged into a display.
+- Edit or Hold notes in the Google Sheet until they're queued (about 48 hours before post time).
+  After that, change or delete them in Substack's scheduled notes list.
+- If the Mac was off for days and a note's time is under 15 minutes away (or up to 3 hours past),
+  it posts immediately; older missed notes are skipped, never dumped at once.
 
 ## Everyday
 

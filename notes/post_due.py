@@ -14,6 +14,7 @@ Rules:
 
 Usage:
   python3 post_due.py              # post what's due
+  python3 post_due.py --ahead 48   # also queue the next 48h in Substack's scheduler (Mac default)
   python3 post_due.py --dry-run    # show what would post
   python3 post_due.py --verify     # check the Substack login only
   python3 post_due.py --now ID     # post one note immediately (manual test)
@@ -134,11 +135,39 @@ def post(n, state, now):
         print(f"ERROR {n['id']}: {e}")
 
 
+def schedule_ahead(notes, state, now, hours):
+    """Queue upcoming notes in Substack's native scheduler, so they publish on time
+    even when this computer is asleep. Notes due within 15 minutes are left to the
+    post-now path. Sheet edits made after a note is queued must be made in Substack."""
+    soon, horizon = now + timedelta(minutes=15), now + timedelta(hours=hours)
+    queued = 0
+    for n in sorted(notes.values(), key=lambda n: n.get("scheduled_et", "")):
+        if n["id"] in state or (n.get("status") or "").lower() not in POSTABLE:
+            continue
+        if not n.get("text") or not n.get("scheduled_et"):
+            continue
+        t = datetime.fromisoformat(n["scheduled_et"])
+        if not (soon < t <= horizon):
+            continue
+        try:
+            res = Client().schedule_note(n["text"], chart_path(n), t)
+            state[n["id"]] = {"status": "Queued in Substack", "at": now.isoformat(), "scheduled": n["scheduled_et"], **res}
+            print(f"queued {n['id']} for {n['scheduled_et']}: {res}")
+            queued += 1
+        except (SubstackError, OSError, requests.RequestException) as e:
+            state[n["id"]] = {"status": "Error", "at": now.isoformat(), "error": str(e)[:500]}
+            print(f"ERROR queueing {n['id']}: {e}")
+        save_state(state)                      # save after each so a crash can't double-queue
+    return queued
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--verify", action="store_true")
     ap.add_argument("--now", metavar="ID")
+    ap.add_argument("--ahead", type=float, metavar="HOURS",
+                    help="also queue notes due in the next HOURS in Substack's own scheduler")
     ap.add_argument("--test-upload", action="store_true",
                     help="upload one chart and create an attachment, without publishing a note")
     a = ap.parse_args()
@@ -175,7 +204,9 @@ def main():
         return
     if queue:
         post(queue[0], state, now)
-    else:
+    if a.ahead:
+        schedule_ahead(notes, state, now, a.ahead)
+    elif not queue:
         print("nothing due")
     save_state(state)
 
