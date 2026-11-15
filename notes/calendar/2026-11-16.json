@@ -98,7 +98,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Incomes",
-  "text": "In Louisiana, 25% of kids live below the poverty line. Mississippi: 24.6%. DC: 24.5%.\n\nNationally it's 14.8%. In the richest country in the world.",
+  "text": "In Louisiana, 25% of kids live below the poverty line, with Mississippi and DC right behind at nearly the same rate.\n\nNationally it's 14.8%, in the richest country in the world.",
   "chart": "charts/2026-11-16/child_poverty_map.png",
   "why_now": "ACS 2025 1-year estimates.",
   "source_kind": "new map: Census ACS"
@@ -124,7 +124,7 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Employment",
-  "text": "Black unemployment in October: 6.6%. White unemployment: 3.7%.\n\nThis chart goes back to 1972. Booms, recessions, recoveries. The gap barely moves.",
+  "text": "Black unemployment was 6.6% in October, compared with 3.7% for white workers.\n\nThis chart goes back to 1972, through booms, recessions and recoveries, and the gap has barely moved.",
   "chart": "charts/2026-11-16/black_white_unemployment.png",
   "why_now": "October jobs report (Nov 6).",
   "source_kind": "new chart: BLS"
@@ -149,11 +149,11 @@
   "time_et": "7:04 PM",
   "block": "afternoon",
   "status": "Scheduled",
-  "pillar": "Housing",
-  "text": "Florida renters now spend a median 35.5% of their income on rent. Highest in the country, and it isn't close.\n\nCalifornia is next at 32.9%. North Dakota is the lowest at 23.8%.",
-  "chart": "charts/2026-11-16/rent_burden_map.png",
-  "why_now": "ACS 2025 1-year estimates.",
-  "source_kind": "new map: Census ACS"
+  "pillar": "Employment",
+  "text": "Since 2022, Microsoft's revenue has grown 67% while its workforce has grown 1%, in this chart from @[Steve Rattner](1658881).\n\nThis is what it looks like when the gains from AI flow to shareholders instead of workers, and it lines up with the record low labor share from earlier this week.",
+  "chart": "charts/2026-11-16/reshare_rattner_microsoft.png",
+  "why_now": "Reshare: Rattner note (Nov 13) spreading fast; ties to Monday's labor-share note.",
+  "source_kind": "reshare: Steve Rattner"
  },
  {
   "id": "20261120-1",
@@ -176,7 +176,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "In Hawaii, the typical home costs 8.6 times the typical household income. California: 7.5x.\n\nWest Virginia: 2.9x.\n\nThe old rule of thumb was a home should cost about 3 years of income. Most of the country left that behind a long time ago.",
+  "text": "In Hawaii, the typical home costs 8.6 times the typical household's income. In California it's 7.5 times, while in West Virginia it's 2.9.\n\nThe old rule of thumb was that a home should cost about 3 years of income, and most of the country left that behind a long time ago.",
   "chart": "charts/2026-11-16/home_value_income.png",
   "why_now": "Follows the NAR first-time buyer news; ACS 2025.",
   "source_kind": "new chart: Census ACS"
@@ -188,11 +188,11 @@
   "time_et": "6:44 PM",
   "block": "afternoon",
   "status": "Scheduled",
-  "pillar": "Housing",
-  "text": "11.4 million renter households now spend more than half their income on rent.\n\nIn Florida it's nearly 1 in 3 renters.",
-  "chart": "charts/2026-11-16/severe_rent_burden.png",
-  "why_now": "ACS 2025 1-year estimates.",
-  "source_kind": "new chart: Census ACS"
+  "pillar": "Healthcare",
+  "text": "Pedestrians in New Mexico are 5x more likely to be killed by a car than pedestrians in Iowa, and it's getting worse. Great map from @[Aziz Sunderji](2432780).\n\nWalking is how a lot of lower-income Americans get to work, and in too many states it's a dangerous way to get there.",
+  "chart": "charts/2026-11-16/reshare_sunderji_pedestrians.png",
+  "why_now": "Reshare: Aziz Sunderji map (Nov 11); Jeremy's car-safety notes perform well.",
+  "source_kind": "reshare: Aziz Sunderji / The Pro Map"
  },
  {
   "id": "20261121-1",
@@ -202,7 +202,7 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "Rent: up 30% from 2018 to 2024.\nHome insurance premiums: up 71%.\n\nInsurers say it's climate. Their loss ratios say they paid out about 55 cents of every premium dollar in 2025. The historical average is 80.",
+  "text": "From 2018 to 2024, rent went up 30% while home insurance premiums went up 71%.\n\nInsurers say it's climate, but their own loss ratios show they paid out about 55 cents of every premium dollar in 2025, compared with a historical average of 80.",
   "chart": "charts/2026-11-16/insurance_71.png",
   "why_now": "Evergreen from my insurance piece; open enrollment/renewal season.",
   "source_kind": "my chart: stealth tax"
@@ -215,10 +215,11 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Employment",
-  "text": "Corporate profits are now a bigger share of the economy than at any point on record.\n\nEarlier this week: workers' share just hit a record low.\n\nSame economy.",
+  "text": "Corporate profits are now a bigger share of the economy than at any point on record at the same time that workers' share of those gains just hit a record low.",
   "chart": "charts/2026-11-16/profit_share.png",
   "why_now": "BEA Q2 data; callback to Monday's labor share note.",
-  "source_kind": "new chart: BEA"
+  "source_kind": "new chart: BEA",
+  "edited_by": "jeremy"
  },
  {
   "id": "20261121-3",
@@ -228,10 +229,11 @@
   "block": "evening",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "Since 2006, rent is up 103%. Hourly pay is up 90%.\n\nThat gap doesn't sound huge until you remember it compounds every month for 20 years.",
+  "text": "Since 2006, rent is up 103%. Hourly pay is up 90%.That gap might not sound huge, but for any family trying to put a roof over their head it can be the difference between a secure household and living in a shelter.",
   "chart": "charts/2026-11-16/rent_vs_wages.png",
   "why_now": "Weekend evening; Oct CPI and jobs data.",
-  "source_kind": "new chart: BLS"
+  "source_kind": "new chart: BLS",
+  "edited_by": "jeremy"
  },
  {
   "id": "20261122-1",
@@ -241,10 +243,11 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Incomes",
-  "text": "In the early 1950s, corporate income taxes made up about a third of federal tax revenue. Today it's 14%.\n\nAnd California voters just rejected a billionaire tax too. The bill keeps shifting to paychecks.",
+  "text": "In the early 1950s, corporate income taxes made up about a third of federal tax revenue. Today it's 14%. ",
   "chart": "charts/2026-11-16/corporate_tax_share.png",
   "why_now": "Prop 40 aftermath; BEA Q2 data.",
-  "source_kind": "new chart: BEA"
+  "source_kind": "new chart: BEA",
+  "edited_by": "jeremy"
  },
  {
   "id": "20261122-2",
@@ -254,10 +257,11 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Incomes",
-  "text": "Wholesale prices are up 6.5% from a year ago, the fastest pace since 2022.\n\nThat's what businesses pay. It shows up on store shelves a few months later, right around the holidays.\n\nInflation hits hardest at the bottom, where families spend nearly everything they make.",
+  "text": "Wholesale prices are up 6.5% from a year ago, the fastest pace since 2022. That's what businesses pay to stock the shelves, which is going to impact your holiday spending. Those higher prices show up for families right around the holidays.",
   "chart": "charts/2026-11-16/ppi.png",
   "why_now": "PPI release (Nov 13); Fed signaling a December hike.",
-  "source_kind": "new chart: BLS"
+  "source_kind": "new chart: BLS",
+  "edited_by": "jeremy"
  },
  {
   "id": "20261122-3",
@@ -267,10 +271,11 @@
   "block": "evening",
   "status": "Scheduled",
   "pillar": "Incomes",
-  "text": "Some actual good news: real median household income hit a record $87,460 in 2025.\n\nNow put it next to the other record from this week. The top 1% hold 32.5% of all wealth.\n\nBoth are true at the same time.",
+  "text": "Some actual good news: real median household income hit a record $87,460 in 2025. But we need to view the median next to the wealth of those at the very top, which also hit a record this week. it The top 1% hold 32.5% of all wealth.",
   "chart": "charts/2026-11-16/median_income.png",
   "why_now": "Census income data; balances the record-inequality notes earlier in the week.",
-  "source_kind": "new chart: Census"
+  "source_kind": "new chart: Census",
+  "edited_by": "jeremy"
  },
  {
   "id": "20261123-1",
@@ -280,10 +285,11 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Healthcare",
-  "text": "4.6 million kids in America have no health insurance. In Texas it's 1 in 8.\n\nMost uninsured kids already qualify for Medicaid or CHIP. Their families just aren't enrolled. Open enrollment runs through January 15.",
+  "text": "4.6 million kids in America have no health insurance. In Texas it's 1 in 8.\n\nMost uninsured kids already qualify for Medicaid or CHIP. Their families just aren't enrolled. Open enrollment just started and runs through January 15.",
   "chart": "charts/2026-11-16/kids_uninsured_map.png",
   "why_now": "2027 ACA open enrollment; ACS 2025 shows uninsured kids rising in 32 states.",
-  "source_kind": "new map: Census ACS"
+  "source_kind": "new map: Census ACS",
+  "edited_by": "jeremy"
  },
  {
   "id": "20261123-2",
@@ -293,10 +299,11 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "Half of all renters in America are now cost burdened. 22.5 million households, per new Census data.\n\nThat used to be the crisis scenario. Now it's the baseline.",
+  "text": "Half of all renters in America are now cost burdened. 22.5 million households, per new Census data.\n\nWhen you look at old HUD documents you see things about this being their crisis scenario, but now it is the US baseline. ",
   "chart": "charts/2026-11-16/stat_cost_burdened.png",
   "why_now": "ACS 2025 1-year estimates.",
-  "source_kind": "big stat: Census ACS"
+  "source_kind": "big stat: Census ACS",
+  "edited_by": "jeremy"
  },
  {
   "id": "20261123-3",
@@ -306,10 +313,11 @@
   "block": "afternoon",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "Same median-priced new home. Same 20% down.\n\n2021 monthly payment: $1,285\nToday: $2,117\n\n$830 more every month, and prices barely came down.",
+  "text": "2021 monthly payment for a new home: $1,285\nToday: $2,117\n\n$830 more every month, and prices barely came down.",
   "chart": "charts/2026-11-16/mortgage_payment.png",
   "why_now": "Mortgage rates back above 7%; Fed hike expected.",
-  "source_kind": "new chart: Census/HUD + Freddie Mac"
+  "source_kind": "new chart: Census/HUD + Freddie Mac",
+  "edited_by": "jeremy"
  },
  {
   "id": "20261124-1",
@@ -332,7 +340,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Education",
-  "text": "Public schools counted 1.5 million homeless students. HUD's count of homeless kids: about 134,000.\n\nThat's an 11x gap. HUD doesn't count families doubled up with relatives or sleeping on a friend's couch. Schools do.\n\nHow you define a problem decides how big it looks.",
+  "text": "Public schools counted 1.5 million homeless students. HUD's count of homeless kids was about 134,000.\n\nThat 11x gap exists because HUD doesn't count families doubled up with relatives or sleeping on a friend's couch, and schools do. How a problem gets defined decides how big it looks.",
   "chart": "charts/2026-11-16/stat_homeless_students.png",
   "why_now": "HUD's 'record drop' announcement; follow-up to Thursday's note.",
   "source_kind": "big stat: Ed + HUD"
@@ -345,7 +353,7 @@
   "block": "afternoon",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "The biggest rent increases last year weren't in New York or California.\n\nNew Hampshire: +11.8%. Maine: +9.8%. South Carolina: +9.7%. Then the Dakotas and Wyoming.\n\nThe national average was 4.7%. When everyone moves somewhere cheap, it stops being cheap.",
+  "text": "The biggest rent increases last year weren't in New York or California.\n\nRents in New Hampshire jumped 11.8%, followed by Maine and South Carolina at nearly 10%, then the Dakotas and Wyoming. The national average was 4.7%. When everyone moves somewhere cheap, it stops being cheap.",
   "chart": "charts/2026-11-16/rent_jumps.png",
   "why_now": "ACS 2025 vs 2024; Realtor.com rent-hike coverage (Nov 12).",
   "source_kind": "new chart: Census ACS"
@@ -358,10 +366,11 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Incomes",
-  "text": "Driving to Thanksgiving? Gas is averaging $4.00 a gallon. A year ago it was $3.06.\n\nThat's a 31% jump, and it hits hardest for people who can't work from home.",
+  "text": "Driving to your family for Thanksgiving? Gas is averaging $4.00 a gallon. A year ago it was $3.06.\n\nThat's a 31% jump, and it hits hardest for people who can't work from home.",
   "chart": "charts/2026-11-16/gas_prices.png",
   "why_now": "Thanksgiving travel day; EIA weekly prices.",
-  "source_kind": "new chart: EIA"
+  "source_kind": "new chart: EIA",
+  "edited_by": "jeremy"
  },
  {
   "id": "20261125-2",
@@ -397,7 +406,7 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Incomes",
-  "text": "Happy Thanksgiving. It's also Native American Heritage Month.\n\n18.1% of American Indian and Alaska Native people live below the poverty line, per new Census data. Black Americans: 19.9%. White Americans: 9.4%.",
+  "text": "Happy Thanksgiving. It's also Native American Heritage Month.\n\n18.1% of American Indian and Alaska Native people live below the poverty line, per new Census data, compared with 19.9% of Black Americans and 9.4% of white Americans.",
   "chart": "charts/2026-11-16/poverty_by_race.png",
   "why_now": "Thanksgiving + Native American Heritage Month; ACS 2025.",
   "source_kind": "new chart: Census ACS"
@@ -410,7 +419,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Employment",
-  "text": "If you're eating out today, the federal minimum wage for your server is $2.13 an hour.\n\nIt hasn't changed since 1991.",
+  "text": "Millions of Americans will eat out today, and the federal minimum wage for the people serving them is $2.13 an hour.\n\nIt hasn't changed since 1991.",
   "chart": "charts/2026-11-16/stat_tipped_wage.png",
   "why_now": "Thanksgiving restaurant traffic.",
   "source_kind": "big stat: DOL"
@@ -488,7 +497,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Employment",
-  "text": "Unemployment for adults without a high school diploma: 4.9%. With a bachelor's degree: 2.6%. (Three-month averages through October.)\n\nThe gap has been there for as long as this data has existed.",
+  "text": "Adults without a high school diploma have a 4.9% unemployment rate, nearly double the 2.6% for people with a bachelor's degree.\n\nThat gap has been there for as long as this data has existed.",
   "chart": "charts/2026-11-16/unemployment_education.png",
   "why_now": "October jobs report.",
   "source_kind": "new chart: BLS"
@@ -501,10 +510,10 @@
   "block": "evening",
   "status": "Scheduled",
   "pillar": "Incomes",
-  "text": "Quick one: the five most unequal states in America, and the five most equal, from new Census data.\n\nOnly one of the top five voted for Trump.",
-  "chart": "charts/2026-11-16/gini_bars.png",
-  "why_now": "ACS 2025; weekend-evening engagement format.",
-  "source_kind": "new chart: Census ACS"
+  "text": "Per-capita income in one DUMBO census tract is $163,000. Right next door in Vinegar Hill, it's $18,000.\n\nTwo neighborhoods a few blocks apart with a 9x gap. Incredible map from @[Aziz Sunderji](2432780).",
+  "chart": "charts/2026-11-16/reshare_sunderji_dumbo.png",
+  "why_now": "Reshare: Aziz Sunderji Pro Map (Nov 13); neighborhood inequality, weekend evening.",
+  "source_kind": "reshare: Aziz Sunderji / The Pro Map"
  },
  {
   "id": "20261129-1",
@@ -527,7 +536,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Employment",
-  "text": "Since 1973, American workers have become 163% more productive.\n\nTheir real pay per hour is up 64%.\n\nWhere did the rest go? See: corporate profits, record high. Top 1% share of wealth, record high.",
+  "text": "Since 1973, American workers have become 163% more productive, but their real pay per hour is up just 64%.\n\nCorporate profits and the top 1%'s share of wealth both just hit record highs. That's where the rest went.",
   "chart": "charts/2026-11-16/productivity_pay.png",
   "why_now": "Wrap-up of the month's labor-share thread.",
   "source_kind": "new chart: BLS"
@@ -540,7 +549,7 @@
   "block": "evening",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "Back to work tomorrow, so one more from the new Census data.\n\nMedian rent as a share of income: 35.5% in Florida, 23.8% in North Dakota. Same country, wildly different math.\n\nWhat should I map next?",
+  "text": "Back to work tomorrow, so one more from the new Census data.\n\nRenters in Florida spend a median 35.5% of their income on rent, compared with 23.8% in North Dakota. Same country, very different math.\n\nWhat should I map next?",
   "chart": "charts/2026-11-16/rent_burden_map.png",
   "why_now": "Sunday evening reply-bait.",
   "source_kind": "new map: Census ACS (reused)"

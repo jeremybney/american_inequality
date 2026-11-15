@@ -100,6 +100,12 @@ def merged_calendar():
         if row.get("Chart file"):
             n["chart"] = row["Chart file"].strip()
         n["_from_sheet"] = True
+    # A rapid-response note gets its own ID and marks the note it displaced with
+    # "replaced_by" in the repo calendar. That wins over the Sheet, so the old text
+    # still sitting in the Sheet can never post.
+    for n in repo_calendar().values():
+        if n.get("replaced_by") and n["id"] in notes:
+            notes[n["id"]]["status"] = "Replaced"
     return notes
 
 

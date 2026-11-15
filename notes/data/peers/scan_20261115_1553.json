@@ -1,0 +1,50 @@
+[
+ {
+  "author": "Hannah Ritchie",
+  "author_id": 10269516,
+  "note_id": 387917153,
+  "date": "2026-11-15T10:30:27.223Z",
+  "age_h": 5.4,
+  "score": 33,
+  "per_hour": 6.1,
+  "likes": 24,
+  "restacks": 1,
+  "body": "Just published a new page on NHS and healthcare on \u201cUK by Numbers\u201d.\n\nIncludes data on waiting lists, ambulance response times, bed capacity, staffing and pay.\n\nhttps://ukbynumbers.org/nhs-and-healthcare/",
+  "images": [
+   "https://substack-post-media.s3.amazonaws.com/public/images/1278a9b3-8c76-4ac1-a177-16fcc8d04727_2247x1884.png"
+  ],
+  "url": "https://substack.com/@hannahritchie/note/c-387917153"
+ },
+ {
+  "author": "Our World in Data",
+  "author_id": 499432171,
+  "note_id": 387325014,
+  "date": "2026-11-14T16:01:25.573Z",
+  "age_h": 23.9,
+  "score": 57,
+  "per_hour": 2.4,
+  "likes": 42,
+  "restacks": 3,
+  "body": "Differences in GDP per capita across sub-Saharan Africa are large.\n\nSub-Saharan Africa is the world\u2019s poorest region. Its GDP per person is around $5,000 a year \u2014 less than a quarter of the global average of around $22,000.\n\nBut looking at the region as a whole can make it easy to forget just how different the economies within it are. That\u2019s what this chart shows, by ranking GDP per capita across sub-Saharan African countries.\n\nThese differences are large. At the top of the chart, Gabon has a GDP per capita of about $19,000, roughly 18 times that of Burundi at the bottom. The gap between the richest and poorest countries in sub-Saharan Africa is even larger than the gap between the region and the world as a whole.\n\n(written by Esteban Ortiz-Ospina)\n\nRead more about what GDP is and why it matters: https://ourworldindata.org/what-is-economic-growth",
+  "images": [
+   "https://substack-post-media.s3.amazonaws.com/public/images/6e35692c-18b6-4dcf-82c0-da2628dbaaac_1350x1350.png"
+  ],
+  "url": "https://substack.com/@ourworldindata/note/c-387325014"
+ },
+ {
+  "author": "Aziz Sunderji",
+  "author_id": 2432780,
+  "note_id": 387454508,
+  "date": "2026-11-14T18:37:15.418Z",
+  "age_h": 21.3,
+  "score": 3,
+  "per_hour": 0.1,
+  "likes": 1,
+  "restacks": 0,
+  "body": "The park-adjacent Upper East Side is much less dense than the rest of Manhattan, partly due to apartment-combining (housing units have actually shrunk here). See: https://thepromap.com/spoon",
+  "images": [
+   "https://substack-post-media.s3.amazonaws.com/public/images/1f3ffc3a-8cb2-49b9-8fce-4a1f33477707_2768x3460.png"
+  ],
+  "url": "https://substack.com/@azizsunderji/note/c-387454508"
+ }
+]
