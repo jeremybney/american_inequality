@@ -1,0 +1,98 @@
+[
+ {
+  "author": "Steve Rattner",
+  "author_id": 1658881,
+  "note_id": 389833765,
+  "date": "2026-11-17T15:13:39.191Z",
+  "age_h": 2.0,
+  "score": 102,
+  "per_hour": 50.9,
+  "likes": 48,
+  "restacks": 18,
+  "body": "Wholesale prices are up 6.5% from a year ago, the fastest rise since 2022. \n\nBefore the Iran war began, it was 3.4%.",
+  "images": [
+   "https://substack-post-media.s3.amazonaws.com/public/images/6475059b-49e0-49d0-9a87-787dfc6f1b90_2600x1520.png"
+  ],
+  "url": "https://substack.com/@steverattner/note/c-389833765"
+ },
+ {
+  "author": "Our World in Data",
+  "author_id": 499432171,
+  "note_id": 389877852,
+  "date": "2026-11-17T16:02:46.522Z",
+  "age_h": 1.2,
+  "score": 14,
+  "per_hour": 11.8,
+  "likes": 5,
+  "restacks": 3,
+  "body": "Global electricity generation has tripled since 1985 \u2014 most of this growth came from Asia.\n\nIn 1985, the world generated around 10,000 terawatt-hours (TWh) of electricity. In 2024, it produced just over 30,000 TWh \u2014 three times as much.\n\nThree-quarters of this increase came from Asia. The chart shows how generation has grown, both globally and in each region.\n\nYes, population growth explains some of this. But two other drivers were even stronger: more people gained access to electricity, and they consumed more of it. In the early 1990s, fewer than half of South Asians had access to basic electricity. Today, access is almost universal.\n\nAt the same time, electricity generation per person increased by almost 450% \u2014 far faster than in any other region. Outside of Asia, it has barely changed. This is why, globally, per-person consumption has only doubled.\n\nThis growth has given households more and better energy services, and it has also powered a huge expansion of industry.\n\n(written by Hannah Ritchie)\n\nExplore how electricity generation and sources have changed across the world: https://ourworldindata.org/grapher/electricity-mix\n\nOther sources & data:\n\nhttps://ourworldindata.org/grapher/share-of-the-population-with-access-to-electricity?tab=line&country=WB_SA~WB_SSA&mapSelect=~WB_SA\n\nhttps://ourworldindata.org/grapher/electricity-mix?tab=line&country=OWID_ASI~OWID_WRL&source=total&metric=per_capita&frequency=annual",
+  "images": [
+   "https://substack-post-media.s3.amazonaws.com/public/images/c7fefa3a-9dd2-4a3e-b2e9-bf4d2560926a_1350x1350.png"
+  ],
+  "url": "https://substack.com/@ourworldindata/note/c-389877852"
+ },
+ {
+  "author": "Steve Rattner",
+  "author_id": 1658881,
+  "note_id": 389117968,
+  "date": "2026-11-16T18:40:00.268Z",
+  "age_h": 22.6,
+  "score": 220,
+  "per_hour": 9.7,
+  "likes": 71,
+  "restacks": 43,
+  "body": "From 2022 to 2025, the typical family in the top 10% saw its wealth jump 31%, to $3.7 million. \n\nThe bottom 20% lost 6%, falling to $14,400.",
+  "images": [
+   "https://substack-post-media.s3.amazonaws.com/public/images/6701f257-3e55-43e4-a803-43bb1796a48c_2469x1534.png"
+  ],
+  "url": "https://substack.com/@steverattner/note/c-389117968"
+ },
+ {
+  "author": "Steve Rattner",
+  "author_id": 1658881,
+  "note_id": 388982756,
+  "date": "2026-11-16T16:10:16.503Z",
+  "age_h": 25.1,
+  "score": 166,
+  "per_hour": 6.6,
+  "likes": 99,
+  "restacks": 19,
+  "body": "With Peltola on track to win in Alaska, Democrats will likely hold 56 Senate seats next year, their biggest majority since 2009.",
+  "images": [
+   "https://substack-post-media.s3.amazonaws.com/public/images/3b845577-08fe-436e-920b-0dd8aa5132d5_2600x1520.png"
+  ],
+  "url": "https://substack.com/@steverattner/note/c-388982756"
+ },
+ {
+  "author": "Our World in Data",
+  "author_id": 499432171,
+  "note_id": 388975339,
+  "date": "2026-11-16T16:01:48.075Z",
+  "age_h": 25.2,
+  "score": 95,
+  "per_hour": 3.8,
+  "likes": 50,
+  "restacks": 11,
+  "body": "\ud83d\udcdd New article on Our World in Data: No matter how you ask, more Americans are negative than positive about AI.\n\nOnline, the benefits and risks of artificial intelligence are intensely debated. But the online world is far from representative, and what people report in a survey can shift quite substantially when a question is worded slightly differently or when respondents can choose their answer from different options. So instead of relying on just one survey, this article puts together five recent high-quality surveys of adults in the United States.\n\nThe survey\u2019s wording does matter. When a middle answer is offered, many people take it \u2014 37% did in Pew\u2019s recent survey \u2014 and a smaller share reports a positive view: in both Pew\u2019s and Gallup\u2019s surveys, only 9% chose it.\n\nYet the overall result is consistent: every survey finds that more Americans have a negative view of AI than a positive one. In Pew\u2019s survey, 52% say they are \u201cmore concerned than excited\u201d, and 9% are \u201cmore excited than concerned\u201d \u2014 a ratio of more than five to one.\n\nWhen people have strong feelings, they are mostly negative. In the Ipsos survey, 17% said AI is an \u201cextremely bad\u201d thing for society, and just 2% said \u201cextremely good\u201d. People\u2019s worries extend to the most extreme risks: in a Quinnipiac poll in September 2026, 35% of Americans said they are somewhat concerned and 38% said they are very concerned that future AI systems could potentially threaten human survival.\n\nConcern about AI is not confined to one party: in Pew\u2019s survey, 56% of Democrats and 49% of Republicans are more concerned than excited about AI. There is no question that many find the prospects of AI exciting. But what these surveys show is that for more Americans, the concerns are larger.\n\nRead the article by Max Roser: https://ourworldindata.org/no-matter-how-you-ask-more-americans-are-negative-than-positive-about-ai",
+  "images": [
+   "https://substack-post-media.s3.amazonaws.com/public/images/79e44dd4-e70c-4f6e-ace6-41a65c929f00_1350x1883.jpeg"
+  ],
+  "url": "https://substack.com/@ourworldindata/note/c-388975339"
+ },
+ {
+  "author": "Aziz Sunderji",
+  "author_id": 2432780,
+  "note_id": 389496236,
+  "date": "2026-11-17T04:38:23.467Z",
+  "age_h": 12.6,
+  "score": 3,
+  "per_hour": 0.2,
+  "likes": 3,
+  "restacks": 0,
+  "body": "How are Americans doing, financially speaking? \n\nMy new map story, Pulling Apart, starts with that question. To go by national statistics, Americans are doing just fine: unemployment is low and stock market wealth is booming. But these figures hide how many households are struggling. Wages at the bottom have barely grown, and the poorer half of American households holds just 2% of the nation\u2019s wealth.\n\nIt\u2019s the same in housing. National prices have been rising slowly and steadily. But there is no single national housing market. There are, in effect, two worlds within it. In richer, whiter neighborhoods with low crime and good schools, prices are rising and homes are selling. In neighborhoods that are mostly Black and Hispanic, with more modest homes, more crime and weaker schools, prices are falling and far fewer homes sell.\n\nThe story maps those two worlds pulling apart across five cities: Philadelphia, Detroit, Phoenix, Atlanta and Indianapolis. Every map in the story was made with ProMap, which you can use to explore the same data for any neighborhood in the country.\n\nRead Pulling Apart: https://homeeconomics.us/promap?story=r3c5q7",
+  "images": [
+   "https://substack-post-media.s3.amazonaws.com/public/images/e21084d7-b56e-4812-910c-7f339f78bceb_1100x619.png"
+  ],
+  "url": "https://substack.com/@azizsunderji/note/c-389496236"
+ }
+]
