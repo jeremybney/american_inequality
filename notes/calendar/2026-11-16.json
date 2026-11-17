@@ -136,11 +136,11 @@
   "time_et": "12:44 PM",
   "block": "midday",
   "status": "Scheduled",
-  "pillar": "Housing",
-  "text": "HUD is calling its new count the biggest drop in homelessness on record, down 6.3%.\n\nMaybe. But last year HUD led with a 3.3% drop too, and buried the fact that chronic homelessness hit its highest level ever.\n\nI'll wait for the full data before I celebrate a press release.",
-  "chart": "charts/2026-11-16/homelessness_trend.png",
-  "why_now": "HUD point-in-time announcement (Nov 7-10); ties to my July reporting.",
-  "source_kind": "my chart: homelessness"
+  "pillar": "Education",
+  "text": "A child who grows up in a low-income family in Shelby County, Tennessee, reaches the 32nd income percentile as an adult. A child from the same family income in Bergen County, New Jersey, reaches the 52nd.\n\nSame starting point, and a very different life depending on the county where it begins.",
+  "chart": "charts/2026-11-16/opportunity_atlas_counties.png",
+  "why_now": "Replaces reused homelessness chart; Opportunity Atlas county map (new).",
+  "source_kind": "new map: Opportunity Atlas"
  },
  {
   "id": "20261119-3",
@@ -202,10 +202,10 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "From 2018 to 2024, rent went up 30% while home insurance premiums went up 71%.\n\nInsurers say it's climate, but their own loss ratios show they paid out about 55 cents of every premium dollar in 2025, compared with a historical average of 80.",
-  "chart": "charts/2026-11-16/insurance_71.png",
-  "why_now": "Evergreen from my insurance piece; open enrollment/renewal season.",
-  "source_kind": "my chart: stealth tax"
+  "text": "Rents in San Francisco are up 26% in a single year, the fastest of any large county in America, as AI money pours into the Bay Area. The typical large county saw rents rise 2.5%.\n\nThe teachers, nurses and bus drivers who keep the city running aren't getting AI-sized raises.",
+  "chart": "charts/2026-11-16/bay_area_rents.png",
+  "why_now": "Replaces reused insurance map; Zillow ZORI through Oct 2026.",
+  "source_kind": "new chart: Zillow"
  },
  {
   "id": "20261121-2",
@@ -431,11 +431,11 @@
   "time_et": "6:34 PM",
   "block": "afternoon",
   "status": "Scheduled",
-  "pillar": "Employment",
-  "text": "Bringing one chart to the family economics debate tonight? This would be mine.\n\nWorkers' share of the economy is the lowest it's been since BLS started measuring in 1947.\n\nWhat's yours?",
-  "chart": "charts/2026-11-16/labor_share.png",
-  "why_now": "Thanksgiving night; reply-bait question on a proven chart.",
-  "source_kind": "new chart: BLS (reused)"
+  "pillar": "Housing",
+  "text": "Since January 2020, the typical home in New Hampshire has gained 75% in value, with Connecticut and Maine close behind. In DC, home values are slightly down.\n\nFor families who owned before 2020, that's a windfall sitting at the Thanksgiving table. For their kids trying to buy, it's the bar they now have to clear.",
+  "chart": "charts/2026-11-16/home_values_since_2020.png",
+  "why_now": "Replaces repeated labor-share chart; Thanksgiving night; Zillow ZHVI Oct 2026.",
+  "source_kind": "new map: Zillow"
  },
  {
   "id": "20261127-1",
@@ -483,11 +483,11 @@
   "time_et": "11:44 AM",
   "block": "morning",
   "status": "Scheduled",
-  "pillar": "Incomes",
-  "text": "Share of all US wealth held by the top 1%:\n\n1989: 22.8%\n2000: 27.9%\n2008: 28.9%\n2020: 29.0%\n2026: 32.5%\n\nIt only goes one direction.",
-  "chart": "charts/2026-11-16/stat_top1_share.png",
-  "why_now": "Ladder format (my CEO-pay ladder note was a top performer).",
-  "source_kind": "big stat: Federal Reserve"
+  "pillar": "Education",
+  "text": "Black kids who grow up in low-income families reach the 32nd income percentile as adults, on average. White kids from families with the same income reach the 45th.\n\nFamily income explains a lot about where kids end up, but it clearly doesn't explain all of it.",
+  "chart": "charts/2026-11-16/opportunity_race_gap.png",
+  "why_now": "Replaces top-1% ladder that repeated Nov 17's wealth data; Opportunity Atlas.",
+  "source_kind": "new chart: Opportunity Atlas"
  },
  {
   "id": "20261128-2",

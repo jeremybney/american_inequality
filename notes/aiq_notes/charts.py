@@ -259,3 +259,75 @@ def state_map(out, title, subtitle, values, source, bins, labels, colors=None, n
     fig.text(0.045, 0.05, src, fontsize=8.6, color=FOOT)
     fig.text(0.045, 0.02, CREDIT, fontsize=8.6, color=FOOT, fontweight="bold")
     return _save(fig, out)
+
+
+# --------------------------------------------------------------------------
+# County choropleth
+# --------------------------------------------------------------------------
+_COUNTIES = None
+
+
+def _counties():
+    global _COUNTIES
+    if _COUNTIES is None:
+        import geopandas as gpd
+        from shapely import affinity
+        g = gpd.read_file(ROOT / "data" / "geo" / "cb_2023_us_county_20m.shp")
+        g = g[~g.STATEFP.isin(["72", "60", "66", "69", "78"])].to_crs("ESRI:102003")
+        ak, hi = g.STATEFP == "02", g.STATEFP == "15"
+        # same Alaska/Hawaii placement as the state map: scale/move each relative to its own state centroid
+        akc = g.loc[ak].union_all().centroid
+        hic = g.loc[hi].union_all().centroid
+        g.loc[ak, "geometry"] = g.loc[ak, "geometry"].apply(
+            lambda s: affinity.translate(affinity.scale(s, 0.35, 0.35, origin=akc), 1.2e6, -4.6e6))
+        g.loc[hi, "geometry"] = g.loc[hi, "geometry"].apply(lambda s: affinity.translate(s, 5.2e6, -1.35e6))
+        g["fips"] = (g.STATEFP + g.COUNTYFP).astype(int)
+        _COUNTIES = g
+    return _COUNTIES
+
+
+def county_map(out, title, subtitle, values, source, bins, labels, colors=None, note=None,
+               legend_title=None, callouts=()):
+    """values: {county_fips_int: number}. callouts: [(text, fips)] labelled on the map."""
+    import numpy as np
+    colors = colors or ["#c71e1d", "#e99a8f", "#e8e8e8", "#7fb7cc", "#1d81a2"][:len(labels)]
+    g = _counties().copy()
+    g["v"] = g.fips.map(values)
+
+    def pick(v):
+        if v is None or (isinstance(v, float) and np.isnan(v)):
+            return "#f3f3f3"
+        for edge, c in zip(bins, colors):
+            if v <= edge:
+                return c
+        return colors[-1]
+
+    g["c"] = g.v.apply(pick)
+    fig = plt.figure(figsize=(W_IN, 6.0), dpi=DPI, facecolor="white")
+    fig.text(0.045, 0.955, title, fontsize=19, fontweight="bold", color=INK, va="top")
+    if subtitle:
+        fig.text(0.045, 0.895, subtitle, fontsize=12, color=SUB, va="top")
+    ax = fig.add_axes([0.02, 0.10, 0.96, 0.70])
+    g.plot(ax=ax, color=g.c, edgecolor="white", linewidth=0.08)
+    st = _states()
+    st.boundary.plot(ax=ax, color="white", linewidth=0.6)
+    for co in callouts:
+        text, f = co[0], co[1]
+        dx, dy = (co[2], co[3]) if len(co) > 3 else (3.5e5, -4.0e5)
+        row = g[g.fips == f]
+        if len(row):
+            p = row.geometry.iloc[0].representative_point()
+            ax.annotate(text, xy=(p.x, p.y), xytext=(p.x + dx, p.y + dy), fontsize=9.5, fontweight="bold", ha="center",
+                        color=INK, arrowprops=dict(arrowstyle="-", color=INK, lw=0.8),
+                        bbox=dict(boxstyle="round,pad=0.25", fc="white", ec="none", alpha=0.9))
+    ax.set_axis_off()
+    handles = [Patch(color=c, label=l) for c, l in zip(colors, labels)]
+    lg = fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(0.04, 0.855), ncol=len(labels),
+                    frameon=False, fontsize=10, handlelength=1.6, columnspacing=1.2,
+                    title=legend_title, title_fontsize=10, alignment="left")
+    if legend_title:
+        lg.get_title().set_color(SUB)
+    src = f"Source: {source}" + (f". {note}" if note else "")
+    fig.text(0.045, 0.05, src, fontsize=8.6, color=FOOT)
+    fig.text(0.045, 0.02, CREDIT, fontsize=8.6, color=FOOT, fontweight="bold")
+    return _save(fig, out)

@@ -41,6 +41,22 @@ Derek Thompson mostly shares post cards and those underperform his own averages.
 - Emoji rarely (🤷 🤦🏻), never more than one, never at the start.
 - Tags people/outlets with @ sometimes; never hashtags.
 
+## Hard rule: no repeated visuals within 6 months
+
+Never use a chart or map that appeared in one of Jeremy's notes or articles in the last 6 months, and never
+schedule the same visual twice within 6 months. Same data drawn as a different chart counts as a repeat if the
+note makes the same point (e.g. a top-1% wealth line and a top-1% wealth ladder in the same month).
+`python3 check_reuse.py --refresh` fingerprints every image and must report 0 problems before any batch or
+rapid note ships.
+
+## Data sources beyond FRED/ACS
+
+`data/ext/` (fetched, not committed if licensed): Zillow ZHVI/ZORI (files.zillowstatic.com, public CSVs),
+Opportunity Atlas county outcomes (opportunityinsights.org), Our World in Data grapher CSVs, BEA regional,
+Fed SCF, FHFA HPI, LEHD. Todd Jones's list (github.com/toddrjones/datasets) for more. ProMap data only from CSVs
+Jeremy downloads himself into Drive (it's a paid, login-only product; never scrape it or commit its data).
+County maps: `charts.county_map(values={fips: value}, ...)`.
+
 ## Learned from Jeremy's own edits (Nov 2026, highest priority)
 
 Jeremy rewrote nine notes in the first batch. What he changed:

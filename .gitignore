@@ -36,3 +36,6 @@ shorts/projects/*/media/voiceover*
 shorts/.env
 shorts/assets/.music_catalog.json
 shorts/projects/*/media/music.mp3
+
+# Third-party data downloads (refetch with the batch scripts; some are licensed)
+notes/data/ext/
