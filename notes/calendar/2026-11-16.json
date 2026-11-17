@@ -179,7 +179,21 @@
   "text": "In Hawaii, the typical home costs 8.6 times the typical household's income. In California it's 7.5 times, while in West Virginia it's 2.9.\n\nThe old rule of thumb was that a home should cost about 3 years of income, and most of the country left that behind a long time ago.",
   "chart": "charts/2026-11-16/home_value_income.png",
   "why_now": "Follows the NAR first-time buyer news; ACS 2025.",
-  "source_kind": "new chart: Census ACS"
+  "source_kind": "new chart: Census ACS",
+  "replaced_by": "20261120-2r"
+ },
+ {
+  "id": "20261120-2r",
+  "scheduled_et": "2026-11-20T12:42:00-05:00",
+  "day": "Fri Nov 20",
+  "time_et": "12:42 PM",
+  "block": "midday",
+  "status": "Scheduled",
+  "pillar": "Incomes",
+  "text": "From 2022 to 2025, the typical family in the top 10% saw its wealth grow 31%, to $3.7 million, while families in the bottom 20% lost 6%, falling to $14,400. Great chart from @[Steve Rattner](1658881) on the new Federal Reserve data.\n\nFamilies in the middle gained 8%. Three years of rising stock and home prices mostly went to the families who already owned the most.",
+  "chart": "charts/rapid/2026-11-17_rattner_scf_wealth.png",
+  "why_now": "Rapid: Fed Survey of Consumer Finances 2025, via Rattner note Nov 16 (71 likes / 43 restacks in a day).",
+  "source_kind": "rapid: reshare Steve Rattner (Fed SCF 2025)"
  },
  {
   "id": "20261120-3",
