@@ -2,7 +2,7 @@
   "title": "The People Who Feed Us Are on Their Own — TikTok",
   "wpm": 175,
   "hold": 0.25,
-  "max_seconds": 110,
+  "max_seconds": 115,
   "article": {
     "section": "The Dividing Line"
   },
@@ -27,11 +27,11 @@
   "scenes": [
     {
       "type": "photo",
-      "media": "cows.mp4",
+      "media": "fieldworkers.jpg",
       "dim": 0.35,
       "zoom": [
         1.0,
-        1.08
+        1.12
       ],
       "headline": {
         "text": "The people who feed us are {on their own.}"
@@ -39,12 +39,12 @@
       "chip": "Rural health · American Inequality",
       "source": "The People Who Feed Us Are on Their Own · American Inequality",
       "say": [
-        "Meghan and John Palmer milk 180 cows in Iowa."
+        "Meghan and John Palmer are dairy farmers in Iowa who are fighting a massive healthcare battle."
       ]
     },
     {
       "type": "photo",
-      "media": "milk.mp4",
+      "media": "bloodpressure.mp4",
       "dim": 0.5,
       "zoom": [
         1.0,
@@ -99,7 +99,7 @@
       "zoom_dur": 2.0,
       "source": "ACS 2024 · American Inequality",
       "say": [
-        "It starts with jobs. In rural counties, fewer workers get insurance through work, so far more rely on public programs."
+        "It starts with jobs. In rural counties, fewer workers get insurance through work, so hundreds of thousands rely on public programs."
       ]
     },
     {
@@ -213,7 +213,7 @@
       ],
       "source": "One Big Beautiful Bill Act",
       "say": [
-        "Starting January 1, Medicaid adults must prove 80 hours a month of work, school or service to keep their coverage."
+        "Starting January 1, Medicaid adults must prove 80 hours a month of work, school or service to keep their coverage. But for farmers, seasonality and part time work make it hard to cross that hurdle."
       ]
     },
     {
@@ -267,7 +267,7 @@
       "y": 0.43,
       "source": "BLS · American Inequality",
       "say": [
-        "States can exempt counties with high unemployment, but only 144 counties qualify, since the rural problem is low-wage and seasonal work, not joblessness."
+        "States can exempt counties with high unemployment, but only 144 counties qualify, since the rural problem is low-wage and unpredictable work, not joblessness."
       ]
     },
     {
@@ -322,13 +322,13 @@
         "blur": 5
       },
       "say": [
-        "Congress has promised to reverse the cuts, but the work rules start two days before the new members are even sworn in."
+        "Congress has promised to reverse the cuts, but the work requirements come into effect 2 days before new members are even sworn in."
       ]
     },
     {
       "type": "statement",
       "kicker": "What comes next",
-      "text": "Those who feed the country {shouldn't do it alone.}",
+      "text": "Those who feed the country {shouldn't be abandoned.}",
       "backdrop": {
         "media": "combine.mp4",
         "dim": 0.55,

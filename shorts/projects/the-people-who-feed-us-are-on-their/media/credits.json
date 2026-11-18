@@ -39,10 +39,6 @@
     "credit": "Video: tolomedia43 (Pixabay)",
     "url": "https://pixabay.com/videos/id-87146/"
   },
-  "milk.mp4": {
-    "credit": "Video: bottlein (Pixabay)",
-    "url": "https://pixabay.com/videos/id-4315/"
-  },
   "harvest.jpg": {
     "credit": "Photo: U.S. Department of Agriculture, Public domain (Wikimedia Commons)",
     "url": "https://commons.wikimedia.org/wiki/File:20190507-OSEC-LSC-0955.jpg"
@@ -52,8 +48,12 @@
     "url": "https://yooper.fm/news/2026/07/10/they-harvest-the-nations-food-but-a-new-rule-may-strip-them-of-health-insurance",
     "headline": "They harvest the nation\u2019s food, but a new rule may strip them of health insurance"
   },
-  "cows.mp4": {
-    "credit": "Video: NickyPe (Pixabay)",
-    "url": "https://pixabay.com/videos/id-85146/"
+  "fieldworkers.jpg": {
+    "credit": "Photo: amir appel from Israel, CC BY 2.0 (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:Onion_Picking_and_Cleaning.jpg"
+  },
+  "bloodpressure.mp4": {
+    "credit": "Video: Hassas_Arts (Pixabay)",
+    "url": "https://pixabay.com/videos/id-49815/"
   }
 }
