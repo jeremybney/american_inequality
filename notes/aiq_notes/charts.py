@@ -133,7 +133,10 @@ def hbars(out, title, subtitle, labels, values, source, highlight=(), grey=(),
         ax.set_xlim(*xlim)
     right = ax.get_xlim()[1]
     for i, v in enumerate(values):
-        if inside:
+        if v < 0:   # negative bars: label just outside the bar's left end
+            ax.text(v - right * 0.01, y[i], _fmt(v, fmt), ha="right", va="center",
+                    fontsize=11.5, fontweight="bold", color=colors[i] if colors[i] != GREY else "#777777")
+        elif inside:
             ax.text(v - right * 0.012, y[i], _fmt(v, fmt), ha="right", va="center",
                     fontsize=11.5, fontweight="bold", color="white")
         else:
