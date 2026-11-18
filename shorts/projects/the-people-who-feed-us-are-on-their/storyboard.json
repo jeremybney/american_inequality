@@ -353,5 +353,142 @@
     "feel": "Bright, Grooving, Driving",
     "credit": "Music: “Loopster” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
   },
-  "music_credit": "Music: “Loopster” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  "music_credit": "Music: “Loopster” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0",
+  "tts": {
+    "pronounce": {
+      "$7,200": "seventy-two hundred dollars"
+    }
+  },
+  "voiceover": {
+    "source": "elevenlabs",
+    "voice_id": "LN9NrroIIZhpFF0xZmVx",
+    "model_id": "eleven_multilingual_v2",
+    "file": "voiceover_tts.wav",
+    "clean": "voiceover_tts.wav",
+    "mix": "voiceover_tts.wav",
+    "duration": 100.31,
+    "cues": [
+      {
+        "scene": 0,
+        "line": 0,
+        "text": "Meghan and John Palmer are dairy farmers in Iowa who are fighting a massive healthcare battle.",
+        "start": 0.15,
+        "end": 4.655,
+        "matched": 1.0
+      },
+      {
+        "scene": 1,
+        "line": 0,
+        "text": "When the ACA subsidies expired this year, their monthly health bill jumped more than 90%, with a $7,200 deductible on top.",
+        "start": 5.075,
+        "end": 11.484,
+        "matched": 1.0
+      },
+      {
+        "scene": 2,
+        "line": 0,
+        "text": "We looked at why the people who grow America's food are about to lose even more coverage.",
+        "start": 11.903,
+        "end": 16.686,
+        "matched": 1.0
+      },
+      {
+        "scene": 3,
+        "line": 0,
+        "text": "It starts with jobs. In rural counties, fewer workers get insurance through work, so hundreds of thousands rely on public programs.",
+        "start": 17.107,
+        "end": 24.212,
+        "matched": 1.0
+      },
+      {
+        "scene": 4,
+        "line": 0,
+        "text": "27% of farmers and ranchers buy their own coverage on the ACA marketplace, about 3 times the rate of other adults.",
+        "start": 24.632,
+        "end": 30.855,
+        "matched": 1.0
+      },
+      {
+        "scene": 5,
+        "line": 0,
+        "text": "These are the people who grow 85% of America's food, and seasonal workers do 60% of the crop labor.",
+        "start": 31.275,
+        "end": 37.544,
+        "matched": 1.0
+      },
+      {
+        "scene": 6,
+        "line": 0,
+        "text": "In rural places like eastern Kentucky, more than half of residents rely on Medicaid.",
+        "start": 37.964,
+        "end": 42.283,
+        "matched": 1.0
+      },
+      {
+        "scene": 7,
+        "line": 0,
+        "text": "Starting January 1, Medicaid adults must prove 80 hours a month of work, school or service to keep their coverage. But for farmers, seasonality and part time work make it hard to cross that hurdle.",
+        "start": 42.703,
+        "end": 52.223,
+        "matched": 1.0
+      },
+      {
+        "scene": 8,
+        "line": 0,
+        "text": "When Arkansas tried this in 2018, 18,000 people lost coverage, and 92% of them had met the rules or should have been exempt.",
+        "start": 52.643,
+        "end": 61.559,
+        "matched": 1.0
+      },
+      {
+        "scene": 9,
+        "line": 0,
+        "text": "In Nebraska, which started early, Eli McCreary lost coverage in the middle of kidney cancer treatment.",
+        "start": 61.98,
+        "end": 67.228,
+        "matched": 1.0
+      },
+      {
+        "scene": 10,
+        "line": 0,
+        "text": "States can exempt counties with high unemployment, but only 144 counties qualify, since the rural problem is low-wage and unpredictable work, not joblessness.",
+        "start": 67.648,
+        "end": 76.379,
+        "matched": 1.0
+      },
+      {
+        "scene": 11,
+        "line": 0,
+        "text": "By 2034, more than five million people are projected to lose Medicaid because of the paperwork and deadlines.",
+        "start": 76.798,
+        "end": 83.439,
+        "matched": 1.0
+      },
+      {
+        "scene": 12,
+        "line": 0,
+        "text": "Congress has promised to reverse the cuts, but the work requirements come into effect 2 days before new members are even sworn in.",
+        "start": 83.859,
+        "end": 90.268,
+        "matched": 1.0
+      },
+      {
+        "scene": 13,
+        "line": 0,
+        "text": "The Palmers will keep milking cows and picking up nursing shifts, but those who feed the country should not have to do it alone.",
+        "start": 90.688,
+        "end": 96.865,
+        "matched": 1.0
+      },
+      {
+        "scene": 14,
+        "line": 0,
+        "text": "You can read the full story on American Inequality.",
+        "start": 97.285,
+        "end": 99.886,
+        "matched": 1.0
+      }
+    ],
+    "lines_generated": 15
+  }
 }
