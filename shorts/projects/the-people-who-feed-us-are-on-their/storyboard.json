@@ -1,0 +1,357 @@
+{
+  "title": "The People Who Feed Us Are on Their Own — TikTok",
+  "wpm": 175,
+  "hold": 0.25,
+  "max_seconds": 110,
+  "article": {
+    "section": "The Dividing Line"
+  },
+  "notes": [
+    "Hook question: the people who grow America's food work constantly, so why are they about to lose their health coverage? Answer, scene by scene: rural jobs rarely come with insurance, so farmers lean on the ACA and Medicaid; the ACA subsidies just expired; Medicaid work rules start Jan 1 and cut people over paperwork, not work; the unemployment exemption barely covers any counties. The close: those who feed the country shouldn't do it alone.",
+    "All figures are from the article (Nov 18, 2026) and the sources it cites (KFF, ACS 2024, CBO, NEJM, Nebraska Hospital Association, BLS). Co-authored post, so the narration uses 'we'.",
+    "VOICE: ElevenLabs, generated only after the author approves the script. Render drafts with the default --voice keep."
+  ],
+  "post": {
+    "headline": "The people who feed us are losing coverage",
+    "caption": "Farmers buy their own health insurance at 3 times the rate of other adults, and their premiums just jumped when ACA subsidies expired. On January 1, Medicaid work rules start, and in Arkansas 92% of people who lost coverage had actually met the rules.",
+    "cta": "Full story and interactive maps at the link in bio.",
+    "hashtags": [
+      "inequality",
+      "medicaid",
+      "rural",
+      "farmers",
+      "healthcare",
+      "data"
+    ]
+  },
+  "scenes": [
+    {
+      "type": "photo",
+      "media": "cows.mp4",
+      "dim": 0.35,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "headline": {
+        "text": "The people who feed us are {on their own.}"
+      },
+      "chip": "Rural health · American Inequality",
+      "source": "The People Who Feed Us Are on Their Own · American Inequality",
+      "say": [
+        "Meghan and John Palmer milk 180 cows in Iowa."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "milk.mp4",
+      "dim": 0.5,
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "overlays": [
+        {
+          "kind": "surge",
+          "from": 0,
+          "to": 90,
+          "suffix": "%",
+          "y": 0.33,
+          "at": 1.8,
+          "count": 1.0,
+          "label_from": "higher health premiums",
+          "label_to": "higher health premiums",
+          "slam": "OVERNIGHT",
+          "slam_dy": 0.13
+        }
+      ],
+      "punch": [
+        3.15
+      ],
+      "source": "The People Who Feed Us Are on Their Own · American Inequality",
+      "say": [
+        "When the ACA subsidies expired this year, their monthly health bill jumped more than 90%, with a $7,200 deductible on top."
+      ]
+    },
+    {
+      "type": "article_card",
+      "say": [
+        "We looked at why the people who grow America's food are about to lose even more coverage."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_02.png",
+      "crop": [
+        0,
+        0.1,
+        1,
+        0.86
+      ],
+      "y": 0.43,
+      "zoom_to": [
+        0.0,
+        0.0,
+        0.45,
+        0.5
+      ],
+      "zoom_at": 2.4,
+      "zoom_dur": 2.0,
+      "source": "ACS 2024 · American Inequality",
+      "say": [
+        "It starts with jobs. In rural counties, fewer workers get insurance through work, so far more rely on public programs."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Share who buy coverage on the ACA marketplace",
+      "bars": [
+        {
+          "label": "Farmers and ranchers",
+          "value": 27,
+          "suffix": "%",
+          "color": "yellow",
+          "at": 2.4
+        },
+        {
+          "label": "All other adults",
+          "value": 9,
+          "display": "about 9%",
+          "color": "white",
+          "at": 3.2
+        }
+      ],
+      "annotation": {
+        "text": "3x",
+        "bar": 0,
+        "at": 4.0,
+        "color": "yellow"
+      },
+      "backdrop": {
+        "media": "tractor.mp4",
+        "dim": 0.6,
+        "blur": 5
+      },
+      "source": "KFF (2023)",
+      "say": [
+        "27% of farmers and ranchers buy their own coverage on the ACA marketplace, about 3 times the rate of other adults."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "harvest.jpg",
+      "dim": 0.4,
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 85,
+          "suffix": "%",
+          "label": "of U.S. food is grown by American farmers",
+          "y": 0.3,
+          "at": 1.8
+        }
+      ],
+      "source": "The People Who Feed Us Are on Their Own · American Inequality",
+      "say": [
+        "These are the people who grow 85% of America's food, and seasonal workers do 60% of the crop labor."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_01.png",
+      "crop": [
+        0,
+        0.13,
+        1,
+        0.92
+      ],
+      "y": 0.43,
+      "zoom_to": [
+        0.66,
+        0.45,
+        0.8,
+        0.59
+      ],
+      "zoom_at": 2.4,
+      "zoom_dur": 2.0,
+      "overlays": [
+        {
+          "kind": "tag",
+          "text": "Eastern Kentucky",
+          "x": 0.5,
+          "y": 0.2,
+          "at": 4.2,
+          "background": "navy"
+        }
+      ],
+      "source": "ACS 2024 · American Inequality",
+      "say": [
+        "In rural places like eastern Kentucky, more than half of residents rely on Medicaid."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "binders.mp4",
+      "dim": 0.45,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "overlays": [
+        {
+          "kind": "stamp",
+          "text": "80 HOURS A MONTH, PROVEN ON PAPER",
+          "y": 0.3,
+          "at": 2.6,
+          "angle": -3,
+          "size": 44
+        }
+      ],
+      "source": "One Big Beautiful Bill Act",
+      "say": [
+        "Starting January 1, Medicaid adults must prove 80 hours a month of work, school or service to keep their coverage."
+      ]
+    },
+    {
+      "type": "vbars",
+      "title": "Arkansas, 2018: people who lost Medicaid under work rules",
+      "bars": [
+        {
+          "label": "Lost coverage",
+          "value": 18000,
+          "display": "18,000",
+          "color": "white",
+          "at": 2.2
+        },
+        {
+          "label": "Had met the rules or should have been exempt",
+          "value": 16560,
+          "display": "92%",
+          "color": "yellow",
+          "at": 3.4
+        }
+      ],
+      "source": "New England Journal of Medicine",
+      "say": [
+        "When Arkansas tried this in 2018, 18,000 people lost coverage, and 92% of them had met the rules or should have been exempt."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_03.jpeg",
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "y": 0.43,
+      "source": "KFF Health News",
+      "say": [
+        "In Nebraska, which started early, Eli McCreary lost coverage in the middle of kidney cancer treatment."
+      ]
+    },
+    {
+      "type": "figure",
+      "media": "article_04.png",
+      "crop": [
+        0,
+        0.22,
+        1,
+        0.92
+      ],
+      "y": 0.43,
+      "source": "BLS · American Inequality",
+      "say": [
+        "States can exempt counties with high unemployment, but only 144 counties qualify, since the rural problem is low-wage and seasonal work, not joblessness."
+      ]
+    },
+    {
+      "type": "photo",
+      "media": "doctor.mp4",
+      "dim": 0.45,
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "value": 5,
+          "suffix": "M+",
+          "label": "people projected to lose Medicaid by 2034",
+          "y": 0.3,
+          "at": 2.0
+        }
+      ],
+      "source": "Congressional Budget Office",
+      "say": [
+        "By 2034, more than five million people are projected to lose Medicaid because of the paperwork and deadlines."
+      ]
+    },
+    {
+      "type": "news",
+      "kicker": "In the news",
+      "items": [
+        {
+          "media": "news_harvest.png",
+          "outlet": "KFF Health News",
+          "date": "Jul 10, 2026",
+          "crop": [
+            0,
+            0.33,
+            1,
+            0.68
+          ],
+          "highlight": [
+            0.02,
+            0.02,
+            0.98,
+            0.72
+          ],
+          "at": 0.1
+        }
+      ],
+      "backdrop": {
+        "media": "cornworker.mp4",
+        "dim": 0.55,
+        "blur": 5
+      },
+      "say": [
+        "Congress has promised to reverse the cuts, but the work rules start two days before the new members are even sworn in."
+      ]
+    },
+    {
+      "type": "statement",
+      "kicker": "What comes next",
+      "text": "Those who feed the country {shouldn't do it alone.}",
+      "backdrop": {
+        "media": "combine.mp4",
+        "dim": 0.55,
+        "blur": 4
+      },
+      "say": [
+        "The Palmers will keep milking cows and picking up nursing shifts, but those who feed the country should not have to do it alone."
+      ]
+    },
+    {
+      "type": "outro",
+      "say": [
+        "You can read the full story on American Inequality."
+      ]
+    }
+  ],
+  "music": {
+    "title": "Loopster",
+    "file": "music.mp3",
+    "start_scene": 1,
+    "level_db": -21.0,
+    "feel": "Bright, Grooving, Driving",
+    "credit": "Music: “Loopster” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+  },
+  "music_credit": "Music: “Loopster” Kevin MacLeod (incompetech.com), licensed under CC BY 4.0"
+}

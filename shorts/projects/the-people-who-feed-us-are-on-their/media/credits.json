@@ -1,0 +1,59 @@
+{
+  "cover.jpg": {
+    "credit": "Image: American Inequality",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/a23daf2e-f7e3-4ec6-ab6b-8d19582edee5_2048x1366.avif"
+  },
+  "article_01.png": {
+    "credit": "Explore your hometown",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/486e4019-c184-45f1-9c2f-6f9cc53e3b19_1240x988.png"
+  },
+  "article_02.png": {
+    "credit": "Explore our interactive data",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/24446437-605c-4875-9b81-c845ea96b4ea_1031x671.png"
+  },
+  "article_03.jpeg": {
+    "credit": "Eli McCreary lost his insurance coverage in the middle of undergoing kidney cancer treatment - KFF",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/0f4a6a7b-3cf0-4be1-81b2-25d44c4dca78_3200x2133.jpeg"
+  },
+  "article_04.png": {
+    "credit": "The exemption sounds nice on paper, but barely any communities actually qualify. Explore our interactive map",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/628e0397-19c6-4b1b-8251-3190c97da6b7_1240x1058.png"
+  },
+  "cornworker.mp4": {
+    "credit": "Video: ammarvid (Pixabay)",
+    "url": "https://pixabay.com/videos/id-243239/"
+  },
+  "tractor.mp4": {
+    "credit": "Video: Mixmaster_Andy (Pixabay)",
+    "url": "https://pixabay.com/videos/id-12799/"
+  },
+  "combine.mp4": {
+    "credit": "Video: Ivan267 (Pixabay)",
+    "url": "https://pixabay.com/videos/id-232561/"
+  },
+  "doctor.mp4": {
+    "credit": "Video: blackmarketmusic (Pixabay)",
+    "url": "https://pixabay.com/videos/id-143988/"
+  },
+  "binders.mp4": {
+    "credit": "Video: tolomedia43 (Pixabay)",
+    "url": "https://pixabay.com/videos/id-87146/"
+  },
+  "milk.mp4": {
+    "credit": "Video: bottlein (Pixabay)",
+    "url": "https://pixabay.com/videos/id-4315/"
+  },
+  "harvest.jpg": {
+    "credit": "Photo: U.S. Department of Agriculture, Public domain (Wikimedia Commons)",
+    "url": "https://commons.wikimedia.org/wiki/File:20190507-OSEC-LSC-0955.jpg"
+  },
+  "news_harvest.png": {
+    "credit": "Screenshot: 107.3 The Yooper",
+    "url": "https://yooper.fm/news/2026/07/10/they-harvest-the-nations-food-but-a-new-rule-may-strip-them-of-health-insurance",
+    "headline": "They harvest the nation\u2019s food, but a new rule may strip them of health insurance"
+  },
+  "cows.mp4": {
+    "credit": "Video: NickyPe (Pixabay)",
+    "url": "https://pixabay.com/videos/id-85146/"
+  }
+}

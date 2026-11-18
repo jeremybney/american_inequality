@@ -1,0 +1,577 @@
+{
+  "audience": "everyone",
+  "audience_before_archived": null,
+  "canonical_url": "https://americaninequality.substack.com/p/the-people-who-feed-us-are-on-their",
+  "default_comment_sort": null,
+  "editor_v2": false,
+  "exempt_from_archive_paywall": false,
+  "free_unlock_required": false,
+  "id": 225352936,
+  "podcast_art_url": null,
+  "podcast_duration": null,
+  "podcast_preview_upload_id": null,
+  "podcast_upload_id": null,
+  "podcast_url": null,
+  "post_date": "2026-11-18T16:36:30.877Z",
+  "updated_at": "2026-11-18T16:37:05.997Z",
+  "publication_id": 267573,
+  "search_engine_description": null,
+  "search_engine_title": null,
+  "section_id": null,
+  "should_send_free_preview": false,
+  "show_guest_bios": true,
+  "slug": "the-people-who-feed-us-are-on-their",
+  "social_title": "The People Who Feed Us Are on Their Own",
+  "subtitle": "Rural Americans rely on public health coverage more than anyone else. Starting January 1, those programs are shrinking.",
+  "teaser_post_eligible": true,
+  "title": "The People Who Feed Us Are on Their Own",
+  "type": "newsletter",
+  "video_upload_id": null,
+  "write_comment_permissions": "everyone",
+  "meter_type": "none",
+  "live_stream_id": null,
+  "is_published": true,
+  "restacks": 9,
+  "reactions": {
+    "\u2764": 15
+  },
+  "top_exclusions": [],
+  "pins": [],
+  "section_pins": [],
+  "has_shareable_clips": false,
+  "previous_post_slug": "the-big-5-of-inequality-in-america",
+  "next_post_slug": null,
+  "cover_image": "https://substack-post-media.s3.amazonaws.com/public/images/a23daf2e-f7e3-4ec6-ab6b-8d19582edee5_2048x1366.avif",
+  "cover_image_is_square": false,
+  "cover_image_is_explicit": false,
+  "videoUpload": null,
+  "podcastFields": null,
+  "podcastUpload": null,
+  "podcastPreviewUpload": null,
+  "voiceover_upload_id": null,
+  "voiceoverUpload": null,
+  "has_voiceover": false,
+  "description": "Rural Americans rely on public health coverage more than anyone else. Starting January 1, those programs are shrinking.",
+  "body_html": "<p>The land where <a href=\"https://www.npr.org/sections/shots-health-news/2025/12/31/nx-s1-5655252/u-s-farmer-insurance-premiums-tariffs-seeds-fertilizer-inflation-iowa\">Meghan and John Palmer milk 180 cows </a>has been in their family for three generations. Neither Meghan nor John has a job that comes with health insurance, and when they fall sick, production drops dramatically on <em>Prairie Star Farm</em> located in Allamakee County, Iowa. In their first year of marriage they went without insurance, then paid out of pocket when Meghan needed her appendix removed and John needed stitches. Now they buy coverage on the ACA marketplace. <a href=\"https://kffhealthnews.org/news/article/farmers-health-insurance-costs-aca-obamacare-subsidies/\">When the enhanced subsidies expired this year, their monthly bill rose by more than 90%, with a $7,200 deductible on top. </a>Meghan picks up shifts as a nurse when the farm is less busy, knowing that much of that pay will go to the higher premiums.</p><div class=\"subscription-widget-wrap-editor\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe&quot;,&quot;language&quot;:&quot;en&quot;}\" data-component-name=\"SubscribeWidgetToDOM\"><div class=\"subscription-widget show-subscribe\"><div class=\"preamble\"><p class=\"cta-caption\">Hey there - we are a reader-supported publication. To receive new posts and make this journalism possible, become a free or paid subscriber.</p></div><form class=\"subscription-widget-subscribe\"><input type=\"email\" class=\"email-input\" name=\"email\" placeholder=\"Type your email\u2026\" tabindex=\"-1\"><input type=\"submit\" class=\"button primary\" value=\"Subscribe\"><div class=\"fake-input-wrapper\"><div class=\"fake-input\"></div><div class=\"fake-button\"></div></div></form></div></div><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!zXrt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F486e4019-c184-45f1-9c2f-6f9cc53e3b19_1240x988.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!zXrt!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F486e4019-c184-45f1-9c2f-6f9cc53e3b19_1240x988.png 424w, https://substackcdn.com/image/fetch/$s_!zXrt!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F486e4019-c184-45f1-9c2f-6f9cc53e3b19_1240x988.png 848w, https://substackcdn.com/image/fetch/$s_!zXrt!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F486e4019-c184-45f1-9c2f-6f9cc53e3b19_1240x988.png 1272w, https://substackcdn.com/image/fetch/$s_!zXrt!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F486e4019-c184-45f1-9c2f-6f9cc53e3b19_1240x988.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!zXrt!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F486e4019-c184-45f1-9c2f-6f9cc53e3b19_1240x988.png\" width=\"1240\" height=\"988\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/486e4019-c184-45f1-9c2f-6f9cc53e3b19_1240x988.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:988,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!zXrt!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F486e4019-c184-45f1-9c2f-6f9cc53e3b19_1240x988.png 424w, https://substackcdn.com/image/fetch/$s_!zXrt!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F486e4019-c184-45f1-9c2f-6f9cc53e3b19_1240x988.png 848w, https://substackcdn.com/image/fetch/$s_!zXrt!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F486e4019-c184-45f1-9c2f-6f9cc53e3b19_1240x988.png 1272w, https://substackcdn.com/image/fetch/$s_!zXrt!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F486e4019-c184-45f1-9c2f-6f9cc53e3b19_1240x988.png 1456w\" sizes=\"100vw\" fetchpriority=\"high\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-tqxFUX\" tabindex=\"0\" type=\"button\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-tqxFUX\" tabindex=\"0\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\"><a href=\"https://datawrapper.dwcdn.net/OO5CY/2/\">Explore your hometown</a></figcaption></figure></div><p>The Palmers\u2019 situation is not unique to rural America. And when we say <em>Rural America</em> we\u2019re talking nonmetropolitan counties, where almost <a href=\"https://www.hrsa.gov/rural-health/about-us/what-is-rural\">20% of the population lives, about 60 million people.</a></p><p>Rural America has always gotten its health insurance differently. Fewer workers get coverage through a job, and far more rely on public programs to fill the gap. For a decade, that patchwork was lifesaving. Now it is being pulled away by Medicaid work requirements beginning January 1, 2027, and the insurers that spent years expanding Medicare Advantage into rural counties are pulling back for 2027.</p><h1><strong>Plenty of jobs, not a lot of coverage</strong></h1><p>Each dot in the chart below is a county, and as you move left on the chart, fewer and fewer residents are getting coverage through their employer, so they are relying on Medicaid. At the top left you see two very rural places in Kentucky and Alaska, where more than half of the residents are on Medicaid, and fewer than one in five have insurance through their job.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!uuCk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24446437-605c-4875-9b81-c845ea96b4ea_1031x671.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!uuCk!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24446437-605c-4875-9b81-c845ea96b4ea_1031x671.png 424w, https://substackcdn.com/image/fetch/$s_!uuCk!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24446437-605c-4875-9b81-c845ea96b4ea_1031x671.png 848w, https://substackcdn.com/image/fetch/$s_!uuCk!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24446437-605c-4875-9b81-c845ea96b4ea_1031x671.png 1272w, https://substackcdn.com/image/fetch/$s_!uuCk!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24446437-605c-4875-9b81-c845ea96b4ea_1031x671.png 1456w\" sizes=\"100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!uuCk!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24446437-605c-4875-9b81-c845ea96b4ea_1031x671.png\" width=\"1031\" height=\"671\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/24446437-605c-4875-9b81-c845ea96b4ea_1031x671.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:671,&quot;width&quot;:1031,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!uuCk!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24446437-605c-4875-9b81-c845ea96b4ea_1031x671.png 424w, https://substackcdn.com/image/fetch/$s_!uuCk!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24446437-605c-4875-9b81-c845ea96b4ea_1031x671.png 848w, https://substackcdn.com/image/fetch/$s_!uuCk!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24446437-605c-4875-9b81-c845ea96b4ea_1031x671.png 1272w, https://substackcdn.com/image/fetch/$s_!uuCk!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24446437-605c-4875-9b81-c845ea96b4ea_1031x671.png 1456w\" sizes=\"100vw\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-tqxFUX\" tabindex=\"0\" type=\"button\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-tqxFUX\" tabindex=\"0\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\"><a href=\"https://public.flourish.studio/story/3858018/\">Explore our interactive data</a></figcaption></figure></div><p>Usually we hear that rural areas have fewer jobs. But really it\u2019s that these areas have fewer jobs <em>with benefits</em>. Most folks work for small firms or for themselves, like Meghan and John,, and we know that small employers are less likely to offer insurance. Many other rural workers are more likely to work part time and earn lower wages, often making it difficult to access or afford insurance.</p><p><a href=\"https://www.kff.org/affordable-care-act/occupations-with-large-shares-of-workers-who-rely-on-individual-market-coverage/\">KFF estimated in 2023 that 27%</a> of farmers, ranchers, and agricultural managers bought coverage on the ACA marketplace, at roughly 3x the rate for all other US adults. Rural uninsured rates still run higher than urban ones, 8.4% versus 7.8%. Without public programs, the rural gap will likely widen.</p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/subscribe?&quot;,&quot;text&quot;:&quot;Subscribe now&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/subscribe?\"><span>Subscribe now</span></a></p><p>The farmers who grow the country\u2019s food, the seasonal workers who harvest it, and the aides, drivers, and shop owners who keep small towns running do the heavy lifting that the rest of America relies on. To understand the scale, farmers based in America supply <a href=\"https://www.ers.usda.gov/data-products/charts-of-note/112543\">85% of U.S. food </a>(we are hardly an importer of most of our food) and seasonal workers provide <a href=\"https://www.ers.usda.gov/data-products/ag-and-food-statistics-charting-the-essentials/farming-and-farm-income\">60% of crop labor.</a> We would not be eating without them, and we need to give support in turn.</p><p>As the government pulls back public programs without replacing them (<a href=\"https://www.dtnpf.com/agriculture/web/ag/news/article/2025/12/22/trump-administration-dramatically-2\">20,000</a> USDA staff left or were fired creating huge shortfalls in our ability to fund public programs that support farm workers, and <a href=\"https://ruralradio.com/kneb-fm/news/more-than-20000-employees-leave-usda-in-early-2025-watchdog-report-finds/\">1 in 3</a> Rural Development Fund staff were let go who were responsible for administering housing, utilities and economic programs in small towns) our fellow citizens doing some of the country\u2019s most essential work are left to absorb the cost on their own, and in too many cases will be without care at all.</p><h1><strong>How is your community covered?</strong></h1><p>Search for your county in our interactive tool below to see how people there get health insurance: through an employer, Medicaid, Medicare, a plan they buy themselves, or not at all.</p><div id=\"datawrapper-iframe\" class=\"datawrapper-wrap outer\" data-attrs=\"{&quot;url&quot;:&quot;https://datawrapper.dwcdn.net/Pgswp/2/&quot;,&quot;thumbnail_url&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/c1f0aab3-8682-49fa-b8e7-feef670f1a96_1220x2018.png&quot;,&quot;thumbnail_url_full&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/a1a9e0fd-7400-4b98-a4a2-40a7cd6fea96_1220x2142.png&quot;,&quot;height&quot;:1111,&quot;title&quot;:&quot;County Lookup&quot;,&quot;description&quot;:&quot;How is your County Covered?&quot;,&quot;belowTheFold&quot;:true}\" data-component-name=\"DatawrapperToDOM\"><iframe id=\"iframe-datawrapper\" class=\"datawrapper-iframe\" src=\"https://datawrapper.dwcdn.net/Pgswp/2/\" width=\"730\" height=\"1111\" frameborder=\"0\" scrolling=\"no\" loading=\"lazy\"></iframe><script type=\"text/javascript\">!function(){\"use strict\";window.addEventListener(\"message\",(function(e){if(void 0!==e.data[\"datawrapper-height\"]){var t=document.querySelectorAll(\"iframe\");for(var a in e.data[\"datawrapper-height\"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data[\"datawrapper-height\"][a]+\"px\"}}}))}();</script></div><h1><strong>Medicaid\u2019s new paperwork test</strong></h1><p>Starting January 1, 2027, adults in the Medicaid expansion group must show <a href=\"https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms\">80 hours a month of work</a>, school, job training, or community service, or earn at least $580 a month. Supporters argue that health coverage should be <em>earned</em>, and the government estimates the rules will save $317 billion over 10 years.</p><p>The problem is, most enrollees do earn their health coverage (which of course, many would argue is not the way the system should work) so most of the coverage loss will come from the administrative burden. We saw this in Arkansas in 2018. When it tried work rules, 18,000 people lost coverage before a judge halted the program, and <a href=\"https://www.nejm.org/doi/full/10.1056/NEJMsr1901772\">a survey in the New England Journal of Medicine</a> found that 92% of them had met the requirement or should have been exempt.</p><p>In May, Nebraska started enacting these new work requirements. Through September, the state denied 1,773 people on the work rules alone, and the <a href=\"https://www.medicaldaily.com/nebraska-medicaid-renewal-denials-paperwork-work-requirements-479407\">Nebraska Hospital Association</a> says 90% of denials since May were due to incomplete or misfiled paperwork.</p><p class=\"button-wrapper\" data-attrs=\"{&quot;url&quot;:&quot;https://americaninequality.substack.com/p/the-people-who-feed-us-are-on-their/comments&quot;,&quot;text&quot;:&quot;Leave a comment&quot;,&quot;action&quot;:null,&quot;class&quot;:null}\" data-component-name=\"ButtonCreateButton\"><a class=\"button primary\" href=\"https://americaninequality.substack.com/p/the-people-who-feed-us-are-on-their/comments\"><span>Leave a comment</span></a></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!LQ3L!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f4a6a7b-3cf0-4be1-81b2-25d44c4dca78_3200x2133.jpeg\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!LQ3L!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f4a6a7b-3cf0-4be1-81b2-25d44c4dca78_3200x2133.jpeg 424w, https://substackcdn.com/image/fetch/$s_!LQ3L!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f4a6a7b-3cf0-4be1-81b2-25d44c4dca78_3200x2133.jpeg 848w, https://substackcdn.com/image/fetch/$s_!LQ3L!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f4a6a7b-3cf0-4be1-81b2-25d44c4dca78_3200x2133.jpeg 1272w, https://substackcdn.com/image/fetch/$s_!LQ3L!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f4a6a7b-3cf0-4be1-81b2-25d44c4dca78_3200x2133.jpeg 1456w\" sizes=\"auto, 100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!LQ3L!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f4a6a7b-3cf0-4be1-81b2-25d44c4dca78_3200x2133.jpeg\" width=\"1456\" height=\"971\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/0f4a6a7b-3cf0-4be1-81b2-25d44c4dca78_3200x2133.jpeg&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:971,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:&quot;A photo of an older man seated. In the foreground are a variety of orange pill bottles.&quot;,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"A photo of an older man seated. In the foreground are a variety of orange pill bottles.\" title=\"A photo of an older man seated. In the foreground are a variety of orange pill bottles.\" srcset=\"https://substackcdn.com/image/fetch/$s_!LQ3L!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f4a6a7b-3cf0-4be1-81b2-25d44c4dca78_3200x2133.jpeg 424w, https://substackcdn.com/image/fetch/$s_!LQ3L!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f4a6a7b-3cf0-4be1-81b2-25d44c4dca78_3200x2133.jpeg 848w, https://substackcdn.com/image/fetch/$s_!LQ3L!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f4a6a7b-3cf0-4be1-81b2-25d44c4dca78_3200x2133.jpeg 1272w, https://substackcdn.com/image/fetch/$s_!LQ3L!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f4a6a7b-3cf0-4be1-81b2-25d44c4dca78_3200x2133.jpeg 1456w\" sizes=\"auto, 100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-tqxFUX\" tabindex=\"0\" type=\"button\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-tqxFUX\" tabindex=\"0\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">Eli McCreary lost his insurance coverage in the middle of undergoing kidney cancer treatment - <a href=\"https://kffhealthnews.org/medicaid/medicaid-work-requirements-lost-coverage-nebraska-early-rollout/\">KFF</a></figcaption></figure></div><p>Just last week, a story broke about <a href=\"https://kffhealthnews.org/medicaid/medicaid-work-requirements-lost-coverage-nebraska-early-rollout/\">Eli McCreary of Omaha, Nebraska </a>losing coverage even though he is in the midst of kidney cancer treatment. With one phone call, Mr. McCreary was told the hospital was canceling his appointments, unless he paid out of pocket.</p><p>\u201cI don\u2019t understand what job I can get,\u201d McCreary said. \u201cI can\u2019t walk. I can hardly breathe. I can\u2019t move around. What job am I going to get?\u201d McCreary is trying to file for an exemption, but in the meantime he is forced to miss multiple appointments and can\u2019t schedule them until his paperwork is approved. </p><p>Determined to be the first state to enforce Medicaid work requirements under President Donald Trump\u2019s signature One Big Beautiful Bill Act, Nebraska launched the new rules on May 1, eight months before most states will do the same. </p><p>States can exempt counties where unemployment tops 8%, or 1.5 times the national rate (which is <a href=\"https://www.bls.gov/news.release/pdf/empsit.pdf\">4.1%</a> as of October 2026). But rural coverage gaps aren\u2019t mainly about joblessness. The gaps stem from part-time, seasonal, and low-wage work. 144 counties would qualify for Medicaid exemption based on this unemployment relief, but in our analysis from American Inequality, you can see how little red there actually is on that map! The relief ceiling is set too high.</p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!vyA-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F628e0397-19c6-4b1b-8251-3190c97da6b7_1240x1058.png\" data-component-name=\"Image2ToDOM\"><div class=\"image2-inset\"><picture><source type=\"image/webp\" srcset=\"https://substackcdn.com/image/fetch/$s_!vyA-!,w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F628e0397-19c6-4b1b-8251-3190c97da6b7_1240x1058.png 424w, https://substackcdn.com/image/fetch/$s_!vyA-!,w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F628e0397-19c6-4b1b-8251-3190c97da6b7_1240x1058.png 848w, https://substackcdn.com/image/fetch/$s_!vyA-!,w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F628e0397-19c6-4b1b-8251-3190c97da6b7_1240x1058.png 1272w, https://substackcdn.com/image/fetch/$s_!vyA-!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F628e0397-19c6-4b1b-8251-3190c97da6b7_1240x1058.png 1456w\" sizes=\"auto, 100vw\"><img src=\"https://substackcdn.com/image/fetch/$s_!vyA-!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F628e0397-19c6-4b1b-8251-3190c97da6b7_1240x1058.png\" width=\"1240\" height=\"1058\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/628e0397-19c6-4b1b-8251-3190c97da6b7_1240x1058.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:1058,&quot;width&quot;:1240,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:null,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:null,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" class=\"sizing-normal\" alt=\"\" srcset=\"https://substackcdn.com/image/fetch/$s_!vyA-!,w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F628e0397-19c6-4b1b-8251-3190c97da6b7_1240x1058.png 424w, https://substackcdn.com/image/fetch/$s_!vyA-!,w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F628e0397-19c6-4b1b-8251-3190c97da6b7_1240x1058.png 848w, https://substackcdn.com/image/fetch/$s_!vyA-!,w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F628e0397-19c6-4b1b-8251-3190c97da6b7_1240x1058.png 1272w, https://substackcdn.com/image/fetch/$s_!vyA-!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F628e0397-19c6-4b1b-8251-3190c97da6b7_1240x1058.png 1456w\" sizes=\"auto, 100vw\" loading=\"lazy\"></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><button class=\"pencraft pc-reset pencraft icon-container restack-image buttonBase-tqxFUX\" tabindex=\"0\" type=\"button\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" stroke-width=\"1.5\" stroke=\"var(--color-fg-primary)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\" class=\"icon-noB79L\"><g><path d=\"M2.53001 7.81595C3.49179 4.73911 6.43281 2.5 9.91173 2.5C13.1684 2.5 15.9537 4.46214 17.0852 7.23684L17.6179 8.67647M17.6179 8.67647L18.5002 4.26471M17.6179 8.67647L13.6473 6.91176M17.4995 12.1841C16.5378 15.2609 13.5967 17.5 10.1178 17.5C6.86118 17.5 4.07589 15.5379 2.94432 12.7632L2.41165 11.3235M2.41165 11.3235L1.5293 15.7353M2.41165 11.3235L6.38224 13.0882\"></path></g></svg></button><button class=\"pencraft pc-reset pencraft icon-container view-image buttonBase-tqxFUX\" tabindex=\"0\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2 icon-noB79L\"><polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line></svg></button></div></div></div></a><figcaption class=\"image-caption\">The exemption sounds nice on paper, but barely any communities actually qualify. <a href=\"https://datawrapper.dwcdn.net/aENws/1/\">Explore our interactive map</a></figcaption></figure></div><p>The rules do make some room for seasonal work: a seasonal worker can qualify on average monthly income over six months. Many enrollees will also be requalified automatically from state data, and others face check-ins twice a year. None of this skips the documentation, though. <a href=\"https://www.nytimes.com/2026/11/11/business/hospitals-medicaid-cuts.html?unlocked_article_code=1.QVE.yggU.AmPjmw4WcQKI&amp;smid=url-share\">The New York Times </a>lists seasonal farm laborers among the workers most affected from these Medicaid cuts with roughly <a href=\"https://kffhealthnews.org/insurance/agricultural-workers-medicaid-eligibility-immigration-food-harvest/\">71%-79% of farmworker households relying on Medicaid</a>. A farmer paid by several growers over a season is employed by any definition. It\u2019s just hard to prove that on paper.</p><h1><strong>A path forward</strong></h1><p>Two weeks ago we experienced the <a href=\"https://substack.com/home/post/p-223218395\">blue tsunami</a> (with key shifts in rural voting!). Midterms gave Democrats control of both chambers of Congress, and party leaders have promised to reverse the Medicaid cuts and restore the ACA subsidies. The timing, however, makes this complicated.</p><p>Work requirements begin January 1, two days before the new Congress is sworn in, and even with larger majorities, there are not enough votes to override a presidential veto. We will see change come through funding deals, courts, and state choices. Most recently, <a href=\"https://apnews.com/article/trump-medicaid-chronically-ill-work-requirements-656719bd7c8358d9d5290cf54f81255b\">a federal judge in Boston</a> blocked a requirement that would have made it harder for people too sick to work to claim an exemption.</p><p>The Congressional Budget Office <a href=\"https://www.cbo.gov/publication/61463\">estimates</a> that by 2034, more than five million people in 44 states and the District of Columbia will lose Medicaid because of the work rules. Again, this is not about meeting the rules, but rather the deadlines and paperwork.</p><p>The same 2025 law also created a $50 billion <a href=\"https://www.medicaid.gov/resources-for-states/rural-health\">Rural Health Transformation Program</a>, paying approved states $10 billion a year through 2030. It is indeed a significant one-time investment in rural health, but it\u2019s temporary and <a href=\"https://www.kff.org/medicaid/a-closer-look-at-the-50-billion-rural-health-transformation-program/#63feca09-a005-432a-a6f6-d49ac71fd4c7\">barely will cover one-third of the projected cuts in the places that most need it</a>. And not losing sight, the reason it exists is only to soften the cuts the same bill (H.R. 1) is making in the first place.</p><p>Back in Allamakee County, the Palmers will keep picking up nursing shifts and milking cows. They have found a way to make it work, and will continue to do so. But those who feed the country should not have to do it alone.</p><div><hr></div><h3><strong>INTERESTING ON THE WEB</strong></h3><ul><li><p>New 5 decade study from Penn links growing wealth inequality to higher death rates - <a href=\"https://ldi.upenn.edu/our-work/research-updates/study-links-growing-wealth-inequality-to-higher-death-rates/\">JAMA</a></p></li><li><p>Lots of new fantastic charts in the 2026 World Inequality Report, showing where the US is out in front of its peers, and where it has less inequality - <a href=\"https://wir2026.wid.world/insight/executive-summary/\">WIR</a></p></li><li><p>6 million people expected to lose SNAP benefits right before Thanksgiving - <a href=\"https://thehill.com/homenews/administration/6211586-usda-snap-eligibility-proposal/\">The Hill</a></p></li><li><p>It turns out America has a <em>regressive </em>tax system when you zoom in on the very very wealthiest - <a href=\"https://americaninequality.substack.com/p/charts-that-explain-the-world-no11?r=6x58d&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true\">AIP</a></p></li><li><p>Lots of new websites! We redesigned the website for <a href=\"https://americaninequality.substack.com/\">American Inequality</a>, for <a href=\"https://www.theopportunitymap.com/\">The Opportunity Map</a>, and for my own <a href=\"https://www.jeremybney.com/\">personal site</a>. </p></li></ul><p></p>",
+  "has_dynamic_content": false,
+  "truncated_body_text": "The land where Meghan and John Palmer milk 180 cows has been in their family for three generations. Neither Meghan nor John has a job that comes with health insurance, and when they fall sick, production drops dramatically on Prairie Star Farm located in Allamakee County, Iowa. In their first year of marriage they went without insurance, then paid out o\u2026",
+  "wordcount": 1510,
+  "post_preview_limit": null,
+  "language": "en",
+  "postTags": [
+    {
+      "id": "0c86e624-cbdf-4d80-9dca-960adaff737c",
+      "publication_id": 267573,
+      "name": "Farmers",
+      "slug": "farmers",
+      "hidden": false
+    },
+    {
+      "id": "41395506-40bd-4270-b6fb-1d7d96acce88",
+      "publication_id": 267573,
+      "name": "U.S. Politics",
+      "slug": "us-politics",
+      "hidden": false
+    },
+    {
+      "id": "5927d46c-1d34-4044-a831-48b6c2073a05",
+      "publication_id": 267573,
+      "name": "rural",
+      "slug": "rural",
+      "hidden": false
+    },
+    {
+      "id": "6dfd06e8-04aa-42ad-a7e5-8baa6e00bdbe",
+      "publication_id": 267573,
+      "name": "Economics",
+      "slug": "economics",
+      "hidden": false
+    },
+    {
+      "id": "713eea61-8117-4fdd-80da-0fd4e458a16e",
+      "publication_id": 267573,
+      "name": "Healthcare",
+      "slug": "healthcare",
+      "hidden": false
+    },
+    {
+      "id": "ba1d5fa0-33ac-46ca-a1fb-7e8b9cff08eb",
+      "publication_id": 267573,
+      "name": "Data Science",
+      "slug": "data-science",
+      "hidden": false
+    },
+    {
+      "id": "c53013a3-39bb-47ac-b6eb-22d3eaf23eaa",
+      "publication_id": 267573,
+      "name": "Iowa",
+      "slug": "iowa",
+      "hidden": false
+    },
+    {
+      "id": "d0d9619c-35d0-42d2-b436-2353718c0c26",
+      "publication_id": 267573,
+      "name": "business",
+      "slug": "business",
+      "hidden": false
+    }
+  ],
+  "postCountryBlocks": [],
+  "disable_drop_cap": false,
+  "cover_image_crop": null,
+  "headlineTest": null,
+  "coverImagePalette": {
+    "Vibrant": {
+      "rgb": [
+        60,
+        113,
+        197
+      ],
+      "population": 550
+    },
+    "DarkVibrant": {
+      "rgb": [
+        37,
+        84,
+        155
+      ],
+      "population": 20
+    },
+    "LightVibrant": {
+      "rgb": [
+        130,
+        185,
+        251
+      ],
+      "population": 504
+    },
+    "Muted": {
+      "rgb": [
+        108,
+        140,
+        180
+      ],
+      "population": 1
+    },
+    "DarkMuted": {
+      "rgb": [
+        81,
+        88,
+        49
+      ],
+      "population": 563
+    },
+    "LightMuted": {
+      "rgb": [
+        203,
+        193,
+        187
+      ],
+      "population": 603
+    }
+  },
+  "publishedBylines": [
+    {
+      "id": 6777665,
+      "name": "Zoe Siegel",
+      "handle": "zoesiegel",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/1b3cdeaa-9fdc-4dbb-9e00-1347131f3fd4_800x800.jpeg",
+      "bio": null,
+      "profile_set_up_at": "2024-02-15T18:49:30.183Z",
+      "reader_installed_at": "2024-09-23T23:49:49.602Z",
+      "publicationUsers": [
+        {
+          "id": 2619961,
+          "user_id": 6777665,
+          "publication_id": 267573,
+          "role": "admin",
+          "public": true,
+          "is_primary": false,
+          "publication": {
+            "id": 267573,
+            "name": "American Inequality",
+            "subdomain": "americaninequality",
+            "custom_domain": null,
+            "custom_domain_optional": false,
+            "hero_text": "Mapping the country's greatest economic challenges",
+            "logo_url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ca313513-016e-48f0-9e6f-ef172c82864f_1252x1252.png",
+            "author_id": 11624125,
+            "primary_user_id": 11624125,
+            "theme_var_background_pop": "#2096FF",
+            "created_at": "2021-01-21T21:08:07.518Z",
+            "email_from_name": "Jeremy Ney",
+            "copyright": "Jeremy Ney",
+            "founding_plan_name": "Premium Access",
+            "community_enabled": true,
+            "invite_only": false,
+            "payments_state": "enabled",
+            "language": null,
+            "explicit": false,
+            "homepage_type": "newspaper",
+            "is_personal_mode": false,
+            "logo_url_wide": "https://substack-post-media.s3.amazonaws.com/public/images/d08f70b8-7140-4c87-9c25-f0ccf066820b_1642x486.png"
+          }
+        }
+      ],
+      "is_guest": false,
+      "bestseller_tier": 100,
+      "status": {
+        "bestsellerTier": 100,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      }
+    },
+    {
+      "id": 46869049,
+      "name": "Michael Tiede",
+      "handle": "michaeltiede",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/36c116bf-550c-4df7-8f02-7949fa49e637_1281x854.jpeg",
+      "bio": "Data Scientist, Computational Social Science. Using data for social good. Based in Los Angeles",
+      "profile_set_up_at": "2024-11-04T17:16:08.747Z",
+      "reader_installed_at": "2024-11-04T17:16:01.318Z",
+      "publicationUsers": [
+        {
+          "id": 5562459,
+          "user_id": 46869049,
+          "publication_id": 267573,
+          "role": "admin",
+          "public": true,
+          "is_primary": false,
+          "publication": {
+            "id": 267573,
+            "name": "American Inequality",
+            "subdomain": "americaninequality",
+            "custom_domain": null,
+            "custom_domain_optional": false,
+            "hero_text": "Mapping the country's greatest economic challenges",
+            "logo_url": "https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/ca313513-016e-48f0-9e6f-ef172c82864f_1252x1252.png",
+            "author_id": 11624125,
+            "primary_user_id": 11624125,
+            "theme_var_background_pop": "#2096FF",
+            "created_at": "2021-01-21T21:08:07.518Z",
+            "email_from_name": "Jeremy Ney",
+            "copyright": "Jeremy Ney",
+            "founding_plan_name": "Premium Access",
+            "community_enabled": true,
+            "invite_only": false,
+            "payments_state": "enabled",
+            "language": null,
+            "explicit": false,
+            "homepage_type": "newspaper",
+            "is_personal_mode": false,
+            "logo_url_wide": "https://substack-post-media.s3.amazonaws.com/public/images/d08f70b8-7140-4c87-9c25-f0ccf066820b_1642x486.png"
+          }
+        }
+      ],
+      "is_guest": false,
+      "bestseller_tier": 100,
+      "status": {
+        "bestsellerTier": 100,
+        "subscriberTier": null,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "bestseller",
+          "tier": 100
+        },
+        "subscriber": null
+      }
+    }
+  ],
+  "reaction": null,
+  "reaction_count": 15,
+  "comment_count": 3,
+  "child_comment_count": 2,
+  "audio_items": [
+    {
+      "post_id": 225352936,
+      "voice_id": "en-US-OnyxTurboMultilingualNeural",
+      "audio_url": "https://substack-video.s3.amazonaws.com/video_upload/post/225352936/tts/efe4ebe2-91a5-4dd5-a9e9-e2f3defad7ce/en-US-OnyxTurboMultilingualNeural.mp3",
+      "type": "tts",
+      "status": "completed"
+    }
+  ],
+  "vg_wort_pixel_url": null,
+  "is_geoblocked": false,
+  "sponsorshipEditionBanner": null,
+  "is_editor_preview": false,
+  "hasCashtag": false,
+  "unlockedWithIP": false,
+  "unlockedWithCampaign": false,
+  "themeVariables": {
+    "color_theme_bg_pop": "#fc5528",
+    "background_pop": "#fc5528",
+    "color_theme_bg_web": null,
+    "cover_bg_color": "#FFFFFF",
+    "cover_bg_color_secondary": "#f0f0f0",
+    "background_pop_darken": "#fc410f",
+    "print_on_pop": "#ffffff",
+    "color_theme_bg_pop_darken": "#fc410f",
+    "color_theme_print_on_pop": "#ffffff",
+    "color_theme_bg_pop_20": "rgba(252, 85, 40, 0.2)",
+    "color_theme_bg_pop_30": "rgba(252, 85, 40, 0.3)",
+    "print_pop": "#fc5528",
+    "color_theme_accent": "#fc5528",
+    "cover_print_primary": "#363737",
+    "cover_print_secondary": "#757575",
+    "cover_print_tertiary": "#b6b6b6",
+    "cover_border_color": "#fc5528",
+    "font_family_headings_preset": "'SF Pro Display', -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "font_weight_headings_preset": 700,
+    "font_family_body_preset": "Spectral,sans-serif",
+    "font_weight_body_preset": 400,
+    "font_preset_heading": "sans",
+    "font_preset_body": "classic_serif",
+    "home_hero": "feature-media",
+    "home_posts": "custom",
+    "home_show_top_posts": true,
+    "web_bg_color": "#ffffff",
+    "background_contrast_1": "#f0f0f0",
+    "background_contrast_2": "#dddddd",
+    "background_contrast_3": "#b7b7b7",
+    "background_contrast_4": "#929292",
+    "background_contrast_5": "#515151",
+    "color_theme_bg_contrast_1": "#f0f0f0",
+    "color_theme_bg_contrast_2": "#dddddd",
+    "color_theme_bg_contrast_3": "#b7b7b7",
+    "color_theme_bg_contrast_4": "#929292",
+    "color_theme_bg_contrast_5": "#515151",
+    "color_theme_bg_elevated": "#ffffff",
+    "color_theme_bg_elevated_secondary": "#f0f0f0",
+    "color_theme_bg_elevated_tertiary": "#dddddd",
+    "color_theme_detail": "#e6e6e6",
+    "background_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "color_theme_bg_contrast_pop": "rgba(252, 85, 40, 0.4)",
+    "theme_bg_is_dark": "0",
+    "print_on_web_bg_color": "#363737",
+    "print_secondary_on_web_bg_color": "#868787",
+    "footer_bg_color": "#ffffff",
+    "footer_bg_color_h": "0",
+    "footer_bg_color_s": "0%",
+    "footer_bg_color_l": "100%",
+    "print_on_footer_bg_color": "#363737",
+    "print_secondary_on_footer_bg_color": "#868787",
+    "footer_bg_contrast_1": "#f0f0f0",
+    "footer_bg_contrast_2": "#dddddd",
+    "footer_bg_contrast_3": "#b7b7b7",
+    "footer_bg_contrast_4": "#929292",
+    "footer_bg_elevated": "#ffffff",
+    "footer_bg_elevated_secondary": "#f0f0f0",
+    "footer_bg_elevated_tertiary": "#dddddd",
+    "footer_detail_color": "#e6e6e6",
+    "subscribe_bg_color": "#fafafa",
+    "subscribe_bg_color_h": "0",
+    "subscribe_bg_color_s": "0%",
+    "subscribe_bg_color_l": "98.0392156862745%",
+    "print_on_subscribe_bg_color": "#363737",
+    "print_secondary_on_subscribe_bg_color": "#848585",
+    "subscribe_bg_contrast_1": "#ebebeb",
+    "subscribe_bg_contrast_2": "#d8d8d8",
+    "subscribe_bg_contrast_3": "#b3b3b3",
+    "subscribe_bg_contrast_4": "#909090",
+    "subscribe_bg_elevated": "#fafafa",
+    "subscribe_bg_elevated_secondary": "#ebebeb",
+    "subscribe_bg_elevated_tertiary": "#d8d8d8",
+    "subscribe_detail_color": "#e1e1e1",
+    "background_pop_rgb": "252, 85, 40",
+    "color_theme_bg_pop_rgb": "252, 85, 40",
+    "color_theme_accent_rgb": "252, 85, 40"
+  },
+  "comments": [
+    {
+      "id": 390848502,
+      "body": "Why do these rural people keep voting for the party that takes away or reduces their health care and SNAP benefits?",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1",
+          "title": null
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Why do these rural people keep voting for the party that takes away or reduces their health care and SNAP benefits?"
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 225352936,
+      "user_id": 19745259,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2026-11-18T17:19:55.521Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "KM",
+      "photo_url": "https://substack-post-media.s3.amazonaws.com/public/images/c0bfaefb-4440-4cb0-ab58-e3f62fae0201_144x144.png",
+      "handle": "communic8",
+      "reactor_names": [
+        "Jeremy Ney"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 1
+      },
+      "reaction_count": 1,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "communic8",
+      "metadata": {
+        "is_author": false,
+        "membership_state": "free_signup",
+        "eligibleForGift": true,
+        "author_on_other_pub": {
+          "name": "KM",
+          "id": 4007535,
+          "base_url": "https://communic8.substack.com"
+        }
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": 5,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "subscriber",
+          "tier": 5,
+          "accent_colors": null
+        },
+        "subscriber": null
+      },
+      "score": 6,
+      "children_count": 0,
+      "reported_by_user": false,
+      "restacked": false
+    },
+    {
+      "id": 390815129,
+      "body": "Rural America and farmers are so often forgotten, and yet America would be nothing without them",
+      "body_json": {
+        "type": "doc",
+        "attrs": {
+          "schemaVersion": "v1",
+          "title": null
+        },
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Rural America and farmers are so often forgotten, and yet America would be nothing without them"
+              }
+            ]
+          }
+        ]
+      },
+      "publication_id": 267573,
+      "post_id": 225352936,
+      "user_id": 82132649,
+      "ancestor_path": "",
+      "type": "comment",
+      "deleted": false,
+      "date": "2026-11-18T16:43:11.496Z",
+      "edited_at": null,
+      "status": "published",
+      "pinned_by_user_id": null,
+      "restacks": 0,
+      "name": "JB",
+      "photo_url": null,
+      "handle": "jb12872651",
+      "reactor_names": [
+        "Jeremy Ney"
+      ],
+      "reaction": null,
+      "reactions": {
+        "\u2764": 1
+      },
+      "reaction_count": 1,
+      "children": [],
+      "bans": [],
+      "suppressed": false,
+      "user_banned": false,
+      "user_banned_for_comment": false,
+      "user_slug": "jb12872651",
+      "metadata": {
+        "is_author": false,
+        "membership_state": "subscribed",
+        "eligibleForGift": false,
+        "author_on_other_pub": {
+          "name": "JB",
+          "id": 3291738,
+          "base_url": "https://jb12872651.substack.com"
+        }
+      },
+      "user_bestseller_tier": null,
+      "can_dm": true,
+      "userStatus": {
+        "bestsellerTier": null,
+        "subscriberTier": 1,
+        "leaderboard": null,
+        "vip": false,
+        "badge": {
+          "type": "subscriber",
+          "tier": 1,
+          "accent_colors": {
+            "fg": {
+              "light": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              },
+              "dark": {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "a": 1
+              }
+            },
+            "bg": {
+              "light": {
+                "r": 252,
+                "g": 85,
+                "b": 40,
+                "a": 1
+              },
+              "dark": {
+                "r": 252,
+                "g": 85,
+                "b": 40,
+                "a": 1
+              }
+            }
+          }
+        },
+        "subscriber": null
+      },
+      "score": 6,
+      "children_count": 1,
+      "reported_by_user": false,
+      "restacked": false,
+      "childrenSummary": "1 reply"
+    }
+  ],
+  "oneOffUnlockOffer": {
+    "eligible": false
+  }
+}
