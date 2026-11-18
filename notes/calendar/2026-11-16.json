@@ -206,7 +206,21 @@
   "text": "Pedestrians in New Mexico are 5x more likely to be killed by a car than pedestrians in Iowa, and it's getting worse. Great map from @[Aziz Sunderji](2432780).\n\nWalking is how a lot of lower-income Americans get to work, and in too many states it's a dangerous way to get there.",
   "chart": "charts/2026-11-16/reshare_sunderji_pedestrians.png",
   "why_now": "Reshare: Aziz Sunderji map (Nov 11); Jeremy's car-safety notes perform well.",
-  "source_kind": "reshare: Aziz Sunderji / The Pro Map"
+  "source_kind": "reshare: Aziz Sunderji / The Pro Map",
+  "replaced_by": "20261120-3r"
+ },
+ {
+  "id": "20261120-3r",
+  "scheduled_et": "2026-11-20T18:44:00-05:00",
+  "day": "Fri Nov 20",
+  "time_et": "6:44 PM",
+  "block": "afternoon",
+  "status": "Scheduled",
+  "pillar": "Housing",
+  "text": "Home values in Haddonfield, New Jersey, where the median household earns $151,000, are up 6.8% over the past year. Just across the river in Camden, where it's $37,000, they're down 7.8%. Great map from @[Aziz Sunderji](2432780).\n\nThis is the K-shaped economy showing up in the one asset most families depend on, and it's pulling neighborhoods further apart every year.",
+  "chart": "charts/rapid/2026-11-18_sunderji_kshaped_homes.png",
+  "why_now": "Rapid: Aziz Sunderji 'Pulling Apart' map story (Nov 17), Zillow ZHVI Oct 2026.",
+  "source_kind": "rapid: reshare Aziz Sunderji / The Pro Map"
  },
  {
   "id": "20261121-1",
