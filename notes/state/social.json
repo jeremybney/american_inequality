@@ -23,6 +23,16 @@
   "20261118-3": {
    "at": "2026-11-19T05:41:47.669627-05:00",
    "status": "Missed"
+  },
+  "20261119-1": {
+   "at": "2026-11-19T14:11:39.245407-05:00",
+   "status": "Missed"
+  },
+  "20261119-2": {
+   "at": "2026-11-19T14:11:39.245407-05:00",
+   "status": "Posted",
+   "uri": "at://did:plc:kud23bph4ndh27o2vnn44hx6/app.bsky.feed.post/3n2ormydtgd2c",
+   "url": "https://bsky.app/profile/jeremybney.bsky.social/post/3n2ormydtgd2c"
   }
  },
  "x": {
@@ -49,6 +59,15 @@
   "20261118-3": {
    "at": "2026-11-19T05:41:47.669627-05:00",
    "status": "Missed"
+  },
+  "20261119-1": {
+   "at": "2026-11-19T14:11:39.245407-05:00",
+   "status": "Missed"
+  },
+  "20261119-2": {
+   "at": "2026-11-19T14:11:39.245407-05:00",
+   "error": "POST /2/tweets -> HTTP 403 (forbidden: the app lacks Read and Write, or your X API plan doesn't allow this endpoint; check the plan/usage page in the developer portal): {\"detail\":\"Your client app is not configured with the appropriate oauth1 app permissions for this endpoint.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"https://api.x.com/2/problems/oauth1-permissions\"}",
+   "status": "Error"
   }
  }
 }
