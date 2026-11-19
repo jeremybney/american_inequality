@@ -10,7 +10,8 @@
   "text": "A third of Americans between 18 and 34 now live in a parent's home, 24.8 million young adults in all, per new Census data. In New Jersey it's nearly half, and in Connecticut and California it's more than 4 in 10.\n\nThose are also some of the most expensive places in the country to rent an apartment, and young adults are doing the math.",
   "chart": "charts/2026-11-30/young_adults_with_parents.png",
   "why_now": "ACS 2025 1-year; holiday weekend, lots of adult kids home.",
-  "source_kind": "new map: Census ACS"
+  "source_kind": "new map: Census ACS",
+  "x_text": "A third of Americans aged 18 to 34 now live in a parent's home, 24.8 million young adults, per new Census data.\n\nNew Jersey, Connecticut and California top the list, all among the most expensive places in the country to rent. Young adults are doing the math."
  },
  {
   "id": "20261130-2",
@@ -36,7 +37,8 @@
   "text": "Black children who grew up in low-income families were three times as likely as white children from the same income level to be in prison or jail as young adults, according to the Opportunity Atlas.\n\nSame family income and the same starting point, with a completely different set of odds.",
   "chart": "charts/2026-11-30/incarceration_gap.png",
   "why_now": "Opportunity Atlas; follows the Nov 28 race-gap note with a different outcome.",
-  "source_kind": "new chart: Opportunity Atlas"
+  "source_kind": "new chart: Opportunity Atlas",
+  "x_text": "Black children from low-income families were three times as likely as white children from the same income level to be in prison or jail as young adults, per the Opportunity Atlas.\n\nSame family income, same starting point, very different odds."
  },
  {
   "id": "20261201-1",

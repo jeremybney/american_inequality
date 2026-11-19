@@ -1,14 +1,16 @@
 name: Substack Notes
 
 on:
-  # Posting runs on Jeremy's Mac (notes/local/): Substack's Cloudflare check blocks
-  # cloud servers. GitHub only re-learns the posting windows and runs manual checks.
+  # Substack posting runs on Jeremy's Mac (notes/local/): Substack's Cloudflare check blocks
+  # cloud servers. GitHub cross-posts to X (and later Bluesky/Threads), re-learns posting
+  # windows weekly, and runs manual checks.
   schedule:
+    - cron: "4,19,34,49 * * * *"   # cross-post anything due (times live in the calendar)
     - cron: "41 8 * * 1"           # Mondays: re-learn posting windows from engagement
   workflow_dispatch:
     inputs:
       action:
-        description: "verify | dry-run | test-upload | post-now | learn"
+        description: "verify | dry-run | test-upload | post-now | learn | x-verify | x-dry-run | x-test-post"
         required: true
         default: dry-run
       note_id:
@@ -29,26 +31,42 @@ jobs:
       run:
         working-directory: notes
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - run: pip install -q requests
+      - run: pip install -q requests requests-oauthlib
+
+      - name: Cross-post due notes
+        if: github.event_name == 'schedule' && github.event.schedule == '4,19,34,49 * * * *'
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: python social.py --post-due
 
       - name: Re-learn posting windows
-        if: github.event_name == 'schedule' || inputs.action == 'learn'
+        if: (github.event_name == 'schedule' && github.event.schedule == '41 8 * * 1') || inputs.action == 'learn'
         run: python learn.py
 
       - name: Manual action
         if: github.event_name == 'workflow_dispatch' && inputs.action != 'learn'
         env:
           SUBSTACK_SID: ${{ secrets.SUBSTACK_SID }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
         run: |
           case "${{ inputs.action }}" in
             verify)   python post_due.py --verify ;;
             dry-run)  python post_due.py --dry-run ;;
             test-upload) python post_due.py --test-upload ;;
             post-now) python post_due.py --now "${{ inputs.note_id }}" ;;
+            x-verify) python social.py --verify x ;;
+            x-dry-run) python social.py --dry-run ;;
+            x-test-post) python social.py --test-post x ;;
             *) echo "unknown action"; exit 1 ;;
           esac
 
@@ -57,4 +75,4 @@ jobs:
           git config user.name "notes-bot"
           git config user.email "notes-bot@users.noreply.github.com"
           git add state data/timing_model.json data/performance.md 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "notes: update state" && git push)
+          git diff --cached --quiet || (git commit -m "notes: update state" && (git push || (git pull --rebase && git push)))
