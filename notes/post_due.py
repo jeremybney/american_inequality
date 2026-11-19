@@ -99,6 +99,8 @@ def merged_calendar():
             n["text"] = row["Note text"].replace("\r\n", "\n").strip()
         if row.get("Chart file"):
             n["chart"] = row["Chart file"].strip()
+        if (row.get("X text") or "").strip():
+            n["x_text"] = row["X text"].replace("\r\n", "\n").strip()
         n["_from_sheet"] = True
     # A rapid-response note gets its own ID and marks the note it displaced with
     # "replaced_by" in the repo calendar. That wins over the Sheet, so the old text

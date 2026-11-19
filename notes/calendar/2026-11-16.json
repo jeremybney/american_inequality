@@ -140,7 +140,8 @@
   "text": "A child who grows up in a low-income family in Shelby County, Tennessee, reaches the 32nd income percentile as an adult. A child from the same family income in Bergen County, New Jersey, reaches the 52nd.\n\nSame starting point, and a very different life depending on the county where it begins.",
   "chart": "charts/2026-11-16/opportunity_atlas_counties.png",
   "why_now": "Replaces reused homelessness chart; Opportunity Atlas county map (new).",
-  "source_kind": "new map: Opportunity Atlas"
+  "source_kind": "new map: Opportunity Atlas",
+  "x_text": "A child from a low-income family in Shelby County, Tennessee, reaches the 32nd income percentile as an adult. In Bergen County, New Jersey, a child from the same family income reaches the 52nd.\n\nSame starting point, very different life."
  },
  {
   "id": "20261119-3",
@@ -193,7 +194,8 @@
   "text": "From 2022 to 2025, the typical family in the top 10% saw its wealth grow 31%, to $3.7 million, while families in the bottom 20% lost 6%, falling to $14,400. Great chart from @[Steve Rattner](1658881) on the new Federal Reserve data.\n\nFamilies in the middle gained 8%. Three years of rising stock and home prices mostly went to the families who already owned the most.",
   "chart": "charts/rapid/2026-11-17_rattner_scf_wealth.png",
   "why_now": "Rapid: Fed Survey of Consumer Finances 2025, via Rattner note Nov 16 (71 likes / 43 restacks in a day).",
-  "source_kind": "rapid: reshare Steve Rattner (Fed SCF 2025)"
+  "source_kind": "rapid: reshare Steve Rattner (Fed SCF 2025)",
+  "x_text": "From 2022 to 2025, the typical top-10% family's wealth grew 31%, to $3.7 million, while the bottom 20% lost 6%, falling to $14,400. Great chart from @SteveRattner on the new Fed data.\n\nRising stock and home prices mostly went to families who already owned the most."
  },
  {
   "id": "20261120-3",
@@ -220,7 +222,8 @@
   "text": "Home values in Haddonfield, New Jersey, where the median household earns $151,000, are up 6.8% over the past year. Just across the river in Camden, where it's $37,000, they're down 7.8%. Great map from @[Aziz Sunderji](2432780).\n\nThis is the K-shaped economy showing up in the one asset most families depend on, and it's pulling neighborhoods further apart every year.",
   "chart": "charts/rapid/2026-11-18_sunderji_kshaped_homes.png",
   "why_now": "Rapid: Aziz Sunderji 'Pulling Apart' map story (Nov 17), Zillow ZHVI Oct 2026.",
-  "source_kind": "rapid: reshare Aziz Sunderji / The Pro Map"
+  "source_kind": "rapid: reshare Aziz Sunderji / The Pro Map",
+  "x_text": "Home values in Haddonfield, NJ, where the median household earns $151,000, are up 6.8% this year. Across the river in Camden, where it's $37,000, they're down 7.8%. Great map from @AzizSunderji.\n\nThe K-shaped economy, showing up in the asset most families depend on."
  },
  {
   "id": "20261121-1",
@@ -371,7 +374,8 @@
   "text": "Public schools counted 1.5 million homeless students. HUD's count of homeless kids was about 134,000.\n\nThat 11x gap exists because HUD doesn't count families doubled up with relatives or sleeping on a friend's couch, and schools do. How a problem gets defined decides how big it looks.",
   "chart": "charts/2026-11-16/stat_homeless_students.png",
   "why_now": "HUD's 'record drop' announcement; follow-up to Thursday's note.",
-  "source_kind": "big stat: Ed + HUD"
+  "source_kind": "big stat: Ed + HUD",
+  "x_text": "Public schools counted 1.5 million homeless students. HUD counted about 134,000 homeless kids.\n\nThe 11x gap exists because HUD doesn't count families doubled up with relatives or on a friend's couch, and schools do. How a problem gets defined decides how big it looks."
  },
  {
   "id": "20261124-3",
@@ -384,7 +388,8 @@
   "text": "The biggest rent increases last year weren't in New York or California.\n\nRents in New Hampshire jumped 11.8%, followed by Maine and South Carolina at nearly 10%, then the Dakotas and Wyoming. The national average was 4.7%. When everyone moves somewhere cheap, it stops being cheap.",
   "chart": "charts/2026-11-16/rent_jumps.png",
   "why_now": "ACS 2025 vs 2024; Realtor.com rent-hike coverage (Nov 12).",
-  "source_kind": "new chart: Census ACS"
+  "source_kind": "new chart: Census ACS",
+  "x_text": "The biggest rent increases last year weren't in New York or California.\n\nRents in New Hampshire jumped 11.8%, then Maine and South Carolina at nearly 10%. The national average was 4.7%. When everyone moves somewhere cheap, it stops being cheap."
  },
  {
   "id": "20261125-1",
@@ -463,7 +468,8 @@
   "text": "Since January 2020, the typical home in New Hampshire has gained 75% in value, with Connecticut and Maine close behind. In DC, home values are slightly down.\n\nFor families who owned before 2020, that's a windfall sitting at the Thanksgiving table. For their kids trying to buy, it's the bar they now have to clear.",
   "chart": "charts/2026-11-16/home_values_since_2020.png",
   "why_now": "Replaces repeated labor-share chart; Thanksgiving night; Zillow ZHVI Oct 2026.",
-  "source_kind": "new map: Zillow"
+  "source_kind": "new map: Zillow",
+  "x_text": "Since January 2020, the typical home in New Hampshire has gained 75% in value. In DC, home values are slightly down.\n\nFor families who owned before 2020, that's a windfall at the Thanksgiving table. For their kids trying to buy, it's the bar they now have to clear."
  },
  {
   "id": "20261127-1",
