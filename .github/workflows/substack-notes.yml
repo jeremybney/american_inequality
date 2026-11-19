@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "verify | dry-run | test-upload | post-now | learn | x-verify | x-dry-run | x-test-post"
+        description: "verify | dry-run | test-upload | post-now | learn | x-verify | x-dry-run | x-test-post | bsky-verify | bsky-test-post"
         required: true
         default: dry-run
       note_id:
@@ -35,7 +35,7 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - run: pip install -q requests requests-oauthlib
+      - run: pip install -q requests requests-oauthlib pillow
 
       - name: Cross-post due notes
         if: github.event_name == 'schedule' && github.event.schedule == '4,19,34,49 * * * *'
@@ -44,6 +44,8 @@ jobs:
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
         run: python social.py --post-due
 
       - name: Re-learn posting windows
@@ -58,6 +60,8 @@ jobs:
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
         run: |
           case "${{ inputs.action }}" in
             verify)   python post_due.py --verify ;;
@@ -66,6 +70,8 @@ jobs:
             post-now) python post_due.py --now "${{ inputs.note_id }}" ;;
             x-verify) python social.py --verify x ;;
             x-dry-run) python social.py --dry-run ;;
+            bsky-verify) python social.py --verify bsky ;;
+            bsky-test-post) python social.py --test-post bsky ;;
             x-test-post) python social.py --test-post x ;;
             *) echo "unknown action"; exit 1 ;;
           esac

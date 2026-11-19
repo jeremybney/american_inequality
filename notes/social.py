@@ -1,4 +1,4 @@
-"""Cross-post the calendar to other platforms at each note's scheduled time (X now; Bluesky and Threads next).
+"""Cross-post the calendar to other platforms at each note's scheduled time (X and Bluesky; Threads next).
 
 Runs every 15 minutes from GitHub Actions (these APIs work from cloud servers, unlike Substack).
 Reads the same calendar as the Substack poster, including Jeremy's Google Sheet edits:
@@ -6,6 +6,8 @@ Reads the same calendar as the Substack poster, including Jeremy's Google Sheet 
   - "X text" column (or x_text in the repo calendar) is used on X; otherwise the note text if it
     fits in 280 characters; otherwise the note is skipped on X with an Error so nothing gets cut off
   - Substack mentions @[Name](id) become X handles from config.json "x_handles", or plain names
+  - Bluesky (300-character limit): the note with plain names if it fits, otherwise the X version
+    with X handles turned back into names, otherwise skipped with an Error
 Posts at most one note per platform per run, only within 3 hours of its time, and logs every outcome
 to state/social.json so nothing posts twice.
 
@@ -32,6 +34,7 @@ CONFIG = json.loads((ROOT / "config.json").read_text())
 GRACE = timedelta(hours=3)
 POSTABLE = {"scheduled", "approved"}
 X_LIMIT = 280
+BSKY_LIMIT = 300
 TEST_CHART = ROOT / "charts" / "2026-11-30" / "real_wages_1973.png"
 MENTION = re.compile(r"@\[([^\]]+)\]\((\d+)\)")
 
@@ -55,6 +58,22 @@ def x_text(n):
     if len(t) > X_LIMIT:
         return None, f"{len(t)} characters; add a shorter version in the Sheet's X text column"
     return t, None
+
+
+def bsky_text(n):
+    """Text for Bluesky, or (None, reason)."""
+    t = MENTION.sub(lambda m: m.group(1), n["text"])
+    if len(t) <= BSKY_LIMIT:
+        return t, None
+    if n.get("x_text"):
+        rev = {h: nm for nm, h in ((m.group(1), CONFIG["x_handles"].get(m.group(2)))
+                                   for m in MENTION.finditer(n["text"])) if h}
+        t2 = n["x_text"]
+        for h, nm in rev.items():
+            t2 = t2.replace(f"@{h}", nm)
+        if len(t2) <= BSKY_LIMIT:
+            return t2, None
+    return None, f"{len(t)} characters; add a shorter version in the Sheet's X text column"
 
 
 def alt_text(n):
@@ -87,45 +106,63 @@ def chart_path(n):
     return None if not c else (c if c.startswith("http") else str(ROOT / c))
 
 
-def post_x(n, done, now):
-    from aiq_notes import xpost
-    text, why = x_text(n)
+def _poster(platform):
+    if platform == "x":
+        from aiq_notes import xpost
+        return x_text, xpost.post
+    from aiq_notes import bskypost
+    return bsky_text, bskypost.post
+
+
+def post_one(platform, n, done, now):
+    pick, send = _poster(platform)
+    text, why = pick(n)
     if not text:
         done[n["id"]] = {"status": "Error", "at": now.isoformat(), "error": why}
-        print(f"X skip {n['id']}: {why}")
+        print(f"{platform} skip {n['id']}: {why}")
         return
     try:
-        res = xpost.post(text, chart_path(n), alt_text(n))
+        res = send(text, chart_path(n), alt_text(n))
         done[n["id"]] = {"status": "Posted", "at": now.isoformat(), **res}
-        print(f"X posted {n['id']}: {res}")
+        print(f"{platform} posted {n['id']}: {res}")
     except Exception as e:
         done[n["id"]] = {"status": "Error", "at": now.isoformat(), "error": str(e)[:500]}
-        print(f"X ERROR {n['id']}: {e}")
+        print(f"{platform} ERROR {n['id']}: {e}")
+
+
+PLATFORMS = {"x": "X_API_KEY", "bsky": "BLUESKY_APP_PASSWORD"}   # a platform runs only if its secret is present
 
 
 def post_due(dry=False):
-    if CONFIG.get("paused") or CONFIG.get("x_paused"):
+    import os
+    if CONFIG.get("paused"):
         print("paused in config.json")
         return
     now = datetime.now(ET)
     st = load_state()
-    done = st.setdefault("x", {})
     notes = calendar()
-    queue = due(notes, done, now)
-    if dry:
-        nxt = sorted((n for n in notes.values() if n["id"] not in done
-                      and (n.get("status") or "").lower() in POSTABLE
-                      and n.get("scheduled_et", "") >= now.isoformat()), key=lambda n: n["scheduled_et"])[:5]
-        print("X due now:", [n["id"] for n in queue])
-        for n in nxt:
-            t, why = x_text(n)
-            print("X next:", n["id"], n["scheduled_et"], f"{len(t)} chars" if t else f"BLOCKED ({why})")
-        return
-    if queue:
-        post_x(queue[0], done, now)
-    else:
-        print("X: nothing due")
-    save_state(st)
+    for platform, secret in PLATFORMS.items():
+        if CONFIG.get(f"{platform}_paused") or not os.environ.get(secret) and not dry:
+            print(f"{platform}: skipped (paused or no credentials)")
+            continue
+        done = st.setdefault(platform, {})
+        queue = due(notes, done, now)
+        pick = x_text if platform == "x" else bsky_text
+        if dry:
+            nxt = sorted((n for n in notes.values() if n["id"] not in done
+                          and (n.get("status") or "").lower() in POSTABLE
+                          and n.get("scheduled_et", "") >= now.isoformat()), key=lambda n: n["scheduled_et"])[:5]
+            print(f"{platform} due now:", [n["id"] for n in queue])
+            for n in nxt:
+                t, why = pick(n)
+                print(f"{platform} next:", n["id"], n["scheduled_et"], f"{len(t)} chars" if t else f"BLOCKED ({why})")
+            continue
+        if queue:
+            post_one(platform, queue[0], done, now)
+        else:
+            print(f"{platform}: nothing due")
+    if not dry:
+        save_state(st)
 
 
 def verify_x():
@@ -134,6 +171,20 @@ def verify_x():
     print(f"OK: keys work for @{me['username']} ({me['name']}, id {me['id']})")
     mid = xpost.upload_image(str(TEST_CHART), alt="Line chart of real hourly wages for rank-and-file workers since 1964.")
     print(f"OK: chart upload works (media id {mid}). Nothing was posted.")
+
+
+def verify_bsky():
+    from aiq_notes import bskypost
+    s = bskypost.session()
+    print(f"OK: app password works for @{s['handle']} ({s['did']})")
+    blob, size = bskypost.upload_image(s, str(TEST_CHART))
+    print(f"OK: chart upload works ({size[0]}x{size[1]}). Nothing was posted.")
+
+
+def test_post_bsky():
+    from aiq_notes import bskypost
+    print("posted:", bskypost.post("Testing a new charts feed. This post will be deleted shortly.", str(TEST_CHART),
+                                   "Line chart of real hourly wages for rank-and-file workers since 1964."))
 
 
 def test_post_x():
@@ -147,16 +198,20 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--post-due", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--verify", choices=["x"])
-    ap.add_argument("--test-post", choices=["x"])
+    ap.add_argument("--verify", choices=["x", "bsky"])
+    ap.add_argument("--test-post", choices=["x", "bsky"])
     a = ap.parse_args()
     try:
         if a.post_due or a.dry_run:
             post_due(dry=a.dry_run)
         elif a.verify == "x":
             verify_x()
+        elif a.verify == "bsky":
+            verify_bsky()
         elif a.test_post == "x":
             test_post_x()
+        elif a.test_post == "bsky":
+            test_post_bsky()
         else:
             ap.print_help()
     except Exception as e:
