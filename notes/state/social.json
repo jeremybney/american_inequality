@@ -43,6 +43,12 @@
   "20261120-1": {
    "at": "2026-11-20T12:27:01.244658-05:00",
    "status": "Missed"
+  },
+  "20261120-2r": {
+   "at": "2026-11-20T12:45:25.531568-05:00",
+   "status": "Posted",
+   "uri": "at://did:plc:kud23bph4ndh27o2vnn44hx6/app.bsky.feed.post/3n2r5bq5a2b2t",
+   "url": "https://bsky.app/profile/jeremybney.bsky.social/post/3n2r5bq5a2b2t"
   }
  },
  "x": {
@@ -88,6 +94,12 @@
   "20261120-1": {
    "at": "2026-11-20T12:27:01.244658-05:00",
    "status": "Missed"
+  },
+  "20261120-2r": {
+   "at": "2026-11-20T12:45:25.531568-05:00",
+   "status": "Posted",
+   "tweet_id": "2123835125251342535",
+   "url": "https://x.com/i/status/2123835125251342535"
   }
  }
 }
