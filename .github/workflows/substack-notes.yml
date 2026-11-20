@@ -5,12 +5,12 @@ on:
   # cloud servers. GitHub cross-posts to X (and later Bluesky/Threads), re-learns posting
   # windows weekly, and runs manual checks.
   schedule:
-    - cron: "4,19,34,49 * * * *"   # cross-post anything due (times live in the calendar)
+    - cron: "4,19,34,49 * * * *"   # backup for the cron-job.org trigger (GitHub's scheduler can run late)
     - cron: "41 8 * * 1"           # Mondays: re-learn posting windows from engagement
   workflow_dispatch:
     inputs:
       action:
-        description: "verify | dry-run | test-upload | post-now | learn | x-verify | x-dry-run | x-test-post | bsky-verify | bsky-test-post"
+        description: "verify | dry-run | test-upload | post-now | learn | x-verify | x-dry-run | x-test-post | bsky-verify | bsky-test-post | cross-post"
         required: true
         default: dry-run
       note_id:
@@ -68,6 +68,7 @@ jobs:
             dry-run)  python post_due.py --dry-run ;;
             test-upload) python post_due.py --test-upload ;;
             post-now) python post_due.py --now "${{ inputs.note_id }}" ;;
+            cross-post) python social.py --post-due ;;   # started every 15 min by cron-job.org (on time, unlike GitHub's scheduler)
             x-verify) python social.py --verify x ;;
             x-dry-run) python social.py --dry-run ;;
             bsky-verify) python social.py --verify bsky ;;
