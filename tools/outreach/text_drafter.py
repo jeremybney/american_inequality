@@ -47,7 +47,7 @@ import check_messages as cm  # noqa: E402
 
 MODEL = "claude-opus-5-5"
 DEFAULT_BODY = (
-    "I wanted you to be one of the first people I reached out to with the exciting news that my book, "
+    "I wanted to reach out personally with the exciting news that my book, "
     "The Opportunity Map, is available for pre-order! I really think you're going to love it, and I would be "
     "incredibly grateful for the support in helping get it out in the world. The book is about closing the divide "
     "between inequality and prosperity in America, and it is for real the proudest I've been of anything I've ever "
