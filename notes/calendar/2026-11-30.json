@@ -7,11 +7,11 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "A third of Americans between 18 and 34 now live in a parent's home, 24.8 million young adults in all, per new Census data. In New Jersey it's nearly half, and in Connecticut and California it's more than 4 in 10.\n\nThose are also some of the most expensive places in the country to rent an apartment, and young adults are doing the math.",
+  "text": "A third of Americans between 18 and 34 now live in a parent's home, 24.8 million young adults in all, per new Census data. In New Jersey it's nearly half, and in Connecticut and California it's more than 4 in 10.\n\nThese are some of the most expensive places in the country to rent, so I don't blame anyone for moving back home.",
   "chart": "charts/2026-11-30/young_adults_with_parents.png",
   "why_now": "ACS 2025 1-year; holiday weekend, lots of adult kids home.",
   "source_kind": "new map: Census ACS",
-  "x_text": "A third of Americans aged 18 to 34 now live in a parent's home, 24.8 million young adults, per new Census data.\n\nNew Jersey, Connecticut and California top the list, all among the most expensive places in the country to rent. Young adults are doing the math."
+  "x_text": "A third of Americans aged 18 to 34 now live in a parent's home, 24.8 million young adults, per new Census data. New Jersey, Connecticut and California top the list.\n\nThose are some of the most expensive places to rent, so I don't blame anyone for moving back home."
  },
  {
   "id": "20261130-2",
@@ -21,7 +21,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Employment",
-  "text": "After inflation, the typical rank-and-file worker in America earns $32.75 an hour. In January 1973 it was $31.85.\n\nThat's 53 years of a growing economy, and the paycheck of the average production worker has moved about 3%.",
+  "text": "After inflation, the typical rank-and-file worker in America earns $32.75 an hour, about 3% more than the $31.85 they earned in January 1973. The economy has grown enormously since then, but very little of it showed up in the average production worker's paycheck.",
   "chart": "charts/2026-11-30/real_wages_1973.png",
   "why_now": "Evergreen labor chart; Oct CPI and earnings data.",
   "source_kind": "new chart: BLS"
@@ -34,11 +34,11 @@
   "block": "afternoon",
   "status": "Scheduled",
   "pillar": "Education",
-  "text": "Black children who grew up in low-income families were three times as likely as white children from the same income level to be in prison or jail as young adults, according to the Opportunity Atlas.\n\nSame family income and the same starting point, with a completely different set of odds.",
+  "text": "Black children who grew up in low-income families were three times as likely as white children from the same income level to be in prison or jail as young adults, according to the Opportunity Atlas.\n\nEven with the same family income and the same starting point, these kids face a very different set of odds.",
   "chart": "charts/2026-11-30/incarceration_gap.png",
   "why_now": "Opportunity Atlas; follows the Nov 28 race-gap note with a different outcome.",
   "source_kind": "new chart: Opportunity Atlas",
-  "x_text": "Black children from low-income families were three times as likely as white children from the same income level to be in prison or jail as young adults, per the Opportunity Atlas.\n\nSame family income, same starting point, very different odds."
+  "x_text": "Black children from low-income families were three times as likely as white children from the same income level to be in prison or jail as young adults, per the Opportunity Atlas.\n\nEven with the same starting point, these kids face very different odds."
  },
  {
   "id": "20261201-1",
@@ -61,7 +61,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "In New York, 31% of households don't own a car, and in DC it's 38%. In Wyoming it's under 4%.\n\nAcross most of America, not owning a car means not getting to work, the doctor or a grocery store, which makes a car one of the most expensive necessities a low-income family has.",
+  "text": "In New York, 31% of households don't own a car, and in DC it's 38%. In Wyoming it's under 4%.\n\nAcross most of America, not having a car means not being able to get to work, the doctor or a grocery store, so even families who can barely afford one end up paying for one.",
   "chart": "charts/2026-11-30/no_vehicle_households.png",
   "why_now": "ACS 2025; pairs with the transit reshare this evening.",
   "source_kind": "new map: Census ACS"
@@ -74,10 +74,11 @@
   "block": "afternoon",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "The average East Flatbush resident lives 0.8 miles from the nearest rail line. Great map from @[Aziz Sunderji](2432780).\n\nThe planned Utica Avenue stop on the IBX would put most of them within a half-mile walk of a train, which for a lot of working families means time back every single day.",
+  "text": "The average East Flatbush resident lives 0.8 miles from the nearest rail line. Great map from @[Aziz Sunderji](2432780).\n\nThe planned Utica Avenue stop on the IBX would put most of them within a half-mile walk of a train, which would make getting to work a lot easier for the people who live there.",
   "chart": "charts/2026-11-30/reshare_sunderji_east_flatbush.png",
   "why_now": "Reshare: Aziz Sunderji ProMap note (Nov 17) on transit access.",
-  "source_kind": "reshare: Aziz Sunderji / The Pro Map"
+  "source_kind": "reshare: Aziz Sunderji / The Pro Map",
+  "x_text": "The average East Flatbush resident lives 0.8 miles from the nearest rail line. Great map from @AzizSunderji.\n\nThe planned Utica Avenue stop on the IBX would put most of them within a half-mile walk of a train."
  },
  {
   "id": "20261202-1",
@@ -87,7 +88,7 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Incomes",
-  "text": "The top 1% of Americans take home 20.7% of all pre-tax income, about double their share in 1980.\n\nIn France, Canada and Spain the top 1% gets around 12%. Other rich countries made different choices about how much of the pie goes to the very top.",
+  "text": "The top 1% of Americans take home 20.7% of all pre-tax income, about double their share in 1980.\n\nFrance, Canada and Spain made different policy choices, and the top 1% there takes home around 12%.",
   "chart": "charts/2026-11-30/top1_income_peers.png",
   "why_now": "World Inequality Database via OWID; wealth-tax debate continues.",
   "source_kind": "new chart: Our World in Data"
@@ -100,7 +101,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "Only 10% of DC households headed by someone under 35 own their home. In California it's 22.5%, while in West Virginia it's 48.6%.\n\nThe places with the most jobs for young people are the places where they have the hardest time ever owning anything.",
+  "text": "Only 10% of DC households headed by someone under 35 own their home. In California it's 22.5%, while in West Virginia it's 48.6%.\n\nMany of the places with the most jobs for young people are also the places where buying a first home feels out of reach.",
   "chart": "charts/2026-11-30/young_homeownership.png",
   "why_now": "ACS 2025 1-year.",
   "source_kind": "new map: Census ACS"
@@ -113,7 +114,7 @@
   "block": "afternoon",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "Rents in Austin are down almost 10% since 2022, while rents in the typical large county rose 10%.\n\nAustin built apartments faster than almost any city in America over the past few years. When supply goes up, rents come down, and renters are the ones who win.",
+  "text": "Rents in Austin are down almost 10% since 2022, while rents in the typical large county rose 10%.\n\nAustin built apartments faster than almost any city in America over the past few years, and renters there are now paying less than they did in 2022.",
   "chart": "charts/2026-11-30/austin_rents.png",
   "why_now": "Zillow ZORI Oct 2026; housing-supply debate.",
   "source_kind": "new chart: Zillow"
@@ -139,7 +140,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "Nearly 1 in 5 workers in New York spends an hour or more getting to work each way. In Nebraska and South Dakota it's under 4%.\n\nLong commutes fall hardest on the workers who have been priced out of the places where the jobs are.",
+  "text": "Nearly 1 in 5 workers in New York spends an hour or more getting to work each way. In Nebraska and South Dakota it's under 4%.\n\nA lot of those long commutes belong to workers who were priced out of the neighborhoods where the jobs are.",
   "chart": "charts/2026-11-30/long_commutes.png",
   "why_now": "ACS 2025 1-year.",
   "source_kind": "new map: Census ACS"
@@ -178,7 +179,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Employment",
-  "text": "Unemployment ranges from 2% in South Dakota to 5.6% in DC, with California, Connecticut, Michigan and Oregon all at 5% or more.\n\nToday's national number is a single figure, but the job market a family actually faces depends a lot on where they live.",
+  "text": "Unemployment ranges from 2% in South Dakota to 5.6% in DC, with California, Connecticut, Michigan and Oregon all at 5% or more.\n\nToday's national number is a single figure, but the job market a family faces depends a lot on where they live.",
   "chart": "charts/2026-11-30/state_unemployment.png",
   "why_now": "Jobs report day; BLS state data (Sept 2026).",
   "source_kind": "new map: BLS"
@@ -191,7 +192,7 @@
   "block": "afternoon",
   "status": "Scheduled",
   "pillar": "Incomes",
-  "text": "The typical household in DC earns $109,505 a year. In Mississippi it's $59,346, per new Census data.\n\nSame country, with almost a 2x difference in what a family has to work with before rent, groceries or child care.",
+  "text": "The typical household in DC earns $109,505 a year. In Mississippi it's $59,346, per new Census data.\n\nFamilies in DC have almost twice as much to work with before rent, groceries or child care.",
   "chart": "charts/2026-11-30/median_income_states.png",
   "why_now": "ACS 2025 1-year.",
   "source_kind": "new map: Census ACS"
@@ -217,7 +218,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Employment",
-  "text": "American workers put in about 1,789 hours a year on average, roughly 450 more than workers in Germany.\n\nThat's about 11 extra weeks of full-time work every year, in the richest economy on earth.",
+  "text": "American workers put in about 1,789 hours a year on average, roughly 450 more than workers in Germany. Over a year, the difference adds up to about 11 extra weeks of full-time work.",
   "chart": "charts/2026-11-30/working_hours_peers.png",
   "why_now": "Penn World Table/OECD via OWID.",
   "source_kind": "new chart: Our World in Data"
@@ -230,10 +231,11 @@
   "block": "evening",
   "status": "Scheduled",
   "pillar": "Housing",
-  "text": "Which state has the highest share of households with no internet access at all?\n\nIt's West Virginia, at 7.8%, nearly twice the national rate. Most of the states near the top of this list are rural and lower-income, the places where getting online would help most.",
+  "text": "Which state has the highest share of households with no internet access at all?\n\nThe answer is West Virginia, at 7.8%, nearly twice the national rate. Most of the states near the top of this list are rural and lower-income, and getting families online there would open up a lot of opportunity.",
   "chart": "charts/2026-11-30/no_internet.png",
   "why_now": "Saturday evening question format; ACS 2025.",
-  "source_kind": "new map: Census ACS"
+  "source_kind": "new map: Census ACS",
+  "x_text": "Which state has the highest share of households with no internet access at all?\n\nWest Virginia, at 7.8%, nearly twice the national rate. Most of the states near the top are rural and lower-income, where getting families online would open up a lot of opportunity."
  },
  {
   "id": "20261206-1",
@@ -243,7 +245,7 @@
   "block": "morning",
   "status": "Scheduled",
   "pillar": "Incomes",
-  "text": "In DC, 18.4% of residents 60 and older live below the poverty line. In Louisiana it's 16.1%.\n\nThese are people who worked their whole lives, and in much of the country a Social Security check alone doesn't cover rent and medicine.",
+  "text": "In DC, 18.4% of residents 60 and older live below the poverty line. In Louisiana it's 16.1%.\n\nMany of these are people who worked their whole lives. In much of the country, a Social Security check alone doesn't cover rent and medicine.",
   "chart": "charts/2026-11-30/senior_poverty.png",
   "why_now": "ACS 2025; retirees-on-under-$2,000 coverage (Investopedia, Nov).",
   "source_kind": "new map: Census ACS"
@@ -256,7 +258,7 @@
   "block": "midday",
   "status": "Scheduled",
   "pillar": "Employment",
-  "text": "22.7% of workers in DC now work from home, compared with 6.3% in North Dakota and 6.5% in Mississippi.\n\nRemote work quietly became one of the best perks of a high-income job, and most service workers never got the option.",
+  "text": "22.7% of workers in DC now work from home, compared with 6.3% in North Dakota and 6.5% in Mississippi.\n\nRemote work became a perk of higher-income jobs, while most service workers never got the option.",
   "chart": "charts/2026-11-30/work_from_home.png",
   "why_now": "ACS 2025 1-year.",
   "source_kind": "new map: Census ACS"
