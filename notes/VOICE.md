@@ -77,6 +77,31 @@ Jeremy rewrote nine notes in the first batch. What he changed:
 - **Drop setup lines.** "Same median-priced new home. Same 20% down." was cut; he went straight to the numbers.
 - **Ground claims in a source or document** ("When you look at old HUD documents...").
 
+### Second round of edits (Nov 25, 2026, highest priority)
+
+Jeremy flagged these as "written to sound too much like AI":
+
+- **No "That's ..." / "It's ..." sentences that point back at the previous sentence.** "That's 53 years of a growing
+  economy, and ..." and "That's the number families are actually living with." Put the fact in the sentence itself.
+- **No ", and it hits hardest ..." clauses**, and no superlative add-ons tacked on with "and".
+- **No "That part ..." or "The part that's most surprising ...".**
+- **No short, dramatic fragments or aphorism kickers.** "That part isn't stinginess. Rent and groceries come first.",
+  "When everyone moves somewhere cheap, it stops being cheap.", "A starter home.", "Same country, very different math."
+- **What he added instead:** a personal, conversational line ("I've talked with a lot of people who could really use
+  that extra $830/month", "tell your uncle about this 31% jump"). He does use "you" when it's conversational.
+- He cut a political opener ("Democrats just won... Here's where I'd start.") and kept the data.
+
+## What performs (Nov 16-25, score = likes + 3x restacks + 2x replies)
+
+- Scheduled notes had a median score of 40, against 21 for his other notes.
+- Winners were records on capital vs labor (profit share 137, top-1% wealth 100, labor share 82,
+  corporate tax share 89), one-number housing stats (first-time buyer age 40, 91), electricity vs inflation (79)
+  and Rattner reshares (72).
+- Weakest were state maps (median 30), small big-stat cards on safety-net topics (SNAP, uninsured kids, under 20),
+  Aziz reshares and gas prices.
+- Midday posts did best (median 49), then evening (36), then morning (27). From Dec 7 the calendar runs **2 a day,
+  midday and evening**.
+
 ## Reshares (others' charts + Jeremy's take)
 
 - Run `python3 aiq_notes/peers.py` to rank recent image notes from Rattner, Derek Thompson, Aziz Sunderji,
@@ -97,6 +122,7 @@ Jeremy rewrote nine notes in the first batch. What he changed:
 - Colons in sentences at all (see Jeremy's edits above). Ladders are the only exception.
 - Opening with a question unless the whole note is the question.
 - Summarizing the chart's title back in the text word for word.
+- "That's ..." / "It's ..." sentences pointing back at the previous sentence; ", and it hits hardest"; "That part".
 - Wrap-up morals ("We have to do better." "The data is clear.").
 - Hashtags, "🧵," "1/," or calls to subscribe.
 - Links in the note body. If the source needs a link, it goes on the chart.
